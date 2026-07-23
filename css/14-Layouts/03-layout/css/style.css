@@ -1,0 +1,55 @@
+/*
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Layouts/03-layout
+  example: css/style.css
+*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.5;
+  color: #1a1a1a;
+}
+
+.placeholder {
+  border: 2px dashed #64748b;
+  padding: 1rem;
+  text-align: center;
+}
+
+.layout-label {
+  margin: 0;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0.75rem;
+}
+
+.header,
+.footer {
+  min-height: 100px;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.75rem;
+  flex: 1;
+}
+
+.col {
+  min-height: 400px;
+}

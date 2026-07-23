@@ -1,0 +1,29 @@
+/*
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Templates/02-ecommerce
+  example: css/style.css
+*/
+
+:root { --ink:#222; --accent:#2f5d50; --sand:#f3eee6; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:Georgia, "Times New Roman", serif; color:var(--ink); background:#fff; line-height:1.5; }
+.wrap { width:min(1080px,92%); margin:0 auto; }
+.site-header { border-bottom:1px solid #e6e0d6; }
+.nav { display:flex; justify-content:space-between; align-items:center; min-height:70px; }
+.logo { color:var(--accent); }
+nav a { margin-left:1rem; color:var(--ink); text-decoration:none; }
+.hero { background:var(--sand); padding:4.5rem 0; }
+.hero h1 { font-size:clamp(2rem,4vw,3rem); max-width:12ch; margin:0 0 .75rem; }
+.btn, button { background:var(--accent); color:#fff; border:0; padding:.65rem 1rem; cursor:pointer; text-decoration:none; display:inline-block; font:inherit; }
+.section { padding:3rem 0; }
+.products { display:grid; grid-template-columns:repeat(4,1fr); gap:1rem; }
+.card { border:1px solid #e6e0d6; padding:0 0 1rem; }
+.img { background:#d9cfc0; min-height:150px; display:flex; align-items:center; justify-content:center; color:#5b5348; }
+.card h3, .card p, .card button { margin-left:1rem; margin-right:1rem; }
+.band { background:#2f5d50; color:#f3eee6; }
+.site-footer { border-top:1px solid #e6e0d6; padding:1.25rem 0; color:#666; }
+@media (max-width:860px){ .products{grid-template-columns:1fr 1fr;} }
+@media (max-width:520px){ .products{grid-template-columns:1fr;} }

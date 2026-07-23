@@ -1,0 +1,2 @@
+/* Glass Card · Frosted UI · phpkingdom.com */
+body{margin:0;min-height:100vh;display:grid;place-items:center;font-family:Georgia,serif;background:linear-gradient(135deg,#0f766e,#99f6e4)}.card{width:min(22rem,90vw);padding:1.5rem;border-radius:16px;background:rgba(255,255,255,.35);border:1px solid rgba(255,255,255,.5);backdrop-filter:blur(10px)}

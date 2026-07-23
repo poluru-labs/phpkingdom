@@ -1,0 +1,25 @@
+/*
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Templates/13-photography
+  example: css/style.css
+*/
+
+:root { --ink:#18181b; --accent:#52525b; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:"Iowan Old Style", Georgia, serif; color:var(--ink); background:#fafafa; line-height:1.55; }
+.wrap { width:min(1000px,92%); margin:0 auto; }
+.nav { display:flex; justify-content:space-between; align-items:center; min-height:72px; }
+nav a { margin-left:1rem; color:var(--accent); text-decoration:none; }
+.hero { padding:3rem 0 1.5rem; }
+.hero h1 { font-size:clamp(2rem,5vw,3.2rem); max-width:12ch; margin:0 0 .75rem; font-weight:500; }
+.section { padding:1.5rem 0 2.75rem; }
+.mosaic { display:grid; grid-template-columns:repeat(3,1fr); gap:.6rem; }
+.tile { min-height:140px; background:#d4d4d8; }
+.t1{background:#a1a1aa;} .t2{background:#d6d3d1;} .t3{background:#a8a29e;}
+.t4{background:#78716c;} .t5{background:#cbd5e1;} .t6{background:#94a3b8;}
+a { color:#0f766e; }
+.site-footer { padding:1.5rem 0 2.5rem; color:#71717a; border-top:1px solid #e4e4e7; }
+@media (max-width:700px){ .mosaic{grid-template-columns:1fr 1fr;} }

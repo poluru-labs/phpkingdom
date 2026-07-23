@@ -1,0 +1,126 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Cypress Tutorials
+section title: Custom Commands
+topic title: Reusable Commands
+content type: Example
+item number: 19
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Reusable Commands Example 19 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ecfdf5;
+      color: #047857;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Example 19</span>
+    <h1>Reusable Commands</h1>
+    <p><strong>Section:</strong> Custom Commands</p>
+    <p><strong>Focus:</strong> Timeout Tune</p>
+    <p><strong>Scenario:</strong> docs site</p>
+    <p>Study the Cypress sketch and adapt the pattern to your app under test.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Cypress</h2>
+        <pre><code>// Reusable Commands — Example 19
+// Focus: timeout tune | Scenario: docs site
+
+Cypress.Commands.add(&quot;getByCy&quot;, (id) =&gt; cy.get(`[data-cy=${id}]`));
+Cypress.Commands.add(&quot;seedDb&quot;, (fixture) =&gt; {
+  cy.task(&quot;db:seed&quot;, fixture);
+});
+
+describe(&quot;reusable helpers&quot;, () =&gt; {
+  beforeEach(() =&gt; {
+    cy.seedDb(&quot;demo&quot;);
+    cy.visit(&quot;/&quot;);
+  });
+
+  it(&quot;uses getByCy everywhere&quot;, () =&gt; {
+    cy.getByCy(&quot;hero&quot;).should(&quot;be.visible&quot;);
+    cy.getByCy(&quot;cta&quot;).click();
+  });
+});</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Reusable Commands
+- Practice: timeout tune
+- Scenario: docs site
+- Prefer data-cy / role-based selectors over brittle CSS
+- Lean on Cypress retry-ability; avoid cy.wait(ms)
+- Isolate tests; use cy.session for auth speed
+- Stub flaky network with cy.intercept; assert with cy.wait(&#x27;@alias&#x27;)
+- Keep e2e for journeys; use component testing for UI units
+
+Useful commands:
+  npm install --save-dev cypress
+  npx cypress open
+  npx cypress run
+  npx cypress run --record --parallel
+  npx cypress run --browser chrome</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This example shows one way to apply <strong>Reusable Commands</strong> in a docs site context.</p>
+      <p>Prefer <code>data-cy</code> selectors, avoid arbitrary waits, and lean on Cypress retries.</p>
+    </section>
+  </main>
+</body>
+</html>

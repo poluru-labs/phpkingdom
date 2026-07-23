@@ -1,0 +1,26 @@
+/*
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Templates/10-healthcare
+  example: css/style.css
+*/
+
+:root { --ink:#164e63; --accent:#0e7490; --bg:#ecfeff; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:Georgia, serif; color:#16333d; background:#fff; line-height:1.55; }
+.wrap { width:min(960px,92%); margin:0 auto; }
+.nav { display:flex; justify-content:space-between; align-items:center; min-height:68px; }
+.logo { color:var(--accent); }
+nav a { margin-left:1rem; color:#16333d; text-decoration:none; }
+.hero { background:linear-gradient(135deg,#164e63,#0e7490); color:#fff; padding:4rem 0; }
+.btn, button { background:#fbbf24; color:#16333d; border:0; padding:.7rem 1rem; font:inherit; font-weight:700; cursor:pointer; text-decoration:none; display:inline-block; }
+.section { padding:2.75rem 0; }
+.grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; }
+.grid article { background:var(--bg); padding:1.2rem; border:1px solid #a5f3fc; }
+.soft { background:var(--bg); }
+form { display:grid; gap:.7rem; max-width:400px; }
+input { font:inherit; padding:.6rem; }
+.site-footer { background:#164e63; color:#cffafe; padding:1.2rem 0; }
+@media (max-width:720px){ .grid{grid-template-columns:1fr;} }

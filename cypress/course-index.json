@@ -1,0 +1,372 @@
+{
+  "title": "Cypress Tutorials",
+  "items": [
+    {
+      "title": "Basics",
+      "items": [
+        {
+          "href": "/tutorials/cypress/introduction",
+          "label": "Cypress - Introduction"
+        },
+        {
+          "href": "/tutorials/cypress/basics",
+          "label": "Cypress - Basics"
+        },
+        {
+          "href": "/tutorials/cypress/setup",
+          "label": "Cypress Setup"
+        },
+        {
+          "href": "/tutorials/cypress/first-test",
+          "label": "First Cypress Test"
+        },
+        {
+          "href": "/tutorials/cypress/cypress-vs-selenium",
+          "label": "Cypress vs Selenium"
+        }
+      ]
+    },
+    {
+      "title": "Core Concepts",
+      "items": [
+        {
+          "href": "/tutorials/cypress/test-runner",
+          "label": "Cypress Test Runner"
+        },
+        {
+          "href": "/tutorials/cypress/spec-files",
+          "label": "Spec Files"
+        },
+        {
+          "href": "/tutorials/cypress/describe-it",
+          "label": "describe and it"
+        },
+        {
+          "href": "/tutorials/cypress/commands",
+          "label": "Cypress Commands"
+        },
+        {
+          "href": "/tutorials/cypress/chainable-commands",
+          "label": "Chainable Commands"
+        }
+      ]
+    },
+    {
+      "title": "Selectors and Actions",
+      "items": [
+        {
+          "href": "/tutorials/cypress/selectors",
+          "label": "Cypress Selectors"
+        },
+        {
+          "href": "/tutorials/cypress/get-find-contains",
+          "label": "get, find and contains"
+        },
+        {
+          "href": "/tutorials/cypress/click-type-submit",
+          "label": "click, type and submit"
+        },
+        {
+          "href": "/tutorials/cypress/keyboard-mouse-actions",
+          "label": "Keyboard and Mouse Actions"
+        },
+        {
+          "href": "/tutorials/cypress/best-selectors",
+          "label": "Best Selectors"
+        }
+      ]
+    },
+    {
+      "title": "Assertions",
+      "items": [
+        {
+          "href": "/tutorials/cypress/assertions",
+          "label": "Cypress Assertions"
+        },
+        {
+          "href": "/tutorials/cypress/should-and-expect",
+          "label": "should and expect"
+        },
+        {
+          "href": "/tutorials/cypress/dom-assertions",
+          "label": "DOM Assertions"
+        },
+        {
+          "href": "/tutorials/cypress/url-assertions",
+          "label": "URL Assertions"
+        },
+        {
+          "href": "/tutorials/cypress/form-assertions",
+          "label": "Form Assertions"
+        }
+      ]
+    },
+    {
+      "title": "Waiting and Retry",
+      "items": [
+        {
+          "href": "/tutorials/cypress/waiting",
+          "label": "Cypress Waiting"
+        },
+        {
+          "href": "/tutorials/cypress/automatic-retry",
+          "label": "Automatic Retry"
+        },
+        {
+          "href": "/tutorials/cypress/timeouts",
+          "label": "Timeouts"
+        },
+        {
+          "href": "/tutorials/cypress/wait-command",
+          "label": "cy.wait()"
+        },
+        {
+          "href": "/tutorials/cypress/flaky-tests",
+          "label": "Flaky Tests"
+        }
+      ]
+    },
+    {
+      "title": "Fixtures and Data",
+      "items": [
+        {
+          "href": "/tutorials/cypress/fixtures",
+          "label": "Cypress Fixtures"
+        },
+        {
+          "href": "/tutorials/cypress/test-data",
+          "label": "Test Data"
+        },
+        {
+          "href": "/tutorials/cypress/environment-variables",
+          "label": "Environment Variables"
+        },
+        {
+          "href": "/tutorials/cypress/configuration",
+          "label": "Cypress Configuration"
+        }
+      ]
+    },
+    {
+      "title": "Custom Commands",
+      "items": [
+        {
+          "href": "/tutorials/cypress/custom-commands",
+          "label": "Custom Commands"
+        },
+        {
+          "href": "/tutorials/cypress/reusable-commands",
+          "label": "Reusable Commands"
+        },
+        {
+          "href": "/tutorials/cypress/overwrite-commands",
+          "label": "Overwrite Commands"
+        },
+        {
+          "href": "/tutorials/cypress/support-files",
+          "label": "Support Files"
+        }
+      ]
+    },
+    {
+      "title": "Network Testing",
+      "items": [
+        {
+          "href": "/tutorials/cypress/network-testing",
+          "label": "Network Testing"
+        },
+        {
+          "href": "/tutorials/cypress/intercept",
+          "label": "cy.intercept()"
+        },
+        {
+          "href": "/tutorials/cypress/stubs",
+          "label": "Stubs"
+        },
+        {
+          "href": "/tutorials/cypress/spies",
+          "label": "Spies"
+        },
+        {
+          "href": "/tutorials/cypress/api-testing",
+          "label": "API Testing"
+        }
+      ]
+    },
+    {
+      "title": "Authentication",
+      "items": [
+        {
+          "href": "/tutorials/cypress/authentication",
+          "label": "Authentication Testing"
+        },
+        {
+          "href": "/tutorials/cypress/login-testing",
+          "label": "Login Testing"
+        },
+        {
+          "href": "/tutorials/cypress/session-command",
+          "label": "cy.session()"
+        },
+        {
+          "href": "/tutorials/cypress/jwt-auth",
+          "label": "JWT Auth Testing"
+        },
+        {
+          "href": "/tutorials/cypress/protected-routes",
+          "label": "Protected Routes Testing"
+        }
+      ]
+    },
+    {
+      "title": "Component Testing",
+      "items": [
+        {
+          "href": "/tutorials/cypress/component-testing",
+          "label": "Component Testing"
+        },
+        {
+          "href": "/tutorials/cypress/react-component-testing",
+          "label": "React Component Testing"
+        },
+        {
+          "href": "/tutorials/cypress/vue-component-testing",
+          "label": "Vue Component Testing"
+        },
+        {
+          "href": "/tutorials/cypress/angular-component-testing",
+          "label": "Angular Component Testing"
+        }
+      ]
+    },
+    {
+      "title": "Debugging",
+      "items": [
+        {
+          "href": "/tutorials/cypress/debugging",
+          "label": "Cypress Debugging"
+        },
+        {
+          "href": "/tutorials/cypress/screenshots",
+          "label": "Screenshots"
+        },
+        {
+          "href": "/tutorials/cypress/videos",
+          "label": "Videos"
+        },
+        {
+          "href": "/tutorials/cypress/test-failures",
+          "label": "Debug Test Failures"
+        }
+      ]
+    },
+    {
+      "title": "CI/CD",
+      "items": [
+        {
+          "href": "/tutorials/cypress/ci-cd",
+          "label": "Cypress CI/CD"
+        },
+        {
+          "href": "/tutorials/cypress/github-actions",
+          "label": "GitHub Actions"
+        },
+        {
+          "href": "/tutorials/cypress/jenkins",
+          "label": "Jenkins"
+        },
+        {
+          "href": "/tutorials/cypress/docker",
+          "label": "Docker with Cypress"
+        },
+        {
+          "href": "/tutorials/cypress/parallelization",
+          "label": "Parallelization"
+        }
+      ]
+    },
+    {
+      "title": "Advanced",
+      "items": [
+        {
+          "href": "/tutorials/cypress/visual-testing",
+          "label": "Visual Testing"
+        },
+        {
+          "href": "/tutorials/cypress/accessibility-testing",
+          "label": "Accessibility Testing"
+        },
+        {
+          "href": "/tutorials/cypress/cross-browser-testing",
+          "label": "Cross-Browser Testing"
+        },
+        {
+          "href": "/tutorials/cypress/performance",
+          "label": "Cypress Performance"
+        },
+        {
+          "href": "/tutorials/cypress/test-architecture",
+          "label": "Test Architecture"
+        },
+        {
+          "href": "/tutorials/cypress/cy-origin",
+          "label": "cy.origin Cross-Origin"
+        },
+        {
+          "href": "/tutorials/cypress/cy-clock",
+          "label": "cy.clock and Timers"
+        },
+        {
+          "href": "/tutorials/cypress/cypress-grep",
+          "label": "cypress-grep Filtering"
+        },
+        {
+          "href": "/tutorials/cypress/cypress-cloud",
+          "label": "Cypress Cloud"
+        },
+        {
+          "href": "/tutorials/cypress/viewport-presets",
+          "label": "Viewport Presets"
+        }
+      ]
+    },
+    {
+      "title": "Reference",
+      "items": [
+        {
+          "href": "/tutorials/cypress/best-practices",
+          "label": "Cypress Best Practices"
+        },
+        {
+          "href": "/tutorials/cypress/dos-and-donts",
+          "label": "Cypress Do's and Don'ts"
+        },
+        {
+          "href": "/tutorials/cypress/common-mistakes",
+          "label": "Common Cypress Mistakes"
+        },
+        {
+          "href": "/tutorials/cypress/cheat-sheet",
+          "label": "Cypress Cheat Sheet"
+        },
+        {
+          "href": "/tutorials/cypress/resources",
+          "label": "Cypress Resources"
+        }
+      ]
+    },
+    {
+      "title": "Interview",
+      "items": [
+        {
+          "href": "/tutorials/cypress/interview-questions",
+          "label": "Cypress Interview Questions"
+        },
+        {
+          "href": "/tutorials/cypress/quiz",
+          "label": "Cypress Quiz"
+        }
+      ]
+    }
+  ]
+}

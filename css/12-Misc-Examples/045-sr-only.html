@@ -1,0 +1,28 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 12-Misc-Examples
+  example: 045-sr-only.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>045 — Screen-reader only | phpkingdom.com</title>
+  <style>
+    body { font-family: Georgia, 'Times New Roman', serif; margin: 1.5rem; line-height: 1.5; }
+    h1 { font-size: 1.25rem; }
+    .demo { margin-top: 1rem; }
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);border:0}
+  </style>
+</head>
+<body>
+  <h1>045 — Screen-reader only</h1>
+  <div class="demo">
+<label><span class='sr-only'>Search</span><input type='search' placeholder='Search'></label>
+  </div>
+</body>
+</html>

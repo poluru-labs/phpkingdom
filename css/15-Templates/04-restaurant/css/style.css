@@ -1,0 +1,27 @@
+/*
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Templates/04-restaurant
+  example: css/style.css
+*/
+
+:root { --ink:#2b2118; --coral:#c45c26; --cream:#f7f1e8; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:Georgia, serif; color:var(--ink); background:var(--cream); line-height:1.55; }
+.wrap { width:min(960px,92%); margin:0 auto; }
+.nav { display:flex; justify-content:space-between; align-items:center; min-height:70px; }
+.logo { color:var(--coral); font-size:1.3rem; }
+nav a { margin-left:1rem; color:var(--ink); text-decoration:none; }
+.hero { min-height:46vh; display:flex; align-items:flex-end; padding:3rem 0; background:linear-gradient(180deg,rgba(43,33,24,.15),rgba(43,33,24,.75)), #8a6a4b; color:#fff; }
+.hero h1 { max-width:14ch; font-size:clamp(2rem,5vw,3.2rem); margin:0 0 .5rem; }
+.section { padding:2.75rem 0; }
+.menu { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; }
+.menu > div { background:#fff; padding:1rem; border:1px solid #e4d8c8; }
+.panel { background:#2b2118; color:#f7f1e8; }
+form { display:grid; gap:.6rem; max-width:380px; }
+input, button { font:inherit; padding:.65rem .75rem; border:0; }
+button { background:var(--coral); color:#fff; cursor:pointer; }
+.site-footer { padding:1.2rem 0; border-top:1px solid #e4d8c8; }
+@media (max-width:720px){ .menu{grid-template-columns:1fr;} }

@@ -1,0 +1,27 @@
+/*
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Templates/14-agency
+  example: css/style.css
+*/
+
+:root { --ink:#111827; --pink:#db2777; --bg:#fff1f2; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:system-ui, sans-serif; color:var(--ink); background:#fff; line-height:1.55; }
+.wrap { width:min(980px,92%); margin:0 auto; }
+.nav { display:flex; justify-content:space-between; align-items:center; min-height:66px; }
+.logo { color:var(--pink); }
+nav a { margin-left:1rem; color:var(--ink); text-decoration:none; }
+.hero { background:linear-gradient(135deg,#831843,#db2777); color:#fff; padding:4.5rem 0; }
+.hero h1 { max-width:18ch; font-size:clamp(1.9rem,4vw,2.8rem); margin:0 0 .75rem; }
+.section { padding:2.75rem 0; }
+.grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; }
+.grid article { border:1px solid #fecdd3; padding:1.2rem; background:var(--bg); border-radius:12px; }
+.tint { background:var(--bg); }
+form { display:grid; gap:.6rem; max-width:400px; }
+input, button { font:inherit; padding:.7rem; border:1px solid #e5e7eb; border-radius:8px; }
+button { background:var(--ink); color:#fff; border:0; cursor:pointer; }
+.site-footer { padding:1.2rem 0; color:#6b7280; border-top:1px solid #f3f4f6; }
+@media (max-width:740px){ .grid{grid-template-columns:1fr;} }

@@ -1,0 +1,123 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Cypress Tutorials
+section title: Reference
+topic title: Cypress Do's and Don'ts
+content type: Example
+item number: 08
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Cypress Do's and Don'ts Example 08 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ecfdf5;
+      color: #047857;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Example 08</span>
+    <h1>Cypress Do's and Don'ts</h1>
+    <p><strong>Section:</strong> Reference</p>
+    <p><strong>Focus:</strong> Url Check</p>
+    <p><strong>Scenario:</strong> mobile web app</p>
+    <p>Study the Cypress sketch and adapt the pattern to your app under test.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Cypress</h2>
+        <pre><code>// Cypress Do&#x27;s and Don&#x27;ts — Example 08
+// Focus: url check | Scenario: mobile web app
+
+describe(&quot;dos and donts&quot;, () =&gt; {
+  it(&quot;DO assert UI readiness; DON&#x27;T sleep&quot;, () =&gt; {
+    cy.visit(&quot;/feed&quot;);
+    // DO:
+    cy.get(&quot;[data-cy=feed-item]&quot;).should(&quot;have.length.greaterThan&quot;, 0);
+    // DON&#x27;T: cy.wait(5000);
+  });
+
+  it(&quot;DO use data-cy; DON&#x27;T chain off CSS animations casually&quot;, () =&gt; {
+    cy.get(&quot;[data-cy=menu]&quot;).click();
+    cy.get(&quot;[data-cy=menu-panel]&quot;).should(&quot;be.visible&quot;);
+  });
+});</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Cypress Do&#x27;s and Don&#x27;ts
+- Practice: url check
+- Scenario: mobile web app
+- Prefer data-cy / role-based selectors over brittle CSS
+- Lean on Cypress retry-ability; avoid cy.wait(ms)
+- Isolate tests; use cy.session for auth speed
+- Stub flaky network with cy.intercept; assert with cy.wait(&#x27;@alias&#x27;)
+- Keep e2e for journeys; use component testing for UI units
+
+Useful commands:
+  npm install --save-dev cypress
+  npx cypress open
+  npx cypress run
+  npx cypress run --record --parallel
+  npx cypress run --browser chrome</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This example shows one way to apply <strong>Cypress Do's and Don'ts</strong> in a mobile web app context.</p>
+      <p>Prefer <code>data-cy</code> selectors, avoid arbitrary waits, and lean on Cypress retries.</p>
+    </section>
+  </main>
+</body>
+</html>

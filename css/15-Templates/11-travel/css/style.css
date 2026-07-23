@@ -1,0 +1,28 @@
+/*
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Templates/11-travel
+  example: css/style.css
+*/
+
+:root { --ink:#1c1917; --ocean:#0f766e; --sand:#fff7ed; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:Georgia, serif; color:var(--ink); background:#fff; line-height:1.55; }
+.wrap { width:min(1000px,92%); margin:0 auto; }
+.nav { display:flex; justify-content:space-between; align-items:center; min-height:68px; }
+.logo { color:var(--ocean); }
+nav a { margin-left:1rem; color:var(--ink); text-decoration:none; }
+.hero { min-height:42vh; display:flex; align-items:flex-end; padding:3rem 0; color:#fff; background:linear-gradient(180deg,rgba(15,23,42,.1),rgba(15,23,42,.7)), #0f766e; }
+.hero h1 { max-width:14ch; font-size:clamp(2rem,5vw,3rem); margin:0 0 .5rem; }
+.section { padding:2.75rem 0; }
+.grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; }
+.ph { min-height:140px; margin-bottom:.7rem; }
+.a{background:#99f6e4;} .b{background:#fde68a;} .c{background:#bae6fd;}
+.band { background:var(--sand); }
+form { display:grid; grid-template-columns:1fr 1fr auto; gap:.5rem; }
+input, button { font:inherit; padding:.7rem; border:1px solid #d6d3d1; }
+button { background:var(--ocean); color:#fff; border:0; cursor:pointer; }
+.site-footer { padding:1.2rem 0; border-top:1px solid #e7e5e4; color:#78716c; }
+@media (max-width:760px){ .grid, form{grid-template-columns:1fr;} }

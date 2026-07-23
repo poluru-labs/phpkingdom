@@ -1,0 +1,42 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 05-Flexbox/02-flex-container
+  example: 02-align-items.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Align Items | phpkingdom.com</title>
+  <style>
+
+    :root { --ink:#1a1a1a; --muted:#555; --accent:#0f766e; --bg:#f7fafc; --card:#fff; --line:#d9e2ec; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: Georgia, "Times New Roman", serif; color:var(--ink); background:var(--bg); line-height:1.55; }
+    .wrap { max-width:820px; margin:0 auto; padding:1.5rem; }
+    h1 { font-size:1.6rem; margin:0 0 .35rem; }
+    .meta { color:var(--muted); margin:0 0 1.25rem; }
+    .demo { background:var(--card); border:1px solid var(--line); padding:1rem; margin:1rem 0; }
+    pre, code { font-family: ui-monospace, Menlo, monospace; }
+    pre { background:#111827; color:#e5e7eb; padding:.9rem 1rem; overflow:auto; }
+    .note { border-left:3px solid var(--accent); background:#ecfdf5; padding:.75rem 1rem; }
+    a { color: var(--accent); }
+
+.row{display:flex;align-items:center;gap:.5rem;height:120px;background:#ecfdf5;padding:.5rem}.row div{background:#0f766e;color:#fff;padding:.75rem}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>align-items</h1>
+    <p class="meta">Align along the cross axis.</p>
+
+    <div class="demo"><div class="row"><div>Short</div><div>Centered<br>cross-axis</div></div></div>
+
+  </div>
+</body>
+</html>

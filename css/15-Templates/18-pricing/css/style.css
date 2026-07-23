@@ -1,0 +1,2 @@
+/* Pricing · Plans · phpkingdom.com */
+body{margin:0;font-family:Georgia,serif;background:#f7fafc;color:#1a1a1a}.wrap{max-width:900px;margin:0 auto;padding:2rem}.grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr))}.plan{background:#fff;border:1px solid #d9e2ec;border-radius:12px;padding:1.25rem}.plan.featured{border-color:#0f766e;box-shadow:0 8px 24px rgba(15,118,110,.12)}.price{font-size:2rem;color:#0f766e}

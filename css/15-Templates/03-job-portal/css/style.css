@@ -1,0 +1,25 @@
+/*
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Templates/03-job-portal
+  example: css/style.css
+*/
+
+:root { --ink:#1b2430; --blue:#2563eb; --bg:#f8fafc; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:system-ui, sans-serif; color:var(--ink); background:var(--bg); line-height:1.5; }
+.wrap { width:min(980px,92%); margin:0 auto; }
+.nav { display:flex; justify-content:space-between; align-items:center; min-height:64px; }
+.logo { color:var(--blue); }
+nav a { margin-left:1rem; color:var(--ink); text-decoration:none; }
+.hero { background:#1e293b; color:#fff; padding:3.5rem 0; }
+.search { display:grid; grid-template-columns:2fr 1fr auto; gap:.5rem; margin-top:1.25rem; }
+input, button, .btn { font:inherit; padding:.7rem .8rem; border:0; border-radius:8px; }
+button, .btn { background:var(--blue); color:#fff; cursor:pointer; text-decoration:none; display:inline-block; }
+.section { padding:2.5rem 0; }
+.job { background:#fff; border:1px solid #e2e8f0; border-radius:10px; padding:1rem 1.2rem; margin:.75rem 0; }
+.tint { background:#e0e7ff; }
+.site-footer { padding:1.2rem 0; color:#64748b; }
+@media (max-width:700px){ .search{grid-template-columns:1fr;} }

@@ -1,0 +1,452 @@
+[
+  {
+    "type": "example",
+    "file": "01-basics/04-first-test/examples/01-starter-visit.html",
+    "focus": "starter visit",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/04-first-test/examples/02-login-flow.html",
+    "focus": "login flow",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/04-first-test/examples/03-form-submit.html",
+    "focus": "form submit",
+    "scenario": "checkout flow"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/04-first-test/examples/04-navigation.html",
+    "focus": "navigation",
+    "scenario": "admin panel"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/04-first-test/examples/05-data-attribute-selectors.html",
+    "focus": "data attribute selectors",
+    "scenario": "auth portal"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/04-first-test/examples/06-contains-text.html",
+    "focus": "contains text",
+    "scenario": "component library"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/04-first-test/examples/07-should-assertion.html",
+    "focus": "should assertion",
+    "scenario": "API-backed SPA"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/04-first-test/examples/08-url-check.html",
+    "focus": "url check",
+    "scenario": "mobile web app"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/04-first-test/examples/09-fixture-load.html",
+    "focus": "fixture load",
+    "scenario": "docs site"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/04-first-test/examples/10-env-config.html",
+    "focus": "env config",
+    "scenario": "booking app"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/04-first-test/examples/11-custom-command.html",
+    "focus": "custom command",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/04-first-test/examples/12-intercept-route.html",
+    "focus": "intercept route",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/04-first-test/examples/13-stub-response.html",
+    "focus": "stub response",
+    "scenario": "checkout flow"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/04-first-test/examples/14-session-cache.html",
+    "focus": "session cache",
+    "scenario": "admin panel"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/04-first-test/examples/15-api-request.html",
+    "focus": "api request",
+    "scenario": "auth portal"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/04-first-test/examples/16-component-mount.html",
+    "focus": "component mount",
+    "scenario": "component library"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/04-first-test/examples/17-screenshot-on-fail.html",
+    "focus": "screenshot on fail",
+    "scenario": "API-backed SPA"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/04-first-test/examples/18-video-record.html",
+    "focus": "video record",
+    "scenario": "mobile web app"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/04-first-test/examples/19-timeout-tune.html",
+    "focus": "timeout tune",
+    "scenario": "docs site"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/04-first-test/examples/20-retry-clarity.html",
+    "focus": "retry clarity",
+    "scenario": "booking app"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/04-first-test/examples/21-a11y-check.html",
+    "focus": "a11y check",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/04-first-test/examples/22-visual-snapshot.html",
+    "focus": "visual snapshot",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/04-first-test/examples/23-ci-run.html",
+    "focus": "ci run",
+    "scenario": "checkout flow"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/04-first-test/examples/24-parallel-split.html",
+    "focus": "parallel split",
+    "scenario": "admin panel"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/04-first-test/examples/25-best-practice-recap.html",
+    "focus": "best practice recap",
+    "scenario": "auth portal"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/04-first-test/exercises/01-install-challenge.html",
+    "focus": "install challenge",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/04-first-test/exercises/02-first-spec.html",
+    "focus": "first spec",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/04-first-test/exercises/03-selector-cleanup.html",
+    "focus": "selector cleanup",
+    "scenario": "checkout flow"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/04-first-test/exercises/04-click-type-drill.html",
+    "focus": "click type drill",
+    "scenario": "admin panel"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/04-first-test/exercises/05-assertion-practice.html",
+    "focus": "assertion practice",
+    "scenario": "auth portal"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/04-first-test/exercises/06-wait-intercept.html",
+    "focus": "wait intercept",
+    "scenario": "component library"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/04-first-test/exercises/07-fixture-usage.html",
+    "focus": "fixture usage",
+    "scenario": "API-backed SPA"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/04-first-test/exercises/08-env-variable.html",
+    "focus": "env variable",
+    "scenario": "mobile web app"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/04-first-test/exercises/09-config-tweak.html",
+    "focus": "config tweak",
+    "scenario": "docs site"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/04-first-test/exercises/10-custom-login.html",
+    "focus": "custom login",
+    "scenario": "booking app"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/04-first-test/exercises/11-overwrite-visit.html",
+    "focus": "overwrite visit",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/04-first-test/exercises/12-support-file.html",
+    "focus": "support file",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/04-first-test/exercises/13-network-stub.html",
+    "focus": "network stub",
+    "scenario": "checkout flow"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/04-first-test/exercises/14-spy-event.html",
+    "focus": "spy event",
+    "scenario": "admin panel"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/04-first-test/exercises/15-api-assert.html",
+    "focus": "api assert",
+    "scenario": "auth portal"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/04-first-test/exercises/16-session-login.html",
+    "focus": "session login",
+    "scenario": "component library"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/04-first-test/exercises/17-jwt-header.html",
+    "focus": "jwt header",
+    "scenario": "API-backed SPA"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/04-first-test/exercises/18-protected-route.html",
+    "focus": "protected route",
+    "scenario": "mobile web app"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/04-first-test/exercises/19-component-prop.html",
+    "focus": "component prop",
+    "scenario": "docs site"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/04-first-test/exercises/20-debug-failure.html",
+    "focus": "debug failure",
+    "scenario": "booking app"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/04-first-test/exercises/21-screenshot-task.html",
+    "focus": "screenshot task",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/04-first-test/exercises/22-github-action.html",
+    "focus": "github action",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/04-first-test/exercises/23-docker-run.html",
+    "focus": "docker run",
+    "scenario": "checkout flow"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/04-first-test/exercises/24-flake-fix.html",
+    "focus": "flake fix",
+    "scenario": "admin panel"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/04-first-test/exercises/25-final-challenge.html",
+    "focus": "final challenge",
+    "scenario": "auth portal"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/04-first-test/templates/01-e2e-starter.html",
+    "focus": "e2e starter",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/04-first-test/templates/02-component-starter.html",
+    "focus": "component starter",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/04-first-test/templates/03-login-kit.html",
+    "focus": "login kit",
+    "scenario": "checkout flow"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/04-first-test/templates/04-form-kit.html",
+    "focus": "form kit",
+    "scenario": "admin panel"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/04-first-test/templates/05-api-kit.html",
+    "focus": "api kit",
+    "scenario": "auth portal"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/04-first-test/templates/06-intercept-kit.html",
+    "focus": "intercept kit",
+    "scenario": "component library"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/04-first-test/templates/07-fixture-kit.html",
+    "focus": "fixture kit",
+    "scenario": "API-backed SPA"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/04-first-test/templates/08-session-kit.html",
+    "focus": "session kit",
+    "scenario": "mobile web app"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/04-first-test/templates/09-custom-commands.html",
+    "focus": "custom commands",
+    "scenario": "docs site"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/04-first-test/templates/10-support-setup.html",
+    "focus": "support setup",
+    "scenario": "booking app"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/04-first-test/templates/11-ci-github.html",
+    "focus": "ci github",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/04-first-test/templates/12-ci-jenkins.html",
+    "focus": "ci jenkins",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/04-first-test/templates/13-docker-compose.html",
+    "focus": "docker compose",
+    "scenario": "checkout flow"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/04-first-test/templates/14-parallel-ci.html",
+    "focus": "parallel ci",
+    "scenario": "admin panel"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/04-first-test/templates/15-a11y-kit.html",
+    "focus": "a11y kit",
+    "scenario": "auth portal"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/04-first-test/templates/16-visual-kit.html",
+    "focus": "visual kit",
+    "scenario": "component library"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/04-first-test/templates/17-react-ct.html",
+    "focus": "react ct",
+    "scenario": "API-backed SPA"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/04-first-test/templates/18-vue-ct.html",
+    "focus": "vue ct",
+    "scenario": "mobile web app"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/04-first-test/templates/19-angular-ct.html",
+    "focus": "angular ct",
+    "scenario": "docs site"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/04-first-test/templates/20-config-ts.html",
+    "focus": "config ts",
+    "scenario": "booking app"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/04-first-test/templates/21-env-staging.html",
+    "focus": "env staging",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/04-first-test/templates/22-page-object.html",
+    "focus": "page object",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/04-first-test/templates/23-data-factory.html",
+    "focus": "data factory",
+    "scenario": "checkout flow"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/04-first-test/templates/24-smoke-suite.html",
+    "focus": "smoke suite",
+    "scenario": "admin panel"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/04-first-test/templates/25-production-starter.html",
+    "focus": "production starter",
+    "scenario": "auth portal"
+  }
+]

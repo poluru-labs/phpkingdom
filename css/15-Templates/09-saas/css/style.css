@@ -1,0 +1,27 @@
+/*
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Templates/09-saas
+  example: css/style.css
+*/
+
+:root { --ink:#0f172a; --violet:#6d28d9; --bg:#faf5ff; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:system-ui, sans-serif; color:var(--ink); background:#fff; line-height:1.5; }
+.wrap { width:min(980px,92%); margin:0 auto; }
+.nav { display:flex; justify-content:space-between; align-items:center; min-height:66px; }
+.logo { color:var(--violet); }
+nav a { margin-left:1rem; color:var(--ink); text-decoration:none; }
+.hero { background:radial-gradient(circle at top right,#ddd6fe,transparent 45%), #0f172a; color:#fff; padding:4.5rem 0; }
+.btn, button { background:var(--violet); color:#fff; border:0; padding:.75rem 1.1rem; border-radius:999px; font:inherit; cursor:pointer; text-decoration:none; display:inline-block; }
+.section { padding:3rem 0; }
+.grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; }
+.grid article { border:1px solid #e9d5ff; border-radius:14px; padding:1.2rem; background:var(--bg); }
+.soft { background:var(--bg); }
+.price { font-size:2rem; margin:.5rem 0; }
+form { display:flex; gap:.5rem; flex-wrap:wrap; }
+input { font:inherit; padding:.7rem .8rem; border:1px solid #cbd5e1; border-radius:999px; min-width:240px; }
+.site-footer { padding:1.3rem 0; color:#64748b; border-top:1px solid #e2e8f0; }
+@media (max-width:760px){ .grid{grid-template-columns:1fr;} }

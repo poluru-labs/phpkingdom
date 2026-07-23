@@ -1,0 +1,29 @@
+/*
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Templates/07-real-estate
+  example: css/style.css
+*/
+
+:root { --ink:#1f2937; --green:#3f6212; --bg:#f7f8f4; }
+* { box-sizing:border-box; }
+body { margin:0; font-family:system-ui, sans-serif; color:var(--ink); background:var(--bg); line-height:1.5; }
+.wrap { width:min(1040px,92%); margin:0 auto; }
+.nav { display:flex; justify-content:space-between; align-items:center; min-height:66px; }
+.logo { color:var(--green); }
+nav a { margin-left:1rem; color:var(--ink); text-decoration:none; }
+.hero { background:linear-gradient(120deg,#3f6212,#65a30d); color:#fff; padding:3.5rem 0; }
+.search { display:grid; grid-template-columns:2fr 1fr auto; gap:.5rem; margin-top:1rem; }
+input, select, button { font:inherit; padding:.7rem; border:0; border-radius:8px; }
+button { background:#1f2937; color:#fff; cursor:pointer; }
+.section { padding:2.75rem 0; }
+.grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1rem; }
+.card { background:#fff; border:1px solid #e5e7eb; overflow:hidden; }
+.photo { min-height:150px; }
+.p1{background:#bbf7d0;} .p2{background:#a7f3d0;} .p3{background:#d9f99d;}
+.card h3, .card p { padding:0 1rem; }
+.tint { background:#ecfccb; }
+.site-footer { padding:1.2rem 0; color:#6b7280; }
+@media (max-width:760px){ .grid,.search{grid-template-columns:1fr;} }

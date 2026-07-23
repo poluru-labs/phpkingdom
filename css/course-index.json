@@ -1,0 +1,304 @@
+{
+  "title": "CSS Tutorials",
+  "items": [
+    {
+      "title": "Basics",
+      "items": [
+        {
+          "href": "/tutorials/css/introduction",
+          "label": "Introduction"
+        },
+        {
+          "href": "/tutorials/css/basics",
+          "label": "Basics"
+        },
+        {
+          "href": "/tutorials/css/syntax",
+          "label": "Syntax"
+        },
+        {
+          "href": "/tutorials/css/selectors",
+          "label": "Selectors"
+        },
+        {
+          "href": "/tutorials/css/how-to-add-css",
+          "label": "How To Add Css"
+        }
+      ]
+    },
+    {
+      "title": "Core Concepts",
+      "items": [
+        {
+          "href": "/tutorials/css/colors",
+          "label": "Colors"
+        },
+        {
+          "href": "/tutorials/css/backgrounds",
+          "label": "Backgrounds"
+        },
+        {
+          "href": "/tutorials/css/units",
+          "label": "Units"
+        },
+        {
+          "href": "/tutorials/css/box-model",
+          "label": "Box Model"
+        },
+        {
+          "href": "/tutorials/css/margin-padding",
+          "label": "Margin Padding"
+        },
+        {
+          "href": "/tutorials/css/borders",
+          "label": "Borders"
+        }
+      ]
+    },
+    {
+      "title": "Text",
+      "items": [
+        {
+          "href": "/tutorials/css/fonts",
+          "label": "Fonts"
+        },
+        {
+          "href": "/tutorials/css/text",
+          "label": "Text"
+        },
+        {
+          "href": "/tutorials/css/typography",
+          "label": "Typography"
+        },
+        {
+          "href": "/tutorials/css/icons",
+          "label": "Icons"
+        }
+      ]
+    },
+    {
+      "title": "Layout",
+      "items": [
+        {
+          "href": "/tutorials/css/display",
+          "label": "Display"
+        },
+        {
+          "href": "/tutorials/css/position",
+          "label": "Position"
+        },
+        {
+          "href": "/tutorials/css/z-index",
+          "label": "Z Index"
+        },
+        {
+          "href": "/tutorials/css/float-clear",
+          "label": "Float Clear"
+        },
+        {
+          "href": "/tutorials/css/overflow",
+          "label": "Overflow"
+        },
+        {
+          "href": "/tutorials/css/logical-properties",
+          "label": "Logical Properties"
+        }
+      ]
+    },
+    {
+      "title": "Flexbox",
+      "items": [
+        {
+          "href": "/tutorials/css/flexbox",
+          "label": "Flexbox"
+        },
+        {
+          "href": "/tutorials/css/flex-container",
+          "label": "Flex Container"
+        },
+        {
+          "href": "/tutorials/css/flex-items",
+          "label": "Flex Items"
+        },
+        {
+          "href": "/tutorials/css/flexbox-examples",
+          "label": "Flexbox Examples"
+        }
+      ]
+    },
+    {
+      "title": "Grid",
+      "items": [
+        {
+          "href": "/tutorials/css/grid",
+          "label": "Grid"
+        },
+        {
+          "href": "/tutorials/css/grid-container",
+          "label": "Grid Container"
+        },
+        {
+          "href": "/tutorials/css/grid-items",
+          "label": "Grid Items"
+        },
+        {
+          "href": "/tutorials/css/grid-examples",
+          "label": "Grid Examples"
+        },
+        {
+          "href": "/tutorials/css/subgrid",
+          "label": "Subgrid"
+        }
+      ]
+    },
+    {
+      "title": "Responsive",
+      "items": [
+        {
+          "href": "/tutorials/css/responsive-web-design",
+          "label": "Responsive Web Design"
+        },
+        {
+          "href": "/tutorials/css/media-queries",
+          "label": "Media Queries"
+        },
+        {
+          "href": "/tutorials/css/mobile-first-design",
+          "label": "Mobile First Design"
+        },
+        {
+          "href": "/tutorials/css/responsive-images",
+          "label": "Responsive Images"
+        },
+        {
+          "href": "/tutorials/css/responsive-layouts",
+          "label": "Responsive Layouts"
+        }
+      ]
+    },
+    {
+      "title": "Effects",
+      "items": [
+        {
+          "href": "/tutorials/css/pseudo-classes",
+          "label": "Pseudo Classes"
+        },
+        {
+          "href": "/tutorials/css/pseudo-elements",
+          "label": "Pseudo Elements"
+        },
+        {
+          "href": "/tutorials/css/transitions",
+          "label": "Transitions"
+        },
+        {
+          "href": "/tutorials/css/transforms",
+          "label": "Transforms"
+        },
+        {
+          "href": "/tutorials/css/animations",
+          "label": "Animations"
+        },
+        {
+          "href": "/tutorials/css/shadows",
+          "label": "Shadows"
+        },
+        {
+          "href": "/tutorials/css/scroll-driven",
+          "label": "Scroll Driven"
+        }
+      ]
+    },
+    {
+      "title": "Advanced",
+      "items": [
+        {
+          "href": "/tutorials/css/variables",
+          "label": "Variables"
+        },
+        {
+          "href": "/tutorials/css/specificity",
+          "label": "Specificity"
+        },
+        {
+          "href": "/tutorials/css/inheritance",
+          "label": "Inheritance"
+        },
+        {
+          "href": "/tutorials/css/cascade",
+          "label": "Cascade"
+        },
+        {
+          "href": "/tutorials/css/functions",
+          "label": "Functions"
+        },
+        {
+          "href": "/tutorials/css/modern-css-features",
+          "label": "Modern Css Features"
+        },
+        {
+          "href": "/tutorials/css/container-queries",
+          "label": "Container Queries"
+        },
+        {
+          "href": "/tutorials/css/has-selector",
+          "label": "Has Selector"
+        },
+        {
+          "href": "/tutorials/css/cascade-layers",
+          "label": "Cascade Layers"
+        },
+        {
+          "href": "/tutorials/css/color-mix",
+          "label": "Color Mix"
+        }
+      ]
+    },
+    {
+      "title": "Components",
+      "items": [
+        {
+          "href": "/tutorials/css/common-components",
+          "label": "Common Components"
+        },
+        {
+          "href": "/tutorials/css/forms",
+          "label": "Forms"
+        },
+        {
+          "href": "/tutorials/css/tables",
+          "label": "Tables"
+        },
+        {
+          "href": "/tutorials/css/navigation",
+          "label": "Navigation"
+        },
+        {
+          "href": "/tutorials/css/ui-pieces",
+          "label": "Ui Pieces"
+        }
+      ]
+    },
+    {
+      "title": "Accessibility",
+      "items": [
+        {
+          "href": "/tutorials/css/accessibility",
+          "label": "Accessibility"
+        },
+        {
+          "href": "/tutorials/css/focus-states",
+          "label": "Focus States"
+        },
+        {
+          "href": "/tutorials/css/color-contrast",
+          "label": "Color Contrast"
+        },
+        {
+          "href": "/tutorials/css/reduced-motion",
+          "label": "Reduced Motion"
+        }
+      ]
+    }
+  ]
+}

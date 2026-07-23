@@ -1,0 +1,2 @@
+/* Style Guide · Tokens · phpkingdom.com */
+:root{--brand:#0f766e;--ink:#1a1a1a;--muted:#64748b;--space:1rem}body{margin:0;font-family:Georgia,serif;color:var(--ink);background:#f8fafc}.wrap{max-width:40rem;margin:0 auto;padding:2rem}.swatch{height:3rem;background:var(--brand);border-radius:8px;margin:var(--space) 0}.muted{color:var(--muted)}

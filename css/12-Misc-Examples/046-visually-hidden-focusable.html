@@ -1,0 +1,28 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 12-Misc-Examples
+  example: 046-visually-hidden-focusable.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>046 — Focusable skip | phpkingdom.com</title>
+  <style>
+    body { font-family: Georgia, 'Times New Roman', serif; margin: 1.5rem; line-height: 1.5; }
+    h1 { font-size: 1.25rem; }
+    .demo { margin-top: 1rem; }
+.skip{position:absolute;left:-999px}.skip:focus{left:0;background:#000;color:#fff;padding:.5rem}
+  </style>
+</head>
+<body>
+  <h1>046 — Focusable skip</h1>
+  <div class="demo">
+<a class='skip' href='#main'>Skip</a><main id='main'>Content</main>
+  </div>
+</body>
+</html>
