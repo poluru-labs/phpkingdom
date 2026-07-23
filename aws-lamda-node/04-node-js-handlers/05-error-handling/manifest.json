@@ -1,0 +1,452 @@
+[
+  {
+    "type": "example",
+    "file": "04-node-js-handlers/05-error-handling/examples/01-hello-handler.html",
+    "focus": "hello handler",
+    "scenario": "REST microservice"
+  },
+  {
+    "type": "example",
+    "file": "04-node-js-handlers/05-error-handling/examples/02-event-parse.html",
+    "focus": "event parse",
+    "scenario": "file pipeline"
+  },
+  {
+    "type": "example",
+    "file": "04-node-js-handlers/05-error-handling/examples/03-context-inspect.html",
+    "focus": "context inspect",
+    "scenario": "queue worker"
+  },
+  {
+    "type": "example",
+    "file": "04-node-js-handlers/05-error-handling/examples/04-env-config.html",
+    "focus": "env config",
+    "scenario": "scheduled job"
+  },
+  {
+    "type": "example",
+    "file": "04-node-js-handlers/05-error-handling/examples/05-api-response.html",
+    "focus": "api response",
+    "scenario": "auth API"
+  },
+  {
+    "type": "example",
+    "file": "04-node-js-handlers/05-error-handling/examples/06-dynamo-get.html",
+    "focus": "dynamo get",
+    "scenario": "image service"
+  },
+  {
+    "type": "example",
+    "file": "04-node-js-handlers/05-error-handling/examples/07-dynamo-put.html",
+    "focus": "dynamo put",
+    "scenario": "notification hub"
+  },
+  {
+    "type": "example",
+    "file": "04-node-js-handlers/05-error-handling/examples/08-s3-upload.html",
+    "focus": "s3 upload",
+    "scenario": "order workflow"
+  },
+  {
+    "type": "example",
+    "file": "04-node-js-handlers/05-error-handling/examples/09-sqs-consume.html",
+    "focus": "sqs consume",
+    "scenario": "webhook receiver"
+  },
+  {
+    "type": "example",
+    "file": "04-node-js-handlers/05-error-handling/examples/10-sns-publish.html",
+    "focus": "sns publish",
+    "scenario": "data sync"
+  },
+  {
+    "type": "example",
+    "file": "04-node-js-handlers/05-error-handling/examples/11-eventbridge-rule.html",
+    "focus": "eventbridge rule",
+    "scenario": "REST microservice"
+  },
+  {
+    "type": "example",
+    "file": "04-node-js-handlers/05-error-handling/examples/12-jwt-verify.html",
+    "focus": "jwt verify",
+    "scenario": "file pipeline"
+  },
+  {
+    "type": "example",
+    "file": "04-node-js-handlers/05-error-handling/examples/13-secrets-fetch.html",
+    "focus": "secrets fetch",
+    "scenario": "queue worker"
+  },
+  {
+    "type": "example",
+    "file": "04-node-js-handlers/05-error-handling/examples/14-layer-import.html",
+    "focus": "layer import",
+    "scenario": "scheduled job"
+  },
+  {
+    "type": "example",
+    "file": "04-node-js-handlers/05-error-handling/examples/15-esbuild-bundle.html",
+    "focus": "esbuild bundle",
+    "scenario": "auth API"
+  },
+  {
+    "type": "example",
+    "file": "04-node-js-handlers/05-error-handling/examples/16-sam-invoke.html",
+    "focus": "sam invoke",
+    "scenario": "image service"
+  },
+  {
+    "type": "example",
+    "file": "04-node-js-handlers/05-error-handling/examples/17-cdk-construct.html",
+    "focus": "cdk construct",
+    "scenario": "notification hub"
+  },
+  {
+    "type": "example",
+    "file": "04-node-js-handlers/05-error-handling/examples/18-jest-unit.html",
+    "focus": "jest unit",
+    "scenario": "order workflow"
+  },
+  {
+    "type": "example",
+    "file": "04-node-js-handlers/05-error-handling/examples/19-structured-log.html",
+    "focus": "structured log",
+    "scenario": "webhook receiver"
+  },
+  {
+    "type": "example",
+    "file": "04-node-js-handlers/05-error-handling/examples/20-xray-segment.html",
+    "focus": "xray segment",
+    "scenario": "data sync"
+  },
+  {
+    "type": "example",
+    "file": "04-node-js-handlers/05-error-handling/examples/21-cold-start-tip.html",
+    "focus": "cold start tip",
+    "scenario": "REST microservice"
+  },
+  {
+    "type": "example",
+    "file": "04-node-js-handlers/05-error-handling/examples/22-idempotent-write.html",
+    "focus": "idempotent write",
+    "scenario": "file pipeline"
+  },
+  {
+    "type": "example",
+    "file": "04-node-js-handlers/05-error-handling/examples/23-cors-headers.html",
+    "focus": "cors headers",
+    "scenario": "queue worker"
+  },
+  {
+    "type": "example",
+    "file": "04-node-js-handlers/05-error-handling/examples/24-dlq-setup.html",
+    "focus": "dlq setup",
+    "scenario": "scheduled job"
+  },
+  {
+    "type": "example",
+    "file": "04-node-js-handlers/05-error-handling/examples/25-best-practice-recap.html",
+    "focus": "best practice recap",
+    "scenario": "auth API"
+  },
+  {
+    "type": "exercise",
+    "file": "04-node-js-handlers/05-error-handling/exercises/01-cli-verify.html",
+    "focus": "cli verify",
+    "scenario": "REST microservice"
+  },
+  {
+    "type": "exercise",
+    "file": "04-node-js-handlers/05-error-handling/exercises/02-create-function.html",
+    "focus": "create function",
+    "scenario": "file pipeline"
+  },
+  {
+    "type": "exercise",
+    "file": "04-node-js-handlers/05-error-handling/exercises/03-async-handler.html",
+    "focus": "async handler",
+    "scenario": "queue worker"
+  },
+  {
+    "type": "exercise",
+    "file": "04-node-js-handlers/05-error-handling/exercises/04-proxy-event.html",
+    "focus": "proxy event",
+    "scenario": "scheduled job"
+  },
+  {
+    "type": "exercise",
+    "file": "04-node-js-handlers/05-error-handling/exercises/05-path-params.html",
+    "focus": "path params",
+    "scenario": "auth API"
+  },
+  {
+    "type": "exercise",
+    "file": "04-node-js-handlers/05-error-handling/exercises/06-post-body.html",
+    "focus": "post body",
+    "scenario": "image service"
+  },
+  {
+    "type": "exercise",
+    "file": "04-node-js-handlers/05-error-handling/exercises/07-dynamo-crud.html",
+    "focus": "dynamo crud",
+    "scenario": "notification hub"
+  },
+  {
+    "type": "exercise",
+    "file": "04-node-js-handlers/05-error-handling/exercises/08-s3-trigger.html",
+    "focus": "s3 trigger",
+    "scenario": "order workflow"
+  },
+  {
+    "type": "exercise",
+    "file": "04-node-js-handlers/05-error-handling/exercises/09-sqs-batch.html",
+    "focus": "sqs batch",
+    "scenario": "webhook receiver"
+  },
+  {
+    "type": "exercise",
+    "file": "04-node-js-handlers/05-error-handling/exercises/10-schedule-cron.html",
+    "focus": "schedule cron",
+    "scenario": "data sync"
+  },
+  {
+    "type": "exercise",
+    "file": "04-node-js-handlers/05-error-handling/exercises/11-sdk-v3-client.html",
+    "focus": "sdk v3 client",
+    "scenario": "REST microservice"
+  },
+  {
+    "type": "exercise",
+    "file": "04-node-js-handlers/05-error-handling/exercises/12-authorizer.html",
+    "focus": "authorizer",
+    "scenario": "file pipeline"
+  },
+  {
+    "type": "exercise",
+    "file": "04-node-js-handlers/05-error-handling/exercises/13-parameter-store.html",
+    "focus": "parameter store",
+    "scenario": "queue worker"
+  },
+  {
+    "type": "exercise",
+    "file": "04-node-js-handlers/05-error-handling/exercises/14-zip-deploy.html",
+    "focus": "zip deploy",
+    "scenario": "scheduled job"
+  },
+  {
+    "type": "exercise",
+    "file": "04-node-js-handlers/05-error-handling/exercises/15-serverless-yml.html",
+    "focus": "serverless yml",
+    "scenario": "auth API"
+  },
+  {
+    "type": "exercise",
+    "file": "04-node-js-handlers/05-error-handling/exercises/16-sam-local.html",
+    "focus": "sam local",
+    "scenario": "image service"
+  },
+  {
+    "type": "exercise",
+    "file": "04-node-js-handlers/05-error-handling/exercises/17-cdk-deploy.html",
+    "focus": "cdk deploy",
+    "scenario": "notification hub"
+  },
+  {
+    "type": "exercise",
+    "file": "04-node-js-handlers/05-error-handling/exercises/18-mock-sdk.html",
+    "focus": "mock sdk",
+    "scenario": "order workflow"
+  },
+  {
+    "type": "exercise",
+    "file": "04-node-js-handlers/05-error-handling/exercises/19-cloudwatch-log.html",
+    "focus": "cloudwatch log",
+    "scenario": "webhook receiver"
+  },
+  {
+    "type": "exercise",
+    "file": "04-node-js-handlers/05-error-handling/exercises/20-timeout-fix.html",
+    "focus": "timeout fix",
+    "scenario": "data sync"
+  },
+  {
+    "type": "exercise",
+    "file": "04-node-js-handlers/05-error-handling/exercises/21-memory-tune.html",
+    "focus": "memory tune",
+    "scenario": "REST microservice"
+  },
+  {
+    "type": "exercise",
+    "file": "04-node-js-handlers/05-error-handling/exercises/22-reserved-concurrency.html",
+    "focus": "reserved concurrency",
+    "scenario": "file pipeline"
+  },
+  {
+    "type": "exercise",
+    "file": "04-node-js-handlers/05-error-handling/exercises/23-github-actions.html",
+    "focus": "github actions",
+    "scenario": "queue worker"
+  },
+  {
+    "type": "exercise",
+    "file": "04-node-js-handlers/05-error-handling/exercises/24-step-function.html",
+    "focus": "step function",
+    "scenario": "scheduled job"
+  },
+  {
+    "type": "exercise",
+    "file": "04-node-js-handlers/05-error-handling/exercises/25-final-challenge.html",
+    "focus": "final challenge",
+    "scenario": "auth API"
+  },
+  {
+    "type": "template",
+    "file": "04-node-js-handlers/05-error-handling/templates/01-hello-world.html",
+    "focus": "hello world",
+    "scenario": "REST microservice"
+  },
+  {
+    "type": "template",
+    "file": "04-node-js-handlers/05-error-handling/templates/02-http-api.html",
+    "focus": "http api",
+    "scenario": "file pipeline"
+  },
+  {
+    "type": "template",
+    "file": "04-node-js-handlers/05-error-handling/templates/03-rest-crud.html",
+    "focus": "rest crud",
+    "scenario": "queue worker"
+  },
+  {
+    "type": "template",
+    "file": "04-node-js-handlers/05-error-handling/templates/04-file-upload.html",
+    "focus": "file upload",
+    "scenario": "scheduled job"
+  },
+  {
+    "type": "template",
+    "file": "04-node-js-handlers/05-error-handling/templates/05-image-resize.html",
+    "focus": "image resize",
+    "scenario": "auth API"
+  },
+  {
+    "type": "template",
+    "file": "04-node-js-handlers/05-error-handling/templates/06-sqs-worker.html",
+    "focus": "sqs worker",
+    "scenario": "image service"
+  },
+  {
+    "type": "template",
+    "file": "04-node-js-handlers/05-error-handling/templates/07-sns-fanout.html",
+    "focus": "sns fanout",
+    "scenario": "notification hub"
+  },
+  {
+    "type": "template",
+    "file": "04-node-js-handlers/05-error-handling/templates/08-scheduled-job.html",
+    "focus": "scheduled job",
+    "scenario": "order workflow"
+  },
+  {
+    "type": "template",
+    "file": "04-node-js-handlers/05-error-handling/templates/09-cognito-jwt.html",
+    "focus": "cognito jwt",
+    "scenario": "webhook receiver"
+  },
+  {
+    "type": "template",
+    "file": "04-node-js-handlers/05-error-handling/templates/10-secrets-layer.html",
+    "focus": "secrets layer",
+    "scenario": "data sync"
+  },
+  {
+    "type": "template",
+    "file": "04-node-js-handlers/05-error-handling/templates/11-esbuild-pack.html",
+    "focus": "esbuild pack",
+    "scenario": "REST microservice"
+  },
+  {
+    "type": "template",
+    "file": "04-node-js-handlers/05-error-handling/templates/12-serverless-app.html",
+    "focus": "serverless app",
+    "scenario": "file pipeline"
+  },
+  {
+    "type": "template",
+    "file": "04-node-js-handlers/05-error-handling/templates/13-sam-template.html",
+    "focus": "sam template",
+    "scenario": "queue worker"
+  },
+  {
+    "type": "template",
+    "file": "04-node-js-handlers/05-error-handling/templates/14-cdk-stack.html",
+    "focus": "cdk stack",
+    "scenario": "scheduled job"
+  },
+  {
+    "type": "template",
+    "file": "04-node-js-handlers/05-error-handling/templates/15-jest-suite.html",
+    "focus": "jest suite",
+    "scenario": "auth API"
+  },
+  {
+    "type": "template",
+    "file": "04-node-js-handlers/05-error-handling/templates/16-localstack.html",
+    "focus": "localstack",
+    "scenario": "image service"
+  },
+  {
+    "type": "template",
+    "file": "04-node-js-handlers/05-error-handling/templates/17-observability.html",
+    "focus": "observability",
+    "scenario": "notification hub"
+  },
+  {
+    "type": "template",
+    "file": "04-node-js-handlers/05-error-handling/templates/18-provisioned.html",
+    "focus": "provisioned",
+    "scenario": "order workflow"
+  },
+  {
+    "type": "template",
+    "file": "04-node-js-handlers/05-error-handling/templates/19-vpc-lambda.html",
+    "focus": "vpc lambda",
+    "scenario": "webhook receiver"
+  },
+  {
+    "type": "template",
+    "file": "04-node-js-handlers/05-error-handling/templates/20-canary-alias.html",
+    "focus": "canary alias",
+    "scenario": "data sync"
+  },
+  {
+    "type": "template",
+    "file": "04-node-js-handlers/05-error-handling/templates/21-step-workflow.html",
+    "focus": "step workflow",
+    "scenario": "REST microservice"
+  },
+  {
+    "type": "template",
+    "file": "04-node-js-handlers/05-error-handling/templates/22-container-image.html",
+    "focus": "container image",
+    "scenario": "file pipeline"
+  },
+  {
+    "type": "template",
+    "file": "04-node-js-handlers/05-error-handling/templates/23-notification.html",
+    "focus": "notification",
+    "scenario": "queue worker"
+  },
+  {
+    "type": "template",
+    "file": "04-node-js-handlers/05-error-handling/templates/24-order-pipeline.html",
+    "focus": "order pipeline",
+    "scenario": "scheduled job"
+  },
+  {
+    "type": "template",
+    "file": "04-node-js-handlers/05-error-handling/templates/25-production-starter.html",
+    "focus": "production starter",
+    "scenario": "auth API"
+  }
+]

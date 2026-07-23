@@ -1,0 +1,136 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Apache Kafka with Node.js Tutorials
+section title: Message Delivery
+topic title: Kafka Message Delivery
+content type: Exercise
+item number: 02
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Kafka Message Delivery Exercise 02 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #dbeafe;
+      color: #1e40af;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Exercise 02</span>
+    <h1>Kafka Message Delivery</h1>
+    <p><strong>Section:</strong> Message Delivery</p>
+    <p><strong>Focus:</strong> Docker Up</p>
+    <p><strong>Scenario:</strong> notification hub</p>
+    <p>Run producer/consumer locally against Docker Kafka and verify offsets.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>KafkaJS (Node.js)</h2>
+        <pre><code>// Kafka Message Delivery — Exercise 02
+// Focus: docker up | Scenario: notification hub
+
+// KafkaJS topic: Kafka Message Delivery
+import { Kafka, logLevel } from &quot;kafkajs&quot;;
+
+const kafka = new Kafka({
+  clientId: &quot;phpkingdom-message-delivery&quot;,
+  brokers: [process.env.KAFKA_BROKERS || &quot;localhost:9092&quot;],
+  logLevel: logLevel.INFO,
+});
+
+export async function demo_message_delivery(payload = {}) {
+  const producer = kafka.producer({ idempotent: true });
+  await producer.connect();
+  try {
+    await producer.send({
+      topic: process.env.KAFKA_TOPIC || &quot;message-delivery-events&quot;,
+      messages: [{
+        key: payload.key || &quot;demo&quot;,
+        value: JSON.stringify({ topic: &quot;message-delivery&quot;, label: &quot;Kafka Message Delivery&quot;, ...payload }),
+      }],
+    });
+  } finally {
+    await producer.disconnect();
+  }
+}
+
+export const TOPIC_MESSAGE_DELIVERY = &quot;message-delivery&quot;;
+</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Kafka Message Delivery
+- Practice: docker up
+- Scenario: notification hub
+- Prefer idempotent producers and explicit keys for ordering
+- Commit offsets after successful processing (at-least-once)
+- Use DLQ/retry topics for poison messages
+- Never log secrets; include correlation IDs in headers
+
+Useful commands:
+  docker compose up -d
+  npm install kafkajs
+  node producer.js
+  node consumer.js
+  kafka-topics.sh --bootstrap-server localhost:9092 --list</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This exercise shows one way to apply <strong>Kafka Message Delivery</strong> in a notification hub context.</p>
+      <p>Design keys for partition affinity, monitor consumer lag, and keep schemas evolving safely.</p>
+    </section>
+  </main>
+</body>
+</html>

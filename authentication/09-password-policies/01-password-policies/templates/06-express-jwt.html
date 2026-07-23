@@ -1,0 +1,132 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Authentication Tutorials
+section title: Password Policies
+topic title: Password Policies
+content type: Template
+item number: 06
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Password Policies Template 06 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #e0e7ff;
+      color: #3730a3;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Template 06</span>
+    <h1>Password Policies</h1>
+    <p><strong>Section:</strong> Password Policies</p>
+    <p><strong>Focus:</strong> Express Jwt</p>
+    <p><strong>Scenario:</strong> enterprise SSO</p>
+    <p>Use this scaffold as a starting point for a secure auth feature.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Authentication (Node.js)</h2>
+        <pre><code>// Password Policies — Template 06
+// Focus: express jwt | Scenario: enterprise SSO
+
+// Authentication topic: Password Policies
+import crypto from &quot;node:crypto&quot;;
+
+export async function handle_password_policies(input = {}) {
+  const requestId = crypto.randomUUID();
+  // Apply secure defaults for &quot;password-policies&quot;
+  return {
+    ok: true,
+    topic: &quot;password-policies&quot;,
+    label: &quot;Password Policies&quot;,
+    requestId,
+    input,
+  };
+}
+
+export function assertAuthContext(user) {
+  if (!user?.id) {
+    const err = new Error(&quot;Unauthorized&quot;);
+    err.status = 401;
+    throw err;
+  }
+  return user;
+}
+</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Password Policies
+- Practice: express jwt
+- Scenario: enterprise SSO
+- Hash passwords with Argon2id/bcrypt; never store plaintext
+- Prefer HttpOnly + Secure + SameSite cookies for browser sessions
+- Short-lived access tokens; rotate refresh tokens; revoke on logout
+- Generic login errors; rate-limit; log security events
+
+Useful commands:
+  npm install bcrypt jsonwebtoken
+  # or: npm install argon2 jose
+  node server.mjs
+  curl -H &quot;Authorization: Bearer &lt;token&gt;&quot; http://localhost:3000/me</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This template shows one way to apply <strong>Password Policies</strong> in a enterprise sso context.</p>
+      <p>Treat auth as a product surface: secure defaults, clear UX, MFA where needed, and continuous monitoring.</p>
+    </section>
+  </main>
+</body>
+</html>

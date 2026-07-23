@@ -1,0 +1,970 @@
+{
+  "title": "Apache Kafka with Node.js Tutorials",
+  "items": [
+    {
+      "title": "Apache Kafka Basics",
+      "items": [
+        {
+          "href": "/tutorials/apache-kafka-nodejs/introduction",
+          "label": "Apache Kafka - Introduction"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/basics",
+          "label": "Apache Kafka - Basics"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/event-streaming",
+          "label": "Event Streaming"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/how-kafka-works",
+          "label": "How Apache Kafka Works"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/use-cases",
+          "label": "Apache Kafka Use Cases"
+        }
+      ]
+    },
+    {
+      "title": "Setup and Installation",
+      "items": [
+        {
+          "href": "/tutorials/apache-kafka-nodejs/nodejs-setup",
+          "label": "Node.js Setup"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/kafka-installation",
+          "label": "Apache Kafka Installation"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/docker-setup",
+          "label": "Kafka with Docker"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/kafkajs-setup",
+          "label": "KafkaJS Setup"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/first-application",
+          "label": "First Kafka Application"
+        }
+      ]
+    },
+    {
+      "title": "Kafka Architecture",
+      "items": [
+        {
+          "href": "/tutorials/apache-kafka-nodejs/architecture",
+          "label": "Kafka Architecture"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/brokers",
+          "label": "Kafka Brokers"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/clusters",
+          "label": "Kafka Clusters"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/controllers",
+          "label": "Kafka Controllers"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/kraft",
+          "label": "Kafka KRaft Mode"
+        }
+      ]
+    },
+    {
+      "title": "Topics and Partitions",
+      "items": [
+        {
+          "href": "/tutorials/apache-kafka-nodejs/topics",
+          "label": "Kafka Topics"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/partitions",
+          "label": "Kafka Partitions"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/partition-leaders",
+          "label": "Partition Leaders"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/replication",
+          "label": "Topic Replication"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/retention",
+          "label": "Message Retention"
+        }
+      ]
+    },
+    {
+      "title": "KafkaJS",
+      "items": [
+        {
+          "href": "/tutorials/apache-kafka-nodejs/kafkajs",
+          "label": "KafkaJS"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/kafkajs-client",
+          "label": "KafkaJS Client"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/kafkajs-configuration",
+          "label": "KafkaJS Configuration"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/kafkajs-logging",
+          "label": "KafkaJS Logging"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/kafkajs-events",
+          "label": "KafkaJS Events"
+        }
+      ]
+    },
+    {
+      "title": "Kafka Producers",
+      "items": [
+        {
+          "href": "/tutorials/apache-kafka-nodejs/producers",
+          "label": "Kafka Producers"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/create-producer",
+          "label": "Create a Node.js Producer"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/send-message",
+          "label": "Send Kafka Messages"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/message-keys",
+          "label": "Kafka Message Keys"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/producer-configuration",
+          "label": "Producer Configuration"
+        }
+      ]
+    },
+    {
+      "title": "Producer Reliability",
+      "items": [
+        {
+          "href": "/tutorials/apache-kafka-nodejs/producer-acknowledgments",
+          "label": "Producer Acknowledgments"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/idempotent-producer",
+          "label": "Idempotent Producer"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/producer-retries",
+          "label": "Producer Retries"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/message-batching",
+          "label": "Message Batching"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/message-compression",
+          "label": "Message Compression"
+        }
+      ]
+    },
+    {
+      "title": "Kafka Consumers",
+      "items": [
+        {
+          "href": "/tutorials/apache-kafka-nodejs/consumers",
+          "label": "Kafka Consumers"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/create-consumer",
+          "label": "Create a Node.js Consumer"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/consume-messages",
+          "label": "Consume Kafka Messages"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/consumer-configuration",
+          "label": "Consumer Configuration"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/message-processing",
+          "label": "Message Processing"
+        }
+      ]
+    },
+    {
+      "title": "Consumer Groups",
+      "items": [
+        {
+          "href": "/tutorials/apache-kafka-nodejs/consumer-groups",
+          "label": "Kafka Consumer Groups"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/group-coordinator",
+          "label": "Group Coordinator"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/partition-assignment",
+          "label": "Partition Assignment"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/consumer-rebalancing",
+          "label": "Consumer Rebalancing"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/static-membership",
+          "label": "Static Group Membership"
+        }
+      ]
+    },
+    {
+      "title": "Offsets",
+      "items": [
+        {
+          "href": "/tutorials/apache-kafka-nodejs/consumer-offsets",
+          "label": "Kafka Consumer Offsets"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/auto-commit",
+          "label": "Automatic Offset Commit"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/manual-commit",
+          "label": "Manual Offset Commit"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/seek-offset",
+          "label": "Seek to an Offset"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/reset-offsets",
+          "label": "Reset Consumer Offsets"
+        }
+      ]
+    },
+    {
+      "title": "Message Delivery",
+      "items": [
+        {
+          "href": "/tutorials/apache-kafka-nodejs/message-delivery",
+          "label": "Kafka Message Delivery"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/at-most-once",
+          "label": "At-Most-Once Delivery"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/at-least-once",
+          "label": "At-Least-Once Delivery"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/exactly-once",
+          "label": "Exactly-Once Semantics"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/duplicate-messages",
+          "label": "Handle Duplicate Messages"
+        }
+      ]
+    },
+    {
+      "title": "Serialization",
+      "items": [
+        {
+          "href": "/tutorials/apache-kafka-nodejs/serialization",
+          "label": "Kafka Serialization"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/json-messages",
+          "label": "JSON Messages"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/binary-messages",
+          "label": "Binary Messages"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/avro",
+          "label": "Apache Avro"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/protobuf",
+          "label": "Protocol Buffers"
+        }
+      ]
+    },
+    {
+      "title": "Schema Management",
+      "items": [
+        {
+          "href": "/tutorials/apache-kafka-nodejs/schema-registry",
+          "label": "Kafka Schema Registry"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/schema-evolution",
+          "label": "Schema Evolution"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/schema-compatibility",
+          "label": "Schema Compatibility"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/schema-validation",
+          "label": "Schema Validation"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/schema-versioning",
+          "label": "Schema Versioning"
+        }
+      ]
+    },
+    {
+      "title": "Event Design",
+      "items": [
+        {
+          "href": "/tutorials/apache-kafka-nodejs/event-design",
+          "label": "Kafka Event Design"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/event-envelope",
+          "label": "Event Envelope"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/event-metadata",
+          "label": "Event Metadata"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/event-versioning",
+          "label": "Event Versioning"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/event-naming",
+          "label": "Event Naming Conventions"
+        }
+      ]
+    },
+    {
+      "title": "Error Handling",
+      "items": [
+        {
+          "href": "/tutorials/apache-kafka-nodejs/error-handling",
+          "label": "Kafka Error Handling"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/producer-errors",
+          "label": "Producer Errors"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/consumer-errors",
+          "label": "Consumer Errors"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/retry-topics",
+          "label": "Retry Topics"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/dead-letter-topic",
+          "label": "Dead-Letter Topics"
+        }
+      ]
+    },
+    {
+      "title": "Transactions",
+      "items": [
+        {
+          "href": "/tutorials/apache-kafka-nodejs/transactions",
+          "label": "Kafka Transactions"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/transactional-producer",
+          "label": "Transactional Producer"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/commit-transaction",
+          "label": "Commit a Transaction"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/abort-transaction",
+          "label": "Abort a Transaction"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/read-committed",
+          "label": "Read Committed Messages"
+        }
+      ]
+    },
+    {
+      "title": "Stream Processing",
+      "items": [
+        {
+          "href": "/tutorials/apache-kafka-nodejs/stream-processing",
+          "label": "Kafka Stream Processing"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/event-transformation",
+          "label": "Event Transformation"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/event-filtering",
+          "label": "Event Filtering"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/event-aggregation",
+          "label": "Event Aggregation"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/windowing",
+          "label": "Stream Windowing"
+        }
+      ]
+    },
+    {
+      "title": "Kafka Connect",
+      "items": [
+        {
+          "href": "/tutorials/apache-kafka-nodejs/kafka-connect",
+          "label": "Kafka Connect"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/source-connectors",
+          "label": "Source Connectors"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/sink-connectors",
+          "label": "Sink Connectors"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/connect-configuration",
+          "label": "Connector Configuration"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/custom-connectors",
+          "label": "Custom Connectors"
+        }
+      ]
+    },
+    {
+      "title": "Database Integration",
+      "items": [
+        {
+          "href": "/tutorials/apache-kafka-nodejs/database-integration",
+          "label": "Kafka Database Integration"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/postgresql",
+          "label": "Kafka with PostgreSQL"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/mongodb",
+          "label": "Kafka with MongoDB"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/mysql",
+          "label": "Kafka with MySQL"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/change-data-capture",
+          "label": "Change Data Capture"
+        }
+      ]
+    },
+    {
+      "title": "Microservices",
+      "items": [
+        {
+          "href": "/tutorials/apache-kafka-nodejs/microservices",
+          "label": "Kafka with Microservices"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/event-driven-microservices",
+          "label": "Event-Driven Microservices"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/service-communication",
+          "label": "Service Communication"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/service-decoupling",
+          "label": "Service Decoupling"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/service-events",
+          "label": "Microservice Events"
+        }
+      ]
+    },
+    {
+      "title": "Event-Driven Patterns",
+      "items": [
+        {
+          "href": "/tutorials/apache-kafka-nodejs/event-driven-patterns",
+          "label": "Event-Driven Patterns"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/event-notification",
+          "label": "Event Notification"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/event-carried-state",
+          "label": "Event-Carried State Transfer"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/event-sourcing",
+          "label": "Event Sourcing"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/cqrs",
+          "label": "CQRS with Kafka"
+        }
+      ]
+    },
+    {
+      "title": "Saga Pattern",
+      "items": [
+        {
+          "href": "/tutorials/apache-kafka-nodejs/saga-pattern",
+          "label": "Saga Pattern"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/choreography-saga",
+          "label": "Choreography-Based Saga"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/orchestration-saga",
+          "label": "Orchestration-Based Saga"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/compensating-events",
+          "label": "Compensating Events"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/distributed-transactions",
+          "label": "Distributed Transactions"
+        }
+      ]
+    },
+    {
+      "title": "Outbox Pattern",
+      "items": [
+        {
+          "href": "/tutorials/apache-kafka-nodejs/transactional-outbox",
+          "label": "Transactional Outbox Pattern"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/outbox-table",
+          "label": "Outbox Table"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/outbox-publisher",
+          "label": "Outbox Publisher"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/debezium-outbox",
+          "label": "Debezium Outbox"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/outbox-idempotency",
+          "label": "Outbox Idempotency"
+        }
+      ]
+    },
+    {
+      "title": "Authentication",
+      "items": [
+        {
+          "href": "/tutorials/apache-kafka-nodejs/authentication",
+          "label": "Kafka Authentication"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/sasl",
+          "label": "SASL Authentication"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/sasl-plain",
+          "label": "SASL/PLAIN"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/scram",
+          "label": "SASL/SCRAM"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/oauth",
+          "label": "OAuth Authentication"
+        }
+      ]
+    },
+    {
+      "title": "Security",
+      "items": [
+        {
+          "href": "/tutorials/apache-kafka-nodejs/security",
+          "label": "Apache Kafka Security"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/ssl-tls",
+          "label": "SSL and TLS"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/access-control-lists",
+          "label": "Kafka ACLs"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/encryption",
+          "label": "Kafka Encryption"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/security-best-practices",
+          "label": "Kafka Security Best Practices"
+        }
+      ]
+    },
+    {
+      "title": "Managed Kafka",
+      "items": [
+        {
+          "href": "/tutorials/apache-kafka-nodejs/managed-kafka",
+          "label": "Managed Apache Kafka"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/confluent-cloud",
+          "label": "Confluent Cloud"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/aws-msk",
+          "label": "Amazon MSK"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/azure-event-hubs",
+          "label": "Azure Event Hubs for Kafka"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/google-managed-kafka",
+          "label": "Google Cloud Managed Kafka"
+        }
+      ]
+    },
+    {
+      "title": "Testing",
+      "items": [
+        {
+          "href": "/tutorials/apache-kafka-nodejs/testing",
+          "label": "Kafka Application Testing"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/unit-testing",
+          "label": "Kafka Unit Testing"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/integration-testing",
+          "label": "Kafka Integration Testing"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/testcontainers",
+          "label": "Kafka with Testcontainers"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/mock-producer-consumer",
+          "label": "Mock Producers and Consumers"
+        }
+      ]
+    },
+    {
+      "title": "Local Development",
+      "items": [
+        {
+          "href": "/tutorials/apache-kafka-nodejs/local-development",
+          "label": "Local Kafka Development"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/docker-compose",
+          "label": "Kafka Docker Compose"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/local-cluster",
+          "label": "Local Kafka Cluster"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/kafka-ui",
+          "label": "Kafka UI Tools"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/debugging-locally",
+          "label": "Debug Kafka Locally"
+        }
+      ]
+    },
+    {
+      "title": "Monitoring",
+      "items": [
+        {
+          "href": "/tutorials/apache-kafka-nodejs/monitoring",
+          "label": "Apache Kafka Monitoring"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/producer-metrics",
+          "label": "Producer Metrics"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/consumer-metrics",
+          "label": "Consumer Metrics"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/consumer-lag",
+          "label": "Consumer Lag"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/cluster-health",
+          "label": "Kafka Cluster Health"
+        }
+      ]
+    },
+    {
+      "title": "Observability",
+      "items": [
+        {
+          "href": "/tutorials/apache-kafka-nodejs/observability",
+          "label": "Kafka Observability"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/structured-logging",
+          "label": "Structured Logging"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/distributed-tracing",
+          "label": "Distributed Tracing"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/correlation-ids",
+          "label": "Correlation IDs"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/prometheus-grafana",
+          "label": "Prometheus and Grafana"
+        }
+      ]
+    },
+    {
+      "title": "Performance",
+      "items": [
+        {
+          "href": "/tutorials/apache-kafka-nodejs/performance",
+          "label": "Kafka Performance"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/producer-performance",
+          "label": "Producer Performance"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/consumer-performance",
+          "label": "Consumer Performance"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/throughput-latency",
+          "label": "Throughput and Latency"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/performance-tuning",
+          "label": "Kafka Performance Tuning"
+        }
+      ]
+    },
+    {
+      "title": "Scaling and Reliability",
+      "items": [
+        {
+          "href": "/tutorials/apache-kafka-nodejs/scaling",
+          "label": "Scaling Kafka Applications"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/partition-scaling",
+          "label": "Partition Scaling"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/consumer-scaling",
+          "label": "Consumer Scaling"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/high-availability",
+          "label": "High Availability"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/disaster-recovery",
+          "label": "Disaster Recovery"
+        }
+      ]
+    },
+    {
+      "title": "Deployment",
+      "items": [
+        {
+          "href": "/tutorials/apache-kafka-nodejs/deployment",
+          "label": "Deploy Kafka Applications"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/docker-deployment",
+          "label": "Docker Deployment"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/kubernetes",
+          "label": "Kafka on Kubernetes"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/environment-configuration",
+          "label": "Environment Configuration"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/production-deployment",
+          "label": "Production Deployment"
+        }
+      ]
+    },
+    {
+      "title": "CI/CD",
+      "items": [
+        {
+          "href": "/tutorials/apache-kafka-nodejs/ci-cd",
+          "label": "Kafka CI/CD"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/github-actions",
+          "label": "GitHub Actions"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/jenkins",
+          "label": "Jenkins Pipelines"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/schema-ci-cd",
+          "label": "Schema CI/CD"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/production-releases",
+          "label": "Production Releases"
+        }
+      ]
+    },
+    {
+      "title": "Advanced",
+      "items": [
+        {
+          "href": "/tutorials/apache-kafka-nodejs/multi-cluster",
+          "label": "Multi-Cluster Kafka"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/mirror-maker",
+          "label": "Kafka MirrorMaker"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/topic-compaction",
+          "label": "Topic Compaction"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/custom-partitioner",
+          "label": "Custom Partitioners"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/backpressure",
+          "label": "Consumer Backpressure"
+        },
+        {
+          "label": "Kafka Streams (Node)",
+          "href": "/tutorials/apache-kafka-nodejs/kafka-streams-node"
+        },
+        {
+          "label": "ksqlDB",
+          "href": "/tutorials/apache-kafka-nodejs/ksqldb"
+        },
+        {
+          "label": "Cooperative Sticky Assignor",
+          "href": "/tutorials/apache-kafka-nodejs/cooperative-sticky"
+        },
+        {
+          "label": "Tiered Storage",
+          "href": "/tutorials/apache-kafka-nodejs/tiered-storage"
+        },
+        {
+          "label": "Kafka Quotas",
+          "href": "/tutorials/apache-kafka-nodejs/kafka-quotas"
+        },
+        {
+          "label": "Foreign Key Joins",
+          "href": "/tutorials/apache-kafka-nodejs/foreign-key-joins"
+        },
+        {
+          "label": "Header-Based Routing",
+          "href": "/tutorials/apache-kafka-nodejs/header-based-routing"
+        },
+        {
+          "label": "Pause Resume Consumer",
+          "href": "/tutorials/apache-kafka-nodejs/pause-resume-consumer"
+        },
+        {
+          "label": "Admin Client ACLs",
+          "href": "/tutorials/apache-kafka-nodejs/admin-client-acls"
+        },
+        {
+          "label": "OpenTelemetry Kafka",
+          "href": "/tutorials/apache-kafka-nodejs/otel-kafka"
+        }
+      ]
+    },
+    {
+      "title": "Projects",
+      "items": [
+        {
+          "href": "/tutorials/apache-kafka-nodejs/order-processing-project",
+          "label": "Order Processing System"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/notification-project",
+          "label": "Event Notification Service"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/activity-tracking-project",
+          "label": "User Activity Tracking"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/log-processing-project",
+          "label": "Real-Time Log Processing"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/payment-events-project",
+          "label": "Payment Events Pipeline"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshooting",
+      "items": [
+        {
+          "href": "/tutorials/apache-kafka-nodejs/debugging",
+          "label": "Kafka Debugging"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/connection-errors",
+          "label": "Kafka Connection Errors"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/rebalance-errors",
+          "label": "Consumer Rebalance Errors"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/offset-errors",
+          "label": "Consumer Offset Errors"
+        },
+        {
+          "href": "/tutorials/apache-kafka-nodejs/timeout-errors",
+          "label": "Kafka Timeout Errors"
+        }
+      ]
+    }
+  ]
+}

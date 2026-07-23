@@ -1,0 +1,452 @@
+[
+  {
+    "type": "example",
+    "file": "03-kafka-architecture/04-controllers/examples/01-client-connect.html",
+    "focus": "client connect",
+    "scenario": "order service"
+  },
+  {
+    "type": "example",
+    "file": "03-kafka-architecture/04-controllers/examples/02-create-topic.html",
+    "focus": "create topic",
+    "scenario": "notification hub"
+  },
+  {
+    "type": "example",
+    "file": "03-kafka-architecture/04-controllers/examples/03-produce-message.html",
+    "focus": "produce message",
+    "scenario": "activity tracker"
+  },
+  {
+    "type": "example",
+    "file": "03-kafka-architecture/04-controllers/examples/04-message-key.html",
+    "focus": "message key",
+    "scenario": "log pipeline"
+  },
+  {
+    "type": "example",
+    "file": "03-kafka-architecture/04-controllers/examples/05-consume-batch.html",
+    "focus": "consume batch",
+    "scenario": "payment bus"
+  },
+  {
+    "type": "example",
+    "file": "03-kafka-architecture/04-controllers/examples/06-consumer-group.html",
+    "focus": "consumer group",
+    "scenario": "inventory sync"
+  },
+  {
+    "type": "example",
+    "file": "03-kafka-architecture/04-controllers/examples/07-manual-commit.html",
+    "focus": "manual commit",
+    "scenario": "CDC bridge"
+  },
+  {
+    "type": "example",
+    "file": "03-kafka-architecture/04-controllers/examples/08-seek-offset.html",
+    "focus": "seek offset",
+    "scenario": "saga workflow"
+  },
+  {
+    "type": "example",
+    "file": "03-kafka-architecture/04-controllers/examples/09-json-serialize.html",
+    "focus": "json serialize",
+    "scenario": "analytics stream"
+  },
+  {
+    "type": "example",
+    "file": "03-kafka-architecture/04-controllers/examples/10-event-envelope.html",
+    "focus": "event envelope",
+    "scenario": "audit trail"
+  },
+  {
+    "type": "example",
+    "file": "03-kafka-architecture/04-controllers/examples/11-idempotent-send.html",
+    "focus": "idempotent send",
+    "scenario": "order service"
+  },
+  {
+    "type": "example",
+    "file": "03-kafka-architecture/04-controllers/examples/12-acks-all.html",
+    "focus": "acks all",
+    "scenario": "notification hub"
+  },
+  {
+    "type": "example",
+    "file": "03-kafka-architecture/04-controllers/examples/13-retry-topic.html",
+    "focus": "retry topic",
+    "scenario": "activity tracker"
+  },
+  {
+    "type": "example",
+    "file": "03-kafka-architecture/04-controllers/examples/14-dead-letter.html",
+    "focus": "dead letter",
+    "scenario": "log pipeline"
+  },
+  {
+    "type": "example",
+    "file": "03-kafka-architecture/04-controllers/examples/15-transaction-begin.html",
+    "focus": "transaction begin",
+    "scenario": "payment bus"
+  },
+  {
+    "type": "example",
+    "file": "03-kafka-architecture/04-controllers/examples/16-filter-stream.html",
+    "focus": "filter stream",
+    "scenario": "inventory sync"
+  },
+  {
+    "type": "example",
+    "file": "03-kafka-architecture/04-controllers/examples/17-schema-validate.html",
+    "focus": "schema validate",
+    "scenario": "CDC bridge"
+  },
+  {
+    "type": "example",
+    "file": "03-kafka-architecture/04-controllers/examples/18-sasl-scram.html",
+    "focus": "sasl scram",
+    "scenario": "saga workflow"
+  },
+  {
+    "type": "example",
+    "file": "03-kafka-architecture/04-controllers/examples/19-docker-compose.html",
+    "focus": "docker compose",
+    "scenario": "analytics stream"
+  },
+  {
+    "type": "example",
+    "file": "03-kafka-architecture/04-controllers/examples/20-consumer-lag.html",
+    "focus": "consumer lag",
+    "scenario": "audit trail"
+  },
+  {
+    "type": "example",
+    "file": "03-kafka-architecture/04-controllers/examples/21-correlation-id.html",
+    "focus": "correlation id",
+    "scenario": "order service"
+  },
+  {
+    "type": "example",
+    "file": "03-kafka-architecture/04-controllers/examples/22-batch-size.html",
+    "focus": "batch size",
+    "scenario": "notification hub"
+  },
+  {
+    "type": "example",
+    "file": "03-kafka-architecture/04-controllers/examples/23-partition-scale.html",
+    "focus": "partition scale",
+    "scenario": "activity tracker"
+  },
+  {
+    "type": "example",
+    "file": "03-kafka-architecture/04-controllers/examples/24-outbox-publish.html",
+    "focus": "outbox publish",
+    "scenario": "log pipeline"
+  },
+  {
+    "type": "example",
+    "file": "03-kafka-architecture/04-controllers/examples/25-best-practice-recap.html",
+    "focus": "best practice recap",
+    "scenario": "payment bus"
+  },
+  {
+    "type": "exercise",
+    "file": "03-kafka-architecture/04-controllers/exercises/01-install-kafkajs.html",
+    "focus": "install kafkajs",
+    "scenario": "order service"
+  },
+  {
+    "type": "exercise",
+    "file": "03-kafka-architecture/04-controllers/exercises/02-docker-up.html",
+    "focus": "docker up",
+    "scenario": "notification hub"
+  },
+  {
+    "type": "exercise",
+    "file": "03-kafka-architecture/04-controllers/exercises/03-producer-send.html",
+    "focus": "producer send",
+    "scenario": "activity tracker"
+  },
+  {
+    "type": "exercise",
+    "file": "03-kafka-architecture/04-controllers/exercises/04-keyed-produce.html",
+    "focus": "keyed produce",
+    "scenario": "log pipeline"
+  },
+  {
+    "type": "exercise",
+    "file": "03-kafka-architecture/04-controllers/exercises/05-consumer-run.html",
+    "focus": "consumer run",
+    "scenario": "payment bus"
+  },
+  {
+    "type": "exercise",
+    "file": "03-kafka-architecture/04-controllers/exercises/06-group-id.html",
+    "focus": "group id",
+    "scenario": "inventory sync"
+  },
+  {
+    "type": "exercise",
+    "file": "03-kafka-architecture/04-controllers/exercises/07-auto-commit-off.html",
+    "focus": "auto commit off",
+    "scenario": "CDC bridge"
+  },
+  {
+    "type": "exercise",
+    "file": "03-kafka-architecture/04-controllers/exercises/08-commit-offsets.html",
+    "focus": "commit offsets",
+    "scenario": "saga workflow"
+  },
+  {
+    "type": "exercise",
+    "file": "03-kafka-architecture/04-controllers/exercises/09-from-beginning.html",
+    "focus": "from beginning",
+    "scenario": "analytics stream"
+  },
+  {
+    "type": "exercise",
+    "file": "03-kafka-architecture/04-controllers/exercises/10-json-parse.html",
+    "focus": "json parse",
+    "scenario": "audit trail"
+  },
+  {
+    "type": "exercise",
+    "file": "03-kafka-architecture/04-controllers/exercises/11-avro-sketch.html",
+    "focus": "avro sketch",
+    "scenario": "order service"
+  },
+  {
+    "type": "exercise",
+    "file": "03-kafka-architecture/04-controllers/exercises/12-dlq-publish.html",
+    "focus": "dlq publish",
+    "scenario": "notification hub"
+  },
+  {
+    "type": "exercise",
+    "file": "03-kafka-architecture/04-controllers/exercises/13-exactly-once.html",
+    "focus": "exactly once",
+    "scenario": "activity tracker"
+  },
+  {
+    "type": "exercise",
+    "file": "03-kafka-architecture/04-controllers/exercises/14-saga-compensate.html",
+    "focus": "saga compensate",
+    "scenario": "log pipeline"
+  },
+  {
+    "type": "exercise",
+    "file": "03-kafka-architecture/04-controllers/exercises/15-outbox-poll.html",
+    "focus": "outbox poll",
+    "scenario": "payment bus"
+  },
+  {
+    "type": "exercise",
+    "file": "03-kafka-architecture/04-controllers/exercises/16-ssl-config.html",
+    "focus": "ssl config",
+    "scenario": "inventory sync"
+  },
+  {
+    "type": "exercise",
+    "file": "03-kafka-architecture/04-controllers/exercises/17-msk-connect.html",
+    "focus": "msk connect",
+    "scenario": "CDC bridge"
+  },
+  {
+    "type": "exercise",
+    "file": "03-kafka-architecture/04-controllers/exercises/18-jest-mock.html",
+    "focus": "jest mock",
+    "scenario": "saga workflow"
+  },
+  {
+    "type": "exercise",
+    "file": "03-kafka-architecture/04-controllers/exercises/19-compose-ui.html",
+    "focus": "compose ui",
+    "scenario": "analytics stream"
+  },
+  {
+    "type": "exercise",
+    "file": "03-kafka-architecture/04-controllers/exercises/20-lag-alert.html",
+    "focus": "lag alert",
+    "scenario": "audit trail"
+  },
+  {
+    "type": "exercise",
+    "file": "03-kafka-architecture/04-controllers/exercises/21-trace-headers.html",
+    "focus": "trace headers",
+    "scenario": "order service"
+  },
+  {
+    "type": "exercise",
+    "file": "03-kafka-architecture/04-controllers/exercises/22-linger-ms.html",
+    "focus": "linger ms",
+    "scenario": "notification hub"
+  },
+  {
+    "type": "exercise",
+    "file": "03-kafka-architecture/04-controllers/exercises/23-add-partitions.html",
+    "focus": "add partitions",
+    "scenario": "activity tracker"
+  },
+  {
+    "type": "exercise",
+    "file": "03-kafka-architecture/04-controllers/exercises/24-k8s-deploy.html",
+    "focus": "k8s deploy",
+    "scenario": "log pipeline"
+  },
+  {
+    "type": "exercise",
+    "file": "03-kafka-architecture/04-controllers/exercises/25-final-challenge.html",
+    "focus": "final challenge",
+    "scenario": "payment bus"
+  },
+  {
+    "type": "template",
+    "file": "03-kafka-architecture/04-controllers/templates/01-hello-producer.html",
+    "focus": "hello producer",
+    "scenario": "order service"
+  },
+  {
+    "type": "template",
+    "file": "03-kafka-architecture/04-controllers/templates/02-hello-consumer.html",
+    "focus": "hello consumer",
+    "scenario": "notification hub"
+  },
+  {
+    "type": "template",
+    "file": "03-kafka-architecture/04-controllers/templates/03-order-events.html",
+    "focus": "order events",
+    "scenario": "activity tracker"
+  },
+  {
+    "type": "template",
+    "file": "03-kafka-architecture/04-controllers/templates/04-notification-fanout.html",
+    "focus": "notification fanout",
+    "scenario": "log pipeline"
+  },
+  {
+    "type": "template",
+    "file": "03-kafka-architecture/04-controllers/templates/05-activity-track.html",
+    "focus": "activity track",
+    "scenario": "payment bus"
+  },
+  {
+    "type": "template",
+    "file": "03-kafka-architecture/04-controllers/templates/06-log-pipeline.html",
+    "focus": "log pipeline",
+    "scenario": "inventory sync"
+  },
+  {
+    "type": "template",
+    "file": "03-kafka-architecture/04-controllers/templates/07-payment-events.html",
+    "focus": "payment events",
+    "scenario": "CDC bridge"
+  },
+  {
+    "type": "template",
+    "file": "03-kafka-architecture/04-controllers/templates/08-retry-dlq.html",
+    "focus": "retry dlq",
+    "scenario": "saga workflow"
+  },
+  {
+    "type": "template",
+    "file": "03-kafka-architecture/04-controllers/templates/09-transactional.html",
+    "focus": "transactional",
+    "scenario": "analytics stream"
+  },
+  {
+    "type": "template",
+    "file": "03-kafka-architecture/04-controllers/templates/10-schema-registry.html",
+    "focus": "schema registry",
+    "scenario": "audit trail"
+  },
+  {
+    "type": "template",
+    "file": "03-kafka-architecture/04-controllers/templates/11-cdc-postgres.html",
+    "focus": "cdc postgres",
+    "scenario": "order service"
+  },
+  {
+    "type": "template",
+    "file": "03-kafka-architecture/04-controllers/templates/12-microservice-bus.html",
+    "focus": "microservice bus",
+    "scenario": "notification hub"
+  },
+  {
+    "type": "template",
+    "file": "03-kafka-architecture/04-controllers/templates/13-choreography-saga.html",
+    "focus": "choreography saga",
+    "scenario": "activity tracker"
+  },
+  {
+    "type": "template",
+    "file": "03-kafka-architecture/04-controllers/templates/14-outbox-pattern.html",
+    "focus": "outbox pattern",
+    "scenario": "log pipeline"
+  },
+  {
+    "type": "template",
+    "file": "03-kafka-architecture/04-controllers/templates/15-sasl-secure.html",
+    "focus": "sasl secure",
+    "scenario": "payment bus"
+  },
+  {
+    "type": "template",
+    "file": "03-kafka-architecture/04-controllers/templates/16-msk-client.html",
+    "focus": "msk client",
+    "scenario": "inventory sync"
+  },
+  {
+    "type": "template",
+    "file": "03-kafka-architecture/04-controllers/templates/17-testcontainers.html",
+    "focus": "testcontainers",
+    "scenario": "CDC bridge"
+  },
+  {
+    "type": "template",
+    "file": "03-kafka-architecture/04-controllers/templates/18-docker-local.html",
+    "focus": "docker local",
+    "scenario": "saga workflow"
+  },
+  {
+    "type": "template",
+    "file": "03-kafka-architecture/04-controllers/templates/19-prometheus.html",
+    "focus": "prometheus",
+    "scenario": "analytics stream"
+  },
+  {
+    "type": "template",
+    "file": "03-kafka-architecture/04-controllers/templates/20-k8s-consumer.html",
+    "focus": "k8s consumer",
+    "scenario": "audit trail"
+  },
+  {
+    "type": "template",
+    "file": "03-kafka-architecture/04-controllers/templates/21-mirror-maker.html",
+    "focus": "mirror maker",
+    "scenario": "order service"
+  },
+  {
+    "type": "template",
+    "file": "03-kafka-architecture/04-controllers/templates/22-compacted-topic.html",
+    "focus": "compacted topic",
+    "scenario": "notification hub"
+  },
+  {
+    "type": "template",
+    "file": "03-kafka-architecture/04-controllers/templates/23-custom-partitioner.html",
+    "focus": "custom partitioner",
+    "scenario": "activity tracker"
+  },
+  {
+    "type": "template",
+    "file": "03-kafka-architecture/04-controllers/templates/24-backpressure.html",
+    "focus": "backpressure",
+    "scenario": "log pipeline"
+  },
+  {
+    "type": "template",
+    "file": "03-kafka-architecture/04-controllers/templates/25-production-starter.html",
+    "focus": "production starter",
+    "scenario": "payment bus"
+  }
+]

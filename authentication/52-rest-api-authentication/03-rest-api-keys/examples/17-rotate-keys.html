@@ -1,0 +1,124 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Authentication Tutorials
+section title: REST API Authentication
+topic title: API Keys for REST APIs
+content type: Example
+item number: 17
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>API Keys for REST APIs Example 17 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #e0e7ff;
+      color: #3730a3;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Example 17</span>
+    <h1>API Keys for REST APIs</h1>
+    <p><strong>Section:</strong> REST API Authentication</p>
+    <p><strong>Focus:</strong> Rotate Keys</p>
+    <p><strong>Scenario:</strong> developer API</p>
+    <p>Study the authentication pattern and adapt it to your app’s threat model.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Authentication (Node.js)</h2>
+        <pre><code>// API Keys for REST APIs — Example 17
+// Focus: rotate keys | Scenario: developer API
+
+import crypto from &quot;node:crypto&quot;;
+
+export function hashApiKey(raw) {
+  return crypto.createHash(&quot;sha256&quot;).update(raw).digest(&quot;hex&quot;);
+}
+
+export async function requireApiKey(req, store) {
+  const raw = req.get(&quot;x-api-key&quot;);
+  if (!raw) throw Object.assign(new Error(&quot;Unauthorized&quot;), { status: 401 });
+  const key = await store.findByHash(hashApiKey(raw));
+  if (!key || key.revoked) throw Object.assign(new Error(&quot;Unauthorized&quot;), { status: 401 });
+  return key;
+}
+
+export const TOPIC_ID = &quot;rest-api-keys&quot;;
+</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for API Keys for REST APIs
+- Practice: rotate keys
+- Scenario: developer API
+- Hash passwords with Argon2id/bcrypt; never store plaintext
+- Prefer HttpOnly + Secure + SameSite cookies for browser sessions
+- Short-lived access tokens; rotate refresh tokens; revoke on logout
+- Generic login errors; rate-limit; log security events
+
+Useful commands:
+  npm install bcrypt jsonwebtoken
+  # or: npm install argon2 jose
+  node server.mjs
+  curl -H &quot;Authorization: Bearer &lt;token&gt;&quot; http://localhost:3000/me</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This example shows one way to apply <strong>API Keys for REST APIs</strong> in a developer api context.</p>
+      <p>Treat auth as a product surface: secure defaults, clear UX, MFA where needed, and continuous monitoring.</p>
+    </section>
+  </main>
+</body>
+</html>

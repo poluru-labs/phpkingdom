@@ -1,0 +1,452 @@
+[
+  {
+    "type": "example",
+    "file": "38-passwordless-authentication/04-sms-passwordless/examples/01-register-user.html",
+    "focus": "register user",
+    "scenario": "SaaS web app"
+  },
+  {
+    "type": "example",
+    "file": "38-passwordless-authentication/04-sms-passwordless/examples/02-hash-password.html",
+    "focus": "hash password",
+    "scenario": "mobile BFF"
+  },
+  {
+    "type": "example",
+    "file": "38-passwordless-authentication/04-sms-passwordless/examples/03-verify-login.html",
+    "focus": "verify login",
+    "scenario": "REST microservice"
+  },
+  {
+    "type": "example",
+    "file": "38-passwordless-authentication/04-sms-passwordless/examples/04-issue-jwt.html",
+    "focus": "issue jwt",
+    "scenario": "admin console"
+  },
+  {
+    "type": "example",
+    "file": "38-passwordless-authentication/04-sms-passwordless/examples/05-refresh-token.html",
+    "focus": "refresh token",
+    "scenario": "e-commerce checkout"
+  },
+  {
+    "type": "example",
+    "file": "38-passwordless-authentication/04-sms-passwordless/examples/06-session-cookie.html",
+    "focus": "session cookie",
+    "scenario": "enterprise SSO"
+  },
+  {
+    "type": "example",
+    "file": "38-passwordless-authentication/04-sms-passwordless/examples/07-bearer-header.html",
+    "focus": "bearer header",
+    "scenario": "developer API"
+  },
+  {
+    "type": "example",
+    "file": "38-passwordless-authentication/04-sms-passwordless/examples/08-oauth-redirect.html",
+    "focus": "oauth redirect",
+    "scenario": "chat platform"
+  },
+  {
+    "type": "example",
+    "file": "38-passwordless-authentication/04-sms-passwordless/examples/09-pkce-challenge.html",
+    "focus": "pkce challenge",
+    "scenario": "fintech portal"
+  },
+  {
+    "type": "example",
+    "file": "38-passwordless-authentication/04-sms-passwordless/examples/10-oidc-id-token.html",
+    "focus": "oidc id token",
+    "scenario": "healthcare portal"
+  },
+  {
+    "type": "example",
+    "file": "38-passwordless-authentication/04-sms-passwordless/examples/11-mfa-totp.html",
+    "focus": "mfa totp",
+    "scenario": "SaaS web app"
+  },
+  {
+    "type": "example",
+    "file": "38-passwordless-authentication/04-sms-passwordless/examples/12-magic-link.html",
+    "focus": "magic link",
+    "scenario": "mobile BFF"
+  },
+  {
+    "type": "example",
+    "file": "38-passwordless-authentication/04-sms-passwordless/examples/13-webauthn-register.html",
+    "focus": "webauthn register",
+    "scenario": "REST microservice"
+  },
+  {
+    "type": "example",
+    "file": "38-passwordless-authentication/04-sms-passwordless/examples/14-rbac-check.html",
+    "focus": "rbac check",
+    "scenario": "admin console"
+  },
+  {
+    "type": "example",
+    "file": "38-passwordless-authentication/04-sms-passwordless/examples/15-rate-limit-login.html",
+    "focus": "rate limit login",
+    "scenario": "e-commerce checkout"
+  },
+  {
+    "type": "example",
+    "file": "38-passwordless-authentication/04-sms-passwordless/examples/16-csrf-protect.html",
+    "focus": "csrf protect",
+    "scenario": "enterprise SSO"
+  },
+  {
+    "type": "example",
+    "file": "38-passwordless-authentication/04-sms-passwordless/examples/17-rotate-keys.html",
+    "focus": "rotate keys",
+    "scenario": "developer API"
+  },
+  {
+    "type": "example",
+    "file": "38-passwordless-authentication/04-sms-passwordless/examples/18-revoke-session.html",
+    "focus": "revoke session",
+    "scenario": "chat platform"
+  },
+  {
+    "type": "example",
+    "file": "38-passwordless-authentication/04-sms-passwordless/examples/19-secure-errors.html",
+    "focus": "secure errors",
+    "scenario": "fintech portal"
+  },
+  {
+    "type": "example",
+    "file": "38-passwordless-authentication/04-sms-passwordless/examples/20-audit-log.html",
+    "focus": "audit log",
+    "scenario": "healthcare portal"
+  },
+  {
+    "type": "example",
+    "file": "38-passwordless-authentication/04-sms-passwordless/examples/21-express-middleware.html",
+    "focus": "express middleware",
+    "scenario": "SaaS web app"
+  },
+  {
+    "type": "example",
+    "file": "38-passwordless-authentication/04-sms-passwordless/examples/22-react-guard.html",
+    "focus": "react guard",
+    "scenario": "mobile BFF"
+  },
+  {
+    "type": "example",
+    "file": "38-passwordless-authentication/04-sms-passwordless/examples/23-next-middleware.html",
+    "focus": "next middleware",
+    "scenario": "REST microservice"
+  },
+  {
+    "type": "example",
+    "file": "38-passwordless-authentication/04-sms-passwordless/examples/24-cognito-sketch.html",
+    "focus": "cognito sketch",
+    "scenario": "admin console"
+  },
+  {
+    "type": "example",
+    "file": "38-passwordless-authentication/04-sms-passwordless/examples/25-best-practice-recap.html",
+    "focus": "best practice recap",
+    "scenario": "e-commerce checkout"
+  },
+  {
+    "type": "exercise",
+    "file": "38-passwordless-authentication/04-sms-passwordless/exercises/01-signup-validate.html",
+    "focus": "signup validate",
+    "scenario": "SaaS web app"
+  },
+  {
+    "type": "exercise",
+    "file": "38-passwordless-authentication/04-sms-passwordless/exercises/02-bcrypt-hash.html",
+    "focus": "bcrypt hash",
+    "scenario": "mobile BFF"
+  },
+  {
+    "type": "exercise",
+    "file": "38-passwordless-authentication/04-sms-passwordless/exercises/03-login-compare.html",
+    "focus": "login compare",
+    "scenario": "REST microservice"
+  },
+  {
+    "type": "exercise",
+    "file": "38-passwordless-authentication/04-sms-passwordless/exercises/04-jwt-sign-verify.html",
+    "focus": "jwt sign verify",
+    "scenario": "admin console"
+  },
+  {
+    "type": "exercise",
+    "file": "38-passwordless-authentication/04-sms-passwordless/exercises/05-httponly-cookie.html",
+    "focus": "httpOnly cookie",
+    "scenario": "e-commerce checkout"
+  },
+  {
+    "type": "exercise",
+    "file": "38-passwordless-authentication/04-sms-passwordless/exercises/06-session-rotate.html",
+    "focus": "session rotate",
+    "scenario": "enterprise SSO"
+  },
+  {
+    "type": "exercise",
+    "file": "38-passwordless-authentication/04-sms-passwordless/exercises/07-password-reset.html",
+    "focus": "password reset",
+    "scenario": "developer API"
+  },
+  {
+    "type": "exercise",
+    "file": "38-passwordless-authentication/04-sms-passwordless/exercises/08-email-verify.html",
+    "focus": "email verify",
+    "scenario": "chat platform"
+  },
+  {
+    "type": "exercise",
+    "file": "38-passwordless-authentication/04-sms-passwordless/exercises/09-sms-otp.html",
+    "focus": "sms otp",
+    "scenario": "fintech portal"
+  },
+  {
+    "type": "exercise",
+    "file": "38-passwordless-authentication/04-sms-passwordless/exercises/10-oauth-state.html",
+    "focus": "oauth state",
+    "scenario": "healthcare portal"
+  },
+  {
+    "type": "exercise",
+    "file": "38-passwordless-authentication/04-sms-passwordless/exercises/11-pkce-flow.html",
+    "focus": "pkce flow",
+    "scenario": "SaaS web app"
+  },
+  {
+    "type": "exercise",
+    "file": "38-passwordless-authentication/04-sms-passwordless/exercises/12-refresh-rotate.html",
+    "focus": "refresh rotate",
+    "scenario": "mobile BFF"
+  },
+  {
+    "type": "exercise",
+    "file": "38-passwordless-authentication/04-sms-passwordless/exercises/13-api-key-hash.html",
+    "focus": "api key hash",
+    "scenario": "REST microservice"
+  },
+  {
+    "type": "exercise",
+    "file": "38-passwordless-authentication/04-sms-passwordless/exercises/14-totp-verify.html",
+    "focus": "totp verify",
+    "scenario": "admin console"
+  },
+  {
+    "type": "exercise",
+    "file": "38-passwordless-authentication/04-sms-passwordless/exercises/15-recovery-codes.html",
+    "focus": "recovery codes",
+    "scenario": "e-commerce checkout"
+  },
+  {
+    "type": "exercise",
+    "file": "38-passwordless-authentication/04-sms-passwordless/exercises/16-passkey-login.html",
+    "focus": "passkey login",
+    "scenario": "enterprise SSO"
+  },
+  {
+    "type": "exercise",
+    "file": "38-passwordless-authentication/04-sms-passwordless/exercises/17-rbac-roles.html",
+    "focus": "rbac roles",
+    "scenario": "developer API"
+  },
+  {
+    "type": "exercise",
+    "file": "38-passwordless-authentication/04-sms-passwordless/exercises/18-csrf-token.html",
+    "focus": "csrf token",
+    "scenario": "chat platform"
+  },
+  {
+    "type": "exercise",
+    "file": "38-passwordless-authentication/04-sms-passwordless/exercises/19-lockout-policy.html",
+    "focus": "lockout policy",
+    "scenario": "fintech portal"
+  },
+  {
+    "type": "exercise",
+    "file": "38-passwordless-authentication/04-sms-passwordless/exercises/20-401-vs-403.html",
+    "focus": "401 vs 403",
+    "scenario": "healthcare portal"
+  },
+  {
+    "type": "exercise",
+    "file": "38-passwordless-authentication/04-sms-passwordless/exercises/21-jest-auth.html",
+    "focus": "jest auth",
+    "scenario": "SaaS web app"
+  },
+  {
+    "type": "exercise",
+    "file": "38-passwordless-authentication/04-sms-passwordless/exercises/22-mock-jwt.html",
+    "focus": "mock jwt",
+    "scenario": "mobile BFF"
+  },
+  {
+    "type": "exercise",
+    "file": "38-passwordless-authentication/04-sms-passwordless/exercises/23-cors-cookies.html",
+    "focus": "cors cookies",
+    "scenario": "REST microservice"
+  },
+  {
+    "type": "exercise",
+    "file": "38-passwordless-authentication/04-sms-passwordless/exercises/24-jwks-validate.html",
+    "focus": "jwks validate",
+    "scenario": "admin console"
+  },
+  {
+    "type": "exercise",
+    "file": "38-passwordless-authentication/04-sms-passwordless/exercises/25-final-challenge.html",
+    "focus": "final challenge",
+    "scenario": "e-commerce checkout"
+  },
+  {
+    "type": "template",
+    "file": "38-passwordless-authentication/04-sms-passwordless/templates/01-session-login.html",
+    "focus": "session login",
+    "scenario": "SaaS web app"
+  },
+  {
+    "type": "template",
+    "file": "38-passwordless-authentication/04-sms-passwordless/templates/02-jwt-api.html",
+    "focus": "jwt api",
+    "scenario": "mobile BFF"
+  },
+  {
+    "type": "template",
+    "file": "38-passwordless-authentication/04-sms-passwordless/templates/03-oauth-social.html",
+    "focus": "oauth social",
+    "scenario": "REST microservice"
+  },
+  {
+    "type": "template",
+    "file": "38-passwordless-authentication/04-sms-passwordless/templates/04-mfa-totp.html",
+    "focus": "mfa totp",
+    "scenario": "admin console"
+  },
+  {
+    "type": "template",
+    "file": "38-passwordless-authentication/04-sms-passwordless/templates/05-passkey-app.html",
+    "focus": "passkey app",
+    "scenario": "e-commerce checkout"
+  },
+  {
+    "type": "template",
+    "file": "38-passwordless-authentication/04-sms-passwordless/templates/06-express-jwt.html",
+    "focus": "express jwt",
+    "scenario": "enterprise SSO"
+  },
+  {
+    "type": "template",
+    "file": "38-passwordless-authentication/04-sms-passwordless/templates/07-express-session.html",
+    "focus": "express session",
+    "scenario": "developer API"
+  },
+  {
+    "type": "template",
+    "file": "38-passwordless-authentication/04-sms-passwordless/templates/08-react-auth.html",
+    "focus": "react auth",
+    "scenario": "chat platform"
+  },
+  {
+    "type": "template",
+    "file": "38-passwordless-authentication/04-sms-passwordless/templates/09-next-auth.html",
+    "focus": "next auth",
+    "scenario": "fintech portal"
+  },
+  {
+    "type": "template",
+    "file": "38-passwordless-authentication/04-sms-passwordless/templates/10-nestjs-guards.html",
+    "focus": "nestjs guards",
+    "scenario": "healthcare portal"
+  },
+  {
+    "type": "template",
+    "file": "38-passwordless-authentication/04-sms-passwordless/templates/11-graphql-context.html",
+    "focus": "graphql context",
+    "scenario": "SaaS web app"
+  },
+  {
+    "type": "template",
+    "file": "38-passwordless-authentication/04-sms-passwordless/templates/12-pkce-spa.html",
+    "focus": "pkce spa",
+    "scenario": "mobile BFF"
+  },
+  {
+    "type": "template",
+    "file": "38-passwordless-authentication/04-sms-passwordless/templates/13-oidc-client.html",
+    "focus": "oidc client",
+    "scenario": "REST microservice"
+  },
+  {
+    "type": "template",
+    "file": "38-passwordless-authentication/04-sms-passwordless/templates/14-firebase-auth.html",
+    "focus": "firebase auth",
+    "scenario": "admin console"
+  },
+  {
+    "type": "template",
+    "file": "38-passwordless-authentication/04-sms-passwordless/templates/15-cognito-app.html",
+    "focus": "cognito app",
+    "scenario": "e-commerce checkout"
+  },
+  {
+    "type": "template",
+    "file": "38-passwordless-authentication/04-sms-passwordless/templates/16-password-reset.html",
+    "focus": "password reset",
+    "scenario": "enterprise SSO"
+  },
+  {
+    "type": "template",
+    "file": "38-passwordless-authentication/04-sms-passwordless/templates/17-magic-link.html",
+    "focus": "magic link",
+    "scenario": "developer API"
+  },
+  {
+    "type": "template",
+    "file": "38-passwordless-authentication/04-sms-passwordless/templates/18-device-sessions.html",
+    "focus": "device sessions",
+    "scenario": "chat platform"
+  },
+  {
+    "type": "template",
+    "file": "38-passwordless-authentication/04-sms-passwordless/templates/19-rbac-api.html",
+    "focus": "rbac api",
+    "scenario": "fintech portal"
+  },
+  {
+    "type": "template",
+    "file": "38-passwordless-authentication/04-sms-passwordless/templates/20-zero-trust.html",
+    "focus": "zero trust",
+    "scenario": "healthcare portal"
+  },
+  {
+    "type": "template",
+    "file": "38-passwordless-authentication/04-sms-passwordless/templates/21-rate-limit.html",
+    "focus": "rate limit",
+    "scenario": "SaaS web app"
+  },
+  {
+    "type": "template",
+    "file": "38-passwordless-authentication/04-sms-passwordless/templates/22-audit-logging.html",
+    "focus": "audit logging",
+    "scenario": "mobile BFF"
+  },
+  {
+    "type": "template",
+    "file": "38-passwordless-authentication/04-sms-passwordless/templates/23-docker-secrets.html",
+    "focus": "docker secrets",
+    "scenario": "REST microservice"
+  },
+  {
+    "type": "template",
+    "file": "38-passwordless-authentication/04-sms-passwordless/templates/24-e2e-auth.html",
+    "focus": "e2e auth",
+    "scenario": "admin console"
+  },
+  {
+    "type": "template",
+    "file": "38-passwordless-authentication/04-sms-passwordless/templates/25-production-starter.html",
+    "focus": "production starter",
+    "scenario": "e-commerce checkout"
+  }
+]

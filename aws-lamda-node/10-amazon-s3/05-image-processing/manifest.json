@@ -1,0 +1,452 @@
+[
+  {
+    "type": "example",
+    "file": "10-amazon-s3/05-image-processing/examples/01-hello-handler.html",
+    "focus": "hello handler",
+    "scenario": "REST microservice"
+  },
+  {
+    "type": "example",
+    "file": "10-amazon-s3/05-image-processing/examples/02-event-parse.html",
+    "focus": "event parse",
+    "scenario": "file pipeline"
+  },
+  {
+    "type": "example",
+    "file": "10-amazon-s3/05-image-processing/examples/03-context-inspect.html",
+    "focus": "context inspect",
+    "scenario": "queue worker"
+  },
+  {
+    "type": "example",
+    "file": "10-amazon-s3/05-image-processing/examples/04-env-config.html",
+    "focus": "env config",
+    "scenario": "scheduled job"
+  },
+  {
+    "type": "example",
+    "file": "10-amazon-s3/05-image-processing/examples/05-api-response.html",
+    "focus": "api response",
+    "scenario": "auth API"
+  },
+  {
+    "type": "example",
+    "file": "10-amazon-s3/05-image-processing/examples/06-dynamo-get.html",
+    "focus": "dynamo get",
+    "scenario": "image service"
+  },
+  {
+    "type": "example",
+    "file": "10-amazon-s3/05-image-processing/examples/07-dynamo-put.html",
+    "focus": "dynamo put",
+    "scenario": "notification hub"
+  },
+  {
+    "type": "example",
+    "file": "10-amazon-s3/05-image-processing/examples/08-s3-upload.html",
+    "focus": "s3 upload",
+    "scenario": "order workflow"
+  },
+  {
+    "type": "example",
+    "file": "10-amazon-s3/05-image-processing/examples/09-sqs-consume.html",
+    "focus": "sqs consume",
+    "scenario": "webhook receiver"
+  },
+  {
+    "type": "example",
+    "file": "10-amazon-s3/05-image-processing/examples/10-sns-publish.html",
+    "focus": "sns publish",
+    "scenario": "data sync"
+  },
+  {
+    "type": "example",
+    "file": "10-amazon-s3/05-image-processing/examples/11-eventbridge-rule.html",
+    "focus": "eventbridge rule",
+    "scenario": "REST microservice"
+  },
+  {
+    "type": "example",
+    "file": "10-amazon-s3/05-image-processing/examples/12-jwt-verify.html",
+    "focus": "jwt verify",
+    "scenario": "file pipeline"
+  },
+  {
+    "type": "example",
+    "file": "10-amazon-s3/05-image-processing/examples/13-secrets-fetch.html",
+    "focus": "secrets fetch",
+    "scenario": "queue worker"
+  },
+  {
+    "type": "example",
+    "file": "10-amazon-s3/05-image-processing/examples/14-layer-import.html",
+    "focus": "layer import",
+    "scenario": "scheduled job"
+  },
+  {
+    "type": "example",
+    "file": "10-amazon-s3/05-image-processing/examples/15-esbuild-bundle.html",
+    "focus": "esbuild bundle",
+    "scenario": "auth API"
+  },
+  {
+    "type": "example",
+    "file": "10-amazon-s3/05-image-processing/examples/16-sam-invoke.html",
+    "focus": "sam invoke",
+    "scenario": "image service"
+  },
+  {
+    "type": "example",
+    "file": "10-amazon-s3/05-image-processing/examples/17-cdk-construct.html",
+    "focus": "cdk construct",
+    "scenario": "notification hub"
+  },
+  {
+    "type": "example",
+    "file": "10-amazon-s3/05-image-processing/examples/18-jest-unit.html",
+    "focus": "jest unit",
+    "scenario": "order workflow"
+  },
+  {
+    "type": "example",
+    "file": "10-amazon-s3/05-image-processing/examples/19-structured-log.html",
+    "focus": "structured log",
+    "scenario": "webhook receiver"
+  },
+  {
+    "type": "example",
+    "file": "10-amazon-s3/05-image-processing/examples/20-xray-segment.html",
+    "focus": "xray segment",
+    "scenario": "data sync"
+  },
+  {
+    "type": "example",
+    "file": "10-amazon-s3/05-image-processing/examples/21-cold-start-tip.html",
+    "focus": "cold start tip",
+    "scenario": "REST microservice"
+  },
+  {
+    "type": "example",
+    "file": "10-amazon-s3/05-image-processing/examples/22-idempotent-write.html",
+    "focus": "idempotent write",
+    "scenario": "file pipeline"
+  },
+  {
+    "type": "example",
+    "file": "10-amazon-s3/05-image-processing/examples/23-cors-headers.html",
+    "focus": "cors headers",
+    "scenario": "queue worker"
+  },
+  {
+    "type": "example",
+    "file": "10-amazon-s3/05-image-processing/examples/24-dlq-setup.html",
+    "focus": "dlq setup",
+    "scenario": "scheduled job"
+  },
+  {
+    "type": "example",
+    "file": "10-amazon-s3/05-image-processing/examples/25-best-practice-recap.html",
+    "focus": "best practice recap",
+    "scenario": "auth API"
+  },
+  {
+    "type": "exercise",
+    "file": "10-amazon-s3/05-image-processing/exercises/01-cli-verify.html",
+    "focus": "cli verify",
+    "scenario": "REST microservice"
+  },
+  {
+    "type": "exercise",
+    "file": "10-amazon-s3/05-image-processing/exercises/02-create-function.html",
+    "focus": "create function",
+    "scenario": "file pipeline"
+  },
+  {
+    "type": "exercise",
+    "file": "10-amazon-s3/05-image-processing/exercises/03-async-handler.html",
+    "focus": "async handler",
+    "scenario": "queue worker"
+  },
+  {
+    "type": "exercise",
+    "file": "10-amazon-s3/05-image-processing/exercises/04-proxy-event.html",
+    "focus": "proxy event",
+    "scenario": "scheduled job"
+  },
+  {
+    "type": "exercise",
+    "file": "10-amazon-s3/05-image-processing/exercises/05-path-params.html",
+    "focus": "path params",
+    "scenario": "auth API"
+  },
+  {
+    "type": "exercise",
+    "file": "10-amazon-s3/05-image-processing/exercises/06-post-body.html",
+    "focus": "post body",
+    "scenario": "image service"
+  },
+  {
+    "type": "exercise",
+    "file": "10-amazon-s3/05-image-processing/exercises/07-dynamo-crud.html",
+    "focus": "dynamo crud",
+    "scenario": "notification hub"
+  },
+  {
+    "type": "exercise",
+    "file": "10-amazon-s3/05-image-processing/exercises/08-s3-trigger.html",
+    "focus": "s3 trigger",
+    "scenario": "order workflow"
+  },
+  {
+    "type": "exercise",
+    "file": "10-amazon-s3/05-image-processing/exercises/09-sqs-batch.html",
+    "focus": "sqs batch",
+    "scenario": "webhook receiver"
+  },
+  {
+    "type": "exercise",
+    "file": "10-amazon-s3/05-image-processing/exercises/10-schedule-cron.html",
+    "focus": "schedule cron",
+    "scenario": "data sync"
+  },
+  {
+    "type": "exercise",
+    "file": "10-amazon-s3/05-image-processing/exercises/11-sdk-v3-client.html",
+    "focus": "sdk v3 client",
+    "scenario": "REST microservice"
+  },
+  {
+    "type": "exercise",
+    "file": "10-amazon-s3/05-image-processing/exercises/12-authorizer.html",
+    "focus": "authorizer",
+    "scenario": "file pipeline"
+  },
+  {
+    "type": "exercise",
+    "file": "10-amazon-s3/05-image-processing/exercises/13-parameter-store.html",
+    "focus": "parameter store",
+    "scenario": "queue worker"
+  },
+  {
+    "type": "exercise",
+    "file": "10-amazon-s3/05-image-processing/exercises/14-zip-deploy.html",
+    "focus": "zip deploy",
+    "scenario": "scheduled job"
+  },
+  {
+    "type": "exercise",
+    "file": "10-amazon-s3/05-image-processing/exercises/15-serverless-yml.html",
+    "focus": "serverless yml",
+    "scenario": "auth API"
+  },
+  {
+    "type": "exercise",
+    "file": "10-amazon-s3/05-image-processing/exercises/16-sam-local.html",
+    "focus": "sam local",
+    "scenario": "image service"
+  },
+  {
+    "type": "exercise",
+    "file": "10-amazon-s3/05-image-processing/exercises/17-cdk-deploy.html",
+    "focus": "cdk deploy",
+    "scenario": "notification hub"
+  },
+  {
+    "type": "exercise",
+    "file": "10-amazon-s3/05-image-processing/exercises/18-mock-sdk.html",
+    "focus": "mock sdk",
+    "scenario": "order workflow"
+  },
+  {
+    "type": "exercise",
+    "file": "10-amazon-s3/05-image-processing/exercises/19-cloudwatch-log.html",
+    "focus": "cloudwatch log",
+    "scenario": "webhook receiver"
+  },
+  {
+    "type": "exercise",
+    "file": "10-amazon-s3/05-image-processing/exercises/20-timeout-fix.html",
+    "focus": "timeout fix",
+    "scenario": "data sync"
+  },
+  {
+    "type": "exercise",
+    "file": "10-amazon-s3/05-image-processing/exercises/21-memory-tune.html",
+    "focus": "memory tune",
+    "scenario": "REST microservice"
+  },
+  {
+    "type": "exercise",
+    "file": "10-amazon-s3/05-image-processing/exercises/22-reserved-concurrency.html",
+    "focus": "reserved concurrency",
+    "scenario": "file pipeline"
+  },
+  {
+    "type": "exercise",
+    "file": "10-amazon-s3/05-image-processing/exercises/23-github-actions.html",
+    "focus": "github actions",
+    "scenario": "queue worker"
+  },
+  {
+    "type": "exercise",
+    "file": "10-amazon-s3/05-image-processing/exercises/24-step-function.html",
+    "focus": "step function",
+    "scenario": "scheduled job"
+  },
+  {
+    "type": "exercise",
+    "file": "10-amazon-s3/05-image-processing/exercises/25-final-challenge.html",
+    "focus": "final challenge",
+    "scenario": "auth API"
+  },
+  {
+    "type": "template",
+    "file": "10-amazon-s3/05-image-processing/templates/01-hello-world.html",
+    "focus": "hello world",
+    "scenario": "REST microservice"
+  },
+  {
+    "type": "template",
+    "file": "10-amazon-s3/05-image-processing/templates/02-http-api.html",
+    "focus": "http api",
+    "scenario": "file pipeline"
+  },
+  {
+    "type": "template",
+    "file": "10-amazon-s3/05-image-processing/templates/03-rest-crud.html",
+    "focus": "rest crud",
+    "scenario": "queue worker"
+  },
+  {
+    "type": "template",
+    "file": "10-amazon-s3/05-image-processing/templates/04-file-upload.html",
+    "focus": "file upload",
+    "scenario": "scheduled job"
+  },
+  {
+    "type": "template",
+    "file": "10-amazon-s3/05-image-processing/templates/05-image-resize.html",
+    "focus": "image resize",
+    "scenario": "auth API"
+  },
+  {
+    "type": "template",
+    "file": "10-amazon-s3/05-image-processing/templates/06-sqs-worker.html",
+    "focus": "sqs worker",
+    "scenario": "image service"
+  },
+  {
+    "type": "template",
+    "file": "10-amazon-s3/05-image-processing/templates/07-sns-fanout.html",
+    "focus": "sns fanout",
+    "scenario": "notification hub"
+  },
+  {
+    "type": "template",
+    "file": "10-amazon-s3/05-image-processing/templates/08-scheduled-job.html",
+    "focus": "scheduled job",
+    "scenario": "order workflow"
+  },
+  {
+    "type": "template",
+    "file": "10-amazon-s3/05-image-processing/templates/09-cognito-jwt.html",
+    "focus": "cognito jwt",
+    "scenario": "webhook receiver"
+  },
+  {
+    "type": "template",
+    "file": "10-amazon-s3/05-image-processing/templates/10-secrets-layer.html",
+    "focus": "secrets layer",
+    "scenario": "data sync"
+  },
+  {
+    "type": "template",
+    "file": "10-amazon-s3/05-image-processing/templates/11-esbuild-pack.html",
+    "focus": "esbuild pack",
+    "scenario": "REST microservice"
+  },
+  {
+    "type": "template",
+    "file": "10-amazon-s3/05-image-processing/templates/12-serverless-app.html",
+    "focus": "serverless app",
+    "scenario": "file pipeline"
+  },
+  {
+    "type": "template",
+    "file": "10-amazon-s3/05-image-processing/templates/13-sam-template.html",
+    "focus": "sam template",
+    "scenario": "queue worker"
+  },
+  {
+    "type": "template",
+    "file": "10-amazon-s3/05-image-processing/templates/14-cdk-stack.html",
+    "focus": "cdk stack",
+    "scenario": "scheduled job"
+  },
+  {
+    "type": "template",
+    "file": "10-amazon-s3/05-image-processing/templates/15-jest-suite.html",
+    "focus": "jest suite",
+    "scenario": "auth API"
+  },
+  {
+    "type": "template",
+    "file": "10-amazon-s3/05-image-processing/templates/16-localstack.html",
+    "focus": "localstack",
+    "scenario": "image service"
+  },
+  {
+    "type": "template",
+    "file": "10-amazon-s3/05-image-processing/templates/17-observability.html",
+    "focus": "observability",
+    "scenario": "notification hub"
+  },
+  {
+    "type": "template",
+    "file": "10-amazon-s3/05-image-processing/templates/18-provisioned.html",
+    "focus": "provisioned",
+    "scenario": "order workflow"
+  },
+  {
+    "type": "template",
+    "file": "10-amazon-s3/05-image-processing/templates/19-vpc-lambda.html",
+    "focus": "vpc lambda",
+    "scenario": "webhook receiver"
+  },
+  {
+    "type": "template",
+    "file": "10-amazon-s3/05-image-processing/templates/20-canary-alias.html",
+    "focus": "canary alias",
+    "scenario": "data sync"
+  },
+  {
+    "type": "template",
+    "file": "10-amazon-s3/05-image-processing/templates/21-step-workflow.html",
+    "focus": "step workflow",
+    "scenario": "REST microservice"
+  },
+  {
+    "type": "template",
+    "file": "10-amazon-s3/05-image-processing/templates/22-container-image.html",
+    "focus": "container image",
+    "scenario": "file pipeline"
+  },
+  {
+    "type": "template",
+    "file": "10-amazon-s3/05-image-processing/templates/23-notification.html",
+    "focus": "notification",
+    "scenario": "queue worker"
+  },
+  {
+    "type": "template",
+    "file": "10-amazon-s3/05-image-processing/templates/24-order-pipeline.html",
+    "focus": "order pipeline",
+    "scenario": "scheduled job"
+  },
+  {
+    "type": "template",
+    "file": "10-amazon-s3/05-image-processing/templates/25-production-starter.html",
+    "focus": "production starter",
+    "scenario": "auth API"
+  }
+]

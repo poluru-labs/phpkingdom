@@ -1,0 +1,127 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: AWS Lambda with Node.js Tutorials
+section title: AWS SAM
+topic title: Deploy with AWS SAM
+content type: Example
+item number: 25
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Deploy with AWS SAM Example 25 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ffedd5;
+      color: #9a3412;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Example 25</span>
+    <h1>Deploy with AWS SAM</h1>
+    <p><strong>Section:</strong> AWS SAM</p>
+    <p><strong>Focus:</strong> Best Practice Recap</p>
+    <p><strong>Scenario:</strong> auth API</p>
+    <p>Study the Node.js Lambda pattern and adapt it to your AWS project.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Node.js Lambda</h2>
+        <pre><code>// Deploy with AWS SAM — Example 25
+// Focus: best practice recap | Scenario: auth API
+
+# template.yaml sketch
+# Resources:
+#   HelloFn:
+#     Type: AWS::Serverless::Function
+#     Properties:
+#       Runtime: nodejs20.x
+#       Handler: index.handler
+#       Architectures: [arm64]
+#       Events:
+#         Api:
+#           Type: HttpApi
+#           Properties:
+#             Path: /hello
+#             Method: get
+
+export const handler = async () =&gt; ({ statusCode: 200, body: &#x27;{&quot;ok&quot;:true}&#x27; });
+
+export const TOPIC_ID = &quot;sam-deployment&quot;;
+</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Deploy with AWS SAM
+- Practice: best practice recap
+- Scenario: auth API
+- Keep handlers thin; put business logic in modules
+- Reuse SDK clients outside the handler when possible
+- Log requestId; avoid logging secrets
+- Set memory/timeout for your workload; test cold starts
+
+Useful commands:
+  aws lambda invoke --function-name demo out.json
+  sam local invoke -e events/event.json
+  npm test
+  npx esbuild index.js --bundle --platform=node --target=node20 --outfile=dist/index.js</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This example shows one way to apply <strong>Deploy with AWS SAM</strong> in a auth api context.</p>
+      <p>Prefer least-privilege IAM, structured logs, and small deployment packages (esbuild/SAM/CDK).</p>
+    </section>
+  </main>
+</body>
+</html>

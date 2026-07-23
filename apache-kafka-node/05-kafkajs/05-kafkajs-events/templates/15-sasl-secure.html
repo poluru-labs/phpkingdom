@@ -1,0 +1,136 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Apache Kafka with Node.js Tutorials
+section title: KafkaJS
+topic title: KafkaJS Events
+content type: Template
+item number: 15
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>KafkaJS Events Template 15 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #dbeafe;
+      color: #1e40af;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Template 15</span>
+    <h1>KafkaJS Events</h1>
+    <p><strong>Section:</strong> KafkaJS</p>
+    <p><strong>Focus:</strong> Sasl Secure</p>
+    <p><strong>Scenario:</strong> payment bus</p>
+    <p>Use this scaffold as a starting point for a KafkaJS application.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>KafkaJS (Node.js)</h2>
+        <pre><code>// KafkaJS Events — Template 15
+// Focus: sasl secure | Scenario: payment bus
+
+// KafkaJS topic: KafkaJS Events
+import { Kafka, logLevel } from &quot;kafkajs&quot;;
+
+const kafka = new Kafka({
+  clientId: &quot;phpkingdom-kafkajs-events&quot;,
+  brokers: [process.env.KAFKA_BROKERS || &quot;localhost:9092&quot;],
+  logLevel: logLevel.INFO,
+});
+
+export async function demo_kafkajs_events(payload = {}) {
+  const producer = kafka.producer({ idempotent: true });
+  await producer.connect();
+  try {
+    await producer.send({
+      topic: process.env.KAFKA_TOPIC || &quot;kafkajs-events-events&quot;,
+      messages: [{
+        key: payload.key || &quot;demo&quot;,
+        value: JSON.stringify({ topic: &quot;kafkajs-events&quot;, label: &quot;KafkaJS Events&quot;, ...payload }),
+      }],
+    });
+  } finally {
+    await producer.disconnect();
+  }
+}
+
+export const TOPIC_KAFKAJS_EVENTS = &quot;kafkajs-events&quot;;
+</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for KafkaJS Events
+- Practice: sasl secure
+- Scenario: payment bus
+- Prefer idempotent producers and explicit keys for ordering
+- Commit offsets after successful processing (at-least-once)
+- Use DLQ/retry topics for poison messages
+- Never log secrets; include correlation IDs in headers
+
+Useful commands:
+  docker compose up -d
+  npm install kafkajs
+  node producer.js
+  node consumer.js
+  kafka-topics.sh --bootstrap-server localhost:9092 --list</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This template shows one way to apply <strong>KafkaJS Events</strong> in a payment bus context.</p>
+      <p>Design keys for partition affinity, monitor consumer lag, and keep schemas evolving safely.</p>
+    </section>
+  </main>
+</body>
+</html>

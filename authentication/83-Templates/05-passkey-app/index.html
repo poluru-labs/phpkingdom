@@ -1,0 +1,54 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 83-Templates/05-passkey-app
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <meta name="description" content="Passkey registration/login">
+  <title>Passkey App | WebAuthn | phpkingdom.com</title>
+  <style>
+    body { margin:0; font-family: Georgia, "Times New Roman", serif; background:#f5f7fb; color:#1f2937; line-height:1.55; }
+    .wrap { max-width:900px; margin:0 auto; padding:1.5rem; }
+    .brand { color:#3730a3; font-size:.78rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    h1 { font-size:1.75rem; margin:.4rem 0; }
+    .meta { color:#64748b; }
+    pre { background:#0f172a; color:#e2e8f0; padding:1rem; border-radius:.65rem; overflow:auto; font-size:.88rem; }
+    .card { background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:1rem; margin:1rem 0; }
+    a { color:#3730a3; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">phpkingdom.com</div>
+    <p class="meta">Passkey App · Authentication template</p>
+    <h1>WebAuthn</h1>
+    <p class="meta">Passkey registration/login</p>
+    <div class="card">
+      <h2>Auth Scaffold</h2>
+      <pre><code>import { generateRegistrationOptions, verifyRegistrationResponse } from &quot;@simplewebauthn/server&quot;;
+export async function startRegistration(user) {
+  return generateRegistrationOptions({
+    rpName: &quot;phpkingdom.com&quot;, rpID: &quot;phpkingdom.com&quot;,
+    userID: Buffer.from(user.id), userName: user.email,
+    authenticatorSelection: { residentKey: &quot;preferred&quot;, userVerification: &quot;preferred&quot; },
+  });
+}</code></pre>
+    </div>
+    <div class="card">
+      <h2>Verify</h2>
+      <pre><code>npm install bcrypt jsonwebtoken
+# register → login → call /me with Authorization: Bearer &lt;token&gt;
+# or set HttpOnly session cookie and call a protected route</code></pre>
+    </div>
+    <p><a href="../index.html">All templates</a></p>
+  </div>
+</body>
+</html>

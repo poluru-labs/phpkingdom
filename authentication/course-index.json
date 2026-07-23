@@ -1,0 +1,2070 @@
+{
+  "title": "Authentication Tutorials",
+  "items": [
+    {
+      "title": "Authentication Basics",
+      "items": [
+        {
+          "href": "/tutorials/authentication/introduction",
+          "label": "Authentication - Introduction"
+        },
+        {
+          "href": "/tutorials/authentication/basics",
+          "label": "Authentication - Basics"
+        },
+        {
+          "href": "/tutorials/authentication/what-is-authentication",
+          "label": "What Is Authentication?"
+        },
+        {
+          "href": "/tutorials/authentication/how-authentication-works",
+          "label": "How Authentication Works"
+        },
+        {
+          "href": "/tutorials/authentication/authentication-use-cases",
+          "label": "Authentication Use Cases"
+        }
+      ]
+    },
+    {
+      "title": "Identity Fundamentals",
+      "items": [
+        {
+          "href": "/tutorials/authentication/digital-identity",
+          "label": "Digital Identity"
+        },
+        {
+          "href": "/tutorials/authentication/users-identities-accounts",
+          "label": "Users, Identities, and Accounts"
+        },
+        {
+          "href": "/tutorials/authentication/identity-lifecycle",
+          "label": "Identity Lifecycle"
+        },
+        {
+          "href": "/tutorials/authentication/identity-verification",
+          "label": "Identity Verification"
+        },
+        {
+          "href": "/tutorials/authentication/identity-proofing",
+          "label": "Identity Proofing"
+        }
+      ]
+    },
+    {
+      "title": "Authentication vs Authorization",
+      "items": [
+        {
+          "href": "/tutorials/authentication/authentication-vs-authorization",
+          "label": "Authentication vs Authorization"
+        },
+        {
+          "href": "/tutorials/authentication/identification-authentication",
+          "label": "Identification vs Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/access-control",
+          "label": "Access Control"
+        },
+        {
+          "href": "/tutorials/authentication/permissions",
+          "label": "Permissions"
+        },
+        {
+          "href": "/tutorials/authentication/authentication-flow",
+          "label": "Authentication and Authorization Flow"
+        }
+      ]
+    },
+    {
+      "title": "Authentication Factors",
+      "items": [
+        {
+          "href": "/tutorials/authentication/authentication-factors",
+          "label": "Authentication Factors"
+        },
+        {
+          "href": "/tutorials/authentication/knowledge-factor",
+          "label": "Knowledge Factors"
+        },
+        {
+          "href": "/tutorials/authentication/possession-factor",
+          "label": "Possession Factors"
+        },
+        {
+          "href": "/tutorials/authentication/inherence-factor",
+          "label": "Biometric Factors"
+        },
+        {
+          "href": "/tutorials/authentication/contextual-factors",
+          "label": "Contextual Authentication Factors"
+        }
+      ]
+    },
+    {
+      "title": "Registration",
+      "items": [
+        {
+          "href": "/tutorials/authentication/user-registration",
+          "label": "User Registration"
+        },
+        {
+          "href": "/tutorials/authentication/signup-form",
+          "label": "Build a Signup Form"
+        },
+        {
+          "href": "/tutorials/authentication/registration-validation",
+          "label": "Registration Validation"
+        },
+        {
+          "href": "/tutorials/authentication/duplicate-accounts",
+          "label": "Prevent Duplicate Accounts"
+        },
+        {
+          "href": "/tutorials/authentication/registration-security",
+          "label": "Secure User Registration"
+        }
+      ]
+    },
+    {
+      "title": "Login",
+      "items": [
+        {
+          "href": "/tutorials/authentication/login",
+          "label": "User Login"
+        },
+        {
+          "href": "/tutorials/authentication/login-form",
+          "label": "Build a Login Form"
+        },
+        {
+          "href": "/tutorials/authentication/login-validation",
+          "label": "Login Validation"
+        },
+        {
+          "href": "/tutorials/authentication/login-errors",
+          "label": "Login Error Handling"
+        },
+        {
+          "href": "/tutorials/authentication/secure-login-flow",
+          "label": "Secure Login Flow"
+        }
+      ]
+    },
+    {
+      "title": "Password Authentication",
+      "items": [
+        {
+          "href": "/tutorials/authentication/password-authentication",
+          "label": "Password Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/password-storage",
+          "label": "Secure Password Storage"
+        },
+        {
+          "href": "/tutorials/authentication/password-hashing",
+          "label": "Password Hashing"
+        },
+        {
+          "href": "/tutorials/authentication/password-salting",
+          "label": "Password Salting"
+        },
+        {
+          "href": "/tutorials/authentication/password-verification",
+          "label": "Password Verification"
+        }
+      ]
+    },
+    {
+      "title": "Password Hashing",
+      "items": [
+        {
+          "href": "/tutorials/authentication/bcrypt",
+          "label": "bcrypt"
+        },
+        {
+          "href": "/tutorials/authentication/argon2",
+          "label": "Argon2"
+        },
+        {
+          "href": "/tutorials/authentication/scrypt",
+          "label": "scrypt"
+        },
+        {
+          "href": "/tutorials/authentication/pbkdf2",
+          "label": "PBKDF2"
+        },
+        {
+          "href": "/tutorials/authentication/password-hashing-comparison",
+          "label": "Password Hashing Comparison"
+        }
+      ]
+    },
+    {
+      "title": "Password Policies",
+      "items": [
+        {
+          "href": "/tutorials/authentication/password-policies",
+          "label": "Password Policies"
+        },
+        {
+          "href": "/tutorials/authentication/password-strength",
+          "label": "Password Strength"
+        },
+        {
+          "href": "/tutorials/authentication/password-complexity",
+          "label": "Password Complexity"
+        },
+        {
+          "href": "/tutorials/authentication/compromised-passwords",
+          "label": "Compromised Password Detection"
+        },
+        {
+          "href": "/tutorials/authentication/password-policy-best-practices",
+          "label": "Password Policy Best Practices"
+        }
+      ]
+    },
+    {
+      "title": "Password Reset",
+      "items": [
+        {
+          "href": "/tutorials/authentication/password-reset",
+          "label": "Password Reset"
+        },
+        {
+          "href": "/tutorials/authentication/forgot-password",
+          "label": "Forgot Password Flow"
+        },
+        {
+          "href": "/tutorials/authentication/password-reset-token",
+          "label": "Password Reset Tokens"
+        },
+        {
+          "href": "/tutorials/authentication/reset-token-expiration",
+          "label": "Reset Token Expiration"
+        },
+        {
+          "href": "/tutorials/authentication/password-reset-security",
+          "label": "Password Reset Security"
+        }
+      ]
+    },
+    {
+      "title": "Email Verification",
+      "items": [
+        {
+          "href": "/tutorials/authentication/email-verification",
+          "label": "Email Verification"
+        },
+        {
+          "href": "/tutorials/authentication/verification-token",
+          "label": "Email Verification Tokens"
+        },
+        {
+          "href": "/tutorials/authentication/verification-link",
+          "label": "Verification Links"
+        },
+        {
+          "href": "/tutorials/authentication/resend-verification",
+          "label": "Resend Verification Email"
+        },
+        {
+          "href": "/tutorials/authentication/email-verification-security",
+          "label": "Email Verification Security"
+        }
+      ]
+    },
+    {
+      "title": "Phone Verification",
+      "items": [
+        {
+          "href": "/tutorials/authentication/phone-verification",
+          "label": "Phone Verification"
+        },
+        {
+          "href": "/tutorials/authentication/sms-otp",
+          "label": "SMS One-Time Passwords"
+        },
+        {
+          "href": "/tutorials/authentication/voice-otp",
+          "label": "Voice OTP Verification"
+        },
+        {
+          "href": "/tutorials/authentication/otp-expiration",
+          "label": "OTP Expiration"
+        },
+        {
+          "href": "/tutorials/authentication/phone-verification-security",
+          "label": "Phone Verification Security"
+        }
+      ]
+    },
+    {
+      "title": "Session Authentication",
+      "items": [
+        {
+          "href": "/tutorials/authentication/session-authentication",
+          "label": "Session Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/server-side-sessions",
+          "label": "Server-Side Sessions"
+        },
+        {
+          "href": "/tutorials/authentication/session-store",
+          "label": "Session Stores"
+        },
+        {
+          "href": "/tutorials/authentication/session-id",
+          "label": "Session IDs"
+        },
+        {
+          "href": "/tutorials/authentication/session-lifecycle",
+          "label": "Session Lifecycle"
+        }
+      ]
+    },
+    {
+      "title": "Cookies",
+      "items": [
+        {
+          "href": "/tutorials/authentication/cookies",
+          "label": "Authentication Cookies"
+        },
+        {
+          "href": "/tutorials/authentication/http-only-cookies",
+          "label": "HttpOnly Cookies"
+        },
+        {
+          "href": "/tutorials/authentication/secure-cookies",
+          "label": "Secure Cookies"
+        },
+        {
+          "href": "/tutorials/authentication/same-site-cookies",
+          "label": "SameSite Cookies"
+        },
+        {
+          "href": "/tutorials/authentication/cookie-expiration",
+          "label": "Cookie Expiration"
+        }
+      ]
+    },
+    {
+      "title": "Session Security",
+      "items": [
+        {
+          "href": "/tutorials/authentication/session-security",
+          "label": "Session Security"
+        },
+        {
+          "href": "/tutorials/authentication/session-fixation",
+          "label": "Session Fixation"
+        },
+        {
+          "href": "/tutorials/authentication/session-hijacking",
+          "label": "Session Hijacking"
+        },
+        {
+          "href": "/tutorials/authentication/session-rotation",
+          "label": "Session Rotation"
+        },
+        {
+          "href": "/tutorials/authentication/session-invalidation",
+          "label": "Session Invalidation"
+        }
+      ]
+    },
+    {
+      "title": "JSON Web Tokens",
+      "items": [
+        {
+          "href": "/tutorials/authentication/json-web-tokens",
+          "label": "JSON Web Tokens"
+        },
+        {
+          "href": "/tutorials/authentication/jwt-structure",
+          "label": "JWT Structure"
+        },
+        {
+          "href": "/tutorials/authentication/jwt-header",
+          "label": "JWT Header"
+        },
+        {
+          "href": "/tutorials/authentication/jwt-payload",
+          "label": "JWT Payload"
+        },
+        {
+          "href": "/tutorials/authentication/jwt-signature",
+          "label": "JWT Signature"
+        }
+      ]
+    },
+    {
+      "title": "JWT Claims",
+      "items": [
+        {
+          "href": "/tutorials/authentication/jwt-claims",
+          "label": "JWT Claims"
+        },
+        {
+          "href": "/tutorials/authentication/registered-claims",
+          "label": "Registered Claims"
+        },
+        {
+          "href": "/tutorials/authentication/public-private-claims",
+          "label": "Public and Private Claims"
+        },
+        {
+          "href": "/tutorials/authentication/jwt-expiration",
+          "label": "JWT Expiration"
+        },
+        {
+          "href": "/tutorials/authentication/jwt-audience-issuer",
+          "label": "JWT Audience and Issuer"
+        }
+      ]
+    },
+    {
+      "title": "JWT Signing",
+      "items": [
+        {
+          "href": "/tutorials/authentication/jwt-signing",
+          "label": "JWT Signing"
+        },
+        {
+          "href": "/tutorials/authentication/symmetric-signing",
+          "label": "Symmetric JWT Signing"
+        },
+        {
+          "href": "/tutorials/authentication/asymmetric-signing",
+          "label": "Asymmetric JWT Signing"
+        },
+        {
+          "href": "/tutorials/authentication/jwt-algorithms",
+          "label": "JWT Signing Algorithms"
+        },
+        {
+          "href": "/tutorials/authentication/jwt-key-management",
+          "label": "JWT Key Management"
+        }
+      ]
+    },
+    {
+      "title": "Access and Refresh Tokens",
+      "items": [
+        {
+          "href": "/tutorials/authentication/access-tokens",
+          "label": "Access Tokens"
+        },
+        {
+          "href": "/tutorials/authentication/refresh-tokens",
+          "label": "Refresh Tokens"
+        },
+        {
+          "href": "/tutorials/authentication/token-refresh-flow",
+          "label": "Token Refresh Flow"
+        },
+        {
+          "href": "/tutorials/authentication/refresh-token-rotation",
+          "label": "Refresh Token Rotation"
+        },
+        {
+          "href": "/tutorials/authentication/token-revocation",
+          "label": "Token Revocation"
+        }
+      ]
+    },
+    {
+      "title": "Token Storage",
+      "items": [
+        {
+          "href": "/tutorials/authentication/token-storage",
+          "label": "Authentication Token Storage"
+        },
+        {
+          "href": "/tutorials/authentication/local-storage-tokens",
+          "label": "Tokens in Local Storage"
+        },
+        {
+          "href": "/tutorials/authentication/session-storage-tokens",
+          "label": "Tokens in Session Storage"
+        },
+        {
+          "href": "/tutorials/authentication/cookie-based-tokens",
+          "label": "Tokens in Cookies"
+        },
+        {
+          "href": "/tutorials/authentication/token-storage-security",
+          "label": "Secure Token Storage"
+        }
+      ]
+    },
+    {
+      "title": "Bearer Authentication",
+      "items": [
+        {
+          "href": "/tutorials/authentication/bearer-authentication",
+          "label": "Bearer Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/authorization-header",
+          "label": "Authorization Header"
+        },
+        {
+          "href": "/tutorials/authentication/bearer-token-validation",
+          "label": "Bearer Token Validation"
+        },
+        {
+          "href": "/tutorials/authentication/bearer-token-errors",
+          "label": "Bearer Token Errors"
+        },
+        {
+          "href": "/tutorials/authentication/bearer-token-security",
+          "label": "Bearer Token Security"
+        }
+      ]
+    },
+    {
+      "title": "API Keys",
+      "items": [
+        {
+          "href": "/tutorials/authentication/api-keys",
+          "label": "API Key Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/generate-api-keys",
+          "label": "Generate API Keys"
+        },
+        {
+          "href": "/tutorials/authentication/store-api-keys",
+          "label": "Store API Keys Securely"
+        },
+        {
+          "href": "/tutorials/authentication/api-key-rotation",
+          "label": "API Key Rotation"
+        },
+        {
+          "href": "/tutorials/authentication/api-key-vs-jwt",
+          "label": "API Keys vs JWT"
+        }
+      ]
+    },
+    {
+      "title": "Basic Authentication",
+      "items": [
+        {
+          "href": "/tutorials/authentication/basic-authentication",
+          "label": "HTTP Basic Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/basic-auth-header",
+          "label": "Basic Authorization Header"
+        },
+        {
+          "href": "/tutorials/authentication/basic-auth-nodejs",
+          "label": "Basic Authentication with Node.js"
+        },
+        {
+          "href": "/tutorials/authentication/basic-auth-security",
+          "label": "Basic Authentication Security"
+        },
+        {
+          "href": "/tutorials/authentication/basic-auth-vs-bearer",
+          "label": "Basic Auth vs Bearer Auth"
+        }
+      ]
+    },
+    {
+      "title": "OAuth 2.0",
+      "items": [
+        {
+          "href": "/tutorials/authentication/oauth-2",
+          "label": "OAuth 2.0"
+        },
+        {
+          "href": "/tutorials/authentication/oauth-roles",
+          "label": "OAuth Roles"
+        },
+        {
+          "href": "/tutorials/authentication/oauth-scopes",
+          "label": "OAuth Scopes"
+        },
+        {
+          "href": "/tutorials/authentication/oauth-access-token",
+          "label": "OAuth Access Tokens"
+        },
+        {
+          "href": "/tutorials/authentication/oauth-refresh-token",
+          "label": "OAuth Refresh Tokens"
+        }
+      ]
+    },
+    {
+      "title": "OAuth Authorization Code",
+      "items": [
+        {
+          "href": "/tutorials/authentication/authorization-code-flow",
+          "label": "Authorization Code Flow"
+        },
+        {
+          "href": "/tutorials/authentication/oauth-authorization-request",
+          "label": "Authorization Request"
+        },
+        {
+          "href": "/tutorials/authentication/oauth-callback",
+          "label": "OAuth Callback"
+        },
+        {
+          "href": "/tutorials/authentication/oauth-code-exchange",
+          "label": "Authorization Code Exchange"
+        },
+        {
+          "href": "/tutorials/authentication/oauth-state-parameter",
+          "label": "OAuth State Parameter"
+        }
+      ]
+    },
+    {
+      "title": "PKCE",
+      "items": [
+        {
+          "href": "/tutorials/authentication/pkce",
+          "label": "Proof Key for Code Exchange"
+        },
+        {
+          "href": "/tutorials/authentication/code-verifier",
+          "label": "PKCE Code Verifier"
+        },
+        {
+          "href": "/tutorials/authentication/code-challenge",
+          "label": "PKCE Code Challenge"
+        },
+        {
+          "href": "/tutorials/authentication/pkce-flow",
+          "label": "Authorization Code with PKCE"
+        },
+        {
+          "href": "/tutorials/authentication/pkce-security",
+          "label": "PKCE Security"
+        }
+      ]
+    },
+    {
+      "title": "OAuth Client Credentials",
+      "items": [
+        {
+          "href": "/tutorials/authentication/client-credentials-flow",
+          "label": "Client Credentials Flow"
+        },
+        {
+          "href": "/tutorials/authentication/machine-to-machine-authentication",
+          "label": "Machine-to-Machine Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/client-id-secret",
+          "label": "Client ID and Client Secret"
+        },
+        {
+          "href": "/tutorials/authentication/service-accounts",
+          "label": "Service Accounts"
+        },
+        {
+          "href": "/tutorials/authentication/client-credentials-security",
+          "label": "Client Credentials Security"
+        }
+      ]
+    },
+    {
+      "title": "OAuth Device Flow",
+      "items": [
+        {
+          "href": "/tutorials/authentication/device-authorization-flow",
+          "label": "Device Authorization Flow"
+        },
+        {
+          "href": "/tutorials/authentication/device-code",
+          "label": "Device Code"
+        },
+        {
+          "href": "/tutorials/authentication/user-code",
+          "label": "User Code"
+        },
+        {
+          "href": "/tutorials/authentication/device-token-polling",
+          "label": "Device Token Polling"
+        },
+        {
+          "href": "/tutorials/authentication/device-flow-use-cases",
+          "label": "Device Flow Use Cases"
+        }
+      ]
+    },
+    {
+      "title": "OpenID Connect",
+      "items": [
+        {
+          "href": "/tutorials/authentication/openid-connect",
+          "label": "OpenID Connect"
+        },
+        {
+          "href": "/tutorials/authentication/oidc-vs-oauth",
+          "label": "OpenID Connect vs OAuth"
+        },
+        {
+          "href": "/tutorials/authentication/id-token",
+          "label": "OpenID Connect ID Token"
+        },
+        {
+          "href": "/tutorials/authentication/userinfo-endpoint",
+          "label": "UserInfo Endpoint"
+        },
+        {
+          "href": "/tutorials/authentication/oidc-scopes",
+          "label": "OpenID Connect Scopes"
+        }
+      ]
+    },
+    {
+      "title": "OIDC Discovery",
+      "items": [
+        {
+          "href": "/tutorials/authentication/oidc-discovery",
+          "label": "OpenID Connect Discovery"
+        },
+        {
+          "href": "/tutorials/authentication/well-known-configuration",
+          "label": "Well-Known Configuration"
+        },
+        {
+          "href": "/tutorials/authentication/jwks",
+          "label": "JSON Web Key Sets"
+        },
+        {
+          "href": "/tutorials/authentication/issuer-validation",
+          "label": "Issuer Validation"
+        },
+        {
+          "href": "/tutorials/authentication/oidc-metadata",
+          "label": "OIDC Provider Metadata"
+        }
+      ]
+    },
+    {
+      "title": "Social Login",
+      "items": [
+        {
+          "href": "/tutorials/authentication/social-login",
+          "label": "Social Login"
+        },
+        {
+          "href": "/tutorials/authentication/google-login",
+          "label": "Google Login"
+        },
+        {
+          "href": "/tutorials/authentication/github-login",
+          "label": "GitHub Login"
+        },
+        {
+          "href": "/tutorials/authentication/facebook-login",
+          "label": "Facebook Login"
+        },
+        {
+          "href": "/tutorials/authentication/apple-login",
+          "label": "Sign in with Apple"
+        }
+      ]
+    },
+    {
+      "title": "Single Sign-On",
+      "items": [
+        {
+          "href": "/tutorials/authentication/single-sign-on",
+          "label": "Single Sign-On"
+        },
+        {
+          "href": "/tutorials/authentication/sso-flow",
+          "label": "How SSO Works"
+        },
+        {
+          "href": "/tutorials/authentication/service-provider",
+          "label": "Service Providers"
+        },
+        {
+          "href": "/tutorials/authentication/identity-provider",
+          "label": "Identity Providers"
+        },
+        {
+          "href": "/tutorials/authentication/single-logout",
+          "label": "Single Logout"
+        }
+      ]
+    },
+    {
+      "title": "SAML",
+      "items": [
+        {
+          "href": "/tutorials/authentication/saml",
+          "label": "SAML Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/saml-assertions",
+          "label": "SAML Assertions"
+        },
+        {
+          "href": "/tutorials/authentication/saml-request-response",
+          "label": "SAML Requests and Responses"
+        },
+        {
+          "href": "/tutorials/authentication/saml-metadata",
+          "label": "SAML Metadata"
+        },
+        {
+          "href": "/tutorials/authentication/saml-vs-oidc",
+          "label": "SAML vs OpenID Connect"
+        }
+      ]
+    },
+    {
+      "title": "Enterprise Authentication",
+      "items": [
+        {
+          "href": "/tutorials/authentication/enterprise-authentication",
+          "label": "Enterprise Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/active-directory",
+          "label": "Active Directory Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/ldap",
+          "label": "LDAP Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/enterprise-sso",
+          "label": "Enterprise SSO"
+        },
+        {
+          "href": "/tutorials/authentication/domain-discovery",
+          "label": "Enterprise Domain Discovery"
+        }
+      ]
+    },
+    {
+      "title": "Multi-Factor Authentication",
+      "items": [
+        {
+          "href": "/tutorials/authentication/multi-factor-authentication",
+          "label": "Multi-Factor Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/two-factor-authentication",
+          "label": "Two-Factor Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/mfa-enrollment",
+          "label": "MFA Enrollment"
+        },
+        {
+          "href": "/tutorials/authentication/mfa-challenge",
+          "label": "MFA Challenge Flow"
+        },
+        {
+          "href": "/tutorials/authentication/mfa-recovery",
+          "label": "MFA Recovery"
+        }
+      ]
+    },
+    {
+      "title": "Authenticator Apps",
+      "items": [
+        {
+          "href": "/tutorials/authentication/authenticator-apps",
+          "label": "Authenticator Apps"
+        },
+        {
+          "href": "/tutorials/authentication/totp",
+          "label": "Time-Based One-Time Passwords"
+        },
+        {
+          "href": "/tutorials/authentication/hotp",
+          "label": "HMAC-Based One-Time Passwords"
+        },
+        {
+          "href": "/tutorials/authentication/qr-code-enrollment",
+          "label": "QR Code Enrollment"
+        },
+        {
+          "href": "/tutorials/authentication/totp-verification",
+          "label": "Verify TOTP Codes"
+        }
+      ]
+    },
+    {
+      "title": "Recovery Codes",
+      "items": [
+        {
+          "href": "/tutorials/authentication/recovery-codes",
+          "label": "Recovery Codes"
+        },
+        {
+          "href": "/tutorials/authentication/generate-recovery-codes",
+          "label": "Generate Recovery Codes"
+        },
+        {
+          "href": "/tutorials/authentication/store-recovery-codes",
+          "label": "Store Recovery Codes"
+        },
+        {
+          "href": "/tutorials/authentication/use-recovery-codes",
+          "label": "Use Recovery Codes"
+        },
+        {
+          "href": "/tutorials/authentication/regenerate-recovery-codes",
+          "label": "Regenerate Recovery Codes"
+        }
+      ]
+    },
+    {
+      "title": "Passwordless Authentication",
+      "items": [
+        {
+          "href": "/tutorials/authentication/passwordless-authentication",
+          "label": "Passwordless Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/email-magic-links",
+          "label": "Email Magic Links"
+        },
+        {
+          "href": "/tutorials/authentication/email-otp",
+          "label": "Email One-Time Passwords"
+        },
+        {
+          "href": "/tutorials/authentication/sms-passwordless",
+          "label": "SMS Passwordless Login"
+        },
+        {
+          "href": "/tutorials/authentication/passwordless-security",
+          "label": "Passwordless Security"
+        }
+      ]
+    },
+    {
+      "title": "WebAuthn",
+      "items": [
+        {
+          "href": "/tutorials/authentication/webauthn",
+          "label": "WebAuthn"
+        },
+        {
+          "href": "/tutorials/authentication/webauthn-registration",
+          "label": "WebAuthn Registration"
+        },
+        {
+          "href": "/tutorials/authentication/webauthn-authentication",
+          "label": "WebAuthn Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/public-key-credentials",
+          "label": "Public Key Credentials"
+        },
+        {
+          "href": "/tutorials/authentication/webauthn-security",
+          "label": "WebAuthn Security"
+        }
+      ]
+    },
+    {
+      "title": "Passkeys",
+      "items": [
+        {
+          "href": "/tutorials/authentication/passkeys",
+          "label": "Passkeys"
+        },
+        {
+          "href": "/tutorials/authentication/passkey-registration",
+          "label": "Passkey Registration"
+        },
+        {
+          "href": "/tutorials/authentication/passkey-login",
+          "label": "Passkey Login"
+        },
+        {
+          "href": "/tutorials/authentication/synced-passkeys",
+          "label": "Synced Passkeys"
+        },
+        {
+          "href": "/tutorials/authentication/device-bound-passkeys",
+          "label": "Device-Bound Passkeys"
+        }
+      ]
+    },
+    {
+      "title": "Biometric Authentication",
+      "items": [
+        {
+          "href": "/tutorials/authentication/biometric-authentication",
+          "label": "Biometric Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/fingerprint-authentication",
+          "label": "Fingerprint Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/face-authentication",
+          "label": "Face Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/biometric-privacy",
+          "label": "Biometric Privacy"
+        },
+        {
+          "href": "/tutorials/authentication/biometric-security",
+          "label": "Biometric Security"
+        }
+      ]
+    },
+    {
+      "title": "Adaptive Authentication",
+      "items": [
+        {
+          "href": "/tutorials/authentication/adaptive-authentication",
+          "label": "Adaptive Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/risk-based-authentication",
+          "label": "Risk-Based Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/device-recognition",
+          "label": "Device Recognition"
+        },
+        {
+          "href": "/tutorials/authentication/location-based-authentication",
+          "label": "Location-Based Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/step-up-authentication",
+          "label": "Step-Up Authentication"
+        }
+      ]
+    },
+    {
+      "title": "Authorization Models",
+      "items": [
+        {
+          "href": "/tutorials/authentication/authorization-models",
+          "label": "Authorization Models"
+        },
+        {
+          "href": "/tutorials/authentication/rbac",
+          "label": "Role-Based Access Control"
+        },
+        {
+          "href": "/tutorials/authentication/abac",
+          "label": "Attribute-Based Access Control"
+        },
+        {
+          "href": "/tutorials/authentication/pbac",
+          "label": "Policy-Based Access Control"
+        },
+        {
+          "href": "/tutorials/authentication/rebac",
+          "label": "Relationship-Based Access Control"
+        }
+      ]
+    },
+    {
+      "title": "Roles and Permissions",
+      "items": [
+        {
+          "href": "/tutorials/authentication/roles-permissions",
+          "label": "Roles and Permissions"
+        },
+        {
+          "href": "/tutorials/authentication/role-design",
+          "label": "Role Design"
+        },
+        {
+          "href": "/tutorials/authentication/permission-checks",
+          "label": "Permission Checks"
+        },
+        {
+          "href": "/tutorials/authentication/least-privilege",
+          "label": "Least-Privilege Access"
+        },
+        {
+          "href": "/tutorials/authentication/role-hierarchy",
+          "label": "Role Hierarchies"
+        }
+      ]
+    },
+    {
+      "title": "Frontend Authentication",
+      "items": [
+        {
+          "href": "/tutorials/authentication/frontend-authentication",
+          "label": "Frontend Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/login-state",
+          "label": "Manage Login State"
+        },
+        {
+          "href": "/tutorials/authentication/protected-pages",
+          "label": "Protected Pages"
+        },
+        {
+          "href": "/tutorials/authentication/authentication-context",
+          "label": "Authentication Context"
+        },
+        {
+          "href": "/tutorials/authentication/frontend-token-refresh",
+          "label": "Frontend Token Refresh"
+        }
+      ]
+    },
+    {
+      "title": "React Authentication",
+      "items": [
+        {
+          "href": "/tutorials/authentication/react",
+          "label": "Authentication with React"
+        },
+        {
+          "href": "/tutorials/authentication/react-auth-provider",
+          "label": "React Auth Provider"
+        },
+        {
+          "href": "/tutorials/authentication/react-protected-routes",
+          "label": "React Protected Routes"
+        },
+        {
+          "href": "/tutorials/authentication/react-auth-hooks",
+          "label": "React Authentication Hooks"
+        },
+        {
+          "href": "/tutorials/authentication/react-login-logout",
+          "label": "React Login and Logout"
+        }
+      ]
+    },
+    {
+      "title": "Next.js Authentication",
+      "items": [
+        {
+          "href": "/tutorials/authentication/nextjs",
+          "label": "Authentication with Next.js"
+        },
+        {
+          "href": "/tutorials/authentication/nextjs-app-router",
+          "label": "Next.js App Router Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/nextjs-middleware",
+          "label": "Next.js Authentication Middleware"
+        },
+        {
+          "href": "/tutorials/authentication/nextjs-server-components",
+          "label": "Authentication in Server Components"
+        },
+        {
+          "href": "/tutorials/authentication/nextjs-route-handlers",
+          "label": "Authenticated Route Handlers"
+        }
+      ]
+    },
+    {
+      "title": "Node.js Authentication",
+      "items": [
+        {
+          "href": "/tutorials/authentication/nodejs",
+          "label": "Authentication with Node.js"
+        },
+        {
+          "href": "/tutorials/authentication/nodejs-registration",
+          "label": "Node.js User Registration"
+        },
+        {
+          "href": "/tutorials/authentication/nodejs-login",
+          "label": "Node.js User Login"
+        },
+        {
+          "href": "/tutorials/authentication/nodejs-jwt",
+          "label": "JWT Authentication with Node.js"
+        },
+        {
+          "href": "/tutorials/authentication/nodejs-sessions",
+          "label": "Session Authentication with Node.js"
+        }
+      ]
+    },
+    {
+      "title": "Express Authentication",
+      "items": [
+        {
+          "href": "/tutorials/authentication/express",
+          "label": "Authentication with Express"
+        },
+        {
+          "href": "/tutorials/authentication/express-auth-middleware",
+          "label": "Express Authentication Middleware"
+        },
+        {
+          "href": "/tutorials/authentication/express-session",
+          "label": "Express Session Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/express-jwt",
+          "label": "Express JWT Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/express-protected-routes",
+          "label": "Express Protected Routes"
+        }
+      ]
+    },
+    {
+      "title": "NestJS Authentication",
+      "items": [
+        {
+          "href": "/tutorials/authentication/nestjs",
+          "label": "Authentication with NestJS"
+        },
+        {
+          "href": "/tutorials/authentication/nestjs-guards",
+          "label": "NestJS Authentication Guards"
+        },
+        {
+          "href": "/tutorials/authentication/nestjs-jwt",
+          "label": "NestJS JWT Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/nestjs-passport",
+          "label": "NestJS Passport Integration"
+        },
+        {
+          "href": "/tutorials/authentication/nestjs-roles",
+          "label": "NestJS Role-Based Authorization"
+        }
+      ]
+    },
+    {
+      "title": "GraphQL Authentication",
+      "items": [
+        {
+          "href": "/tutorials/authentication/graphql",
+          "label": "GraphQL Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/graphql-context",
+          "label": "GraphQL Authentication Context"
+        },
+        {
+          "href": "/tutorials/authentication/graphql-auth-directives",
+          "label": "GraphQL Auth Directives"
+        },
+        {
+          "href": "/tutorials/authentication/graphql-field-authorization",
+          "label": "GraphQL Field Authorization"
+        },
+        {
+          "href": "/tutorials/authentication/graphql-subscription-auth",
+          "label": "GraphQL Subscription Authentication"
+        }
+      ]
+    },
+    {
+      "title": "REST API Authentication",
+      "items": [
+        {
+          "href": "/tutorials/authentication/rest-api",
+          "label": "REST API Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/rest-jwt",
+          "label": "JWT for REST APIs"
+        },
+        {
+          "href": "/tutorials/authentication/rest-api-keys",
+          "label": "API Keys for REST APIs"
+        },
+        {
+          "href": "/tutorials/authentication/rest-oauth",
+          "label": "OAuth for REST APIs"
+        },
+        {
+          "href": "/tutorials/authentication/rest-auth-errors",
+          "label": "REST Authentication Errors"
+        }
+      ]
+    },
+    {
+      "title": "Microservices Authentication",
+      "items": [
+        {
+          "href": "/tutorials/authentication/microservices",
+          "label": "Microservices Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/service-to-service-auth",
+          "label": "Service-to-Service Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/api-gateway-auth",
+          "label": "API Gateway Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/token-propagation",
+          "label": "Token Propagation"
+        },
+        {
+          "href": "/tutorials/authentication/distributed-session-management",
+          "label": "Distributed Session Management"
+        }
+      ]
+    },
+    {
+      "title": "Cloud Authentication",
+      "items": [
+        {
+          "href": "/tutorials/authentication/cloud-authentication",
+          "label": "Cloud Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/aws-authentication",
+          "label": "AWS Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/azure-authentication",
+          "label": "Azure Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/google-cloud-authentication",
+          "label": "Google Cloud Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/cloud-identity-federation",
+          "label": "Cloud Identity Federation"
+        }
+      ]
+    },
+    {
+      "title": "Identity Providers",
+      "items": [
+        {
+          "href": "/tutorials/authentication/identity-providers",
+          "label": "Identity Providers"
+        },
+        {
+          "href": "/tutorials/authentication/auth0",
+          "label": "Authentication with Auth0"
+        },
+        {
+          "href": "/tutorials/authentication/okta",
+          "label": "Authentication with Okta"
+        },
+        {
+          "href": "/tutorials/authentication/keycloak",
+          "label": "Authentication with Keycloak"
+        },
+        {
+          "href": "/tutorials/authentication/aws-cognito",
+          "label": "Authentication with Amazon Cognito"
+        }
+      ]
+    },
+    {
+      "title": "Firebase Authentication",
+      "items": [
+        {
+          "href": "/tutorials/authentication/firebase",
+          "label": "Firebase Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/firebase-email-password",
+          "label": "Firebase Email and Password"
+        },
+        {
+          "href": "/tutorials/authentication/firebase-social-login",
+          "label": "Firebase Social Login"
+        },
+        {
+          "href": "/tutorials/authentication/firebase-phone-auth",
+          "label": "Firebase Phone Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/firebase-custom-tokens",
+          "label": "Firebase Custom Tokens"
+        }
+      ]
+    },
+    {
+      "title": "Database Design",
+      "items": [
+        {
+          "href": "/tutorials/authentication/database-design",
+          "label": "Authentication Database Design"
+        },
+        {
+          "href": "/tutorials/authentication/users-table",
+          "label": "Users Table Design"
+        },
+        {
+          "href": "/tutorials/authentication/sessions-table",
+          "label": "Sessions Table Design"
+        },
+        {
+          "href": "/tutorials/authentication/roles-permissions-schema",
+          "label": "Roles and Permissions Schema"
+        },
+        {
+          "href": "/tutorials/authentication/oauth-accounts-table",
+          "label": "OAuth Accounts Table"
+        }
+      ]
+    },
+    {
+      "title": "Account Management",
+      "items": [
+        {
+          "href": "/tutorials/authentication/account-management",
+          "label": "Account Management"
+        },
+        {
+          "href": "/tutorials/authentication/update-profile",
+          "label": "Update User Profile"
+        },
+        {
+          "href": "/tutorials/authentication/change-password",
+          "label": "Change Password"
+        },
+        {
+          "href": "/tutorials/authentication/change-email",
+          "label": "Change Email Address"
+        },
+        {
+          "href": "/tutorials/authentication/delete-account",
+          "label": "Delete User Account"
+        }
+      ]
+    },
+    {
+      "title": "Account Linking",
+      "items": [
+        {
+          "href": "/tutorials/authentication/account-linking",
+          "label": "Account Linking"
+        },
+        {
+          "href": "/tutorials/authentication/link-social-account",
+          "label": "Link Social Accounts"
+        },
+        {
+          "href": "/tutorials/authentication/unlink-account",
+          "label": "Unlink Accounts"
+        },
+        {
+          "href": "/tutorials/authentication/merge-accounts",
+          "label": "Merge Duplicate Accounts"
+        },
+        {
+          "href": "/tutorials/authentication/account-linking-security",
+          "label": "Account Linking Security"
+        }
+      ]
+    },
+    {
+      "title": "Device and Session Management",
+      "items": [
+        {
+          "href": "/tutorials/authentication/device-session-management",
+          "label": "Device and Session Management"
+        },
+        {
+          "href": "/tutorials/authentication/active-sessions",
+          "label": "View Active Sessions"
+        },
+        {
+          "href": "/tutorials/authentication/trusted-devices",
+          "label": "Trusted Devices"
+        },
+        {
+          "href": "/tutorials/authentication/logout-other-devices",
+          "label": "Log Out Other Devices"
+        },
+        {
+          "href": "/tutorials/authentication/revoke-device-access",
+          "label": "Revoke Device Access"
+        }
+      ]
+    },
+    {
+      "title": "Brute-Force Protection",
+      "items": [
+        {
+          "href": "/tutorials/authentication/brute-force-protection",
+          "label": "Brute-Force Protection"
+        },
+        {
+          "href": "/tutorials/authentication/login-rate-limiting",
+          "label": "Login Rate Limiting"
+        },
+        {
+          "href": "/tutorials/authentication/account-lockout",
+          "label": "Account Lockout"
+        },
+        {
+          "href": "/tutorials/authentication/exponential-backoff",
+          "label": "Exponential Backoff"
+        },
+        {
+          "href": "/tutorials/authentication/captcha",
+          "label": "CAPTCHA Protection"
+        }
+      ]
+    },
+    {
+      "title": "Common Attacks",
+      "items": [
+        {
+          "href": "/tutorials/authentication/common-attacks",
+          "label": "Common Authentication Attacks"
+        },
+        {
+          "href": "/tutorials/authentication/credential-stuffing",
+          "label": "Credential Stuffing"
+        },
+        {
+          "href": "/tutorials/authentication/password-spraying",
+          "label": "Password Spraying"
+        },
+        {
+          "href": "/tutorials/authentication/phishing",
+          "label": "Authentication Phishing"
+        },
+        {
+          "href": "/tutorials/authentication/replay-attacks",
+          "label": "Replay Attacks"
+        }
+      ]
+    },
+    {
+      "title": "Web Security",
+      "items": [
+        {
+          "href": "/tutorials/authentication/web-security",
+          "label": "Authentication Web Security"
+        },
+        {
+          "href": "/tutorials/authentication/csrf",
+          "label": "Cross-Site Request Forgery"
+        },
+        {
+          "href": "/tutorials/authentication/xss",
+          "label": "Cross-Site Scripting"
+        },
+        {
+          "href": "/tutorials/authentication/cors",
+          "label": "CORS and Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/clickjacking",
+          "label": "Clickjacking Protection"
+        }
+      ]
+    },
+    {
+      "title": "Token Security",
+      "items": [
+        {
+          "href": "/tutorials/authentication/token-security",
+          "label": "Token Security"
+        },
+        {
+          "href": "/tutorials/authentication/token-theft",
+          "label": "Token Theft"
+        },
+        {
+          "href": "/tutorials/authentication/token-replay",
+          "label": "Token Replay"
+        },
+        {
+          "href": "/tutorials/authentication/token-leakage",
+          "label": "Token Leakage"
+        },
+        {
+          "href": "/tutorials/authentication/token-binding",
+          "label": "Token Binding"
+        }
+      ]
+    },
+    {
+      "title": "Secrets and Key Management",
+      "items": [
+        {
+          "href": "/tutorials/authentication/secrets-management",
+          "label": "Authentication Secrets Management"
+        },
+        {
+          "href": "/tutorials/authentication/environment-variables",
+          "label": "Environment Variables"
+        },
+        {
+          "href": "/tutorials/authentication/key-rotation",
+          "label": "Signing Key Rotation"
+        },
+        {
+          "href": "/tutorials/authentication/kms",
+          "label": "Key Management Services"
+        },
+        {
+          "href": "/tutorials/authentication/secrets-manager",
+          "label": "Secrets Managers"
+        }
+      ]
+    },
+    {
+      "title": "Audit and Compliance",
+      "items": [
+        {
+          "href": "/tutorials/authentication/audit-compliance",
+          "label": "Authentication Audit and Compliance"
+        },
+        {
+          "href": "/tutorials/authentication/authentication-logs",
+          "label": "Authentication Logs"
+        },
+        {
+          "href": "/tutorials/authentication/audit-trails",
+          "label": "Audit Trails"
+        },
+        {
+          "href": "/tutorials/authentication/privacy-compliance",
+          "label": "Privacy Compliance"
+        },
+        {
+          "href": "/tutorials/authentication/security-controls",
+          "label": "Authentication Security Controls"
+        }
+      ]
+    },
+    {
+      "title": "Logging and Monitoring",
+      "items": [
+        {
+          "href": "/tutorials/authentication/logging-monitoring",
+          "label": "Authentication Logging and Monitoring"
+        },
+        {
+          "href": "/tutorials/authentication/login-event-logging",
+          "label": "Login Event Logging"
+        },
+        {
+          "href": "/tutorials/authentication/failed-login-monitoring",
+          "label": "Failed Login Monitoring"
+        },
+        {
+          "href": "/tutorials/authentication/suspicious-login-detection",
+          "label": "Suspicious Login Detection"
+        },
+        {
+          "href": "/tutorials/authentication/security-alerts",
+          "label": "Authentication Security Alerts"
+        }
+      ]
+    },
+    {
+      "title": "Error Handling",
+      "items": [
+        {
+          "href": "/tutorials/authentication/error-handling",
+          "label": "Authentication Error Handling"
+        },
+        {
+          "href": "/tutorials/authentication/invalid-credentials",
+          "label": "Invalid Credentials"
+        },
+        {
+          "href": "/tutorials/authentication/expired-token",
+          "label": "Expired Token Errors"
+        },
+        {
+          "href": "/tutorials/authentication/unauthorized-forbidden",
+          "label": "401 Unauthorized vs 403 Forbidden"
+        },
+        {
+          "href": "/tutorials/authentication/secure-error-messages",
+          "label": "Secure Authentication Errors"
+        }
+      ]
+    },
+    {
+      "title": "Authentication UX",
+      "items": [
+        {
+          "href": "/tutorials/authentication/user-experience",
+          "label": "Authentication User Experience"
+        },
+        {
+          "href": "/tutorials/authentication/login-form-usability",
+          "label": "Login Form Usability"
+        },
+        {
+          "href": "/tutorials/authentication/password-visibility",
+          "label": "Password Visibility Controls"
+        },
+        {
+          "href": "/tutorials/authentication/autocomplete",
+          "label": "Authentication Autocomplete"
+        },
+        {
+          "href": "/tutorials/authentication/helpful-error-messages",
+          "label": "Helpful Login Error Messages"
+        }
+      ]
+    },
+    {
+      "title": "Authentication Accessibility",
+      "items": [
+        {
+          "href": "/tutorials/authentication/accessibility",
+          "label": "Authentication Accessibility"
+        },
+        {
+          "href": "/tutorials/authentication/accessible-login-forms",
+          "label": "Accessible Login Forms"
+        },
+        {
+          "href": "/tutorials/authentication/accessible-mfa",
+          "label": "Accessible MFA"
+        },
+        {
+          "href": "/tutorials/authentication/keyboard-navigation",
+          "label": "Keyboard Navigation"
+        },
+        {
+          "href": "/tutorials/authentication/screen-reader-support",
+          "label": "Screen Reader Support"
+        }
+      ]
+    },
+    {
+      "title": "Testing",
+      "items": [
+        {
+          "href": "/tutorials/authentication/testing",
+          "label": "Authentication Testing"
+        },
+        {
+          "href": "/tutorials/authentication/unit-testing",
+          "label": "Authentication Unit Testing"
+        },
+        {
+          "href": "/tutorials/authentication/integration-testing",
+          "label": "Authentication Integration Testing"
+        },
+        {
+          "href": "/tutorials/authentication/end-to-end-testing",
+          "label": "Authentication End-to-End Testing"
+        },
+        {
+          "href": "/tutorials/authentication/security-testing",
+          "label": "Authentication Security Testing"
+        }
+      ]
+    },
+    {
+      "title": "Mocking Authentication",
+      "items": [
+        {
+          "href": "/tutorials/authentication/mocking",
+          "label": "Mock Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/mock-users",
+          "label": "Mock Authenticated Users"
+        },
+        {
+          "href": "/tutorials/authentication/mock-jwt",
+          "label": "Mock JSON Web Tokens"
+        },
+        {
+          "href": "/tutorials/authentication/mock-oauth",
+          "label": "Mock OAuth Providers"
+        },
+        {
+          "href": "/tutorials/authentication/test-auth-middleware",
+          "label": "Test Authentication Middleware"
+        }
+      ]
+    },
+    {
+      "title": "Performance",
+      "items": [
+        {
+          "href": "/tutorials/authentication/performance",
+          "label": "Authentication Performance"
+        },
+        {
+          "href": "/tutorials/authentication/session-store-performance",
+          "label": "Session Store Performance"
+        },
+        {
+          "href": "/tutorials/authentication/token-validation-performance",
+          "label": "Token Validation Performance"
+        },
+        {
+          "href": "/tutorials/authentication/caching-identity-data",
+          "label": "Cache Identity Data"
+        },
+        {
+          "href": "/tutorials/authentication/authentication-scaling",
+          "label": "Scale Authentication Systems"
+        }
+      ]
+    },
+    {
+      "title": "High Availability",
+      "items": [
+        {
+          "href": "/tutorials/authentication/high-availability",
+          "label": "Highly Available Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/distributed-sessions",
+          "label": "Distributed Sessions"
+        },
+        {
+          "href": "/tutorials/authentication/auth-service-failover",
+          "label": "Authentication Service Failover"
+        },
+        {
+          "href": "/tutorials/authentication/multi-region-authentication",
+          "label": "Multi-Region Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/disaster-recovery",
+          "label": "Authentication Disaster Recovery"
+        }
+      ]
+    },
+    {
+      "title": "Deployment",
+      "items": [
+        {
+          "href": "/tutorials/authentication/deployment",
+          "label": "Deploy Authentication Systems"
+        },
+        {
+          "href": "/tutorials/authentication/environment-configuration",
+          "label": "Environment Configuration"
+        },
+        {
+          "href": "/tutorials/authentication/production-cookies",
+          "label": "Production Cookie Configuration"
+        },
+        {
+          "href": "/tutorials/authentication/production-oauth",
+          "label": "Production OAuth Configuration"
+        },
+        {
+          "href": "/tutorials/authentication/deployment-security",
+          "label": "Authentication Deployment Security"
+        }
+      ]
+    },
+    {
+      "title": "CI/CD",
+      "items": [
+        {
+          "href": "/tutorials/authentication/ci-cd",
+          "label": "Authentication CI/CD"
+        },
+        {
+          "href": "/tutorials/authentication/secret-injection",
+          "label": "Secure Secret Injection"
+        },
+        {
+          "href": "/tutorials/authentication/configuration-validation",
+          "label": "Authentication Configuration Validation"
+        },
+        {
+          "href": "/tutorials/authentication/security-scanning",
+          "label": "Authentication Security Scanning"
+        },
+        {
+          "href": "/tutorials/authentication/zero-downtime-key-rotation",
+          "label": "Zero-Downtime Key Rotation"
+        }
+      ]
+    },
+    {
+      "title": "Architecture",
+      "items": [
+        {
+          "href": "/tutorials/authentication/architecture",
+          "label": "Authentication Architecture"
+        },
+        {
+          "href": "/tutorials/authentication/centralized-authentication",
+          "label": "Centralized Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/decentralized-authentication",
+          "label": "Decentralized Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/authentication-service",
+          "label": "Authentication Service Design"
+        },
+        {
+          "href": "/tutorials/authentication/identity-platform",
+          "label": "Enterprise Identity Platform"
+        }
+      ]
+    },
+    {
+      "title": "Zero Trust",
+      "items": [
+        {
+          "href": "/tutorials/authentication/zero-trust",
+          "label": "Zero Trust Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/continuous-verification",
+          "label": "Continuous Verification"
+        },
+        {
+          "href": "/tutorials/authentication/device-trust",
+          "label": "Device Trust"
+        },
+        {
+          "href": "/tutorials/authentication/conditional-access",
+          "label": "Conditional Access"
+        },
+        {
+          "href": "/tutorials/authentication/zero-trust-access",
+          "label": "Zero Trust Access Policies"
+        }
+      ]
+    },
+    {
+      "title": "Advanced",
+      "items": [
+        {
+          "href": "/tutorials/authentication/advanced-authentication",
+          "label": "Advanced Authentication"
+        },
+        {
+          "href": "/tutorials/authentication/token-exchange",
+          "label": "OAuth Token Exchange"
+        },
+        {
+          "href": "/tutorials/authentication/delegated-authorization",
+          "label": "Delegated Authorization"
+        },
+        {
+          "href": "/tutorials/authentication/federated-identity",
+          "label": "Federated Identity"
+        },
+        {
+          "href": "/tutorials/authentication/continuous-authentication",
+          "label": "Continuous Authentication"
+        },
+        {
+          "label": "OAuth 2.1",
+          "href": "/tutorials/authentication/oauth-2-1"
+        },
+        {
+          "label": "DPoP",
+          "href": "/tutorials/authentication/dpop"
+        },
+        {
+          "label": "Pushed Authorization Requests",
+          "href": "/tutorials/authentication/par"
+        },
+        {
+          "label": "Rich Authorization Requests",
+          "href": "/tutorials/authentication/rar"
+        },
+        {
+          "label": "SCIM Provisioning",
+          "href": "/tutorials/authentication/scim"
+        },
+        {
+          "label": "FIDO2",
+          "href": "/tutorials/authentication/fido2"
+        },
+        {
+          "label": "JWT Best Practices",
+          "href": "/tutorials/authentication/jwt-best-practices"
+        },
+        {
+          "label": "Client Assertion",
+          "href": "/tutorials/authentication/client-assertion"
+        },
+        {
+          "label": "OAuth mTLS",
+          "href": "/tutorials/authentication/oauth-mtls"
+        },
+        {
+          "label": "Token Introspection",
+          "href": "/tutorials/authentication/token-introspection-rfc7662"
+        }
+      ]
+    },
+    {
+      "title": "Projects",
+      "items": [
+        {
+          "href": "/tutorials/authentication/session-login-project",
+          "label": "Session-Based Login System"
+        },
+        {
+          "href": "/tutorials/authentication/jwt-api-project",
+          "label": "JWT-Protected REST API"
+        },
+        {
+          "href": "/tutorials/authentication/oauth-login-project",
+          "label": "OAuth Social Login Application"
+        },
+        {
+          "href": "/tutorials/authentication/mfa-project",
+          "label": "Multi-Factor Authentication System"
+        },
+        {
+          "href": "/tutorials/authentication/passkey-project",
+          "label": "Passkey Authentication Application"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshooting",
+      "items": [
+        {
+          "href": "/tutorials/authentication/troubleshooting",
+          "label": "Authentication Troubleshooting"
+        },
+        {
+          "href": "/tutorials/authentication/login-not-working",
+          "label": "Login Not Working"
+        },
+        {
+          "href": "/tutorials/authentication/cookie-not-sent",
+          "label": "Authentication Cookie Not Sent"
+        },
+        {
+          "href": "/tutorials/authentication/token-validation-failed",
+          "label": "Token Validation Failed"
+        },
+        {
+          "href": "/tutorials/authentication/oauth-redirect-errors",
+          "label": "OAuth Redirect Errors"
+        }
+      ]
+    }
+  ]
+}

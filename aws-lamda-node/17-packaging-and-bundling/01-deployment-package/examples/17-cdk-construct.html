@@ -1,0 +1,135 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: AWS Lambda with Node.js Tutorials
+section title: Packaging and Bundling
+topic title: Lambda Deployment Package
+content type: Example
+item number: 17
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Lambda Deployment Package Example 17 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ffedd5;
+      color: #9a3412;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Example 17</span>
+    <h1>Lambda Deployment Package</h1>
+    <p><strong>Section:</strong> Packaging and Bundling</p>
+    <p><strong>Focus:</strong> Cdk Construct</p>
+    <p><strong>Scenario:</strong> notification hub</p>
+    <p>Study the Node.js Lambda pattern and adapt it to your AWS project.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Node.js Lambda</h2>
+        <pre><code>// Lambda Deployment Package — Example 17
+// Focus: cdk construct | Scenario: notification hub
+
+// AWS Lambda (Node.js) topic: Lambda Deployment Package
+export const handler = async (event, context) =&gt; {
+  console.log(JSON.stringify({
+    topic: &quot;deployment-package&quot;,
+    requestId: context.awsRequestId,
+    remainingMs: context.getRemainingTimeInMillis(),
+  }));
+
+  const body = typeof event?.body === &quot;string&quot;
+    ? JSON.parse(event.body || &quot;{}&quot;)
+    : (event?.body || event || {});
+
+  // Focus area: deployment-package
+  const result = { ok: true, topic: &quot;deployment-package&quot;, label: &quot;Lambda Deployment Package&quot;, input: body };
+
+  return {
+    statusCode: 200,
+    headers: {
+      &quot;content-type&quot;: &quot;application/json&quot;,
+      &quot;access-control-allow-origin&quot;: &quot;*&quot;,
+    },
+    body: JSON.stringify(result),
+  };
+};
+
+export const TOPIC_DEPLOYMENT_PACKAGE = &quot;deployment-package&quot;;
+</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Lambda Deployment Package
+- Practice: cdk construct
+- Scenario: notification hub
+- Keep handlers thin; put business logic in modules
+- Reuse SDK clients outside the handler when possible
+- Log requestId; avoid logging secrets
+- Set memory/timeout for your workload; test cold starts
+
+Useful commands:
+  aws lambda invoke --function-name demo out.json
+  sam local invoke -e events/event.json
+  npm test
+  npx esbuild index.js --bundle --platform=node --target=node20 --outfile=dist/index.js</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This example shows one way to apply <strong>Lambda Deployment Package</strong> in a notification hub context.</p>
+      <p>Prefer least-privilege IAM, structured logs, and small deployment packages (esbuild/SAM/CDK).</p>
+    </section>
+  </main>
+</body>
+</html>

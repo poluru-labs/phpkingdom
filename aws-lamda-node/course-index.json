@@ -1,0 +1,820 @@
+{
+  "title": "AWS Lambda with Node.js Tutorials",
+  "items": [
+    {
+      "title": "AWS Lambda Basics",
+      "items": [
+        {
+          "href": "/tutorials/aws-lambda-nodejs/introduction",
+          "label": "AWS Lambda - Introduction"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/basics",
+          "label": "AWS Lambda - Basics"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/serverless-computing",
+          "label": "Serverless Computing"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/how-lambda-works",
+          "label": "How AWS Lambda Works"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/lambda-use-cases",
+          "label": "AWS Lambda Use Cases"
+        }
+      ]
+    },
+    {
+      "title": "Setup and Configuration",
+      "items": [
+        {
+          "href": "/tutorials/aws-lambda-nodejs/aws-account-setup",
+          "label": "AWS Account Setup"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/nodejs-setup",
+          "label": "Node.js Setup"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/aws-cli",
+          "label": "AWS CLI Setup"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/create-lambda-function",
+          "label": "Create a Lambda Function"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/first-lambda-function",
+          "label": "First Node.js Lambda"
+        }
+      ]
+    },
+    {
+      "title": "Core Concepts",
+      "items": [
+        {
+          "href": "/tutorials/aws-lambda-nodejs/lambda-handler",
+          "label": "Lambda Handler"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/event-object",
+          "label": "Lambda Event Object"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/context-object",
+          "label": "Lambda Context Object"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/execution-environment",
+          "label": "Execution Environment"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/invocation-types",
+          "label": "Lambda Invocation Types"
+        }
+      ]
+    },
+    {
+      "title": "Node.js Handlers",
+      "items": [
+        {
+          "href": "/tutorials/aws-lambda-nodejs/async-handler",
+          "label": "Async Lambda Handler"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/callback-handler",
+          "label": "Callback Handler"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/commonjs-handler",
+          "label": "CommonJS Lambda Handler"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/es-modules",
+          "label": "ES Modules in Lambda"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/error-handling",
+          "label": "Handler Error Handling"
+        }
+      ]
+    },
+    {
+      "title": "Lambda Configuration",
+      "items": [
+        {
+          "href": "/tutorials/aws-lambda-nodejs/memory",
+          "label": "Lambda Memory"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/timeout",
+          "label": "Lambda Timeout"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/ephemeral-storage",
+          "label": "Ephemeral Storage"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/environment-variables",
+          "label": "Environment Variables"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/runtime-configuration",
+          "label": "Runtime Configuration"
+        }
+      ]
+    },
+    {
+      "title": "IAM and Permissions",
+      "items": [
+        {
+          "href": "/tutorials/aws-lambda-nodejs/iam",
+          "label": "AWS IAM for Lambda"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/execution-role",
+          "label": "Lambda Execution Role"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/resource-policies",
+          "label": "Resource-Based Policies"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/least-privilege",
+          "label": "Least-Privilege Permissions"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/permission-errors",
+          "label": "IAM Permission Errors"
+        }
+      ]
+    },
+    {
+      "title": "API Gateway",
+      "items": [
+        {
+          "href": "/tutorials/aws-lambda-nodejs/api-gateway",
+          "label": "API Gateway with Lambda"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/http-api",
+          "label": "HTTP API"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/rest-api",
+          "label": "REST API"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/proxy-integration",
+          "label": "Lambda Proxy Integration"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/api-response",
+          "label": "API Gateway Responses"
+        }
+      ]
+    },
+    {
+      "title": "REST API Development",
+      "items": [
+        {
+          "href": "/tutorials/aws-lambda-nodejs/get-request",
+          "label": "Handle GET Requests"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/post-request",
+          "label": "Handle POST Requests"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/put-delete-request",
+          "label": "PUT and DELETE Requests"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/path-query-parameters",
+          "label": "Path and Query Parameters"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/request-validation",
+          "label": "Request Validation"
+        }
+      ]
+    },
+    {
+      "title": "DynamoDB",
+      "items": [
+        {
+          "href": "/tutorials/aws-lambda-nodejs/dynamodb",
+          "label": "DynamoDB with Lambda"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/dynamodb-client",
+          "label": "DynamoDB Document Client"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/dynamodb-crud",
+          "label": "DynamoDB CRUD Operations"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/dynamodb-streams",
+          "label": "DynamoDB Streams"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/dynamodb-transactions",
+          "label": "DynamoDB Transactions"
+        }
+      ]
+    },
+    {
+      "title": "Amazon S3",
+      "items": [
+        {
+          "href": "/tutorials/aws-lambda-nodejs/s3",
+          "label": "Amazon S3 with Lambda"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/s3-events",
+          "label": "S3 Event Triggers"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/upload-files",
+          "label": "Upload Files to S3"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/download-files",
+          "label": "Download Files from S3"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/image-processing",
+          "label": "Serverless Image Processing"
+        }
+      ]
+    },
+    {
+      "title": "Messaging",
+      "items": [
+        {
+          "href": "/tutorials/aws-lambda-nodejs/sqs",
+          "label": "Amazon SQS with Lambda"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/sns",
+          "label": "Amazon SNS with Lambda"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/sqs-batch-processing",
+          "label": "SQS Batch Processing"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/dead-letter-queues",
+          "label": "Dead-Letter Queues"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/message-retries",
+          "label": "Message Retry Strategies"
+        }
+      ]
+    },
+    {
+      "title": "Event-Driven Services",
+      "items": [
+        {
+          "href": "/tutorials/aws-lambda-nodejs/eventbridge",
+          "label": "Amazon EventBridge"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/scheduled-events",
+          "label": "Scheduled Lambda Functions"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/cloudwatch-events",
+          "label": "CloudWatch Events"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/kinesis",
+          "label": "Amazon Kinesis"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/event-filtering",
+          "label": "Event Source Filtering"
+        }
+      ]
+    },
+    {
+      "title": "AWS SDK for JavaScript",
+      "items": [
+        {
+          "href": "/tutorials/aws-lambda-nodejs/aws-sdk",
+          "label": "AWS SDK for JavaScript"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/aws-sdk-v3",
+          "label": "AWS SDK v3"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/sdk-clients",
+          "label": "AWS Service Clients"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/sdk-commands",
+          "label": "AWS SDK Commands"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/sdk-error-handling",
+          "label": "AWS SDK Error Handling"
+        }
+      ]
+    },
+    {
+      "title": "Authentication",
+      "items": [
+        {
+          "href": "/tutorials/aws-lambda-nodejs/authentication",
+          "label": "Serverless Authentication"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/cognito",
+          "label": "Amazon Cognito"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/jwt",
+          "label": "JWT Authentication"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/api-authorizer",
+          "label": "Lambda Authorizer"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/protected-api",
+          "label": "Protected Serverless APIs"
+        }
+      ]
+    },
+    {
+      "title": "Secrets and Configuration",
+      "items": [
+        {
+          "href": "/tutorials/aws-lambda-nodejs/secrets-manager",
+          "label": "AWS Secrets Manager"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/parameter-store",
+          "label": "SSM Parameter Store"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/encrypted-variables",
+          "label": "Encrypted Environment Variables"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/configuration-management",
+          "label": "Configuration Management"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/secret-caching",
+          "label": "Secret Caching"
+        }
+      ]
+    },
+    {
+      "title": "Lambda Layers",
+      "items": [
+        {
+          "href": "/tutorials/aws-lambda-nodejs/layers",
+          "label": "AWS Lambda Layers"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/create-layer",
+          "label": "Create a Lambda Layer"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/shared-dependencies",
+          "label": "Shared Dependencies"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/custom-runtime-layer",
+          "label": "Custom Runtime Layers"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/layer-versioning",
+          "label": "Layer Versioning"
+        }
+      ]
+    },
+    {
+      "title": "Packaging and Bundling",
+      "items": [
+        {
+          "href": "/tutorials/aws-lambda-nodejs/deployment-package",
+          "label": "Lambda Deployment Package"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/npm-dependencies",
+          "label": "npm Dependencies"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/esbuild",
+          "label": "Bundle Lambda with esbuild"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/webpack",
+          "label": "Bundle Lambda with Webpack"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/package-size",
+          "label": "Reduce Package Size"
+        }
+      ]
+    },
+    {
+      "title": "Serverless Framework",
+      "items": [
+        {
+          "href": "/tutorials/aws-lambda-nodejs/serverless-framework",
+          "label": "Serverless Framework"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/serverless-setup",
+          "label": "Serverless Framework Setup"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/serverless-yml",
+          "label": "serverless.yml"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/serverless-deployment",
+          "label": "Deploy with Serverless"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/serverless-plugins",
+          "label": "Serverless Plugins"
+        }
+      ]
+    },
+    {
+      "title": "AWS SAM",
+      "items": [
+        {
+          "href": "/tutorials/aws-lambda-nodejs/aws-sam",
+          "label": "AWS SAM"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/sam-cli",
+          "label": "AWS SAM CLI"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/sam-template",
+          "label": "SAM Template"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/sam-local-testing",
+          "label": "Local Testing with SAM"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/sam-deployment",
+          "label": "Deploy with AWS SAM"
+        }
+      ]
+    },
+    {
+      "title": "AWS CDK",
+      "items": [
+        {
+          "href": "/tutorials/aws-lambda-nodejs/aws-cdk",
+          "label": "AWS CDK"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/cdk-setup",
+          "label": "AWS CDK Setup"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/cdk-lambda",
+          "label": "Create Lambda with CDK"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/cdk-api-gateway",
+          "label": "CDK API Gateway"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/cdk-deployment",
+          "label": "Deploy with AWS CDK"
+        }
+      ]
+    },
+    {
+      "title": "Testing",
+      "items": [
+        {
+          "href": "/tutorials/aws-lambda-nodejs/testing",
+          "label": "AWS Lambda Testing"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/unit-testing",
+          "label": "Lambda Unit Testing"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/jest",
+          "label": "Lambda Testing with Jest"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/integration-testing",
+          "label": "Integration Testing"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/mocking-aws-sdk",
+          "label": "Mock the AWS SDK"
+        }
+      ]
+    },
+    {
+      "title": "Local Development",
+      "items": [
+        {
+          "href": "/tutorials/aws-lambda-nodejs/local-development",
+          "label": "Local Lambda Development"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/localstack",
+          "label": "LocalStack"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/sam-local",
+          "label": "SAM Local"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/local-events",
+          "label": "Local Event Testing"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/debugging-locally",
+          "label": "Debug Lambda Locally"
+        }
+      ]
+    },
+    {
+      "title": "Monitoring and Logging",
+      "items": [
+        {
+          "href": "/tutorials/aws-lambda-nodejs/cloudwatch",
+          "label": "Amazon CloudWatch"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/cloudwatch-logs",
+          "label": "CloudWatch Logs"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/structured-logging",
+          "label": "Structured Logging"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/metrics",
+          "label": "Lambda Metrics"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/alarms",
+          "label": "CloudWatch Alarms"
+        }
+      ]
+    },
+    {
+      "title": "Tracing and Observability",
+      "items": [
+        {
+          "href": "/tutorials/aws-lambda-nodejs/x-ray",
+          "label": "AWS X-Ray"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/distributed-tracing",
+          "label": "Distributed Tracing"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/correlation-ids",
+          "label": "Correlation IDs"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/application-signals",
+          "label": "Application Signals"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/observability",
+          "label": "Serverless Observability"
+        }
+      ]
+    },
+    {
+      "title": "Performance",
+      "items": [
+        {
+          "href": "/tutorials/aws-lambda-nodejs/performance",
+          "label": "Lambda Performance"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/cold-starts",
+          "label": "Lambda Cold Starts"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/client-reuse",
+          "label": "Reuse AWS SDK Clients"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/concurrency",
+          "label": "Lambda Concurrency"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/provisioned-concurrency",
+          "label": "Provisioned Concurrency"
+        }
+      ]
+    },
+    {
+      "title": "Scaling and Reliability",
+      "items": [
+        {
+          "href": "/tutorials/aws-lambda-nodejs/scaling",
+          "label": "Automatic Scaling"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/reserved-concurrency",
+          "label": "Reserved Concurrency"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/throttling",
+          "label": "Lambda Throttling"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/retry-behavior",
+          "label": "Lambda Retry Behavior"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/idempotency",
+          "label": "Lambda Idempotency"
+        }
+      ]
+    },
+    {
+      "title": "Security",
+      "items": [
+        {
+          "href": "/tutorials/aws-lambda-nodejs/security",
+          "label": "AWS Lambda Security"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/input-validation",
+          "label": "Input Validation"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/dependency-security",
+          "label": "Dependency Security"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/vpc",
+          "label": "Lambda in a VPC"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/security-best-practices",
+          "label": "Serverless Security Practices"
+        }
+      ]
+    },
+    {
+      "title": "CI/CD",
+      "items": [
+        {
+          "href": "/tutorials/aws-lambda-nodejs/ci-cd",
+          "label": "Lambda CI/CD"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/github-actions",
+          "label": "GitHub Actions"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/aws-codepipeline",
+          "label": "AWS CodePipeline"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/deployment-aliases",
+          "label": "Lambda Versions and Aliases"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/canary-deployment",
+          "label": "Canary Deployments"
+        }
+      ]
+    },
+    {
+      "title": "Advanced",
+      "items": [
+        {
+          "href": "/tutorials/aws-lambda-nodejs/step-functions",
+          "label": "AWS Step Functions"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/lambda-destinations",
+          "label": "Lambda Destinations"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/response-streaming",
+          "label": "Lambda Response Streaming"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/container-images",
+          "label": "Lambda Container Images"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/extensions",
+          "label": "Lambda Extensions"
+        },
+        {
+          "label": "AWS Lambda Powertools",
+          "href": "/tutorials/aws-lambda-nodejs/powertools"
+        },
+        {
+          "label": "Lambda Function URLs",
+          "href": "/tutorials/aws-lambda-nodejs/function-urls"
+        },
+        {
+          "label": "Event Source Mapping",
+          "href": "/tutorials/aws-lambda-nodejs/event-source-mapping"
+        },
+        {
+          "label": "ARM64 / Graviton",
+          "href": "/tutorials/aws-lambda-nodejs/arm64-graviton"
+        },
+        {
+          "label": "OpenTelemetry / ADOT",
+          "href": "/tutorials/aws-lambda-nodejs/otel-adot"
+        },
+        {
+          "label": "LLRT Runtime",
+          "href": "/tutorials/aws-lambda-nodejs/llrt"
+        },
+        {
+          "label": "Top-Level Await",
+          "href": "/tutorials/aws-lambda-nodejs/top-level-await"
+        },
+        {
+          "label": "Amazon Bedrock Invoke",
+          "href": "/tutorials/aws-lambda-nodejs/bedrock-invoke"
+        },
+        {
+          "label": "S3 Event Notifications",
+          "href": "/tutorials/aws-lambda-nodejs/s3-event-notifications"
+        },
+        {
+          "label": "SnapStart Awareness",
+          "href": "/tutorials/aws-lambda-nodejs/snapstart-awareness"
+        }
+      ]
+    },
+    {
+      "title": "Projects",
+      "items": [
+        {
+          "href": "/tutorials/aws-lambda-nodejs/serverless-rest-api-project",
+          "label": "Serverless REST API"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/file-upload-project",
+          "label": "Serverless File Upload"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/image-processing-project",
+          "label": "Image Processing Service"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/notification-project",
+          "label": "Notification Service"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/order-processing-project",
+          "label": "Order Processing Workflow"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshooting",
+      "items": [
+        {
+          "href": "/tutorials/aws-lambda-nodejs/debugging",
+          "label": "AWS Lambda Debugging"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/timeout-errors",
+          "label": "Lambda Timeout Errors"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/module-not-found",
+          "label": "Module Not Found Errors"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/access-denied",
+          "label": "Access Denied Errors"
+        },
+        {
+          "href": "/tutorials/aws-lambda-nodejs/cors-errors",
+          "label": "API Gateway CORS Errors"
+        }
+      ]
+    }
+  ]
+}
