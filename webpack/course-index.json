@@ -1,0 +1,330 @@
+{
+  "title": "Webpack Tutorials",
+  "items": [
+    {
+      "title": "Basics",
+      "items": [
+        {
+          "href": "/tutorials/webpack/introduction",
+          "label": "Webpack - Introduction"
+        },
+        {
+          "href": "/tutorials/webpack/basics",
+          "label": "Webpack - Basics"
+        },
+        {
+          "href": "/tutorials/webpack/setup",
+          "label": "Webpack Setup"
+        },
+        {
+          "href": "/tutorials/webpack/first-bundle",
+          "label": "First Webpack Bundle"
+        },
+        {
+          "href": "/tutorials/webpack/webpack-vs-vite",
+          "label": "Webpack vs Vite"
+        }
+      ]
+    },
+    {
+      "title": "Core Concepts",
+      "items": [
+        {
+          "href": "/tutorials/webpack/entry",
+          "label": "Webpack Entry"
+        },
+        {
+          "href": "/tutorials/webpack/output",
+          "label": "Webpack Output"
+        },
+        {
+          "href": "/tutorials/webpack/loaders",
+          "label": "Webpack Loaders"
+        },
+        {
+          "href": "/tutorials/webpack/plugins",
+          "label": "Webpack Plugins"
+        },
+        {
+          "href": "/tutorials/webpack/mode",
+          "label": "Webpack Mode"
+        }
+      ]
+    },
+    {
+      "title": "Configuration",
+      "items": [
+        {
+          "href": "/tutorials/webpack/configuration",
+          "label": "Webpack Configuration"
+        },
+        {
+          "href": "/tutorials/webpack/webpack-config",
+          "label": "webpack.config.js"
+        },
+        {
+          "href": "/tutorials/webpack/multiple-configurations",
+          "label": "Multiple Configurations"
+        },
+        {
+          "href": "/tutorials/webpack/environment-variables",
+          "label": "Environment Variables"
+        },
+        {
+          "href": "/tutorials/webpack/configuration-types",
+          "label": "Configuration Types"
+        }
+      ]
+    },
+    {
+      "title": "Loaders",
+      "items": [
+        {
+          "href": "/tutorials/webpack/babel-loader",
+          "label": "Babel Loader"
+        },
+        {
+          "href": "/tutorials/webpack/css-loader",
+          "label": "CSS Loader"
+        },
+        {
+          "href": "/tutorials/webpack/style-loader",
+          "label": "Style Loader"
+        },
+        {
+          "href": "/tutorials/webpack/sass-loader",
+          "label": "Sass Loader"
+        },
+        {
+          "href": "/tutorials/webpack/typescript-loader",
+          "label": "TypeScript Loader"
+        }
+      ]
+    },
+    {
+      "title": "Plugins",
+      "items": [
+        {
+          "href": "/tutorials/webpack/html-webpack-plugin",
+          "label": "HTML Webpack Plugin"
+        },
+        {
+          "href": "/tutorials/webpack/mini-css-extract-plugin",
+          "label": "Mini CSS Extract Plugin"
+        },
+        {
+          "href": "/tutorials/webpack/define-plugin",
+          "label": "DefinePlugin"
+        },
+        {
+          "href": "/tutorials/webpack/copy-webpack-plugin",
+          "label": "Copy Webpack Plugin"
+        },
+        {
+          "href": "/tutorials/webpack/clean-webpack-plugin",
+          "label": "Clean Webpack Plugin"
+        }
+      ]
+    },
+    {
+      "title": "Assets",
+      "items": [
+        {
+          "href": "/tutorials/webpack/asset-modules",
+          "label": "Asset Modules"
+        },
+        {
+          "href": "/tutorials/webpack/images",
+          "label": "Images with Webpack"
+        },
+        {
+          "href": "/tutorials/webpack/fonts",
+          "label": "Fonts with Webpack"
+        },
+        {
+          "href": "/tutorials/webpack/json",
+          "label": "JSON Modules"
+        },
+        {
+          "href": "/tutorials/webpack/static-assets",
+          "label": "Static Assets"
+        }
+      ]
+    },
+    {
+      "title": "Development",
+      "items": [
+        {
+          "href": "/tutorials/webpack/development-mode",
+          "label": "Development Mode"
+        },
+        {
+          "href": "/tutorials/webpack/dev-server",
+          "label": "Webpack Dev Server"
+        },
+        {
+          "href": "/tutorials/webpack/source-maps",
+          "label": "Source Maps"
+        },
+        {
+          "href": "/tutorials/webpack/hot-module-replacement",
+          "label": "Hot Module Replacement"
+        },
+        {
+          "href": "/tutorials/webpack/watch-mode",
+          "label": "Watch Mode"
+        }
+      ]
+    },
+    {
+      "title": "Code Splitting",
+      "items": [
+        {
+          "href": "/tutorials/webpack/code-splitting",
+          "label": "Webpack Code Splitting"
+        },
+        {
+          "href": "/tutorials/webpack/dynamic-imports",
+          "label": "Dynamic Imports"
+        },
+        {
+          "href": "/tutorials/webpack/lazy-loading",
+          "label": "Lazy Loading"
+        },
+        {
+          "href": "/tutorials/webpack/split-chunks",
+          "label": "SplitChunksPlugin"
+        },
+        {
+          "href": "/tutorials/webpack/vendor-bundles",
+          "label": "Vendor Bundles"
+        }
+      ]
+    },
+    {
+      "title": "Optimization",
+      "items": [
+        {
+          "href": "/tutorials/webpack/optimization",
+          "label": "Webpack Optimization"
+        },
+        {
+          "href": "/tutorials/webpack/tree-shaking",
+          "label": "Tree Shaking"
+        },
+        {
+          "href": "/tutorials/webpack/minification",
+          "label": "Minification"
+        },
+        {
+          "href": "/tutorials/webpack/caching",
+          "label": "Webpack Caching"
+        },
+        {
+          "href": "/tutorials/webpack/bundle-analysis",
+          "label": "Bundle Analysis"
+        }
+      ]
+    },
+    {
+      "title": "Production",
+      "items": [
+        {
+          "href": "/tutorials/webpack/production-build",
+          "label": "Production Build"
+        },
+        {
+          "href": "/tutorials/webpack/production-config",
+          "label": "Production Configuration"
+        },
+        {
+          "href": "/tutorials/webpack/css-optimization",
+          "label": "CSS Optimization"
+        },
+        {
+          "href": "/tutorials/webpack/compression",
+          "label": "Bundle Compression"
+        },
+        {
+          "href": "/tutorials/webpack/content-hashing",
+          "label": "Content Hashing"
+        }
+      ]
+    },
+    {
+      "title": "Framework Integration",
+      "items": [
+        {
+          "href": "/tutorials/webpack/webpack-with-react",
+          "label": "Webpack with React"
+        },
+        {
+          "href": "/tutorials/webpack/webpack-with-vue",
+          "label": "Webpack with Vue"
+        },
+        {
+          "href": "/tutorials/webpack/webpack-with-angular",
+          "label": "Webpack with Angular"
+        },
+        {
+          "href": "/tutorials/webpack/webpack-with-typescript",
+          "label": "Webpack with TypeScript"
+        },
+        {
+          "href": "/tutorials/webpack/webpack-with-svelte",
+          "label": "Webpack with Svelte"
+        }
+      ]
+    },
+    {
+      "title": "Advanced",
+      "items": [
+        {
+          "href": "/tutorials/webpack/module-federation",
+          "label": "Module Federation"
+        },
+        {
+          "href": "/tutorials/webpack/micro-frontends",
+          "label": "Micro Frontends"
+        },
+        {
+          "href": "/tutorials/webpack/custom-loader",
+          "label": "Custom Loader"
+        },
+        {
+          "href": "/tutorials/webpack/custom-plugin",
+          "label": "Custom Plugin"
+        },
+        {
+          "href": "/tutorials/webpack/performance",
+          "label": "Webpack Performance"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshooting",
+      "items": [
+        {
+          "href": "/tutorials/webpack/debugging",
+          "label": "Webpack Debugging"
+        },
+        {
+          "href": "/tutorials/webpack/build-errors",
+          "label": "Build Errors"
+        },
+        {
+          "href": "/tutorials/webpack/loader-errors",
+          "label": "Loader Errors"
+        },
+        {
+          "href": "/tutorials/webpack/plugin-errors",
+          "label": "Plugin Errors"
+        },
+        {
+          "href": "/tutorials/webpack/slow-builds",
+          "label": "Slow Build Fixes"
+        }
+      ]
+    }
+  ]
+}

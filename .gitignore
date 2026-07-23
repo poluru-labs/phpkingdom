@@ -1,3 +1,72 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+
+# Editors / IDEs
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-workspace
+*.sublime-project
+
+# Python
+*.py
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+ENV/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+.eggs/
+dist/*.whl
+
+# Secrets & local config
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+service-account*.json
+.secrets/
+secrets/
+
 # Logs
 logs
 *.log
@@ -5,6 +74,7 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
+pnpm-debug.log*
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
@@ -37,7 +107,8 @@ bower_components
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
 
-# Dependency directories
+# Dependency directories (root and any nested path)
+**/node_modules/
 node_modules/
 jspm_packages/
 
@@ -141,3 +212,42 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# Angular
+.angular/
+tmp/
+out-tsc/
+
+# NestJS / webpack
+*.tsbuildinfo
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+
+# Cypress
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+
+# Jest / Karma
+junit.xml
+*.lcov
+
+# Storybook
+storybook-static/
+
+# Turbo / Nx
+.turbo/
+.nx/cache/
+.nx/workspace-data/
+
+# Misc build / temp
+*.local
+*.tmp
+*.temp
+.temp/
+.tmp/
+.cache/

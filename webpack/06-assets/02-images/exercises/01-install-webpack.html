@@ -1,0 +1,120 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Webpack Tutorials
+section title: Assets
+topic title: Images with Webpack
+content type: Exercise
+item number: 01
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Images with Webpack Exercise 01 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #e0f2fe;
+      color: #075985;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Exercise 01</span>
+    <h1>Images with Webpack</h1>
+    <p><strong>Section:</strong> Assets</p>
+    <p><strong>Focus:</strong> Install Webpack</p>
+    <p><strong>Scenario:</strong> SPA dashboard</p>
+    <p>Run webpack / webpack serve locally and verify output in dist/ and the browser.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Webpack</h2>
+        <pre><code>// Images with Webpack — Exercise 01
+// Focus: install webpack | Scenario: SPA dashboard
+module.exports = {
+  module: {
+    rules: [
+      {
+        test: /\.(png|jpe?g|gif|webp)$/i,
+        type: &quot;asset/resource&quot;,
+        generator: { filename: &quot;images/[name].[hash:8][ext]&quot; },
+      },
+    ],
+  },
+};</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Images with Webpack
+- Practice: install webpack
+- Scenario: SPA dashboard
+- Share a webpack.common.js and merge dev/prod with webpack-merge
+- Prefer asset modules over file-loader/url-loader
+- Use contenthash + splitChunks for long-term caching
+- Measure with webpack-bundle-analyzer before optimizing
+- Webpack 5: use output.clean instead of clean-webpack-plugin when possible
+
+Useful commands:
+  npm install -D webpack webpack-cli webpack-dev-server html-webpack-plugin
+  npx webpack --mode development
+  npx webpack serve --mode development
+  NODE_ENV=production npx webpack --mode production
+  npx webpack --json=stats.json</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This exercise focuses on <strong>Images with Webpack</strong> in a spa dashboard context.</p>
+      <p>Start small, add loaders/plugins only when a file type or workflow requires them, then measure.</p>
+    </section>
+  </main>
+</body>
+</html>

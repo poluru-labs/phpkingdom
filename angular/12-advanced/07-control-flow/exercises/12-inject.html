@@ -1,0 +1,140 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Angular Tutorials
+section title: Advanced
+topic title: Control Flow Syntax
+content type: Exercise
+item number: 12
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Control Flow Syntax Exercise 12 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ffedd5;
+      color: #9a3412;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Exercise 12</span>
+    <h1>Control Flow Syntax</h1>
+    <p><strong>Section:</strong> Advanced</p>
+    <p><strong>Focus:</strong> Inject()</p>
+    <p><strong>Scenario:</strong> SaaS dashboard</p>
+    <p>Implement the focus with Angular CLI and verify in the browser.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Angular</h2>
+        <pre><code>// Control Flow Syntax — Exercise 12
+// Focus: inject() | Scenario: SaaS dashboard
+
+@Component({
+  standalone: true,
+  template: `
+    @if (user(); as u) {
+      &lt;p&gt;Hello {{ u.name }}&lt;/p&gt;
+    } @else {
+      &lt;p&gt;Sign in&lt;/p&gt;
+    }
+
+    @for (item of items(); track item.id) {
+      &lt;li&gt;{{ item.name }}&lt;/li&gt;
+    } @empty {
+      &lt;li&gt;No items&lt;/li&gt;
+    }
+
+    @switch (status()) {
+      @case (&#x27;ok&#x27;) { &lt;span&gt;Ready&lt;/span&gt; }
+      @default { &lt;span&gt;…&lt;/span&gt; }
+    }
+  `,
+})
+export class ControlFlowComponent {
+  user = signal&lt;{ name: string } | null&gt;(null);
+  items = signal&lt;{ id: number; name: string }[]&gt;([]);
+  status = signal&lt;&#x27;ok&#x27; | &#x27;pending&#x27;&gt;(&#x27;pending&#x27;);
+}
+
+export const TOPIC_ID = &quot;control-flow&quot;;
+</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Control Flow Syntax
+- Practice: inject()
+- Scenario: SaaS dashboard
+- Prefer standalone components + inject() for new Angular apps
+- Use signals for local UI state; RxJS for async streams and HttpClient
+- Reactive forms for complex validation; template-driven for simple forms
+- Route with provideRouter; guard auth routes; lazy-load feature areas
+- Prefer OnPush + async pipe / signals to reduce change detection work
+
+Useful commands:
+  npm i -g @angular/cli
+  ng new my-app --standalone
+  ng generate component features/counter --standalone
+  ng serve
+  ng test
+  ng build</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This exercise shows one way to apply <strong>Control Flow Syntax</strong> in a saas dashboard context.</p>
+      <p>Prefer standalone components, keep services focused, and use signals/RxJS intentionally for state and async work.</p>
+    </section>
+  </main>
+</body>
+</html>

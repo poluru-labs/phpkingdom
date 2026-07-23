@@ -1,0 +1,374 @@
+{
+  "title": "Angular Tutorials",
+  "items": [
+    {
+      "title": "Basics",
+      "items": [
+        {
+          "href": "/tutorials/angular/introduction",
+          "label": "Angular - Introduction"
+        },
+        {
+          "href": "/tutorials/angular/basics",
+          "label": "Angular - Basics"
+        },
+        {
+          "href": "/tutorials/angular/setup",
+          "label": "Angular Setup"
+        },
+        {
+          "href": "/tutorials/angular/angular-cli",
+          "label": "Angular CLI"
+        },
+        {
+          "href": "/tutorials/angular/angular-vs-react",
+          "label": "Angular vs React"
+        }
+      ]
+    },
+    {
+      "title": "Core Concepts",
+      "items": [
+        {
+          "href": "/tutorials/angular/components",
+          "label": "Angular Components"
+        },
+        {
+          "href": "/tutorials/angular/templates",
+          "label": "Angular Templates"
+        },
+        {
+          "href": "/tutorials/angular/data-binding",
+          "label": "Data Binding"
+        },
+        {
+          "href": "/tutorials/angular/event-binding",
+          "label": "Event Binding"
+        },
+        {
+          "href": "/tutorials/angular/property-binding",
+          "label": "Property Binding"
+        }
+      ]
+    },
+    {
+      "title": "Directives and Pipes",
+      "items": [
+        {
+          "href": "/tutorials/angular/directives",
+          "label": "Angular Directives"
+        },
+        {
+          "href": "/tutorials/angular/structural-directives",
+          "label": "Structural Directives"
+        },
+        {
+          "href": "/tutorials/angular/attribute-directives",
+          "label": "Attribute Directives"
+        },
+        {
+          "href": "/tutorials/angular/pipes",
+          "label": "Angular Pipes"
+        },
+        {
+          "href": "/tutorials/angular/custom-pipes",
+          "label": "Custom Pipes"
+        }
+      ]
+    },
+    {
+      "title": "Components Advanced",
+      "items": [
+        {
+          "href": "/tutorials/angular/component-lifecycle",
+          "label": "Component Lifecycle"
+        },
+        {
+          "href": "/tutorials/angular/input-output",
+          "label": "@Input and @Output"
+        },
+        {
+          "href": "/tutorials/angular/viewchild-contentchild",
+          "label": "ViewChild and ContentChild"
+        },
+        {
+          "href": "/tutorials/angular/content-projection",
+          "label": "Content Projection"
+        },
+        {
+          "href": "/tutorials/angular/dynamic-components",
+          "label": "Dynamic Components"
+        }
+      ]
+    },
+    {
+      "title": "Services and DI",
+      "items": [
+        {
+          "href": "/tutorials/angular/services",
+          "label": "Angular Services"
+        },
+        {
+          "href": "/tutorials/angular/dependency-injection",
+          "label": "Dependency Injection"
+        },
+        {
+          "href": "/tutorials/angular/providers",
+          "label": "Angular Providers"
+        },
+        {
+          "href": "/tutorials/angular/inject-function",
+          "label": "inject() Function"
+        },
+        {
+          "href": "/tutorials/angular/singleton-services",
+          "label": "Singleton Services"
+        }
+      ]
+    },
+    {
+      "title": "Routing",
+      "items": [
+        {
+          "href": "/tutorials/angular/routing",
+          "label": "Angular Routing"
+        },
+        {
+          "href": "/tutorials/angular/routes",
+          "label": "Angular Routes"
+        },
+        {
+          "href": "/tutorials/angular/route-parameters",
+          "label": "Route Parameters"
+        },
+        {
+          "href": "/tutorials/angular/child-routes",
+          "label": "Child Routes"
+        },
+        {
+          "href": "/tutorials/angular/route-guards",
+          "label": "Route Guards"
+        }
+      ]
+    },
+    {
+      "title": "Forms",
+      "items": [
+        {
+          "href": "/tutorials/angular/forms",
+          "label": "Angular Forms"
+        },
+        {
+          "href": "/tutorials/angular/template-driven-forms",
+          "label": "Template-Driven Forms"
+        },
+        {
+          "href": "/tutorials/angular/reactive-forms",
+          "label": "Reactive Forms"
+        },
+        {
+          "href": "/tutorials/angular/form-validation",
+          "label": "Form Validation"
+        },
+        {
+          "href": "/tutorials/angular/custom-validators",
+          "label": "Custom Validators"
+        }
+      ]
+    },
+    {
+      "title": "HTTP and APIs",
+      "items": [
+        {
+          "href": "/tutorials/angular/http-client",
+          "label": "Angular HttpClient"
+        },
+        {
+          "href": "/tutorials/angular/api-calls",
+          "label": "Angular API Calls"
+        },
+        {
+          "href": "/tutorials/angular/interceptors",
+          "label": "HTTP Interceptors"
+        },
+        {
+          "href": "/tutorials/angular/error-handling",
+          "label": "Error Handling"
+        },
+        {
+          "href": "/tutorials/angular/loading-states",
+          "label": "Loading States"
+        }
+      ]
+    },
+    {
+      "title": "RxJS",
+      "items": [
+        {
+          "href": "/tutorials/angular/rxjs",
+          "label": "RxJS in Angular"
+        },
+        {
+          "href": "/tutorials/angular/observables",
+          "label": "Observables"
+        },
+        {
+          "href": "/tutorials/angular/subjects",
+          "label": "Subjects"
+        },
+        {
+          "href": "/tutorials/angular/rxjs-operators",
+          "label": "RxJS Operators"
+        },
+        {
+          "href": "/tutorials/angular/async-pipe",
+          "label": "Async Pipe"
+        }
+      ]
+    },
+    {
+      "title": "State Management",
+      "items": [
+        {
+          "href": "/tutorials/angular/state-management",
+          "label": "State Management"
+        },
+        {
+          "href": "/tutorials/angular/component-state",
+          "label": "Component State"
+        },
+        {
+          "href": "/tutorials/angular/service-state",
+          "label": "Service State"
+        },
+        {
+          "href": "/tutorials/angular/ngrx",
+          "label": "NgRx"
+        },
+        {
+          "href": "/tutorials/angular/signals",
+          "label": "Angular Signals"
+        }
+      ]
+    },
+    {
+      "title": "Modules and Standalone",
+      "items": [
+        {
+          "href": "/tutorials/angular/modules",
+          "label": "Angular Modules"
+        },
+        {
+          "href": "/tutorials/angular/standalone-components",
+          "label": "Standalone Components"
+        },
+        {
+          "href": "/tutorials/angular/lazy-loading",
+          "label": "Lazy Loading"
+        },
+        {
+          "href": "/tutorials/angular/shared-modules",
+          "label": "Shared Modules"
+        },
+        {
+          "href": "/tutorials/angular/feature-modules",
+          "label": "Feature Modules"
+        }
+      ]
+    },
+    {
+      "title": "Advanced",
+      "items": [
+        {
+          "href": "/tutorials/angular/change-detection",
+          "label": "Change Detection"
+        },
+        {
+          "href": "/tutorials/angular/onpush-strategy",
+          "label": "OnPush Strategy"
+        },
+        {
+          "href": "/tutorials/angular/performance",
+          "label": "Angular Performance"
+        },
+        {
+          "href": "/tutorials/angular/server-side-rendering",
+          "label": "Server-Side Rendering"
+        },
+        {
+          "href": "/tutorials/angular/angular-universal",
+          "label": "Angular Universal"
+        },
+        {
+          "label": "Defer Blocks",
+          "href": "/tutorials/angular/defer-blocks"
+        },
+        {
+          "label": "Control Flow Syntax",
+          "href": "/tutorials/angular/control-flow"
+        },
+        {
+          "label": "Zoneless Change Detection",
+          "href": "/tutorials/angular/zoneless"
+        },
+        {
+          "label": "Hydration",
+          "href": "/tutorials/angular/hydration"
+        },
+        {
+          "label": "Input Output Transforms",
+          "href": "/tutorials/angular/input-output-transforms"
+        },
+        {
+          "label": "Resource API",
+          "href": "/tutorials/angular/resource-api"
+        },
+        {
+          "label": "Linked Signal",
+          "href": "/tutorials/angular/linked-signal"
+        },
+        {
+          "label": "HTTP Resource",
+          "href": "/tutorials/angular/http-resource"
+        },
+        {
+          "label": "Vitest Testing",
+          "href": "/tutorials/angular/vitest"
+        },
+        {
+          "label": "AnalogJS",
+          "href": "/tutorials/angular/analogjs"
+        },
+        {
+          "label": "Nx Monorepo",
+          "href": "/tutorials/angular/nx-monorepo"
+        },
+        {
+          "label": "Standalone Bootstrap",
+          "href": "/tutorials/angular/standalone-bootstrap"
+        }
+      ]
+    },
+    {
+      "title": "Testing",
+      "items": [
+        {
+          "href": "/tutorials/angular/testing",
+          "label": "Angular Testing"
+        },
+        {
+          "href": "/tutorials/angular/unit-testing",
+          "label": "Unit Testing"
+        },
+        {
+          "href": "/tutorials/angular/component-testing",
+          "label": "Component Testing"
+        },
+        {
+          "href": "/tutorials/angular/e2e-testing",
+          "label": "E2E Testing"
+        }
+      ]
+    }
+  ]
+}

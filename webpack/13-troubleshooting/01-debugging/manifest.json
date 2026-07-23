@@ -1,0 +1,452 @@
+[
+  {
+    "type": "example",
+    "file": "13-troubleshooting/01-debugging/examples/01-entry-output.html",
+    "focus": "entry output",
+    "scenario": "SPA dashboard"
+  },
+  {
+    "type": "example",
+    "file": "13-troubleshooting/01-debugging/examples/02-babel-loader.html",
+    "focus": "babel loader",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "example",
+    "file": "13-troubleshooting/01-debugging/examples/03-css-loader.html",
+    "focus": "css loader",
+    "scenario": "component library"
+  },
+  {
+    "type": "example",
+    "file": "13-troubleshooting/01-debugging/examples/04-sass-chain.html",
+    "focus": "sass chain",
+    "scenario": "micro-frontend host"
+  },
+  {
+    "type": "example",
+    "file": "13-troubleshooting/01-debugging/examples/05-postcss-loader.html",
+    "focus": "postcss loader",
+    "scenario": "admin portal"
+  },
+  {
+    "type": "example",
+    "file": "13-troubleshooting/01-debugging/examples/06-ts-loader.html",
+    "focus": "ts loader",
+    "scenario": "docs site"
+  },
+  {
+    "type": "example",
+    "file": "13-troubleshooting/01-debugging/examples/07-html-plugin.html",
+    "focus": "html plugin",
+    "scenario": "e-commerce UI"
+  },
+  {
+    "type": "example",
+    "file": "13-troubleshooting/01-debugging/examples/08-mini-css-extract.html",
+    "focus": "mini css extract",
+    "scenario": "design system"
+  },
+  {
+    "type": "example",
+    "file": "13-troubleshooting/01-debugging/examples/09-define-plugin.html",
+    "focus": "define plugin",
+    "scenario": "legacy migration"
+  },
+  {
+    "type": "example",
+    "file": "13-troubleshooting/01-debugging/examples/10-asset-modules.html",
+    "focus": "asset modules",
+    "scenario": "CI production build"
+  },
+  {
+    "type": "example",
+    "file": "13-troubleshooting/01-debugging/examples/11-dev-server.html",
+    "focus": "dev server",
+    "scenario": "SPA dashboard"
+  },
+  {
+    "type": "example",
+    "file": "13-troubleshooting/01-debugging/examples/12-source-maps.html",
+    "focus": "source maps",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "example",
+    "file": "13-troubleshooting/01-debugging/examples/13-hmr-setup.html",
+    "focus": "hmr setup",
+    "scenario": "component library"
+  },
+  {
+    "type": "example",
+    "file": "13-troubleshooting/01-debugging/examples/14-dynamic-import.html",
+    "focus": "dynamic import",
+    "scenario": "micro-frontend host"
+  },
+  {
+    "type": "example",
+    "file": "13-troubleshooting/01-debugging/examples/15-split-chunks.html",
+    "focus": "split chunks",
+    "scenario": "admin portal"
+  },
+  {
+    "type": "example",
+    "file": "13-troubleshooting/01-debugging/examples/16-tree-shaking.html",
+    "focus": "tree shaking",
+    "scenario": "docs site"
+  },
+  {
+    "type": "example",
+    "file": "13-troubleshooting/01-debugging/examples/17-content-hash.html",
+    "focus": "content hash",
+    "scenario": "e-commerce UI"
+  },
+  {
+    "type": "example",
+    "file": "13-troubleshooting/01-debugging/examples/18-prod-mode.html",
+    "focus": "prod mode",
+    "scenario": "design system"
+  },
+  {
+    "type": "example",
+    "file": "13-troubleshooting/01-debugging/examples/19-bundle-analyzer.html",
+    "focus": "bundle analyzer",
+    "scenario": "legacy migration"
+  },
+  {
+    "type": "example",
+    "file": "13-troubleshooting/01-debugging/examples/20-resolve-alias.html",
+    "focus": "resolve alias",
+    "scenario": "CI production build"
+  },
+  {
+    "type": "example",
+    "file": "13-troubleshooting/01-debugging/examples/21-module-federation.html",
+    "focus": "module federation",
+    "scenario": "SPA dashboard"
+  },
+  {
+    "type": "example",
+    "file": "13-troubleshooting/01-debugging/examples/22-custom-loader.html",
+    "focus": "custom loader",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "example",
+    "file": "13-troubleshooting/01-debugging/examples/23-filesystem-cache.html",
+    "focus": "filesystem cache",
+    "scenario": "component library"
+  },
+  {
+    "type": "example",
+    "file": "13-troubleshooting/01-debugging/examples/24-externals.html",
+    "focus": "externals",
+    "scenario": "micro-frontend host"
+  },
+  {
+    "type": "example",
+    "file": "13-troubleshooting/01-debugging/examples/25-best-practice-recap.html",
+    "focus": "best practice recap",
+    "scenario": "admin portal"
+  },
+  {
+    "type": "exercise",
+    "file": "13-troubleshooting/01-debugging/exercises/01-install-webpack.html",
+    "focus": "install webpack",
+    "scenario": "SPA dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "13-troubleshooting/01-debugging/exercises/02-first-config.html",
+    "focus": "first config",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "exercise",
+    "file": "13-troubleshooting/01-debugging/exercises/03-entry-point.html",
+    "focus": "entry point",
+    "scenario": "component library"
+  },
+  {
+    "type": "exercise",
+    "file": "13-troubleshooting/01-debugging/exercises/04-output-path.html",
+    "focus": "output path",
+    "scenario": "micro-frontend host"
+  },
+  {
+    "type": "exercise",
+    "file": "13-troubleshooting/01-debugging/exercises/05-mode-development.html",
+    "focus": "mode development",
+    "scenario": "admin portal"
+  },
+  {
+    "type": "exercise",
+    "file": "13-troubleshooting/01-debugging/exercises/06-babel-transpile.html",
+    "focus": "babel transpile",
+    "scenario": "docs site"
+  },
+  {
+    "type": "exercise",
+    "file": "13-troubleshooting/01-debugging/exercises/07-import-css.html",
+    "focus": "import css",
+    "scenario": "e-commerce UI"
+  },
+  {
+    "type": "exercise",
+    "file": "13-troubleshooting/01-debugging/exercises/08-extract-css.html",
+    "focus": "extract css",
+    "scenario": "design system"
+  },
+  {
+    "type": "exercise",
+    "file": "13-troubleshooting/01-debugging/exercises/09-copy-assets.html",
+    "focus": "copy assets",
+    "scenario": "legacy migration"
+  },
+  {
+    "type": "exercise",
+    "file": "13-troubleshooting/01-debugging/exercises/10-output-clean.html",
+    "focus": "output clean",
+    "scenario": "CI production build"
+  },
+  {
+    "type": "exercise",
+    "file": "13-troubleshooting/01-debugging/exercises/11-devserver-open.html",
+    "focus": "devServer open",
+    "scenario": "SPA dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "13-troubleshooting/01-debugging/exercises/12-hot-true.html",
+    "focus": "hot true",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "exercise",
+    "file": "13-troubleshooting/01-debugging/exercises/13-lazy-route.html",
+    "focus": "lazy route",
+    "scenario": "component library"
+  },
+  {
+    "type": "exercise",
+    "file": "13-troubleshooting/01-debugging/exercises/14-vendor-split.html",
+    "focus": "vendor split",
+    "scenario": "micro-frontend host"
+  },
+  {
+    "type": "exercise",
+    "file": "13-troubleshooting/01-debugging/exercises/15-sideeffects.html",
+    "focus": "sideEffects",
+    "scenario": "admin portal"
+  },
+  {
+    "type": "exercise",
+    "file": "13-troubleshooting/01-debugging/exercises/16-contenthash-name.html",
+    "focus": "contenthash name",
+    "scenario": "docs site"
+  },
+  {
+    "type": "exercise",
+    "file": "13-troubleshooting/01-debugging/exercises/17-env-define.html",
+    "focus": "env define",
+    "scenario": "e-commerce UI"
+  },
+  {
+    "type": "exercise",
+    "file": "13-troubleshooting/01-debugging/exercises/18-analyze-report.html",
+    "focus": "analyze report",
+    "scenario": "design system"
+  },
+  {
+    "type": "exercise",
+    "file": "13-troubleshooting/01-debugging/exercises/19-resolve-extensions.html",
+    "focus": "resolve extensions",
+    "scenario": "legacy migration"
+  },
+  {
+    "type": "exercise",
+    "file": "13-troubleshooting/01-debugging/exercises/20-webpack-merge.html",
+    "focus": "webpack merge",
+    "scenario": "CI production build"
+  },
+  {
+    "type": "exercise",
+    "file": "13-troubleshooting/01-debugging/exercises/21-federation-host.html",
+    "focus": "federation host",
+    "scenario": "SPA dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "13-troubleshooting/01-debugging/exercises/22-loader-error.html",
+    "focus": "loader error",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "exercise",
+    "file": "13-troubleshooting/01-debugging/exercises/23-plugin-debug.html",
+    "focus": "plugin debug",
+    "scenario": "component library"
+  },
+  {
+    "type": "exercise",
+    "file": "13-troubleshooting/01-debugging/exercises/24-speed-measure.html",
+    "focus": "speed measure",
+    "scenario": "micro-frontend host"
+  },
+  {
+    "type": "exercise",
+    "file": "13-troubleshooting/01-debugging/exercises/25-final-challenge.html",
+    "focus": "final challenge",
+    "scenario": "admin portal"
+  },
+  {
+    "type": "template",
+    "file": "13-troubleshooting/01-debugging/templates/01-vanilla-starter.html",
+    "focus": "vanilla starter",
+    "scenario": "SPA dashboard"
+  },
+  {
+    "type": "template",
+    "file": "13-troubleshooting/01-debugging/templates/02-react-webpack.html",
+    "focus": "react webpack",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "template",
+    "file": "13-troubleshooting/01-debugging/templates/03-vue-webpack.html",
+    "focus": "vue webpack",
+    "scenario": "component library"
+  },
+  {
+    "type": "template",
+    "file": "13-troubleshooting/01-debugging/templates/04-ts-webpack.html",
+    "focus": "ts webpack",
+    "scenario": "micro-frontend host"
+  },
+  {
+    "type": "template",
+    "file": "13-troubleshooting/01-debugging/templates/05-sass-app.html",
+    "focus": "sass app",
+    "scenario": "admin portal"
+  },
+  {
+    "type": "template",
+    "file": "13-troubleshooting/01-debugging/templates/06-multi-page.html",
+    "focus": "multi page",
+    "scenario": "docs site"
+  },
+  {
+    "type": "template",
+    "file": "13-troubleshooting/01-debugging/templates/07-library-build.html",
+    "focus": "library build",
+    "scenario": "e-commerce UI"
+  },
+  {
+    "type": "template",
+    "file": "13-troubleshooting/01-debugging/templates/08-pwa-assets.html",
+    "focus": "pwa assets",
+    "scenario": "design system"
+  },
+  {
+    "type": "template",
+    "file": "13-troubleshooting/01-debugging/templates/09-federation-remotes.html",
+    "focus": "federation remotes",
+    "scenario": "legacy migration"
+  },
+  {
+    "type": "template",
+    "file": "13-troubleshooting/01-debugging/templates/10-svelte-webpack.html",
+    "focus": "svelte webpack",
+    "scenario": "CI production build"
+  },
+  {
+    "type": "template",
+    "file": "13-troubleshooting/01-debugging/templates/11-dev-prod-configs.html",
+    "focus": "dev prod configs",
+    "scenario": "SPA dashboard"
+  },
+  {
+    "type": "template",
+    "file": "13-troubleshooting/01-debugging/templates/12-dotenv-define.html",
+    "focus": "dotenv define",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "template",
+    "file": "13-troubleshooting/01-debugging/templates/13-image-assets.html",
+    "focus": "image assets",
+    "scenario": "component library"
+  },
+  {
+    "type": "template",
+    "file": "13-troubleshooting/01-debugging/templates/14-font-assets.html",
+    "focus": "font assets",
+    "scenario": "micro-frontend host"
+  },
+  {
+    "type": "template",
+    "file": "13-troubleshooting/01-debugging/templates/15-postcss-tailwind.html",
+    "focus": "postcss tailwind",
+    "scenario": "admin portal"
+  },
+  {
+    "type": "template",
+    "file": "13-troubleshooting/01-debugging/templates/16-code-split-routes.html",
+    "focus": "code split routes",
+    "scenario": "docs site"
+  },
+  {
+    "type": "template",
+    "file": "13-troubleshooting/01-debugging/templates/17-vendor-cache.html",
+    "focus": "vendor cache",
+    "scenario": "e-commerce UI"
+  },
+  {
+    "type": "template",
+    "file": "13-troubleshooting/01-debugging/templates/18-compression.html",
+    "focus": "compression",
+    "scenario": "design system"
+  },
+  {
+    "type": "template",
+    "file": "13-troubleshooting/01-debugging/templates/19-eslint-webpack.html",
+    "focus": "eslint webpack",
+    "scenario": "legacy migration"
+  },
+  {
+    "type": "template",
+    "file": "13-troubleshooting/01-debugging/templates/20-storybook-webpack.html",
+    "focus": "storybook webpack",
+    "scenario": "CI production build"
+  },
+  {
+    "type": "template",
+    "file": "13-troubleshooting/01-debugging/templates/21-monorepo-package.html",
+    "focus": "monorepo package",
+    "scenario": "SPA dashboard"
+  },
+  {
+    "type": "template",
+    "file": "13-troubleshooting/01-debugging/templates/22-custom-rules.html",
+    "focus": "custom rules",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "template",
+    "file": "13-troubleshooting/01-debugging/templates/23-slow-build-fix.html",
+    "focus": "slow build fix",
+    "scenario": "component library"
+  },
+  {
+    "type": "template",
+    "file": "13-troubleshooting/01-debugging/templates/24-ci-build.html",
+    "focus": "ci build",
+    "scenario": "micro-frontend host"
+  },
+  {
+    "type": "template",
+    "file": "13-troubleshooting/01-debugging/templates/25-production-starter.html",
+    "focus": "production starter",
+    "scenario": "admin portal"
+  }
+]

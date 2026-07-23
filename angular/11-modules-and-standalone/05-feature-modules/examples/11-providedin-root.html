@@ -1,0 +1,130 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Angular Tutorials
+section title: Modules and Standalone
+topic title: Feature Modules
+content type: Example
+item number: 11
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Feature Modules Example 11 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ffedd5;
+      color: #9a3412;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Example 11</span>
+    <h1>Feature Modules</h1>
+    <p><strong>Section:</strong> Modules and Standalone</p>
+    <p><strong>Focus:</strong> Providedin Root</p>
+    <p><strong>Scenario:</strong> enterprise admin</p>
+    <p>Study the Angular standalone/component pattern and adapt it to your feature.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Angular</h2>
+        <pre><code>// Feature Modules — Example 11
+// Focus: providedIn root | Scenario: enterprise admin
+
+// Angular topic: Feature Modules
+import { Component, signal } from &quot;@angular/core&quot;;
+
+@Component({
+  selector: &quot;app-feature-modules&quot;,
+  standalone: true,
+  template: `
+    &lt;section&gt;
+      &lt;h1&gt;{{ title() }}&lt;/h1&gt;
+      &lt;p&gt;Topic: feature-modules&lt;/p&gt;
+    &lt;/section&gt;
+  `,
+})
+export class Topic_feature_modulesComponent {
+  readonly title = signal(&quot;Feature Modules&quot;);
+}
+
+export const TOPIC_ID = &quot;feature-modules&quot;;
+</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Feature Modules
+- Practice: providedIn root
+- Scenario: enterprise admin
+- Prefer standalone components + inject() for new Angular apps
+- Use signals for local UI state; RxJS for async streams and HttpClient
+- Reactive forms for complex validation; template-driven for simple forms
+- Route with provideRouter; guard auth routes; lazy-load feature areas
+- Prefer OnPush + async pipe / signals to reduce change detection work
+
+Useful commands:
+  npm i -g @angular/cli
+  ng new my-app --standalone
+  ng generate component features/counter --standalone
+  ng serve
+  ng test
+  ng build</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This example shows one way to apply <strong>Feature Modules</strong> in a enterprise admin context.</p>
+      <p>Prefer standalone components, keep services focused, and use signals/RxJS intentionally for state and async work.</p>
+    </section>
+  </main>
+</body>
+</html>

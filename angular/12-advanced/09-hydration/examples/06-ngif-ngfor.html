@@ -1,0 +1,122 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Angular Tutorials
+section title: Advanced
+topic title: Hydration
+content type: Example
+item number: 06
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Hydration Example 06 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ffedd5;
+      color: #9a3412;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Example 06</span>
+    <h1>Hydration</h1>
+    <p><strong>Section:</strong> Advanced</p>
+    <p><strong>Focus:</strong> Ngif Ngfor</p>
+    <p><strong>Scenario:</strong> banking UI</p>
+    <p>Study the Angular standalone/component pattern and adapt it to your feature.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Angular</h2>
+        <pre><code>// Hydration — Example 06
+// Focus: ngIf ngFor | Scenario: banking UI
+
+import { provideClientHydration, withEventReplay } from &quot;@angular/platform-browser&quot;;
+
+export const appConfig = {
+  providers: [
+    provideClientHydration(withEventReplay()),
+  ],
+};
+// Pair with Angular SSR so the client reuses server DOM
+
+export const TOPIC_ID = &quot;hydration&quot;;
+</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Hydration
+- Practice: ngIf ngFor
+- Scenario: banking UI
+- Prefer standalone components + inject() for new Angular apps
+- Use signals for local UI state; RxJS for async streams and HttpClient
+- Reactive forms for complex validation; template-driven for simple forms
+- Route with provideRouter; guard auth routes; lazy-load feature areas
+- Prefer OnPush + async pipe / signals to reduce change detection work
+
+Useful commands:
+  npm i -g @angular/cli
+  ng new my-app --standalone
+  ng generate component features/counter --standalone
+  ng serve
+  ng test
+  ng build</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This example shows one way to apply <strong>Hydration</strong> in a banking ui context.</p>
+      <p>Prefer standalone components, keep services focused, and use signals/RxJS intentionally for state and async work.</p>
+    </section>
+  </main>
+</body>
+</html>

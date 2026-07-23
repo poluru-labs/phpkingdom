@@ -1,0 +1,452 @@
+[
+  {
+    "type": "example",
+    "file": "06-routing/03-route-parameters/examples/01-ng-new.html",
+    "focus": "ng new",
+    "scenario": "enterprise admin"
+  },
+  {
+    "type": "example",
+    "file": "06-routing/03-route-parameters/examples/02-standalone-component.html",
+    "focus": "standalone component",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "example",
+    "file": "06-routing/03-route-parameters/examples/03-interpolation.html",
+    "focus": "interpolation",
+    "scenario": "e-commerce store"
+  },
+  {
+    "type": "example",
+    "file": "06-routing/03-route-parameters/examples/04-property-binding.html",
+    "focus": "property binding",
+    "scenario": "CRM portal"
+  },
+  {
+    "type": "example",
+    "file": "06-routing/03-route-parameters/examples/05-event-binding.html",
+    "focus": "event binding",
+    "scenario": "blog CMS"
+  },
+  {
+    "type": "example",
+    "file": "06-routing/03-route-parameters/examples/06-ngif-ngfor.html",
+    "focus": "ngIf ngFor",
+    "scenario": "banking UI"
+  },
+  {
+    "type": "example",
+    "file": "06-routing/03-route-parameters/examples/07-custom-pipe.html",
+    "focus": "custom pipe",
+    "scenario": "learning platform"
+  },
+  {
+    "type": "example",
+    "file": "06-routing/03-route-parameters/examples/08-input-output.html",
+    "focus": "input output",
+    "scenario": "IoT console"
+  },
+  {
+    "type": "example",
+    "file": "06-routing/03-route-parameters/examples/09-lifecycle-hooks.html",
+    "focus": "lifecycle hooks",
+    "scenario": "booking system"
+  },
+  {
+    "type": "example",
+    "file": "06-routing/03-route-parameters/examples/10-inject-service.html",
+    "focus": "inject service",
+    "scenario": "B2B portal"
+  },
+  {
+    "type": "example",
+    "file": "06-routing/03-route-parameters/examples/11-providedin-root.html",
+    "focus": "providedIn root",
+    "scenario": "enterprise admin"
+  },
+  {
+    "type": "example",
+    "file": "06-routing/03-route-parameters/examples/12-routerlink.html",
+    "focus": "routerLink",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "example",
+    "file": "06-routing/03-route-parameters/examples/13-route-params.html",
+    "focus": "route params",
+    "scenario": "e-commerce store"
+  },
+  {
+    "type": "example",
+    "file": "06-routing/03-route-parameters/examples/14-canactivate.html",
+    "focus": "canActivate",
+    "scenario": "CRM portal"
+  },
+  {
+    "type": "example",
+    "file": "06-routing/03-route-parameters/examples/15-reactive-form.html",
+    "focus": "reactive form",
+    "scenario": "blog CMS"
+  },
+  {
+    "type": "example",
+    "file": "06-routing/03-route-parameters/examples/16-validators.html",
+    "focus": "validators",
+    "scenario": "banking UI"
+  },
+  {
+    "type": "example",
+    "file": "06-routing/03-route-parameters/examples/17-httpclient-get.html",
+    "focus": "httpClient get",
+    "scenario": "learning platform"
+  },
+  {
+    "type": "example",
+    "file": "06-routing/03-route-parameters/examples/18-interceptor.html",
+    "focus": "interceptor",
+    "scenario": "IoT console"
+  },
+  {
+    "type": "example",
+    "file": "06-routing/03-route-parameters/examples/19-async-pipe.html",
+    "focus": "async pipe",
+    "scenario": "booking system"
+  },
+  {
+    "type": "example",
+    "file": "06-routing/03-route-parameters/examples/20-rxjs-map.html",
+    "focus": "rxjs map",
+    "scenario": "B2B portal"
+  },
+  {
+    "type": "example",
+    "file": "06-routing/03-route-parameters/examples/21-signal-state.html",
+    "focus": "signal state",
+    "scenario": "enterprise admin"
+  },
+  {
+    "type": "example",
+    "file": "06-routing/03-route-parameters/examples/22-lazy-route.html",
+    "focus": "lazy route",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "example",
+    "file": "06-routing/03-route-parameters/examples/23-onpush.html",
+    "focus": "OnPush",
+    "scenario": "e-commerce store"
+  },
+  {
+    "type": "example",
+    "file": "06-routing/03-route-parameters/examples/24-testbed.html",
+    "focus": "TestBed",
+    "scenario": "CRM portal"
+  },
+  {
+    "type": "example",
+    "file": "06-routing/03-route-parameters/examples/25-best-practice-recap.html",
+    "focus": "best practice recap",
+    "scenario": "blog CMS"
+  },
+  {
+    "type": "exercise",
+    "file": "06-routing/03-route-parameters/exercises/01-ng-new-app.html",
+    "focus": "ng new app",
+    "scenario": "enterprise admin"
+  },
+  {
+    "type": "exercise",
+    "file": "06-routing/03-route-parameters/exercises/02-generate-component.html",
+    "focus": "generate component",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "06-routing/03-route-parameters/exercises/03-generate-service.html",
+    "focus": "generate service",
+    "scenario": "e-commerce store"
+  },
+  {
+    "type": "exercise",
+    "file": "06-routing/03-route-parameters/exercises/04-title-property.html",
+    "focus": "title property",
+    "scenario": "CRM portal"
+  },
+  {
+    "type": "exercise",
+    "file": "06-routing/03-route-parameters/exercises/05-click-handler.html",
+    "focus": "click handler",
+    "scenario": "blog CMS"
+  },
+  {
+    "type": "exercise",
+    "file": "06-routing/03-route-parameters/exercises/06-ngfor-list.html",
+    "focus": "ngFor list",
+    "scenario": "banking UI"
+  },
+  {
+    "type": "exercise",
+    "file": "06-routing/03-route-parameters/exercises/07-ngif-show.html",
+    "focus": "ngIf show",
+    "scenario": "learning platform"
+  },
+  {
+    "type": "exercise",
+    "file": "06-routing/03-route-parameters/exercises/08-pipe-date.html",
+    "focus": "pipe date",
+    "scenario": "IoT console"
+  },
+  {
+    "type": "exercise",
+    "file": "06-routing/03-route-parameters/exercises/09-input-decorator.html",
+    "focus": "Input decorator",
+    "scenario": "booking system"
+  },
+  {
+    "type": "exercise",
+    "file": "06-routing/03-route-parameters/exercises/10-output-eventemitter.html",
+    "focus": "Output EventEmitter",
+    "scenario": "B2B portal"
+  },
+  {
+    "type": "exercise",
+    "file": "06-routing/03-route-parameters/exercises/11-ngoninit.html",
+    "focus": "ngOnInit",
+    "scenario": "enterprise admin"
+  },
+  {
+    "type": "exercise",
+    "file": "06-routing/03-route-parameters/exercises/12-inject.html",
+    "focus": "inject()",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "06-routing/03-route-parameters/exercises/13-routes-array.html",
+    "focus": "Routes array",
+    "scenario": "e-commerce store"
+  },
+  {
+    "type": "exercise",
+    "file": "06-routing/03-route-parameters/exercises/14-activatedroute.html",
+    "focus": "ActivatedRoute",
+    "scenario": "CRM portal"
+  },
+  {
+    "type": "exercise",
+    "file": "06-routing/03-route-parameters/exercises/15-formbuilder.html",
+    "focus": "FormBuilder",
+    "scenario": "blog CMS"
+  },
+  {
+    "type": "exercise",
+    "file": "06-routing/03-route-parameters/exercises/16-required-validator.html",
+    "focus": "required validator",
+    "scenario": "banking UI"
+  },
+  {
+    "type": "exercise",
+    "file": "06-routing/03-route-parameters/exercises/17-httpclient.html",
+    "focus": "HttpClient",
+    "scenario": "learning platform"
+  },
+  {
+    "type": "exercise",
+    "file": "06-routing/03-route-parameters/exercises/18-catcherror.html",
+    "focus": "catchError",
+    "scenario": "IoT console"
+  },
+  {
+    "type": "exercise",
+    "file": "06-routing/03-route-parameters/exercises/19-behaviorsubject.html",
+    "focus": "BehaviorSubject",
+    "scenario": "booking system"
+  },
+  {
+    "type": "exercise",
+    "file": "06-routing/03-route-parameters/exercises/20-tosignal.html",
+    "focus": "toSignal",
+    "scenario": "B2B portal"
+  },
+  {
+    "type": "exercise",
+    "file": "06-routing/03-route-parameters/exercises/21-loadchildren.html",
+    "focus": "loadChildren",
+    "scenario": "enterprise admin"
+  },
+  {
+    "type": "exercise",
+    "file": "06-routing/03-route-parameters/exercises/22-changedetectionstrategy.html",
+    "focus": "ChangeDetectionStrategy",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "06-routing/03-route-parameters/exercises/23-httpinterceptor.html",
+    "focus": "HttpInterceptor",
+    "scenario": "e-commerce store"
+  },
+  {
+    "type": "exercise",
+    "file": "06-routing/03-route-parameters/exercises/24-componentfixture.html",
+    "focus": "ComponentFixture",
+    "scenario": "CRM portal"
+  },
+  {
+    "type": "exercise",
+    "file": "06-routing/03-route-parameters/exercises/25-final-challenge.html",
+    "focus": "final challenge",
+    "scenario": "blog CMS"
+  },
+  {
+    "type": "template",
+    "file": "06-routing/03-route-parameters/templates/01-cli-starter.html",
+    "focus": "cli starter",
+    "scenario": "enterprise admin"
+  },
+  {
+    "type": "template",
+    "file": "06-routing/03-route-parameters/templates/02-todo-component.html",
+    "focus": "todo component",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "template",
+    "file": "06-routing/03-route-parameters/templates/03-counter-signals.html",
+    "focus": "counter signals",
+    "scenario": "e-commerce store"
+  },
+  {
+    "type": "template",
+    "file": "06-routing/03-route-parameters/templates/04-login-reactive.html",
+    "focus": "login reactive",
+    "scenario": "CRM portal"
+  },
+  {
+    "type": "template",
+    "file": "06-routing/03-route-parameters/templates/05-product-list.html",
+    "focus": "product list",
+    "scenario": "blog CMS"
+  },
+  {
+    "type": "template",
+    "file": "06-routing/03-route-parameters/templates/06-user-service.html",
+    "focus": "user service",
+    "scenario": "banking UI"
+  },
+  {
+    "type": "template",
+    "file": "06-routing/03-route-parameters/templates/07-http-api.html",
+    "focus": "http api",
+    "scenario": "learning platform"
+  },
+  {
+    "type": "template",
+    "file": "06-routing/03-route-parameters/templates/08-auth-guard.html",
+    "focus": "auth guard",
+    "scenario": "IoT console"
+  },
+  {
+    "type": "template",
+    "file": "06-routing/03-route-parameters/templates/09-lazy-feature.html",
+    "focus": "lazy feature",
+    "scenario": "booking system"
+  },
+  {
+    "type": "template",
+    "file": "06-routing/03-route-parameters/templates/10-shared-pipe.html",
+    "focus": "shared pipe",
+    "scenario": "B2B portal"
+  },
+  {
+    "type": "template",
+    "file": "06-routing/03-route-parameters/templates/11-custom-directive.html",
+    "focus": "custom directive",
+    "scenario": "enterprise admin"
+  },
+  {
+    "type": "template",
+    "file": "06-routing/03-route-parameters/templates/12-ngrx-store.html",
+    "focus": "ngrx store",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "template",
+    "file": "06-routing/03-route-parameters/templates/13-rxjs-search.html",
+    "focus": "rxjs search",
+    "scenario": "e-commerce store"
+  },
+  {
+    "type": "template",
+    "file": "06-routing/03-route-parameters/templates/14-interceptor-auth.html",
+    "focus": "interceptor auth",
+    "scenario": "CRM portal"
+  },
+  {
+    "type": "template",
+    "file": "06-routing/03-route-parameters/templates/15-form-array.html",
+    "focus": "form array",
+    "scenario": "blog CMS"
+  },
+  {
+    "type": "template",
+    "file": "06-routing/03-route-parameters/templates/16-child-routes.html",
+    "focus": "child routes",
+    "scenario": "banking UI"
+  },
+  {
+    "type": "template",
+    "file": "06-routing/03-route-parameters/templates/17-content-projection.html",
+    "focus": "content projection",
+    "scenario": "learning platform"
+  },
+  {
+    "type": "template",
+    "file": "06-routing/03-route-parameters/templates/18-viewchild-focus.html",
+    "focus": "viewchild focus",
+    "scenario": "IoT console"
+  },
+  {
+    "type": "template",
+    "file": "06-routing/03-route-parameters/templates/19-ssr-notes.html",
+    "focus": "ssr notes",
+    "scenario": "booking system"
+  },
+  {
+    "type": "template",
+    "file": "06-routing/03-route-parameters/templates/20-onpush-list.html",
+    "focus": "onpush list",
+    "scenario": "B2B portal"
+  },
+  {
+    "type": "template",
+    "file": "06-routing/03-route-parameters/templates/21-unit-tests.html",
+    "focus": "unit tests",
+    "scenario": "enterprise admin"
+  },
+  {
+    "type": "template",
+    "file": "06-routing/03-route-parameters/templates/22-e2e-playwright.html",
+    "focus": "e2e playwright",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "template",
+    "file": "06-routing/03-route-parameters/templates/23-standalone-migrate.html",
+    "focus": "standalone migrate",
+    "scenario": "e-commerce store"
+  },
+  {
+    "type": "template",
+    "file": "06-routing/03-route-parameters/templates/24-error-handler.html",
+    "focus": "error handler",
+    "scenario": "CRM portal"
+  },
+  {
+    "type": "template",
+    "file": "06-routing/03-route-parameters/templates/25-production-starter.html",
+    "focus": "production starter",
+    "scenario": "blog CMS"
+  }
+]
