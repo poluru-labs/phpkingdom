@@ -1,0 +1,118 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: LESS CSS Tutorials
+section title: Architecture
+topic title: Theme System
+content type: Example
+item number: 03
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Theme System Example 03 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #e0f2fe;
+      color: #075985;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Example 03</span>
+    <h1>Theme System</h1>
+    <p><strong>Section:</strong> Architecture</p>
+    <p><strong>Focus:</strong> Component Styling</p>
+    <p><strong>Scenario:</strong> blog redesign</p>
+    <p>Study how the LESS snippet is structured and how the pattern can scale in a project.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>LESS Snippet</h2>
+        <pre><code>// Theme System — Example 03
+// Focus: component styling | Scenario: blog redesign
+
+@theme: light;
+
+.theme-vars() when (@theme = light) {
+  @bg: #ffffff;
+  @ink: #212529;
+  @brand: #0d6efd;
+}
+.theme-vars() when (@theme = dark) {
+  @bg: #0f172a;
+  @ink: #e2e8f0;
+  @brand: #6ea8fe;
+}
+.theme-vars();
+
+body {
+  background: @bg;
+  color: @ink;
+}
+a { color: @brand; }</code></pre>
+      </section>
+      <section>
+        <h2>HTML Markup</h2>
+        <pre><code>&lt;section class=&quot;panel-theme-system&quot;&gt;
+  &lt;h2&gt;Theme System&lt;/h2&gt;
+  &lt;p&gt;Component Styling for a blog redesign.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This example shows one way to apply <strong>Theme System</strong> in a blog redesign context.</p>
+      <p>Adapt selectors, token names, and mixins to match your project naming rules.</p>
+    </section>
+  </main>
+</body>
+</html>

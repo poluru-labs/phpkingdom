@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/057-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 057 — SSR declarative shadow — Solution | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>Exercise 057 — SSR declarative shadow — Solution</h1>
+  <p class="meta">Use shadowrootmode template.</p>
+  <h2>Solution</h2>
+  <p>Use shadowrootmode template.</p>
+  <div id="demo"></div>
+  <pre id="out"></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+customElements.define("ex057-el", class extends HTMLElement {
+  connectedCallback() {
+    this.textContent = 'SSR declarative shadow';
+  }
+});
+document.getElementById("demo").innerHTML = "<ex057-el></ex057-el>";
+document.getElementById("out").textContent = 'Use shadowrootmode template.';
+  </script>
+</body>
+</html>

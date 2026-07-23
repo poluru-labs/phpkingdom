@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/050-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 050 — Icon part — Solution | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>Exercise 050 — Icon part — Solution</h1>
+  <p class="meta">Expose part=icon for sizing.</p>
+  <h2>Solution</h2>
+  <p>Expose part=icon for sizing.</p>
+  <div id="demo"></div>
+  <pre id="out"></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+customElements.define("ex050-el", class extends HTMLElement {
+  connectedCallback() {
+    this.textContent = 'Icon part';
+  }
+});
+document.getElementById("demo").innerHTML = "<ex050-el></ex050-el>";
+document.getElementById("out").textContent = 'Expose part=icon for sizing.';
+  </script>
+</body>
+</html>

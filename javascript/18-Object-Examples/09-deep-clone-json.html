@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 18-Object-Examples
+  example: 09-deep-clone-json.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>09 — Deep Clone (JSON) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>09 — Deep Clone (JSON)</h1>
+  <h2>Problem</h2>
+  <p>Deep clone a plain object with JSON methods.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const a = { user: { name: "Ada" } };
+const b = JSON.parse(JSON.stringify(a));
+b.user.name = "Grace";
+document.getElementById("out").textContent = a.user.name + " / " + b.user.name;
+  </script>
+</body>
+</html>

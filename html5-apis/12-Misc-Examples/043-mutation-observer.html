@@ -1,0 +1,25 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 12-Misc-Examples
+  example: 043-mutation-observer.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>043 — MutationObserver | phpkingdom.com</title>
+</head>
+<body>
+  <h1>043 — MutationObserver</h1>
+  <p>DOM mutation watch.</p>
+<div id="d"></div><button id="b" type="button">Add</button><pre id="out"></pre>
+  <script>
+const d=document.getElementById("d");new MutationObserver(()=>document.getElementById("out").textContent="mutated").observe(d,{childList:true});document.getElementById("b").onclick=()=>d.append("x");
+  </script>
+</body>
+</html>

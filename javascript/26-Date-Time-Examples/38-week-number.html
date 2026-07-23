@@ -1,0 +1,37 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 26-Date-Time-Examples
+  example: 38-week-number.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>38 — Week Number | phpkingdom.com</title>
+</head>
+<body>
+  <h1>38 — Week Number</h1>
+  <h2>Problem</h2>
+  <p>ISO week number for a given date (simple algorithm).</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+
+function getISOWeek(d) {
+  const date = new Date(Date.UTC(d.getFullYear(), d.getMonth(), d.getDate()));
+  const day = date.getUTCDay() || 7;
+  date.setUTCDate(date.getUTCDate() + 4 - day);
+  const yearStart = new Date(Date.UTC(date.getUTCFullYear(), 0, 1));
+  return Math.ceil((((date - yearStart) / 86400000) + 1) / 7);
+}
+const d = new Date(2024, 0, 15);
+document.getElementById("out").textContent = "ISO week for Jan 15, 2024: " + getISOWeek(d);
+
+  </script>
+</body>
+</html>

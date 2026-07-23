@@ -1,0 +1,28 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 18-Object-Examples
+  example: 01-create-object.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>01 — Create an Object | phpkingdom.com</title>
+</head>
+<body>
+  <h1>01 — Create an Object</h1>
+  <h2>Problem</h2>
+  <p>Create a custom user object with name, email, and role.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const user = { name: "Subrahmanyam Poluru", email: "mail.polurus@gmail.com", role: "author" };
+document.getElementById("out").textContent = JSON.stringify(user, null, 2);
+  </script>
+</body>
+</html>

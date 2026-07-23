@@ -1,0 +1,29 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 03-Control-Flow/04-break-continue
+  example: 01-break.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>break | phpkingdom.com</title>
+</head>
+<body>
+  <h1>break Statement</h1>
+  <p>Exit a loop early.</p>
+  <pre id="out"></pre>
+  <script>
+let found = -1;
+for (let i = 0; i < 10; i++) {
+  if (i === 4) { found = i; break; }
+}
+document.getElementById("out").textContent = "found " + found;
+  </script>
+</body>
+</html>

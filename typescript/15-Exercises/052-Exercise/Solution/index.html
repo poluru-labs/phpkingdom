@@ -1,0 +1,26 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/052-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 052 — fetch Todo — Solution | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Exercise 052 — fetch Todo — Solution</h1>
+  <pre><code class="ts">type Todo = { id: number; title: string };
+async function loadTodos(): Promise&lt;Todo[]&gt; {
+  const res = await fetch(&#x27;/api/todos&#x27;);
+  return (await res.json()) as Todo[];
+}</code></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+</body>
+</html>

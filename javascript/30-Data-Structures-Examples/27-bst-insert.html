@@ -1,0 +1,41 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 30-Data-Structures-Examples
+  example: 27-bst-insert.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>27 — BST — Insert | phpkingdom.com</title>
+</head>
+<body>
+  <h1>27 — BST — Insert</h1>
+  <h2>Problem</h2>
+  <p>Insert a value into a binary search tree.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+class TreeNode { constructor(val, l = null, r = null) { this.val = val; this.left = l; this.right = r; } }
+function insert(root, val) {
+  if (!root) return new TreeNode(val);
+  if (val < root.val) root.left = insert(root.left, val);
+  else if (val > root.val) root.right = insert(root.right, val);
+  return root;
+}
+function inorder(root, out = []) {
+  if (!root) return out;
+  inorder(root.left, out); out.push(root.val); inorder(root.right, out);
+  return out;
+}
+let bst = null;
+[8, 3, 10, 1, 6, 14, 4].forEach(v => bst = insert(bst, v));
+document.getElementById("out").textContent = "inorder after inserts: " + inorder(bst).join(", ");
+  </script>
+</body>
+</html>

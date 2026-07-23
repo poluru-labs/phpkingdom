@@ -1,0 +1,27 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 07-DOM/02-dom-selectors
+  example: 03-getElementsBy.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>getElementsBy* | phpkingdom.com</title>
+</head>
+<body>
+  <h1>getElementsByTagName / ClassName</h1>
+  <p>Live HTMLCollection selectors.</p>
+  <p class="note">One</p><p class="note">Two</p>
+  <pre id="out"></pre>
+  <script>
+const notes = document.getElementsByClassName("note");
+document.getElementById("out").textContent = "notes=" + notes.length;
+  </script>
+</body>
+</html>

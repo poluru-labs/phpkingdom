@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 094-longest-run.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>094 — Longest Equal Run | phpkingdom.com</title>
+</head>
+<body>
+  <h1>094 — Longest Equal Run</h1>
+  <h2>Problem</h2>
+  <p>Find the longest consecutive run of equal values.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const arr = [1, 1, 2, 2, 2, 3, 3];
+let best = 1, cur = 1;
+for (let i = 1; i < arr.length; i++) {
+  if (arr[i] === arr[i - 1]) { cur++; best = Math.max(best, cur); }
+  else cur = 1;
+}
+document.getElementById("out").textContent = "longest run = " + best;
+  </script>
+</body>
+</html>

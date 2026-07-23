@@ -1,0 +1,139 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Vue.js Tutorials
+section title: State Management
+topic title: State Management
+content type: Example
+item number: 06
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>State Management Example 06 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ffedd5;
+      color: #9a3412;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Example 06</span>
+    <h1>State Management</h1>
+    <p><strong>Section:</strong> State Management</p>
+    <p><strong>Focus:</strong> V-If Show</p>
+    <p><strong>Scenario:</strong> admin console</p>
+    <p>Study the Vue 3 pattern for this topic and adapt it to your component.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Vue.js</h2>
+        <pre><code>// State Management — Example 06
+// Focus: v-if show | Scenario: admin console
+
+&lt;script setup&gt;
+import { ref, computed, onMounted } from &quot;vue&quot;;
+
+const count = ref(0);
+const title = ref(&quot;Vue — {token}&quot;);
+const doubled = computed(() =&gt; count.value * 2);
+
+function increment() {
+  count.value += 1;
+}
+
+onMounted(() =&gt; {
+  // Focus: {focus} | Scenario: {scenario}
+  console.log(&quot;mounted&quot;, title.value);
+});
+&lt;/script&gt;
+
+&lt;template&gt;
+  &lt;main&gt;
+    &lt;h1&gt;{{ title }}&lt;/h1&gt;
+    &lt;p&gt;Count: {{ count }} · Doubled: {{ doubled }}&lt;/p&gt;
+    &lt;button @click=&quot;increment&quot;&gt;+1&lt;/button&gt;
+  &lt;/main&gt;
+&lt;/template&gt;
+
+// main.js
+import { createApp } from &quot;vue&quot;;
+import App from &quot;./App.vue&quot;;
+createApp(App).mount(&quot;#app&quot;);</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for State Management
+- Practice: v-if show
+- Scenario: admin console
+- Prefer &lt;script setup&gt; + Composition API for Vue 3
+- Use ref for primitives, reactive for objects; computed for derived state
+- Key lists with stable ids; v-if for costly trees, v-show for toggles
+- Props down / emits up; Pinia or provide/inject for shared state
+- Route with vue-router; guard auth; fetch with composables + loading/error
+
+Useful commands:
+  npm create vue@latest
+  npm install
+  npm run dev
+  npm run build
+  npm run type-check   # vue-tsc when TypeScript enabled</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This example focuses on <strong>State Management</strong> in a admin console context.</p>
+      <p>Prefer Composition API, keep components focused, and lift shared state into composables or Pinia.</p>
+    </section>
+  </main>
+</body>
+</html>

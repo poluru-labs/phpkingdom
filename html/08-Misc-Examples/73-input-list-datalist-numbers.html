@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  topic: 08-Misc-Examples
+  example: 73-input-list-datalist-numbers.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datalist with Numbers | phpkingdom</title>
+</head>
+<body>
+  <h1>Datalist for Numeric Suggestions</h1>
+
+  <form>
+    <label for="qty">Quantity</label>
+    <input type="number" list="qtys" id="qty" name="qty" min="1">
+    <datalist id="qtys">
+      <option value="1"></option>
+      <option value="5"></option>
+      <option value="10"></option>
+      <option value="25"></option>
+    </datalist>
+  </form>
+
+</body>
+</html>

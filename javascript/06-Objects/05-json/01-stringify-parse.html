@@ -1,0 +1,28 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 06-Objects/05-json
+  example: 01-stringify-parse.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>stringify parse | phpkingdom.com</title>
+</head>
+<body>
+  <h1>JSON.stringify / parse</h1>
+  <p>Serialize and deserialize data.</p>
+  <pre id="out"></pre>
+  <script>
+const user = { name: "Ada", active: true };
+const text = JSON.stringify(user);
+const back = JSON.parse(text);
+document.getElementById("out").textContent = text + "\n" + back.name;
+  </script>
+</body>
+</html>

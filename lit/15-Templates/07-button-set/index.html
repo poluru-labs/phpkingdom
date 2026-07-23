@@ -1,0 +1,73 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Templates/07-button-set
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <meta name="description" content="Primary/secondary buttons">
+  <title>Button Set | variants | phpkingdom.com</title>
+  <style>
+    body { margin:0; font-family: Georgia, "Times New Roman", serif; background:#f5f7fb; color:#1f2937; line-height:1.55; }
+    .wrap { max-width:900px; margin:0 auto; padding:1.5rem; }
+    .brand { color:#0f766e; font-size:.78rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    h1 { font-size:1.75rem; margin:.4rem 0; }
+    .meta { color:#64748b; }
+    pre { background:#0f172a; color:#e2e8f0; padding:1rem; border-radius:.65rem; overflow:auto; font-size:.88rem; }
+    .card { background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:1rem; margin:1rem 0; }
+    a { color:#0f766e; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">phpkingdom.com</div>
+    <p class="meta">Button Set · Lit template</p>
+    <h1>variants</h1>
+    <p class="meta">Primary/secondary buttons</p>
+    <div class="card">
+      <h2>Starter Element</h2>
+      <pre><code>import { LitElement, html, css } from &quot;lit&quot;;
+import { classMap } from &quot;lit/directives/class-map.js&quot;;
+
+export class PkButtonSet extends LitElement {
+  static properties = { variant: { type: String, reflect: true } };
+  static styles = css`
+    .row { display: flex; gap: 0.5rem; }
+    button {
+      border-radius: 8px; padding: 0.45rem 0.85rem; border: 1px solid #0f766e;
+      background: #0f766e; color: #fff; cursor: pointer;
+    }
+    button.ghost { background: transparent; color: #0f766e; }
+  `;
+  constructor() {
+    super();
+    this.variant = &quot;primary&quot;;
+  }
+  render() {
+    return html`
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;button class=${classMap({ ghost: this.variant === &quot;ghost&quot; })}&gt;
+          &lt;slot&gt;Action&lt;/slot&gt;
+        &lt;/button&gt;
+      &lt;/div&gt;
+    `;
+  }
+}
+customElements.define(&quot;pk-button-set&quot;, PkButtonSet);</code></pre>
+    </div>
+    <div class="card">
+      <h2>Usage</h2>
+      <pre><code>npm install lit
+# import the module, then use the custom element in HTML</code></pre>
+    </div>
+    <p><a href="../index.html">All templates</a></p>
+  </div>
+</body>
+</html>

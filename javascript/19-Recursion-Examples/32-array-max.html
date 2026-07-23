@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 19-Recursion-Examples
+  example: 32-array-max.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>32 — Array Maximum | phpkingdom.com</title>
+</head>
+<body>
+  <h1>32 — Array Maximum</h1>
+  <h2>Problem</h2>
+  <p>Find the maximum value in an array recursively.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function arrayMax(arr, i = 0) {
+  if (i === arr.length - 1) return arr[i];
+  return Math.max(arr[i], arrayMax(arr, i + 1));
+}
+const nums = [3, 9, 2, 14, 7];
+document.getElementById("out").textContent = "max = " + arrayMax(nums);
+  </script>
+</body>
+</html>

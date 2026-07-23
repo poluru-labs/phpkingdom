@@ -1,0 +1,452 @@
+[
+  {
+    "type": "example",
+    "file": "01-basics/01-introduction/examples/01-starter-component.html",
+    "focus": "starter component",
+    "scenario": "design system"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/01-introduction/examples/02-html-template.html",
+    "focus": "html template",
+    "scenario": "dashboard widget"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/01-introduction/examples/03-reactive-property.html",
+    "focus": "reactive property",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/01-introduction/examples/04-attribute-sync.html",
+    "focus": "attribute sync",
+    "scenario": "admin panel"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/01-introduction/examples/05-state-field.html",
+    "focus": "state field",
+    "scenario": "docs site"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/01-introduction/examples/06-conditional-render.html",
+    "focus": "conditional render",
+    "scenario": "form wizard"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/01-introduction/examples/07-list-map.html",
+    "focus": "list map",
+    "scenario": "media player"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/01-introduction/examples/08-event-listener.html",
+    "focus": "event listener",
+    "scenario": "chat widget"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/01-introduction/examples/09-custom-event.html",
+    "focus": "custom event",
+    "scenario": "settings page"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/01-introduction/examples/10-slot-content.html",
+    "focus": "slot content",
+    "scenario": "ecommerce card"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/01-introduction/examples/11-named-slot.html",
+    "focus": "named slot",
+    "scenario": "design system"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/01-introduction/examples/12-css-tag.html",
+    "focus": "css tag",
+    "scenario": "dashboard widget"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/01-introduction/examples/13-css-parts.html",
+    "focus": "css parts",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/01-introduction/examples/14-classmap.html",
+    "focus": "classMap",
+    "scenario": "admin panel"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/01-introduction/examples/15-stylemap.html",
+    "focus": "styleMap",
+    "scenario": "docs site"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/01-introduction/examples/16-repeat-directive.html",
+    "focus": "repeat directive",
+    "scenario": "form wizard"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/01-introduction/examples/17-when-directive.html",
+    "focus": "when directive",
+    "scenario": "media player"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/01-introduction/examples/18-controller-hook.html",
+    "focus": "controller hook",
+    "scenario": "chat widget"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/01-introduction/examples/19-form-input.html",
+    "focus": "form input",
+    "scenario": "settings page"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/01-introduction/examples/20-aria-label.html",
+    "focus": "aria label",
+    "scenario": "ecommerce card"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/01-introduction/examples/21-typescript-decorators.html",
+    "focus": "typescript decorators",
+    "scenario": "design system"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/01-introduction/examples/22-firstupdated.html",
+    "focus": "firstUpdated",
+    "scenario": "dashboard widget"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/01-introduction/examples/23-lazy-import.html",
+    "focus": "lazy import",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/01-introduction/examples/24-ssr-note.html",
+    "focus": "ssr note",
+    "scenario": "admin panel"
+  },
+  {
+    "type": "example",
+    "file": "01-basics/01-introduction/examples/25-best-practice-recap.html",
+    "focus": "best practice recap",
+    "scenario": "docs site"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/01-introduction/exercises/01-install-challenge.html",
+    "focus": "install challenge",
+    "scenario": "design system"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/01-introduction/exercises/02-first-element.html",
+    "focus": "first element",
+    "scenario": "dashboard widget"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/01-introduction/exercises/03-render-drill.html",
+    "focus": "render drill",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/01-introduction/exercises/04-property-define.html",
+    "focus": "property define",
+    "scenario": "admin panel"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/01-introduction/exercises/05-reflect-attr.html",
+    "focus": "reflect attr",
+    "scenario": "docs site"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/01-introduction/exercises/06-state-toggle.html",
+    "focus": "state toggle",
+    "scenario": "form wizard"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/01-introduction/exercises/07-if-template.html",
+    "focus": "if template",
+    "scenario": "media player"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/01-introduction/exercises/08-map-list.html",
+    "focus": "map list",
+    "scenario": "chat widget"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/01-introduction/exercises/09-click-handler.html",
+    "focus": "click handler",
+    "scenario": "settings page"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/01-introduction/exercises/10-dispatch-event.html",
+    "focus": "dispatch event",
+    "scenario": "ecommerce card"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/01-introduction/exercises/11-default-slot.html",
+    "focus": "default slot",
+    "scenario": "design system"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/01-introduction/exercises/12-named-slot.html",
+    "focus": "named slot",
+    "scenario": "dashboard widget"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/01-introduction/exercises/13-static-styles.html",
+    "focus": "static styles",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/01-introduction/exercises/14-css-var-theme.html",
+    "focus": "css var theme",
+    "scenario": "admin panel"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/01-introduction/exercises/15-part-expose.html",
+    "focus": "part expose",
+    "scenario": "docs site"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/01-introduction/exercises/16-classmap-active.html",
+    "focus": "classMap active",
+    "scenario": "form wizard"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/01-introduction/exercises/17-stylemap-color.html",
+    "focus": "styleMap color",
+    "scenario": "media player"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/01-introduction/exercises/18-repeat-keyed.html",
+    "focus": "repeat keyed",
+    "scenario": "chat widget"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/01-introduction/exercises/19-controller-clock.html",
+    "focus": "controller clock",
+    "scenario": "settings page"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/01-introduction/exercises/20-a11y-button.html",
+    "focus": "a11y button",
+    "scenario": "ecommerce card"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/01-introduction/exercises/21-decorator-prop.html",
+    "focus": "decorator prop",
+    "scenario": "design system"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/01-introduction/exercises/22-converter-json.html",
+    "focus": "converter json",
+    "scenario": "dashboard widget"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/01-introduction/exercises/23-updated-watch.html",
+    "focus": "updated watch",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/01-introduction/exercises/24-test-fixture.html",
+    "focus": "test fixture",
+    "scenario": "admin panel"
+  },
+  {
+    "type": "exercise",
+    "file": "01-basics/01-introduction/exercises/25-final-challenge.html",
+    "focus": "final challenge",
+    "scenario": "docs site"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/01-introduction/templates/01-element-starter.html",
+    "focus": "element starter",
+    "scenario": "design system"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/01-introduction/templates/02-counter-widget.html",
+    "focus": "counter widget",
+    "scenario": "dashboard widget"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/01-introduction/templates/03-todo-list.html",
+    "focus": "todo list",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/01-introduction/templates/04-card-slot.html",
+    "focus": "card slot",
+    "scenario": "admin panel"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/01-introduction/templates/05-modal-dialog.html",
+    "focus": "modal dialog",
+    "scenario": "docs site"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/01-introduction/templates/06-form-field.html",
+    "focus": "form field",
+    "scenario": "form wizard"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/01-introduction/templates/07-button-set.html",
+    "focus": "button set",
+    "scenario": "media player"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/01-introduction/templates/08-tabs-component.html",
+    "focus": "tabs component",
+    "scenario": "chat widget"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/01-introduction/templates/09-accordion.html",
+    "focus": "accordion",
+    "scenario": "settings page"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/01-introduction/templates/10-theme-token.html",
+    "focus": "theme token",
+    "scenario": "ecommerce card"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/01-introduction/templates/11-icon-button.html",
+    "focus": "icon button",
+    "scenario": "design system"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/01-introduction/templates/12-input-search.html",
+    "focus": "input search",
+    "scenario": "dashboard widget"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/01-introduction/templates/13-select-menu.html",
+    "focus": "select menu",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/01-introduction/templates/14-toast-alert.html",
+    "focus": "toast alert",
+    "scenario": "admin panel"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/01-introduction/templates/15-avatar-badge.html",
+    "focus": "avatar badge",
+    "scenario": "docs site"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/01-introduction/templates/16-data-table.html",
+    "focus": "data table",
+    "scenario": "form wizard"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/01-introduction/templates/17-pagination.html",
+    "focus": "pagination",
+    "scenario": "media player"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/01-introduction/templates/18-controller-store.html",
+    "focus": "controller store",
+    "scenario": "chat widget"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/01-introduction/templates/19-router-outlet.html",
+    "focus": "router outlet",
+    "scenario": "settings page"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/01-introduction/templates/20-ssr-shell.html",
+    "focus": "ssr shell",
+    "scenario": "ecommerce card"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/01-introduction/templates/21-ts-decorator.html",
+    "focus": "ts decorator",
+    "scenario": "design system"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/01-introduction/templates/22-design-token.html",
+    "focus": "design token",
+    "scenario": "dashboard widget"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/01-introduction/templates/23-lazy-chunk.html",
+    "focus": "lazy chunk",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/01-introduction/templates/24-test-harness.html",
+    "focus": "test harness",
+    "scenario": "admin panel"
+  },
+  {
+    "type": "template",
+    "file": "01-basics/01-introduction/templates/25-production-starter.html",
+    "focus": "production starter",
+    "scenario": "docs site"
+  }
+]

@@ -1,0 +1,45 @@
+<!--
+  sitename: phpkingdom
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  topic: 02-Elements/06-iframes
+  example: 03-iframe-map.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML iFrames — Map Embed | phpkingdom</title>
+  <style>
+    body { font-family: Georgia, "Times New Roman", serif; max-width: 720px; margin: 2rem auto; padding: 0 1.25rem; line-height: 1.6; color: #1a1a1a; }
+    h1 { font-size: 1.75rem; margin-bottom: 0.35rem; }
+    .meta { color: #555; font-size: 0.95rem; margin-bottom: 1.5rem; }
+    code, pre { font-family: ui-monospace, "Cascadia Code", monospace; background: #f4f4f4; }
+    pre { padding: 0.85rem 1rem; overflow-x: auto; border-left: 3px solid #2a6f97; }
+    table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+    th, td { border: 1px solid #ccc; padding: 0.5rem 0.75rem; text-align: left; }
+    th { background: #eef4f8; }
+    form { display: grid; gap: 0.75rem; max-width: 420px; }
+    label { display: grid; gap: 0.25rem; }
+    input, select, textarea, button { font: inherit; padding: 0.4rem 0.55rem; }
+    button { cursor: pointer; background: #2a6f97; color: #fff; border: 0; padding: 0.55rem 1rem; }
+    .note { background: #f0f7fb; padding: 0.75rem 1rem; border-left: 3px solid #2a6f97; margin: 1rem 0; }
+    img { max-width: 100%; height: auto; }
+    nav a { margin-right: 0.75rem; }
+  </style>
+</head>
+<body>
+  <h1>Map Embed with iframe</h1>
+  <p class="meta">Common real-world use: embedding a map.</p>
+
+  <iframe
+    src="https://www.openstreetmap.org/export/embed.html?bbox=-0.15%2C51.50%2C-0.10%2C51.52&layer=mapnik"
+    title="OpenStreetMap embed of central London"
+    width="100%"
+    height="320"
+    style="border:1px solid #ccc"
+    loading="lazy"></iframe>
+
+</body>
+</html>

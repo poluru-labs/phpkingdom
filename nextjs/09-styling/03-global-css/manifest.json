@@ -1,0 +1,452 @@
+[
+  {
+    "type": "example",
+    "file": "09-styling/03-global-css/examples/01-create-next-app.html",
+    "focus": "create next app",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "example",
+    "file": "09-styling/03-global-css/examples/02-app-router-page.html",
+    "focus": "app router page",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "example",
+    "file": "09-styling/03-global-css/examples/03-layout-nesting.html",
+    "focus": "layout nesting",
+    "scenario": "blog platform"
+  },
+  {
+    "type": "example",
+    "file": "09-styling/03-global-css/examples/04-dynamic-segment.html",
+    "focus": "dynamic segment",
+    "scenario": "e-commerce store"
+  },
+  {
+    "type": "example",
+    "file": "09-styling/03-global-css/examples/05-link-navigation.html",
+    "focus": "link navigation",
+    "scenario": "docs portal"
+  },
+  {
+    "type": "example",
+    "file": "09-styling/03-global-css/examples/06-server-component.html",
+    "focus": "server component",
+    "scenario": "admin console"
+  },
+  {
+    "type": "example",
+    "file": "09-styling/03-global-css/examples/07-client-component.html",
+    "focus": "client component",
+    "scenario": "portfolio site"
+  },
+  {
+    "type": "example",
+    "file": "09-styling/03-global-css/examples/08-fetch-cache.html",
+    "focus": "fetch cache",
+    "scenario": "news feed"
+  },
+  {
+    "type": "example",
+    "file": "09-styling/03-global-css/examples/09-revalidate-isr.html",
+    "focus": "revalidate isr",
+    "scenario": "learning platform"
+  },
+  {
+    "type": "example",
+    "file": "09-styling/03-global-css/examples/10-route-handler.html",
+    "focus": "route handler",
+    "scenario": "B2B portal"
+  },
+  {
+    "type": "example",
+    "file": "09-styling/03-global-css/examples/11-server-action.html",
+    "focus": "server action",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "example",
+    "file": "09-styling/03-global-css/examples/12-middleware-guard.html",
+    "focus": "middleware guard",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "example",
+    "file": "09-styling/03-global-css/examples/13-loading-ui.html",
+    "focus": "loading ui",
+    "scenario": "blog platform"
+  },
+  {
+    "type": "example",
+    "file": "09-styling/03-global-css/examples/14-error-boundary.html",
+    "focus": "error boundary",
+    "scenario": "e-commerce store"
+  },
+  {
+    "type": "example",
+    "file": "09-styling/03-global-css/examples/15-metadata-export.html",
+    "focus": "metadata export",
+    "scenario": "docs portal"
+  },
+  {
+    "type": "example",
+    "file": "09-styling/03-global-css/examples/16-image-component.html",
+    "focus": "image component",
+    "scenario": "admin console"
+  },
+  {
+    "type": "example",
+    "file": "09-styling/03-global-css/examples/17-font-optimize.html",
+    "focus": "font optimize",
+    "scenario": "portfolio site"
+  },
+  {
+    "type": "example",
+    "file": "09-styling/03-global-css/examples/18-css-modules.html",
+    "focus": "css modules",
+    "scenario": "news feed"
+  },
+  {
+    "type": "example",
+    "file": "09-styling/03-global-css/examples/19-tailwind-setup.html",
+    "focus": "tailwind setup",
+    "scenario": "learning platform"
+  },
+  {
+    "type": "example",
+    "file": "09-styling/03-global-css/examples/20-env-vars.html",
+    "focus": "env vars",
+    "scenario": "B2B portal"
+  },
+  {
+    "type": "example",
+    "file": "09-styling/03-global-css/examples/21-stream-suspense.html",
+    "focus": "stream suspense",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "example",
+    "file": "09-styling/03-global-css/examples/22-parallel-route.html",
+    "focus": "parallel route",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "example",
+    "file": "09-styling/03-global-css/examples/23-auth-session.html",
+    "focus": "auth session",
+    "scenario": "blog platform"
+  },
+  {
+    "type": "example",
+    "file": "09-styling/03-global-css/examples/24-production-build.html",
+    "focus": "production build",
+    "scenario": "e-commerce store"
+  },
+  {
+    "type": "example",
+    "file": "09-styling/03-global-css/examples/25-best-practice-recap.html",
+    "focus": "best practice recap",
+    "scenario": "docs portal"
+  },
+  {
+    "type": "exercise",
+    "file": "09-styling/03-global-css/exercises/01-npx-create.html",
+    "focus": "npx create",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "exercise",
+    "file": "09-styling/03-global-css/exercises/02-app-page.html",
+    "focus": "app page",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "09-styling/03-global-css/exercises/03-layout-children.html",
+    "focus": "layout children",
+    "scenario": "blog platform"
+  },
+  {
+    "type": "exercise",
+    "file": "09-styling/03-global-css/exercises/04-dynamic-params.html",
+    "focus": "dynamic params",
+    "scenario": "e-commerce store"
+  },
+  {
+    "type": "exercise",
+    "file": "09-styling/03-global-css/exercises/05-searchparams.html",
+    "focus": "searchParams",
+    "scenario": "docs portal"
+  },
+  {
+    "type": "exercise",
+    "file": "09-styling/03-global-css/exercises/06-link-href.html",
+    "focus": "Link href",
+    "scenario": "admin console"
+  },
+  {
+    "type": "exercise",
+    "file": "09-styling/03-global-css/exercises/07-userouter.html",
+    "focus": "useRouter",
+    "scenario": "portfolio site"
+  },
+  {
+    "type": "exercise",
+    "file": "09-styling/03-global-css/exercises/08-use-client.html",
+    "focus": "use client",
+    "scenario": "news feed"
+  },
+  {
+    "type": "exercise",
+    "file": "09-styling/03-global-css/exercises/09-async-fetch.html",
+    "focus": "async fetch",
+    "scenario": "learning platform"
+  },
+  {
+    "type": "exercise",
+    "file": "09-styling/03-global-css/exercises/10-cache-no-store.html",
+    "focus": "cache no-store",
+    "scenario": "B2B portal"
+  },
+  {
+    "type": "exercise",
+    "file": "09-styling/03-global-css/exercises/11-revalidate-tag.html",
+    "focus": "revalidate tag",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "exercise",
+    "file": "09-styling/03-global-css/exercises/12-route-get.html",
+    "focus": "route GET",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "09-styling/03-global-css/exercises/13-route-post.html",
+    "focus": "route POST",
+    "scenario": "blog platform"
+  },
+  {
+    "type": "exercise",
+    "file": "09-styling/03-global-css/exercises/14-server-action.html",
+    "focus": "server action",
+    "scenario": "e-commerce store"
+  },
+  {
+    "type": "exercise",
+    "file": "09-styling/03-global-css/exercises/15-form-action.html",
+    "focus": "form action",
+    "scenario": "docs portal"
+  },
+  {
+    "type": "exercise",
+    "file": "09-styling/03-global-css/exercises/16-middleware-matcher.html",
+    "focus": "middleware matcher",
+    "scenario": "admin console"
+  },
+  {
+    "type": "exercise",
+    "file": "09-styling/03-global-css/exercises/17-loading-tsx.html",
+    "focus": "loading tsx",
+    "scenario": "portfolio site"
+  },
+  {
+    "type": "exercise",
+    "file": "09-styling/03-global-css/exercises/18-error-tsx.html",
+    "focus": "error tsx",
+    "scenario": "news feed"
+  },
+  {
+    "type": "exercise",
+    "file": "09-styling/03-global-css/exercises/19-generatemetadata.html",
+    "focus": "generateMetadata",
+    "scenario": "learning platform"
+  },
+  {
+    "type": "exercise",
+    "file": "09-styling/03-global-css/exercises/20-next-image.html",
+    "focus": "next Image",
+    "scenario": "B2B portal"
+  },
+  {
+    "type": "exercise",
+    "file": "09-styling/03-global-css/exercises/21-next-font.html",
+    "focus": "next Font",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "exercise",
+    "file": "09-styling/03-global-css/exercises/22-sitemap-ts.html",
+    "focus": "sitemap ts",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "09-styling/03-global-css/exercises/23-robots-ts.html",
+    "focus": "robots ts",
+    "scenario": "blog platform"
+  },
+  {
+    "type": "exercise",
+    "file": "09-styling/03-global-css/exercises/24-docker-build.html",
+    "focus": "docker build",
+    "scenario": "e-commerce store"
+  },
+  {
+    "type": "exercise",
+    "file": "09-styling/03-global-css/exercises/25-final-challenge.html",
+    "focus": "final challenge",
+    "scenario": "docs portal"
+  },
+  {
+    "type": "template",
+    "file": "09-styling/03-global-css/templates/01-starter-app.html",
+    "focus": "starter app",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "template",
+    "file": "09-styling/03-global-css/templates/02-blog-layout.html",
+    "focus": "blog layout",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "template",
+    "file": "09-styling/03-global-css/templates/03-dashboard-shell.html",
+    "focus": "dashboard shell",
+    "scenario": "blog platform"
+  },
+  {
+    "type": "template",
+    "file": "09-styling/03-global-css/templates/04-marketing-site.html",
+    "focus": "marketing site",
+    "scenario": "e-commerce store"
+  },
+  {
+    "type": "template",
+    "file": "09-styling/03-global-css/templates/05-docs-site.html",
+    "focus": "docs site",
+    "scenario": "docs portal"
+  },
+  {
+    "type": "template",
+    "file": "09-styling/03-global-css/templates/06-ecommerce-catalog.html",
+    "focus": "ecommerce catalog",
+    "scenario": "admin console"
+  },
+  {
+    "type": "template",
+    "file": "09-styling/03-global-css/templates/07-auth-gated.html",
+    "focus": "auth gated",
+    "scenario": "portfolio site"
+  },
+  {
+    "type": "template",
+    "file": "09-styling/03-global-css/templates/08-api-backend.html",
+    "focus": "api backend",
+    "scenario": "news feed"
+  },
+  {
+    "type": "template",
+    "file": "09-styling/03-global-css/templates/09-cms-pages.html",
+    "focus": "cms pages",
+    "scenario": "learning platform"
+  },
+  {
+    "type": "template",
+    "file": "09-styling/03-global-css/templates/10-isr-blog.html",
+    "focus": "isr blog",
+    "scenario": "B2B portal"
+  },
+  {
+    "type": "template",
+    "file": "09-styling/03-global-css/templates/11-streaming-feed.html",
+    "focus": "streaming feed",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "template",
+    "file": "09-styling/03-global-css/templates/12-i18n-routes.html",
+    "focus": "i18n routes",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "template",
+    "file": "09-styling/03-global-css/templates/13-modal-intercept.html",
+    "focus": "modal intercept",
+    "scenario": "blog platform"
+  },
+  {
+    "type": "template",
+    "file": "09-styling/03-global-css/templates/14-tailwind-ui.html",
+    "focus": "tailwind ui",
+    "scenario": "e-commerce store"
+  },
+  {
+    "type": "template",
+    "file": "09-styling/03-global-css/templates/15-sass-modules.html",
+    "focus": "sass modules",
+    "scenario": "docs portal"
+  },
+  {
+    "type": "template",
+    "file": "09-styling/03-global-css/templates/16-seo-metadata.html",
+    "focus": "seo metadata",
+    "scenario": "admin console"
+  },
+  {
+    "type": "template",
+    "file": "09-styling/03-global-css/templates/17-image-gallery.html",
+    "focus": "image gallery",
+    "scenario": "portfolio site"
+  },
+  {
+    "type": "template",
+    "file": "09-styling/03-global-css/templates/18-form-actions.html",
+    "focus": "form actions",
+    "scenario": "news feed"
+  },
+  {
+    "type": "template",
+    "file": "09-styling/03-global-css/templates/19-middleware-auth.html",
+    "focus": "middleware auth",
+    "scenario": "learning platform"
+  },
+  {
+    "type": "template",
+    "file": "09-styling/03-global-css/templates/20-vercel-deploy.html",
+    "focus": "vercel deploy",
+    "scenario": "B2B portal"
+  },
+  {
+    "type": "template",
+    "file": "09-styling/03-global-css/templates/21-docker-compose.html",
+    "focus": "docker compose",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "template",
+    "file": "09-styling/03-global-css/templates/22-jest-rtl.html",
+    "focus": "jest rtl",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "template",
+    "file": "09-styling/03-global-css/templates/23-playwright-e2e.html",
+    "focus": "playwright e2e",
+    "scenario": "blog platform"
+  },
+  {
+    "type": "template",
+    "file": "09-styling/03-global-css/templates/24-bundle-analyze.html",
+    "focus": "bundle analyze",
+    "scenario": "e-commerce store"
+  },
+  {
+    "type": "template",
+    "file": "09-styling/03-global-css/templates/25-production-starter.html",
+    "focus": "production starter",
+    "scenario": "docs portal"
+  }
+]

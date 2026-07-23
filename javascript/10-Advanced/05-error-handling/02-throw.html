@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 10-Advanced/05-error-handling
+  example: 02-throw.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>throw | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Throw Custom Errors</h1>
+  <p>Create your own errors.</p>
+  <pre id="out"></pre>
+  <script>
+function divide(a, b) {
+  if (b === 0) throw new Error("Division by zero");
+  return a / b;
+}
+try {
+  divide(4, 0);
+} catch (e) {
+  document.getElementById("out").textContent = e.message;
+}
+  </script>
+</body>
+</html>

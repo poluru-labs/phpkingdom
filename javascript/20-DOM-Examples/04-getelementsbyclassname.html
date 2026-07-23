@@ -1,0 +1,39 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 20-DOM-Examples
+  example: 04-getelementsbyclassname.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>04 — getElementsByClassName | phpkingdom.com</title>
+</head>
+<body>
+  <h1>04 — getElementsByClassName</h1>
+  <h2>Problem</h2>
+  <p>Use a live HTMLCollection via getElementsByClassName.</p>
+  <h2>Demo</h2>
+  <div class="box">1</div><div class="box">2</div>
+  <button id="add">Add box</button>
+  <pre id="out"></pre>
+  <script>
+const boxes = document.getElementsByClassName("box");
+const out = document.getElementById("out");
+function show() { out.textContent = "live length = " + boxes.length; }
+show();
+document.getElementById("add").onclick = () => {
+  const d = document.createElement("div");
+  d.className = "box";
+  d.textContent = String(boxes.length + 1);
+  document.body.insertBefore(d, document.getElementById("add"));
+  show();
+};
+  </script>
+</body>
+</html>

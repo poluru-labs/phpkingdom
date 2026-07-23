@@ -1,0 +1,305 @@
+{
+  "title": "Vue.js Tutorials",
+  "items": [
+    {
+      "title": "Basics",
+      "items": [
+        {
+          "href": "/tutorials/vue/introduction",
+          "label": "Vue - Introduction"
+        },
+        {
+          "href": "/tutorials/vue/basics",
+          "label": "Vue - Basics"
+        },
+        {
+          "href": "/tutorials/vue/setup",
+          "label": "Vue Setup"
+        },
+        {
+          "href": "/tutorials/vue/vue-cli",
+          "label": "Vue CLI"
+        },
+        {
+          "href": "/tutorials/vue/vite-vue",
+          "label": "Vite Vue Setup"
+        }
+      ]
+    },
+    {
+      "title": "Core Concepts",
+      "items": [
+        {
+          "href": "/tutorials/vue/templates",
+          "label": "Vue Templates"
+        },
+        {
+          "href": "/tutorials/vue/components",
+          "label": "Vue Components"
+        },
+        {
+          "href": "/tutorials/vue/single-file-components",
+          "label": "Single File Components"
+        },
+        {
+          "href": "/tutorials/vue/reactivity",
+          "label": "Vue Reactivity"
+        },
+        {
+          "href": "/tutorials/vue/data-methods",
+          "label": "Data and Methods"
+        }
+      ]
+    },
+    {
+      "title": "Directives",
+      "items": [
+        {
+          "href": "/tutorials/vue/directives",
+          "label": "Vue Directives"
+        },
+        {
+          "href": "/tutorials/vue/v-bind",
+          "label": "v-bind Directive"
+        },
+        {
+          "href": "/tutorials/vue/v-model",
+          "label": "v-model Directive"
+        },
+        {
+          "href": "/tutorials/vue/v-if-v-show",
+          "label": "v-if and v-show"
+        },
+        {
+          "href": "/tutorials/vue/v-for",
+          "label": "v-for Directive"
+        }
+      ]
+    },
+    {
+      "title": "Components",
+      "items": [
+        {
+          "href": "/tutorials/vue/props",
+          "label": "Vue Props"
+        },
+        {
+          "href": "/tutorials/vue/events",
+          "label": "Vue Events"
+        },
+        {
+          "href": "/tutorials/vue/slots",
+          "label": "Vue Slots"
+        },
+        {
+          "href": "/tutorials/vue/dynamic-components",
+          "label": "Dynamic Components"
+        },
+        {
+          "href": "/tutorials/vue/component-communication",
+          "label": "Component Communication"
+        }
+      ]
+    },
+    {
+      "title": "Forms",
+      "items": [
+        {
+          "href": "/tutorials/vue/forms",
+          "label": "Vue Forms"
+        },
+        {
+          "href": "/tutorials/vue/form-input-binding",
+          "label": "Form Input Binding"
+        },
+        {
+          "href": "/tutorials/vue/checkbox-radio-select",
+          "label": "Checkbox, Radio and Select"
+        },
+        {
+          "href": "/tutorials/vue/form-validation",
+          "label": "Form Validation"
+        },
+        {
+          "href": "/tutorials/vue/v-model-modifiers",
+          "label": "v-model Modifiers"
+        }
+      ]
+    },
+    {
+      "title": "Computed and Watchers",
+      "items": [
+        {
+          "href": "/tutorials/vue/computed-properties",
+          "label": "Computed Properties"
+        },
+        {
+          "href": "/tutorials/vue/watchers",
+          "label": "Vue Watchers"
+        },
+        {
+          "href": "/tutorials/vue/watch-effect",
+          "label": "watchEffect"
+        },
+        {
+          "href": "/tutorials/vue/lifecycle-hooks",
+          "label": "Lifecycle Hooks"
+        },
+        {
+          "href": "/tutorials/vue/computed-getters-setters",
+          "label": "Computed Getters and Setters"
+        }
+      ]
+    },
+    {
+      "title": "Composition API",
+      "items": [
+        {
+          "href": "/tutorials/vue/composition-api",
+          "label": "Composition API"
+        },
+        {
+          "href": "/tutorials/vue/setup-function",
+          "label": "setup() Function"
+        },
+        {
+          "href": "/tutorials/vue/ref-reactive",
+          "label": "ref and reactive"
+        },
+        {
+          "href": "/tutorials/vue/composables",
+          "label": "Vue Composables"
+        },
+        {
+          "href": "/tutorials/vue/script-setup",
+          "label": "script setup"
+        }
+      ]
+    },
+    {
+      "title": "Routing",
+      "items": [
+        {
+          "href": "/tutorials/vue/vue-router",
+          "label": "Vue Router"
+        },
+        {
+          "href": "/tutorials/vue/routes",
+          "label": "Vue Routes"
+        },
+        {
+          "href": "/tutorials/vue/route-params",
+          "label": "Route Parameters"
+        },
+        {
+          "href": "/tutorials/vue/nested-routes",
+          "label": "Nested Routes"
+        },
+        {
+          "href": "/tutorials/vue/navigation-guards",
+          "label": "Navigation Guards"
+        }
+      ]
+    },
+    {
+      "title": "State Management",
+      "items": [
+        {
+          "href": "/tutorials/vue/state-management",
+          "label": "State Management"
+        },
+        {
+          "href": "/tutorials/vue/pinia",
+          "label": "Pinia"
+        },
+        {
+          "href": "/tutorials/vue/vuex",
+          "label": "Vuex"
+        },
+        {
+          "href": "/tutorials/vue/provide-inject",
+          "label": "Provide and Inject"
+        },
+        {
+          "href": "/tutorials/vue/pinia-plugins",
+          "label": "Pinia Plugins"
+        }
+      ]
+    },
+    {
+      "title": "API and Data",
+      "items": [
+        {
+          "href": "/tutorials/vue/api-calls",
+          "label": "Vue API Calls"
+        },
+        {
+          "href": "/tutorials/vue/fetch-data",
+          "label": "Fetch Data"
+        },
+        {
+          "href": "/tutorials/vue/axios",
+          "label": "Axios with Vue"
+        },
+        {
+          "href": "/tutorials/vue/loading-error-states",
+          "label": "Loading and Error States"
+        },
+        {
+          "href": "/tutorials/vue/vue-query",
+          "label": "TanStack Vue Query"
+        }
+      ]
+    },
+    {
+      "title": "Advanced",
+      "items": [
+        {
+          "href": "/tutorials/vue/custom-directives",
+          "label": "Custom Directives"
+        },
+        {
+          "href": "/tutorials/vue/teleport",
+          "label": "Vue Teleport"
+        },
+        {
+          "href": "/tutorials/vue/suspense",
+          "label": "Vue Suspense"
+        },
+        {
+          "href": "/tutorials/vue/performance",
+          "label": "Vue Performance"
+        },
+        {
+          "href": "/tutorials/vue/error-handling",
+          "label": "Error Handling"
+        }
+      ]
+    },
+    {
+      "title": "Vue with TypeScript",
+      "items": [
+        {
+          "href": "/tutorials/vue/vue-typescript",
+          "label": "Vue with TypeScript"
+        },
+        {
+          "href": "/tutorials/vue/typescript-props",
+          "label": "TypeScript Props"
+        },
+        {
+          "href": "/tutorials/vue/typescript-emits",
+          "label": "TypeScript Emits"
+        },
+        {
+          "href": "/tutorials/vue/typescript-composables",
+          "label": "TypeScript Composables"
+        },
+        {
+          "href": "/tutorials/vue/vue-tsc",
+          "label": "vue-tsc Type Checking"
+        }
+      ]
+    }
+  ]
+}

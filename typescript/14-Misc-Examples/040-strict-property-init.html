@@ -1,0 +1,26 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Misc-Examples
+  example: 040-strict-property-init.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>040 — strictPropertyInitialization | phpkingdom.com</title>
+</head>
+<body>
+  <h1>040 — strictPropertyInitialization</h1>
+  <p>strictPropertyInitialization</p>
+  <pre><code class="ts">class C { x!: number; constructor(){ this.x=1; } }</code></pre>
+<pre id="out"></pre>
+  <script>
+document.getElementById('out').textContent='definite assignment';
+  </script>
+</body>
+</html>

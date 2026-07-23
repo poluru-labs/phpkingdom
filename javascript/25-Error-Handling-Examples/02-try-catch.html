@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 25-Error-Handling-Examples
+  example: 02-try-catch.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>02 — Try / Catch | phpkingdom.com</title>
+</head>
+<body>
+  <h1>02 — Try / Catch</h1>
+  <h2>Problem</h2>
+  <p>Use try/catch to handle a synchronous exception.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const out = document.getElementById("out");
+function divide(a, b) {
+  if (b === 0) throw new Error("Division by zero");
+  return a / b;
+}
+try {
+  out.textContent = "result: " + divide(10, 0);
+} catch (e) {
+  out.textContent = "error: " + e.message;
+}
+  </script>
+</body>
+</html>

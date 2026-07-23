@@ -1,0 +1,27 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 05-Arrays/03-map-filter-reduce
+  example: 02-filter.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>filter | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Array filter</h1>
+  <p>Keep items that pass a test.</p>
+  <pre id="out"></pre>
+  <script>
+const nums = [5, 12, 8, 130];
+document.getElementById("out").textContent =
+  nums.filter((n) => n > 10).join(", ");
+  </script>
+</body>
+</html>

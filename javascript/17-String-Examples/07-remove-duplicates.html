@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 17-String-Examples
+  example: 07-remove-duplicates.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>07 — Remove Duplicate Characters | phpkingdom.com</title>
+</head>
+<body>
+  <h1>07 — Remove Duplicate Characters</h1>
+  <h2>Problem</h2>
+  <p>Keep first occurrence of each character.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function removeDuplicateChars(s) {
+  return [...new Set(s)].join("");
+}
+document.getElementById("out").textContent = removeDuplicateChars("programming");
+  </script>
+</body>
+</html>

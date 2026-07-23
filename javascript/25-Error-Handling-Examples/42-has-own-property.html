@@ -1,0 +1,38 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 25-Error-Handling-Examples
+  example: 42-has-own-property.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>42 — hasOwnProperty Check | phpkingdom.com</title>
+</head>
+<body>
+  <h1>42 — hasOwnProperty Check</h1>
+  <h2>Problem</h2>
+  <p>Verify object keys exist before access.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const out = document.getElementById("out");
+function getRole(user) {
+  if (!Object.prototype.hasOwnProperty.call(user, "role")) {
+    throw new Error("missing role property");
+  }
+  return user.role;
+}
+try {
+  out.textContent = getRole({ name: "Ada" });
+} catch (e) {
+  out.textContent = e.message;
+}
+  </script>
+</body>
+</html>

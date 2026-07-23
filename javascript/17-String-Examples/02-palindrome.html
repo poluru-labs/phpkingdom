@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 17-String-Examples
+  example: 02-palindrome.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>02 — Check Palindrome | phpkingdom.com</title>
+</head>
+<body>
+  <h1>02 — Check Palindrome</h1>
+  <h2>Problem</h2>
+  <p>Return true if a string reads the same forward and backward (ignore case/spaces).</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function isPalindrome(s) {
+  const clean = s.toLowerCase().replace(/[^a-z0-9]/g, "");
+  return clean === clean.split("").reverse().join("");
+}
+document.getElementById("out").textContent =
+  isPalindrome("A man a plan a canal Panama") + " / " + isPalindrome("hello");
+  </script>
+</body>
+</html>

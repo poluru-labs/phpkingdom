@@ -1,0 +1,28 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 07-DOM/04-events
+  example: 02-input-event.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Input Event | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Input Event</h1>
+  <p>React as the user types.</p>
+  <input id="name" type="text" placeholder="Type here">
+  <p id="out"></p>
+  <script>
+document.getElementById("name").addEventListener("input", function (e) {
+  document.getElementById("out").textContent = "Hello, " + e.target.value;
+});
+  </script>
+</body>
+</html>

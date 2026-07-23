@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 009-count-digits.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>009 — Count Digits | phpkingdom.com</title>
+</head>
+<body>
+  <h1>009 — Count Digits</h1>
+  <h2>Problem</h2>
+  <p>Count how many digits a positive integer has.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+let n = 50832;
+let count = 0;
+const original = n;
+if (n === 0) count = 1;
+while (n > 0) { count++; n = Math.floor(n / 10); }
+document.getElementById("out").textContent = original + " has " + count + " digits";
+  </script>
+</body>
+</html>

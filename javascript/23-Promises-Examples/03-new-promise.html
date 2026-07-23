@@ -1,0 +1,34 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 23-Promises-Examples
+  example: 03-new-promise.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>03 — new Promise Executor | phpkingdom.com</title>
+</head>
+<body>
+  <h1>03 — new Promise Executor</h1>
+  <h2>Problem</h2>
+  <p>Use the Promise constructor with resolve/reject.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const p = new Promise((resolve, reject) => {
+  const ok = true;
+  if (ok) resolve("created with new Promise");
+  else reject(new Error("nope"));
+});
+p.then((v) => {
+  document.getElementById("out").textContent = v;
+});
+  </script>
+</body>
+</html>

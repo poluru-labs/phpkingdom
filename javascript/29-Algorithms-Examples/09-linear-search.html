@@ -1,0 +1,38 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 29-Algorithms-Examples
+  example: 09-linear-search.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>09 — Linear Search | phpkingdom.com</title>
+</head>
+<body>
+  <h1>09 — Linear Search</h1>
+  <h2>Problem</h2>
+  <p>Scan left to right until the target is found or the array ends.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function linearSearch(arr, target) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === target) return i;
+  }
+  return -1;
+}
+const arr = [4, 2, 7, 1, 9, 3];
+const target = 7;
+document.getElementById("out").textContent =
+  "array:  " + JSON.stringify(arr) + "\n" +
+  "target: " + target + "\n" +
+  "index:  " + linearSearch(arr, target);
+  </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 29-Algorithms-Examples
+  example: 30-valid-parentheses.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>30 — Valid Parentheses | phpkingdom.com</title>
+</head>
+<body>
+  <h1>30 — Valid Parentheses</h1>
+  <h2>Problem</h2>
+  <p>Use a stack to check if brackets are properly closed and nested.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function isValid(s) {
+  const stack = [];
+  const pairs = { ")": "(", "]": "[", "}": "{" };
+  for (const ch of s) {
+    if ("([{".includes(ch)) stack.push(ch);
+    else if (stack.pop() !== pairs[ch]) return false;
+  }
+  return stack.length === 0;
+}
+const samples = ["()", "()[]{}", "(]", "{[]}"];
+document.getElementById("out").textContent = samples.map(s =>
+  JSON.stringify(s) + " => " + isValid(s)
+).join("\n");
+  </script>
+</body>
+</html>

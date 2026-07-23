@@ -1,0 +1,25 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 12-Misc-Examples
+  example: 036-clipboard-write.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>036 — clipboard.writeText | phpkingdom.com</title>
+</head>
+<body>
+  <h1>036 — clipboard.writeText</h1>
+  <p>Copy string.</p>
+<button id="b" type="button">Copy</button><pre id="out"></pre>
+  <script>
+document.getElementById("b").onclick=async()=>{try{await navigator.clipboard.writeText("ok");document.getElementById("out").textContent="copied";}catch(e){document.getElementById("out").textContent=e.message;}};
+  </script>
+</body>
+</html>

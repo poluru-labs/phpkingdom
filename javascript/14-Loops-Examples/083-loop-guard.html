@@ -1,0 +1,35 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 083-loop-guard.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>083 — Loop Guard / Max Iterations | phpkingdom.com</title>
+</head>
+<body>
+  <h1>083 — Loop Guard / Max Iterations</h1>
+  <h2>Problem</h2>
+  <p>Protect a while loop with a max-iteration guard.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+let x = 1;
+let steps = 0;
+const MAX = 20;
+while (x < 1000 && steps < MAX) {
+  x *= 2;
+  steps++;
+}
+document.getElementById("out").textContent =
+  "x=" + x + " steps=" + steps + " (guard MAX=" + MAX + ")";
+  </script>
+</body>
+</html>

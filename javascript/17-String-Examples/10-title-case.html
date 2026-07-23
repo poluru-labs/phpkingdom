@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 17-String-Examples
+  example: 10-title-case.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>10 — Title Case a Sentence | phpkingdom.com</title>
+</head>
+<body>
+  <h1>10 — Title Case a Sentence</h1>
+  <h2>Problem</h2>
+  <p>Capitalize the first letter of each word.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function titleCase(s) {
+  return s.toLowerCase().split(" ").map((w) => w ? w[0].toUpperCase() + w.slice(1) : w).join(" ");
+}
+document.getElementById("out").textContent = titleCase("learn javascript daily");
+  </script>
+</body>
+</html>

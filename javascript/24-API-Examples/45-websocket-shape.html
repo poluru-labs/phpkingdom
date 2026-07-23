@@ -1,0 +1,34 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 24-API-Examples
+  example: 45-websocket-shape.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>45 — WebSocket Message Shape | phpkingdom.com</title>
+</head>
+<body>
+  <h1>45 — WebSocket Message Shape</h1>
+  <h2>Problem</h2>
+  <p>Open a socket and send/receive JSON messages.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+document.getElementById("out").textContent =
+`const ws = new WebSocket("wss://example.com/socket");
+ws.onopen = () => ws.send(JSON.stringify({ type: "hello", site: "phpkingdom.com" }));
+ws.onmessage = (event) => {
+  const msg = JSON.parse(event.data);
+  console.log(msg);
+};
+ws.onclose = () => console.log("closed");`;
+  </script>
+</body>
+</html>

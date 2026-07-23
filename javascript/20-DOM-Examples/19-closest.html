@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 20-DOM-Examples
+  example: 19-closest.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>19 — closest() | phpkingdom.com</title>
+</head>
+<body>
+  <h1>19 — closest()</h1>
+  <h2>Problem</h2>
+  <p>Find the nearest ancestor matching a selector.</p>
+  <h2>Demo</h2>
+  <article class="post" data-id="9">
+    <div class="body"><button id="btn">Like</button></div>
+  </article>
+  <pre id="out"></pre>
+  <script>
+document.getElementById("btn").onclick = (e) => {
+  const post = e.target.closest(".post");
+  document.getElementById("out").textContent = "post id = " + post.dataset.id;
+};
+  </script>
+</body>
+</html>

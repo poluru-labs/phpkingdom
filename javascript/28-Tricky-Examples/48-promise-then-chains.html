@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 28-Tricky-Examples
+  example: 48-promise-then-chains.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>48 — then Callback Return Values | phpkingdom.com</title>
+</head>
+<body>
+  <h1>48 — then Callback Return Values</h1>
+  <h2>Problem / Gotcha</h2>
+  <p>Returning a value resolves the next then; throwing rejects.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+Promise.resolve(1)
+  .then((n) => n + 1)
+  .then((n) => { throw new Error("boom at " + n); })
+  .then(() => "skipped")
+  .catch((e) => {
+    document.getElementById("out").textContent = "caught: " + e.message;
+  });
+  </script>
+</body>
+</html>

@@ -1,0 +1,300 @@
+{
+  "title": "HTML5 APIs Tutorials",
+  "items": [
+    {
+      "title": "Basics",
+      "items": [
+        {
+          "href": "/tutorials/html5-apis/introduction",
+          "label": "Introduction"
+        },
+        {
+          "href": "/tutorials/html5-apis/basics",
+          "label": "Basics"
+        },
+        {
+          "href": "/tutorials/html5-apis/browser-apis",
+          "label": "Browser Apis"
+        },
+        {
+          "href": "/tutorials/html5-apis/feature-detection",
+          "label": "Feature Detection"
+        }
+      ]
+    },
+    {
+      "title": "Storage Apis",
+      "items": [
+        {
+          "href": "/tutorials/html5-apis/web-storage",
+          "label": "Web Storage"
+        },
+        {
+          "href": "/tutorials/html5-apis/local-storage",
+          "label": "Local Storage"
+        },
+        {
+          "href": "/tutorials/html5-apis/session-storage",
+          "label": "Session Storage"
+        },
+        {
+          "href": "/tutorials/html5-apis/indexeddb",
+          "label": "Indexeddb"
+        },
+        {
+          "href": "/tutorials/html5-apis/cookies",
+          "label": "Cookies"
+        }
+      ]
+    },
+    {
+      "title": "Location And History",
+      "items": [
+        {
+          "href": "/tutorials/html5-apis/geolocation",
+          "label": "Geolocation"
+        },
+        {
+          "href": "/tutorials/html5-apis/history-api",
+          "label": "History Api"
+        },
+        {
+          "href": "/tutorials/html5-apis/url-api",
+          "label": "Url Api"
+        },
+        {
+          "href": "/tutorials/html5-apis/navigation-api",
+          "label": "Navigation Api"
+        }
+      ]
+    },
+    {
+      "title": "Graphics",
+      "items": [
+        {
+          "href": "/tutorials/html5-apis/canvas",
+          "label": "Canvas"
+        },
+        {
+          "href": "/tutorials/html5-apis/canvas-shapes",
+          "label": "Canvas Shapes"
+        },
+        {
+          "href": "/tutorials/html5-apis/canvas-text-images",
+          "label": "Canvas Text Images"
+        },
+        {
+          "href": "/tutorials/html5-apis/svg-basics",
+          "label": "Svg Basics"
+        },
+        {
+          "href": "/tutorials/html5-apis/webgl",
+          "label": "Webgl"
+        }
+      ]
+    },
+    {
+      "title": "Files And Data",
+      "items": [
+        {
+          "href": "/tutorials/html5-apis/file-api",
+          "label": "File Api"
+        },
+        {
+          "href": "/tutorials/html5-apis/file-reader",
+          "label": "File Reader"
+        },
+        {
+          "href": "/tutorials/html5-apis/blob-api",
+          "label": "Blob Api"
+        },
+        {
+          "href": "/tutorials/html5-apis/download-files",
+          "label": "Download Files"
+        },
+        {
+          "href": "/tutorials/html5-apis/drag-and-drop",
+          "label": "Drag And Drop"
+        }
+      ]
+    },
+    {
+      "title": "Media Apis",
+      "items": [
+        {
+          "href": "/tutorials/html5-apis/audio-video",
+          "label": "Audio Video"
+        },
+        {
+          "href": "/tutorials/html5-apis/media-devices",
+          "label": "Media Devices"
+        },
+        {
+          "href": "/tutorials/html5-apis/get-user-media",
+          "label": "Get User Media"
+        },
+        {
+          "href": "/tutorials/html5-apis/media-recorder",
+          "label": "Media Recorder"
+        },
+        {
+          "href": "/tutorials/html5-apis/fullscreen",
+          "label": "Fullscreen"
+        }
+      ]
+    },
+    {
+      "title": "Communication Apis",
+      "items": [
+        {
+          "href": "/tutorials/html5-apis/fetch-api",
+          "label": "Fetch Api"
+        },
+        {
+          "href": "/tutorials/html5-apis/websockets",
+          "label": "Websockets"
+        },
+        {
+          "href": "/tutorials/html5-apis/server-sent-events",
+          "label": "Server Sent Events"
+        },
+        {
+          "href": "/tutorials/html5-apis/postmessage",
+          "label": "Postmessage"
+        },
+        {
+          "href": "/tutorials/html5-apis/broadcast-channel",
+          "label": "Broadcast Channel"
+        },
+        {
+          "href": "/tutorials/html5-apis/streams-api",
+          "label": "Streams Api"
+        }
+      ]
+    },
+    {
+      "title": "Workers",
+      "items": [
+        {
+          "href": "/tutorials/html5-apis/web-workers",
+          "label": "Web Workers"
+        },
+        {
+          "href": "/tutorials/html5-apis/dedicated-workers",
+          "label": "Dedicated Workers"
+        },
+        {
+          "href": "/tutorials/html5-apis/shared-workers",
+          "label": "Shared Workers"
+        },
+        {
+          "href": "/tutorials/html5-apis/service-workers",
+          "label": "Service Workers"
+        },
+        {
+          "href": "/tutorials/html5-apis/offline-apps",
+          "label": "Offline Apps"
+        }
+      ]
+    },
+    {
+      "title": "Device Apis",
+      "items": [
+        {
+          "href": "/tutorials/html5-apis/notifications",
+          "label": "Notifications"
+        },
+        {
+          "href": "/tutorials/html5-apis/vibration",
+          "label": "Vibration"
+        },
+        {
+          "href": "/tutorials/html5-apis/battery-status",
+          "label": "Battery Status"
+        },
+        {
+          "href": "/tutorials/html5-apis/device-orientation",
+          "label": "Device Orientation"
+        },
+        {
+          "href": "/tutorials/html5-apis/clipboard",
+          "label": "Clipboard"
+        },
+        {
+          "href": "/tutorials/html5-apis/eyedropper",
+          "label": "Eyedropper"
+        }
+      ]
+    },
+    {
+      "title": "Performance",
+      "items": [
+        {
+          "href": "/tutorials/html5-apis/performance-api",
+          "label": "Performance Api"
+        },
+        {
+          "href": "/tutorials/html5-apis/page-visibility",
+          "label": "Page Visibility"
+        },
+        {
+          "href": "/tutorials/html5-apis/intersection-observer",
+          "label": "Intersection Observer"
+        },
+        {
+          "href": "/tutorials/html5-apis/mutation-observer",
+          "label": "Mutation Observer"
+        },
+        {
+          "href": "/tutorials/html5-apis/request-animation-frame",
+          "label": "Request Animation Frame"
+        },
+        {
+          "href": "/tutorials/html5-apis/resize-observer",
+          "label": "Resize Observer"
+        },
+        {
+          "href": "/tutorials/html5-apis/view-transitions",
+          "label": "View Transitions"
+        }
+      ]
+    },
+    {
+      "title": "Advanced",
+      "items": [
+        {
+          "href": "/tutorials/html5-apis/payment-request",
+          "label": "Payment Request"
+        },
+        {
+          "href": "/tutorials/html5-apis/web-share",
+          "label": "Web Share"
+        },
+        {
+          "href": "/tutorials/html5-apis/web-authentication",
+          "label": "Web Authentication"
+        },
+        {
+          "href": "/tutorials/html5-apis/permissions",
+          "label": "Permissions"
+        },
+        {
+          "href": "/tutorials/html5-apis/security-privacy",
+          "label": "Security Privacy"
+        },
+        {
+          "href": "/tutorials/html5-apis/web-animations",
+          "label": "Web Animations"
+        },
+        {
+          "href": "/tutorials/html5-apis/file-system-access",
+          "label": "File System Access"
+        },
+        {
+          "href": "/tutorials/html5-apis/abort-controller",
+          "label": "Abort Controller"
+        }
+      ]
+    }
+  ]
+}

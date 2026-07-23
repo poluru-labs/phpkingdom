@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 28-Tricky-Examples
+  example: 44-label-break-switch.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>44 — switch Uses Strict Equality | phpkingdom.com</title>
+</head>
+<body>
+  <h1>44 — switch Uses Strict Equality</h1>
+  <h2>Problem / Gotcha</h2>
+  <p>No coercion between case labels and the discriminant.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const x = "1";
+let msg = "none";
+switch (x) {
+  case 1: msg = "number"; break;
+  case "1": msg = "string"; break;
+}
+document.getElementById("out").textContent = msg;
+  </script>
+</body>
+</html>

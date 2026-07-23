@@ -1,0 +1,37 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 29-Algorithms-Examples
+  example: 16-reverse-array.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>16 — Reverse Array (Two Pointers) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>16 — Reverse Array (Two Pointers)</h1>
+  <h2>Problem</h2>
+  <p>Reverse an array in place using left and right pointers.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function reverseArray(arr) {
+  let lo = 0, hi = arr.length - 1;
+  while (lo < hi) {
+    [arr[lo], arr[hi]] = [arr[hi], arr[lo]];
+    lo++; hi--;
+  }
+  return arr;
+}
+const input = [1, 2, 3, 4, 5];
+document.getElementById("out").textContent =
+  "input:  " + JSON.stringify(input) + "\noutput: " + JSON.stringify(reverseArray(input.slice()));
+  </script>
+</body>
+</html>

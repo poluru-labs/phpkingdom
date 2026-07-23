@@ -1,0 +1,41 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 24-API-Examples
+  example: 49-public-fetch-demo.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>49 — Live Public API Fetch (optional) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>49 — Live Public API Fetch (optional)</h1>
+  <h2>Problem</h2>
+  <p>Try a real public API; show a friendly fallback if offline.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+async function load() {
+  const out = document.getElementById("out");
+  out.textContent = "Loading...";
+  try {
+    const res = await fetch("https://jsonplaceholder.typicode.com/todos/1");
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const data = await res.json();
+    out.textContent = JSON.stringify(data, null, 2);
+  } catch (err) {
+    out.textContent = "Live fetch failed (" + err.message + ").\n" +
+      "Fallback demo payload:\n" +
+      JSON.stringify({ userId: 1, id: 1, title: "delectus aut autem", completed: false }, null, 2);
+  }
+}
+load();
+  </script>
+</body>
+</html>

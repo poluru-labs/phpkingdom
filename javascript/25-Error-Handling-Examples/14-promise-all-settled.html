@@ -1,0 +1,38 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 25-Error-Handling-Examples
+  example: 14-promise-all-settled.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>14 — Promise.allSettled | phpkingdom.com</title>
+</head>
+<body>
+  <h1>14 — Promise.allSettled</h1>
+  <h2>Problem</h2>
+  <p>Run many tasks; collect both successes and failures.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const out = document.getElementById("out");
+const tasks = [
+  Promise.resolve("A"),
+  Promise.reject(new Error("B failed")),
+  Promise.resolve("C"),
+];
+Promise.allSettled(tasks).then(results => {
+  const lines = results.map((r, i) =>
+    r.status + ": " + (r.status === "fulfilled" ? r.value : r.reason.message)
+  );
+  out.textContent = lines.join("\n");
+});
+  </script>
+</body>
+</html>

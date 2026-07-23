@@ -1,0 +1,49 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 29-Algorithms-Examples
+  example: 45-queue-using-stacks.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>45 — Queue Using Stacks | phpkingdom.com</title>
+</head>
+<body>
+  <h1>45 — Queue Using Stacks</h1>
+  <h2>Problem</h2>
+  <p>Implement FIFO queue using two stacks.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+class QueueUsingStacks {
+  constructor() { this.inStack = []; this.outStack = []; }
+  push(x) { this.inStack.push(x); }
+  pop() {
+    if (!this.outStack.length) {
+      while (this.inStack.length) this.outStack.push(this.inStack.pop());
+    }
+    return this.outStack.pop();
+  }
+  peek() {
+    if (!this.outStack.length) {
+      while (this.inStack.length) this.outStack.push(this.inStack.pop());
+    }
+    return this.outStack[this.outStack.length - 1];
+  }
+}
+const q = new QueueUsingStacks();
+[10, 20, 30].forEach(x => q.push(x));
+document.getElementById("out").textContent =
+  "enqueue 10,20,30\n" +
+  "front: " + q.peek() + "\n" +
+  "dequeue: " + q.pop() + "\n" +
+  "front: " + q.peek();
+  </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Functions-Examples
+  example: 18-throttle.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>18 — Throttle | phpkingdom.com</title>
+</head>
+<body>
+  <h1>18 — Throttle</h1>
+  <h2>Problem</h2>
+  <p>Throttle a function so it runs at most once per interval.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function throttle(fn, wait) {
+  let last = 0;
+  return function (...args) {
+    const now = Date.now();
+    if (now - last >= wait) {
+      last = now;
+      return fn.apply(this, args);
+    }
+  };
+}
+let runs = 0;
+const track = throttle(() => { runs += 1; }, 40);
+track(); track(); track();
+setTimeout(() => {
+  track();
+  document.getElementById("out").textContent = "throttled runs = " + runs;
+}, 60);
+  </script>
+</body>
+</html>

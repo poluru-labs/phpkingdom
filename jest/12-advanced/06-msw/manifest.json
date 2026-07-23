@@ -1,0 +1,452 @@
+[
+  {
+    "type": "example",
+    "file": "12-advanced/06-msw/examples/01-starter-expect.html",
+    "focus": "starter expect",
+    "scenario": "utility library"
+  },
+  {
+    "type": "example",
+    "file": "12-advanced/06-msw/examples/02-describe-block.html",
+    "focus": "describe block",
+    "scenario": "React app"
+  },
+  {
+    "type": "example",
+    "file": "12-advanced/06-msw/examples/03-tobe-matcher.html",
+    "focus": "toBe matcher",
+    "scenario": "Vue app"
+  },
+  {
+    "type": "example",
+    "file": "12-advanced/06-msw/examples/04-toequal-object.html",
+    "focus": "toEqual object",
+    "scenario": "Express API"
+  },
+  {
+    "type": "example",
+    "file": "12-advanced/06-msw/examples/05-truthiness.html",
+    "focus": "truthiness",
+    "scenario": "Node CLI"
+  },
+  {
+    "type": "example",
+    "file": "12-advanced/06-msw/examples/06-number-range.html",
+    "focus": "number range",
+    "scenario": "design system"
+  },
+  {
+    "type": "example",
+    "file": "12-advanced/06-msw/examples/07-string-match.html",
+    "focus": "string match",
+    "scenario": "auth service"
+  },
+  {
+    "type": "example",
+    "file": "12-advanced/06-msw/examples/08-array-contains.html",
+    "focus": "array contains",
+    "scenario": "cart module"
+  },
+  {
+    "type": "example",
+    "file": "12-advanced/06-msw/examples/09-beforeeach-setup.html",
+    "focus": "beforeEach setup",
+    "scenario": "form validation"
+  },
+  {
+    "type": "example",
+    "file": "12-advanced/06-msw/examples/10-aftereach-cleanup.html",
+    "focus": "afterEach cleanup",
+    "scenario": "data layer"
+  },
+  {
+    "type": "example",
+    "file": "12-advanced/06-msw/examples/11-jest-fn-mock.html",
+    "focus": "jest.fn mock",
+    "scenario": "utility library"
+  },
+  {
+    "type": "example",
+    "file": "12-advanced/06-msw/examples/12-spyon-method.html",
+    "focus": "spyOn method",
+    "scenario": "React app"
+  },
+  {
+    "type": "example",
+    "file": "12-advanced/06-msw/examples/13-mockreturnvalue.html",
+    "focus": "mockReturnValue",
+    "scenario": "Vue app"
+  },
+  {
+    "type": "example",
+    "file": "12-advanced/06-msw/examples/14-mock-module.html",
+    "focus": "mock module",
+    "scenario": "Express API"
+  },
+  {
+    "type": "example",
+    "file": "12-advanced/06-msw/examples/15-manual-mock.html",
+    "focus": "manual mock",
+    "scenario": "Node CLI"
+  },
+  {
+    "type": "example",
+    "file": "12-advanced/06-msw/examples/16-async-await.html",
+    "focus": "async await",
+    "scenario": "design system"
+  },
+  {
+    "type": "example",
+    "file": "12-advanced/06-msw/examples/17-promise-resolve.html",
+    "focus": "promise resolve",
+    "scenario": "auth service"
+  },
+  {
+    "type": "example",
+    "file": "12-advanced/06-msw/examples/18-fake-timers.html",
+    "focus": "fake timers",
+    "scenario": "cart module"
+  },
+  {
+    "type": "example",
+    "file": "12-advanced/06-msw/examples/19-snapshot-ui.html",
+    "focus": "snapshot ui",
+    "scenario": "form validation"
+  },
+  {
+    "type": "example",
+    "file": "12-advanced/06-msw/examples/20-inline-snapshot.html",
+    "focus": "inline snapshot",
+    "scenario": "data layer"
+  },
+  {
+    "type": "example",
+    "file": "12-advanced/06-msw/examples/21-coverage-gate.html",
+    "focus": "coverage gate",
+    "scenario": "utility library"
+  },
+  {
+    "type": "example",
+    "file": "12-advanced/06-msw/examples/22-rtl-render.html",
+    "focus": "rtl render",
+    "scenario": "React app"
+  },
+  {
+    "type": "example",
+    "file": "12-advanced/06-msw/examples/23-express-route.html",
+    "focus": "express route",
+    "scenario": "Vue app"
+  },
+  {
+    "type": "example",
+    "file": "12-advanced/06-msw/examples/24-each-table.html",
+    "focus": "each table",
+    "scenario": "Express API"
+  },
+  {
+    "type": "example",
+    "file": "12-advanced/06-msw/examples/25-best-practice-recap.html",
+    "focus": "best practice recap",
+    "scenario": "Node CLI"
+  },
+  {
+    "type": "exercise",
+    "file": "12-advanced/06-msw/exercises/01-install-challenge.html",
+    "focus": "install challenge",
+    "scenario": "utility library"
+  },
+  {
+    "type": "exercise",
+    "file": "12-advanced/06-msw/exercises/02-first-test.html",
+    "focus": "first test",
+    "scenario": "React app"
+  },
+  {
+    "type": "exercise",
+    "file": "12-advanced/06-msw/exercises/03-matcher-drill.html",
+    "focus": "matcher drill",
+    "scenario": "Vue app"
+  },
+  {
+    "type": "exercise",
+    "file": "12-advanced/06-msw/exercises/04-setup-hooks.html",
+    "focus": "setup hooks",
+    "scenario": "Express API"
+  },
+  {
+    "type": "exercise",
+    "file": "12-advanced/06-msw/exercises/05-config-tweak.html",
+    "focus": "config tweak",
+    "scenario": "Node CLI"
+  },
+  {
+    "type": "exercise",
+    "file": "12-advanced/06-msw/exercises/06-mock-function.html",
+    "focus": "mock function",
+    "scenario": "design system"
+  },
+  {
+    "type": "exercise",
+    "file": "12-advanced/06-msw/exercises/07-spy-practice.html",
+    "focus": "spy practice",
+    "scenario": "auth service"
+  },
+  {
+    "type": "exercise",
+    "file": "12-advanced/06-msw/exercises/08-module-mock.html",
+    "focus": "module mock",
+    "scenario": "cart module"
+  },
+  {
+    "type": "exercise",
+    "file": "12-advanced/06-msw/exercises/09-async-test.html",
+    "focus": "async test",
+    "scenario": "form validation"
+  },
+  {
+    "type": "exercise",
+    "file": "12-advanced/06-msw/exercises/10-timer-advance.html",
+    "focus": "timer advance",
+    "scenario": "data layer"
+  },
+  {
+    "type": "exercise",
+    "file": "12-advanced/06-msw/exercises/11-snapshot-update.html",
+    "focus": "snapshot update",
+    "scenario": "utility library"
+  },
+  {
+    "type": "exercise",
+    "file": "12-advanced/06-msw/exercises/12-coverage-flag.html",
+    "focus": "coverage flag",
+    "scenario": "React app"
+  },
+  {
+    "type": "exercise",
+    "file": "12-advanced/06-msw/exercises/13-threshold-set.html",
+    "focus": "threshold set",
+    "scenario": "Vue app"
+  },
+  {
+    "type": "exercise",
+    "file": "12-advanced/06-msw/exercises/14-rtl-click.html",
+    "focus": "rtl click",
+    "scenario": "Express API"
+  },
+  {
+    "type": "exercise",
+    "file": "12-advanced/06-msw/exercises/15-dom-query.html",
+    "focus": "dom query",
+    "scenario": "Node CLI"
+  },
+  {
+    "type": "exercise",
+    "file": "12-advanced/06-msw/exercises/16-node-util.html",
+    "focus": "node util",
+    "scenario": "design system"
+  },
+  {
+    "type": "exercise",
+    "file": "12-advanced/06-msw/exercises/17-express-get.html",
+    "focus": "express get",
+    "scenario": "auth service"
+  },
+  {
+    "type": "exercise",
+    "file": "12-advanced/06-msw/exercises/18-api-assert.html",
+    "focus": "api assert",
+    "scenario": "cart module"
+  },
+  {
+    "type": "exercise",
+    "file": "12-advanced/06-msw/exercises/19-db-stub.html",
+    "focus": "db stub",
+    "scenario": "form validation"
+  },
+  {
+    "type": "exercise",
+    "file": "12-advanced/06-msw/exercises/20-custom-matcher.html",
+    "focus": "custom matcher",
+    "scenario": "data layer"
+  },
+  {
+    "type": "exercise",
+    "file": "12-advanced/06-msw/exercises/21-test-each.html",
+    "focus": "test.each",
+    "scenario": "utility library"
+  },
+  {
+    "type": "exercise",
+    "file": "12-advanced/06-msw/exercises/22-watch-mode.html",
+    "focus": "watch mode",
+    "scenario": "React app"
+  },
+  {
+    "type": "exercise",
+    "file": "12-advanced/06-msw/exercises/23-clear-mocks.html",
+    "focus": "clear mocks",
+    "scenario": "Vue app"
+  },
+  {
+    "type": "exercise",
+    "file": "12-advanced/06-msw/exercises/24-isolate-modules.html",
+    "focus": "isolate modules",
+    "scenario": "Express API"
+  },
+  {
+    "type": "exercise",
+    "file": "12-advanced/06-msw/exercises/25-final-challenge.html",
+    "focus": "final challenge",
+    "scenario": "Node CLI"
+  },
+  {
+    "type": "template",
+    "file": "12-advanced/06-msw/templates/01-unit-starter.html",
+    "focus": "unit starter",
+    "scenario": "utility library"
+  },
+  {
+    "type": "template",
+    "file": "12-advanced/06-msw/templates/02-config-js.html",
+    "focus": "config js",
+    "scenario": "React app"
+  },
+  {
+    "type": "template",
+    "file": "12-advanced/06-msw/templates/03-ts-jest.html",
+    "focus": "ts jest",
+    "scenario": "Vue app"
+  },
+  {
+    "type": "template",
+    "file": "12-advanced/06-msw/templates/04-matcher-kit.html",
+    "focus": "matcher kit",
+    "scenario": "Express API"
+  },
+  {
+    "type": "template",
+    "file": "12-advanced/06-msw/templates/05-hooks-kit.html",
+    "focus": "hooks kit",
+    "scenario": "Node CLI"
+  },
+  {
+    "type": "template",
+    "file": "12-advanced/06-msw/templates/06-mock-kit.html",
+    "focus": "mock kit",
+    "scenario": "design system"
+  },
+  {
+    "type": "template",
+    "file": "12-advanced/06-msw/templates/07-module-mock-kit.html",
+    "focus": "module mock kit",
+    "scenario": "auth service"
+  },
+  {
+    "type": "template",
+    "file": "12-advanced/06-msw/templates/08-async-kit.html",
+    "focus": "async kit",
+    "scenario": "cart module"
+  },
+  {
+    "type": "template",
+    "file": "12-advanced/06-msw/templates/09-timer-kit.html",
+    "focus": "timer kit",
+    "scenario": "form validation"
+  },
+  {
+    "type": "template",
+    "file": "12-advanced/06-msw/templates/10-snapshot-kit.html",
+    "focus": "snapshot kit",
+    "scenario": "data layer"
+  },
+  {
+    "type": "template",
+    "file": "12-advanced/06-msw/templates/11-coverage-kit.html",
+    "focus": "coverage kit",
+    "scenario": "utility library"
+  },
+  {
+    "type": "template",
+    "file": "12-advanced/06-msw/templates/12-react-rtl.html",
+    "focus": "react rtl",
+    "scenario": "React app"
+  },
+  {
+    "type": "template",
+    "file": "12-advanced/06-msw/templates/13-vue-test-utils.html",
+    "focus": "vue test utils",
+    "scenario": "Vue app"
+  },
+  {
+    "type": "template",
+    "file": "12-advanced/06-msw/templates/14-dom-kit.html",
+    "focus": "dom kit",
+    "scenario": "Express API"
+  },
+  {
+    "type": "template",
+    "file": "12-advanced/06-msw/templates/15-node-kit.html",
+    "focus": "node kit",
+    "scenario": "Node CLI"
+  },
+  {
+    "type": "template",
+    "file": "12-advanced/06-msw/templates/16-express-kit.html",
+    "focus": "express kit",
+    "scenario": "design system"
+  },
+  {
+    "type": "template",
+    "file": "12-advanced/06-msw/templates/17-api-kit.html",
+    "focus": "api kit",
+    "scenario": "auth service"
+  },
+  {
+    "type": "template",
+    "file": "12-advanced/06-msw/templates/18-db-kit.html",
+    "focus": "db kit",
+    "scenario": "cart module"
+  },
+  {
+    "type": "template",
+    "file": "12-advanced/06-msw/templates/19-custom-matcher.html",
+    "focus": "custom matcher",
+    "scenario": "form validation"
+  },
+  {
+    "type": "template",
+    "file": "12-advanced/06-msw/templates/20-each-kit.html",
+    "focus": "each kit",
+    "scenario": "data layer"
+  },
+  {
+    "type": "template",
+    "file": "12-advanced/06-msw/templates/21-watch-kit.html",
+    "focus": "watch kit",
+    "scenario": "utility library"
+  },
+  {
+    "type": "template",
+    "file": "12-advanced/06-msw/templates/22-ci-github.html",
+    "focus": "ci github",
+    "scenario": "React app"
+  },
+  {
+    "type": "template",
+    "file": "12-advanced/06-msw/templates/23-monorepo.html",
+    "focus": "monorepo",
+    "scenario": "Vue app"
+  },
+  {
+    "type": "template",
+    "file": "12-advanced/06-msw/templates/24-esm-mock.html",
+    "focus": "esm mock",
+    "scenario": "Express API"
+  },
+  {
+    "type": "template",
+    "file": "12-advanced/06-msw/templates/25-production-starter.html",
+    "focus": "production starter",
+    "scenario": "Node CLI"
+  }
+]

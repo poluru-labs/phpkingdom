@@ -1,0 +1,35 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 20-DOM-Examples
+  example: 15-classlist.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>15 — classList add / remove / toggle | phpkingdom.com</title>
+</head>
+<body>
+  <h1>15 — classList add / remove / toggle</h1>
+  <h2>Problem</h2>
+  <p>Toggle CSS classes without string parsing.</p>
+  <h2>Demo</h2>
+  <style>.on { background: #cfc; font-weight: bold; }</style>
+  <p id="p" class="msg">Toggle my class</p>
+  <button id="btn">toggle .on</button>
+  <pre id="out"></pre>
+  <script>
+const p = document.getElementById("p");
+document.getElementById("btn").onclick = () => {
+  p.classList.toggle("on");
+  document.getElementById("out").textContent =
+    "has .on? " + p.classList.contains("on") + " | classes: " + p.className;
+};
+  </script>
+</body>
+</html>

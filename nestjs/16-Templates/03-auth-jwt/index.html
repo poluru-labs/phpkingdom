@@ -1,0 +1,91 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 16-Templates/03-auth-jwt
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <meta name="description" content="JWT sign + AuthGuard(&#x27;jwt&#x27;)">
+  <title>Auth JWT | @nestjs/jwt | phpkingdom.com</title>
+  <style>
+    body { margin:0; font-family: Georgia, "Times New Roman", serif; background:#f5f7fb; color:#1f2937; line-height:1.55; }
+    .wrap { max-width:900px; margin:0 auto; padding:1.5rem; }
+    .brand { color:#9a3412; font-size:.78rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    h1 { font-size:1.75rem; margin:.4rem 0; }
+    .meta { color:#64748b; }
+    pre { background:#0f172a; color:#e2e8f0; padding:1rem; border-radius:.65rem; overflow:auto; font-size:.88rem; }
+    .card { background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:1rem; margin:1rem 0; }
+    a { color:#9a3412; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">phpkingdom.com</div>
+    <p class="meta">Auth JWT · NestJS template</p>
+    <h1>@nestjs/jwt</h1>
+    <p class="meta">JWT sign + AuthGuard(&#x27;jwt&#x27;)</p>
+    <div class="card">
+      <h2>Feature Scaffold</h2>
+      <pre><code>import { Module, Injectable, UnauthorizedException, Controller, Post, Body, UseGuards, Get } from &quot;@nestjs/common&quot;;
+import { JwtModule, JwtService } from &quot;@nestjs/jwt&quot;;
+import { AuthGuard } from &quot;@nestjs/passport&quot;;
+import { PassportStrategy } from &quot;@nestjs/passport&quot;;
+import { ExtractJwt, Strategy } from &quot;passport-jwt&quot;;
+
+@Injectable()
+export class JwtStrategy extends PassportStrategy(Strategy) {
+  constructor() {
+    super({
+      jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
+      secretOrKey: process.env.JWT_SECRET || &quot;dev-secret&quot;,
+    });
+  }
+  validate(payload: { sub: number; email: string }) {
+    return { userId: payload.sub, email: payload.email };
+  }
+}
+
+@Injectable()
+export class AuthService {
+  constructor(private jwt: JwtService) {}
+  async login(email: string, password: string) {
+    if (password !== &quot;secret&quot;) throw new UnauthorizedException();
+    return { accessToken: await this.jwt.signAsync({ sub: 1, email }) };
+  }
+}
+
+@Controller(&quot;auth&quot;)
+export class AuthController {
+  constructor(private auth: AuthService) {}
+  @Post(&quot;login&quot;) login(@Body() body: { email: string; password: string }) {
+    return this.auth.login(body.email, body.password);
+  }
+  @UseGuards(AuthGuard(&quot;jwt&quot;))
+  @Get(&quot;me&quot;)
+  me() { return { ok: true }; }
+}
+
+@Module({
+  imports: [JwtModule.register({ secret: process.env.JWT_SECRET || &quot;dev-secret&quot;, signOptions: { expiresIn: &quot;1h&quot; } })],
+  controllers: [AuthController],
+  providers: [AuthService, JwtStrategy],
+})
+export class AuthModule {}</code></pre>
+    </div>
+    <div class="card">
+      <h2>Verify</h2>
+      <pre><code>nest new my-api
+nest start --watch
+curl http://localhost:3000</code></pre>
+    </div>
+    <p><a href="../index.html">All templates</a></p>
+  </div>
+</body>
+</html>

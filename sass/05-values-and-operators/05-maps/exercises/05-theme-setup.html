@@ -1,0 +1,110 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Sass and SCSS Tutorials
+section title: Values and Operators
+topic title: Sass Maps
+content type: Exercise
+item number: 05
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Sass Maps Exercise 05 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ecfdf5;
+      color: #0f766e;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Exercise 05</span>
+    <h1>Sass Maps</h1>
+    <p><strong>Section:</strong> Values and Operators</p>
+    <p><strong>Focus:</strong> Theme Setup</p>
+    <p><strong>Scenario:</strong> portfolio</p>
+    <p>Complete the task, refactor the sample, and compare your result with the suggested direction.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>SCSS Snippet</h2>
+        <pre><code>// Sass Maps — Exercise 05
+// Focus: theme setup | Scenario: portfolio
+
+@use &quot;sass:map&quot;;
+
+$breakpoints: (
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+);
+
+@media (min-width: map.get($breakpoints, md)) {
+  .container { max-width: 720px; }
+}</code></pre>
+      </section>
+      <section>
+        <h2>HTML Markup</h2>
+        <pre><code>&lt;section class=&quot;block-maps&quot;&gt;
+  &lt;h2&gt;Sass Maps&lt;/h2&gt;
+  &lt;p&gt;Theme Setup for a portfolio.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This exercise focuses on <strong>Sass Maps</strong> in a portfolio context.</p>
+      <p>Prefer <code>@use</code>/<code>@forward</code>, keep tokens in abstracts, and compile with Dart Sass.</p>
+    </section>
+  </main>
+</body>
+</html>

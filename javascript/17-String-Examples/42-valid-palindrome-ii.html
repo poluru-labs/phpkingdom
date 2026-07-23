@@ -1,0 +1,40 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 17-String-Examples
+  example: 42-valid-palindrome-ii.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>42 — Valid Palindrome II | phpkingdom.com</title>
+</head>
+<body>
+  <h1>42 — Valid Palindrome II</h1>
+  <h2>Problem</h2>
+  <p>Return true if string can become a palindrome by deleting at most one character.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function validPalindrome(s) {
+  function isPal(l, r) {
+    while (l < r) if (s[l++] !== s[r--]) return false;
+    return true;
+  }
+  let l = 0, r = s.length - 1;
+  while (l < r) {
+    if (s[l] !== s[r]) return isPal(l + 1, r) || isPal(l, r - 1);
+    l++; r--;
+  }
+  return true;
+}
+document.getElementById("out").textContent =
+  validPalindrome("abca") + " / " + validPalindrome("abc");
+  </script>
+</body>
+</html>

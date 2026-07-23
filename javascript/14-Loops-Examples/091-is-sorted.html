@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 091-is-sorted.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>091 — Check Sorted Ascending | phpkingdom.com</title>
+</head>
+<body>
+  <h1>091 — Check Sorted Ascending</h1>
+  <h2>Problem</h2>
+  <p>Verify an array is non-decreasing with a loop.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function isSorted(arr) {
+  for (let i = 1; i < arr.length; i++) if (arr[i] < arr[i - 1]) return false;
+  return true;
+}
+document.getElementById("out").textContent =
+  "[1,2,2,4] → " + isSorted([1, 2, 2, 4]) +
+  "\n[1,3,2] → " + isSorted([1, 3, 2]);
+  </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 16-Array-Examples
+  example: 03-sum-average.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>03 — Sum and Average | phpkingdom.com</title>
+</head>
+<body>
+  <h1>03 — Sum and Average</h1>
+  <h2>Problem</h2>
+  <p>Calculate the sum and average of array elements.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const nums = [10, 20, 30, 40];
+const sum = nums.reduce((a, b) => a + b, 0);
+const avg = sum / nums.length;
+document.getElementById("out").textContent = "sum=" + sum + ", avg=" + avg;
+  </script>
+</body>
+</html>

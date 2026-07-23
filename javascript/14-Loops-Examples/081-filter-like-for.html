@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 081-filter-like-for.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>081 — Filter-like with for | phpkingdom.com</title>
+</head>
+<body>
+  <h1>081 — Filter-like with for</h1>
+  <h2>Problem</h2>
+  <p>Keep only values ≥ 10 using a for loop.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const nums = [3, 12, 7, 20, 9];
+const kept = [];
+for (const x of nums) if (x >= 10) kept.push(x);
+document.getElementById("out").textContent = kept.join(", ");
+  </script>
+</body>
+</html>

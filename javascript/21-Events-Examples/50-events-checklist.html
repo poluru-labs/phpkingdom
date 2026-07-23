@@ -1,0 +1,38 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 21-Events-Examples
+  example: 50-events-checklist.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>50 — Events Checklist | phpkingdom.com</title>
+</head>
+<body>
+  <h1>50 — Events Checklist</h1>
+  <h2>Problem</h2>
+  <p>Quick checklist of everyday event habits in the browser.</p>
+  <h2>Demo</h2>
+  <pre id="out"></pre>
+  <script>
+const tips = [
+  "Prefer addEventListener over onclick attributes",
+  "Use delegation for lists that change",
+  "preventDefault for links/forms when handling in JS",
+  "stopPropagation only when you truly need it",
+  "Named functions for removeEventListener / AbortSignal",
+  "passive:true for touch/wheel/scroll when not calling preventDefault",
+  "Debounce input; throttle scroll/resize",
+  "CustomEvent + detail for app-level messages",
+];
+document.getElementById("out").textContent =
+  tips.map((t, i) => (i + 1) + ". " + t).join("\n");
+  </script>
+</body>
+</html>

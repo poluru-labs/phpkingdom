@@ -1,0 +1,23 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 12-Misc-Examples
+  example: 070-add-listener.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>070 — addEventListener | phpkingdom.com</title>
+</head>
+<body>
+  <h1>070 — addEventListener</h1>
+  <pre id="out"></pre>
+  <script>
+document.getElementById("out").textContent="click page"; document.body.addEventListener("click",()=>{document.getElementById("out").textContent="clicked";},{once:true});
+  </script>
+</body>
+</html>

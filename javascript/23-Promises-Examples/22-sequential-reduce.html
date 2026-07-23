@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 23-Promises-Examples
+  example: 22-sequential-reduce.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>22 — Sequential with reduce | phpkingdom.com</title>
+</head>
+<body>
+  <h1>22 — Sequential with reduce</h1>
+  <h2>Problem</h2>
+  <p>Run an array of async tasks one-by-one.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const tasks = [1, 2, 3, 4];
+tasks.reduce((chain, n) => {
+  return chain.then((acc) => {
+    return new Promise((resolve) => {
+      setTimeout(() => resolve(acc.concat(n * 10)), 50);
+    });
+  });
+}, Promise.resolve([])).then((result) => {
+  document.getElementById("out").textContent = result.join(", ");
+});
+  </script>
+</body>
+</html>

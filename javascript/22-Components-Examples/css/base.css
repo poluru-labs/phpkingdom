@@ -1,0 +1,236 @@
+/* Shared styles for 22-Components-Examples — phpkingdom.com */
+@import url("https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap");
+
+:root {
+  --ink: #14212b;
+  --muted: #5b6b76;
+  --line: #d5dde3;
+  --surface: #ffffff;
+  --surface-2: #f3f6f8;
+  --bg: #e8eef2;
+  --bg-glow: radial-gradient(1200px 500px at 10% -10%, #cfe8e4 0%, transparent 55%),
+    radial-gradient(900px 420px at 100% 0%, #d9e4f2 0%, transparent 50%),
+    linear-gradient(180deg, #eef3f6 0%, #e4ebf0 100%);
+  --accent: #0f7a6c;
+  --accent-ink: #084b43;
+  --accent-soft: #d9f1ec;
+  --danger: #b42318;
+  --shadow: 0 10px 30px rgba(20, 33, 43, 0.08);
+  --radius: 12px;
+  --radius-sm: 8px;
+  --focus: 0 0 0 3px rgba(15, 122, 108, 0.28);
+  --font: "Figtree", "Avenir Next", sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, monospace;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: var(--font);
+  color: var(--ink);
+  background: var(--bg-glow);
+  line-height: 1.5;
+}
+
+a {
+  color: var(--accent-ink);
+}
+
+.page {
+  width: min(920px, calc(100% - 2rem));
+  margin: 0 auto;
+  padding: 2rem 0 4rem;
+}
+
+.back {
+  display: inline-block;
+  margin-bottom: 1rem;
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.back:hover {
+  color: var(--accent-ink);
+}
+
+.page h1 {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1.6rem, 2.5vw, 2rem);
+  letter-spacing: -0.02em;
+}
+
+.lead {
+  margin: 0 0 1.5rem;
+  color: var(--muted);
+  max-width: 60ch;
+}
+
+.panel {
+  background: color-mix(in srgb, var(--surface) 92%, transparent);
+  backdrop-filter: blur(8px);
+  border: 1px solid color-mix(in srgb, var(--line) 80%, transparent);
+  border-radius: calc(var(--radius) + 4px);
+  box-shadow: var(--shadow);
+  padding: 1.25rem;
+}
+
+.panel + .panel {
+  margin-top: 1rem;
+}
+
+.panel h2 {
+  margin: 0 0 0.75rem;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.demo-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.stack {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.log {
+  margin: 0;
+  padding: 0.85rem 1rem;
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  white-space: pre-wrap;
+  min-height: 2.5rem;
+}
+
+.field-label {
+  display: grid;
+  gap: 0.35rem;
+  font-weight: 500;
+  font-size: 0.92rem;
+}
+
+/* —— Shared control primitives —— */
+.c-btn {
+  appearance: none;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  padding: 0.55rem 1.05rem;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.18s var(--ease), background 0.18s var(--ease),
+    border-color 0.18s var(--ease), box-shadow 0.18s var(--ease);
+}
+
+.c-btn:active:not(:disabled) {
+  transform: translateY(1px);
+}
+
+.c-btn:focus-visible {
+  outline: none;
+  box-shadow: var(--focus);
+}
+
+.c-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.c-btn--primary {
+  background: var(--accent);
+  color: #fff;
+}
+
+.c-btn--primary:hover:not(:disabled) {
+  background: var(--accent-ink);
+}
+
+.c-btn--secondary {
+  background: var(--surface);
+  border-color: var(--line);
+  color: var(--ink);
+}
+
+.c-btn--secondary:hover:not(:disabled) {
+  border-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.c-btn--ghost {
+  background: transparent;
+  color: var(--accent-ink);
+}
+
+.c-btn--ghost:hover:not(:disabled) {
+  background: var(--accent-soft);
+}
+
+.c-btn--danger {
+  background: var(--danger);
+  color: #fff;
+}
+
+.c-input,
+.c-textarea,
+.c-select-native {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  padding: 0.6rem 0.75rem;
+  transition: border-color 0.15s var(--ease), box-shadow 0.15s var(--ease);
+}
+
+.c-input:focus,
+.c-textarea:focus,
+.c-select-native:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: var(--focus);
+}
+
+.c-input:disabled,
+.c-textarea:disabled {
+  background: var(--surface-2);
+  color: var(--muted);
+}
+
+.c-textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.c-hint {
+  font-size: 0.82rem;
+  color: var(--muted);
+  font-weight: 400;
+}
+
+@media (max-width: 640px) {
+  .page {
+    width: min(100% - 1.25rem, 920px);
+    padding-top: 1.25rem;
+  }
+}

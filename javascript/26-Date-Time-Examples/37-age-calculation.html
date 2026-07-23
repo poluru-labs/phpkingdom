@@ -1,0 +1,37 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 26-Date-Time-Examples
+  example: 37-age-calculation.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>37 — Calculate Age | phpkingdom.com</title>
+</head>
+<body>
+  <h1>37 — Calculate Age</h1>
+  <h2>Problem</h2>
+  <p>Compute age in full years from a fixed birthday.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+
+function age(birth, onDate) {
+  let years = onDate.getFullYear() - birth.getFullYear();
+  const m = onDate.getMonth() - birth.getMonth();
+  if (m < 0 || (m === 0 && onDate.getDate() < birth.getDate())) years--;
+  return years;
+}
+const birth = new Date(1990, 5, 20);
+const today = new Date(2024, 0, 15);
+document.getElementById("out").textContent = "Age on Jan 15, 2024: " + age(birth, today) + " years";
+
+  </script>
+</body>
+</html>

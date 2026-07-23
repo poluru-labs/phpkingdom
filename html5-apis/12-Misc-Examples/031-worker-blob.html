@@ -1,0 +1,25 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 12-Misc-Examples
+  example: 031-worker-blob.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>031 — Blob Worker | phpkingdom.com</title>
+</head>
+<body>
+  <h1>031 — Blob Worker</h1>
+  <p>Inline worker demo.</p>
+<button id="b" type="button">Run</button><pre id="out"></pre>
+  <script>
+document.getElementById("b").onclick=()=>{const w=new Worker(URL.createObjectURL(new Blob(["onmessage=e=>postMessage(e.data*2)"] ,{type:"text/javascript"})));w.onmessage=e=>{document.getElementById("out").textContent=e.data;w.terminate();};w.postMessage(21);};
+  </script>
+</body>
+</html>

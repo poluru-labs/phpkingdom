@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Functions-Examples
+  example: 31-pure-function.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>31 — Pure Function | phpkingdom.com</title>
+</head>
+<body>
+  <h1>31 — Pure Function</h1>
+  <h2>Problem</h2>
+  <p>Write a pure function that always returns the same output for the same input.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function pureAdd(a, b) {
+  return a + b;
+}
+document.getElementById("out").textContent =
+  "pureAdd(2,3) = " + pureAdd(2, 3) + "\npureAdd(2,3) = " + pureAdd(2, 3);
+  </script>
+</body>
+</html>

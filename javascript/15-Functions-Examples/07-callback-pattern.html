@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Functions-Examples
+  example: 07-callback-pattern.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>07 — Callback Pattern | phpkingdom.com</title>
+</head>
+<body>
+  <h1>07 — Callback Pattern</h1>
+  <h2>Problem</h2>
+  <p>Pass a callback to process each item in an array.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function forEachItem(arr, callback) {
+  for (let i = 0; i < arr.length; i++) callback(arr[i], i);
+}
+const lines = [];
+forEachItem(["a", "b", "c"], (item, i) => lines.push(i + ":" + item));
+document.getElementById("out").textContent = lines.join("\n");
+  </script>
+</body>
+</html>

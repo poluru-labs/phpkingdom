@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 27-Regex-Examples
+  example: 29-validate-hex.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>29 — Validate Hex Color | phpkingdom.com</title>
+</head>
+<body>
+  <h1>29 — Validate Hex Color</h1>
+  <h2>Problem</h2>
+  <p>Validate 3- or 6-digit hex color codes.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const colors = ["#fff", "#FF5733", "#ggg", "FF5733", "#abcd"];
+const re = /^#(?:[0-9a-fA-F]{3}){1,2}$/;
+const results = colors.map(c => c + " => " + re.test(c));
+document.getElementById("out").textContent = results.join("\n");
+  </script>
+</body>
+</html>

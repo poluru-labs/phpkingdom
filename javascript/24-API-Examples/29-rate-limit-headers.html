@@ -1,0 +1,40 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 24-API-Examples
+  example: 29-rate-limit-headers.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>29 — Rate Limit Headers | phpkingdom.com</title>
+</head>
+<body>
+  <h1>29 — Rate Limit Headers</h1>
+  <h2>Problem</h2>
+  <p>Read X-RateLimit style headers from a response.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const headers = {
+  get(name) {
+    const map = {
+      "x-ratelimit-limit": "100",
+      "x-ratelimit-remaining": "73",
+      "retry-after": "30"
+    };
+    return map[name.toLowerCase()] || null;
+  }
+};
+document.getElementById("out").textContent =
+  "limit=" + headers.get("X-RateLimit-Limit") +
+  "\nremaining=" + headers.get("X-RateLimit-Remaining") +
+  "\nretry-after=" + headers.get("Retry-After");
+  </script>
+</body>
+</html>

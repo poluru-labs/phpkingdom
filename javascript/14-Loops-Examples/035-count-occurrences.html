@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 035-count-occurrences.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>035 — Count Occurrences | phpkingdom.com</title>
+</head>
+<body>
+  <h1>035 — Count Occurrences</h1>
+  <h2>Problem</h2>
+  <p>Count how many times a value appears.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const arr = [1, 2, 2, 3, 2, 4];
+const target = 2;
+let count = 0;
+for (const x of arr) if (x === target) count++;
+document.getElementById("out").textContent = target + " appears " + count + " times";
+  </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 26-Date-Time-Examples
+  example: 27-clone-date.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>27 — Clone Date | phpkingdom.com</title>
+</head>
+<body>
+  <h1>27 — Clone Date</h1>
+  <h2>Problem</h2>
+  <p>Copy a Date without sharing the same object reference.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+
+const original = new Date(2024, 0, 15, 14, 30, 0);
+const clone = new Date(original.getTime());
+clone.setDate(20);
+document.getElementById("out").textContent =
+  "Original: " + original.toDateString() + "\n" +
+  "Clone after setDate(20): " + clone.toDateString() + "\n" +
+  "Same reference? " + (original === clone);
+
+  </script>
+</body>
+</html>

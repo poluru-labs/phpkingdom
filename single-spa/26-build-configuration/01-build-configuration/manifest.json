@@ -1,0 +1,452 @@
+[
+  {
+    "type": "example",
+    "file": "26-build-configuration/01-build-configuration/examples/01-root-config.html",
+    "focus": "root config",
+    "scenario": "e-commerce shell"
+  },
+  {
+    "type": "example",
+    "file": "26-build-configuration/01-build-configuration/examples/02-register-application.html",
+    "focus": "register application",
+    "scenario": "admin portal"
+  },
+  {
+    "type": "example",
+    "file": "26-build-configuration/01-build-configuration/examples/03-activity-function.html",
+    "focus": "activity function",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "example",
+    "file": "26-build-configuration/01-build-configuration/examples/04-start-method.html",
+    "focus": "start method",
+    "scenario": "checkout micro-app"
+  },
+  {
+    "type": "example",
+    "file": "26-build-configuration/01-build-configuration/examples/05-import-map.html",
+    "focus": "import map",
+    "scenario": "profile micro-app"
+  },
+  {
+    "type": "example",
+    "file": "26-build-configuration/01-build-configuration/examples/06-systemjs-load.html",
+    "focus": "systemjs load",
+    "scenario": "design system CDN"
+  },
+  {
+    "type": "example",
+    "file": "26-build-configuration/01-build-configuration/examples/07-bootstrap-lifecycle.html",
+    "focus": "bootstrap lifecycle",
+    "scenario": "multi-team platform"
+  },
+  {
+    "type": "example",
+    "file": "26-build-configuration/01-build-configuration/examples/08-mount-lifecycle.html",
+    "focus": "mount lifecycle",
+    "scenario": "legacy migration"
+  },
+  {
+    "type": "example",
+    "file": "26-build-configuration/01-build-configuration/examples/09-unmount-lifecycle.html",
+    "focus": "unmount lifecycle",
+    "scenario": "mobile web shell"
+  },
+  {
+    "type": "example",
+    "file": "26-build-configuration/01-build-configuration/examples/10-unload-lifecycle.html",
+    "focus": "unload lifecycle",
+    "scenario": "B2B portal"
+  },
+  {
+    "type": "example",
+    "file": "26-build-configuration/01-build-configuration/examples/11-layout-engine.html",
+    "focus": "layout engine",
+    "scenario": "e-commerce shell"
+  },
+  {
+    "type": "example",
+    "file": "26-build-configuration/01-build-configuration/examples/12-parcel-mount.html",
+    "focus": "parcel mount",
+    "scenario": "admin portal"
+  },
+  {
+    "type": "example",
+    "file": "26-build-configuration/01-build-configuration/examples/13-utility-module.html",
+    "focus": "utility module",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "example",
+    "file": "26-build-configuration/01-build-configuration/examples/14-custom-props.html",
+    "focus": "custom props",
+    "scenario": "checkout micro-app"
+  },
+  {
+    "type": "example",
+    "file": "26-build-configuration/01-build-configuration/examples/15-navigation-event.html",
+    "focus": "navigation event",
+    "scenario": "profile micro-app"
+  },
+  {
+    "type": "example",
+    "file": "26-build-configuration/01-build-configuration/examples/16-react-helper.html",
+    "focus": "react helper",
+    "scenario": "design system CDN"
+  },
+  {
+    "type": "example",
+    "file": "26-build-configuration/01-build-configuration/examples/17-vue-helper.html",
+    "focus": "vue helper",
+    "scenario": "multi-team platform"
+  },
+  {
+    "type": "example",
+    "file": "26-build-configuration/01-build-configuration/examples/18-angular-helper.html",
+    "focus": "angular helper",
+    "scenario": "legacy migration"
+  },
+  {
+    "type": "example",
+    "file": "26-build-configuration/01-build-configuration/examples/19-error-handler.html",
+    "focus": "error handler",
+    "scenario": "mobile web shell"
+  },
+  {
+    "type": "example",
+    "file": "26-build-configuration/01-build-configuration/examples/20-loading-ui.html",
+    "focus": "loading ui",
+    "scenario": "B2B portal"
+  },
+  {
+    "type": "example",
+    "file": "26-build-configuration/01-build-configuration/examples/21-shared-dep.html",
+    "focus": "shared dep",
+    "scenario": "e-commerce shell"
+  },
+  {
+    "type": "example",
+    "file": "26-build-configuration/01-build-configuration/examples/22-css-isolation.html",
+    "focus": "css isolation",
+    "scenario": "admin portal"
+  },
+  {
+    "type": "example",
+    "file": "26-build-configuration/01-build-configuration/examples/23-auth-gate.html",
+    "focus": "auth gate",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "example",
+    "file": "26-build-configuration/01-build-configuration/examples/24-devtools-tip.html",
+    "focus": "devtools tip",
+    "scenario": "checkout micro-app"
+  },
+  {
+    "type": "example",
+    "file": "26-build-configuration/01-build-configuration/examples/25-best-practice-recap.html",
+    "focus": "best practice recap",
+    "scenario": "profile micro-app"
+  },
+  {
+    "type": "exercise",
+    "file": "26-build-configuration/01-build-configuration/exercises/01-create-root.html",
+    "focus": "create root",
+    "scenario": "e-commerce shell"
+  },
+  {
+    "type": "exercise",
+    "file": "26-build-configuration/01-build-configuration/exercises/02-import-map-json.html",
+    "focus": "import map json",
+    "scenario": "admin portal"
+  },
+  {
+    "type": "exercise",
+    "file": "26-build-configuration/01-build-configuration/exercises/03-register-app.html",
+    "focus": "register app",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "26-build-configuration/01-build-configuration/exercises/04-active-when.html",
+    "focus": "active when",
+    "scenario": "checkout micro-app"
+  },
+  {
+    "type": "exercise",
+    "file": "26-build-configuration/01-build-configuration/exercises/05-call-start.html",
+    "focus": "call start",
+    "scenario": "profile micro-app"
+  },
+  {
+    "type": "exercise",
+    "file": "26-build-configuration/01-build-configuration/exercises/06-bootstrap-fn.html",
+    "focus": "bootstrap fn",
+    "scenario": "design system CDN"
+  },
+  {
+    "type": "exercise",
+    "file": "26-build-configuration/01-build-configuration/exercises/07-mount-fn.html",
+    "focus": "mount fn",
+    "scenario": "multi-team platform"
+  },
+  {
+    "type": "exercise",
+    "file": "26-build-configuration/01-build-configuration/exercises/08-unmount-fn.html",
+    "focus": "unmount fn",
+    "scenario": "legacy migration"
+  },
+  {
+    "type": "exercise",
+    "file": "26-build-configuration/01-build-configuration/exercises/09-custom-props.html",
+    "focus": "custom props",
+    "scenario": "mobile web shell"
+  },
+  {
+    "type": "exercise",
+    "file": "26-build-configuration/01-build-configuration/exercises/10-getappstatus.html",
+    "focus": "getAppStatus",
+    "scenario": "B2B portal"
+  },
+  {
+    "type": "exercise",
+    "file": "26-build-configuration/01-build-configuration/exercises/11-navigatetourl.html",
+    "focus": "navigateToUrl",
+    "scenario": "e-commerce shell"
+  },
+  {
+    "type": "exercise",
+    "file": "26-build-configuration/01-build-configuration/exercises/12-layout-routes.html",
+    "focus": "layout routes",
+    "scenario": "admin portal"
+  },
+  {
+    "type": "exercise",
+    "file": "26-build-configuration/01-build-configuration/exercises/13-mountrootparcel.html",
+    "focus": "mountRootParcel",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "26-build-configuration/01-build-configuration/exercises/14-shared-auth.html",
+    "focus": "shared auth",
+    "scenario": "checkout micro-app"
+  },
+  {
+    "type": "exercise",
+    "file": "26-build-configuration/01-build-configuration/exercises/15-event-bus.html",
+    "focus": "event bus",
+    "scenario": "profile micro-app"
+  },
+  {
+    "type": "exercise",
+    "file": "26-build-configuration/01-build-configuration/exercises/16-react-lifecycles.html",
+    "focus": "react lifecycles",
+    "scenario": "design system CDN"
+  },
+  {
+    "type": "exercise",
+    "file": "26-build-configuration/01-build-configuration/exercises/17-vue-lifecycles.html",
+    "focus": "vue lifecycles",
+    "scenario": "multi-team platform"
+  },
+  {
+    "type": "exercise",
+    "file": "26-build-configuration/01-build-configuration/exercises/18-error-handlers.html",
+    "focus": "error handlers",
+    "scenario": "legacy migration"
+  },
+  {
+    "type": "exercise",
+    "file": "26-build-configuration/01-build-configuration/exercises/19-import-override.html",
+    "focus": "import override",
+    "scenario": "mobile web shell"
+  },
+  {
+    "type": "exercise",
+    "file": "26-build-configuration/01-build-configuration/exercises/20-systemjs-error.html",
+    "focus": "systemjs error",
+    "scenario": "B2B portal"
+  },
+  {
+    "type": "exercise",
+    "file": "26-build-configuration/01-build-configuration/exercises/21-path-routing.html",
+    "focus": "path routing",
+    "scenario": "e-commerce shell"
+  },
+  {
+    "type": "exercise",
+    "file": "26-build-configuration/01-build-configuration/exercises/22-lazy-load.html",
+    "focus": "lazy load",
+    "scenario": "admin portal"
+  },
+  {
+    "type": "exercise",
+    "file": "26-build-configuration/01-build-configuration/exercises/23-shared-react.html",
+    "focus": "shared react",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "26-build-configuration/01-build-configuration/exercises/24-fallback-ui.html",
+    "focus": "fallback ui",
+    "scenario": "checkout micro-app"
+  },
+  {
+    "type": "exercise",
+    "file": "26-build-configuration/01-build-configuration/exercises/25-final-challenge.html",
+    "focus": "final challenge",
+    "scenario": "profile micro-app"
+  },
+  {
+    "type": "template",
+    "file": "26-build-configuration/01-build-configuration/templates/01-root-shell.html",
+    "focus": "root shell",
+    "scenario": "e-commerce shell"
+  },
+  {
+    "type": "template",
+    "file": "26-build-configuration/01-build-configuration/templates/02-react-micro-app.html",
+    "focus": "react micro app",
+    "scenario": "admin portal"
+  },
+  {
+    "type": "template",
+    "file": "26-build-configuration/01-build-configuration/templates/03-vue-micro-app.html",
+    "focus": "vue micro app",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "template",
+    "file": "26-build-configuration/01-build-configuration/templates/04-angular-micro-app.html",
+    "focus": "angular micro app",
+    "scenario": "checkout micro-app"
+  },
+  {
+    "type": "template",
+    "file": "26-build-configuration/01-build-configuration/templates/05-layout-engine.html",
+    "focus": "layout engine",
+    "scenario": "profile micro-app"
+  },
+  {
+    "type": "template",
+    "file": "26-build-configuration/01-build-configuration/templates/06-import-map-starter.html",
+    "focus": "import map starter",
+    "scenario": "design system CDN"
+  },
+  {
+    "type": "template",
+    "file": "26-build-configuration/01-build-configuration/templates/07-parcel-widget.html",
+    "focus": "parcel widget",
+    "scenario": "multi-team platform"
+  },
+  {
+    "type": "template",
+    "file": "26-build-configuration/01-build-configuration/templates/08-utility-auth.html",
+    "focus": "utility auth",
+    "scenario": "legacy migration"
+  },
+  {
+    "type": "template",
+    "file": "26-build-configuration/01-build-configuration/templates/09-utility-api.html",
+    "focus": "utility api",
+    "scenario": "mobile web shell"
+  },
+  {
+    "type": "template",
+    "file": "26-build-configuration/01-build-configuration/templates/10-event-bus-kit.html",
+    "focus": "event bus kit",
+    "scenario": "B2B portal"
+  },
+  {
+    "type": "template",
+    "file": "26-build-configuration/01-build-configuration/templates/11-cross-framework.html",
+    "focus": "cross framework",
+    "scenario": "e-commerce shell"
+  },
+  {
+    "type": "template",
+    "file": "26-build-configuration/01-build-configuration/templates/12-protected-route.html",
+    "focus": "protected route",
+    "scenario": "admin portal"
+  },
+  {
+    "type": "template",
+    "file": "26-build-configuration/01-build-configuration/templates/13-error-fallback.html",
+    "focus": "error fallback",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "template",
+    "file": "26-build-configuration/01-build-configuration/templates/14-cdn-deploy.html",
+    "focus": "cdn deploy",
+    "scenario": "checkout micro-app"
+  },
+  {
+    "type": "template",
+    "file": "26-build-configuration/01-build-configuration/templates/15-local-override.html",
+    "focus": "local override",
+    "scenario": "profile micro-app"
+  },
+  {
+    "type": "template",
+    "file": "26-build-configuration/01-build-configuration/templates/16-webpack-system.html",
+    "focus": "webpack system",
+    "scenario": "design system CDN"
+  },
+  {
+    "type": "template",
+    "file": "26-build-configuration/01-build-configuration/templates/17-vite-notes.html",
+    "focus": "vite notes",
+    "scenario": "multi-team platform"
+  },
+  {
+    "type": "template",
+    "file": "26-build-configuration/01-build-configuration/templates/18-shared-design.html",
+    "focus": "shared design",
+    "scenario": "legacy migration"
+  },
+  {
+    "type": "template",
+    "file": "26-build-configuration/01-build-configuration/templates/19-observability.html",
+    "focus": "observability",
+    "scenario": "mobile web shell"
+  },
+  {
+    "type": "template",
+    "file": "26-build-configuration/01-build-configuration/templates/20-ci-pipeline.html",
+    "focus": "ci pipeline",
+    "scenario": "B2B portal"
+  },
+  {
+    "type": "template",
+    "file": "26-build-configuration/01-build-configuration/templates/21-perf-preload.html",
+    "focus": "perf preload",
+    "scenario": "e-commerce shell"
+  },
+  {
+    "type": "template",
+    "file": "26-build-configuration/01-build-configuration/templates/22-csp-notes.html",
+    "focus": "csp notes",
+    "scenario": "admin portal"
+  },
+  {
+    "type": "template",
+    "file": "26-build-configuration/01-build-configuration/templates/23-migration-stub.html",
+    "focus": "migration stub",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "template",
+    "file": "26-build-configuration/01-build-configuration/templates/24-devtools-setup.html",
+    "focus": "devtools setup",
+    "scenario": "checkout micro-app"
+  },
+  {
+    "type": "template",
+    "file": "26-build-configuration/01-build-configuration/templates/25-production-starter.html",
+    "focus": "production starter",
+    "scenario": "profile micro-app"
+  }
+]

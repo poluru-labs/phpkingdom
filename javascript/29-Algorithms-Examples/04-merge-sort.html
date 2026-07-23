@@ -1,0 +1,42 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 29-Algorithms-Examples
+  example: 04-merge-sort.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>04 — Merge Sort | phpkingdom.com</title>
+</head>
+<body>
+  <h1>04 — Merge Sort</h1>
+  <h2>Problem</h2>
+  <p>Divide the array in half, sort each half, then merge.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function mergeSort(arr) {
+  if (arr.length <= 1) return arr.slice();
+  const mid = Math.floor(arr.length / 2);
+  const left = mergeSort(arr.slice(0, mid));
+  const right = mergeSort(arr.slice(mid));
+  const out = [];
+  let i = 0, j = 0;
+  while (i < left.length && j < right.length) {
+    if (left[i] <= right[j]) out.push(left[i++]);
+    else out.push(right[j++]);
+  }
+  return out.concat(left.slice(i), right.slice(j));
+}
+const input = [38, 27, 43, 3, 9, 82, 10];
+document.getElementById("out").textContent =
+  "input:  " + JSON.stringify(input) + "\noutput: " + JSON.stringify(mergeSort(input));
+  </script>
+</body>
+</html>

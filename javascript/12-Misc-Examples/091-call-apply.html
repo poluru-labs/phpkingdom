@@ -1,0 +1,23 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 12-Misc-Examples
+  example: 091-call-apply.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>091 — call | phpkingdom.com</title>
+</head>
+<body>
+  <h1>091 — call</h1>
+  <pre id="out"></pre>
+  <script>
+function f(a){return this.n+a;} document.getElementById("out").textContent=f.call({n:1},2);
+  </script>
+</body>
+</html>

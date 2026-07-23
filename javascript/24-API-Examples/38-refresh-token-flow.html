@@ -1,0 +1,40 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 24-API-Examples
+  example: 38-refresh-token-flow.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>38 — Access + Refresh Token Flow | phpkingdom.com</title>
+</head>
+<body>
+  <h1>38 — Access + Refresh Token Flow</h1>
+  <h2>Problem</h2>
+  <p>Mock refreshing an expired access token.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+let accessToken = "expired";
+let refreshToken = "refresh-ok";
+async function refresh() {
+  if (refreshToken !== "refresh-ok") throw new Error("refresh failed");
+  accessToken = "access-new";
+  return accessToken;
+}
+async function apiCall() {
+  if (accessToken === "expired") await refresh();
+  return { data: "secret", token: accessToken };
+}
+apiCall().then((res) => {
+  document.getElementById("out").textContent = JSON.stringify(res);
+});
+  </script>
+</body>
+</html>

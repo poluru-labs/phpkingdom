@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/076-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 076 — fieldset disabled callback — Solution | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>Exercise 076 — fieldset disabled callback — Solution</h1>
+  <p class="meta">Implement formDisabledCallback.</p>
+  <h2>Solution</h2>
+  <p>Implement formDisabledCallback.</p>
+  <div id="demo"></div>
+  <pre id="out"></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+customElements.define("ex076-el", class extends HTMLElement {
+  connectedCallback() {
+    this.textContent = 'fieldset disabled callback';
+  }
+});
+document.getElementById("demo").innerHTML = "<ex076-el></ex076-el>";
+document.getElementById("out").textContent = 'Implement formDisabledCallback.';
+  </script>
+</body>
+</html>

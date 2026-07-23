@@ -1,0 +1,133 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: React Tutorials
+section title: API and Data
+topic title: Fetch Data
+content type: Example
+item number: 04
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Fetch Data Example 04 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ffedd5;
+      color: #9a3412;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Example 04</span>
+    <h1>Fetch Data</h1>
+    <p><strong>Section:</strong> API and Data</p>
+    <p><strong>Focus:</strong> Props Pass</p>
+    <p><strong>Scenario:</strong> e-commerce store</p>
+    <p>Study the React component/hooks pattern and adapt it to your UI.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>React</h2>
+        <pre><code>// Fetch Data — Example 04
+// Focus: props pass | Scenario: e-commerce store
+
+import { useEffect, useState } from &quot;react&quot;;
+
+export function useFetch(url) {
+  const [data, setData] = useState(null);
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() =&gt; {
+    let cancelled = false;
+    setLoading(true);
+    fetch(url)
+      .then((r) =&gt; {
+        if (!r.ok) throw new Error(String(r.status));
+        return r.json();
+      })
+      .then((json) =&gt; { if (!cancelled) setData(json); })
+      .catch((e) =&gt; { if (!cancelled) setError(e); })
+      .finally(() =&gt; { if (!cancelled) setLoading(false); });
+    return () =&gt; { cancelled = true; };
+  }, [url]);
+
+  return { data, error, loading };
+}</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Fetch Data
+- Practice: props pass
+- Scenario: e-commerce store
+- Prefer function components + Hooks over class components
+- Keep state local; lift only when siblings need to share
+- Keys must be stable and unique among siblings
+- Effects: declare dependencies; clean up subscriptions/timers
+- For shared UI state: Context / Zustand / Redux; for server state: React Query
+
+Useful commands:
+  npm create vite@latest my-app -- --template react
+  npm install
+  npm run dev
+  npm run build
+  npm run test</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This example focuses on <strong>Fetch Data</strong> in a e-commerce store context.</p>
+      <p>Prefer function components and Hooks, keep components focused, and choose the right state layer for UI vs server data.</p>
+    </section>
+  </main>
+</body>
+</html>

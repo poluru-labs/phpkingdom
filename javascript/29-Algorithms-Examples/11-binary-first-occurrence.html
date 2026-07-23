@@ -1,0 +1,42 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 29-Algorithms-Examples
+  example: 11-binary-first-occurrence.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>11 — Binary Search First Occurrence | phpkingdom.com</title>
+</head>
+<body>
+  <h1>11 — Binary Search First Occurrence</h1>
+  <h2>Problem</h2>
+  <p>In a sorted array with duplicates, find the first index of target.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function firstOccurrence(arr, target) {
+  let lo = 0, hi = arr.length - 1, ans = -1;
+  while (lo <= hi) {
+    const mid = (lo + hi) >> 1;
+    if (arr[mid] === target) { ans = mid; hi = mid - 1; }
+    else if (arr[mid] < target) lo = mid + 1;
+    else hi = mid - 1;
+  }
+  return ans;
+}
+const arr = [1, 2, 2, 2, 3, 4, 5];
+const target = 2;
+document.getElementById("out").textContent =
+  "array:  " + JSON.stringify(arr) + "\n" +
+  "target: " + target + "\n" +
+  "first index: " + firstOccurrence(arr, target);
+  </script>
+</body>
+</html>

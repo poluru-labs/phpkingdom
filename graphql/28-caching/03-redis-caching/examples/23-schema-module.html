@@ -1,0 +1,122 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: GraphQL with Node.js Tutorials
+section title: Caching
+topic title: GraphQL with Redis
+content type: Example
+item number: 23
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>GraphQL with Redis Example 23 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #fce7f3;
+      color: #9d174d;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Example 23</span>
+    <h1>GraphQL with Redis</h1>
+    <p><strong>Section:</strong> Caching</p>
+    <p><strong>Focus:</strong> Schema Module</p>
+    <p><strong>Scenario:</strong> social feed</p>
+    <p>Study the GraphQL schema/resolver pattern and adapt it to your API.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>GraphQL (Node.js)</h2>
+        <pre><code>// GraphQL with Redis — Example 23
+// Focus: schema module | Scenario: social feed
+
+import Redis from &quot;ioredis&quot;;
+const redis = new Redis(process.env.REDIS_URL);
+const resolvers = {
+  Query: {
+    product: async (_p, { id }) =&gt; {
+      const hit = await redis.get(`product:${id}`);
+      if (hit) return JSON.parse(hit);
+      const row = await db.products.findById(id);
+      await redis.set(`product:${id}`, JSON.stringify(row), &quot;EX&quot;, 60);
+      return row;
+    },
+  },
+};</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for GraphQL with Redis
+- Practice: schema module
+- Scenario: social feed
+- Keep resolvers thin; push logic into services
+- Use DataLoader to avoid N+1 nested queries
+- Put authz checks in context / field resolvers / directives
+- Prefer non-null carefully; return typed GraphQLError codes
+- Limit depth/complexity; deprecate before breaking changes
+
+Useful commands:
+  npm install @apollo/server graphql
+  npm install graphql-yoga  # alternative
+  node server.mjs
+  # query in Playground / Apollo Sandbox</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This example shows one way to apply <strong>GraphQL with Redis</strong> in a social feed context.</p>
+      <p>Evolve schemas with deprecations, protect against expensive queries, and batch nested loads with DataLoader.</p>
+    </section>
+  </main>
+</body>
+</html>

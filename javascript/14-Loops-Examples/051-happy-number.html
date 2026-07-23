@@ -1,0 +1,38 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 051-happy-number.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>051 — Happy Number | phpkingdom.com</title>
+</head>
+<body>
+  <h1>051 — Happy Number</h1>
+  <h2>Problem</h2>
+  <p>Detect a happy number (digit-square sum reaches 1).</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function next(n) {
+  let sum = 0;
+  while (n > 0) { const d = n % 10; sum += d * d; n = Math.floor(n / 10); }
+  return sum;
+}
+function isHappy(n) {
+  const seen = new Set();
+  while (n !== 1 && !seen.has(n)) { seen.add(n); n = next(n); }
+  return n === 1;
+}
+document.getElementById("out").textContent =
+  "19 → " + isHappy(19) + "\n2 → " + isHappy(2);
+  </script>
+</body>
+</html>

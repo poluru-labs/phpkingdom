@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/049-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 049 — Custom select-like API — Solution | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>Exercise 049 — Custom select-like API — Solution</h1>
+  <p class="meta">value property + change event (simple).</p>
+  <h2>Solution</h2>
+  <p>value property + change event (simple).</p>
+  <div id="demo"></div>
+  <pre id="out"></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+customElements.define("ex049-el", class extends HTMLElement {
+  connectedCallback() {
+    this.textContent = 'Custom select-like API';
+  }
+});
+document.getElementById("demo").innerHTML = "<ex049-el></ex049-el>";
+document.getElementById("out").textContent = 'value property + change event (simple).';
+  </script>
+</body>
+</html>

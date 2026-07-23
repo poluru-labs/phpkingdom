@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 19-Recursion-Examples
+  example: 13-tree-sum.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>13 — Tree Sum | phpkingdom.com</title>
+</head>
+<body>
+  <h1>13 — Tree Sum</h1>
+  <h2>Problem</h2>
+  <p>Sum all node values in a binary tree recursively.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const tree = { val: 1, left: { val: 2, left: { val: 4 }, right: null }, right: { val: 3, left: { val: 5 }, right: { val: 6 } } };
+function treeSum(node) {
+  if (!node) return 0;
+  return node.val + treeSum(node.left) + treeSum(node.right);
+}
+document.getElementById("out").textContent = "tree sum = " + treeSum(tree);
+  </script>
+</body>
+</html>

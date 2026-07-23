@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 09-Async/04-async-await
+  example: 02-try-catch-await.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>try/catch await | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Error Handling with await</h1>
+  <p>Use try/catch around awaited calls.</p>
+  <pre id="out"></pre>
+  <script>
+async function run() {
+  try {
+    await Promise.reject(new Error("failed await"));
+  } catch (err) {
+    document.getElementById("out").textContent = err.message;
+  }
+}
+run();
+  </script>
+</body>
+</html>

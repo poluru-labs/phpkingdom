@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/082-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 082 — Avatar initials — Solution | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>Exercise 082 — Avatar initials — Solution</h1>
+  <p class="meta">Show initials from name attr.</p>
+  <h2>Solution</h2>
+  <p>Show initials from name attr.</p>
+  <div id="demo"></div>
+  <pre id="out"></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+customElements.define("ex082-el", class extends HTMLElement {
+  connectedCallback() {
+    this.textContent = 'Avatar initials';
+  }
+});
+document.getElementById("demo").innerHTML = "<ex082-el></ex082-el>";
+document.getElementById("out").textContent = 'Show initials from name attr.';
+  </script>
+</body>
+</html>

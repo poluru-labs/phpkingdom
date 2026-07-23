@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 17-String-Examples
+  example: 46-excel-column.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>46 — Excel Column Title | phpkingdom.com</title>
+</head>
+<body>
+  <h1>46 — Excel Column Title</h1>
+  <h2>Problem</h2>
+  <p>Convert column number to Excel title (1 -> A, 28 -> AB).</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function convertToTitle(n) {
+  let out = "";
+  while (n > 0) {
+    n--;
+    out = String.fromCharCode(65 + (n % 26)) + out;
+    n = Math.floor(n / 26);
+  }
+  return out;
+}
+document.getElementById("out").textContent = convertToTitle(1) + ", " + convertToTitle(28) + ", " + convertToTitle(701);
+  </script>
+</body>
+</html>

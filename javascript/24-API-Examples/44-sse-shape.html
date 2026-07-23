@@ -1,0 +1,35 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 24-API-Examples
+  example: 44-sse-shape.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>44 — Server-Sent Events Shape | phpkingdom.com</title>
+</head>
+<body>
+  <h1>44 — Server-Sent Events Shape</h1>
+  <h2>Problem</h2>
+  <p>Listen to a stream of events with EventSource.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+document.getElementById("out").textContent =
+`const es = new EventSource("/api/stream");
+es.onmessage = (event) => {
+  console.log("message", event.data);
+};
+es.addEventListener("user.created", (event) => {
+  console.log(JSON.parse(event.data));
+});
+es.onerror = () => es.close();`;
+  </script>
+</body>
+</html>

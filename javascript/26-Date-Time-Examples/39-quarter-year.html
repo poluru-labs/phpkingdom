@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 26-Date-Time-Examples
+  example: 39-quarter-year.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>39 — Quarter of Year | phpkingdom.com</title>
+</head>
+<body>
+  <h1>39 — Quarter of Year</h1>
+  <h2>Problem</h2>
+  <p>Determine calendar quarter (Q1–Q4) from month index.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+
+function getQuarter(d) {
+  return Math.floor(d.getMonth() / 3) + 1;
+}
+const d = new Date(2024, 0, 15);
+document.getElementById("out").textContent = "Jan 15, 2024 is Q" + getQuarter(d);
+
+  </script>
+</body>
+</html>

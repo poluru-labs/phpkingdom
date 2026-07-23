@@ -1,0 +1,29 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 18-Object-Examples
+  example: 07-has-own.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>07 — Check Own Property | phpkingdom.com</title>
+</head>
+<body>
+  <h1>07 — Check Own Property</h1>
+  <h2>Problem</h2>
+  <p>Check whether a key exists as an own property.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const obj = { color: "teal" };
+document.getElementById("out").textContent =
+  Object.hasOwn(obj, "color") + " / " + Object.hasOwn(obj, "toString");
+  </script>
+</body>
+</html>

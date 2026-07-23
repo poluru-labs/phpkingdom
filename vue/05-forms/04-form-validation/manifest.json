@@ -1,0 +1,452 @@
+[
+  {
+    "type": "example",
+    "file": "05-forms/04-form-validation/examples/01-vite-create.html",
+    "focus": "vite create",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "example",
+    "file": "05-forms/04-form-validation/examples/02-script-setup.html",
+    "focus": "script setup",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "example",
+    "file": "05-forms/04-form-validation/examples/03-ref-reactive.html",
+    "focus": "ref reactive",
+    "scenario": "todo app"
+  },
+  {
+    "type": "example",
+    "file": "05-forms/04-form-validation/examples/04-v-model-form.html",
+    "focus": "v-model form",
+    "scenario": "e-commerce store"
+  },
+  {
+    "type": "example",
+    "file": "05-forms/04-form-validation/examples/05-v-for-list.html",
+    "focus": "v-for list",
+    "scenario": "blog platform"
+  },
+  {
+    "type": "example",
+    "file": "05-forms/04-form-validation/examples/06-v-if-show.html",
+    "focus": "v-if show",
+    "scenario": "admin console"
+  },
+  {
+    "type": "example",
+    "file": "05-forms/04-form-validation/examples/07-props-define.html",
+    "focus": "props define",
+    "scenario": "portfolio site"
+  },
+  {
+    "type": "example",
+    "file": "05-forms/04-form-validation/examples/08-emit-event.html",
+    "focus": "emit event",
+    "scenario": "chat widget"
+  },
+  {
+    "type": "example",
+    "file": "05-forms/04-form-validation/examples/09-slot-content.html",
+    "focus": "slot content",
+    "scenario": "learning app"
+  },
+  {
+    "type": "example",
+    "file": "05-forms/04-form-validation/examples/10-computed-value.html",
+    "focus": "computed value",
+    "scenario": "B2B portal"
+  },
+  {
+    "type": "example",
+    "file": "05-forms/04-form-validation/examples/11-watch-effect.html",
+    "focus": "watch effect",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "example",
+    "file": "05-forms/04-form-validation/examples/12-onmounted.html",
+    "focus": "onMounted",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "example",
+    "file": "05-forms/04-form-validation/examples/13-composable-hook.html",
+    "focus": "composable hook",
+    "scenario": "todo app"
+  },
+  {
+    "type": "example",
+    "file": "05-forms/04-form-validation/examples/14-vue-router.html",
+    "focus": "vue router",
+    "scenario": "e-commerce store"
+  },
+  {
+    "type": "example",
+    "file": "05-forms/04-form-validation/examples/15-route-params.html",
+    "focus": "route params",
+    "scenario": "blog platform"
+  },
+  {
+    "type": "example",
+    "file": "05-forms/04-form-validation/examples/16-pinia-store.html",
+    "focus": "pinia store",
+    "scenario": "admin console"
+  },
+  {
+    "type": "example",
+    "file": "05-forms/04-form-validation/examples/17-provide-inject.html",
+    "focus": "provide inject",
+    "scenario": "portfolio site"
+  },
+  {
+    "type": "example",
+    "file": "05-forms/04-form-validation/examples/18-fetch-api.html",
+    "focus": "fetch api",
+    "scenario": "chat widget"
+  },
+  {
+    "type": "example",
+    "file": "05-forms/04-form-validation/examples/19-axios-call.html",
+    "focus": "axios call",
+    "scenario": "learning app"
+  },
+  {
+    "type": "example",
+    "file": "05-forms/04-form-validation/examples/20-loading-state.html",
+    "focus": "loading state",
+    "scenario": "B2B portal"
+  },
+  {
+    "type": "example",
+    "file": "05-forms/04-form-validation/examples/21-teleport-modal.html",
+    "focus": "teleport modal",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "example",
+    "file": "05-forms/04-form-validation/examples/22-custom-directive.html",
+    "focus": "custom directive",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "example",
+    "file": "05-forms/04-form-validation/examples/23-typescript-props.html",
+    "focus": "typescript props",
+    "scenario": "todo app"
+  },
+  {
+    "type": "example",
+    "file": "05-forms/04-form-validation/examples/24-navigation-guard.html",
+    "focus": "navigation guard",
+    "scenario": "e-commerce store"
+  },
+  {
+    "type": "example",
+    "file": "05-forms/04-form-validation/examples/25-best-practice-recap.html",
+    "focus": "best practice recap",
+    "scenario": "blog platform"
+  },
+  {
+    "type": "exercise",
+    "file": "05-forms/04-form-validation/exercises/01-npm-create-vue.html",
+    "focus": "npm create vue",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "exercise",
+    "file": "05-forms/04-form-validation/exercises/02-hello-world.html",
+    "focus": "hello world",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "05-forms/04-form-validation/exercises/03-ref-counter.html",
+    "focus": "ref counter",
+    "scenario": "todo app"
+  },
+  {
+    "type": "exercise",
+    "file": "05-forms/04-form-validation/exercises/04-reactive-object.html",
+    "focus": "reactive object",
+    "scenario": "e-commerce store"
+  },
+  {
+    "type": "exercise",
+    "file": "05-forms/04-form-validation/exercises/05-v-bind-class.html",
+    "focus": "v-bind class",
+    "scenario": "blog platform"
+  },
+  {
+    "type": "exercise",
+    "file": "05-forms/04-form-validation/exercises/06-v-model-input.html",
+    "focus": "v-model input",
+    "scenario": "admin console"
+  },
+  {
+    "type": "exercise",
+    "file": "05-forms/04-form-validation/exercises/07-v-for-key.html",
+    "focus": "v-for key",
+    "scenario": "portfolio site"
+  },
+  {
+    "type": "exercise",
+    "file": "05-forms/04-form-validation/exercises/08-v-if-else.html",
+    "focus": "v-if else",
+    "scenario": "chat widget"
+  },
+  {
+    "type": "exercise",
+    "file": "05-forms/04-form-validation/exercises/09-defineprops.html",
+    "focus": "defineProps",
+    "scenario": "learning app"
+  },
+  {
+    "type": "exercise",
+    "file": "05-forms/04-form-validation/exercises/10-defineemits.html",
+    "focus": "defineEmits",
+    "scenario": "B2B portal"
+  },
+  {
+    "type": "exercise",
+    "file": "05-forms/04-form-validation/exercises/11-named-slot.html",
+    "focus": "named slot",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "exercise",
+    "file": "05-forms/04-form-validation/exercises/12-computed-fullname.html",
+    "focus": "computed fullname",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "05-forms/04-form-validation/exercises/13-watch-source.html",
+    "focus": "watch source",
+    "scenario": "todo app"
+  },
+  {
+    "type": "exercise",
+    "file": "05-forms/04-form-validation/exercises/14-watcheffect.html",
+    "focus": "watchEffect",
+    "scenario": "e-commerce store"
+  },
+  {
+    "type": "exercise",
+    "file": "05-forms/04-form-validation/exercises/15-onmounted-fetch.html",
+    "focus": "onMounted fetch",
+    "scenario": "blog platform"
+  },
+  {
+    "type": "exercise",
+    "file": "05-forms/04-form-validation/exercises/16-usecounter.html",
+    "focus": "useCounter",
+    "scenario": "admin console"
+  },
+  {
+    "type": "exercise",
+    "file": "05-forms/04-form-validation/exercises/17-createrouter.html",
+    "focus": "createRouter",
+    "scenario": "portfolio site"
+  },
+  {
+    "type": "exercise",
+    "file": "05-forms/04-form-validation/exercises/18-route-param.html",
+    "focus": "route param",
+    "scenario": "chat widget"
+  },
+  {
+    "type": "exercise",
+    "file": "05-forms/04-form-validation/exercises/19-beforeeach.html",
+    "focus": "beforeEach",
+    "scenario": "learning app"
+  },
+  {
+    "type": "exercise",
+    "file": "05-forms/04-form-validation/exercises/20-definestore.html",
+    "focus": "defineStore",
+    "scenario": "B2B portal"
+  },
+  {
+    "type": "exercise",
+    "file": "05-forms/04-form-validation/exercises/21-axios-get.html",
+    "focus": "axios get",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "exercise",
+    "file": "05-forms/04-form-validation/exercises/22-error-state.html",
+    "focus": "error state",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "05-forms/04-form-validation/exercises/23-teleport.html",
+    "focus": "Teleport",
+    "scenario": "todo app"
+  },
+  {
+    "type": "exercise",
+    "file": "05-forms/04-form-validation/exercises/24-typed-props.html",
+    "focus": "typed props",
+    "scenario": "e-commerce store"
+  },
+  {
+    "type": "exercise",
+    "file": "05-forms/04-form-validation/exercises/25-final-challenge.html",
+    "focus": "final challenge",
+    "scenario": "blog platform"
+  },
+  {
+    "type": "template",
+    "file": "05-forms/04-form-validation/templates/01-vite-starter.html",
+    "focus": "vite starter",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "template",
+    "file": "05-forms/04-form-validation/templates/02-todo-app.html",
+    "focus": "todo app",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "template",
+    "file": "05-forms/04-form-validation/templates/03-counter-widget.html",
+    "focus": "counter widget",
+    "scenario": "todo app"
+  },
+  {
+    "type": "template",
+    "file": "05-forms/04-form-validation/templates/04-form-login.html",
+    "focus": "form login",
+    "scenario": "e-commerce store"
+  },
+  {
+    "type": "template",
+    "file": "05-forms/04-form-validation/templates/05-product-list.html",
+    "focus": "product list",
+    "scenario": "blog platform"
+  },
+  {
+    "type": "template",
+    "file": "05-forms/04-form-validation/templates/06-modal-teleport.html",
+    "focus": "modal teleport",
+    "scenario": "admin console"
+  },
+  {
+    "type": "template",
+    "file": "05-forms/04-form-validation/templates/07-tabs-dynamic.html",
+    "focus": "tabs dynamic",
+    "scenario": "portfolio site"
+  },
+  {
+    "type": "template",
+    "file": "05-forms/04-form-validation/templates/08-blog-router.html",
+    "focus": "blog router",
+    "scenario": "chat widget"
+  },
+  {
+    "type": "template",
+    "file": "05-forms/04-form-validation/templates/09-pinia-cart.html",
+    "focus": "pinia cart",
+    "scenario": "learning app"
+  },
+  {
+    "type": "template",
+    "file": "05-forms/04-form-validation/templates/10-fetch-users.html",
+    "focus": "fetch users",
+    "scenario": "B2B portal"
+  },
+  {
+    "type": "template",
+    "file": "05-forms/04-form-validation/templates/11-axios-client.html",
+    "focus": "axios client",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "template",
+    "file": "05-forms/04-form-validation/templates/12-auth-guard.html",
+    "focus": "auth guard",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "template",
+    "file": "05-forms/04-form-validation/templates/13-composable-fetch.html",
+    "focus": "composable fetch",
+    "scenario": "todo app"
+  },
+  {
+    "type": "template",
+    "file": "05-forms/04-form-validation/templates/14-provide-theme.html",
+    "focus": "provide theme",
+    "scenario": "e-commerce store"
+  },
+  {
+    "type": "template",
+    "file": "05-forms/04-form-validation/templates/15-suspense-page.html",
+    "focus": "suspense page",
+    "scenario": "blog platform"
+  },
+  {
+    "type": "template",
+    "file": "05-forms/04-form-validation/templates/16-custom-focus.html",
+    "focus": "custom focus",
+    "scenario": "admin console"
+  },
+  {
+    "type": "template",
+    "file": "05-forms/04-form-validation/templates/17-i18n-notes.html",
+    "focus": "i18n notes",
+    "scenario": "portfolio site"
+  },
+  {
+    "type": "template",
+    "file": "05-forms/04-form-validation/templates/18-ts-sfc.html",
+    "focus": "ts sfc",
+    "scenario": "chat widget"
+  },
+  {
+    "type": "template",
+    "file": "05-forms/04-form-validation/templates/19-pinia-persisted.html",
+    "focus": "pinia persisted",
+    "scenario": "learning app"
+  },
+  {
+    "type": "template",
+    "file": "05-forms/04-form-validation/templates/20-error-boundary.html",
+    "focus": "error boundary",
+    "scenario": "B2B portal"
+  },
+  {
+    "type": "template",
+    "file": "05-forms/04-form-validation/templates/21-perf-v-memo.html",
+    "focus": "perf v-memo",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "template",
+    "file": "05-forms/04-form-validation/templates/22-nested-routes.html",
+    "focus": "nested routes",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "template",
+    "file": "05-forms/04-form-validation/templates/23-checkbox-form.html",
+    "focus": "checkbox form",
+    "scenario": "todo app"
+  },
+  {
+    "type": "template",
+    "file": "05-forms/04-form-validation/templates/24-vue-query.html",
+    "focus": "vue query",
+    "scenario": "e-commerce store"
+  },
+  {
+    "type": "template",
+    "file": "05-forms/04-form-validation/templates/25-production-starter.html",
+    "focus": "production starter",
+    "scenario": "blog platform"
+  }
+]

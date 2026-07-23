@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 001-print-1-to-n.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>001 — Print 1 to N | phpkingdom.com</title>
+</head>
+<body>
+  <h1>001 — Print 1 to N</h1>
+  <h2>Problem</h2>
+  <p>Print numbers from 1 to N using a for loop.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const N = 10;
+let line = [];
+for (let i = 1; i <= N; i++) line.push(i);
+document.getElementById("out").textContent = line.join(" ");
+  </script>
+</body>
+</html>

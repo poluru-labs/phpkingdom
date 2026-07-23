@@ -1,0 +1,136 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 22-Components-Examples
+  example: 23-accordion.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>23 — Accordion | phpkingdom.com</title>
+  <link rel="stylesheet" href="css/base.css">
+  <style>
+    .c-accordion { display: grid; gap: 0.5rem; }
+    .c-accordion__item {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      background: var(--surface);
+    }
+    .c-accordion__trigger {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.75rem 0.85rem;
+      border: none;
+      background: transparent;
+      font: inherit;
+      font-weight: 600;
+      text-align: left;
+      cursor: pointer;
+    }
+    .c-accordion__trigger:hover { background: var(--accent-soft); }
+    .c-accordion__icon {
+      color: var(--muted);
+      transition: transform 0.2s var(--ease);
+    }
+    .c-accordion__trigger[aria-expanded="true"] .c-accordion__icon {
+      transform: rotate(180deg);
+    }
+    .c-accordion__panel {
+      padding: 0 0.85rem 0.85rem;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .c-accordion__panel[hidden] { display: none; }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <a class="back" href="index.html">← Components</a>
+    <h1>23 — Accordion</h1>
+    <p class="lead">Expandable sections with one-or-many open pattern.</p>
+    <section class="panel">
+      <h2>Demo</h2>
+      <div id="mount"></div>
+    </section>
+    <section class="panel">
+      <h2>Events / State</h2>
+      <pre class="log" id="log">Ready.</pre>
+    </section>
+  </main>
+  <script>
+    const logEl = document.getElementById("log");
+    function log(msg) { logEl.textContent = msg; }
+
+    function createAccordion({ items = [], allowMultiple = false } = {}) {
+      const openSet = new Set();
+      const wrap = document.createElement("div");
+      wrap.className = "c-accordion";
+
+      items.forEach((item, i) => {
+        const section = document.createElement("div");
+        section.className = "c-accordion__item";
+
+        const trigger = document.createElement("button");
+        trigger.type = "button";
+        trigger.className = "c-accordion__trigger";
+        trigger.setAttribute("aria-expanded", "false");
+        trigger.id = "acc-trigger-" + i;
+
+        const title = document.createElement("span");
+        title.textContent = item.title;
+        const icon = document.createElement("span");
+        icon.className = "c-accordion__icon";
+        icon.textContent = "▾";
+        trigger.append(title, icon);
+
+        const panel = document.createElement("div");
+        panel.className = "c-accordion__panel";
+        panel.hidden = true;
+        panel.id = "acc-panel-" + i;
+        panel.setAttribute("role", "region");
+        panel.setAttribute("aria-labelledby", trigger.id);
+        panel.textContent = item.content;
+
+        trigger.addEventListener("click", () => {
+          const isOpen = openSet.has(i);
+          if (!allowMultiple) openSet.clear();
+          if (isOpen) openSet.delete(i);
+          else openSet.add(i);
+          render();
+          log((isOpen ? "collapse" : "expand") + ": " + item.title);
+        });
+
+        section.append(trigger, panel);
+        wrap.appendChild(section);
+      });
+
+      function render() {
+        wrap.querySelectorAll(".c-accordion__trigger").forEach((tr, i) => {
+          const open = openSet.has(i);
+          tr.setAttribute("aria-expanded", open ? "true" : "false");
+          tr.nextElementSibling.hidden = !open;
+        });
+      }
+
+      return { el: wrap, open: (i) => { if (!allowMultiple) openSet.clear(); openSet.add(i); render(); } };
+    }
+
+    document.getElementById("mount").appendChild(createAccordion({
+      items: [
+        { title: "What is vanilla JS?", content: "Plain JavaScript without frameworks — ideal for learning how UI primitives work under the hood." },
+        { title: "Why factory functions?", content: "They encapsulate DOM creation and return a small public API (el, methods) without classes or build tools." },
+        { title: "Accessibility tips", content: "Use roles, aria-expanded, keyboard handlers, and focus management for overlays and menus." }
+      ]
+    }).el);
+  </script>
+</body>
+</html>

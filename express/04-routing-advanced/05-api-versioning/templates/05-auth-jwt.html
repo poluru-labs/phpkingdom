@@ -1,0 +1,120 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Express.js Tutorials
+section title: Routing Advanced
+topic title: API Versioning
+content type: Template
+item number: 05
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>API Versioning Template 05 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #e0e7ff;
+      color: #3730a3;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Template 05</span>
+    <h1>API Versioning</h1>
+    <p><strong>Section:</strong> Routing Advanced</p>
+    <p><strong>Focus:</strong> Auth Jwt</p>
+    <p><strong>Scenario:</strong> blog API</p>
+    <p>Use this scaffold as a starting point for servers, routers, or API modules.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Express</h2>
+        <pre><code>// API Versioning — Template 05
+// Focus: auth jwt | Scenario: blog API
+
+const express = require(&quot;express&quot;);
+const v1 = express.Router();
+const v2 = express.Router();
+
+v1.get(&quot;/items&quot;, (req, res) =&gt; res.json({ version: 1, items: [] }));
+v2.get(&quot;/items&quot;, (req, res) =&gt; res.json({ version: 2, data: { items: [] } }));
+
+const app = express();
+app.use(&quot;/api/v1&quot;, v1);
+app.use(&quot;/api/v2&quot;, v2);
+// Prefer URL versioning for public APIs; headers also work</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for API Versioning
+- Practice: auth jwt
+- Scenario: blog API
+- Keep route handlers thin; push logic into controllers/services
+- Always attach final 4-arg error middleware
+- Validate input; load secrets from environment variables
+- Export app separately from listen() for easier testing
+
+Useful commands:
+  npm init -y
+  npm install express
+  node --watch server.js
+  curl http://localhost:3000/health
+  npx jest   # or node --test / mocha + supertest</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This template shows one way to apply <strong>API Versioning</strong> in a blog api context.</p>
+      <p>Keep routes thin, push logic into services, and always attach a final error middleware.</p>
+    </section>
+  </main>
+</body>
+</html>

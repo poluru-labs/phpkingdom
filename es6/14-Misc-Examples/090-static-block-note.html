@@ -1,0 +1,27 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Misc-Examples
+  example: 090-static-block-note.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>090 — Static block | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>090 — Static block</h1>
+  <p class="meta">static { } initialization.</p>
+  <p>static { } initialization.</p>
+<pre id="out"></pre>
+  <script>
+class C{ static v; static { this.v=3; } } document.getElementById('out').textContent=String(C.v);
+  </script>
+</body>
+</html>

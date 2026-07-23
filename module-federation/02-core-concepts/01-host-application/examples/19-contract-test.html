@@ -1,0 +1,131 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Module Federation Tutorials
+section title: Core Concepts
+topic title: Host Application
+content type: Example
+item number: 19
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Host Application Example 19 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ffedd5;
+      color: #9a3412;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Example 19</span>
+    <h1>Host Application</h1>
+    <p><strong>Section:</strong> Core Concepts</p>
+    <p><strong>Focus:</strong> Contract Test</p>
+    <p><strong>Scenario:</strong> mobile web shell</p>
+    <p>Study the host/remote federation pattern and adapt it to your micro-frontend setup.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Module Federation</h2>
+        <pre><code>// Host Application — Example 19
+// Focus: contract test | Scenario: mobile web shell
+
+// Host = composition root: layout, routing, remotes map, shared deps
+
+const { ModuleFederationPlugin } = require(&quot;webpack&quot;).container;
+
+module.exports = {
+  output: { uniqueName: &quot;shell&quot;, publicPath: &quot;auto&quot; },
+  plugins: [
+    new ModuleFederationPlugin({
+      name: &quot;shell&quot;,
+      remotes: {
+        products: &quot;products@http://localhost:3002/remoteEntry.js&quot;,
+        cart: &quot;cart@http://localhost:3003/remoteEntry.js&quot;,
+      },
+      shared: {
+        react: { singleton: true, requiredVersion: &quot;^18.0.0&quot;, eager: true },
+        &quot;react-dom&quot;: { singleton: true, requiredVersion: &quot;^18.0.0&quot;, eager: true },
+      },
+    }),
+  ],
+};
+
+// hosts/shell/src/App.jsx
+const ProductList = React.lazy(() =&gt; import(&quot;products/ProductList&quot;));</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Host Application
+- Practice: contract test
+- Scenario: mobile web shell
+- Share framework runtimes as singletons with requiredVersion
+- Load remotes lazily; wrap with error boundaries / fallbacks
+- Deploy remotes independently; version remoteEntry URLs carefully
+- Align CORS and CSP for cross-origin remoteEntry.js
+
+Useful commands:
+  npm install -D webpack webpack-cli webpack-dev-server
+  # run host + remote on different ports
+  npx webpack serve --config webpack.host.js --port 3000
+  npx webpack serve --config webpack.remote.js --port 3002</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This example shows one way to apply <strong>Host Application</strong> in a mobile web shell context.</p>
+      <p>Keep remotes independently deployable, share carefully, and always plan for remote downtime.</p>
+    </section>
+  </main>
+</body>
+</html>

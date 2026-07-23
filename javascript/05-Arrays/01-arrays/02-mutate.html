@@ -1,0 +1,29 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 05-Arrays/01-arrays
+  example: 02-mutate.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Mutate Arrays | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Add and Remove Items</h1>
+  <p>push, pop, shift, unshift.</p>
+  <pre id="out"></pre>
+  <script>
+const nums = [2, 3];
+nums.unshift(1);
+nums.push(4);
+nums.pop();
+document.getElementById("out").textContent = nums.join(", ");
+  </script>
+</body>
+</html>

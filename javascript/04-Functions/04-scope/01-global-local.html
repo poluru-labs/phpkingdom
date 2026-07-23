@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 04-Functions/04-scope
+  example: 01-global-local.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Global Local | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Global vs Local Scope</h1>
+  <p>Local variables hide outer names.</p>
+  <pre id="out"></pre>
+  <script>
+const site = "global";
+function demo() {
+  const site = "local";
+  return site;
+}
+document.getElementById("out").textContent = demo() + " / " + site;
+  </script>
+</body>
+</html>

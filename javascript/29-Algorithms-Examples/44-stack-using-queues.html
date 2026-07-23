@@ -1,0 +1,44 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 29-Algorithms-Examples
+  example: 44-stack-using-queues.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>44 — Stack Using Queues | phpkingdom.com</title>
+</head>
+<body>
+  <h1>44 — Stack Using Queues</h1>
+  <h2>Problem</h2>
+  <p>Implement LIFO stack using two queues.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+class StackUsingQueues {
+  constructor() { this.q1 = []; this.q2 = []; }
+  push(x) {
+    this.q2.push(x);
+    while (this.q1.length) this.q2.push(this.q1.shift());
+    [this.q1, this.q2] = [this.q2, this.q1];
+  }
+  pop() { return this.q1.shift(); }
+  top() { return this.q1[0]; }
+  empty() { return this.q1.length === 0; }
+}
+const st = new StackUsingQueues();
+[1, 2, 3].forEach(x => st.push(x));
+document.getElementById("out").textContent =
+  "push 1,2,3\n" +
+  "top: " + st.top() + "\n" +
+  "pop: " + st.pop() + "\n" +
+  "top: " + st.top();
+  </script>
+</body>
+</html>

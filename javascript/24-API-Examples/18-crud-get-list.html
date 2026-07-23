@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 24-API-Examples
+  example: 18-crud-get-list.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>18 — CRUD: List Resources | phpkingdom.com</title>
+</head>
+<body>
+  <h1>18 — CRUD: List Resources</h1>
+  <h2>Problem</h2>
+  <p>GET collection endpoint pattern.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+async function listUsers() {
+  // return fetch("/api/users").then(r => r.json())
+  return [
+    { id: 1, name: "Ada" },
+    { id: 2, name: "Lin" }
+  ];
+}
+listUsers().then((users) => {
+  document.getElementById("out").textContent = JSON.stringify(users, null, 2);
+});
+  </script>
+</body>
+</html>

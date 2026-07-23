@@ -1,0 +1,44 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 25-Error-Handling-Examples
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>25-Error-Handling-Examples | phpkingdom.com</title>
+  <style>
+    body { font-family: Georgia, "Times New Roman", serif; max-width: 760px; margin: 2rem auto; padding: 0 1.25rem; line-height: 1.6; color: #1a1a1a; }
+    h1 { font-size: 1.75rem; margin-bottom: 0.35rem; }
+    .meta { color: #555; font-size: 0.95rem; margin-bottom: 1.25rem; }
+    .note { background: #f0f7fb; padding: 0.75rem 1rem; border-left: 3px solid #0f766e; margin: 1rem 0; }
+    .demo { margin: 1rem 0; padding: 1rem; border: 1px dashed #94a3b8; }
+    pre, code { font-family: ui-monospace, Menlo, monospace; }
+    pre { background: #111827; color: #e5e7eb; padding: 0.85rem 1rem; overflow: auto; }
+    button, input, select, textarea { font: inherit; padding: 0.4rem 0.55rem; }
+    button { cursor: pointer; background: #0f766e; color: #fff; border: 0; padding: 0.55rem 1rem; }
+    #out { white-space: pre-wrap; background: #f4f4f4; padding: 0.75rem; min-height: 2rem; }
+    a { color: #0f766e; }
+    footer { border-top: 1px solid #ccc; padding-top: 1rem; margin-top: 2rem; color: #555; font-size: 0.95rem; }
+
+    .brand { color:#0f766e; font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    ol { line-height: 1.75; }
+  </style>
+</head>
+<body>
+  <div class="brand">phpkingdom.com</div>
+  <h1>25-Error-Handling-Examples</h1>
+  <p class="meta">50 examples. Minimal HTML — focus on the script.</p>
+  <p><a href="../index.html">← JavaScript Tutorials</a></p>
+  <ol><li><a href="01-throw-error.html">01 — Throw Error</a></li><li><a href="02-try-catch.html">02 — Try / Catch</a></li><li><a href="03-try-catch-finally.html">03 — Try / Catch / Finally</a></li><li><a href="04-custom-error-class.html">04 — Custom Error Subclass</a></li><li><a href="05-instanceof-error.html">05 — instanceof Error</a></li><li><a href="06-rethrow.html">06 — Rethrow</a></li><li><a href="07-json-parse-error.html">07 — JSON.parse Errors</a></li><li><a href="08-defensive-checks.html">08 — Defensive Checks</a></li><li><a href="09-optional-chaining.html">09 — Optional Chaining</a></li><li><a href="10-assert-helper.html">10 — Assert Helper</a></li><li><a href="11-result-ok-err.html">11 — Result ok / err Pattern</a></li><li><a href="12-async-await-trycatch.html">12 — Async/Await Try/Catch</a></li><li><a href="13-promise-reject.html">13 — Promise.reject</a></li><li><a href="14-promise-all-settled.html">14 — Promise.allSettled</a></li><li><a href="15-retry-helper.html">15 — Retry Helper</a></li><li><a href="16-timeout-error.html">16 — Timeout Error</a></li><li><a href="17-aggregate-error.html">17 — AggregateError</a></li><li><a href="18-type-error.html">18 — TypeError</a></li><li><a href="19-range-error.html">19 — RangeError</a></li><li><a href="20-syntax-error-eval.html">20 — SyntaxError</a></li><li><a href="21-error-cause.html">21 — error.cause</a></li><li><a href="22-guard-clauses.html">22 — Guard Clauses</a></li><li><a href="23-cleanup-finally.html">23 — Cleanup in Finally</a></li><li><a href="24-user-friendly-messages.html">24 — User-Friendly Messages</a></li><li><a href="25-mock-fetch-error.html">25 — Mock Fetch Error Status</a></li><li><a href="26-window-onerror.html">26 — window.onerror Hook</a></li><li><a href="27-unhandled-rejection.html">27 — unhandledrejection Hook</a></li><li><a href="28-error-name-message.html">28 — Error name and message</a></li><li><a href="29-error-stack.html">29 — Error Stack</a></li><li><a href="30-catch-optional-binding.html">30 — Optional Catch Binding</a></li><li><a href="31-finally-return.html">31 — Finally vs Return</a></li><li><a href="32-nested-try-catch.html">32 — Nested Try/Catch</a></li><li><a href="33-promise-catch.html">33 — Promise.catch</a></li><li><a href="34-promise-then-reject.html">34 — Promise.then Rejection Handler</a></li><li><a href="35-throw-in-async.html">35 — Throw in Async Function</a></li><li><a href="36-reject-vs-throw.html">36 — reject vs throw in Promise</a></li><li><a href="37-validate-early.html">37 — Validate Early</a></li><li><a href="38-null-undefined-guard.html">38 — Null / Undefined Guard</a></li><li><a href="39-array-bounds-check.html">39 — Array Bounds Check</a></li><li><a href="40-isnan-check.html">40 — Number.isNaN Check</a></li><li><a href="41-typeof-guard.html">41 — typeof Guard</a></li><li><a href="42-has-own-property.html">42 — hasOwnProperty Check</a></li><li><a href="43-error-in-loop.html">43 — Errors in a Loop</a></li><li><a href="44-wrap-sync-safe.html">44 — Wrap Sync Function Safely</a></li><li><a href="45-wrap-async-safe.html">45 — Wrap Async Function Safely</a></li><li><a href="46-fallback-on-error.html">46 — Fallback on Error</a></li><li><a href="47-log-and-continue.html">47 — Log and Continue</a></li><li><a href="48-http-status-messages.html">48 — HTTP Status Messages</a></li><li><a href="49-error-boundary-lite.html">49 — Light Error Boundary</a></li><li><a href="50-error-handling-checklist.html">50 — Error Handling Checklist</a></li></ol>
+  <footer>
+    <p>&copy; 2026 phpkingdom.com · Subrahmanyam Poluru · <a href="https://polurus.com">polurus.com</a></p>
+  </footer>
+</body>
+</html>

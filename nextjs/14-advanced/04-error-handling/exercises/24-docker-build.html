@@ -1,0 +1,132 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Next.js Tutorials
+section title: Advanced
+topic title: Error Handling
+content type: Exercise
+item number: 24
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Error Handling Exercise 24 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ffedd5;
+      color: #9a3412;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Exercise 24</span>
+    <h1>Error Handling</h1>
+    <p><strong>Section:</strong> Advanced</p>
+    <p><strong>Focus:</strong> Docker Build</p>
+    <p><strong>Scenario:</strong> e-commerce store</p>
+    <p>Implement the focus in a local create-next-app project and verify in the browser.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Next.js</h2>
+        <pre><code>// Error Handling — Exercise 24
+// Focus: docker build | Scenario: e-commerce store
+
+// app/dashboard/error.tsx
+&quot;use client&quot;;
+
+export default function Error({
+  error,
+  reset,
+}: {
+  error: Error &amp; { digest?: string };
+  reset: () =&gt; void;
+}) {
+  return (
+    &lt;div&gt;
+      &lt;h2&gt;Something went wrong&lt;/h2&gt;
+      &lt;p&gt;{error.message}&lt;/p&gt;
+      &lt;button type=&quot;button&quot; onClick={() =&gt; reset()}&gt;
+        Try again
+      &lt;/button&gt;
+    &lt;/div&gt;
+  );
+}
+
+// app/global-error.tsx wraps the root layout</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Error Handling
+- Practice: docker build
+- Scenario: e-commerce store
+- Prefer App Router: app/, layout.tsx, page.tsx, loading.tsx, error.tsx
+- Default to Server Components; add &quot;use client&quot; only when needed
+- Cache intentionally: fetch options, revalidate, tags, no-store
+- Use Route Handlers / Server Actions for backend work in the same app
+- Optimize with next/image, next/font, and Metadata API
+
+Useful commands:
+  npx create-next-app@latest
+  npm run dev
+  npm run build &amp;&amp; npm start
+  npx next lint
+  ANALYZE=true npm run build  # with @next/bundle-analyzer</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This exercise shows one way to apply <strong>Error Handling</strong> in a e-commerce store context.</p>
+      <p>Keep Server Components as the default, cache deliberately, and ship with Metadata + image/font optimization.</p>
+    </section>
+  </main>
+</body>
+</html>

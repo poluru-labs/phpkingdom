@@ -1,0 +1,34 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 20-DOM-Examples
+  example: 24-target-vs-current.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>24 — event.target vs currentTarget | phpkingdom.com</title>
+</head>
+<body>
+  <h1>24 — event.target vs currentTarget</h1>
+  <h2>Problem</h2>
+  <p>See which element was clicked vs which listener is running.</p>
+  <h2>Demo</h2>
+  <div id="wrap" style="padding:16px;border:1px solid #333">
+    Wrap <button id="inner">Inner</button>
+  </div>
+  <pre id="out"></pre>
+  <script>
+document.getElementById("wrap").addEventListener("click", (e) => {
+  document.getElementById("out").textContent =
+    "target=" + e.target.id +
+    "\ncurrentTarget=" + e.currentTarget.id;
+});
+  </script>
+</body>
+</html>

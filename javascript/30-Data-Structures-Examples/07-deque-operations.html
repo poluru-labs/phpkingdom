@@ -1,0 +1,40 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 30-Data-Structures-Examples
+  example: 07-deque-operations.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>07 — Deque (Double-Ended Queue) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>07 — Deque (Double-Ended Queue)</h1>
+  <h2>Problem</h2>
+  <p>Deque with push/pop at both front and back using an array.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+class Deque {
+  constructor() { this.items = []; }
+  pushFront(x) { this.items.unshift(x); }
+  pushBack(x) { this.items.push(x); }
+  popFront() { return this.items.shift(); }
+  popBack() { return this.items.pop(); }
+}
+const d = new Deque();
+d.pushBack(2); d.pushFront(1); d.pushBack(3);
+const lines = ["pushBack 2, pushFront 1, pushBack 3"];
+lines.push("popFront = " + d.popFront());
+lines.push("popBack = " + d.popBack());
+lines.push("remaining = [" + d.items.join(", ") + "]");
+document.getElementById("out").textContent = lines.join("\n");
+  </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Misc-Examples
+  example: 007-attach-shadow-open.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>007 — attach-shadow-open | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>007 — attach-shadow-open</h1>
+  <p class="meta">attachShadow({mode:'open'})</p>
+  <p>attachShadow({mode:'open'})</p>
+<pre id="out"></pre>
+  <script>
+const el = document.createElement("div");
+el.attachShadow({mode:"open"}).textContent = "shadow";
+document.getElementById("out").textContent = el.shadowRoot.textContent;
+  </script>
+</body>
+</html>

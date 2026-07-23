@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 16-Array-Examples
+  example: 12-intersection.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>12 — Array Intersection | phpkingdom.com</title>
+</head>
+<body>
+  <h1>12 — Array Intersection</h1>
+  <h2>Problem</h2>
+  <p>Find common elements between two arrays (unique).</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function intersection(a, b) {
+  const setB = new Set(b);
+  return [...new Set(a)].filter((x) => setB.has(x));
+}
+document.getElementById("out").textContent = intersection([1,2,2,3], [2,3,4]).join(", ");
+  </script>
+</body>
+</html>

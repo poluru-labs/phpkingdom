@@ -1,0 +1,40 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 29-Algorithms-Examples
+  example: 47-lower-bound.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>47 — Lower Bound (Binary Search) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>47 — Lower Bound (Binary Search)</h1>
+  <h2>Problem</h2>
+  <p>First index where arr[i] >= target in a sorted array.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function lowerBound(arr, target) {
+  let lo = 0, hi = arr.length;
+  while (lo < hi) {
+    const mid = (lo + hi) >> 1;
+    if (arr[mid] < target) lo = mid + 1;
+    else hi = mid;
+  }
+  return lo;
+}
+const arr = [1, 2, 4, 4, 5];
+const targets = [4, 0, 6];
+document.getElementById("out").textContent =
+  "array: " + JSON.stringify(arr) + "\n" +
+  targets.map(t => "lower bound of " + t + " => index " + lowerBound(arr, t)).join("\n");
+  </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 21-Events-Examples
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>21-Events-Examples | phpkingdom.com</title>
+  <style>
+    body { font-family: Georgia, "Times New Roman", serif; max-width: 760px; margin: 2rem auto; padding: 0 1.25rem; line-height: 1.6; color: #1a1a1a; }
+    h1 { font-size: 1.75rem; margin-bottom: 0.35rem; }
+    .meta { color: #555; font-size: 0.95rem; margin-bottom: 1.25rem; }
+    .note { background: #f0f7fb; padding: 0.75rem 1rem; border-left: 3px solid #0f766e; margin: 1rem 0; }
+    .demo { margin: 1rem 0; padding: 1rem; border: 1px dashed #94a3b8; }
+    pre, code { font-family: ui-monospace, Menlo, monospace; }
+    pre { background: #111827; color: #e5e7eb; padding: 0.85rem 1rem; overflow: auto; }
+    button, input, select, textarea { font: inherit; padding: 0.4rem 0.55rem; }
+    button { cursor: pointer; background: #0f766e; color: #fff; border: 0; padding: 0.55rem 1rem; }
+    #out { white-space: pre-wrap; background: #f4f4f4; padding: 0.75rem; min-height: 2rem; }
+    a { color: #0f766e; }
+    footer { border-top: 1px solid #ccc; padding-top: 1rem; margin-top: 2rem; color: #555; font-size: 0.95rem; }
+
+    .brand { color:#0f766e; font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    ol { line-height: 1.75; }
+  </style>
+</head>
+<body>
+  <div class="brand">phpkingdom.com</div>
+  <h1>21-Events-Examples</h1>
+  <p class="meta">50 examples. Minimal HTML — focus on the script.</p>
+  <p><a href="../index.html">← JavaScript Tutorials</a></p>
+  <ol><li><a href="01-click.html">01 — Click Event</a></li><li><a href="02-dblclick.html">02 — Double Click</a></li><li><a href="03-mousedown-mouseup.html">03 — mousedown / mouseup</a></li><li><a href="04-mouseenter-leave.html">04 — mouseenter / mouseleave</a></li><li><a href="05-mouseover-out.html">05 — mouseover / mouseout Bubbling</a></li><li><a href="06-mousemove.html">06 — mousemove Coordinates</a></li><li><a href="07-contextmenu.html">07 — contextmenu (Right-Click)</a></li><li><a href="08-keydown.html">08 — keydown</a></li><li><a href="09-keyup.html">09 — keyup</a></li><li><a href="10-keypress-vs-keydown.html">10 — Enter with keydown</a></li><li><a href="11-modifier-keys.html">11 — Modifier Keys</a></li><li><a href="12-input-event.html">12 — input Event</a></li><li><a href="13-change-event.html">13 — change Event</a></li><li><a href="14-focus-blur.html">14 — focus / blur</a></li><li><a href="15-focusin-focusout.html">15 — focusin / focusout Bubbling</a></li><li><a href="16-submit-form.html">16 — submit Event</a></li><li><a href="17-reset-form.html">17 — reset Event</a></li><li><a href="18-prevent-default.html">18 — preventDefault</a></li><li><a href="19-stop-propagation.html">19 — stopPropagation</a></li><li><a href="20-stop-immediate.html">20 — stopImmediatePropagation</a></li><li><a href="21-event-delegation.html">21 — Event Delegation</a></li><li><a href="22-target-currenttarget.html">22 — target vs currentTarget</a></li><li><a href="23-capture-phase.html">23 — Capture vs Bubble</a></li><li><a href="24-once-option.html">24 — Once Option</a></li><li><a href="25-remove-listener.html">25 — removeEventListener</a></li><li><a href="26-passive-scroll.html">26 — Passive Listener Hint</a></li><li><a href="27-scroll-window.html">27 — Window Scroll</a></li><li><a href="28-resize-window.html">28 — Window Resize</a></li><li><a href="29-load-domcontentloaded.html">29 — DOMContentLoaded vs load</a></li><li><a href="30-hashchange.html">30 — hashchange</a></li><li><a href="31-custom-event.html">31 — CustomEvent</a></li><li><a href="32-event-bubbles-option.html">32 — CustomEvent bubbles</a></li><li><a href="33-pointer-events.html">33 — Pointer Events</a></li><li><a href="34-drag-drop-events.html">34 — Drag and Drop Events</a></li><li><a href="35-clipboard-copy.html">35 — Clipboard copy Event</a></li><li><a href="36-clipboard-paste.html">36 — Clipboard paste Event</a></li><li><a href="37-selectionchange.html">37 — selectionchange</a></li><li><a href="38-wheel-event.html">38 — wheel Event</a></li><li><a href="39-online-offline.html">39 — online / offline</a></li><li><a href="40-visibilitychange.html">40 — visibilitychange</a></li><li><a href="41-transitionend.html">41 — transitionend</a></li><li><a href="42-animationend.html">42 — animationend</a></li><li><a href="43-abortcontroller-listener.html">43 — AbortController for Listeners</a></li><li><a href="44-debounce-input.html">44 — Debounce input Events</a></li><li><a href="45-throttle-scroll.html">45 — Throttle scroll Events</a></li><li><a href="46-keyboard-shortcuts.html">46 — Keyboard Shortcuts</a></li><li><a href="47-escape-close.html">47 — Escape to Close</a></li><li><a href="48-outside-click.html">48 — Click Outside</a></li><li><a href="49-event-object-props.html">49 — Event Object Props</a></li><li><a href="50-events-checklist.html">50 — Events Checklist</a></li></ol>
+  <footer>
+    <p>&copy; 2026 phpkingdom.com · Subrahmanyam Poluru · <a href="https://polurus.com">polurus.com</a></p>
+  </footer>
+</body>
+</html>

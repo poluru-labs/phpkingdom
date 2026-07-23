@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 23-Promises-Examples
+  example: 01-create-resolve.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>01 — Create a Resolved Promise | phpkingdom.com</title>
+</head>
+<body>
+  <h1>01 — Create a Resolved Promise</h1>
+  <h2>Problem</h2>
+  <p>Create a Promise that immediately resolves with a value.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const p = Promise.resolve("phpkingdom.com");
+p.then((value) => {
+  document.getElementById("out").textContent = "resolved: " + value;
+});
+  </script>
+</body>
+</html>

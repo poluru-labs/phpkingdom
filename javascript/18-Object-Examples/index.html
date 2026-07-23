@@ -1,0 +1,44 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 18-Object-Examples
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>18-Object-Examples | phpkingdom.com</title>
+  <style>
+    body { font-family: Georgia, "Times New Roman", serif; max-width: 760px; margin: 2rem auto; padding: 0 1.25rem; line-height: 1.6; color: #1a1a1a; }
+    h1 { font-size: 1.75rem; margin-bottom: 0.35rem; }
+    .meta { color: #555; font-size: 0.95rem; margin-bottom: 1.25rem; }
+    .note { background: #f0f7fb; padding: 0.75rem 1rem; border-left: 3px solid #0f766e; margin: 1rem 0; }
+    .demo { margin: 1rem 0; padding: 1rem; border: 1px dashed #94a3b8; }
+    pre, code { font-family: ui-monospace, Menlo, monospace; }
+    pre { background: #111827; color: #e5e7eb; padding: 0.85rem 1rem; overflow: auto; }
+    button, input, select, textarea { font: inherit; padding: 0.4rem 0.55rem; }
+    button { cursor: pointer; background: #0f766e; color: #fff; border: 0; padding: 0.55rem 1rem; }
+    #out { white-space: pre-wrap; background: #f4f4f4; padding: 0.75rem; min-height: 2rem; }
+    a { color: #0f766e; }
+    footer { border-top: 1px solid #ccc; padding-top: 1rem; margin-top: 2rem; color: #555; font-size: 0.95rem; }
+
+    .brand { color:#0f766e; font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    ol { line-height: 1.75; }
+  </style>
+</head>
+<body>
+  <div class="brand">phpkingdom.com</div>
+  <h1>18-Object-Examples</h1>
+  <p class="meta">50 examples. Minimal HTML — focus on the script.</p>
+  <p><a href="../index.html">← JavaScript Tutorials</a></p>
+  <ol><li><a href="01-create-object.html">01 — Create an Object</a></li><li><a href="02-access-properties.html">02 — Access Properties</a></li><li><a href="03-add-update-delete.html">03 — Add, Update, Delete Keys</a></li><li><a href="04-object-methods.html">04 — Object with Methods</a></li><li><a href="05-keys-values-entries.html">05 — keys / values / entries</a></li><li><a href="06-from-entries.html">06 — Object.fromEntries</a></li><li><a href="07-has-own.html">07 — Check Own Property</a></li><li><a href="08-shallow-copy.html">08 — Shallow Copy Object</a></li><li><a href="09-deep-clone-json.html">09 — Deep Clone (JSON)</a></li><li><a href="10-merge-objects.html">10 — Merge Objects</a></li><li><a href="11-nested-access.html">11 — Safe Nested Access</a></li><li><a href="12-destructure-object.html">12 — Destructure Object</a></li><li><a href="13-computed-keys.html">13 — Computed Property Names</a></li><li><a href="14-freeze-object.html">14 — Object.freeze</a></li><li><a href="15-seal-object.html">15 — Object.seal</a></li><li><a href="16-count-keys.html">16 — Count Object Keys</a></li><li><a href="17-is-empty.html">17 — Check Empty Object</a></li><li><a href="18-invert-object.html">18 — Invert Key/Value</a></li><li><a href="19-pick-keys.html">19 — Pick Keys</a></li><li><a href="20-omit-keys.html">20 — Omit Keys</a></li><li><a href="21-map-object-values.html">21 — Map Object Values</a></li><li><a href="22-filter-object.html">22 — Filter Object Entries</a></li><li><a href="23-group-by.html">23 — Group Array of Objects</a></li><li><a href="24-index-by.html">24 — Index Array by Key</a></li><li><a href="25-deep-get.html">25 — Deep Get by Path</a></li><li><a href="26-deep-set.html">26 — Deep Set by Path</a></li><li><a href="27-flatten-object.html">27 — Flatten Nested Object</a></li><li><a href="28-unflatten-object.html">28 — Unflatten Dotted Object</a></li><li><a href="29-deep-equal.html">29 — Deep Equality</a></li><li><a href="30-deep-merge.html">30 — Deep Merge Objects</a></li><li><a href="31-query-string-parse.html">31 — Parse Query String to Object</a></li><li><a href="32-object-to-query.html">32 — Object to Query String</a></li><li><a href="33-sort-keys.html">33 — Sort Object Keys</a></li><li><a href="34-object-diff.html">34 — Object Diff (Shallow)</a></li><li><a href="35-defaults-fill.html">35 — Fill Defaults</a></li><li><a href="36-rename-keys.html">36 — Rename Object Keys</a></li><li><a href="37-compact-object.html">37 — Compact Object</a></li><li><a href="38-cart-object.html">38 — Shopping Cart Object</a></li><li><a href="39-student-grades.html">39 — Student Grades Object</a></li><li><a href="40-factory-function.html">40 — Factory Function for Objects</a></li><li><a href="41-constructor-function.html">41 — Constructor Function</a></li><li><a href="42-class-custom-object.html">42 — Custom Class Object</a></li><li><a href="43-prototype-chain.html">43 — Prototype Inheritance</a></li><li><a href="44-object-assign-defaults.html">44 — Assign Defaults</a></li><li><a href="45-cache-memo-object.html">45 — Memoization Cache Object</a></li><li><a href="46-frequency-object.html">46 — Word Frequency Object</a></li><li><a href="47-validate-config.html">47 — Validate Config Object</a></li><li><a href="48-object-entries-loop.html">48 — Loop Object Entries</a></li><li><a href="49-to-map-from-object.html">49 — Object ↔ Map Conversion</a></li><li><a href="50-immutable-update.html">50 — Immutable Object Update</a></li></ol>
+  <footer>
+    <p>&copy; 2026 phpkingdom.com · Subrahmanyam Poluru · <a href="https://polurus.com">polurus.com</a></p>
+  </footer>
+</body>
+</html>

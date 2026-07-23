@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 20-DOM-Examples
+  example: 34-scroll-into-view.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>34 — scrollIntoView | phpkingdom.com</title>
+</head>
+<body>
+  <h1>34 — scrollIntoView</h1>
+  <h2>Problem</h2>
+  <p>Scroll a target element into view.</p>
+  <h2>Demo</h2>
+  <button id="btn">Jump to footer</button>
+  <div style="height:420px;background:#f0f0f0;padding:8px">Tall spacer…</div>
+  <p id="footer">Footer target</p>
+  <script>
+document.getElementById("btn").onclick = () => {
+  document.getElementById("footer").scrollIntoView({ behavior: "smooth", block: "center" });
+};
+  </script>
+</body>
+</html>

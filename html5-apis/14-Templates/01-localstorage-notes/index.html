@@ -1,0 +1,59 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Templates/01-localstorage-notes
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>localStorage Notes | phpkingdom.com</title>
+  <style>
+    body { font-family: Georgia, "Times New Roman", serif; max-width: 760px; margin: 2rem auto; padding: 0 1.25rem; line-height: 1.6; color: #1a1a1a; }
+    h1 { font-size: 1.75rem; margin-bottom: 0.35rem; }
+    .meta { color: #555; font-size: 0.95rem; margin-bottom: 1.25rem; }
+    .note { background: #f0f7fb; padding: 0.75rem 1rem; border-left: 3px solid #0f766e; margin: 1rem 0; }
+    pre, code { font-family: ui-monospace, Menlo, monospace; }
+    pre { background: #111827; color: #e5e7eb; padding: 0.85rem 1rem; overflow: auto; }
+    button, input, select, textarea { font: inherit; padding: 0.4rem 0.55rem; }
+    button { cursor: pointer; background: #0f766e; color: #fff; border: 0; padding: 0.55rem 1rem; }
+    #out { white-space: pre-wrap; background: #f4f4f4; padding: 0.75rem; min-height: 2rem; }
+    .demo { margin: 1rem 0; padding: 1rem; border: 1px dashed #94a3b8; }
+    canvas, video, audio { max-width: 100%; }
+</style>
+</head>
+<body>
+  <h1>localStorage Notes</h1>
+  <p class="meta">Persist a notes list in localStorage.</p>
+  <div class="note">Persist a notes list in localStorage.</div>
+<input id="note" placeholder="Note"><button type="button" id="add">Add</button><ul id="list"></ul><pre id="out"></pre>
+  <p><a href="../index.html">All templates</a> · <a href="../../index.html">Course home</a></p>
+  <script>
+const KEY = "pk:tpl:notes";
+const list = document.getElementById("list");
+const out = document.getElementById("out");
+function load() { return JSON.parse(localStorage.getItem(KEY) || "[]"); }
+function render() {
+  const items = load();
+  list.innerHTML = items.map((n,i) => "<li>" + n + " <button data-i='" + i + "'>x</button></li>").join("");
+  out.textContent = items.length + " notes";
+}
+document.getElementById("add").onclick = () => {
+  const v = document.getElementById("note").value.trim();
+  if (!v) return;
+  const items = load(); items.push(v); localStorage.setItem(KEY, JSON.stringify(items));
+  document.getElementById("note").value = ""; render();
+};
+list.onclick = (e) => {
+  const btn = e.target.closest("button[data-i]"); if (!btn) return;
+  const items = load(); items.splice(+btn.dataset.i, 1); localStorage.setItem(KEY, JSON.stringify(items)); render();
+};
+render();
+  </script>
+</body>
+</html>

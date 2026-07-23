@@ -1,0 +1,131 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Module Federation Tutorials
+section title: Dynamic Federation
+topic title: Runtime Remotes
+content type: Template
+item number: 14
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Runtime Remotes Template 14 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ffedd5;
+      color: #9a3412;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Template 14</span>
+    <h1>Runtime Remotes</h1>
+    <p><strong>Section:</strong> Dynamic Federation</p>
+    <p><strong>Focus:</strong> Cdn Deploy</p>
+    <p><strong>Scenario:</strong> checkout remote</p>
+    <p>Use this scaffold as a starting point for a federated application.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Module Federation</h2>
+        <pre><code>// Runtime Remotes — Template 14
+// Focus: cdn deploy | Scenario: checkout remote
+
+// Resolve remotes entirely at runtime (no static remotes map)
+
+import { registerRemotes, loadRemote } from &quot;@module-federation/enhanced/runtime&quot;;
+
+registerRemotes([
+  {
+    name: &quot;marketing&quot;,
+    entry: &quot;https://cdn.example.com/marketing/mf-manifest.json&quot;,
+  },
+]);
+
+const Hero = React.lazy(() =&gt;
+  loadRemote(&quot;marketing/Hero&quot;).then((m) =&gt; ({ default: m.default || m }))
+);
+
+export function CampaignSlot() {
+  return (
+    &lt;React.Suspense fallback={&lt;div&gt;Loading campaign…&lt;/div&gt;}&gt;
+      &lt;Hero /&gt;
+    &lt;/React.Suspense&gt;
+  );
+}
+// Toggle remotes via config service without rebuilding the shell</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Runtime Remotes
+- Practice: cdn deploy
+- Scenario: checkout remote
+- Share framework runtimes as singletons with requiredVersion
+- Load remotes lazily; wrap with error boundaries / fallbacks
+- Deploy remotes independently; version remoteEntry URLs carefully
+- Align CORS and CSP for cross-origin remoteEntry.js
+
+Useful commands:
+  npm install -D webpack webpack-cli webpack-dev-server
+  # run host + remote on different ports
+  npx webpack serve --config webpack.host.js --port 3000
+  npx webpack serve --config webpack.remote.js --port 3002</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This template shows one way to apply <strong>Runtime Remotes</strong> in a checkout remote context.</p>
+      <p>Keep remotes independently deployable, share carefully, and always plan for remote downtime.</p>
+    </section>
+  </main>
+</body>
+</html>

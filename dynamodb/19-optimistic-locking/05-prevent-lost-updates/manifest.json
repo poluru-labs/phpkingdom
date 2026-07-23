@@ -1,0 +1,452 @@
+[
+  {
+    "type": "example",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/examples/01-create-client.html",
+    "focus": "create client",
+    "scenario": "user profile API"
+  },
+  {
+    "type": "example",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/examples/02-put-item.html",
+    "focus": "put item",
+    "scenario": "e-commerce orders"
+  },
+  {
+    "type": "example",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/examples/03-get-item.html",
+    "focus": "get item",
+    "scenario": "chat messages"
+  },
+  {
+    "type": "example",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/examples/04-update-item.html",
+    "focus": "update item",
+    "scenario": "URL shortener"
+  },
+  {
+    "type": "example",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/examples/05-delete-item.html",
+    "focus": "delete item",
+    "scenario": "session store"
+  },
+  {
+    "type": "example",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/examples/06-query-pk-sk.html",
+    "focus": "query pk sk",
+    "scenario": "inventory ledger"
+  },
+  {
+    "type": "example",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/examples/07-scan-filter.html",
+    "focus": "scan filter",
+    "scenario": "multi-tenant SaaS"
+  },
+  {
+    "type": "example",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/examples/08-gsi-query.html",
+    "focus": "gsi query",
+    "scenario": "activity feed"
+  },
+  {
+    "type": "example",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/examples/09-pagination.html",
+    "focus": "pagination",
+    "scenario": "payment ledger"
+  },
+  {
+    "type": "example",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/examples/10-batch-write.html",
+    "focus": "batch write",
+    "scenario": "IoT telemetry"
+  },
+  {
+    "type": "example",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/examples/11-batch-get.html",
+    "focus": "batch get",
+    "scenario": "user profile API"
+  },
+  {
+    "type": "example",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/examples/12-transact-write.html",
+    "focus": "transact write",
+    "scenario": "e-commerce orders"
+  },
+  {
+    "type": "example",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/examples/13-conditional-put.html",
+    "focus": "conditional put",
+    "scenario": "chat messages"
+  },
+  {
+    "type": "example",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/examples/14-atomic-counter.html",
+    "focus": "atomic counter",
+    "scenario": "URL shortener"
+  },
+  {
+    "type": "example",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/examples/15-optimistic-lock.html",
+    "focus": "optimistic lock",
+    "scenario": "session store"
+  },
+  {
+    "type": "example",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/examples/16-single-table.html",
+    "focus": "single table",
+    "scenario": "inventory ledger"
+  },
+  {
+    "type": "example",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/examples/17-access-pattern.html",
+    "focus": "access pattern",
+    "scenario": "multi-tenant SaaS"
+  },
+  {
+    "type": "example",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/examples/18-stream-record.html",
+    "focus": "stream record",
+    "scenario": "activity feed"
+  },
+  {
+    "type": "example",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/examples/19-local-endpoint.html",
+    "focus": "local endpoint",
+    "scenario": "payment ledger"
+  },
+  {
+    "type": "example",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/examples/20-projection.html",
+    "focus": "projection",
+    "scenario": "IoT telemetry"
+  },
+  {
+    "type": "example",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/examples/21-expression-names.html",
+    "focus": "expression names",
+    "scenario": "user profile API"
+  },
+  {
+    "type": "example",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/examples/22-soft-delete.html",
+    "focus": "soft delete",
+    "scenario": "e-commerce orders"
+  },
+  {
+    "type": "example",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/examples/23-hot-partition.html",
+    "focus": "hot partition",
+    "scenario": "chat messages"
+  },
+  {
+    "type": "example",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/examples/24-retry-throttle.html",
+    "focus": "retry throttle",
+    "scenario": "URL shortener"
+  },
+  {
+    "type": "example",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/examples/25-best-practice-recap.html",
+    "focus": "best practice recap",
+    "scenario": "session store"
+  },
+  {
+    "type": "exercise",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/exercises/01-sdk-install.html",
+    "focus": "sdk install",
+    "scenario": "user profile API"
+  },
+  {
+    "type": "exercise",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/exercises/02-local-docker.html",
+    "focus": "local docker",
+    "scenario": "e-commerce orders"
+  },
+  {
+    "type": "exercise",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/exercises/03-create-table.html",
+    "focus": "create table",
+    "scenario": "chat messages"
+  },
+  {
+    "type": "exercise",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/exercises/04-put-user.html",
+    "focus": "put user",
+    "scenario": "URL shortener"
+  },
+  {
+    "type": "exercise",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/exercises/05-get-by-key.html",
+    "focus": "get by key",
+    "scenario": "session store"
+  },
+  {
+    "type": "exercise",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/exercises/06-update-email.html",
+    "focus": "update email",
+    "scenario": "inventory ledger"
+  },
+  {
+    "type": "exercise",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/exercises/07-delete-item.html",
+    "focus": "delete item",
+    "scenario": "multi-tenant SaaS"
+  },
+  {
+    "type": "exercise",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/exercises/08-query-orders.html",
+    "focus": "query orders",
+    "scenario": "activity feed"
+  },
+  {
+    "type": "exercise",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/exercises/09-paginate.html",
+    "focus": "paginate",
+    "scenario": "payment ledger"
+  },
+  {
+    "type": "exercise",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/exercises/10-create-gsi.html",
+    "focus": "create gsi",
+    "scenario": "IoT telemetry"
+  },
+  {
+    "type": "exercise",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/exercises/11-query-gsi.html",
+    "focus": "query gsi",
+    "scenario": "user profile API"
+  },
+  {
+    "type": "exercise",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/exercises/12-batch-put.html",
+    "focus": "batch put",
+    "scenario": "e-commerce orders"
+  },
+  {
+    "type": "exercise",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/exercises/13-unprocessed.html",
+    "focus": "unprocessed",
+    "scenario": "chat messages"
+  },
+  {
+    "type": "exercise",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/exercises/14-transact.html",
+    "focus": "transact",
+    "scenario": "URL shortener"
+  },
+  {
+    "type": "exercise",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/exercises/15-version-check.html",
+    "focus": "version check",
+    "scenario": "session store"
+  },
+  {
+    "type": "exercise",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/exercises/16-pk-sk-design.html",
+    "focus": "pk sk design",
+    "scenario": "inventory ledger"
+  },
+  {
+    "type": "exercise",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/exercises/17-entity-prefix.html",
+    "focus": "entity prefix",
+    "scenario": "multi-tenant SaaS"
+  },
+  {
+    "type": "exercise",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/exercises/18-stream-lambda.html",
+    "focus": "stream lambda",
+    "scenario": "activity feed"
+  },
+  {
+    "type": "exercise",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/exercises/19-express-crud.html",
+    "focus": "express crud",
+    "scenario": "payment ledger"
+  },
+  {
+    "type": "exercise",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/exercises/20-jest-mock.html",
+    "focus": "jest mock",
+    "scenario": "IoT telemetry"
+  },
+  {
+    "type": "exercise",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/exercises/21-consumed-capacity.html",
+    "focus": "consumed capacity",
+    "scenario": "user profile API"
+  },
+  {
+    "type": "exercise",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/exercises/22-leading-keys.html",
+    "focus": "leading keys",
+    "scenario": "e-commerce orders"
+  },
+  {
+    "type": "exercise",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/exercises/23-on-demand.html",
+    "focus": "on demand",
+    "scenario": "chat messages"
+  },
+  {
+    "type": "exercise",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/exercises/24-pitr-backup.html",
+    "focus": "pitr backup",
+    "scenario": "URL shortener"
+  },
+  {
+    "type": "exercise",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/exercises/25-final-challenge.html",
+    "focus": "final challenge",
+    "scenario": "session store"
+  },
+  {
+    "type": "template",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/templates/01-hello-put-get.html",
+    "focus": "hello put get",
+    "scenario": "user profile API"
+  },
+  {
+    "type": "template",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/templates/02-users-table.html",
+    "focus": "users table",
+    "scenario": "e-commerce orders"
+  },
+  {
+    "type": "template",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/templates/03-orders-query.html",
+    "focus": "orders query",
+    "scenario": "chat messages"
+  },
+  {
+    "type": "template",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/templates/04-gsi-email.html",
+    "focus": "gsi email",
+    "scenario": "URL shortener"
+  },
+  {
+    "type": "template",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/templates/05-crud-service.html",
+    "focus": "crud service",
+    "scenario": "session store"
+  },
+  {
+    "type": "template",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/templates/06-single-table-app.html",
+    "focus": "single table app",
+    "scenario": "inventory ledger"
+  },
+  {
+    "type": "template",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/templates/07-pagination-helper.html",
+    "focus": "pagination helper",
+    "scenario": "multi-tenant SaaS"
+  },
+  {
+    "type": "template",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/templates/08-batch-loader.html",
+    "focus": "batch loader",
+    "scenario": "activity feed"
+  },
+  {
+    "type": "template",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/templates/09-transact-order.html",
+    "focus": "transact order",
+    "scenario": "payment ledger"
+  },
+  {
+    "type": "template",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/templates/10-optimistic-repo.html",
+    "focus": "optimistic repo",
+    "scenario": "IoT telemetry"
+  },
+  {
+    "type": "template",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/templates/11-stream-processor.html",
+    "focus": "stream processor",
+    "scenario": "user profile API"
+  },
+  {
+    "type": "template",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/templates/12-lambda-api.html",
+    "focus": "lambda api",
+    "scenario": "e-commerce orders"
+  },
+  {
+    "type": "template",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/templates/13-express-api.html",
+    "focus": "express api",
+    "scenario": "chat messages"
+  },
+  {
+    "type": "template",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/templates/14-dynamodb-local.html",
+    "focus": "dynamodb local",
+    "scenario": "URL shortener"
+  },
+  {
+    "type": "template",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/templates/15-electrodb.html",
+    "focus": "electrodb",
+    "scenario": "session store"
+  },
+  {
+    "type": "template",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/templates/16-cache-aside.html",
+    "focus": "cache aside",
+    "scenario": "inventory ledger"
+  },
+  {
+    "type": "template",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/templates/17-global-table.html",
+    "focus": "global table",
+    "scenario": "multi-tenant SaaS"
+  },
+  {
+    "type": "template",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/templates/18-iam-least.html",
+    "focus": "iam least",
+    "scenario": "activity feed"
+  },
+  {
+    "type": "template",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/templates/19-cdk-table.html",
+    "focus": "cdk table",
+    "scenario": "payment ledger"
+  },
+  {
+    "type": "template",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/templates/20-sam-stack.html",
+    "focus": "sam stack",
+    "scenario": "IoT telemetry"
+  },
+  {
+    "type": "template",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/templates/21-jest-suite.html",
+    "focus": "jest suite",
+    "scenario": "user profile API"
+  },
+  {
+    "type": "template",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/templates/22-hot-key-fix.html",
+    "focus": "hot key fix",
+    "scenario": "e-commerce orders"
+  },
+  {
+    "type": "template",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/templates/23-cost-tips.html",
+    "focus": "cost tips",
+    "scenario": "chat messages"
+  },
+  {
+    "type": "template",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/templates/24-url-shortener.html",
+    "focus": "url shortener",
+    "scenario": "URL shortener"
+  },
+  {
+    "type": "template",
+    "file": "19-optimistic-locking/05-prevent-lost-updates/templates/25-production-starter.html",
+    "focus": "production starter",
+    "scenario": "session store"
+  }
+]

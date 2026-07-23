@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 27-Regex-Examples
+  example: 47-remove-html-tags.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>47 — Remove HTML Tags | phpkingdom.com</title>
+</head>
+<body>
+  <h1>47 — Remove HTML Tags</h1>
+  <h2>Problem</h2>
+  <p>Strip HTML tags from a string (basic demo, not for security sanitization).</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const html = "<p>Hello <strong>world</strong>!</p>";
+const plain = html.replace(/<[^>]+>/g, "");
+document.getElementById("out").textContent =
+  "html:  " + html + "\n" +
+  "plain: " + plain;
+  </script>
+</body>
+</html>

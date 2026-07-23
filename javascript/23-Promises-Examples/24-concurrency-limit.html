@@ -1,0 +1,43 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 23-Promises-Examples
+  example: 24-concurrency-limit.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>24 — Limited Concurrency | phpkingdom.com</title>
+</head>
+<body>
+  <h1>24 — Limited Concurrency</h1>
+  <h2>Problem</h2>
+  <p>Run async workers with a max concurrency.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+async function mapLimit(items, limit, worker) {
+  const ret = [];
+  let i = 0;
+  async function run() {
+    while (i < items.length) {
+      const idx = i++;
+      ret[idx] = await worker(items[idx], idx);
+    }
+  }
+  await Promise.all(Array.from({ length: Math.min(limit, items.length) }, run));
+  return ret;
+}
+mapLimit([1, 2, 3, 4, 5], 2, (n) =>
+  new Promise((resolve) => setTimeout(() => resolve(n * n), 40))
+).then((values) => {
+  document.getElementById("out").textContent = values.join(", ");
+});
+  </script>
+</body>
+</html>

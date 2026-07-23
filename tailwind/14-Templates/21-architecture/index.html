@@ -1,0 +1,80 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Templates/21-architecture
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <meta name="description" content="Residential and civic architecture practice.">
+  <title>Architecture Website | Form Studio | phpkingdom.com</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-slate-900 antialiased">
+  <header class="border-b border-slate-200">
+    <div class="max-w-5xl mx-auto px-4 py-4 flex items-center justify-between">
+      <strong class="text-stone-800 tracking-tight text-lg">Form Studio</strong>
+      <nav class="hidden sm:flex gap-5 text-sm text-slate-600">
+        <a class="hover:text-stone-700" href="#features">Features</a>
+        <a class="hover:text-stone-700" href="#about">About</a>
+        <a class="hover:text-stone-700" href="#contact">Contact</a>
+      </nav>
+      <a href="#contact" class="text-sm bg-stone-700 text-white px-3 py-1.5 rounded-md hover:opacity-90">Get started</a>
+    </div>
+  </header>
+
+  <section class="bg-gradient-to-br from-stone-50 via-white to-stone-100">
+    <div class="max-w-5xl mx-auto px-4 py-16 md:py-24">
+      <p class="text-xs uppercase tracking-[0.2em] text-stone-800 font-bold mb-3">Architecture</p>
+      <h1 class="text-4xl md:text-5xl font-bold tracking-tight max-w-2xl text-slate-900">Spaces shaped by light and use</h1>
+      <p class="mt-4 text-lg text-slate-600 max-w-xl">Residential and civic architecture practice.</p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a href="#contact" class="bg-stone-700 text-white px-5 py-2.5 rounded-lg font-medium hover:opacity-90">Book a call</a>
+        <a href="#features" class="border border-slate-300 px-5 py-2.5 rounded-lg font-medium hover:bg-white">See features</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="max-w-5xl mx-auto px-4 py-14">
+    <h2 class="text-2xl font-bold mb-6">Features</h2>
+    <div class="grid sm:grid-cols-3 gap-4">
+      <article class="bg-white border border-slate-200 rounded-xl p-5"><h3 class="font-semibold text-slate-900 mb-1">Residential</h3><p class="text-sm text-slate-600">Homes and renovations.</p></article><article class="bg-white border border-slate-200 rounded-xl p-5"><h3 class="font-semibold text-slate-900 mb-1">Civic</h3><p class="text-sm text-slate-600">Libraries and community halls.</p></article><article class="bg-white border border-slate-200 rounded-xl p-5"><h3 class="font-semibold text-slate-900 mb-1">Process</h3><p class="text-sm text-slate-600">From sketch to site.</p></article>
+    </div>
+  </section>
+
+  <section id="about" class="bg-slate-50 border-y border-slate-200">
+    <div class="max-w-5xl mx-auto px-4 py-14">
+      <h2 class="text-2xl font-bold mb-3">About Form Studio</h2>
+      <p class="text-slate-600 max-w-2xl">Residential and civic architecture practice. Built as a Tailwind starter template for phpkingdom.com tutorials.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="max-w-5xl mx-auto px-4 py-14">
+    <h2 class="text-2xl font-bold mb-4">Contact</h2>
+    <form class="max-w-md space-y-3" onsubmit="return false">
+      <div>
+        <label class="block text-sm font-medium mb-1">Name</label>
+        <input class="w-full border border-slate-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-stone-700" type="text" name="name">
+      </div>
+      <div>
+        <label class="block text-sm font-medium mb-1">Email</label>
+        <input class="w-full border border-slate-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-stone-700" type="email" name="email">
+      </div>
+      <button type="submit" class="bg-stone-700 text-white px-4 py-2 rounded-md font-medium">Send message</button>
+    </form>
+  </section>
+
+  <footer class="border-t border-slate-200">
+    <div class="max-w-5xl mx-auto px-4 py-6 text-sm text-slate-500 flex flex-col sm:flex-row sm:justify-between gap-2">
+      <span>&copy; Form Studio · phpkingdom.com demo</span>
+      <a class="text-stone-700 underline" href="../index.html">All templates</a>
+    </div>
+  </footer>
+</body>
+</html>

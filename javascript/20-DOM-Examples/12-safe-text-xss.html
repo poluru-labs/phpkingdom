@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 20-DOM-Examples
+  example: 12-safe-text-xss.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>12 — Prefer textContent for User Text | phpkingdom.com</title>
+</head>
+<body>
+  <h1>12 — Prefer textContent for User Text</h1>
+  <h2>Problem</h2>
+  <p>Render user input safely with textContent (avoid untrusted innerHTML).</p>
+  <h2>Demo</h2>
+  <input id="raw" value="<img src=x onerror=alert(1)>" size="40">
+  <button id="btn">Render safely</button>
+  <div id="safe"></div>
+  <script>
+document.getElementById("btn").onclick = () => {
+  const value = document.getElementById("raw").value;
+  document.getElementById("safe").textContent = value;
+};
+  </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 28-Tricky-Examples
+  example: 32-json-parse-numbers.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>32 — JSON has no undefined / bigint | phpkingdom.com</title>
+</head>
+<body>
+  <h1>32 — JSON has no undefined / bigint</h1>
+  <h2>Problem / Gotcha</h2>
+  <p>JSON cannot represent undefined or BigInt directly.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+try {
+  JSON.stringify({ n: 10n });
+} catch (e) {
+  document.getElementById("out").textContent =
+    "BigInt stringify: " + e.message + "\n" +
+    "undefined value omitted: " + JSON.stringify({ a: undefined });
+}
+  </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 24-API-Examples
+  example: 20-crud-create.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>20 — CRUD: Create Resource | phpkingdom.com</title>
+</head>
+<body>
+  <h1>20 — CRUD: Create Resource</h1>
+  <h2>Problem</h2>
+  <p>POST create pattern returning the new resource.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+async function createUser(payload) {
+  return { id: Date.now(), ...payload, createdAt: new Date().toISOString() };
+}
+createUser({ name: "Sam", role: "student" }).then((user) => {
+  document.getElementById("out").textContent = JSON.stringify(user, null, 2);
+});
+  </script>
+</body>
+</html>

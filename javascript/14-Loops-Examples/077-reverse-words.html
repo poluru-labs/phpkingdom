@@ -1,0 +1,34 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 077-reverse-words.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>077 — Reverse Each Word | phpkingdom.com</title>
+</head>
+<body>
+  <h1>077 — Reverse Each Word</h1>
+  <h2>Problem</h2>
+  <p>Reverse characters inside each word.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const s = "hello world loops";
+const words = s.split(" ");
+for (let i = 0; i < words.length; i++) {
+  let rev = "";
+  for (let j = words[i].length - 1; j >= 0; j--) rev += words[i][j];
+  words[i] = rev;
+}
+document.getElementById("out").textContent = words.join(" ");
+  </script>
+</body>
+</html>

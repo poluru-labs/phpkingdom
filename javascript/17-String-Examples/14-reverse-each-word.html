@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 17-String-Examples
+  example: 14-reverse-each-word.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>14 — Reverse Each Word | phpkingdom.com</title>
+</head>
+<body>
+  <h1>14 — Reverse Each Word</h1>
+  <h2>Problem</h2>
+  <p>Reverse letters of each word, keep order.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function reverseEachWord(s) {
+  return s.split(" ").map((w) => w.split("").reverse().join("")).join(" ");
+}
+document.getElementById("out").textContent = reverseEachWord("hello world");
+  </script>
+</body>
+</html>

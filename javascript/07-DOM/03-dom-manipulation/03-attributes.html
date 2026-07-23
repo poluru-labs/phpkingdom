@@ -1,0 +1,29 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 07-DOM/03-dom-manipulation
+  example: 03-attributes.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Attributes | phpkingdom.com</title>
+</head>
+<body>
+  <h1>get/set Attribute</h1>
+  <p>Work with HTML attributes.</p>
+  <a id="link" href="https://polurus.com">polurus.com</a>
+  <pre id="out"></pre>
+  <script>
+const link = document.getElementById("link");
+link.setAttribute("target", "_blank");
+document.getElementById("out").textContent =
+  link.getAttribute("href") + " target=" + link.getAttribute("target");
+  </script>
+</body>
+</html>

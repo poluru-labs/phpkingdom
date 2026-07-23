@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 030-hollow-square.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>030 — Hollow Square | phpkingdom.com</title>
+</head>
+<body>
+  <h1>030 — Hollow Square</h1>
+  <h2>Problem</h2>
+  <p>Print a hollow square border of stars.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const N = 5;
+const lines = [];
+for (let i = 0; i < N; i++) {
+  let row = "";
+  for (let j = 0; j < N; j++) {
+    row += (i === 0 || i === N - 1 || j === 0 || j === N - 1) ? "*" : " ";
+  }
+  lines.push(row);
+}
+document.getElementById("out").textContent = lines.join("\n");
+  </script>
+</body>
+</html>

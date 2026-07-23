@@ -1,0 +1,37 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 24-API-Examples
+  example: 08-headers-auth.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>08 — Authorization Header | phpkingdom.com</title>
+</head>
+<body>
+  <h1>08 — Authorization Header</h1>
+  <h2>Problem</h2>
+  <p>Attach a Bearer token header (pattern only / mocked).</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+async function apiWithAuth(token) {
+  const headers = {
+    "Content-Type": "application/json",
+    Authorization: "Bearer " + token
+  };
+  // fetch("/api/me", { headers })
+  return { headers, data: { user: "Ada", authed: true } };
+}
+apiWithAuth("demo-token-123").then((result) => {
+  document.getElementById("out").textContent = JSON.stringify(result, null, 2);
+});
+  </script>
+</body>
+</html>

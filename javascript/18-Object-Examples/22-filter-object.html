@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 18-Object-Examples
+  example: 22-filter-object.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>22 — Filter Object Entries | phpkingdom.com</title>
+</head>
+<body>
+  <h1>22 — Filter Object Entries</h1>
+  <h2>Problem</h2>
+  <p>Keep entries that pass a predicate.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function filterObject(obj, fn) {
+  return Object.fromEntries(Object.entries(obj).filter(([k, v]) => fn(v, k)));
+}
+const scores = { html: 90, css: 70, js: 95 };
+document.getElementById("out").textContent = JSON.stringify(filterObject(scores, (v) => v >= 90));
+  </script>
+</body>
+</html>

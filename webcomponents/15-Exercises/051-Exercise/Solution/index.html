@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/051-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 051 — Form name serialization — Solution | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>Exercise 051 — Form name serialization — Solution</h1>
+  <p class="meta">Include FACE control in FormData.</p>
+  <h2>Solution</h2>
+  <p>Include FACE control in FormData.</p>
+  <div id="demo"></div>
+  <pre id="out"></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+customElements.define("ex051-el", class extends HTMLElement {
+  connectedCallback() {
+    this.textContent = 'Form name serialization';
+  }
+});
+document.getElementById("demo").innerHTML = "<ex051-el></ex051-el>";
+document.getElementById("out").textContent = 'Include FACE control in FormData.';
+  </script>
+</body>
+</html>

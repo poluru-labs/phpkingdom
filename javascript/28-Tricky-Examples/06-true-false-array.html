@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 28-Tricky-Examples
+  example: 06-true-false-array.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>06 — [] == ![] and friends | phpkingdom.com</title>
+</head>
+<body>
+  <h1>06 — [] == ![] and friends</h1>
+  <h2>Problem / Gotcha</h2>
+  <p>Classic coercion puzzles with arrays and booleans.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+document.getElementById("out").textContent =
+  "[] == false => " + ([] == false) + "\n" +
+  "[] == ![] => " + ([] == ![]) + "\n" +
+  "!![] => " + (!![]) + "\n" +
+  "Boolean([]) => " + Boolean([]);
+  </script>
+</body>
+</html>

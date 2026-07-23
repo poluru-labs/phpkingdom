@@ -1,0 +1,25 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 12-Misc-Examples
+  example: 038-fullscreen-request.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>038 — requestFullscreen | phpkingdom.com</title>
+</head>
+<body>
+  <h1>038 — requestFullscreen</h1>
+  <p>Fullscreen element.</p>
+<div id="box">Box</div><button id="b" type="button">Fullscreen</button><pre id="out"></pre>
+  <script>
+document.getElementById("b").onclick=()=>document.getElementById("box").requestFullscreen?.().then(()=>document.getElementById("out").textContent="ok").catch(e=>document.getElementById("out").textContent=e.message);
+  </script>
+</body>
+</html>

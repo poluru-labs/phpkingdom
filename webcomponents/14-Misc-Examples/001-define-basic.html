@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Misc-Examples
+  example: 001-define-basic.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>001 — define-basic | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>001 — define-basic</h1>
+  <p class="meta">customElements.define('x-el', class extends HTMLElement{})</p>
+  <p>customElements.define('x-el', class extends HTMLElement{})</p>
+<pre id="out"></pre>
+  <script>
+if (!customElements.get("misc-el")) {
+  customElements.define("misc-el", class extends HTMLElement {
+    connectedCallback(){ this.textContent = "ok"; }
+  });
+}
+document.body.insertAdjacentHTML("beforeend", "<misc-el></misc-el>");
+document.getElementById("out").textContent = "defined";
+  </script>
+</body>
+</html>

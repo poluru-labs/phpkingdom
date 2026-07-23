@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 20-DOM-Examples
+  example: 11-textcontent-vs-innerhtml.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>11 — textContent vs innerHTML | phpkingdom.com</title>
+</head>
+<body>
+  <h1>11 — textContent vs innerHTML</h1>
+  <h2>Problem</h2>
+  <p>Show the difference between setting textContent and innerHTML.</p>
+  <h2>Demo</h2>
+  <div id="a"></div>
+  <div id="b"></div>
+  <pre id="out"></pre>
+  <script>
+document.getElementById("a").textContent = "<b>bold?</b>";
+document.getElementById("b").innerHTML = "<b>bold?</b>";
+document.getElementById("out").textContent =
+  "a (textContent) shows tags as text; b (innerHTML) renders HTML.";
+  </script>
+</body>
+</html>

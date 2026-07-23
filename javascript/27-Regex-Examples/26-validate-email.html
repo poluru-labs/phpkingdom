@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 27-Regex-Examples
+  example: 26-validate-email.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>26 — Validate Email | phpkingdom.com</title>
+</head>
+<body>
+  <h1>26 — Validate Email</h1>
+  <h2>Problem</h2>
+  <p>Validate a simple email format with regex.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const emails = ["user@example.com", "bad@", "@bad.com", "a.b+c@co.uk"];
+const re = /^[\w.+-]+@[\w-]+\.[\w.-]+$/;
+const results = emails.map(e => e + " => " + re.test(e));
+document.getElementById("out").textContent = results.join("\n");
+  </script>
+</body>
+</html>

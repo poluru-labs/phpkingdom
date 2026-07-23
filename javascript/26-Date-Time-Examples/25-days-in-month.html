@@ -1,0 +1,35 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 26-Date-Time-Examples
+  example: 25-days-in-month.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>25 — Days in Month | phpkingdom.com</title>
+</head>
+<body>
+  <h1>25 — Days in Month</h1>
+  <h2>Problem</h2>
+  <p>Return the number of days in a given month/year.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+
+function daysInMonth(year, monthIndex) {
+  return new Date(year, monthIndex + 1, 0).getDate();
+}
+document.getElementById("out").textContent =
+  "Jan 2024: " + daysInMonth(2024, 0) + "\n" +
+  "Feb 2024: " + daysInMonth(2024, 1) + "\n" +
+  "Feb 2023: " + daysInMonth(2023, 1);
+
+  </script>
+</body>
+</html>

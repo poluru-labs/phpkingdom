@@ -1,0 +1,50 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 24-API-Examples
+  example: 13-retry-backoff.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>13 — Retry with Backoff | phpkingdom.com</title>
+</head>
+<body>
+  <h1>13 — Retry with Backoff</h1>
+  <h2>Problem</h2>
+  <p>Retry failed API calls with exponential backoff.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+async function fetchWithRetry(fn, retries = 3) {
+  let attempt = 0, lastErr;
+  while (attempt <= retries) {
+    try {
+      return await fn(attempt);
+    } catch (err) {
+      lastErr = err;
+      const delay = 100 * Math.pow(2, attempt);
+      await new Promise((r) => setTimeout(r, delay));
+      attempt++;
+    }
+  }
+  throw lastErr;
+}
+let tries = 0;
+fetchWithRetry(async () => {
+  tries++;
+  if (tries < 3) throw new Error("network fail #" + tries);
+  return { ok: true, tries };
+}).then((data) => {
+  document.getElementById("out").textContent = JSON.stringify(data);
+}).catch((e) => {
+  document.getElementById("out").textContent = e.message;
+});
+  </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 19-Recursion-Examples
+  example: 25-mutual-recursion.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>25 — Mutual Recursion | phpkingdom.com</title>
+</head>
+<body>
+  <h1>25 — Mutual Recursion</h1>
+  <h2>Problem</h2>
+  <p>Two functions call each other: isEven(n) and isOdd(n) without using % 2.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function isEven(n) {
+  if (n === 0) return true;
+  if (n === 1) return false;
+  return isOdd(n - 1);
+}
+function isOdd(n) {
+  if (n === 0) return false;
+  if (n === 1) return true;
+  return isEven(n - 1);
+}
+const nums = [0, 1, 4, 7, 10];
+document.getElementById("out").textContent = nums
+  .map((n) => n + " is " + (isEven(n) ? "even" : "odd"))
+  .join("\n");
+  </script>
+</body>
+</html>

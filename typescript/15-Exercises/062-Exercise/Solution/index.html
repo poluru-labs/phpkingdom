@@ -1,0 +1,24 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/062-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 062 — Getters mapped — Solution | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Exercise 062 — Getters mapped — Solution</h1>
+  <pre><code class="ts">type Getters&lt;T&gt; = {
+  [K in keyof T as `get${Capitalize&lt;string &amp; K&gt;}`]: () =&gt; T[K];
+};</code></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+</body>
+</html>

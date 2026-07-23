@@ -1,0 +1,57 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: Button component
+  example: Events demo for Button
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button — Events — phpkingdom.com</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+  <style>
+  :root { --pk-accent: #0f766e; --pk-bg: #f8fafc; --pk-text: #0f172a; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Source Serif 4", Georgia, serif; background: var(--pk-bg); color: var(--pk-text); line-height: 1.5; }
+  header.brand { background: linear-gradient(135deg, #0f766e, #115e59); color: #fff; padding: 1.25rem 1.5rem; }
+  header.brand a { color: #ccfbf1; }
+  header.brand h1 { margin: 0; font-size: 1.35rem; font-weight: 600; }
+  header.brand p { margin: 0.35rem 0 0; opacity: 0.9; font-size: 0.95rem; }
+  main { max-width: 960px; margin: 0 auto; padding: 1.5rem; }
+  .panel { background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 1.25rem; margin-bottom: 1rem; box-shadow: 0 1px 2px rgba(15,23,42,.06); }
+  .row { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; }
+  #out { font-family: ui-monospace, monospace; font-size: 0.85rem; background: #0f172a; color: #e2e8f0; padding: 0.75rem 1rem; border-radius: 8px; min-height: 2.5rem; white-space: pre-wrap; }
+  nav.back { margin-bottom: 1rem; }
+  nav.back a { color: var(--pk-accent); text-decoration: none; font-weight: 600; }
+  h2 { margin-top: 0; color: #115e59; }
+</style>
+</head>
+<body>
+<header class="brand">
+    <h1>phpkingdom.com — Web Components UI</h1>
+    <p>Button — Events</p>
+  </header>
+  <main>
+    <nav class="back"><a href="../index.html">← All components</a></nav>
+    <section class="panel">
+<h2>Events</h2>
+      <pk-button id="ev">Click me</pk-button>
+    </section>
+    <section class="panel">
+      <h2>Event log</h2>
+      <div id="out">(events appear here)</div>
+    </section>
+  </main>
+  <script type="module" src="../components/pk-button.js"></script>
+  <script>
+    const out = document.getElementById('out');
+    const log = (m) => { out.textContent = typeof m === 'string' ? m : JSON.stringify(m, null, 2); };
+    document.getElementById('ev')?.addEventListener('pk-click',()=>log('pk-click'));
+  </script>
+</body>
+</html>

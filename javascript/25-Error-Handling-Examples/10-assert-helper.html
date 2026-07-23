@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 25-Error-Handling-Examples
+  example: 10-assert-helper.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>10 — Assert Helper | phpkingdom.com</title>
+</head>
+<body>
+  <h1>10 — Assert Helper</h1>
+  <h2>Problem</h2>
+  <p>Small assert() throws early when a condition is false.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function assert(cond, msg) {
+  if (!cond) throw new Error(msg || "Assertion failed");
+}
+const out = document.getElementById("out");
+try {
+  const items = [];
+  assert(items.length > 0, "items must not be empty");
+} catch (e) {
+  out.textContent = "assert failed: " + e.message;
+}
+  </script>
+</body>
+</html>

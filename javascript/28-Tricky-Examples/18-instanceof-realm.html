@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 28-Tricky-Examples
+  example: 18-instanceof-realm.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>18 — instanceof Across Realms Idea | phpkingdom.com</title>
+</head>
+<body>
+  <h1>18 — instanceof Across Realms Idea</h1>
+  <h2>Problem / Gotcha</h2>
+  <p>Array from another realm can fail instanceof Array.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const arr = [];
+document.getElementById("out").textContent =
+  "arr instanceof Array => " + (arr instanceof Array) + "\n" +
+  "Array.isArray(arr) => " + Array.isArray(arr) + "\n" +
+  "Prefer Array.isArray for reliability.";
+  </script>
+</body>
+</html>

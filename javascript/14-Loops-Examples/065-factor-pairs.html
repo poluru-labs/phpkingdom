@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 065-factor-pairs.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>065 — Factor Pairs | phpkingdom.com</title>
+</head>
+<body>
+  <h1>065 — Factor Pairs</h1>
+  <h2>Problem</h2>
+  <p>List factor pairs of N without duplicates.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const N = 36;
+const pairs = [];
+for (let i = 1; i * i <= N; i++) {
+  if (N % i === 0) pairs.push("(" + i + ", " + (N / i) + ")");
+}
+document.getElementById("out").textContent = pairs.join(" ");
+  </script>
+</body>
+</html>

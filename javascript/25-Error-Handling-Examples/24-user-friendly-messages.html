@@ -1,0 +1,37 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 25-Error-Handling-Examples
+  example: 24-user-friendly-messages.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>24 — User-Friendly Messages | phpkingdom.com</title>
+</head>
+<body>
+  <h1>24 — User-Friendly Messages</h1>
+  <h2>Problem</h2>
+  <p>Map technical errors to safe messages for users.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const out = document.getElementById("out");
+function toUserMessage(err) {
+  if (err.message.includes("network")) return "Check your connection and try again.";
+  if (err.message.includes("401")) return "Please sign in again.";
+  return "Something went wrong. Please try later.";
+}
+try {
+  throw new Error("network ECONNRESET");
+} catch (e) {
+  out.textContent = toUserMessage(e);
+}
+  </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Templates/11-fetch-users
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <meta name="description" content="Fetch + loading state">
+  <title>Fetch Users | useEffect | phpkingdom.com</title>
+  <style>
+    body { margin:0; font-family: Georgia, "Times New Roman", serif; background:#f5f7fb; color:#1f2937; line-height:1.55; }
+    .wrap { max-width:900px; margin:0 auto; padding:1.5rem; }
+    .brand { color:#9a3412; font-size:.78rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    h1 { font-size:1.75rem; margin:.4rem 0; }
+    .meta { color:#64748b; }
+    pre { background:#0f172a; color:#e2e8f0; padding:1rem; border-radius:.65rem; overflow:auto; font-size:.88rem; }
+    .card { background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:1rem; margin:1rem 0; }
+    a { color:#9a3412; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">phpkingdom.com</div>
+    <p class="meta">Fetch Users · React template</p>
+    <h1>useEffect</h1>
+    <p class="meta">Fetch + loading state</p>
+    <div class="card">
+      <h2>Component Scaffold</h2>
+      <pre><code>import { useEffect, useState } from &quot;react&quot;;
+
+export default function Users() {
+  const [users, setUsers] = useState([]);
+  const [loading, setLoading] = useState(true);
+  useEffect(() =&gt; {
+    fetch(&quot;/api/users&quot;)
+      .then((r) =&gt; r.json())
+      .then(setUsers)
+      .finally(() =&gt; setLoading(false));
+  }, []);
+  if (loading) return &lt;p&gt;Loading…&lt;/p&gt;;
+  return &lt;ul&gt;{users.map((u) =&gt; &lt;li key={u.id}&gt;{u.name}&lt;/li&gt;)}&lt;/ul&gt;;
+}</code></pre>
+    </div>
+    <div class="card">
+      <h2>Verify</h2>
+      <pre><code>npm create vite@latest my-app -- --template react
+npm install
+npm run dev</code></pre>
+    </div>
+    <p><a href="../index.html">All templates</a></p>
+  </div>
+</body>
+</html>

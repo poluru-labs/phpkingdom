@@ -1,0 +1,38 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 29-Algorithms-Examples
+  example: 06-counting-sort.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>06 — Counting Sort | phpkingdom.com</title>
+</head>
+<body>
+  <h1>06 — Counting Sort</h1>
+  <h2>Problem</h2>
+  <p>Sort non-negative integers in a small range using frequency counts.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function countingSort(arr, maxVal) {
+  const count = new Array(maxVal + 1).fill(0);
+  for (const x of arr) count[x]++;
+  const out = [];
+  for (let v = 0; v <= maxVal; v++) {
+    while (count[v]-- > 0) out.push(v);
+  }
+  return out;
+}
+const input = [4, 2, 2, 8, 3, 3, 1];
+document.getElementById("out").textContent =
+  "input:  " + JSON.stringify(input) + "\noutput: " + JSON.stringify(countingSort(input, 8));
+  </script>
+</body>
+</html>

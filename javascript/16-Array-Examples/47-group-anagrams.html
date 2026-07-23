@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 16-Array-Examples
+  example: 47-group-anagrams.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>47 — Group Anagrams | phpkingdom.com</title>
+</head>
+<body>
+  <h1>47 — Group Anagrams</h1>
+  <h2>Problem</h2>
+  <p>Group words that are anagrams of each other.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function groupAnagrams(words) {
+  const map = new Map();
+  for (const w of words) {
+    const key = w.split("").sort().join("");
+    if (!map.has(key)) map.set(key, []);
+    map.get(key).push(w);
+  }
+  return [...map.values()];
+}
+document.getElementById("out").textContent = JSON.stringify(groupAnagrams(["eat","tea","tan","ate","nat","bat"]));
+  </script>
+</body>
+</html>

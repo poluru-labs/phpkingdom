@@ -1,0 +1,78 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Templates/04-crud-users
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <meta name="description" content="Full in-memory users resource">
+  <title>CRUD Users | in-memory CRUD | phpkingdom.com</title>
+  <style>
+    body { margin:0; font-family: Georgia, "Times New Roman", serif; background:#f5f7fb; color:#1f2937; line-height:1.55; }
+    .wrap { max-width:900px; margin:0 auto; padding:1.5rem; }
+    .brand { color:#3730a3; font-size:.78rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    h1 { font-size:1.75rem; margin:.4rem 0; }
+    .meta { color:#64748b; }
+    pre { background:#0f172a; color:#e2e8f0; padding:1rem; border-radius:.65rem; overflow:auto; font-size:.88rem; }
+    .card { background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:1rem; margin:1rem 0; }
+    a { color:#3730a3; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">phpkingdom.com</div>
+    <p class="meta">CRUD Users · Express template</p>
+    <h1>in-memory CRUD</h1>
+    <p class="meta">Full in-memory users resource</p>
+    <div class="card">
+      <h2>Starter Server</h2>
+      <pre><code>const express = require(&quot;express&quot;);
+const app = express();
+app.use(express.json());
+
+const users = [{ id: 1, name: &quot;Ada&quot;, email: &quot;ada@example.com&quot; }];
+let seq = 2;
+
+app.get(&quot;/users&quot;, (req, res) =&gt; res.json(users));
+app.get(&quot;/users/:id&quot;, (req, res) =&gt; {
+  const user = users.find((u) =&gt; u.id === Number(req.params.id));
+  if (!user) return res.status(404).json({ error: &quot;Not found&quot; });
+  res.json(user);
+});
+app.post(&quot;/users&quot;, (req, res) =&gt; {
+  const user = { id: seq++, ...req.body };
+  users.push(user);
+  res.status(201).json(user);
+});
+app.put(&quot;/users/:id&quot;, (req, res) =&gt; {
+  const i = users.findIndex((u) =&gt; u.id === Number(req.params.id));
+  if (i &lt; 0) return res.sendStatus(404);
+  users[i] = { id: users[i].id, ...req.body };
+  res.json(users[i]);
+});
+app.delete(&quot;/users/:id&quot;, (req, res) =&gt; {
+  const i = users.findIndex((u) =&gt; u.id === Number(req.params.id));
+  if (i &lt; 0) return res.sendStatus(404);
+  users.splice(i, 1);
+  res.sendStatus(204);
+});
+
+app.listen(3000);</code></pre>
+    </div>
+    <div class="card">
+      <h2>Run</h2>
+      <pre><code>npm install express
+node server.js
+curl http://localhost:3000/health</code></pre>
+    </div>
+    <p><a href="../index.html">All templates</a></p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Functions-Examples
+  example: 12-curry-two-args.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>12 — Curry Two Arguments | phpkingdom.com</title>
+</head>
+<body>
+  <h1>12 — Curry Two Arguments</h1>
+  <h2>Problem</h2>
+  <p>Transform a two-argument function into nested unary functions.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function curry2(fn) {
+  return (a) => (b) => fn(a, b);
+}
+const curriedAdd = curry2((a, b) => a + b);
+document.getElementById("out").textContent = "curriedAdd(3)(4) = " + curriedAdd(3)(4);
+  </script>
+</body>
+</html>

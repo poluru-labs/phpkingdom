@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  topic: 08-Misc-Examples
+  example: 48-data-attributes.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Attributes | phpkingdom</title>
+</head>
+<body>
+  <h1>Custom Data Attributes</h1>
+
+  <button type="button" id="item" data-id="101" data-name="Notebook">
+    Show product data
+  </button>
+  <p id="out"></p>
+  <script>
+    document.getElementById("item").onclick = function () {
+      document.getElementById("out").textContent =
+        "ID: " + this.dataset.id + ", Name: " + this.dataset.name;
+    };
+  </script>
+
+</body>
+</html>

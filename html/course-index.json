@@ -1,0 +1,160 @@
+{
+  "title": "HTML Tutorials",
+  "items": [
+    {
+      "title": "Basics",
+      "items": [
+        {
+          "href": "/tutorials/html/introduction",
+          "label": "Introduction"
+        },
+        {
+          "href": "/tutorials/html/basics",
+          "label": "Basics"
+        },
+        {
+          "href": "/tutorials/html/attributes",
+          "label": "Attributes"
+        },
+        {
+          "href": "/tutorials/html/formatting",
+          "label": "Formatting"
+        },
+        {
+          "href": "/tutorials/html/entities",
+          "label": "Entities"
+        }
+      ]
+    },
+    {
+      "title": "Elements",
+      "items": [
+        {
+          "href": "/tutorials/html/links",
+          "label": "Links"
+        },
+        {
+          "href": "/tutorials/html/images",
+          "label": "Images"
+        },
+        {
+          "href": "/tutorials/html/lists",
+          "label": "Lists"
+        },
+        {
+          "href": "/tutorials/html/tables",
+          "label": "Tables"
+        },
+        {
+          "href": "/tutorials/html/media",
+          "label": "Media"
+        },
+        {
+          "href": "/tutorials/html/iframes",
+          "label": "Iframes"
+        },
+        {
+          "href": "/tutorials/html/dialog",
+          "label": "Dialog"
+        },
+        {
+          "href": "/tutorials/html/details-summary",
+          "label": "Details Summary"
+        },
+        {
+          "href": "/tutorials/html/picture-responsive",
+          "label": "Picture Responsive"
+        },
+        {
+          "href": "/tutorials/html/template-slot",
+          "label": "Template Slot"
+        }
+      ]
+    },
+    {
+      "title": "Forms",
+      "items": [
+        {
+          "href": "/tutorials/html/forms",
+          "label": "Forms"
+        },
+        {
+          "href": "/tutorials/html/input-types",
+          "label": "Input Types"
+        },
+        {
+          "href": "/tutorials/html/input-attributes",
+          "label": "Input Attributes"
+        },
+        {
+          "href": "/tutorials/html/form-validation",
+          "label": "Form Validation"
+        },
+        {
+          "href": "/tutorials/html/form-datalist",
+          "label": "Form Datalist"
+        }
+      ]
+    },
+    {
+      "title": "Semantic",
+      "items": [
+        {
+          "href": "/tutorials/html/semantic-html",
+          "label": "Semantic Html"
+        },
+        {
+          "href": "/tutorials/html/layouts",
+          "label": "Layouts"
+        },
+        {
+          "href": "/tutorials/html/responsive-web-design",
+          "label": "Responsive Web Design"
+        },
+        {
+          "href": "/tutorials/html/landmarks",
+          "label": "Landmarks"
+        }
+      ]
+    },
+    {
+      "title": "Accessibility",
+      "items": [
+        {
+          "href": "/tutorials/html/accessibility",
+          "label": "Accessibility"
+        }
+      ]
+    },
+    {
+      "title": "Seo",
+      "items": [
+        {
+          "href": "/tutorials/html/meta-tags",
+          "label": "Meta Tags"
+        }
+      ]
+    },
+    {
+      "title": "Styling",
+      "items": [
+        {
+          "href": "/tutorials/html/html-css",
+          "label": "Html Css"
+        },
+        {
+          "href": "/tutorials/html/class-vs-id",
+          "label": "Class Vs Id"
+        },
+        {
+          "href": "/tutorials/html/data-attributes",
+          "label": "Data Attributes"
+        },
+        {
+          "href": "/tutorials/html/popover",
+          "label": "Popover"
+        }
+      ]
+    }
+  ]
+}

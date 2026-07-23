@@ -1,0 +1,26 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 10-Advanced/04-hoisting
+  example: 02-function-hoisting.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Function Hoisting | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Function Declaration Hoisting</h1>
+  <p>Function declarations can be called earlier.</p>
+  <pre id="out"></pre>
+  <script>
+document.getElementById("out").textContent = greet();
+function greet() { return "hoisted"; }
+  </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 27-Regex-Examples
+  example: 02-regexp-exec.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>02 — RegExp.exec() | phpkingdom.com</title>
+</head>
+<body>
+  <h1>02 — RegExp.exec()</h1>
+  <h2>Problem</h2>
+  <p>Use RegExp.exec() to find the first match and capture groups.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const text = "Order #4821 shipped on 2026-07-19";
+const re = /#(\d+)/;
+const match = re.exec(text);
+document.getElementById("out").textContent =
+  "match[0]: " + match[0] + "\n" +
+  "match[1]: " + match[1] + "\n" +
+  "index: " + match.index;
+  </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Templates/12-react-rtl
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <meta name="description" content="render + screen">
+  <title>React RTL | Testing Library | phpkingdom.com</title>
+  <style>
+    body { margin:0; font-family: Georgia, "Times New Roman", serif; background:#f5f7fb; color:#1f2937; line-height:1.55; }
+    .wrap { max-width:900px; margin:0 auto; padding:1.5rem; }
+    .brand { color:#9d174d; font-size:.78rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    h1 { font-size:1.75rem; margin:.4rem 0; }
+    .meta { color:#64748b; }
+    pre { background:#0f172a; color:#e2e8f0; padding:1rem; border-radius:.65rem; overflow:auto; font-size:.88rem; }
+    .card { background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:1rem; margin:1rem 0; }
+    a { color:#9d174d; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">phpkingdom.com</div>
+    <p class="meta">React RTL · Jest template</p>
+    <h1>Testing Library</h1>
+    <p class="meta">render + screen</p>
+    <div class="card">
+      <h2>Starter</h2>
+      <pre><code>import React from &quot;react&quot;;
+import { render, screen } from &quot;@testing-library/react&quot;;
+import userEvent from &quot;@testing-library/user-event&quot;;
+
+function Button({ children, onClick }) {
+  return &lt;button onClick={onClick}&gt;{children}&lt;/button&gt;;
+}
+
+test(&quot;clicks Save&quot;, async () =&gt; {
+  const user = userEvent.setup();
+  const onClick = jest.fn();
+  render(&lt;Button onClick={onClick}&gt;Save&lt;/Button&gt;);
+  await user.click(screen.getByRole(&quot;button&quot;, { name: &quot;Save&quot; }));
+  expect(onClick).toHaveBeenCalledTimes(1);
+});</code></pre>
+    </div>
+    <div class="card">
+      <h2>Run</h2>
+      <pre><code>npx jest
+npx jest --watch
+npx jest --coverage</code></pre>
+    </div>
+    <p><a href="../index.html">All templates</a></p>
+  </div>
+</body>
+</html>

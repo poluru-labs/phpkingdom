@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 062-all-pairs.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>062 — All Pairs (Nested) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>062 — All Pairs (Nested)</h1>
+  <h2>Problem</h2>
+  <p>List every unordered pair from an array.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const arr = ["A", "B", "C", "D"];
+const pairs = [];
+for (let i = 0; i < arr.length; i++)
+  for (let j = i + 1; j < arr.length; j++)
+    pairs.push(arr[i] + arr[j]);
+document.getElementById("out").textContent = pairs.join(", ");
+  </script>
+</body>
+</html>

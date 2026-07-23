@@ -1,0 +1,28 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 08-ES6/01-es6-features
+  example: 02-default-destructure.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Defaults Destructuring | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Defaults + Destructuring</h1>
+  <p>Two frequent ES6 patterns.</p>
+  <pre id="out"></pre>
+  <script>
+function label({ name = "Guest", role = "user" } = {}) {
+  return name + " (" + role + ")";
+}
+document.getElementById("out").textContent = label({ name: "Ada" });
+  </script>
+</body>
+</html>

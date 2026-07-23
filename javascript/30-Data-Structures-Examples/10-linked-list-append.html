@@ -1,0 +1,40 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 30-Data-Structures-Examples
+  example: 10-linked-list-append.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>10 — Singly Linked List — Append | phpkingdom.com</title>
+</head>
+<body>
+  <h1>10 — Singly Linked List — Append</h1>
+  <h2>Problem</h2>
+  <p>Append values to the end of a singly linked list.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+class ListNode { constructor(val, next = null) { this.val = val; this.next = next; } }
+function append(head, val) {
+  const node = new ListNode(val);
+  if (!head) return node;
+  let cur = head;
+  while (cur.next) cur = cur.next;
+  cur.next = node;
+  return head;
+}
+let head = null;
+[10, 20, 30].forEach(v => head = append(head, v));
+const vals = [];
+for (let c = head; c; c = c.next) vals.push(c.val);
+document.getElementById("out").textContent = "after append 10,20,30: " + vals.join(" -> ");
+  </script>
+</body>
+</html>

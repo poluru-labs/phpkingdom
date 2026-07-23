@@ -1,0 +1,39 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 24-API-Examples
+  example: 10-json-vs-text.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>10 — JSON vs Text Response | phpkingdom.com</title>
+</head>
+<body>
+  <h1>10 — JSON vs Text Response</h1>
+  <h2>Problem</h2>
+  <p>Choose res.json() or res.text() based on content type.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+async function readBody(res) {
+  const type = res.headers.get("content-type") || "";
+  if (type.includes("application/json")) return res.json();
+  return res.text();
+}
+const mockJson = {
+  headers: { get: (k) => k === "content-type" ? "application/json" : null },
+  json: async () => ({ ok: true }),
+  text: async () => "plain"
+};
+readBody(mockJson).then((data) => {
+  document.getElementById("out").textContent = JSON.stringify(data);
+});
+  </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 20-DOM-Examples
+  example: 47-localstorage-dom.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>47 — localStorage + DOM State | phpkingdom.com</title>
+</head>
+<body>
+  <h1>47 — localStorage + DOM State</h1>
+  <h2>Problem</h2>
+  <p>Persist a counter in localStorage and restore it on load.</p>
+  <h2>Demo</h2>
+  <p>Count: <strong id="n">0</strong></p>
+  <button id="inc">+</button>
+  <button id="reset">Reset</button>
+  <script>
+const KEY = "dom-examples-count";
+const el = document.getElementById("n");
+el.textContent = localStorage.getItem(KEY) || "0";
+document.getElementById("inc").onclick = () => {
+  const next = Number(el.textContent) + 1;
+  el.textContent = String(next);
+  localStorage.setItem(KEY, String(next));
+};
+document.getElementById("reset").onclick = () => {
+  el.textContent = "0";
+  localStorage.removeItem(KEY);
+};
+  </script>
+</body>
+</html>

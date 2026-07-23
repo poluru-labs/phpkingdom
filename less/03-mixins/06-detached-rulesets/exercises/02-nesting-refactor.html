@@ -1,0 +1,117 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: LESS CSS Tutorials
+section title: Mixins
+topic title: Detached Rulesets
+content type: Exercise
+item number: 02
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Detached Rulesets Exercise 02 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #e0f2fe;
+      color: #075985;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Exercise 02</span>
+    <h1>Detached Rulesets</h1>
+    <p><strong>Section:</strong> Mixins</p>
+    <p><strong>Focus:</strong> Nesting Refactor</p>
+    <p><strong>Scenario:</strong> marketing site</p>
+    <p>Complete the task, refactor the sample, and compare your result with the suggested direction.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>LESS Snippet</h2>
+        <pre><code>// Detached Rulesets — Exercise 02
+// Focus: nesting refactor | Scenario: marketing site
+
+.respond-to(@bp; @rules) {
+  @media (min-width: @bp) {
+    @rules();
+  }
+}
+
+.hero {
+  padding: 2rem;
+
+  .respond-to(768px; {
+    padding: 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  });
+}
+
+// @rules is a detached ruleset passed into the mixin</code></pre>
+      </section>
+      <section>
+        <h2>HTML Markup</h2>
+        <pre><code>&lt;section class=&quot;panel-detached-rulesets&quot;&gt;
+  &lt;h2&gt;Detached Rulesets&lt;/h2&gt;
+  &lt;p&gt;Nesting Refactor for a marketing site.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This exercise shows one way to apply <strong>Detached Rulesets</strong> in a marketing site context.</p>
+      <p>Adapt selectors, token names, and mixins to match your project naming rules.</p>
+    </section>
+  </main>
+</body>
+</html>

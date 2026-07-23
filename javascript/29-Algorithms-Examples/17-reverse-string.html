@@ -1,0 +1,38 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 29-Algorithms-Examples
+  example: 17-reverse-string.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>17 — Reverse String (Two Pointers) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>17 — Reverse String (Two Pointers)</h1>
+  <h2>Problem</h2>
+  <p>Reverse a string using two pointers on a character array.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function reverseString(s) {
+  const chars = s.split("");
+  let lo = 0, hi = chars.length - 1;
+  while (lo < hi) {
+    [chars[lo], chars[hi]] = [chars[hi], chars[lo]];
+    lo++; hi--;
+  }
+  return chars.join("");
+}
+const input = "hello";
+document.getElementById("out").textContent =
+  "input:  " + input + "\noutput: " + reverseString(input);
+  </script>
+</body>
+</html>

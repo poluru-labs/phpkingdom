@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 19-Recursion-Examples
+  example: 02-factorial.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>02 — Factorial | phpkingdom.com</title>
+</head>
+<body>
+  <h1>02 — Factorial</h1>
+  <h2>Problem</h2>
+  <p>Compute n! recursively: n! = n × (n−1)! with base case 0! = 1.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function factorial(n) {
+  if (n <= 1) return 1;
+  return n * factorial(n - 1);
+}
+document.getElementById("out").textContent = "5! = " + factorial(5);
+  </script>
+</body>
+</html>

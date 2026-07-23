@@ -1,0 +1,34 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 18-Object-Examples
+  example: 38-cart-object.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>38 — Shopping Cart Object | phpkingdom.com</title>
+</head>
+<body>
+  <h1>38 — Shopping Cart Object</h1>
+  <h2>Problem</h2>
+  <p>Build a cart object with addItem and total methods.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const cart = {
+  items: [],
+  addItem(name, price, qty = 1) { this.items.push({ name, price, qty }); },
+  total() { return this.items.reduce((sum, i) => sum + i.price * i.qty, 0); }
+};
+cart.addItem("HTML Book", 20, 2);
+cart.addItem("CSS Guide", 15);
+document.getElementById("out").textContent = JSON.stringify(cart.items) + "\ntotal=" + cart.total();
+  </script>
+</body>
+</html>

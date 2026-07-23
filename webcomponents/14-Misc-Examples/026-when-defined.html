@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Misc-Examples
+  example: 026-when-defined.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>026 — when-defined | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>026 — when-defined</h1>
+  <p class="meta">customElements.whenDefined('x')</p>
+  <p>customElements.whenDefined('x')</p>
+<pre id="out"></pre>
+  <script>
+customElements.define("misc-ready", class extends HTMLElement {});
+customElements.whenDefined("misc-ready").then(() => {
+  document.getElementById("out").textContent = "ready";
+});
+  </script>
+</body>
+</html>

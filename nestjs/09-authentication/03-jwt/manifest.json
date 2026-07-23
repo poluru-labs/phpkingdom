@@ -1,0 +1,452 @@
+[
+  {
+    "type": "example",
+    "file": "09-authentication/03-jwt/examples/01-nest-new.html",
+    "focus": "nest new",
+    "scenario": "REST API backend"
+  },
+  {
+    "type": "example",
+    "file": "09-authentication/03-jwt/examples/02-module-decorator.html",
+    "focus": "module decorator",
+    "scenario": "SaaS platform"
+  },
+  {
+    "type": "example",
+    "file": "09-authentication/03-jwt/examples/03-controller-route.html",
+    "focus": "controller route",
+    "scenario": "e-commerce API"
+  },
+  {
+    "type": "example",
+    "file": "09-authentication/03-jwt/examples/04-injectable-service.html",
+    "focus": "injectable service",
+    "scenario": "admin service"
+  },
+  {
+    "type": "example",
+    "file": "09-authentication/03-jwt/examples/05-dependency-inject.html",
+    "focus": "dependency inject",
+    "scenario": "auth service"
+  },
+  {
+    "type": "example",
+    "file": "09-authentication/03-jwt/examples/06-dto-validation.html",
+    "focus": "dto validation",
+    "scenario": "billing microservice"
+  },
+  {
+    "type": "example",
+    "file": "09-authentication/03-jwt/examples/07-validation-pipe.html",
+    "focus": "validation pipe",
+    "scenario": "notification service"
+  },
+  {
+    "type": "example",
+    "file": "09-authentication/03-jwt/examples/08-auth-guard.html",
+    "focus": "auth guard",
+    "scenario": "CMS backend"
+  },
+  {
+    "type": "example",
+    "file": "09-authentication/03-jwt/examples/09-roles-decorator.html",
+    "focus": "roles decorator",
+    "scenario": "IoT gateway"
+  },
+  {
+    "type": "example",
+    "file": "09-authentication/03-jwt/examples/10-exception-filter.html",
+    "focus": "exception filter",
+    "scenario": "B2B API"
+  },
+  {
+    "type": "example",
+    "file": "09-authentication/03-jwt/examples/11-interceptor-transform.html",
+    "focus": "interceptor transform",
+    "scenario": "REST API backend"
+  },
+  {
+    "type": "example",
+    "file": "09-authentication/03-jwt/examples/12-typeorm-entity.html",
+    "focus": "typeorm entity",
+    "scenario": "SaaS platform"
+  },
+  {
+    "type": "example",
+    "file": "09-authentication/03-jwt/examples/13-prisma-service.html",
+    "focus": "prisma service",
+    "scenario": "e-commerce API"
+  },
+  {
+    "type": "example",
+    "file": "09-authentication/03-jwt/examples/14-jwt-strategy.html",
+    "focus": "jwt strategy",
+    "scenario": "admin service"
+  },
+  {
+    "type": "example",
+    "file": "09-authentication/03-jwt/examples/15-config-module.html",
+    "focus": "config module",
+    "scenario": "auth service"
+  },
+  {
+    "type": "example",
+    "file": "09-authentication/03-jwt/examples/16-middleware-logger.html",
+    "focus": "middleware logger",
+    "scenario": "billing microservice"
+  },
+  {
+    "type": "example",
+    "file": "09-authentication/03-jwt/examples/17-query-params.html",
+    "focus": "query params",
+    "scenario": "notification service"
+  },
+  {
+    "type": "example",
+    "file": "09-authentication/03-jwt/examples/18-path-params.html",
+    "focus": "path params",
+    "scenario": "CMS backend"
+  },
+  {
+    "type": "example",
+    "file": "09-authentication/03-jwt/examples/19-request-body.html",
+    "focus": "request body",
+    "scenario": "IoT gateway"
+  },
+  {
+    "type": "example",
+    "file": "09-authentication/03-jwt/examples/20-crud-endpoints.html",
+    "focus": "crud endpoints",
+    "scenario": "B2B API"
+  },
+  {
+    "type": "example",
+    "file": "09-authentication/03-jwt/examples/21-graphql-resolver.html",
+    "focus": "graphql resolver",
+    "scenario": "REST API backend"
+  },
+  {
+    "type": "example",
+    "file": "09-authentication/03-jwt/examples/22-microservice-pattern.html",
+    "focus": "microservice pattern",
+    "scenario": "SaaS platform"
+  },
+  {
+    "type": "example",
+    "file": "09-authentication/03-jwt/examples/23-unit-test.html",
+    "focus": "unit test",
+    "scenario": "e-commerce API"
+  },
+  {
+    "type": "example",
+    "file": "09-authentication/03-jwt/examples/24-e2e-test.html",
+    "focus": "e2e test",
+    "scenario": "admin service"
+  },
+  {
+    "type": "example",
+    "file": "09-authentication/03-jwt/examples/25-best-practice-recap.html",
+    "focus": "best practice recap",
+    "scenario": "auth service"
+  },
+  {
+    "type": "exercise",
+    "file": "09-authentication/03-jwt/exercises/01-nest-new-app.html",
+    "focus": "nest new app",
+    "scenario": "REST API backend"
+  },
+  {
+    "type": "exercise",
+    "file": "09-authentication/03-jwt/exercises/02-generate-module.html",
+    "focus": "generate module",
+    "scenario": "SaaS platform"
+  },
+  {
+    "type": "exercise",
+    "file": "09-authentication/03-jwt/exercises/03-generate-controller.html",
+    "focus": "generate controller",
+    "scenario": "e-commerce API"
+  },
+  {
+    "type": "exercise",
+    "file": "09-authentication/03-jwt/exercises/04-generate-service.html",
+    "focus": "generate service",
+    "scenario": "admin service"
+  },
+  {
+    "type": "exercise",
+    "file": "09-authentication/03-jwt/exercises/05-inject-service.html",
+    "focus": "inject service",
+    "scenario": "auth service"
+  },
+  {
+    "type": "exercise",
+    "file": "09-authentication/03-jwt/exercises/06-get-mapping.html",
+    "focus": "get mapping",
+    "scenario": "billing microservice"
+  },
+  {
+    "type": "exercise",
+    "file": "09-authentication/03-jwt/exercises/07-post-mapping.html",
+    "focus": "post mapping",
+    "scenario": "notification service"
+  },
+  {
+    "type": "exercise",
+    "file": "09-authentication/03-jwt/exercises/08-param-decorator.html",
+    "focus": "param decorator",
+    "scenario": "CMS backend"
+  },
+  {
+    "type": "exercise",
+    "file": "09-authentication/03-jwt/exercises/09-query-decorator.html",
+    "focus": "query decorator",
+    "scenario": "IoT gateway"
+  },
+  {
+    "type": "exercise",
+    "file": "09-authentication/03-jwt/exercises/10-body-dto.html",
+    "focus": "body dto",
+    "scenario": "B2B API"
+  },
+  {
+    "type": "exercise",
+    "file": "09-authentication/03-jwt/exercises/11-class-validator.html",
+    "focus": "class validator",
+    "scenario": "REST API backend"
+  },
+  {
+    "type": "exercise",
+    "file": "09-authentication/03-jwt/exercises/12-usepipes.html",
+    "focus": "usePipes",
+    "scenario": "SaaS platform"
+  },
+  {
+    "type": "exercise",
+    "file": "09-authentication/03-jwt/exercises/13-canactivate.html",
+    "focus": "canActivate",
+    "scenario": "e-commerce API"
+  },
+  {
+    "type": "exercise",
+    "file": "09-authentication/03-jwt/exercises/14-roles-guard.html",
+    "focus": "roles guard",
+    "scenario": "admin service"
+  },
+  {
+    "type": "exercise",
+    "file": "09-authentication/03-jwt/exercises/15-http-exception.html",
+    "focus": "http exception",
+    "scenario": "auth service"
+  },
+  {
+    "type": "exercise",
+    "file": "09-authentication/03-jwt/exercises/16-catch-filter.html",
+    "focus": "catch filter",
+    "scenario": "billing microservice"
+  },
+  {
+    "type": "exercise",
+    "file": "09-authentication/03-jwt/exercises/17-interceptor-map.html",
+    "focus": "interceptor map",
+    "scenario": "notification service"
+  },
+  {
+    "type": "exercise",
+    "file": "09-authentication/03-jwt/exercises/18-typeorm-repo.html",
+    "focus": "typeorm repo",
+    "scenario": "CMS backend"
+  },
+  {
+    "type": "exercise",
+    "file": "09-authentication/03-jwt/exercises/19-prisma-find.html",
+    "focus": "prisma find",
+    "scenario": "IoT gateway"
+  },
+  {
+    "type": "exercise",
+    "file": "09-authentication/03-jwt/exercises/20-jwt-guard.html",
+    "focus": "jwt guard",
+    "scenario": "B2B API"
+  },
+  {
+    "type": "exercise",
+    "file": "09-authentication/03-jwt/exercises/21-config-get.html",
+    "focus": "config get",
+    "scenario": "REST API backend"
+  },
+  {
+    "type": "exercise",
+    "file": "09-authentication/03-jwt/exercises/22-message-pattern.html",
+    "focus": "message pattern",
+    "scenario": "SaaS platform"
+  },
+  {
+    "type": "exercise",
+    "file": "09-authentication/03-jwt/exercises/23-testing-module.html",
+    "focus": "testing module",
+    "scenario": "e-commerce API"
+  },
+  {
+    "type": "exercise",
+    "file": "09-authentication/03-jwt/exercises/24-supertest-e2e.html",
+    "focus": "supertest e2e",
+    "scenario": "admin service"
+  },
+  {
+    "type": "exercise",
+    "file": "09-authentication/03-jwt/exercises/25-final-challenge.html",
+    "focus": "final challenge",
+    "scenario": "auth service"
+  },
+  {
+    "type": "template",
+    "file": "09-authentication/03-jwt/templates/01-starter-api.html",
+    "focus": "starter api",
+    "scenario": "REST API backend"
+  },
+  {
+    "type": "template",
+    "file": "09-authentication/03-jwt/templates/02-users-crud.html",
+    "focus": "users crud",
+    "scenario": "SaaS platform"
+  },
+  {
+    "type": "template",
+    "file": "09-authentication/03-jwt/templates/03-auth-jwt.html",
+    "focus": "auth jwt",
+    "scenario": "e-commerce API"
+  },
+  {
+    "type": "template",
+    "file": "09-authentication/03-jwt/templates/04-roles-rbac.html",
+    "focus": "roles rbac",
+    "scenario": "admin service"
+  },
+  {
+    "type": "template",
+    "file": "09-authentication/03-jwt/templates/05-validation-dto.html",
+    "focus": "validation dto",
+    "scenario": "auth service"
+  },
+  {
+    "type": "template",
+    "file": "09-authentication/03-jwt/templates/06-typeorm-postgres.html",
+    "focus": "typeorm postgres",
+    "scenario": "billing microservice"
+  },
+  {
+    "type": "template",
+    "file": "09-authentication/03-jwt/templates/07-prisma-mongo.html",
+    "focus": "prisma mongo",
+    "scenario": "notification service"
+  },
+  {
+    "type": "template",
+    "file": "09-authentication/03-jwt/templates/08-mongoose-models.html",
+    "focus": "mongoose models",
+    "scenario": "CMS backend"
+  },
+  {
+    "type": "template",
+    "file": "09-authentication/03-jwt/templates/09-graphql-codefirst.html",
+    "focus": "graphql codefirst",
+    "scenario": "IoT gateway"
+  },
+  {
+    "type": "template",
+    "file": "09-authentication/03-jwt/templates/10-config-env.html",
+    "focus": "config env",
+    "scenario": "B2B API"
+  },
+  {
+    "type": "template",
+    "file": "09-authentication/03-jwt/templates/11-logging-interceptor.html",
+    "focus": "logging interceptor",
+    "scenario": "REST API backend"
+  },
+  {
+    "type": "template",
+    "file": "09-authentication/03-jwt/templates/12-exception-layer.html",
+    "focus": "exception layer",
+    "scenario": "SaaS platform"
+  },
+  {
+    "type": "template",
+    "file": "09-authentication/03-jwt/templates/13-file-upload.html",
+    "focus": "file upload",
+    "scenario": "e-commerce API"
+  },
+  {
+    "type": "template",
+    "file": "09-authentication/03-jwt/templates/14-swagger-docs.html",
+    "focus": "swagger docs",
+    "scenario": "admin service"
+  },
+  {
+    "type": "template",
+    "file": "09-authentication/03-jwt/templates/15-health-check.html",
+    "focus": "health check",
+    "scenario": "auth service"
+  },
+  {
+    "type": "template",
+    "file": "09-authentication/03-jwt/templates/16-kafka-consumer.html",
+    "focus": "kafka consumer",
+    "scenario": "billing microservice"
+  },
+  {
+    "type": "template",
+    "file": "09-authentication/03-jwt/templates/17-rabbitmq-queue.html",
+    "focus": "rabbitmq queue",
+    "scenario": "notification service"
+  },
+  {
+    "type": "template",
+    "file": "09-authentication/03-jwt/templates/18-websocket-gateway.html",
+    "focus": "websocket gateway",
+    "scenario": "CMS backend"
+  },
+  {
+    "type": "template",
+    "file": "09-authentication/03-jwt/templates/19-scheduled-tasks.html",
+    "focus": "scheduled tasks",
+    "scenario": "IoT gateway"
+  },
+  {
+    "type": "template",
+    "file": "09-authentication/03-jwt/templates/20-docker-deploy.html",
+    "focus": "docker deploy",
+    "scenario": "B2B API"
+  },
+  {
+    "type": "template",
+    "file": "09-authentication/03-jwt/templates/21-unit-tests.html",
+    "focus": "unit tests",
+    "scenario": "REST API backend"
+  },
+  {
+    "type": "template",
+    "file": "09-authentication/03-jwt/templates/22-e2e-suite.html",
+    "focus": "e2e suite",
+    "scenario": "SaaS platform"
+  },
+  {
+    "type": "template",
+    "file": "09-authentication/03-jwt/templates/23-dynamic-module.html",
+    "focus": "dynamic module",
+    "scenario": "e-commerce API"
+  },
+  {
+    "type": "template",
+    "file": "09-authentication/03-jwt/templates/24-custom-decorator.html",
+    "focus": "custom decorator",
+    "scenario": "admin service"
+  },
+  {
+    "type": "template",
+    "file": "09-authentication/03-jwt/templates/25-production-starter.html",
+    "focus": "production starter",
+    "scenario": "auth service"
+  }
+]

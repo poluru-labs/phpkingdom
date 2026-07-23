@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 23-Promises-Examples
+  example: 12-promise-all.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>12 — Promise.all Success | phpkingdom.com</title>
+</head>
+<body>
+  <h1>12 — Promise.all Success</h1>
+  <h2>Problem</h2>
+  <p>Wait for all promises; resolve with an array of results.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+Promise.all([
+  Promise.resolve("html"),
+  Promise.resolve("css"),
+  Promise.resolve("js")
+]).then((values) => {
+  document.getElementById("out").textContent = values.join(" + ");
+});
+  </script>
+</body>
+</html>

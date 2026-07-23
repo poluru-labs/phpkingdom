@@ -1,0 +1,23 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 12-Misc-Examples
+  example: 090-bind.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>090 — bind | phpkingdom.com</title>
+</head>
+<body>
+  <h1>090 — bind</h1>
+  <pre id="out"></pre>
+  <script>
+function f(){return this.x;} document.getElementById("out").textContent=f.bind({x:9})();
+  </script>
+</body>
+</html>

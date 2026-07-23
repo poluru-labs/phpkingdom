@@ -1,0 +1,37 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 11-Browser-APIs/03-timers
+  example: 02-clearTimeout.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>clearTimeout | phpkingdom.com</title>
+</head>
+<body>
+  <h1>clearTimeout</h1>
+  <p>Cancel a scheduled timeout.</p>
+  <button id="start" type="button">Start 2s timer</button>
+  <button id="cancel" type="button">Cancel</button>
+  <pre id="out"></pre>
+  <script>
+let id;
+document.getElementById("start").onclick = function () {
+  document.getElementById("out").textContent = "timer running…";
+  id = setTimeout(function () {
+    document.getElementById("out").textContent = "done";
+  }, 2000);
+};
+document.getElementById("cancel").onclick = function () {
+  clearTimeout(id);
+  document.getElementById("out").textContent = "cancelled";
+};
+  </script>
+</body>
+</html>

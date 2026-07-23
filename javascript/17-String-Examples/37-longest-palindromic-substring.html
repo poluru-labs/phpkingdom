@@ -1,0 +1,41 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 17-String-Examples
+  example: 37-longest-palindromic-substring.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>37 — Longest Palindromic Substring | phpkingdom.com</title>
+</head>
+<body>
+  <h1>37 — Longest Palindromic Substring</h1>
+  <h2>Problem</h2>
+  <p>Find the longest palindromic substring (expand around centers).</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function longestPalindrome(s) {
+  let best = "";
+  function expand(l, r) {
+    while (l >= 0 && r < s.length && s[l] === s[r]) { l--; r++; }
+    return s.slice(l + 1, r);
+  }
+  for (let i = 0; i < s.length; i++) {
+    const odd = expand(i, i);
+    const even = expand(i, i + 1);
+    const cur = odd.length > even.length ? odd : even;
+    if (cur.length > best.length) best = cur;
+  }
+  return best;
+}
+document.getElementById("out").textContent = longestPalindrome("babad");
+  </script>
+</body>
+</html>

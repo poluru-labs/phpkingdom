@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 19-Recursion-Examples
+  example: 40-decimal-to-binary.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>40 — Decimal to Binary | phpkingdom.com</title>
+</head>
+<body>
+  <h1>40 — Decimal to Binary</h1>
+  <h2>Problem</h2>
+  <p>Convert a decimal number to binary string recursively.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function decToBin(n) {
+  if (n <= 1) return String(n);
+  return decToBin(Math.floor(n / 2)) + (n % 2);
+}
+document.getElementById("out").textContent = "13₁₀ = " + decToBin(13) + "₂";
+  </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 12-Misc-Examples
+  example: 041-performance-mark.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>041 — performance.mark | phpkingdom.com</title>
+</head>
+<body>
+  <h1>041 — performance.mark</h1>
+  <p>Named marks.</p>
+<pre id="out"></pre>
+  <script>
+performance.mark("a");performance.mark("b");performance.measure("m","a","b");document.getElementById("out").textContent=performance.getEntriesByName("m")[0].duration.toFixed(3);
+  </script>
+</body>
+</html>

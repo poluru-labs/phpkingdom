@@ -1,0 +1,41 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Templates
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>14-Templates | phpkingdom.com</title>
+  <style>
+    body { font-family: Georgia, "Times New Roman", serif; max-width: 760px; margin: 2rem auto; padding: 0 1.25rem; line-height: 1.6; color: #1a1a1a; }
+    h1 { font-size: 1.75rem; margin-bottom: 0.35rem; }
+    .meta { color: #555; font-size: 0.95rem; margin-bottom: 1.25rem; }
+    .note { background: #f0f7fb; padding: 0.75rem 1rem; border-left: 3px solid #0f766e; margin: 1rem 0; }
+    pre, code { font-family: ui-monospace, Menlo, monospace; }
+    pre { background: #111827; color: #e5e7eb; padding: 0.85rem 1rem; overflow: auto; }
+    button, input, select, textarea { font: inherit; padding: 0.4rem 0.55rem; }
+    button { cursor: pointer; background: #0f766e; color: #fff; border: 0; padding: 0.55rem 1rem; }
+    #out { white-space: pre-wrap; background: #f4f4f4; padding: 0.75rem; min-height: 2rem; }
+    .demo { margin: 1rem 0; padding: 1rem; border: 1px dashed #94a3b8; }
+    canvas, video, audio { max-width: 100%; }
+
+    .brand { color:#0f766e; font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    a { color:#0f766e; }
+    ol { line-height: 1.8; }
+  </style>
+</head>
+<body>
+  <div class="brand">phpkingdom.com</div>
+  <h1>14-Templates — HTML5 APIs Starters</h1>
+  <p class="meta">25 unique runnable starter templates (storage, canvas, fetch, workers, and more).</p>
+  <p><a href="../index.html">← HTML5 APIs Tutorials</a></p>
+  <ol><li><a href="01-localstorage-notes/index.html"><strong>01-localstorage-notes</strong> — localStorage Notes</a> <span class="meta">(Persist a notes list in localStorage.)</span></li><li><a href="02-session-draft/index.html"><strong>02-session-draft</strong> — Session Draft</a> <span class="meta">(Autosave a textarea in sessionStorage.)</span></li><li><a href="03-indexeddb-store/index.html"><strong>03-indexeddb-store</strong> — IndexedDB Store</a> <span class="meta">(Put/get a record in IndexedDB.)</span></li><li><a href="04-geolocation-map/index.html"><strong>04-geolocation-map</strong> — Geolocation Readout</a> <span class="meta">(Show coordinates from geolocation.)</span></li><li><a href="05-history-spa/index.html"><strong>05-history-spa</strong> — History SPA Stub</a> <span class="meta">(pushState + popstate mini router.)</span></li><li><a href="06-canvas-draw/index.html"><strong>06-canvas-draw</strong> — Canvas Draw</a> <span class="meta">(Draw freehand on canvas.)</span></li><li><a href="07-file-dropzone/index.html"><strong>07-file-dropzone</strong> — File Dropzone</a> <span class="meta">(Drop or pick files and list them.)</span></li><li><a href="08-fetch-list/index.html"><strong>08-fetch-list</strong> — Fetch List</a> <span class="meta">(Fetch JSON and render a list.)</span></li><li><a href="09-websocket-stub/index.html"><strong>09-websocket-stub</strong> — WebSocket Stub</a> <span class="meta">(Echo a message over WebSocket.)</span></li><li><a href="10-sse-stub/index.html"><strong>10-sse-stub</strong> — SSE Stub</a> <span class="meta">(EventSource feature detect + pattern.)</span></li><li><a href="11-worker-compute/index.html"><strong>11-worker-compute</strong> — Worker Compute</a> <span class="meta">(Double a number in a Blob worker.)</span></li><li><a href="12-sw-cache-notes/index.html"><strong>12-sw-cache-notes</strong> — SW Cache Notes</a> <span class="meta">(Inspect Cache Storage keys.)</span></li><li><a href="13-clipboard-tool/index.html"><strong>13-clipboard-tool</strong> — Clipboard Tool</a> <span class="meta">(Copy and read text.)</span></li><li><a href="14-intersection-lazy/index.html"><strong>14-intersection-lazy</strong> — Intersection Lazy</a> <span class="meta">(Lazy-reveal content on scroll.)</span></li><li><a href="15-mutation-log/index.html"><strong>15-mutation-log</strong> — Mutation Log</a> <span class="meta">(Log childList mutations.)</span></li><li><a href="16-raf-pulse/index.html"><strong>16-raf-pulse</strong> — rAF Pulse</a> <span class="meta">(Pulse opacity with requestAnimationFrame.)</span></li><li><a href="17-notifications-prompt/index.html"><strong>17-notifications-prompt</strong> — Notifications Prompt</a> <span class="meta">(Request permission and notify.)</span></li><li><a href="18-media-recorder-stub/index.html"><strong>18-media-recorder-stub</strong> — Media Recorder Stub</a> <span class="meta">(Detect recorder + mime support.)</span></li><li><a href="19-broadcast-channel/index.html"><strong>19-broadcast-channel</strong> — Broadcast Channel</a> <span class="meta">(Ping other same-origin tabs.)</span></li><li><a href="20-payment-stub/index.html"><strong>20-payment-stub</strong> — Payment Stub</a> <span class="meta">(Detect PaymentRequest.)</span></li><li><a href="21-web-share/index.html"><strong>21-web-share</strong> — Web Share</a> <span class="meta">(Share the current page.)</span></li><li><a href="22-permissions-dashboard/index.html"><strong>22-permissions-dashboard</strong> — Permissions Dashboard</a> <span class="meta">(Query a few permission names.)</span></li><li><a href="23-performance-marks/index.html"><strong>23-performance-marks</strong> — Performance Marks</a> <span class="meta">(Measure a block with User Timing.)</span></li><li><a href="24-offline-shell/index.html"><strong>24-offline-shell</strong> — Offline Shell</a> <span class="meta">(Minimal offline-ready shell checklist UI.)</span></li><li><a href="25-production-checklist/index.html"><strong>25-production-checklist</strong> — Production Checklist</a> <span class="meta">(Ship-ready HTML5 API checklist.)</span></li></ol>
+</body>
+</html>

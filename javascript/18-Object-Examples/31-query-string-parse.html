@@ -1,0 +1,37 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 18-Object-Examples
+  example: 31-query-string-parse.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>31 — Parse Query String to Object | phpkingdom.com</title>
+</head>
+<body>
+  <h1>31 — Parse Query String to Object</h1>
+  <h2>Problem</h2>
+  <p>Convert URL query params into an object.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function parseQuery(qs) {
+  const clean = qs.replace(/^\?/, "");
+  if (!clean) return {};
+  return Object.fromEntries(
+    clean.split("&").map((pair) => {
+      const [k, v = ""] = pair.split("=");
+      return [decodeURIComponent(k), decodeURIComponent(v)];
+    })
+  );
+}
+document.getElementById("out").textContent = JSON.stringify(parseQuery("?site=phpkingdom.com&lang=js"));
+  </script>
+</body>
+</html>

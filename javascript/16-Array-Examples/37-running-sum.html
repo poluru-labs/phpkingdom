@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 16-Array-Examples
+  example: 37-running-sum.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>37 — Running Sum | phpkingdom.com</title>
+</head>
+<body>
+  <h1>37 — Running Sum</h1>
+  <h2>Problem</h2>
+  <p>Return prefix sums of the array.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function runningSum(nums) {
+  const out = [];
+  let sum = 0;
+  for (const n of nums) {
+    sum += n;
+    out.push(sum);
+  }
+  return out;
+}
+document.getElementById("out").textContent = runningSum([1,2,3,4]).join(", ");
+  </script>
+</body>
+</html>

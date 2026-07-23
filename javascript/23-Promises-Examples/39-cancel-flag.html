@@ -1,0 +1,38 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 23-Promises-Examples
+  example: 39-cancel-flag.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>39 — Cancellation Flag Pattern | phpkingdom.com</title>
+</head>
+<body>
+  <h1>39 — Cancellation Flag Pattern</h1>
+  <h2>Problem</h2>
+  <p>Ignore late promise results after cancel.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+let cancelled = false;
+function load() {
+  return new Promise((resolve) => setTimeout(() => resolve("data"), 300));
+}
+const p = load().then((data) => {
+  if (cancelled) return;
+  document.getElementById("out").textContent = data;
+});
+cancelled = true;
+document.getElementById("out").textContent = "cancelled before resolve";
+// keep reference so linters/engines don't drop it
+void p;
+  </script>
+</body>
+</html>

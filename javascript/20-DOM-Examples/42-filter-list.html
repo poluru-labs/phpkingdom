@@ -1,0 +1,39 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 20-DOM-Examples
+  example: 42-filter-list.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>42 — Filter DOM List (Search) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>42 — Filter DOM List (Search)</h1>
+  <h2>Problem</h2>
+  <p>Hide list items that do not match a search string.</p>
+  <h2>Demo</h2>
+  <input id="q" placeholder="Filter…">
+  <ul id="list">
+    <li>Promise</li>
+    <li>async/await</li>
+    <li>DOM</li>
+    <li>Events</li>
+    <li>Fetch</li>
+  </ul>
+  <script>
+document.getElementById("q").addEventListener("input", (e) => {
+  const q = e.target.value.toLowerCase();
+  document.querySelectorAll("#list li").forEach((li) => {
+    li.hidden = !li.textContent.toLowerCase().includes(q);
+  });
+});
+  </script>
+</body>
+</html>

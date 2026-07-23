@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 045-matrix-diagonal.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>045 — Matrix Diagonal Sum | phpkingdom.com</title>
+</head>
+<body>
+  <h1>045 — Matrix Diagonal Sum</h1>
+  <h2>Problem</h2>
+  <p>Sum the main diagonal of a square matrix.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const m = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+let sum = 0;
+for (let i = 0; i < m.length; i++) sum += m[i][i];
+document.getElementById("out").textContent = "main diagonal sum = " + sum;
+  </script>
+</body>
+</html>

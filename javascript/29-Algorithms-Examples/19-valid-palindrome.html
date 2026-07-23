@@ -1,0 +1,40 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 29-Algorithms-Examples
+  example: 19-valid-palindrome.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>19 — Valid Palindrome | phpkingdom.com</title>
+</head>
+<body>
+  <h1>19 — Valid Palindrome</h1>
+  <h2>Problem</h2>
+  <p>Check if a string is a palindrome ignoring non-alphanumeric and case.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function isPalindrome(s) {
+  let lo = 0, hi = s.length - 1;
+  while (lo < hi) {
+    while (lo < hi && !/[a-z0-9]/i.test(s[lo])) lo++;
+    while (lo < hi && !/[a-z0-9]/i.test(s[hi])) hi--;
+    if (s[lo].toLowerCase() !== s[hi].toLowerCase()) return false;
+    lo++; hi--;
+  }
+  return true;
+}
+const samples = ["A man, a plan, a canal: Panama", "race a car"];
+document.getElementById("out").textContent = samples.map(s =>
+  JSON.stringify(s) + " => " + isPalindrome(s)
+).join("\n");
+  </script>
+</body>
+</html>

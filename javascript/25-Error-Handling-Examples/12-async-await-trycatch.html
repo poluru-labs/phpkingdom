@@ -1,0 +1,38 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 25-Error-Handling-Examples
+  example: 12-async-await-trycatch.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>12 — Async/Await Try/Catch | phpkingdom.com</title>
+</head>
+<body>
+  <h1>12 — Async/Await Try/Catch</h1>
+  <h2>Problem</h2>
+  <p>Wrap await in try/catch to handle rejected promises.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const out = document.getElementById("out");
+async function fetchUser() {
+  throw new Error("network down");
+}
+(async () => {
+  try {
+    await fetchUser();
+    out.textContent = "success";
+  } catch (e) {
+    out.textContent = "async catch: " + e.message;
+  }
+})();
+  </script>
+</body>
+</html>

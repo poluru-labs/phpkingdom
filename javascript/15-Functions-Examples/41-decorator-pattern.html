@@ -1,0 +1,35 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Functions-Examples
+  example: 41-decorator-pattern.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>41 — Decorator Pattern | phpkingdom.com</title>
+</head>
+<body>
+  <h1>41 — Decorator Pattern</h1>
+  <h2>Problem</h2>
+  <p>Wrap a function to add logging without changing its core logic.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function withLog(fn, label) {
+  return function (...args) {
+    const result = fn(...args);
+    return label + "(" + args.join(",") + ")=" + result;
+  };
+}
+const add = (a, b) => a + b;
+const loggedAdd = withLog(add, "add");
+document.getElementById("out").textContent = loggedAdd(2, 3);
+  </script>
+</body>
+</html>

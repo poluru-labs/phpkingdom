@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 30-Data-Structures-Examples
+  example: 23-tree-postorder.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>23 — Postorder Traversal | phpkingdom.com</title>
+</head>
+<body>
+  <h1>23 — Postorder Traversal</h1>
+  <h2>Problem</h2>
+  <p>Visit left subtree, right subtree, then root.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+class TreeNode { constructor(val, l = null, r = null) { this.val = val; this.left = l; this.right = r; } }
+function postorder(root, out = []) {
+  if (!root) return out;
+  postorder(root.left, out);
+  postorder(root.right, out);
+  out.push(root.val);
+  return out;
+}
+const root = new TreeNode(1, new TreeNode(2, new TreeNode(4), new TreeNode(5)), new TreeNode(3));
+document.getElementById("out").textContent = "postorder: " + postorder(root).join(" -> ");
+  </script>
+</body>
+</html>

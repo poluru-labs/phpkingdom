@@ -1,0 +1,54 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 50-Templates/23-cost-tips
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <meta name="description" content="Cost checklist for DynamoDB apps">
+  <title>Cost Tips | on-demand/GSI | phpkingdom.com</title>
+  <style>
+    body { margin:0; font-family: Georgia, "Times New Roman", serif; background:#f5f7fb; color:#1f2937; line-height:1.55; }
+    .wrap { max-width:900px; margin:0 auto; padding:1.5rem; }
+    .brand { color:#065f46; font-size:.78rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    h1 { font-size:1.75rem; margin:.4rem 0; }
+    .meta { color:#64748b; }
+    pre { background:#0f172a; color:#e2e8f0; padding:1rem; border-radius:.65rem; overflow:auto; font-size:.88rem; }
+    .card { background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:1rem; margin:1rem 0; }
+    a { color:#065f46; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">phpkingdom.com</div>
+    <p class="meta">Cost Tips · DynamoDB Node.js template</p>
+    <h1>on-demand/GSI</h1>
+    <p class="meta">Cost checklist for DynamoDB apps</p>
+    <div class="card">
+      <h2>SDK Scaffold</h2>
+      <pre><code>export const costChecklist = {
+  capacity: &quot;Prefer on-demand until traffic is steady; then provision + autoscaling&quot;,
+  access: &quot;Query &gt; Scan; paginate; project only needed attributes&quot;,
+  indexes: &quot;Minimize GSIs; use KEYS_ONLY/INCLUDE when possible&quot;,
+  storage: &quot;Enable TTL for ephemeral data; offload blobs to S3&quot;,
+  ops: &quot;Delete unused tables/indexes; watch ThrottledRequests before over-provisioning&quot;,
+};</code></pre>
+    </div>
+    <div class="card">
+      <h2>Verify</h2>
+      <pre><code>npm install @aws-sdk/client-dynamodb @aws-sdk/lib-dynamodb
+# optional: DynamoDB Local
+export DDB_ENDPOINT=http://localhost:8000
+node index.mjs</code></pre>
+    </div>
+    <p><a href="../index.html">All templates</a></p>
+  </div>
+</body>
+</html>

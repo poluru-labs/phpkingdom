@@ -1,0 +1,27 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 06-Objects/04-spread-rest
+  example: 01-spread-arrays.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Spread Arrays | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Spread in Arrays</h1>
+  <p>Copy/merge arrays.</p>
+  <pre id="out"></pre>
+  <script>
+const a = [1, 2];
+const b = [...a, 3, 4];
+document.getElementById("out").textContent = b.join(", ");
+  </script>
+</body>
+</html>

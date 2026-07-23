@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 24-API-Examples
+  example: 37-basic-auth-header.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>37 — Basic Auth Header | phpkingdom.com</title>
+</head>
+<body>
+  <h1>37 — Basic Auth Header</h1>
+  <h2>Problem</h2>
+  <p>Build an Authorization: Basic header value.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function basicAuthHeader(username, password) {
+  const token = btoa(username + ":" + password);
+  return "Basic " + token;
+}
+document.getElementById("out").textContent = basicAuthHeader("ada", "s3cret");
+  </script>
+</body>
+</html>

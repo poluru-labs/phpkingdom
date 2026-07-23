@@ -1,0 +1,41 @@
+<!--
+  sitename: phpkingdom
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 04-Semantic/02-layouts
+  example: 05-sticky-nav-sketch.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Sticky navigation sketch | phpkingdom</title>
+  <style>
+    body { font-family: Georgia, "Times New Roman", serif; max-width: 720px; margin: 2rem auto; padding: 0 1.25rem; line-height: 1.6; color: #1a1a1a; }
+    h1 { font-size: 1.75rem; margin-bottom: 0.35rem; }
+    .meta { color: #555; font-size: 0.95rem; margin-bottom: 1.5rem; }
+    code, pre { font-family: ui-monospace, "Cascadia Code", monospace; background: #f4f4f4; }
+    pre { padding: 0.85rem 1rem; overflow-x: auto; border-left: 3px solid #2a6f97; }
+    table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+    th, td { border: 1px solid #ccc; padding: 0.5rem 0.75rem; text-align: left; }
+    th { background: #eef4f8; }
+    form { display: grid; gap: 0.75rem; max-width: 420px; }
+    label { display: grid; gap: 0.25rem; }
+    input, select, textarea, button { font: inherit; padding: 0.4rem 0.55rem; }
+    button { cursor: pointer; background: #2a6f97; color: #fff; border: 0; padding: 0.55rem 1rem; }
+    .note { background: #f0f7fb; padding: 0.75rem 1rem; border-left: 3px solid #2a6f97; margin: 1rem 0; }
+    .demo { margin: 1rem 0; padding: 1rem; border: 1px dashed #94a3b8; }
+    img { max-width: 100%; height: auto; }
+    nav a { margin-right: 0.75rem; }
+    footer { border-top: 1px solid #ccc; padding-top: 1rem; margin-top: 2rem; color: #555; font-size: 0.95rem; }
+</style>
+</head>
+<body>
+  <h1>Sticky navigation sketch</h1>
+  <p class="meta">A header that stays visible while scrolling.</p>
+<nav style="position:sticky;top:0;background:#fff;border-bottom:1px solid #ccc;padding:0.5rem 0;"><a href="#one">One</a> <a href="#two">Two</a> <a href="#three">Three</a></nav><section id="one"><h2>One</h2><p style="min-height:12rem;">Scroll…</p></section><section id="two"><h2>Two</h2><p style="min-height:12rem;">Keep going…</p></section><section id="three"><h2>Three</h2><p>End.</p></section>
+</body>
+</html>

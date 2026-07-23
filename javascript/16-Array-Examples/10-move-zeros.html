@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 16-Array-Examples
+  example: 10-move-zeros.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>10 — Move Zeros to End | phpkingdom.com</title>
+</head>
+<body>
+  <h1>10 — Move Zeros to End</h1>
+  <h2>Problem</h2>
+  <p>Move all zeros to the end while keeping other order.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function moveZeros(arr) {
+  const nonZero = arr.filter((n) => n !== 0);
+  const zeros = arr.filter((n) => n === 0);
+  return nonZero.concat(zeros);
+}
+document.getElementById("out").textContent = moveZeros([0,1,0,3,12]).join(", ");
+  </script>
+</body>
+</html>

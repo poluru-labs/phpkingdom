@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 28-Tricky-Examples
+  example: 12-tdz-let.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>12 — Temporal Dead Zone | phpkingdom.com</title>
+</head>
+<body>
+  <h1>12 — Temporal Dead Zone</h1>
+  <h2>Problem / Gotcha</h2>
+  <p>Accessing let before initialization throws.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+try {
+  // eslint-disable-next-line no-use-before-define
+  document.getElementById("out").textContent = value;
+  let value = 1;
+} catch (e) {
+  document.getElementById("out").textContent = e.name + ": " + e.message;
+}
+  </script>
+</body>
+</html>

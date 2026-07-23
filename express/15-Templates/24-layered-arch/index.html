@@ -1,0 +1,75 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Templates/24-layered-arch
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <meta name="description" content="Thin controller + service layer">
+  <title>Layered Architecture | routes/controllers/services | phpkingdom.com</title>
+  <style>
+    body { margin:0; font-family: Georgia, "Times New Roman", serif; background:#f5f7fb; color:#1f2937; line-height:1.55; }
+    .wrap { max-width:900px; margin:0 auto; padding:1.5rem; }
+    .brand { color:#3730a3; font-size:.78rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    h1 { font-size:1.75rem; margin:.4rem 0; }
+    .meta { color:#64748b; }
+    pre { background:#0f172a; color:#e2e8f0; padding:1rem; border-radius:.65rem; overflow:auto; font-size:.88rem; }
+    .card { background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:1rem; margin:1rem 0; }
+    a { color:#3730a3; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">phpkingdom.com</div>
+    <p class="meta">Layered Architecture · Express template</p>
+    <h1>routes/controllers/services</h1>
+    <p class="meta">Thin controller + service layer</p>
+    <div class="card">
+      <h2>Starter Server</h2>
+      <pre><code>// services/usersService.js
+const users = [{ id: 1, name: &quot;Ada&quot; }];
+exports.list = () =&gt; users;
+exports.create = (dto) =&gt; {
+  const user = { id: users.length + 1, ...dto };
+  users.push(user);
+  return user;
+};
+
+// controllers/usersController.js
+const svc = require(&quot;../services/usersService&quot;);
+exports.list = (req, res) =&gt; res.json(svc.list());
+exports.create = (req, res) =&gt; res.status(201).json(svc.create(req.body));
+
+// routes/users.js
+const express = require(&quot;express&quot;);
+const c = require(&quot;../controllers/usersController&quot;);
+const router = express.Router();
+router.get(&quot;/&quot;, c.list);
+router.post(&quot;/&quot;, c.create);
+module.exports = router;
+
+// app.js
+const express = require(&quot;express&quot;);
+const users = require(&quot;./routes/users&quot;);
+const app = express();
+app.use(express.json());
+app.use(&quot;/users&quot;, users);
+module.exports = app;</code></pre>
+    </div>
+    <div class="card">
+      <h2>Run</h2>
+      <pre><code>npm install express
+node server.js
+curl http://localhost:3000/health</code></pre>
+    </div>
+    <p><a href="../index.html">All templates</a></p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 50-Templates/19-cdk-table
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <meta name="description" content="AWS CDK DynamoDB table + GSI">
+  <title>CDK Table | Table construct | phpkingdom.com</title>
+  <style>
+    body { margin:0; font-family: Georgia, "Times New Roman", serif; background:#f5f7fb; color:#1f2937; line-height:1.55; }
+    .wrap { max-width:900px; margin:0 auto; padding:1.5rem; }
+    .brand { color:#065f46; font-size:.78rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    h1 { font-size:1.75rem; margin:.4rem 0; }
+    .meta { color:#64748b; }
+    pre { background:#0f172a; color:#e2e8f0; padding:1rem; border-radius:.65rem; overflow:auto; font-size:.88rem; }
+    .card { background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:1rem; margin:1rem 0; }
+    a { color:#065f46; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">phpkingdom.com</div>
+    <p class="meta">CDK Table · DynamoDB Node.js template</p>
+    <h1>Table construct</h1>
+    <p class="meta">AWS CDK DynamoDB table + GSI</p>
+    <div class="card">
+      <h2>SDK Scaffold</h2>
+      <pre><code>import { Stack, RemovalPolicy } from &quot;aws-cdk-lib&quot;;
+import * as dynamodb from &quot;aws-cdk-lib/aws-dynamodb&quot;;
+
+export function createAppTable(stack: Stack) {
+  const table = new dynamodb.Table(stack, &quot;AppTable&quot;, {
+    partitionKey: { name: &quot;pk&quot;, type: dynamodb.AttributeType.STRING },
+    sortKey: { name: &quot;sk&quot;, type: dynamodb.AttributeType.STRING },
+    billingMode: dynamodb.BillingMode.PAY_PER_REQUEST,
+    removalPolicy: RemovalPolicy.DESTROY,
+    pointInTimeRecovery: true,
+  });
+  table.addGlobalSecondaryIndex({
+    indexName: &quot;GSI1&quot;,
+    partitionKey: { name: &quot;gsi1pk&quot;, type: dynamodb.AttributeType.STRING },
+    sortKey: { name: &quot;gsi1sk&quot;, type: dynamodb.AttributeType.STRING },
+    projectionType: dynamodb.ProjectionType.ALL,
+  });
+  return table;
+}</code></pre>
+    </div>
+    <div class="card">
+      <h2>Verify</h2>
+      <pre><code>npm install @aws-sdk/client-dynamodb @aws-sdk/lib-dynamodb
+# optional: DynamoDB Local
+export DDB_ENDPOINT=http://localhost:8000
+node index.mjs</code></pre>
+    </div>
+    <p><a href="../index.html">All templates</a></p>
+  </div>
+</body>
+</html>

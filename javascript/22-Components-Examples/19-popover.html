@@ -1,0 +1,104 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 22-Components-Examples
+  example: 19-popover.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>19 — Popover | phpkingdom.com</title>
+  <link rel="stylesheet" href="css/base.css">
+  <style>
+    .c-popover { position: relative; display: inline-block; }
+    .c-popover__panel {
+      position: absolute;
+      z-index: 40;
+      top: calc(100% + 8px);
+      left: 0;
+      min-width: 220px;
+      padding: 0.85rem;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      box-shadow: var(--shadow);
+    }
+    .c-popover__panel[hidden] { display: none; }
+    .c-popover__title { margin: 0 0 0.35rem; font-size: 0.95rem; font-weight: 600; }
+    .c-popover__text { margin: 0; font-size: 0.88rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <a class="back" href="index.html">← Components</a>
+    <h1>19 — Popover</h1>
+    <p class="lead">Click-triggered floating panel anchored to a button.</p>
+    <section class="panel">
+      <h2>Demo</h2>
+      <div id="mount"></div>
+    </section>
+    <section class="panel">
+      <h2>Events / State</h2>
+      <pre class="log" id="log">Ready.</pre>
+    </section>
+  </main>
+  <script>
+    const logEl = document.getElementById("log");
+    function log(msg) { logEl.textContent = msg; }
+
+    function createPopover({ triggerLabel = "Details", title = "About this", content = "Extra information appears here." } = {}) {
+      let open = false;
+
+      const wrap = document.createElement("div");
+      wrap.className = "c-popover";
+
+      const trigger = document.createElement("button");
+      trigger.type = "button";
+      trigger.className = "c-btn c-btn--secondary";
+      trigger.textContent = triggerLabel;
+      trigger.setAttribute("aria-expanded", "false");
+
+      const panel = document.createElement("div");
+      panel.className = "c-popover__panel";
+      panel.hidden = true;
+      const h = document.createElement("h4");
+      h.className = "c-popover__title";
+      h.textContent = title;
+      const p = document.createElement("p");
+      p.className = "c-popover__text";
+      p.textContent = content;
+      panel.append(h, p);
+
+      function setOpen(v) {
+        open = v;
+        panel.hidden = !open;
+        trigger.setAttribute("aria-expanded", String(open));
+        log(open ? "open" : "close");
+      }
+
+      trigger.addEventListener("click", (e) => {
+        e.stopPropagation();
+        setOpen(!open);
+      });
+
+      document.addEventListener("click", () => { if (open) setOpen(false); });
+      document.addEventListener("keydown", (e) => { if (e.key === "Escape" && open) setOpen(false); });
+
+      wrap.append(trigger, panel);
+
+      return { el: wrap, toggle: () => setOpen(!open), close: () => setOpen(false) };
+    }
+
+    document.getElementById("mount").appendChild(createPopover({
+      triggerLabel: "Show info",
+      title: "Storage usage",
+      content: "You have used 2.4 GB of your 5 GB quota. Upgrade for more space."
+    }).el);
+  </script>
+</body>
+</html>

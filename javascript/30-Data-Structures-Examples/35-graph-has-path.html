@@ -1,0 +1,41 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 30-Data-Structures-Examples
+  example: 35-graph-has-path.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>35 — Graph — Has Path | phpkingdom.com</title>
+</head>
+<body>
+  <h1>35 — Graph — Has Path</h1>
+  <h2>Problem</h2>
+  <p>Check if a path exists between two vertices using BFS.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const adj = { 1: [2,3], 2: [4], 3: [4], 4: [] };
+function hasPath(from, to) {
+  if (from === to) return true;
+  const visited = new Set([from]), q = [from];
+  while (q.length) {
+    const v = q.shift();
+    for (const nb of adj[v] || []) {
+      if (nb === to) return true;
+      if (!visited.has(nb)) { visited.add(nb); q.push(nb); }
+    }
+  }
+  return false;
+}
+document.getElementById("out").textContent =
+  "1 to 4 => " + hasPath(1, 4) + "\n1 to 5 => " + hasPath(1, 5);
+  </script>
+</body>
+</html>

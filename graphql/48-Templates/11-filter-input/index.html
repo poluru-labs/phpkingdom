@@ -1,0 +1,73 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 48-Templates/11-filter-input
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <meta name="description" content="Search and filter input types">
+  <title>Filter Input | Filter types | phpkingdom.com</title>
+  <style>
+    body { margin:0; font-family: Georgia, "Times New Roman", serif; background:#f5f7fb; color:#1f2937; line-height:1.55; }
+    .wrap { max-width:900px; margin:0 auto; padding:1.5rem; }
+    .brand { color:#9d174d; font-size:.78rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    h1 { font-size:1.75rem; margin:.4rem 0; }
+    .meta { color:#64748b; }
+    pre { background:#0f172a; color:#e2e8f0; padding:1rem; border-radius:.65rem; overflow:auto; font-size:.88rem; }
+    .card { background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:1rem; margin:1rem 0; }
+    a { color:#9d174d; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">phpkingdom.com</div>
+    <p class="meta">Filter Input · GraphQL Node.js template</p>
+    <h1>Filter types</h1>
+    <p class="meta">Search and filter input types</p>
+    <div class="card">
+      <h2>Server Scaffold</h2>
+      <pre><code>const typeDefs = `#graphql
+  input PostFilter {
+    titleContains: String
+    authorId: ID
+    published: Boolean
+  }
+  enum PostSort { CREATED_DESC CREATED_ASC TITLE_ASC }
+  type Query { posts(filter: PostFilter, sort: PostSort = CREATED_DESC): [Post!]! }
+`;
+function whereFrom(filter = {}) {
+  const where = {};
+  if (filter.titleContains) where.title = { contains: filter.titleContains, mode: &quot;insensitive&quot; };
+  if (filter.authorId) where.authorId = filter.authorId;
+  if (filter.published != null) where.published = filter.published;
+  return where;
+}
+const orderBy = {
+  CREATED_DESC: { createdAt: &quot;desc&quot; },
+  CREATED_ASC: { createdAt: &quot;asc&quot; },
+  TITLE_ASC: { title: &quot;asc&quot; },
+};
+const resolvers = {
+  Query: {
+    posts: (_p, { filter, sort }, { prisma }) =&gt;
+      prisma.post.findMany({ where: whereFrom(filter), orderBy: orderBy[sort] }),
+  },
+};</code></pre>
+    </div>
+    <div class="card">
+      <h2>Verify</h2>
+      <pre><code>npm install @apollo/server graphql
+node server.mjs
+# open http://localhost:4000 — Sandbox / Playground</code></pre>
+    </div>
+    <p><a href="../index.html">All templates</a></p>
+  </div>
+</body>
+</html>

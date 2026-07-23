@@ -1,0 +1,296 @@
+{
+  "title": "Karma Tutorials",
+  "items": [
+    {
+      "title": "Basics",
+      "items": [
+        {
+          "href": "/tutorials/karma/introduction",
+          "label": "Karma - Introduction"
+        },
+        {
+          "href": "/tutorials/karma/basics",
+          "label": "Karma - Basics"
+        },
+        {
+          "href": "/tutorials/karma/setup",
+          "label": "Karma Setup"
+        },
+        {
+          "href": "/tutorials/karma/first-test",
+          "label": "First Karma Test"
+        },
+        {
+          "href": "/tutorials/karma/karma-vs-jest",
+          "label": "Karma vs Jest"
+        }
+      ]
+    },
+    {
+      "title": "Core Concepts",
+      "items": [
+        {
+          "href": "/tutorials/karma/test-runner",
+          "label": "Test Runner"
+        },
+        {
+          "href": "/tutorials/karma/karma-config",
+          "label": "karma.conf.js"
+        },
+        {
+          "href": "/tutorials/karma/frameworks",
+          "label": "Testing Frameworks"
+        },
+        {
+          "href": "/tutorials/karma/browsers",
+          "label": "Browser Testing"
+        },
+        {
+          "href": "/tutorials/karma/watch-mode",
+          "label": "Watch Mode"
+        }
+      ]
+    },
+    {
+      "title": "Configuration",
+      "items": [
+        {
+          "href": "/tutorials/karma/configuration",
+          "label": "Karma Configuration"
+        },
+        {
+          "href": "/tutorials/karma/files-patterns",
+          "label": "Files and Patterns"
+        },
+        {
+          "href": "/tutorials/karma/preprocessors",
+          "label": "Preprocessors"
+        },
+        {
+          "href": "/tutorials/karma/plugins",
+          "label": "Karma Plugins"
+        },
+        {
+          "href": "/tutorials/karma/client-config",
+          "label": "Client Config"
+        }
+      ]
+    },
+    {
+      "title": "Launchers",
+      "items": [
+        {
+          "href": "/tutorials/karma/launchers",
+          "label": "Karma Launchers"
+        },
+        {
+          "href": "/tutorials/karma/chrome-launcher",
+          "label": "Chrome Launcher"
+        },
+        {
+          "href": "/tutorials/karma/firefox-launcher",
+          "label": "Firefox Launcher"
+        },
+        {
+          "href": "/tutorials/karma/chrome-headless",
+          "label": "ChromeHeadless"
+        },
+        {
+          "href": "/tutorials/karma/custom-launchers",
+          "label": "Custom Launchers"
+        },
+        {
+          "href": "/tutorials/karma/puppeteer-launcher",
+          "label": "Puppeteer Launcher"
+        }
+      ]
+    },
+    {
+      "title": "Frameworks",
+      "items": [
+        {
+          "href": "/tutorials/karma/karma-jasmine",
+          "label": "Karma with Jasmine"
+        },
+        {
+          "href": "/tutorials/karma/karma-mocha",
+          "label": "Karma with Mocha"
+        },
+        {
+          "href": "/tutorials/karma/karma-chai",
+          "label": "Karma with Chai"
+        },
+        {
+          "href": "/tutorials/karma/karma-webpack",
+          "label": "Karma with Webpack"
+        },
+        {
+          "href": "/tutorials/karma/karma-typescript",
+          "label": "Karma with TypeScript"
+        },
+        {
+          "href": "/tutorials/karma/karma-vite",
+          "label": "Karma with Vite"
+        }
+      ]
+    },
+    {
+      "title": "Reporters",
+      "items": [
+        {
+          "href": "/tutorials/karma/reporters",
+          "label": "Karma Reporters"
+        },
+        {
+          "href": "/tutorials/karma/progress-reporter",
+          "label": "Progress Reporter"
+        },
+        {
+          "href": "/tutorials/karma/spec-reporter",
+          "label": "Spec Reporter"
+        },
+        {
+          "href": "/tutorials/karma/junit-reporter",
+          "label": "JUnit Reporter"
+        },
+        {
+          "href": "/tutorials/karma/html-reporter",
+          "label": "HTML Reporter"
+        }
+      ]
+    },
+    {
+      "title": "Coverage",
+      "items": [
+        {
+          "href": "/tutorials/karma/code-coverage",
+          "label": "Code Coverage"
+        },
+        {
+          "href": "/tutorials/karma/karma-coverage",
+          "label": "karma-coverage"
+        },
+        {
+          "href": "/tutorials/karma/coverage-reporters",
+          "label": "Coverage Reporters"
+        },
+        {
+          "href": "/tutorials/karma/coverage-thresholds",
+          "label": "Coverage Thresholds"
+        },
+        {
+          "href": "/tutorials/karma/istanbul-instrument",
+          "label": "Istanbul Instrumentation"
+        }
+      ]
+    },
+    {
+      "title": "Angular Testing",
+      "items": [
+        {
+          "href": "/tutorials/karma/angular-testing",
+          "label": "Angular Testing with Karma"
+        },
+        {
+          "href": "/tutorials/karma/testbed",
+          "label": "Angular TestBed"
+        },
+        {
+          "href": "/tutorials/karma/component-testing",
+          "label": "Component Testing"
+        },
+        {
+          "href": "/tutorials/karma/service-testing",
+          "label": "Service Testing"
+        },
+        {
+          "href": "/tutorials/karma/pipe-directive-testing",
+          "label": "Pipe and Directive Testing"
+        }
+      ]
+    },
+    {
+      "title": "Debugging",
+      "items": [
+        {
+          "href": "/tutorials/karma/debugging",
+          "label": "Karma Debugging"
+        },
+        {
+          "href": "/tutorials/karma/browser-debugging",
+          "label": "Browser Debugging"
+        },
+        {
+          "href": "/tutorials/karma/source-maps",
+          "label": "Source Maps"
+        },
+        {
+          "href": "/tutorials/karma/test-failures",
+          "label": "Debug Test Failures"
+        }
+      ]
+    },
+    {
+      "title": "CI/CD",
+      "items": [
+        {
+          "href": "/tutorials/karma/ci-cd",
+          "label": "Karma CI/CD"
+        },
+        {
+          "href": "/tutorials/karma/github-actions",
+          "label": "GitHub Actions"
+        },
+        {
+          "href": "/tutorials/karma/jenkins",
+          "label": "Jenkins"
+        },
+        {
+          "href": "/tutorials/karma/docker",
+          "label": "Docker with Karma"
+        },
+        {
+          "href": "/tutorials/karma/headless-ci",
+          "label": "Headless CI Testing"
+        },
+        {
+          "href": "/tutorials/karma/gitlab-ci",
+          "label": "GitLab CI"
+        }
+      ]
+    },
+    {
+      "title": "Advanced",
+      "items": [
+        {
+          "href": "/tutorials/karma/custom-browser-launcher",
+          "label": "Custom Browser Launcher"
+        },
+        {
+          "href": "/tutorials/karma/custom-reporter",
+          "label": "Custom Reporter"
+        },
+        {
+          "href": "/tutorials/karma/custom-preprocessor",
+          "label": "Custom Preprocessor"
+        },
+        {
+          "href": "/tutorials/karma/performance",
+          "label": "Karma Performance"
+        },
+        {
+          "href": "/tutorials/karma/migration",
+          "label": "Karma Migration"
+        },
+        {
+          "href": "/tutorials/karma/sauce-labs",
+          "label": "Sauce Labs / BrowserStack"
+        },
+        {
+          "href": "/tutorials/karma/parallel-browsers",
+          "label": "Parallel Browser Runs"
+        }
+      ]
+    }
+  ]
+}

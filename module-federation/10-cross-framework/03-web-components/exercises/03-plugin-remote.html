@@ -1,0 +1,128 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Module Federation Tutorials
+section title: Cross-Framework
+topic title: Federation with Web Components
+content type: Exercise
+item number: 03
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Federation with Web Components Exercise 03 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ffedd5;
+      color: #9a3412;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Exercise 03</span>
+    <h1>Federation with Web Components</h1>
+    <p><strong>Section:</strong> Cross-Framework</p>
+    <p><strong>Focus:</strong> Plugin Remote</p>
+    <p><strong>Scenario:</strong> SaaS dashboard</p>
+    <p>Run a host and remote locally, then verify import('remote/Module') and shared deps.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Module Federation</h2>
+        <pre><code>// Federation with Web Components — Exercise 03
+// Focus: plugin remote | Scenario: SaaS dashboard
+
+// Expose a Custom Element from a federated remote
+
+// remotes/widget/src/product-card.js
+class ProductCard extends HTMLElement {
+  static get observedAttributes() { return [&quot;sku&quot;]; }
+  attributeChangedCallback() { this.render(); }
+  connectedCallback() { this.render(); }
+  render() {
+    this.innerHTML = `&lt;article&gt;SKU: ${this.getAttribute(&quot;sku&quot;)}&lt;/article&gt;`;
+  }
+}
+customElements.define(&quot;product-card&quot;, ProductCard);
+
+// webpack exposes: { &quot;./product-card&quot;: &quot;./src/product-card&quot; }
+
+// Host:
+await import(&quot;widget/product-card&quot;);
+// &lt;product-card sku=&quot;SKU-1&quot;&gt;&lt;/product-card&gt;
+
+// Framework-agnostic contract: attributes + CustomEvents</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Federation with Web Components
+- Practice: plugin remote
+- Scenario: SaaS dashboard
+- Share framework runtimes as singletons with requiredVersion
+- Load remotes lazily; wrap with error boundaries / fallbacks
+- Deploy remotes independently; version remoteEntry URLs carefully
+- Align CORS and CSP for cross-origin remoteEntry.js
+
+Useful commands:
+  npm install -D webpack webpack-cli webpack-dev-server
+  # run host + remote on different ports
+  npx webpack serve --config webpack.host.js --port 3000
+  npx webpack serve --config webpack.remote.js --port 3002</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This exercise shows one way to apply <strong>Federation with Web Components</strong> in a saas dashboard context.</p>
+      <p>Keep remotes independently deployable, share carefully, and always plan for remote downtime.</p>
+    </section>
+  </main>
+</body>
+</html>

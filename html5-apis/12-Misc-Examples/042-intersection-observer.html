@@ -1,0 +1,25 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 12-Misc-Examples
+  example: 042-intersection-observer.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>042 — IntersectionObserver | phpkingdom.com</title>
+</head>
+<body>
+  <h1>042 — IntersectionObserver</h1>
+  <p>Viewport intersection.</p>
+<div style="height:300px"></div><div id="t">Target</div><pre id="out"></pre>
+  <script>
+new IntersectionObserver(es=>document.getElementById("out").textContent=es[0].isIntersecting).observe(document.getElementById("t"));
+  </script>
+</body>
+</html>

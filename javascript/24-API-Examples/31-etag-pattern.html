@@ -1,0 +1,39 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 24-API-Examples
+  example: 31-etag-pattern.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>31 — ETag / If-None-Match Pattern | phpkingdom.com</title>
+</head>
+<body>
+  <h1>31 — ETag / If-None-Match Pattern</h1>
+  <h2>Problem</h2>
+  <p>Conditional request headers for caching.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+let etag = '"v1"';
+async function getWithEtag() {
+  const incoming = '"v1"'; // server current version
+  if (etag && etag === incoming) {
+    return { status: 304, body: null, note: "Not Modified" };
+  }
+  etag = incoming;
+  return { status: 200, body: { data: "fresh" }, etag };
+}
+getWithEtag().then((res) => {
+  document.getElementById("out").textContent = JSON.stringify(res, null, 2);
+});
+// headers: { "If-None-Match": etag }
+  </script>
+</body>
+</html>

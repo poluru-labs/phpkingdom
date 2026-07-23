@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 18-Object-Examples
+  example: 15-seal-object.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>15 — Object.seal | phpkingdom.com</title>
+</head>
+<body>
+  <h1>15 — Object.seal</h1>
+  <h2>Problem</h2>
+  <p>Allow value updates but no new keys.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const user = Object.seal({ name: "Ada" });
+user.name = "Grace";
+user.age = 30;
+document.getElementById("out").textContent = JSON.stringify(user);
+  </script>
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Module Federation Tutorials
+section title: Design Systems
+topic title: Shared Design Tokens
+content type: Exercise
+item number: 20
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Shared Design Tokens Exercise 20 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ffedd5;
+      color: #9a3412;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Exercise 20</span>
+    <h1>Shared Design Tokens</h1>
+    <p><strong>Section:</strong> Design Systems</p>
+    <p><strong>Focus:</strong> Deploy Remote</p>
+    <p><strong>Scenario:</strong> B2B portal</p>
+    <p>Run a host and remote locally, then verify import('remote/Module') and shared deps.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Module Federation</h2>
+        <pre><code>// Shared Design Tokens — Exercise 20
+// Focus: deploy remote | Scenario: B2B portal
+
+// Share design tokens (CSS variables / JS theme) across remotes
+
+// tokens.css exposed or injected by shell
+:root {
+  --color-brand: #9a3412;
+  --space-md: 16px;
+  --font-sans: &quot;Source Sans 3&quot;, system-ui, sans-serif;
+}
+
+// shell index.html loads tokens once
+// remotes use var(--color-brand) — no duplicate theme bundles
+
+// JS tokens module (singleton shared):
+export const tokens = { colorBrand: &quot;#9a3412&quot;, spaceMd: 16 };
+// shared: { &quot;@acme/tokens&quot;: { singleton: true } }</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Shared Design Tokens
+- Practice: deploy remote
+- Scenario: B2B portal
+- Share framework runtimes as singletons with requiredVersion
+- Load remotes lazily; wrap with error boundaries / fallbacks
+- Deploy remotes independently; version remoteEntry URLs carefully
+- Align CORS and CSP for cross-origin remoteEntry.js
+
+Useful commands:
+  npm install -D webpack webpack-cli webpack-dev-server
+  # run host + remote on different ports
+  npx webpack serve --config webpack.host.js --port 3000
+  npx webpack serve --config webpack.remote.js --port 3002</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This exercise shows one way to apply <strong>Shared Design Tokens</strong> in a b2b portal context.</p>
+      <p>Keep remotes independently deployable, share carefully, and always plan for remote downtime.</p>
+    </section>
+  </main>
+</body>
+</html>

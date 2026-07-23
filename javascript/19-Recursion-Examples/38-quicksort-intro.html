@@ -1,0 +1,34 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 19-Recursion-Examples
+  example: 38-quicksort-intro.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>38 — Quicksort Intro | phpkingdom.com</title>
+</head>
+<body>
+  <h1>38 — Quicksort Intro</h1>
+  <h2>Problem</h2>
+  <p>Sort an array with recursive quicksort using last element as pivot.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function quickSort(arr) {
+  if (arr.length <= 1) return arr;
+  const pivot = arr[arr.length - 1];
+  const left = arr.slice(0, -1).filter((x) => x <= pivot);
+  const right = arr.slice(0, -1).filter((x) => x > pivot);
+  return quickSort(left).concat([pivot], quickSort(right));
+}
+document.getElementById("out").textContent = quickSort([10, 7, 8, 9, 1, 5]).join(", ");
+  </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 003-sum-1-to-n.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>003 — Sum 1 to N | phpkingdom.com</title>
+</head>
+<body>
+  <h1>003 — Sum 1 to N</h1>
+  <h2>Problem</h2>
+  <p>Compute the sum of integers from 1 to N with a loop.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const N = 100;
+let sum = 0;
+for (let i = 1; i <= N; i++) sum += i;
+document.getElementById("out").textContent = "sum(1..100) = " + sum;
+  </script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 30-Data-Structures-Examples
+  example: 39-trie-insert-search.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>39 — Trie — Insert & Search | phpkingdom.com</title>
+</head>
+<body>
+  <h1>39 — Trie — Insert & Search</h1>
+  <h2>Problem</h2>
+  <p>Trie (prefix tree) with insert and exact word search.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+class TrieNode { constructor() { this.children = {}; this.end = false; } }
+class Trie {
+  constructor() { this.root = new TrieNode(); }
+  insert(word) {
+    let node = this.root;
+    for (const ch of word) {
+      if (!node.children[ch]) node.children[ch] = new TrieNode();
+      node = node.children[ch];
+    }
+    node.end = true;
+  }
+  search(word) {
+    let node = this.root;
+    for (const ch of word) {
+      if (!node.children[ch]) return false;
+      node = node.children[ch];
+    }
+    return node.end;
+  }
+}
+const trie = new Trie();
+["cat", "car", "dog"].forEach(w => trie.insert(w));
+document.getElementById("out").textContent =
+  "search cat => " + trie.search("cat") + "\nsearch ca => " + trie.search("ca") + "\nsearch car => " + trie.search("car");
+  </script>
+</body>
+</html>

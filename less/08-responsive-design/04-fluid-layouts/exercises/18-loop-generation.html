@@ -1,0 +1,116 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: LESS CSS Tutorials
+section title: Responsive Design
+topic title: Fluid Layouts
+content type: Exercise
+item number: 18
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Fluid Layouts Exercise 18 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #e0f2fe;
+      color: #075985;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Exercise 18</span>
+    <h1>Fluid Layouts</h1>
+    <p><strong>Section:</strong> Responsive Design</p>
+    <p><strong>Focus:</strong> Loop Generation</p>
+    <p><strong>Scenario:</strong> analytics page</p>
+    <p>Complete the task, refactor the sample, and compare your result with the suggested direction.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>LESS Snippet</h2>
+        <pre><code>// Fluid Layouts — Exercise 18
+// Focus: loop generation | Scenario: analytics page
+
+@min-w: 320px;
+@max-w: 1200px;
+
+.fluid-space(@min; @max) {
+  // simple clamp-friendly tokens
+  padding-inline: clamp(@min, 4vw, @max);
+}
+
+.shell {
+  .fluid-space(1rem, 2.5rem);
+  max-width: @max-w;
+  margin-inline: auto;
+}
+
+.hero-title {
+  font-size: clamp(1.75rem, 2vw + 1rem, 3rem);
+}</code></pre>
+      </section>
+      <section>
+        <h2>HTML Markup</h2>
+        <pre><code>&lt;section class=&quot;panel-fluid-layouts&quot;&gt;
+  &lt;h2&gt;Fluid Layouts&lt;/h2&gt;
+  &lt;p&gt;Loop Generation for a analytics page.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This exercise shows one way to apply <strong>Fluid Layouts</strong> in a analytics page context.</p>
+      <p>Adapt selectors, token names, and mixins to match your project naming rules.</p>
+    </section>
+  </main>
+</body>
+</html>

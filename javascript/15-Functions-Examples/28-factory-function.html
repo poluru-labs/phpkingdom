@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Functions-Examples
+  example: 28-factory-function.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>28 — Factory Function | phpkingdom.com</title>
+</head>
+<body>
+  <h1>28 — Factory Function</h1>
+  <h2>Problem</h2>
+  <p>Use a factory to create similar objects without new.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function createUser(name, role) {
+  return { name, role, label() { return name + " (" + role + ")"; } };
+}
+const u1 = createUser("Ada", "Dev");
+const u2 = createUser("Bob", "QA");
+document.getElementById("out").textContent =
+  u1.label() + "\n" + u2.label();
+  </script>
+</body>
+</html>

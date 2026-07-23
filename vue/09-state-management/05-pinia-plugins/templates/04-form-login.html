@@ -1,0 +1,119 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Vue.js Tutorials
+section title: State Management
+topic title: Pinia Plugins
+content type: Template
+item number: 04
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Pinia Plugins Template 04 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ffedd5;
+      color: #9a3412;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Template 04</span>
+    <h1>Pinia Plugins</h1>
+    <p><strong>Section:</strong> State Management</p>
+    <p><strong>Focus:</strong> Form Login</p>
+    <p><strong>Scenario:</strong> e-commerce store</p>
+    <p>Use this scaffold as a starting point for a Vue feature or page.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Vue.js</h2>
+        <pre><code>// Pinia Plugins — Template 04
+// Focus: form login | Scenario: e-commerce store
+
+// pinia persisted-state style plugin sketch
+pinia.use(({ store }) =&gt; {
+  const key = `pinia:${store.$id}`;
+  const raw = localStorage.getItem(key);
+  if (raw) store.$patch(JSON.parse(raw));
+  store.$subscribe((_, state) =&gt; {
+    localStorage.setItem(key, JSON.stringify(state));
+  });
+});</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Pinia Plugins
+- Practice: form login
+- Scenario: e-commerce store
+- Prefer &lt;script setup&gt; + Composition API for Vue 3
+- Use ref for primitives, reactive for objects; computed for derived state
+- Key lists with stable ids; v-if for costly trees, v-show for toggles
+- Props down / emits up; Pinia or provide/inject for shared state
+- Route with vue-router; guard auth; fetch with composables + loading/error
+
+Useful commands:
+  npm create vue@latest
+  npm install
+  npm run dev
+  npm run build
+  npm run type-check   # vue-tsc when TypeScript enabled</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This template focuses on <strong>Pinia Plugins</strong> in a e-commerce store context.</p>
+      <p>Prefer Composition API, keep components focused, and lift shared state into composables or Pinia.</p>
+    </section>
+  </main>
+</body>
+</html>

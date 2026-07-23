@@ -1,0 +1,34 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 30-Data-Structures-Examples
+  example: 09-linked-list-create-node.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>09 — Singly Linked List — Create Node | phpkingdom.com</title>
+</head>
+<body>
+  <h1>09 — Singly Linked List — Create Node</h1>
+  <h2>Problem</h2>
+  <p>Define a ListNode and create a small linked list manually.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+class ListNode {
+  constructor(val, next = null) { this.val = val; this.next = next; }
+}
+const head = new ListNode(1, new ListNode(2, new ListNode(3)));
+const vals = [];
+let cur = head;
+while (cur) { vals.push(cur.val); cur = cur.next; }
+document.getElementById("out").textContent = "values: " + vals.join(" -> ");
+  </script>
+</body>
+</html>

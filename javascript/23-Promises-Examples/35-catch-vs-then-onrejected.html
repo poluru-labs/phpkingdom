@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 23-Promises-Examples
+  example: 35-catch-vs-then-onrejected.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>35 — catch vs then(null, onRejected) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>35 — catch vs then(null, onRejected)</h1>
+  <h2>Problem</h2>
+  <p>catch(fn) is sugar for then(undefined, fn).</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+Promise.reject(new Error("x"))
+  .then(null, (err) => "recovered:" + err.message)
+  .then((v) => {
+    document.getElementById("out").textContent = v;
+  });
+  </script>
+</body>
+</html>

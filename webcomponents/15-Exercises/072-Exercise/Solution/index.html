@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/072-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 072 — Detail payload id — Solution | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>Exercise 072 — Detail payload id — Solution</h1>
+  <p class="meta">Emit {id:1} in event.detail.</p>
+  <h2>Solution</h2>
+  <p>Emit {id:1} in event.detail.</p>
+  <div id="demo"></div>
+  <pre id="out"></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+customElements.define("ex072-el", class extends HTMLElement {
+  connectedCallback() {
+    this.textContent = 'Detail payload id';
+  }
+});
+document.getElementById("demo").innerHTML = "<ex072-el></ex072-el>";
+document.getElementById("out").textContent = 'Emit {id:1} in event.detail.';
+  </script>
+</body>
+</html>

@@ -1,0 +1,317 @@
+{
+  "title": "Jest Tutorials",
+  "items": [
+    {
+      "title": "Basics",
+      "items": [
+        {
+          "href": "/tutorials/jest/introduction",
+          "label": "Jest - Introduction"
+        },
+        {
+          "href": "/tutorials/jest/basics",
+          "label": "Jest - Basics"
+        },
+        {
+          "href": "/tutorials/jest/setup",
+          "label": "Jest Setup"
+        },
+        {
+          "href": "/tutorials/jest/first-test",
+          "label": "First Jest Test"
+        },
+        {
+          "href": "/tutorials/jest/jest-vs-mocha",
+          "label": "Jest vs Mocha"
+        }
+      ]
+    },
+    {
+      "title": "Core Concepts",
+      "items": [
+        {
+          "href": "/tutorials/jest/test-files",
+          "label": "Jest Test Files"
+        },
+        {
+          "href": "/tutorials/jest/describe-it-test",
+          "label": "describe, it and test"
+        },
+        {
+          "href": "/tutorials/jest/expect",
+          "label": "expect()"
+        },
+        {
+          "href": "/tutorials/jest/matchers",
+          "label": "Jest Matchers"
+        },
+        {
+          "href": "/tutorials/jest/test-structure",
+          "label": "Test Structure"
+        }
+      ]
+    },
+    {
+      "title": "Matchers",
+      "items": [
+        {
+          "href": "/tutorials/jest/common-matchers",
+          "label": "Common Matchers"
+        },
+        {
+          "href": "/tutorials/jest/truthiness-matchers",
+          "label": "Truthiness Matchers"
+        },
+        {
+          "href": "/tutorials/jest/number-matchers",
+          "label": "Number Matchers"
+        },
+        {
+          "href": "/tutorials/jest/string-matchers",
+          "label": "String Matchers"
+        },
+        {
+          "href": "/tutorials/jest/array-object-matchers",
+          "label": "Array and Object Matchers"
+        },
+        {
+          "href": "/tutorials/jest/exception-matchers",
+          "label": "Exception Matchers"
+        }
+      ]
+    },
+    {
+      "title": "Test Setup",
+      "items": [
+        {
+          "href": "/tutorials/jest/before-after",
+          "label": "beforeEach and afterEach"
+        },
+        {
+          "href": "/tutorials/jest/beforeall-afterall",
+          "label": "beforeAll and afterAll"
+        },
+        {
+          "href": "/tutorials/jest/setup-files",
+          "label": "Setup Files"
+        },
+        {
+          "href": "/tutorials/jest/test-environment",
+          "label": "Test Environment"
+        },
+        {
+          "href": "/tutorials/jest/jest-config",
+          "label": "jest.config.js"
+        }
+      ]
+    },
+    {
+      "title": "Mocking",
+      "items": [
+        {
+          "href": "/tutorials/jest/mocking",
+          "label": "Jest Mocking"
+        },
+        {
+          "href": "/tutorials/jest/mock-functions",
+          "label": "Mock Functions"
+        },
+        {
+          "href": "/tutorials/jest/jest-fn",
+          "label": "jest.fn()"
+        },
+        {
+          "href": "/tutorials/jest/spies",
+          "label": "Jest Spies"
+        },
+        {
+          "href": "/tutorials/jest/mock-return-values",
+          "label": "Mock Return Values"
+        },
+        {
+          "href": "/tutorials/jest/mock-implementations",
+          "label": "Mock Implementations"
+        }
+      ]
+    },
+    {
+      "title": "Module Mocks",
+      "items": [
+        {
+          "href": "/tutorials/jest/module-mocking",
+          "label": "Module Mocking"
+        },
+        {
+          "href": "/tutorials/jest/manual-mocks",
+          "label": "Manual Mocks"
+        },
+        {
+          "href": "/tutorials/jest/auto-mocking",
+          "label": "Auto Mocking"
+        },
+        {
+          "href": "/tutorials/jest/mock-node-modules",
+          "label": "Mock Node Modules"
+        },
+        {
+          "href": "/tutorials/jest/mock-es-modules",
+          "label": "Mock ES Modules"
+        }
+      ]
+    },
+    {
+      "title": "Async Testing",
+      "items": [
+        {
+          "href": "/tutorials/jest/async-testing",
+          "label": "Async Testing"
+        },
+        {
+          "href": "/tutorials/jest/promises",
+          "label": "Testing Promises"
+        },
+        {
+          "href": "/tutorials/jest/async-await",
+          "label": "Testing Async Await"
+        },
+        {
+          "href": "/tutorials/jest/callbacks",
+          "label": "Testing Callbacks"
+        },
+        {
+          "href": "/tutorials/jest/fake-timers",
+          "label": "Fake Timers"
+        }
+      ]
+    },
+    {
+      "title": "Snapshot Testing",
+      "items": [
+        {
+          "href": "/tutorials/jest/snapshot-testing",
+          "label": "Snapshot Testing"
+        },
+        {
+          "href": "/tutorials/jest/inline-snapshots",
+          "label": "Inline Snapshots"
+        },
+        {
+          "href": "/tutorials/jest/update-snapshots",
+          "label": "Update Snapshots"
+        },
+        {
+          "href": "/tutorials/jest/snapshot-best-practices",
+          "label": "Snapshot Best Practices"
+        }
+      ]
+    },
+    {
+      "title": "Code Coverage",
+      "items": [
+        {
+          "href": "/tutorials/jest/code-coverage",
+          "label": "Code Coverage"
+        },
+        {
+          "href": "/tutorials/jest/coverage-report",
+          "label": "Coverage Report"
+        },
+        {
+          "href": "/tutorials/jest/coverage-thresholds",
+          "label": "Coverage Thresholds"
+        },
+        {
+          "href": "/tutorials/jest/coverage-config",
+          "label": "Coverage Config"
+        }
+      ]
+    },
+    {
+      "title": "Jest with Frontend",
+      "items": [
+        {
+          "href": "/tutorials/jest/jest-with-react",
+          "label": "Jest with React"
+        },
+        {
+          "href": "/tutorials/jest/react-testing-library",
+          "label": "React Testing Library"
+        },
+        {
+          "href": "/tutorials/jest/jest-with-vue",
+          "label": "Jest with Vue"
+        },
+        {
+          "href": "/tutorials/jest/dom-testing",
+          "label": "DOM Testing"
+        },
+        {
+          "href": "/tutorials/jest/jest-dom",
+          "label": "jest-dom Matchers"
+        },
+        {
+          "href": "/tutorials/jest/user-event",
+          "label": "user-event Testing"
+        }
+      ]
+    },
+    {
+      "title": "Jest with Backend",
+      "items": [
+        {
+          "href": "/tutorials/jest/jest-with-node",
+          "label": "Jest with Node.js"
+        },
+        {
+          "href": "/tutorials/jest/jest-with-express",
+          "label": "Jest with Express.js"
+        },
+        {
+          "href": "/tutorials/jest/api-testing",
+          "label": "API Testing"
+        },
+        {
+          "href": "/tutorials/jest/database-testing",
+          "label": "Database Testing"
+        }
+      ]
+    },
+    {
+      "title": "Advanced",
+      "items": [
+        {
+          "href": "/tutorials/jest/custom-matchers",
+          "label": "Custom Matchers"
+        },
+        {
+          "href": "/tutorials/jest/test-doubles",
+          "label": "Test Doubles"
+        },
+        {
+          "href": "/tutorials/jest/parameterized-tests",
+          "label": "Parameterized Tests"
+        },
+        {
+          "href": "/tutorials/jest/jest-watch-mode",
+          "label": "Jest Watch Mode"
+        },
+        {
+          "href": "/tutorials/jest/performance",
+          "label": "Jest Performance"
+        },
+        {
+          "href": "/tutorials/jest/msw",
+          "label": "Mock Service Worker"
+        },
+        {
+          "href": "/tutorials/jest/esm-support",
+          "label": "Jest ESM Support"
+        },
+        {
+          "href": "/tutorials/jest/typescript-jest",
+          "label": "TypeScript with Jest"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Misc-Examples
+  example: 094-iterator-protocol.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>094 — Iterator protocol | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>094 — Iterator protocol</h1>
+  <p class="meta">next() → { value, done }.</p>
+  <p>next() → { value, done }.</p>
+<pre id="out"></pre>
+  <script>
+const it=[1,2][Symbol.iterator]();document.getElementById('out').textContent=JSON.stringify(it.next());
+  </script>
+</body>
+</html>

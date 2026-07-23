@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 24-API-Examples
+  example: 14-parallel-requests.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>14 — Parallel Requests (Promise.all) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>14 — Parallel Requests (Promise.all)</h1>
+  <h2>Problem</h2>
+  <p>Load multiple endpoints in parallel.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const get = (name, ms) => new Promise((resolve) =>
+  setTimeout(() => resolve({ name, ms }), ms)
+);
+Promise.all([get("users", 120), get("posts", 80), get("comments", 40)])
+  .then((results) => {
+    document.getElementById("out").textContent = JSON.stringify(results, null, 2);
+  });
+  </script>
+</body>
+</html>

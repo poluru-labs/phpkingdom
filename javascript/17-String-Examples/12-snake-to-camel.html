@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 17-String-Examples
+  example: 12-snake-to-camel.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>12 — snake_case to camelCase | phpkingdom.com</title>
+</head>
+<body>
+  <h1>12 — snake_case to camelCase</h1>
+  <h2>Problem</h2>
+  <p>Convert snake_case to camelCase.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function snakeToCamel(s) {
+  return s.replace(/_([a-z])/g, (_, c) => c.toUpperCase());
+}
+document.getElementById("out").textContent = snakeToCamel("php_kingdom_site");
+  </script>
+</body>
+</html>

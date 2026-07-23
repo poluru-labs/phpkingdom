@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/002-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 002 — Require hyphen in tag name — Solution | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>Exercise 002 — Require hyphen in tag name — Solution</h1>
+  <p class="meta">Show the error when defining a tag without a hyphen.</p>
+  <h2>Solution</h2>
+  <p>Show the error when defining a tag without a hyphen.</p>
+  <div id="demo"></div>
+  <pre id="out"></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+try { customElements.define("nope", class extends HTMLElement {}); }
+catch (e) { document.getElementById("out").textContent = e.message; }
+  </script>
+</body>
+</html>

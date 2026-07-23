@@ -1,0 +1,25 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 12-Misc-Examples
+  example: 013-history-pushstate.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>013 — history.pushState | phpkingdom.com</title>
+</head>
+<body>
+  <h1>013 — history.pushState</h1>
+  <p>SPA-style URL update.</p>
+<button id="b" type="button">push</button><pre id="out"></pre>
+  <script>
+document.getElementById("b").onclick=()=>{history.pushState({n:1},"", "#api");document.getElementById("out").textContent=location.hash;};
+  </script>
+</body>
+</html>

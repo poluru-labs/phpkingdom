@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 16-Array-Examples
+  example: 11-missing-number.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>11 — Find Missing Number | phpkingdom.com</title>
+</head>
+<body>
+  <h1>11 — Find Missing Number</h1>
+  <h2>Problem</h2>
+  <p>Array contains 0..n with one missing. Find it.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function missingNumber(nums) {
+  const n = nums.length;
+  const expected = (n * (n + 1)) / 2;
+  const actual = nums.reduce((a, b) => a + b, 0);
+  return expected - actual;
+}
+document.getElementById("out").textContent = String(missingNumber([3,0,1]));
+  </script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Single-SPA Tutorials
+section title: Utility Modules
+topic title: Shared Event Bus
+content type: Exercise
+item number: 01
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Shared Event Bus Exercise 01 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ffedd5;
+      color: #9a3412;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Exercise 01</span>
+    <h1>Shared Event Bus</h1>
+    <p><strong>Section:</strong> Utility Modules</p>
+    <p><strong>Focus:</strong> Create Root</p>
+    <p><strong>Scenario:</strong> e-commerce shell</p>
+    <p>Register an application, wire an import map, and verify mount/unmount in the browser.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Single-SPA</h2>
+        <pre><code>// Shared Event Bus — Exercise 01
+// Focus: create root | Scenario: e-commerce shell
+
+const bus = {
+  emit(type, detail) {
+    window.dispatchEvent(new CustomEvent(type, { detail }));
+  },
+  on(type, handler) {
+    window.addEventListener(type, handler);
+    return () =&gt; window.removeEventListener(type, handler);
+  },
+};
+
+bus.emit(&quot;notify&quot;, { message: &quot;Hello from MFE&quot; });</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Shared Event Bus
+- Practice: create root
+- Scenario: e-commerce shell
+- Register apps in the root config, then call start() once
+- Use activity functions / activeWhen for path-based mounting
+- Share dependencies via import maps; override locally for development
+- Prefer parcels for framework-agnostic widgets; utility modules for shared logic
+- Handle load/mount errors with addErrorHandler and layout error UI
+
+Useful commands:
+  npx create-single-spa
+  # or generate root-config / react-app / vue-app / angular-app
+  npm start
+  # Import Map Overrides UI: enable local micro-frontend URLs</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This exercise shows one way to apply <strong>Shared Event Bus</strong> in a e-commerce shell context.</p>
+      <p>Keep micro-frontends independently deployable, share carefully via import maps, and always plan for load failures.</p>
+    </section>
+  </main>
+</body>
+</html>

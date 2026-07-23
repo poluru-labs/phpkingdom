@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 040-selection-sort.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>040 — Selection Sort | phpkingdom.com</title>
+</head>
+<body>
+  <h1>040 — Selection Sort</h1>
+  <h2>Problem</h2>
+  <p>Sort by repeatedly selecting the minimum.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const arr = [64, 25, 12, 22, 11];
+for (let i = 0; i < arr.length - 1; i++) {
+  let minIdx = i;
+  for (let j = i + 1; j < arr.length; j++) if (arr[j] < arr[minIdx]) minIdx = j;
+  if (minIdx !== i) { const t = arr[i]; arr[i] = arr[minIdx]; arr[minIdx] = t; }
+}
+document.getElementById("out").textContent = arr.join(", ");
+  </script>
+</body>
+</html>

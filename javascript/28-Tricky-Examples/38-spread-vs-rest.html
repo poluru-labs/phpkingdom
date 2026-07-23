@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 28-Tricky-Examples
+  example: 38-spread-vs-rest.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>38 — Spread vs Rest Look Alike | phpkingdom.com</title>
+</head>
+<body>
+  <h1>38 — Spread vs Rest Look Alike</h1>
+  <h2>Problem / Gotcha</h2>
+  <p>Same ... syntax, different roles.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const arr = [1, 2, 3];
+const copy = [...arr]; // spread
+function sum(...nums) { return nums.reduce((a, b) => a + b, 0); } // rest
+document.getElementById("out").textContent =
+  "copy=" + copy.join(",") + " sum=" + sum(1, 2, 3);
+  </script>
+</body>
+</html>

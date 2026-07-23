@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 25-Error-Handling-Examples
+  example: 46-fallback-on-error.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>46 — Fallback on Error | phpkingdom.com</title>
+</head>
+<body>
+  <h1>46 — Fallback on Error</h1>
+  <h2>Problem</h2>
+  <p>Return a default value when an operation fails.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const out = document.getElementById("out");
+function parseConfig(json, fallback) {
+  try {
+    return JSON.parse(json);
+  } catch {
+    return fallback;
+  }
+}
+const cfg = parseConfig("{", { theme: "light" });
+out.textContent = "theme: " + cfg.theme;
+  </script>
+</body>
+</html>

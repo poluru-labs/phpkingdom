@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/009-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 009 — Clone template into shadow — Solution | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>Exercise 009 — Clone template into shadow — Solution</h1>
+  <p class="meta">Stamp a <template> into attachShadow.</p>
+  <h2>Solution</h2>
+  <p>Stamp a <template> into attachShadow.</p>
+  <div id="demo"></div>
+  <pre id="out"></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+customElements.define("ex009-el", class extends HTMLElement {
+  connectedCallback() {
+    this.textContent = 'Clone template into shadow';
+  }
+});
+document.getElementById("demo").innerHTML = "<ex009-el></ex009-el>";
+document.getElementById("out").textContent = 'Stamp a <template> into attachShadow.';
+  </script>
+</body>
+</html>

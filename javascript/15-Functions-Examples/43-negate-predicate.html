@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Functions-Examples
+  example: 43-negate-predicate.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>43 — Negate Predicate | phpkingdom.com</title>
+</head>
+<body>
+  <h1>43 — Negate Predicate</h1>
+  <h2>Problem</h2>
+  <p>Return the logical opposite of a boolean test function.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function negate(predicate) {
+  return (...args) => !predicate(...args);
+}
+const isEven = (n) => n % 2 === 0;
+const isOdd = negate(isEven);
+document.getElementById("out").textContent =
+  "isOdd(5) = " + isOdd(5) + ", isOdd(4) = " + isOdd(4);
+  </script>
+</body>
+</html>

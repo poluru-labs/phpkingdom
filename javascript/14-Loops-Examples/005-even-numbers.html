@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 005-even-numbers.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>005 — Even Numbers in Range | phpkingdom.com</title>
+</head>
+<body>
+  <h1>005 — Even Numbers in Range</h1>
+  <h2>Problem</h2>
+  <p>Print all even numbers from 1 to N.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const N = 20;
+const evens = [];
+for (let i = 1; i <= N; i++) if (i % 2 === 0) evens.push(i);
+document.getElementById("out").textContent = evens.join(" ");
+  </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 27-Regex-Examples
+  example: 20-quantifiers-exact.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>20 — Exact Quantifiers {n,m} | phpkingdom.com</title>
+</head>
+<body>
+  <h1>20 — Exact Quantifiers {n,m}</h1>
+  <h2>Problem</h2>
+  <p>Match exact or bounded repetitions with {n}, {n,}, {n,m}.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const text = "zip zipcode zippp";
+const three = text.match(/\w{3}/g);
+const threeToFive = text.match(/\w{3,5}/g);
+const exactlyFour = text.match(/\w{4}/g);
+document.getElementById("out").textContent =
+  "\\w{3}:    " + JSON.stringify(three) + "\n" +
+  "\\w{3,5}:  " + JSON.stringify(threeToFive) + "\n" +
+  "\\w{4}:    " + JSON.stringify(exactlyFour);
+  </script>
+</body>
+</html>

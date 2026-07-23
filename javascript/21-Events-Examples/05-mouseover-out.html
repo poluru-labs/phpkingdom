@@ -1,0 +1,38 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 21-Events-Examples
+  example: 05-mouseover-out.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>05 — mouseover / mouseout Bubbling | phpkingdom.com</title>
+</head>
+<body>
+  <h1>05 — mouseover / mouseout Bubbling</h1>
+  <h2>Problem</h2>
+  <p>Show that mouseover/out fire when moving between parent and child.</p>
+  <h2>Demo</h2>
+  <div id="outer" style="padding:24px;border:2px solid #333;display:inline-block">
+    outer <span id="inner" style="padding:8px;border:1px dashed #666">inner</span>
+  </div>
+  <pre id="out"></pre>
+  <script>
+const out = document.getElementById("out");
+let n = 0;
+document.getElementById("outer").addEventListener("mouseover", (e) => {
+  n += 1;
+  out.textContent = "mouseover #" + n + " target=" + e.target.id;
+});
+document.getElementById("outer").addEventListener("mouseout", (e) => {
+  out.textContent += " | mouseout target=" + e.target.id;
+});
+  </script>
+</body>
+</html>

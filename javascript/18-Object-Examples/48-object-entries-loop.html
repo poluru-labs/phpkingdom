@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 18-Object-Examples
+  example: 48-object-entries-loop.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>48 — Loop Object Entries | phpkingdom.com</title>
+</head>
+<body>
+  <h1>48 — Loop Object Entries</h1>
+  <h2>Problem</h2>
+  <p>Iterate entries and build a formatted string.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const site = { name: "phpkingdom.com", author: "Subrahmanyam Poluru" };
+const lines = [];
+for (const [key, value] of Object.entries(site)) lines.push(key + ": " + value);
+document.getElementById("out").textContent = lines.join("\n");
+  </script>
+</body>
+</html>

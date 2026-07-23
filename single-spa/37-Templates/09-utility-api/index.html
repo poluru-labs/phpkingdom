@@ -1,0 +1,63 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 37-Templates/09-utility-api
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <meta name="description" content="Shared API client">
+  <title>Utility API | api client | phpkingdom.com</title>
+  <style>
+    body { margin:0; font-family: Georgia, "Times New Roman", serif; background:#f5f7fb; color:#1f2937; line-height:1.55; }
+    .wrap { max-width:900px; margin:0 auto; padding:1.5rem; }
+    .brand { color:#9a3412; font-size:.78rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    h1 { font-size:1.75rem; margin:.4rem 0; }
+    .meta { color:#64748b; }
+    pre { background:#0f172a; color:#e2e8f0; padding:1rem; border-radius:.65rem; overflow:auto; font-size:.88rem; }
+    .card { background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:1rem; margin:1rem 0; }
+    a { color:#9a3412; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">phpkingdom.com</div>
+    <p class="meta">Utility API · Single-SPA template</p>
+    <h1>api client</h1>
+    <p class="meta">Shared API client</p>
+    <div class="card">
+      <h2>Scaffold</h2>
+      <pre><code>// @org/api — shared fetch client
+import { getToken } from &quot;@org/auth&quot;;
+
+const base = &quot;https://api.example.com&quot;;
+
+export async function api(path, options = {}) {
+  const headers = {
+    &quot;Content-Type&quot;: &quot;application/json&quot;,
+    ...(options.headers || {}),
+  };
+  const token = getToken();
+  if (token) headers.Authorization = &quot;Bearer &quot; + token;
+  const res = await fetch(base + path, { ...options, headers });
+  if (!res.ok) throw new Error(&quot;API &quot; + res.status);
+  return res.json();
+}</code></pre>
+    </div>
+    <div class="card">
+      <h2>Verify</h2>
+      <pre><code># serve root-config + each micro-frontend
+# confirm import map resolves @org/*
+# navigate routes and watch bootstrap/mount/unmount
+# use Import Map Overrides for local URLs</code></pre>
+    </div>
+    <p><a href="../index.html">All templates</a></p>
+  </div>
+</body>
+</html>

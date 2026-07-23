@@ -1,0 +1,74 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Templates/08-postgres-app
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <meta name="description" content="PostgreSQL articles CRUD sketch">
+  <title>Postgres App | pg Pool | phpkingdom.com</title>
+  <style>
+    body { margin:0; font-family: Georgia, "Times New Roman", serif; background:#f5f7fb; color:#1f2937; line-height:1.55; }
+    .wrap { max-width:900px; margin:0 auto; padding:1.5rem; }
+    .brand { color:#3730a3; font-size:.78rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    h1 { font-size:1.75rem; margin:.4rem 0; }
+    .meta { color:#64748b; }
+    pre { background:#0f172a; color:#e2e8f0; padding:1rem; border-radius:.65rem; overflow:auto; font-size:.88rem; }
+    .card { background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:1rem; margin:1rem 0; }
+    a { color:#3730a3; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">phpkingdom.com</div>
+    <p class="meta">Postgres App · Express template</p>
+    <h1>pg Pool</h1>
+    <p class="meta">PostgreSQL articles CRUD sketch</p>
+    <div class="card">
+      <h2>Starter Server</h2>
+      <pre><code>const express = require(&quot;express&quot;);
+const { Pool } = require(&quot;pg&quot;);
+
+const pool = new Pool({ connectionString: process.env.DATABASE_URL });
+const app = express();
+app.use(express.json());
+
+app.get(&quot;/articles&quot;, async (req, res, next) =&gt; {
+  try {
+    const { rows } = await pool.query(
+      &quot;SELECT id, title FROM articles ORDER BY id DESC LIMIT 20&quot;
+    );
+    res.json(rows);
+  } catch (e) { next(e); }
+});
+
+app.post(&quot;/articles&quot;, async (req, res, next) =&gt; {
+  try {
+    const { title, body } = req.body;
+    const { rows } = await pool.query(
+      &quot;INSERT INTO articles (title, body) VALUES ($1, $2) RETURNING *&quot;,
+      [title, body]
+    );
+    res.status(201).json(rows[0]);
+  } catch (e) { next(e); }
+});
+
+app.listen(3000);</code></pre>
+    </div>
+    <div class="card">
+      <h2>Run</h2>
+      <pre><code>npm install express
+node server.js
+curl http://localhost:3000/health</code></pre>
+    </div>
+    <p><a href="../index.html">All templates</a></p>
+  </div>
+</body>
+</html>

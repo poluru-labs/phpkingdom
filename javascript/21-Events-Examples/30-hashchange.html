@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 21-Events-Examples
+  example: 30-hashchange.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>30 — hashchange | phpkingdom.com</title>
+</head>
+<body>
+  <h1>30 — hashchange</h1>
+  <h2>Problem</h2>
+  <p>React when the URL hash changes.</p>
+  <h2>Demo</h2>
+  <a href="#one">#one</a> · <a href="#two">#two</a> · <a href="#three">#three</a>
+  <pre id="out"></pre>
+  <script>
+function show() {
+  document.getElementById("out").textContent = "hash=" + (location.hash || "(empty)");
+}
+show();
+window.addEventListener("hashchange", show);
+  </script>
+</body>
+</html>

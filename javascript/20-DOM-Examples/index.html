@@ -1,0 +1,44 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 20-DOM-Examples
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>20-DOM-Examples | phpkingdom.com</title>
+  <style>
+    body { font-family: Georgia, "Times New Roman", serif; max-width: 760px; margin: 2rem auto; padding: 0 1.25rem; line-height: 1.6; color: #1a1a1a; }
+    h1 { font-size: 1.75rem; margin-bottom: 0.35rem; }
+    .meta { color: #555; font-size: 0.95rem; margin-bottom: 1.25rem; }
+    .note { background: #f0f7fb; padding: 0.75rem 1rem; border-left: 3px solid #0f766e; margin: 1rem 0; }
+    .demo { margin: 1rem 0; padding: 1rem; border: 1px dashed #94a3b8; }
+    pre, code { font-family: ui-monospace, Menlo, monospace; }
+    pre { background: #111827; color: #e5e7eb; padding: 0.85rem 1rem; overflow: auto; }
+    button, input, select, textarea { font: inherit; padding: 0.4rem 0.55rem; }
+    button { cursor: pointer; background: #0f766e; color: #fff; border: 0; padding: 0.55rem 1rem; }
+    #out { white-space: pre-wrap; background: #f4f4f4; padding: 0.75rem; min-height: 2rem; }
+    a { color: #0f766e; }
+    footer { border-top: 1px solid #ccc; padding-top: 1rem; margin-top: 2rem; color: #555; font-size: 0.95rem; }
+
+    .brand { color:#0f766e; font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    ol { line-height: 1.75; }
+  </style>
+</head>
+<body>
+  <div class="brand">phpkingdom.com</div>
+  <h1>20-DOM-Examples</h1>
+  <p class="meta">50 examples. Minimal HTML — focus on the script.</p>
+  <p><a href="../index.html">← JavaScript Tutorials</a></p>
+  <ol><li><a href="01-getelementbyid.html">01 — getElementById</a></li><li><a href="02-queryselector.html">02 — querySelector</a></li><li><a href="03-queryselectorall.html">03 — querySelectorAll</a></li><li><a href="04-getelementsbyclassname.html">04 — getElementsByClassName</a></li><li><a href="05-create-append.html">05 — createElement + appendChild</a></li><li><a href="06-append-prepend.html">06 — append and prepend</a></li><li><a href="07-insert-adjacent.html">07 — insertAdjacentHTML / Element</a></li><li><a href="08-remove-element.html">08 — remove / removeChild</a></li><li><a href="09-replace-with.html">09 — replaceWith</a></li><li><a href="10-clone-node.html">10 — cloneNode</a></li><li><a href="11-textcontent-vs-innerhtml.html">11 — textContent vs innerHTML</a></li><li><a href="12-safe-text-xss.html">12 — Prefer textContent for User Text</a></li><li><a href="13-attributes.html">13 — get / set / remove Attribute</a></li><li><a href="14-dataset.html">14 — dataset / data-* Attributes</a></li><li><a href="15-classlist.html">15 — classList add / remove / toggle</a></li><li><a href="16-inline-style.html">16 — element.style</a></li><li><a href="17-computed-style.html">17 — getComputedStyle</a></li><li><a href="18-tree-walking.html">18 — parent / children / siblings</a></li><li><a href="19-closest.html">19 — closest()</a></li><li><a href="20-matches.html">20 — matches()</a></li><li><a href="21-contains-node.html">21 — Node.contains</a></li><li><a href="22-click-listener.html">22 — addEventListener Click</a></li><li><a href="23-remove-listener.html">23 — removeEventListener</a></li><li><a href="24-target-vs-current.html">24 — event.target vs currentTarget</a></li><li><a href="25-prevent-default.html">25 — preventDefault</a></li><li><a href="26-stop-propagation.html">26 — stopPropagation</a></li><li><a href="27-event-delegation.html">27 — Event Delegation</a></li><li><a href="28-input-events.html">28 — input and change Events</a></li><li><a href="29-keyboard-events.html">29 — Keyboard Events</a></li><li><a href="30-formdata-submit.html">30 — Form Submit + FormData</a></li><li><a href="31-form-validation.html">31 — Constraint Validation API</a></li><li><a href="32-toggle-visibility.html">32 — Toggle Visibility</a></li><li><a href="33-document-fragment.html">33 — DocumentFragment</a></li><li><a href="34-scroll-into-view.html">34 — scrollIntoView</a></li><li><a href="35-bounding-rect.html">35 — getBoundingClientRect</a></li><li><a href="36-intersection-observer.html">36 — IntersectionObserver</a></li><li><a href="37-mutation-observer.html">37 — MutationObserver</a></li><li><a href="38-template-element.html">38 — HTML template Element</a></li><li><a href="39-checkbox-radio.html">39 — Checkboxes and Radios</a></li><li><a href="40-select-options.html">40 — Select Options</a></li><li><a href="41-render-list.html">41 — Render a List from Data</a></li><li><a href="42-filter-list.html">42 — Filter DOM List (Search)</a></li><li><a href="43-tabs-ui.html">43 — Simple Tabs</a></li><li><a href="44-modal-dialog.html">44 — Modal Dialog</a></li><li><a href="45-accordion.html">45 — Accordion</a></li><li><a href="46-drag-and-drop.html">46 — Drag and Drop</a></li><li><a href="47-localstorage-dom.html">47 — localStorage + DOM State</a></li><li><a href="48-domcontentloaded.html">48 — DOMContentLoaded</a></li><li><a href="49-create-table.html">49 — Build a Table Dynamically</a></li><li><a href="50-dom-checklist.html">50 — DOM Checklist</a></li></ol>
+  <footer>
+    <p>&copy; 2026 phpkingdom.com · Subrahmanyam Poluru · <a href="https://polurus.com">polurus.com</a></p>
+  </footer>
+</body>
+</html>

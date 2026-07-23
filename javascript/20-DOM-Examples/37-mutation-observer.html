@@ -1,0 +1,41 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 20-DOM-Examples
+  example: 37-mutation-observer.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>37 — MutationObserver | phpkingdom.com</title>
+</head>
+<body>
+  <h1>37 — MutationObserver</h1>
+  <h2>Problem</h2>
+  <p>Watch a container for child list changes.</p>
+  <h2>Demo</h2>
+  <ul id="list"><li>One</li></ul>
+  <button id="btn">Add child</button>
+  <pre id="out"></pre>
+  <script>
+const list = document.getElementById("list");
+const out = document.getElementById("out");
+const mo = new MutationObserver((mutations) => {
+  out.textContent = "mutations: " + mutations.length + " | children: " + list.children.length;
+});
+mo.observe(list, { childList: true });
+let n = 1;
+document.getElementById("btn").onclick = () => {
+  n += 1;
+  const li = document.createElement("li");
+  li.textContent = "Item " + n;
+  list.appendChild(li);
+};
+  </script>
+</body>
+</html>

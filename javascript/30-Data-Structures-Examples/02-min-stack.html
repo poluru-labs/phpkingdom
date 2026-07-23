@@ -1,0 +1,42 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 30-Data-Structures-Examples
+  example: 02-min-stack.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>02 — Min Stack | phpkingdom.com</title>
+</head>
+<body>
+  <h1>02 — Min Stack</h1>
+  <h2>Problem</h2>
+  <p>Stack that supports push, pop, and getMin in O(1) using an auxiliary stack.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+class MinStack {
+  constructor() { this.stack = []; this.mins = []; }
+  push(x) {
+    this.stack.push(x);
+    const m = this.mins.length ? this.mins[this.mins.length - 1] : Infinity;
+    this.mins.push(Math.min(m, x));
+  }
+  pop() { this.mins.pop(); return this.stack.pop(); }
+  getMin() { return this.mins[this.mins.length - 1]; }
+}
+const ms = new MinStack();
+[5, 3, 7, 2, 8].forEach(n => ms.push(n));
+const out = ["push 5,3,7,2,8", "min = " + ms.getMin()];
+ms.pop(); ms.pop();
+out.push("after two pops, min = " + ms.getMin());
+document.getElementById("out").textContent = out.join("\n");
+  </script>
+</body>
+</html>

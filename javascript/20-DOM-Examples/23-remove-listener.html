@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 20-DOM-Examples
+  example: 23-remove-listener.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>23 — removeEventListener | phpkingdom.com</title>
+</head>
+<body>
+  <h1>23 — removeEventListener</h1>
+  <h2>Problem</h2>
+  <p>Attach a named handler so you can remove it later.</p>
+  <h2>Demo</h2>
+  <button id="btn">Count</button>
+  <button id="off">Detach</button>
+  <pre id="out">0</pre>
+  <script>
+let n = 0;
+function onClick() {
+  n += 1;
+  document.getElementById("out").textContent = String(n);
+}
+const btn = document.getElementById("btn");
+btn.addEventListener("click", onClick);
+document.getElementById("off").onclick = () => btn.removeEventListener("click", onClick);
+  </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 053-decimal-to-binary.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>053 — Decimal to Binary | phpkingdom.com</title>
+</head>
+<body>
+  <h1>053 — Decimal to Binary</h1>
+  <h2>Problem</h2>
+  <p>Convert a decimal integer to a binary string with a loop.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+let n = 13;
+if (n === 0) {
+  document.getElementById("out").textContent = "0";
+} else {
+  let bits = "";
+  const original = n;
+  while (n > 0) { bits = (n % 2) + bits; n = Math.floor(n / 2); }
+  document.getElementById("out").textContent = original + "₁₀ = " + bits + "₂";
+}
+  </script>
+</body>
+</html>

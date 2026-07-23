@@ -1,0 +1,154 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 22-Components-Examples
+  example: 17-drawer.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>17 — Drawer | phpkingdom.com</title>
+  <link rel="stylesheet" href="css/base.css">
+  <style>
+    .c-drawer__overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(20, 33, 43, 0.4);
+      z-index: 90;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s var(--ease);
+    }
+    .c-drawer__overlay.is-open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .c-drawer__panel {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: min(100%, 340px);
+      background: var(--surface);
+      border-left: 1px solid var(--line);
+      box-shadow: -8px 0 30px rgba(20, 33, 43, 0.1);
+      transform: translateX(100%);
+      transition: transform 0.28s var(--ease);
+      z-index: 100;
+      display: flex;
+      flex-direction: column;
+      padding: 1.25rem;
+    }
+    .c-drawer__panel.is-open { transform: translateX(0); }
+    .c-drawer__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    .c-drawer__title { margin: 0; font-size: 1.1rem; }
+    .c-drawer__close {
+      border: none;
+      background: transparent;
+      font-size: 1.4rem;
+      cursor: pointer;
+      color: var(--muted);
+      border-radius: 6px;
+      padding: 0.15rem 0.35rem;
+    }
+    .c-drawer__body { flex: 1; overflow-y: auto; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <a class="back" href="index.html">← Components</a>
+    <h1>17 — Drawer</h1>
+    <p class="lead">Side panel that slides in from the right with overlay dismiss.</p>
+    <section class="panel">
+      <h2>Demo</h2>
+      <div id="mount"></div>
+    </section>
+    <section class="panel">
+      <h2>Events / State</h2>
+      <pre class="log" id="log">Ready.</pre>
+    </section>
+  </main>
+  <script>
+    const logEl = document.getElementById("log");
+    function log(msg) { logEl.textContent = msg; }
+
+    function createDrawer({ title = "Settings", body = "Drawer content goes here." } = {}) {
+      let isOpen = false;
+
+      const overlay = document.createElement("div");
+      overlay.className = "c-drawer__overlay";
+
+      const panel = document.createElement("aside");
+      panel.className = "c-drawer__panel";
+      panel.setAttribute("role", "dialog");
+      panel.setAttribute("aria-modal", "true");
+
+      const header = document.createElement("div");
+      header.className = "c-drawer__header";
+      const h = document.createElement("h3");
+      h.className = "c-drawer__title";
+      h.textContent = title;
+      const closeBtn = document.createElement("button");
+      closeBtn.type = "button";
+      closeBtn.className = "c-drawer__close";
+      closeBtn.textContent = "×";
+      closeBtn.setAttribute("aria-label", "Close drawer");
+      header.append(h, closeBtn);
+
+      const bodyEl = document.createElement("div");
+      bodyEl.className = "c-drawer__body";
+      bodyEl.textContent = body;
+
+      panel.append(header, bodyEl);
+      document.body.append(overlay, panel);
+
+      function open() {
+        isOpen = true;
+        overlay.classList.add("is-open");
+        panel.classList.add("is-open");
+        closeBtn.focus();
+        document.addEventListener("keydown", onKey);
+        log("open");
+      }
+
+      function close(reason) {
+        isOpen = false;
+        overlay.classList.remove("is-open");
+        panel.classList.remove("is-open");
+        document.removeEventListener("keydown", onKey);
+        log("close: " + reason);
+      }
+
+      function onKey(e) {
+        if (e.key === "Escape") close("escape");
+      }
+
+      overlay.addEventListener("click", () => close("overlay"));
+      closeBtn.addEventListener("click", () => close("button"));
+
+      const trigger = document.createElement("button");
+      trigger.type = "button";
+      trigger.className = "c-btn c-btn--primary";
+      trigger.textContent = "Open drawer";
+      trigger.addEventListener("click", open);
+
+      return { el: trigger, open, close };
+    }
+
+    document.getElementById("mount").appendChild(createDrawer({
+      title: "Account settings",
+      body: "Update your profile, notification preferences, and security options from this side panel."
+    }).el);
+  </script>
+</body>
+</html>

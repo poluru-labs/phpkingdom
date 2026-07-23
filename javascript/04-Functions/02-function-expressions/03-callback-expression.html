@@ -1,0 +1,27 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 04-Functions/02-function-expressions
+  example: 03-callback-expression.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Callback Expression | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Pass Functions as Values</h1>
+  <p>Function expressions as callbacks.</p>
+  <pre id="out"></pre>
+  <script>
+function runTwice(fn) { return fn() + " | " + fn(); }
+const tick = function () { return "tick"; };
+document.getElementById("out").textContent = runTwice(tick);
+  </script>
+</body>
+</html>

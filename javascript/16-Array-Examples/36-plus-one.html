@@ -1,0 +1,34 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 16-Array-Examples
+  example: 36-plus-one.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>36 — Plus One (Digit Array) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>36 — Plus One (Digit Array)</h1>
+  <h2>Problem</h2>
+  <p>Digits represent a number; add one.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function plusOne(digits) {
+  for (let i = digits.length - 1; i >= 0; i--) {
+    if (digits[i] < 9) { digits[i]++; return digits; }
+    digits[i] = 0;
+  }
+  return [1, ...digits];
+}
+document.getElementById("out").textContent = plusOne([1,2,9]).join("");
+  </script>
+</body>
+</html>

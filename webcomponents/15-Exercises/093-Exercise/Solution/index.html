@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/093-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 093 — Tag input sketch — Solution | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>Exercise 093 — Tag input sketch — Solution</h1>
+  <p class="meta">Add chips from input Enter.</p>
+  <h2>Solution</h2>
+  <p>Add chips from input Enter.</p>
+  <div id="demo"></div>
+  <pre id="out"></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+customElements.define("ex093-el", class extends HTMLElement {
+  connectedCallback() {
+    this.textContent = 'Tag input sketch';
+  }
+});
+document.getElementById("demo").innerHTML = "<ex093-el></ex093-el>";
+document.getElementById("out").textContent = 'Add chips from input Enter.';
+  </script>
+</body>
+</html>

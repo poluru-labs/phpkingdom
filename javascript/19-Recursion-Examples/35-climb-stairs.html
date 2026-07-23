@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 19-Recursion-Examples
+  example: 35-climb-stairs.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>35 — Climb Stairs | phpkingdom.com</title>
+</head>
+<body>
+  <h1>35 — Climb Stairs</h1>
+  <h2>Problem</h2>
+  <p>Count ways to climb n stairs taking 1 or 2 steps at a time (Fibonacci-style).</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function climbStairs(n) {
+  if (n <= 2) return n;
+  return climbStairs(n - 1) + climbStairs(n - 2);
+}
+document.getElementById("out").textContent = [1, 2, 3, 4, 5, 6]
+  .map((n) => n + " stairs → " + climbStairs(n) + " ways")
+  .join("\n");
+  </script>
+</body>
+</html>

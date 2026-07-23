@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 26-Date-Time-Examples
+  example: 14-intl-relative-time.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>14 — Intl.RelativeTimeFormat | phpkingdom.com</title>
+</head>
+<body>
+  <h1>14 — Intl.RelativeTimeFormat</h1>
+  <h2>Problem</h2>
+  <p>Show human-readable relative time (e.g. "in 3 days").</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+
+const base = new Date(2024, 0, 15, 12, 0, 0);
+const target = new Date(2024, 0, 18, 12, 0, 0);
+const diffDays = Math.round((target - base) / (1000 * 60 * 60 * 24));
+const rtf = new Intl.RelativeTimeFormat("en", { numeric: "auto" });
+document.getElementById("out").textContent =
+  "Base: " + base.toDateString() + "\n" +
+  "Target: " + target.toDateString() + "\n" +
+  "Relative: " + rtf.format(diffDays, "day");
+
+  </script>
+</body>
+</html>

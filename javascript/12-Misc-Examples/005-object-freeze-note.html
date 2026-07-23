@@ -1,0 +1,23 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 12-Misc-Examples
+  example: 005-object-freeze-note.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>005 — Object.assign copy | phpkingdom.com</title>
+</head>
+<body>
+  <h1>005 — Object.assign copy</h1>
+  <pre id="out"></pre>
+  <script>
+const a={x:1}; const b=Object.assign({},a,{y:2}); document.getElementById("out").textContent=JSON.stringify(b);
+  </script>
+</body>
+</html>

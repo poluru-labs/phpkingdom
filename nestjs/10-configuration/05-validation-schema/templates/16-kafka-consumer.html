@@ -1,0 +1,134 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: NestJS Tutorials
+section title: Configuration
+topic title: Validation Schema
+content type: Template
+item number: 16
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Validation Schema Template 16 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ffedd5;
+      color: #9a3412;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Template 16</span>
+    <h1>Validation Schema</h1>
+    <p><strong>Section:</strong> Configuration</p>
+    <p><strong>Focus:</strong> Kafka Consumer</p>
+    <p><strong>Scenario:</strong> billing microservice</p>
+    <p>Use this scaffold as a starting point for a NestJS feature or service.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>NestJS</h2>
+        <pre><code>// Validation Schema — Template 16
+// Focus: kafka consumer | Scenario: billing microservice
+
+import { Module } from &quot;@nestjs/common&quot;;
+import { ConfigModule } from &quot;@nestjs/config&quot;;
+import * as Joi from &quot;joi&quot;;
+// or: import { z } from &quot;zod&quot;;
+
+@Module({
+  imports: [
+    ConfigModule.forRoot({
+      isGlobal: true,
+      validationSchema: Joi.object({
+        NODE_ENV: Joi.string()
+          .valid(&quot;development&quot;, &quot;production&quot;, &quot;test&quot;)
+          .default(&quot;development&quot;),
+        PORT: Joi.number().default(3000),
+        DATABASE_URL: Joi.string().uri().required(),
+        JWT_SECRET: Joi.string().min(16).required(),
+      }),
+      validationOptions: { abortEarly: false },
+    }),
+  ],
+})
+export class AppModule {}
+// App fails fast on boot if env fails schema validation</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Validation Schema
+- Practice: kafka consumer
+- Scenario: billing microservice
+- Structure by feature modules: module + controller + service + DTOs
+- Prefer constructor injection; keep providers @Injectable()
+- Validate input with class-validator + ValidationPipe (whitelist)
+- Use guards for auth/roles, pipes for transform/validate, filters for errors
+- Test with TestingModule; e2e with supertest against NestFactory
+
+Useful commands:
+  npm i -g @nestjs/cli
+  nest new my-api
+  nest g resource users
+  nest start --watch
+  npm run test
+  npm run test:e2e</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This template shows one way to apply <strong>Validation Schema</strong> in a billing microservice context.</p>
+      <p>Keep modules cohesive, validate at the boundary, and push business logic into providers/services.</p>
+    </section>
+  </main>
+</body>
+</html>

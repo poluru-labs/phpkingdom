@@ -1,0 +1,41 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 29-Algorithms-Examples
+  example: 31-next-greater-element.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>31 — Next Greater Element | phpkingdom.com</title>
+</head>
+<body>
+  <h1>31 — Next Greater Element</h1>
+  <h2>Problem</h2>
+  <p>For each element, find the next greater element to its right.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function nextGreater(arr) {
+  const result = new Array(arr.length).fill(-1);
+  const stack = [];
+  for (let i = 0; i < arr.length; i++) {
+    while (stack.length && arr[i] > arr[stack[stack.length - 1]]) {
+      result[stack.pop()] = arr[i];
+    }
+    stack.push(i);
+  }
+  return result;
+}
+const arr = [2, 1, 2, 4, 3];
+document.getElementById("out").textContent =
+  "array:  " + JSON.stringify(arr) + "\n" +
+  "next greater: " + JSON.stringify(nextGreater(arr));
+  </script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Express.js Tutorials
+section title: Validation and Errors
+topic title: Custom Errors
+content type: Template
+item number: 22
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Custom Errors Template 22 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #e0e7ff;
+      color: #3730a3;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Template 22</span>
+    <h1>Custom Errors</h1>
+    <p><strong>Section:</strong> Validation and Errors</p>
+    <p><strong>Focus:</strong> Socket Io</p>
+    <p><strong>Scenario:</strong> admin backend</p>
+    <p>Use this scaffold as a starting point for servers, routers, or API modules.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Express</h2>
+        <pre><code>// Custom Errors — Template 22
+// Focus: socket io | Scenario: admin backend
+
+class HttpError extends Error {
+  constructor(status, message, code) {
+    super(message);
+    this.status = status;
+    this.code = code;
+  }
+}
+
+class NotFoundError extends HttpError {
+  constructor(resource = &quot;Resource&quot;) {
+    super(404, `${resource} not found`, &quot;NOT_FOUND&quot;);
+  }
+}
+
+app.get(&quot;/products/:id&quot;, (req, res, next) =&gt; {
+  next(new NotFoundError(&quot;Product&quot;));
+});
+
+app.use((err, req, res, next) =&gt; {
+  res.status(err.status || 500).json({
+    code: err.code || &quot;INTERNAL&quot;,
+    message: err.message,
+  });
+});</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Custom Errors
+- Practice: socket io
+- Scenario: admin backend
+- Keep route handlers thin; push logic into controllers/services
+- Always attach final 4-arg error middleware
+- Validate input; load secrets from environment variables
+- Export app separately from listen() for easier testing
+
+Useful commands:
+  npm init -y
+  npm install express
+  node --watch server.js
+  curl http://localhost:3000/health
+  npx jest   # or node --test / mocha + supertest</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This template shows one way to apply <strong>Custom Errors</strong> in a admin backend context.</p>
+      <p>Keep routes thin, push logic into services, and always attach a final error middleware.</p>
+    </section>
+  </main>
+</body>
+</html>

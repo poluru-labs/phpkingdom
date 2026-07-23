@@ -1,0 +1,38 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 19-Recursion-Examples
+  example: 20-deep-clone.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>20 — Deep Clone | phpkingdom.com</title>
+</head>
+<body>
+  <h1>20 — Deep Clone</h1>
+  <h2>Problem</h2>
+  <p>Deep-clone objects and arrays recursively (plain data only).</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function deepClone(value) {
+  if (value === null || typeof value !== "object") return value;
+  if (Array.isArray(value)) return value.map(deepClone);
+  const copy = {};
+  for (const key of Object.keys(value)) copy[key] = deepClone(value[key]);
+  return copy;
+}
+const original = { a: 1, b: { c: [2, 3] } };
+const cloned = deepClone(original);
+cloned.b.c.push(99);
+document.getElementById("out").textContent =
+  "original: " + JSON.stringify(original) + "\ncloned:   " + JSON.stringify(cloned);
+  </script>
+</body>
+</html>

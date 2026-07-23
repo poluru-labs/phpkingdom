@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 24-API-Examples
+  example: 24-urlsearchparams-body.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>24 — application/x-www-form-urlencoded | phpkingdom.com</title>
+</head>
+<body>
+  <h1>24 — application/x-www-form-urlencoded</h1>
+  <h2>Problem</h2>
+  <p>Send form-encoded body with URLSearchParams.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const body = new URLSearchParams({
+  username: "ada",
+  newsletter: "yes"
+});
+document.getElementById("out").textContent = body.toString();
+// fetch("/api/subscribe", {
+//   method: "POST",
+//   headers: { "Content-Type": "application/x-www-form-urlencoded" },
+//   body
+// })
+  </script>
+</body>
+</html>

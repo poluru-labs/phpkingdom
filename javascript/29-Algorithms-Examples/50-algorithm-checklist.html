@@ -1,0 +1,38 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 29-Algorithms-Examples
+  example: 50-algorithm-checklist.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>50 — Algorithm Checklist | phpkingdom.com</title>
+</head>
+<body>
+  <h1>50 — Algorithm Checklist</h1>
+  <h2>Problem</h2>
+  <p>Summary checklist of sorting, searching, two pointers, sliding window, stack, and queue patterns covered in this section.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const checklist = [
+  "Sorting: bubble, selection, insertion, merge, quick, counting, heap, stability",
+  "Searching: linear, binary, first/last occurrence, insert position, lower bound",
+  "Two pointers: two sum, dedupe, reverse, container water, palindrome, zeros, 3-sum, rain, merge",
+  "Sliding window: max sum k, longest unique, min length sum, max average, anagrams, k flips",
+  "Stack: parentheses, next greater, daily temps, RPN, min stack, decode string, monotonic",
+  "Queue: BFS level order, sliding max deque, binary numbers, stack/queue conversions, circular queue"
+];
+document.getElementById("out").textContent =
+  "29-Algorithms-Examples — 50 demos\n\n" +
+  checklist.map((line, i) => (i + 1) + ". " + line).join("\n") +
+  "\n\nAll examples run in the browser with vanilla JavaScript.";
+  </script>
+</body>
+</html>

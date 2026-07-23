@@ -1,0 +1,26 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 04-Functions/02-function-expressions
+  example: 01-function-expression.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Function Expression | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Function Expression</h1>
+  <p>Store a function in a variable.</p>
+  <pre id="out"></pre>
+  <script>
+const square = function (n) { return n * n; };
+document.getElementById("out").textContent = String(square(6));
+  </script>
+</body>
+</html>

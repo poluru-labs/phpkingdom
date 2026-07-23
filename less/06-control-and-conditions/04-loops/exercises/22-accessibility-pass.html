@@ -1,0 +1,114 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: LESS CSS Tutorials
+section title: Control and Conditions
+topic title: LESS Loops
+content type: Exercise
+item number: 22
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>LESS Loops Exercise 22 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #e0f2fe;
+      color: #075985;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Exercise 22</span>
+    <h1>LESS Loops</h1>
+    <p><strong>Section:</strong> Control and Conditions</p>
+    <p><strong>Focus:</strong> Accessibility Pass</p>
+    <p><strong>Scenario:</strong> marketing site</p>
+    <p>Complete the task, refactor the sample, and compare your result with the suggested direction.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>LESS Snippet</h2>
+        <pre><code>// LESS Loops — Exercise 22
+// Focus: accessibility pass | Scenario: marketing site
+
+.spacer(@i) when (@i &lt;= 5) {
+  .p-@{i} {
+    padding: (@i * 0.25rem);
+  }
+  .spacer(@i + 1);
+}
+.spacer(1);
+
+@colors: blue, green, red;
+.tint-loop(@i: 1) when (@i &lt;= length(@colors)) {
+  @c: extract(@colors, @i);
+  .tint-@{c} { background: @c; }
+  .tint-loop(@i + 1);
+}
+.tint-loop();</code></pre>
+      </section>
+      <section>
+        <h2>HTML Markup</h2>
+        <pre><code>&lt;section class=&quot;panel-loops&quot;&gt;
+  &lt;h2&gt;LESS Loops&lt;/h2&gt;
+  &lt;p&gt;Accessibility Pass for a marketing site.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This exercise shows one way to apply <strong>LESS Loops</strong> in a marketing site context.</p>
+      <p>Adapt selectors, token names, and mixins to match your project naming rules.</p>
+    </section>
+  </main>
+</body>
+</html>

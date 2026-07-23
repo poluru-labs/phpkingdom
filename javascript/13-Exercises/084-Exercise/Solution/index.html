@@ -1,0 +1,26 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 13-Exercises/084-Exercise
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solution 084 — Closure Counter (84) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Solution 084 — Closure Counter (84)</h1>
+  <pre id="out"></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+function makeCounter(){ let c=0; return () => ++c; }
+const next = makeCounter();
+document.getElementById("out").textContent = next() + ", " + next();
+  </script>
+</body>
+</html>

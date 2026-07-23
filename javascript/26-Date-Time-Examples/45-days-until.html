@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 26-Date-Time-Examples
+  example: 45-days-until.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>45 — Days Until Event | phpkingdom.com</title>
+</head>
+<body>
+  <h1>45 — Days Until Event</h1>
+  <h2>Problem</h2>
+  <p>Count days from a fixed "today" to a future event.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+
+function daysUntil(from, event) {
+  const utcFrom = Date.UTC(from.getFullYear(), from.getMonth(), from.getDate());
+  const utcEvent = Date.UTC(event.getFullYear(), event.getMonth(), event.getDate());
+  return Math.round((utcEvent - utcFrom) / (1000 * 60 * 60 * 24));
+}
+const today = new Date(2024, 0, 15);
+const event = new Date(2024, 11, 25);
+document.getElementById("out").textContent = "Days until Dec 25, 2024: " + daysUntil(today, event);
+
+  </script>
+</body>
+</html>

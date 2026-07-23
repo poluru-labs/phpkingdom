@@ -1,0 +1,42 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 20-DOM-Examples
+  example: 06-append-prepend.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>06 — append and prepend | phpkingdom.com</title>
+</head>
+<body>
+  <h1>06 — append and prepend</h1>
+  <h2>Problem</h2>
+  <p>Insert nodes at the end (append) and start (prepend) of a parent.</p>
+  <h2>Demo</h2>
+  <div id="box" style="border:1px solid #333;padding:8px">middle</div>
+  <button id="a">append</button>
+  <button id="p">prepend</button>
+  <script>
+const box = document.getElementById("box");
+let i = 0;
+document.getElementById("a").onclick = () => {
+  i += 1;
+  const s = document.createElement("span");
+  s.textContent = " [end" + i + "]";
+  box.append(s);
+};
+document.getElementById("p").onclick = () => {
+  i += 1;
+  const s = document.createElement("span");
+  s.textContent = "[start" + i + "] ";
+  box.prepend(s);
+};
+  </script>
+</body>
+</html>

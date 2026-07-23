@@ -1,0 +1,38 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 24-API-Examples
+  example: 12-abort-manual.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>12 — Manual Abort | phpkingdom.com</title>
+</head>
+<body>
+  <h1>12 — Manual Abort</h1>
+  <h2>Problem</h2>
+  <p>Cancel an in-flight request with AbortController.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const controller = new AbortController();
+const pending = new Promise((resolve, reject) => {
+  const t = setTimeout(() => resolve("done"), 1000);
+  controller.signal.addEventListener("abort", () => {
+    clearTimeout(t);
+    reject(new DOMException("Aborted", "AbortError"));
+  });
+});
+setTimeout(() => controller.abort(), 100);
+pending
+  .then((v) => { document.getElementById("out").textContent = v; })
+  .catch((e) => { document.getElementById("out").textContent = e.name + ": " + e.message; });
+  </script>
+</body>
+</html>

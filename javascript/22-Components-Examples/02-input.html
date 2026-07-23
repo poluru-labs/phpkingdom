@@ -1,0 +1,151 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 22-Components-Examples
+  example: 02-input.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>02 — Input | phpkingdom.com</title>
+  <link rel="stylesheet" href="css/base.css">
+  <style>
+    .input-wrap {
+      position: relative;
+      display: grid;
+      gap: 0.35rem;
+      max-width: 360px;
+    }
+    .input-inner {
+      position: relative;
+    }
+    .input-inner .c-input {
+      padding-right: 2.25rem;
+    }
+    .input-clear {
+      position: absolute;
+      right: 0.35rem;
+      top: 50%;
+      transform: translateY(-50%);
+      border: none;
+      background: transparent;
+      color: var(--muted);
+      cursor: pointer;
+      padding: 0.25rem 0.4rem;
+      border-radius: 4px;
+      font-size: 1.1rem;
+      line-height: 1;
+    }
+    .input-clear:hover { color: var(--accent-ink); }
+    .input-clear:focus-visible { outline: none; box-shadow: var(--focus); }
+    .input-wrap.is-invalid .c-input { border-color: var(--danger); }
+    .input-error { color: var(--danger); font-size: 0.82rem; font-weight: 400; }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <a class="back" href="index.html">← Components</a>
+    <h1>02 — Input</h1>
+    <p class="lead">Text input with label, clear button, and email validation.</p>
+    <section class="panel">
+      <h2>Demo</h2>
+      <div id="mount"></div>
+    </section>
+    <section class="panel">
+      <h2>Events / State</h2>
+      <pre class="log" id="log">Ready.</pre>
+    </section>
+  </main>
+  <script>
+    const logEl = document.getElementById("log");
+    function log(msg) { logEl.textContent = msg; }
+
+    function createInput({ label = "Email", placeholder = "you@example.com", clearable = true, validate } = {}) {
+      const wrap = document.createElement("label");
+      wrap.className = "input-wrap field-label";
+      wrap.textContent = label;
+
+      const inner = document.createElement("div");
+      inner.className = "input-inner";
+
+      const input = document.createElement("input");
+      input.type = "text";
+      input.className = "c-input";
+      input.placeholder = placeholder;
+
+      const error = document.createElement("span");
+      error.className = "input-error";
+      error.hidden = true;
+
+      let clearBtn;
+      if (clearable) {
+        clearBtn = document.createElement("button");
+        clearBtn.type = "button";
+        clearBtn.className = "input-clear";
+        clearBtn.textContent = "×";
+        clearBtn.hidden = true;
+        clearBtn.setAttribute("aria-label", "Clear");
+        clearBtn.addEventListener("click", () => {
+          input.value = "";
+          clearBtn.hidden = true;
+          wrap.classList.remove("is-invalid");
+          error.hidden = true;
+          input.focus();
+          log("cleared");
+        });
+      }
+
+      function runValidate() {
+        if (!validate) return true;
+        const result = validate(input.value);
+        const ok = result === true;
+        wrap.classList.toggle("is-invalid", !ok);
+        if (typeof result === "string") {
+          error.textContent = result;
+          error.hidden = ok;
+        }
+        return ok;
+      }
+
+      input.addEventListener("input", () => {
+        if (clearBtn) clearBtn.hidden = !input.value;
+        runValidate();
+        log("input: \"" + input.value + "\"");
+      });
+      input.addEventListener("blur", () => {
+        const ok = runValidate();
+        log("blur: value=\"" + input.value + "\" valid=" + ok);
+      });
+
+      inner.appendChild(input);
+      if (clearBtn) inner.appendChild(clearBtn);
+      wrap.appendChild(inner);
+      wrap.appendChild(error);
+
+      return {
+        el: wrap,
+        get value() { return input.value; },
+        set value(v) {
+          input.value = v;
+          if (clearBtn) clearBtn.hidden = !v;
+        },
+        focus() { input.focus(); }
+      };
+    }
+
+    document.getElementById("mount").appendChild(
+      createInput({
+        validate: (v) => {
+          if (!v) return "Email is required.";
+          return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v) || "Enter a valid email.";
+        }
+      }).el
+    );
+  </script>
+</body>
+</html>

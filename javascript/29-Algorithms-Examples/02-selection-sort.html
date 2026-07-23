@@ -1,0 +1,40 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 29-Algorithms-Examples
+  example: 02-selection-sort.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>02 — Selection Sort | phpkingdom.com</title>
+</head>
+<body>
+  <h1>02 — Selection Sort</h1>
+  <h2>Problem</h2>
+  <p>Sort an array by repeatedly selecting the minimum element.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function selectionSort(arr) {
+  const a = arr.slice();
+  for (let i = 0; i < a.length; i++) {
+    let min = i;
+    for (let j = i + 1; j < a.length; j++) {
+      if (a[j] < a[min]) min = j;
+    }
+    if (min !== i) [a[i], a[min]] = [a[min], a[i]];
+  }
+  return a;
+}
+const input = [29, 10, 14, 37, 14];
+document.getElementById("out").textContent =
+  "input:  " + JSON.stringify(input) + "\noutput: " + JSON.stringify(selectionSort(input));
+  </script>
+</body>
+</html>

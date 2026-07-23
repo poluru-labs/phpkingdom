@@ -1,0 +1,44 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 27-Regex-Examples
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>27-Regex-Examples | phpkingdom.com</title>
+  <style>
+    body { font-family: Georgia, "Times New Roman", serif; max-width: 760px; margin: 2rem auto; padding: 0 1.25rem; line-height: 1.6; color: #1a1a1a; }
+    h1 { font-size: 1.75rem; margin-bottom: 0.35rem; }
+    .meta { color: #555; font-size: 0.95rem; margin-bottom: 1.25rem; }
+    .note { background: #f0f7fb; padding: 0.75rem 1rem; border-left: 3px solid #0f766e; margin: 1rem 0; }
+    .demo { margin: 1rem 0; padding: 1rem; border: 1px dashed #94a3b8; }
+    pre, code { font-family: ui-monospace, Menlo, monospace; }
+    pre { background: #111827; color: #e5e7eb; padding: 0.85rem 1rem; overflow: auto; }
+    button, input, select, textarea { font: inherit; padding: 0.4rem 0.55rem; }
+    button { cursor: pointer; background: #0f766e; color: #fff; border: 0; padding: 0.55rem 1rem; }
+    #out { white-space: pre-wrap; background: #f4f4f4; padding: 0.75rem; min-height: 2rem; }
+    a { color: #0f766e; }
+    footer { border-top: 1px solid #ccc; padding-top: 1rem; margin-top: 2rem; color: #555; font-size: 0.95rem; }
+
+    .brand { color:#0f766e; font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    ol { line-height: 1.75; }
+  </style>
+</head>
+<body>
+  <div class="brand">phpkingdom.com</div>
+  <h1>27-Regex-Examples</h1>
+  <p class="meta">50 examples. Minimal HTML — focus on the script.</p>
+  <p><a href="../index.html">← JavaScript Tutorials</a></p>
+  <ol><li><a href="01-regexp-test.html">01 — RegExp.test()</a></li><li><a href="02-regexp-exec.html">02 — RegExp.exec()</a></li><li><a href="03-string-match.html">03 — String.match()</a></li><li><a href="04-string-matchall.html">04 — String.matchAll()</a></li><li><a href="05-string-search.html">05 — String.search()</a></li><li><a href="06-string-replace.html">06 — String.replace()</a></li><li><a href="07-string-split.html">07 — String.split()</a></li><li><a href="08-flags-overview.html">08 — RegExp Flags Overview</a></li><li><a href="09-flag-global.html">09 — Global Flag (g)</a></li><li><a href="10-flag-ignorecase.html">10 — Ignore Case Flag (i)</a></li><li><a href="11-flag-multiline.html">11 — Multiline Flag (m)</a></li><li><a href="12-flag-unicode.html">12 — Unicode Flag (u)</a></li><li><a href="13-flag-dotall.html">13 — DotAll Flag (s)</a></li><li><a href="14-character-classes.html">14 — Character Classes \d \w \s</a></li><li><a href="15-negated-class.html">15 — Negated Character Class</a></li><li><a href="16-custom-class-range.html">16 — Custom Character Ranges</a></li><li><a href="17-anchors.html">17 — Anchors ^ and $</a></li><li><a href="18-word-boundary.html">18 — Word Boundaries \b</a></li><li><a href="19-quantifiers-basic.html">19 — Basic Quantifiers *, +, ?</a></li><li><a href="20-quantifiers-exact.html">20 — Exact Quantifiers {n,m}</a></li><li><a href="21-greedy-vs-lazy.html">21 — Greedy vs Lazy Quantifiers</a></li><li><a href="22-capturing-groups.html">22 — Capturing Groups</a></li><li><a href="23-named-groups.html">23 — Named Capture Groups</a></li><li><a href="24-non-capturing-group.html">24 — Non-Capturing Group (?:)</a></li><li><a href="25-alternation.html">25 — Alternation |</a></li><li><a href="26-validate-email.html">26 — Validate Email</a></li><li><a href="27-validate-url.html">27 — Validate URL</a></li><li><a href="28-validate-phone.html">28 — Validate Phone Number</a></li><li><a href="29-validate-hex.html">29 — Validate Hex Color</a></li><li><a href="30-validate-date.html">30 — Validate Date (YYYY-MM-DD)</a></li><li><a href="31-extract-numbers.html">31 — Extract Numbers</a></li><li><a href="32-extract-emails.html">32 — Extract Emails</a></li><li><a href="33-extract-urls.html">33 — Extract URLs</a></li><li><a href="34-replace-spaces.html">34 — Replace Multiple Spaces</a></li><li><a href="35-camel-to-snake.html">35 — CamelCase to snake_case</a></li><li><a href="36-snake-to-camel.html">36 — snake_case to camelCase</a></li><li><a href="37-lookahead-positive.html">37 — Positive Lookahead (?=)</a></li><li><a href="38-lookahead-negative.html">38 — Negative Lookahead (?!)</a></li><li><a href="39-lookbehind-positive.html">39 — Positive Lookbehind (?&lt;=)</a></li><li><a href="40-lookbehind-negative.html">40 — Negative Lookbehind (?&lt;!)</a></li><li><a href="41-lastindex-pitfall.html">41 — lastIndex Global Pitfall</a></li><li><a href="42-escape-user-input.html">42 — Escape User Input</a></li><li><a href="43-redact-sensitive.html">43 — Redact Sensitive Data</a></li><li><a href="44-flag-sticky.html">44 — Sticky Flag (y)</a></li><li><a href="45-backreferences.html">45 — Backreferences</a></li><li><a href="46-replace-callback.html">46 — replace() with Callback</a></li><li><a href="47-remove-html-tags.html">47 — Remove HTML Tags</a></li><li><a href="48-pad-zeros.html">48 — Pad Numbers with Zeros</a></li><li><a href="49-password-strength.html">49 — Password Strength Check</a></li><li><a href="50-regex-checklist.html">50 — Regex Checklist</a></li></ol>
+  <footer>
+    <p>&copy; 2026 phpkingdom.com · Subrahmanyam Poluru · <a href="https://polurus.com">polurus.com</a></p>
+  </footer>
+</body>
+</html>

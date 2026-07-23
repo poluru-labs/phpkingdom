@@ -1,0 +1,40 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 088-spiral-order-small.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>088 — Spiral Order (3×3) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>088 — Spiral Order (3×3)</h1>
+  <h2>Problem</h2>
+  <p>Read a 3×3 matrix in spiral order using loops.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const m = [[1, 2, 3], [4, 5, 6], [7, 8, 9]];
+const out = [];
+let top = 0, bottom = 2, left = 0, right = 2;
+while (top <= bottom && left <= right) {
+  for (let c = left; c <= right; c++) out.push(m[top][c]);
+  top++;
+  for (let r = top; r <= bottom; r++) out.push(m[r][right]);
+  right--;
+  for (let c = right; c >= left; c--) out.push(m[bottom][c]);
+  bottom--;
+  for (let r = bottom; r >= top; r--) out.push(m[r][left]);
+  left++;
+}
+document.getElementById("out").textContent = out.join(" ");
+  </script>
+</body>
+</html>

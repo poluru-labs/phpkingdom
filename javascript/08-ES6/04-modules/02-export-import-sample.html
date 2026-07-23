@@ -1,0 +1,26 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 08-ES6/04-modules
+  example: 02-export-import-sample.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Export Import Sample | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Inline Module Script</h1>
+  <p>type=module script in the page.</p>
+  <pre id="out"></pre>
+  <script type="module">
+    const add = (a, b) => a + b;
+    document.getElementById("out").textContent = "module add(2,3)=" + add(2, 3);
+  </script>
+</body>
+</html>

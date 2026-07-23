@@ -1,0 +1,29 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 09-Async/01-asynchronous-javascript
+  example: 03-callback-hell-note.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Callback Hell Note | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Callback Nesting Problem</h1>
+  <p>Deep nesting is hard to read — prefer promises/async.</p>
+  <pre id="out"></pre>
+  <script>
+setTimeout(function () {
+  setTimeout(function () {
+    document.getElementById("out").textContent = "Nested timeouts finished";
+  }, 200);
+}, 200);
+  </script>
+</body>
+</html>

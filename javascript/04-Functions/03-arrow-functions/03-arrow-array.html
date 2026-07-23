@@ -1,0 +1,27 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 04-Functions/03-arrow-functions
+  example: 03-arrow-array.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Arrow with Arrays | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Arrows with Array Methods</h1>
+  <p>Common map/filter style.</p>
+  <pre id="out"></pre>
+  <script>
+const nums = [1, 2, 3, 4];
+const evens = nums.filter((n) => n % 2 === 0);
+document.getElementById("out").textContent = evens.join(", ");
+  </script>
+</body>
+</html>

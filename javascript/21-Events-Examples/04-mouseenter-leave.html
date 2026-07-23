@@ -1,0 +1,39 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 21-Events-Examples
+  example: 04-mouseenter-leave.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>04 — mouseenter / mouseleave | phpkingdom.com</title>
+</head>
+<body>
+  <h1>04 — mouseenter / mouseleave</h1>
+  <h2>Problem</h2>
+  <p>Highlight on hover without firing for child elements (non-bubbling).</p>
+  <h2>Demo</h2>
+  <div id="box" style="padding:20px;border:2px solid #333;display:inline-block">
+    Hover zone <button type="button">child</button>
+  </div>
+  <pre id="out"></pre>
+  <script>
+const box = document.getElementById("box");
+const out = document.getElementById("out");
+box.addEventListener("mouseenter", () => {
+  box.style.background = "#cfe";
+  out.textContent = "mouseenter";
+});
+box.addEventListener("mouseleave", () => {
+  box.style.background = "";
+  out.textContent = "mouseleave";
+});
+  </script>
+</body>
+</html>

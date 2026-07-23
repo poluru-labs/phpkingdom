@@ -1,0 +1,28 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 13-Exercises/048-Exercise
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solution 048 — DOM List Build (48) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Solution 048 — DOM List Build (48)</h1>
+  <ul id="list"></ul>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+["One","Two","Three"].forEach((t) => {
+  const li = document.createElement("li");
+  li.textContent = t;
+  document.getElementById("list").append(li);
+});
+  </script>
+</body>
+</html>

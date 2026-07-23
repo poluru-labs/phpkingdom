@@ -1,0 +1,246 @@
+{
+  "title": "LESS CSS Tutorials",
+  "items": [
+    {
+      "title": "Basics",
+      "items": [
+        {
+          "href": "/tutorials/less/introduction",
+          "label": "LESS - Introduction"
+        },
+        {
+          "href": "/tutorials/less/basics",
+          "label": "LESS - Basics"
+        },
+        {
+          "href": "/tutorials/less/setup",
+          "label": "LESS Setup"
+        },
+        {
+          "href": "/tutorials/less/syntax",
+          "label": "LESS Syntax"
+        },
+        {
+          "href": "/tutorials/less/less-vs-css",
+          "label": "LESS vs CSS"
+        }
+      ]
+    },
+    {
+      "title": "Core Concepts",
+      "items": [
+        {
+          "href": "/tutorials/less/variables",
+          "label": "LESS Variables"
+        },
+        {
+          "href": "/tutorials/less/nesting",
+          "label": "LESS Nesting"
+        },
+        {
+          "href": "/tutorials/less/imports",
+          "label": "LESS Imports"
+        },
+        {
+          "href": "/tutorials/less/comments",
+          "label": "LESS Comments"
+        },
+        {
+          "href": "/tutorials/less/extend",
+          "label": "LESS Extend"
+        }
+      ]
+    },
+    {
+      "title": "Mixins",
+      "items": [
+        {
+          "href": "/tutorials/less/mixins",
+          "label": "LESS Mixins"
+        },
+        {
+          "href": "/tutorials/less/parametric-mixins",
+          "label": "Parametric Mixins"
+        },
+        {
+          "href": "/tutorials/less/mixin-guards",
+          "label": "Mixin Guards"
+        },
+        {
+          "href": "/tutorials/less/namespaces",
+          "label": "LESS Namespaces"
+        },
+        {
+          "href": "/tutorials/less/recursive-mixins",
+          "label": "Recursive Mixins"
+        },
+        {
+          "href": "/tutorials/less/detached-rulesets",
+          "label": "Detached Rulesets"
+        }
+      ]
+    },
+    {
+      "title": "Values and Functions",
+      "items": [
+        {
+          "href": "/tutorials/less/data-types",
+          "label": "LESS Data Types"
+        },
+        {
+          "href": "/tutorials/less/operations",
+          "label": "LESS Operations"
+        },
+        {
+          "href": "/tutorials/less/functions",
+          "label": "LESS Functions"
+        },
+        {
+          "href": "/tutorials/less/color-functions",
+          "label": "Color Functions"
+        },
+        {
+          "href": "/tutorials/less/string-functions",
+          "label": "String Functions"
+        },
+        {
+          "href": "/tutorials/less/maps",
+          "label": "LESS Maps"
+        },
+        {
+          "href": "/tutorials/less/list-functions",
+          "label": "List Functions"
+        }
+      ]
+    },
+    {
+      "title": "Selectors",
+      "items": [
+        {
+          "href": "/tutorials/less/parent-selector",
+          "label": "Parent Selector"
+        },
+        {
+          "href": "/tutorials/less/selector-variables",
+          "label": "Selector Variables"
+        },
+        {
+          "href": "/tutorials/less/property-variables",
+          "label": "Property Variables"
+        },
+        {
+          "href": "/tutorials/less/interpolation",
+          "label": "LESS Interpolation"
+        },
+        {
+          "href": "/tutorials/less/merge-features",
+          "label": "Merge Features"
+        }
+      ]
+    },
+    {
+      "title": "Control and Conditions",
+      "items": [
+        {
+          "href": "/tutorials/less/guards",
+          "label": "LESS Guards"
+        },
+        {
+          "href": "/tutorials/less/guard-comparison",
+          "label": "Guard Comparison"
+        },
+        {
+          "href": "/tutorials/less/default-function",
+          "label": "default() Function"
+        },
+        {
+          "href": "/tutorials/less/loops",
+          "label": "LESS Loops"
+        }
+      ]
+    },
+    {
+      "title": "Architecture",
+      "items": [
+        {
+          "href": "/tutorials/less/project-structure",
+          "label": "LESS Project Structure"
+        },
+        {
+          "href": "/tutorials/less/design-tokens",
+          "label": "Design Tokens with LESS"
+        },
+        {
+          "href": "/tutorials/less/theme-system",
+          "label": "Theme System"
+        },
+        {
+          "href": "/tutorials/less/bem-with-less",
+          "label": "BEM with LESS"
+        },
+        {
+          "href": "/tutorials/less/component-styling",
+          "label": "Component Styling"
+        },
+        {
+          "href": "/tutorials/less/dark-mode-tokens",
+          "label": "Dark Mode Tokens"
+        }
+      ]
+    },
+    {
+      "title": "Responsive Design",
+      "items": [
+        {
+          "href": "/tutorials/less/media-queries",
+          "label": "LESS Media Queries"
+        },
+        {
+          "href": "/tutorials/less/responsive-mixins",
+          "label": "Responsive Mixins"
+        },
+        {
+          "href": "/tutorials/less/breakpoints",
+          "label": "LESS Breakpoints"
+        },
+        {
+          "href": "/tutorials/less/fluid-layouts",
+          "label": "Fluid Layouts"
+        }
+      ]
+    },
+    {
+      "title": "Advanced",
+      "items": [
+        {
+          "href": "/tutorials/less/lazy-loading",
+          "label": "Lazy Loading Variables"
+        },
+        {
+          "href": "/tutorials/less/plugin-system",
+          "label": "LESS Plugin System"
+        },
+        {
+          "href": "/tutorials/less/css-custom-properties",
+          "label": "CSS Custom Properties"
+        },
+        {
+          "href": "/tutorials/less/less-with-bootstrap",
+          "label": "LESS with Bootstrap"
+        },
+        {
+          "href": "/tutorials/less/performance",
+          "label": "LESS Performance"
+        },
+        {
+          "href": "/tutorials/less/source-maps",
+          "label": "LESS Source Maps"
+        },
+        {
+          "href": "/tutorials/less/webpack-less",
+          "label": "LESS with Webpack/Vite"
+        }
+      ]
+    }
+  ]
+}

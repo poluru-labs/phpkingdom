@@ -1,0 +1,42 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 29-Algorithms-Examples
+  example: 27-max-average-subarray.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>27 — Max Average Subarray | phpkingdom.com</title>
+</head>
+<body>
+  <h1>27 — Max Average Subarray</h1>
+  <h2>Problem</h2>
+  <p>Find maximum average of any subarray of length k.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function findMaxAverage(arr, k) {
+  let window = 0;
+  for (let i = 0; i < k; i++) window += arr[i];
+  let bestSum = window;
+  for (let i = k; i < arr.length; i++) {
+    window += arr[i] - arr[i - k];
+    bestSum = Math.max(bestSum, window);
+  }
+  return bestSum / k;
+}
+const arr = [1, 12, -5, -6, 50, 3];
+const k = 4;
+document.getElementById("out").textContent =
+  "array: " + JSON.stringify(arr) + "\n" +
+  "k: " + k + "\n" +
+  "max average: " + findMaxAverage(arr, k);
+  </script>
+</body>
+</html>

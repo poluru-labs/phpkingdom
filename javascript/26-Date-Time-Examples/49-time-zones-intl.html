@@ -1,0 +1,35 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 26-Date-Time-Examples
+  example: 49-time-zones-intl.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>49 — Time Zones with Intl | phpkingdom.com</title>
+</head>
+<body>
+  <h1>49 — Time Zones with Intl</h1>
+  <h2>Problem</h2>
+  <p>Format the same instant in multiple IANA time zones.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+
+const d = new Date(Date.UTC(2024, 0, 15, 18, 0, 0));
+const zones = ["UTC", "America/New_York", "Europe/London", "Asia/Kolkata"];
+const lines = zones.map(z => {
+  const f = new Intl.DateTimeFormat("en-US", { timeZone: z, dateStyle: "medium", timeStyle: "short" });
+  return z + ": " + f.format(d);
+});
+document.getElementById("out").textContent = lines.join("\n");
+
+  </script>
+</body>
+</html>

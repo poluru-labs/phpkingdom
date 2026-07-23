@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 24-API-Examples
+  example: 21-crud-update.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>21 — CRUD: Update Resource (PUT/PATCH) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>21 — CRUD: Update Resource (PUT/PATCH)</h1>
+  <h2>Problem</h2>
+  <p>PATCH partial update pattern.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+async function patchUser(id, patch) {
+  const current = { id, name: "Ada", role: "user" };
+  return { ...current, ...patch, updatedAt: "now" };
+}
+patchUser(1, { role: "admin" }).then((user) => {
+  document.getElementById("out").textContent = JSON.stringify(user, null, 2);
+});
+  </script>
+</body>
+</html>

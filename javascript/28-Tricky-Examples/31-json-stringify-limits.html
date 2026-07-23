@@ -1,0 +1,28 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 28-Tricky-Examples
+  example: 31-json-stringify-limits.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>31 — JSON.stringify Drops Functions/Undefined | phpkingdom.com</title>
+</head>
+<body>
+  <h1>31 — JSON.stringify Drops Functions/Undefined</h1>
+  <h2>Problem / Gotcha</h2>
+  <p>Functions and undefined are omitted.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const obj = { a: 1, b: undefined, c: function () {}, d: NaN };
+document.getElementById("out").textContent = JSON.stringify(obj);
+  </script>
+</body>
+</html>

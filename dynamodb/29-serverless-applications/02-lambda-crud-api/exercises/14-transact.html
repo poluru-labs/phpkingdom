@@ -1,0 +1,144 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Amazon DynamoDB with Node.js Tutorials
+section title: Serverless Applications
+topic title: Lambda CRUD API
+content type: Exercise
+item number: 14
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Lambda CRUD API Exercise 14 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #d1fae5;
+      color: #065f46;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Exercise 14</span>
+    <h1>Lambda CRUD API</h1>
+    <p><strong>Section:</strong> Serverless Applications</p>
+    <p><strong>Focus:</strong> Transact</p>
+    <p><strong>Scenario:</strong> URL shortener</p>
+    <p>Run against DynamoDB Local or AWS, then verify with GetItem/Query and CloudWatch metrics.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>DynamoDB (Node.js SDK v3)</h2>
+        <pre><code>// Lambda CRUD API — Exercise 14
+// Focus: transact | Scenario: URL shortener
+
+import { DynamoDBClient } from &quot;@aws-sdk/client-dynamodb&quot;;
+import {
+  DynamoDBDocumentClient,
+  PutCommand,
+  GetCommand,
+  UpdateCommand,
+  DeleteCommand,
+  QueryCommand,
+  ScanCommand,
+  BatchGetCommand,
+  BatchWriteCommand,
+  TransactWriteCommand,
+} from &quot;@aws-sdk/lib-dynamodb&quot;;
+
+const raw = new DynamoDBClient({
+  region: process.env.AWS_REGION || &quot;us-east-1&quot;,
+  ...(process.env.DDB_ENDPOINT
+    ? { endpoint: process.env.DDB_ENDPOINT, credentials: { accessKeyId: &quot;local&quot;, secretAccessKey: &quot;local&quot; } }
+    : {}),
+});
+const doc = DynamoDBDocumentClient.from(raw);
+const TableName = process.env.TABLE_NAME || &quot;AppTable&quot;;
+
+export const handler = async (event) =&gt; {
+  const method = event.requestContext?.http?.method || event.httpMethod;
+  const id = event.pathParameters?.id;
+  if (method === &quot;GET&quot; &amp;&amp; id) {
+    const { Item } = await doc.send(new GetCommand({
+      TableName,
+      Key: { pk: `USER#${id}`, sk: &quot;PROFILE&quot; },
+    }));
+    return { statusCode: Item ? 200 : 404, body: JSON.stringify(Item || { error: &quot;missing&quot; }) };
+  }
+  return { statusCode: 405, body: &quot;Method Not Allowed&quot; };
+};
+</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Lambda CRUD API
+- Practice: transact
+- Scenario: URL shortener
+- Design for access patterns first (Query over Scan)
+- Prefer Document Client for app code; raw client for admin
+- Use ConditionExpression for idempotency / optimistic locking
+- Paginate with ExclusiveStartKey / LastEvaluatedKey
+
+Useful commands:
+  npm install @aws-sdk/client-dynamodb @aws-sdk/lib-dynamodb
+  docker run -p 8000:8000 amazon/dynamodb-local
+  aws dynamodb list-tables --endpoint-url http://localhost:8000
+  node index.mjs</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This exercise shows one way to apply <strong>Lambda CRUD API</strong> in a url shortener context.</p>
+      <p>Model for queries, keep partition keys well distributed, and use GSIs only when access patterns require them.</p>
+    </section>
+  </main>
+</body>
+</html>

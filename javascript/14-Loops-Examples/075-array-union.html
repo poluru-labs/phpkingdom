@@ -1,0 +1,34 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 075-array-union.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>075 — Array Union | phpkingdom.com</title>
+</head>
+<body>
+  <h1>075 — Array Union</h1>
+  <h2>Problem</h2>
+  <p>Union two arrays preserving first-seen order.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const a = [1, 2, 3];
+const b = [3, 4, 5];
+const seen = new Set();
+const union = [];
+for (const x of [...a, ...b]) {
+  if (!seen.has(x)) { seen.add(x); union.push(x); }
+}
+document.getElementById("out").textContent = union.join(", ");
+  </script>
+</body>
+</html>

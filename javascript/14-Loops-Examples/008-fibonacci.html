@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 008-fibonacci.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>008 — Fibonacci Sequence | phpkingdom.com</title>
+</head>
+<body>
+  <h1>008 — Fibonacci Sequence</h1>
+  <h2>Problem</h2>
+  <p>Generate the first N Fibonacci numbers with a loop.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const N = 10;
+const seq = [];
+let a = 0, b = 1;
+for (let i = 0; i < N; i++) {
+  seq.push(a);
+  const next = a + b;
+  a = b;
+  b = next;
+}
+document.getElementById("out").textContent = seq.join(" ");
+  </script>
+</body>
+</html>

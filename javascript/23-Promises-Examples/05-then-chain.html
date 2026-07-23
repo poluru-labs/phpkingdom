@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 23-Promises-Examples
+  example: 05-then-chain.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>05 — then Chaining | phpkingdom.com</title>
+</head>
+<body>
+  <h1>05 — then Chaining</h1>
+  <h2>Problem</h2>
+  <p>Return values to pass data to the next then.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+Promise.resolve(2)
+  .then((n) => n * 3)
+  .then((n) => n + 4)
+  .then((n) => {
+    document.getElementById("out").textContent = "result=" + n;
+  });
+  </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 24-API-Examples
+  example: 04-try-catch-async.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>04 — async/await try/catch | phpkingdom.com</title>
+</head>
+<body>
+  <h1>04 — async/await try/catch</h1>
+  <h2>Problem</h2>
+  <p>Consume an API with async/await and try/catch.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function apiGet() {
+  return Promise.resolve({ ok: true, json: async () => ({ message: "hello API" }) });
+}
+async function load() {
+  try {
+    const res = await apiGet();
+    const data = await res.json();
+    document.getElementById("out").textContent = data.message;
+  } catch (err) {
+    document.getElementById("out").textContent = err.message;
+  }
+}
+load();
+  </script>
+</body>
+</html>

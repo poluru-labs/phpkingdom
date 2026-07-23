@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 24-API-Examples
+  example: 27-pagination-page.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>27 — Offset/Page Pagination | phpkingdom.com</title>
+</head>
+<body>
+  <h1>27 — Offset/Page Pagination</h1>
+  <h2>Problem</h2>
+  <p>Build page-based pagination query params.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function pageParams(page, limit = 10) {
+  return { page, limit, offset: (page - 1) * limit };
+}
+document.getElementById("out").textContent =
+  JSON.stringify([pageParams(1), pageParams(2), pageParams(3)], null, 2);
+  </script>
+</body>
+</html>

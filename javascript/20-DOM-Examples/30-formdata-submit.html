@@ -1,0 +1,37 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 20-DOM-Examples
+  example: 30-formdata-submit.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>30 — Form Submit + FormData | phpkingdom.com</title>
+</head>
+<body>
+  <h1>30 — Form Submit + FormData</h1>
+  <h2>Problem</h2>
+  <p>Intercept submit and read fields with FormData.</p>
+  <h2>Demo</h2>
+  <form id="f">
+    <input name="email" value="a@b.com">
+    <input name="role" value="dev">
+    <button type="submit">Save</button>
+  </form>
+  <pre id="out"></pre>
+  <script>
+document.getElementById("f").addEventListener("submit", (e) => {
+  e.preventDefault();
+  const data = new FormData(e.target);
+  const obj = Object.fromEntries(data.entries());
+  document.getElementById("out").textContent = JSON.stringify(obj, null, 2);
+});
+  </script>
+</body>
+</html>

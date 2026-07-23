@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 18-Object-Examples
+  example: 20-omit-keys.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>20 — Omit Keys | phpkingdom.com</title>
+</head>
+<body>
+  <h1>20 — Omit Keys</h1>
+  <h2>Problem</h2>
+  <p>Return a new object without selected keys.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function omit(obj, keys) {
+  const skip = new Set(keys);
+  return Object.fromEntries(Object.entries(obj).filter(([k]) => !skip.has(k)));
+}
+const user = { name: "Ada", password: "secret", role: "admin" };
+document.getElementById("out").textContent = JSON.stringify(omit(user, ["password"]));
+  </script>
+</body>
+</html>

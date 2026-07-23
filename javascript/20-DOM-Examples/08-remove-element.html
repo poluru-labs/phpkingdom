@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 20-DOM-Examples
+  example: 08-remove-element.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>08 — remove / removeChild | phpkingdom.com</title>
+</head>
+<body>
+  <h1>08 — remove / removeChild</h1>
+  <h2>Problem</h2>
+  <p>Remove a node from the DOM.</p>
+  <h2>Demo</h2>
+  <ul id="list"><li>Keep</li><li id="gone">Remove me</li><li>Keep</li></ul>
+  <button id="btn">Remove</button>
+  <script>
+document.getElementById("btn").onclick = () => {
+  const el = document.getElementById("gone");
+  if (el) el.remove();
+};
+  </script>
+</body>
+</html>

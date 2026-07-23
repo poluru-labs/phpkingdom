@@ -1,0 +1,23 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 12-Misc-Examples
+  example: 042-async-await.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>042 — async/await | phpkingdom.com</title>
+</head>
+<body>
+  <h1>042 — async/await</h1>
+  <pre id="out"></pre>
+  <script>
+async function run(){const v=await Promise.resolve("done"); document.getElementById("out").textContent=v;} run();
+  </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 03-Objects/04-readonly-properties
+  example: 04-readonly-vs-const.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>readonly vs const | phpkingdom.com</title>
+  <style>
+    body { font-family: Georgia, "Times New Roman", serif; max-width: 760px; margin: 2rem auto; padding: 0 1.25rem; line-height: 1.6; color: #1a1a1a; }
+    h1 { font-size: 1.75rem; margin-bottom: 0.35rem; }
+    .meta { color: #555; font-size: 0.95rem; margin-bottom: 1.25rem; }
+    .note { background: #ecfeff; padding: 0.75rem 1rem; border-left: 3px solid #0e7490; margin: 1rem 0; }
+    pre, code { font-family: ui-monospace, Menlo, monospace; }
+    pre { background: #111827; color: #e5e7eb; padding: 0.85rem 1rem; overflow: auto; }
+    code.ts { display: block; white-space: pre; }
+    #out { white-space: pre-wrap; background: #f4f4f4; padding: 0.75rem; min-height: 2rem; }
+</style>
+</head>
+<body>
+  <h1>readonly vs const</h1>
+  <p class="meta">const is binding; readonly is property.</p>
+<div class="note">Both matter for immutability habits.</div>
+<pre><code class="ts">const point = { x: 1, y: 2 };
+point.x = 9; // ok — binding is const, object mutable
+type P = { readonly x: number; readonly y: number };
+const p: P = { x: 1, y: 2 };
+// p.x = 9; // Error</code></pre>
+</body>
+</html>

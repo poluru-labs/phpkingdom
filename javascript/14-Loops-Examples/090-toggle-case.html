@@ -1,0 +1,34 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 090-toggle-case.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>090 — Toggle Case | phpkingdom.com</title>
+</head>
+<body>
+  <h1>090 — Toggle Case</h1>
+  <h2>Problem</h2>
+  <p>Toggle letter case with a character loop.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const s = "JaVa";
+let out = "";
+for (const ch of s) {
+  if (ch >= "a" && ch <= "z") out += ch.toUpperCase();
+  else if (ch >= "A" && ch <= "Z") out += ch.toLowerCase();
+  else out += ch;
+}
+document.getElementById("out").textContent = s + " → " + out;
+  </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 25-Error-Handling-Examples
+  example: 26-window-onerror.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>26 — window.onerror Hook | phpkingdom.com</title>
+</head>
+<body>
+  <h1>26 — window.onerror Hook</h1>
+  <h2>Problem</h2>
+  <p>Register window.onerror once to log unexpected errors (demo only).</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const out = document.getElementById("out");
+const seen = [];
+const prev = window.onerror;
+window.onerror = function(msg, src, line, col, err) {
+  seen.push(String(msg));
+  return true;
+};
+try {
+  throw new Error("demo global error");
+} catch (e) {
+  window.onerror(e.message, "", 0, 0, e);
+}
+window.onerror = prev;
+out.textContent = "logged via onerror: " + seen.join("; ");
+  </script>
+</body>
+</html>

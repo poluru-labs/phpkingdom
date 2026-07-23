@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/038-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 038 — Event bubbles to parent — Solution | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>Exercise 038 — Event bubbles to parent — Solution</h1>
+  <p class="meta">Parent node listens for bubbled custom event.</p>
+  <h2>Solution</h2>
+  <p>Parent node listens for bubbled custom event.</p>
+  <div id="demo"></div>
+  <pre id="out"></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+customElements.define("ex038-el", class extends HTMLElement {
+  connectedCallback() {
+    this.textContent = 'Event bubbles to parent';
+  }
+});
+document.getElementById("demo").innerHTML = "<ex038-el></ex038-el>";
+document.getElementById("out").textContent = 'Parent node listens for bubbled custom event.';
+  </script>
+</body>
+</html>

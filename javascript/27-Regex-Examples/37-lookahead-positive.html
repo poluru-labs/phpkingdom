@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 27-Regex-Examples
+  example: 37-lookahead-positive.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>37 — Positive Lookahead (?=) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>37 — Positive Lookahead (?=)</h1>
+  <h2>Problem</h2>
+  <p>Match a digit only when followed by 'px' using positive lookahead.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const text = "10px 20em 30px";
+const re = /\d+(?=px)/g;
+const matches = text.match(re);
+document.getElementById("out").textContent =
+  "text: " + text + "\n" +
+  "/\\d+(?=px)/g => " + JSON.stringify(matches);
+  </script>
+</body>
+</html>

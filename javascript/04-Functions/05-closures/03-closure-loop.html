@@ -1,0 +1,29 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 04-Functions/05-closures
+  example: 03-closure-loop.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Closure Loop | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Closures in Loops (let)</h1>
+  <p>let creates a fresh binding each iteration.</p>
+  <pre id="out"></pre>
+  <script>
+const fns = [];
+for (let i = 0; i < 3; i++) {
+  fns.push(() => i);
+}
+document.getElementById("out").textContent = fns.map((f) => f()).join(", ");
+  </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Functions-Examples
+  example: 30-module-pattern.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>30 — Module Pattern | phpkingdom.com</title>
+</head>
+<body>
+  <h1>30 — Module Pattern</h1>
+  <h2>Problem</h2>
+  <p>Expose a public API while keeping internal state private.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const CounterModule = (function () {
+  let value = 0;
+  return {
+    inc() { value += 1; return value; },
+    get() { return value; },
+  };
+})();
+CounterModule.inc();
+CounterModule.inc();
+document.getElementById("out").textContent = "count = " + CounterModule.get();
+  </script>
+</body>
+</html>

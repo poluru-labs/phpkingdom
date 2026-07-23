@@ -1,0 +1,29 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 13-Exercises/015-Exercise
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solution 015 — Click Counter | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Solution 015 — Click Counter</h1>
+  <button id="btn" type="button">Click</button>
+  <pre id="out">0</pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+let count = 0;
+document.getElementById("btn").addEventListener("click", function () {
+  count += 1;
+  document.getElementById("out").textContent = String(count);
+});
+  </script>
+</body>
+</html>

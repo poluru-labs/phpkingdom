@@ -1,0 +1,29 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 10-Advanced/02-prototypes
+  example: 01-prototype-chain.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Prototype Chain | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Prototype Chain</h1>
+  <p>Objects inherit via [[Prototype]].</p>
+  <pre id="out"></pre>
+  <script>
+const animal = { eats: true };
+const dog = Object.create(animal);
+dog.barks = true;
+document.getElementById("out").textContent =
+  dog.barks + " / eats=" + dog.eats;
+  </script>
+</body>
+</html>

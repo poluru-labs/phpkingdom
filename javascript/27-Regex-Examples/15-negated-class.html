@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 27-Regex-Examples
+  example: 15-negated-class.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>15 — Negated Character Class | phpkingdom.com</title>
+</head>
+<body>
+  <h1>15 — Negated Character Class</h1>
+  <h2>Problem</h2>
+  <p>Match characters NOT in a set using [^...].</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const text = "abc123xyz";
+const notDigits = text.match(/[^0-9]+/g);
+const notVowels = "hello".match(/[^aeiou]+/g);
+document.getElementById("out").textContent =
+  "not digits: " + JSON.stringify(notDigits) + "\n" +
+  "not vowels: " + JSON.stringify(notVowels);
+  </script>
+</body>
+</html>

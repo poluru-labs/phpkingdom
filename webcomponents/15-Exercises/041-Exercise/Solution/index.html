@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/041-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 041 — Design token chip — Solution | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>Exercise 041 — Design token chip — Solution</h1>
+  <p class="meta">Chip using --ds-accent.</p>
+  <h2>Solution</h2>
+  <p>Chip using --ds-accent.</p>
+  <div id="demo"></div>
+  <pre id="out"></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+customElements.define("ex041-el", class extends HTMLElement {
+  connectedCallback() {
+    this.textContent = 'Design token chip';
+  }
+});
+document.getElementById("demo").innerHTML = "<ex041-el></ex041-el>";
+document.getElementById("out").textContent = 'Chip using --ds-accent.';
+  </script>
+</body>
+</html>

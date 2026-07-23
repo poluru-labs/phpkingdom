@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 21-Events-Examples
+  example: 12-input-event.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>12 — input Event | phpkingdom.com</title>
+</head>
+<body>
+  <h1>12 — input Event</h1>
+  <h2>Problem</h2>
+  <p>Update on every value change while typing.</p>
+  <h2>Demo</h2>
+  <input id="name" placeholder="Type…">
+  <pre id="out"></pre>
+  <script>
+document.getElementById("name").addEventListener("input", (e) => {
+  document.getElementById("out").textContent = "live: " + e.target.value;
+});
+  </script>
+</body>
+</html>

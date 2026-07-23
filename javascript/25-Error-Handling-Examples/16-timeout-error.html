@@ -1,0 +1,44 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 25-Error-Handling-Examples
+  example: 16-timeout-error.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>16 — Timeout Error | phpkingdom.com</title>
+</head>
+<body>
+  <h1>16 — Timeout Error</h1>
+  <h2>Problem</h2>
+  <p>Reject with a timeout if an async task takes too long.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const out = document.getElementById("out");
+function delay(ms) {
+  return new Promise(r => setTimeout(r, ms));
+}
+function withTimeout(promise, ms) {
+  return Promise.race([
+    promise,
+    delay(ms).then(() => { throw new Error("Timeout after " + ms + "ms"); }),
+  ]);
+}
+(async () => {
+  try {
+    await withTimeout(delay(200), 50);
+    out.textContent = "finished";
+  } catch (e) {
+    out.textContent = e.message;
+  }
+})();
+  </script>
+</body>
+</html>

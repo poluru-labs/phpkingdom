@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 23-Promises-Examples
+  example: 18-delay-helper.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>18 — delay(ms) Helper | phpkingdom.com</title>
+</head>
+<body>
+  <h1>18 — delay(ms) Helper</h1>
+  <h2>Problem</h2>
+  <p>Build a reusable delay promise.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function delay(ms, value) {
+  return new Promise((resolve) => setTimeout(() => resolve(value), ms));
+}
+delay(250, "done").then((v) => {
+  document.getElementById("out").textContent = v;
+});
+  </script>
+</body>
+</html>

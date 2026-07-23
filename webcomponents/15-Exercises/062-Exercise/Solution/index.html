@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/062-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 062 — classMap idea — Solution | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>Exercise 062 — classMap idea — Solution</h1>
+  <p class="meta">Show classMap snippet usage.</p>
+  <h2>Solution</h2>
+  <p>Show classMap snippet usage.</p>
+  <div id="demo"></div>
+  <pre id="out"></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+customElements.define("ex062-el", class extends HTMLElement {
+  connectedCallback() {
+    this.textContent = 'classMap idea';
+  }
+});
+document.getElementById("demo").innerHTML = "<ex062-el></ex062-el>";
+document.getElementById("out").textContent = 'Show classMap snippet usage.';
+  </script>
+</body>
+</html>

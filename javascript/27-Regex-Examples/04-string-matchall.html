@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 27-Regex-Examples
+  example: 04-string-matchall.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>04 — String.matchAll() | phpkingdom.com</title>
+</head>
+<body>
+  <h1>04 — String.matchAll()</h1>
+  <h2>Problem</h2>
+  <p>Use String.matchAll() to iterate every match with groups and index.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const text = "2024-01-15 and 2025-12-31";
+const re = /(\d{4})-(\d{2})-(\d{2})/g;
+const lines = [];
+for (const m of text.matchAll(re)) {
+  lines.push("full=" + m[0] + " year=" + m[1] + " @index=" + m.index);
+}
+document.getElementById("out").textContent = lines.join("\n");
+  </script>
+</body>
+</html>

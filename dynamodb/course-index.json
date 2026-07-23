@@ -1,0 +1,1225 @@
+{
+  "title": "Amazon DynamoDB with Node.js Tutorials",
+  "items": [
+    {
+      "title": "DynamoDB Basics",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/introduction",
+          "label": "Amazon DynamoDB - Introduction"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/basics",
+          "label": "Amazon DynamoDB - Basics"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/what-is-dynamodb",
+          "label": "What Is Amazon DynamoDB?"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/how-dynamodb-works",
+          "label": "How DynamoDB Works"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/use-cases",
+          "label": "DynamoDB Use Cases"
+        }
+      ]
+    },
+    {
+      "title": "Setup and Configuration",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/aws-account-setup",
+          "label": "AWS Account Setup"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/nodejs-setup",
+          "label": "Node.js Setup"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/aws-cli",
+          "label": "AWS CLI Setup"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/aws-sdk-v3",
+          "label": "AWS SDK for JavaScript v3"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/first-application",
+          "label": "First DynamoDB Application"
+        }
+      ]
+    },
+    {
+      "title": "Core Concepts",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/tables",
+          "label": "DynamoDB Tables"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/items",
+          "label": "DynamoDB Items"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/attributes",
+          "label": "DynamoDB Attributes"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/primary-keys",
+          "label": "Primary Keys"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/data-types",
+          "label": "DynamoDB Data Types"
+        }
+      ]
+    },
+    {
+      "title": "Primary Keys",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/partition-key",
+          "label": "Partition Key"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/sort-key",
+          "label": "Sort Key"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/simple-primary-key",
+          "label": "Simple Primary Key"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/composite-primary-key",
+          "label": "Composite Primary Key"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/key-design",
+          "label": "Primary Key Design"
+        }
+      ]
+    },
+    {
+      "title": "AWS SDK Clients",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/dynamodb-client",
+          "label": "DynamoDB Client"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/document-client",
+          "label": "DynamoDB Document Client"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/client-configuration",
+          "label": "Client Configuration"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/sdk-commands",
+          "label": "DynamoDB SDK Commands"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/client-error-handling",
+          "label": "SDK Client Error Handling"
+        }
+      ]
+    },
+    {
+      "title": "Table Management",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/create-table",
+          "label": "Create a DynamoDB Table"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/describe-table",
+          "label": "Describe a Table"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/update-table",
+          "label": "Update a Table"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/list-tables",
+          "label": "List DynamoDB Tables"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/delete-table",
+          "label": "Delete a DynamoDB Table"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/time-to-live",
+          "label": "Time to Live (TTL)"
+        }
+      ]
+    },
+    {
+      "title": "Create Operations",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/put-item",
+          "label": "PutItem Operation"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/create-item",
+          "label": "Create an Item"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/batch-write-items",
+          "label": "Batch Write Items"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/conditional-put",
+          "label": "Conditional Put"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/prevent-overwrites",
+          "label": "Prevent Item Overwrites"
+        }
+      ]
+    },
+    {
+      "title": "Read Operations",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/get-item",
+          "label": "GetItem Operation"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/read-item",
+          "label": "Read an Item"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/batch-get-items",
+          "label": "Batch Get Items"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/consistent-reads",
+          "label": "Strongly Consistent Reads"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/eventually-consistent-reads",
+          "label": "Eventually Consistent Reads"
+        }
+      ]
+    },
+    {
+      "title": "Update Operations",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/update-item",
+          "label": "UpdateItem Operation"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/update-expression",
+          "label": "Update Expressions"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/set-remove-add-delete",
+          "label": "SET, REMOVE, ADD, and DELETE"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/atomic-counters",
+          "label": "Atomic Counters"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/conditional-update",
+          "label": "Conditional Updates"
+        }
+      ]
+    },
+    {
+      "title": "Delete Operations",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/delete-item",
+          "label": "DeleteItem Operation"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/delete-by-key",
+          "label": "Delete an Item by Key"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/conditional-delete",
+          "label": "Conditional Delete"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/batch-delete",
+          "label": "Batch Delete Items"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/soft-delete",
+          "label": "Soft Delete Pattern"
+        }
+      ]
+    },
+    {
+      "title": "Query Operations",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/query",
+          "label": "DynamoDB Query"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/key-condition-expression",
+          "label": "Key Condition Expressions"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/query-sort-key",
+          "label": "Query by Sort Key"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/query-index",
+          "label": "Query an Index"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/query-pagination",
+          "label": "Query Pagination"
+        }
+      ]
+    },
+    {
+      "title": "Scan Operations",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/scan",
+          "label": "DynamoDB Scan"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/scan-filter",
+          "label": "Scan with Filters"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/scan-pagination",
+          "label": "Scan Pagination"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/parallel-scan",
+          "label": "Parallel Scan"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/query-vs-scan",
+          "label": "Query vs Scan"
+        }
+      ]
+    },
+    {
+      "title": "Expressions",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/expressions",
+          "label": "DynamoDB Expressions"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/condition-expressions",
+          "label": "Condition Expressions"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/filter-expressions",
+          "label": "Filter Expressions"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/projection-expressions",
+          "label": "Projection Expressions"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/expression-attribute-names-values",
+          "label": "Expression Names and Values"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/partiql",
+          "label": "PartiQL for DynamoDB"
+        }
+      ]
+    },
+    {
+      "title": "Global Secondary Indexes",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/global-secondary-index",
+          "label": "Global Secondary Index"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/create-gsi",
+          "label": "Create a Global Secondary Index"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/query-gsi",
+          "label": "Query a Global Secondary Index"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/gsi-projections",
+          "label": "GSI Projections"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/gsi-design",
+          "label": "GSI Design Patterns"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/gsi-overloading",
+          "label": "GSI Overloading"
+        }
+      ]
+    },
+    {
+      "title": "Local Secondary Indexes",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/local-secondary-index",
+          "label": "Local Secondary Index"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/create-lsi",
+          "label": "Create a Local Secondary Index"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/query-lsi",
+          "label": "Query a Local Secondary Index"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/lsi-projections",
+          "label": "LSI Projections"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/gsi-vs-lsi",
+          "label": "GSI vs LSI"
+        }
+      ]
+    },
+    {
+      "title": "Pagination",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/pagination",
+          "label": "DynamoDB Pagination"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/last-evaluated-key",
+          "label": "LastEvaluatedKey"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/exclusive-start-key",
+          "label": "ExclusiveStartKey"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/page-size",
+          "label": "Control Page Size"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/pagination-helper",
+          "label": "Build a Pagination Helper"
+        }
+      ]
+    },
+    {
+      "title": "Batch Operations",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/batch-operations",
+          "label": "DynamoDB Batch Operations"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/batch-get",
+          "label": "BatchGetItem"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/batch-write",
+          "label": "BatchWriteItem"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/unprocessed-items",
+          "label": "Handle Unprocessed Items"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/batch-retries",
+          "label": "Batch Retry Strategies"
+        }
+      ]
+    },
+    {
+      "title": "Transactions",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/transactions",
+          "label": "DynamoDB Transactions"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/transact-write-items",
+          "label": "TransactWriteItems"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/transact-get-items",
+          "label": "TransactGetItems"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/transaction-conditions",
+          "label": "Transaction Conditions"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/transaction-errors",
+          "label": "Transaction Error Handling"
+        }
+      ]
+    },
+    {
+      "title": "Optimistic Locking",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/optimistic-locking",
+          "label": "Optimistic Locking"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/version-attribute",
+          "label": "Version Attributes"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/concurrent-updates",
+          "label": "Concurrent Updates"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/conditional-writes",
+          "label": "Conditional Writes"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/prevent-lost-updates",
+          "label": "Prevent Lost Updates"
+        }
+      ]
+    },
+    {
+      "title": "Data Modeling",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/data-modeling",
+          "label": "DynamoDB Data Modeling"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/access-patterns",
+          "label": "Access Patterns"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/entity-modeling",
+          "label": "Entity Modeling"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/relationship-modeling",
+          "label": "Relationship Modeling"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/denormalization",
+          "label": "Data Denormalization"
+        }
+      ]
+    },
+    {
+      "title": "Single-Table Design",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/single-table-design",
+          "label": "Single-Table Design"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/composite-key-patterns",
+          "label": "Composite Key Patterns"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/entity-prefixes",
+          "label": "Entity Prefixes"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/overloaded-indexes",
+          "label": "Overloaded Indexes"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/single-table-example",
+          "label": "Single-Table Design Example"
+        }
+      ]
+    },
+    {
+      "title": "Relationship Patterns",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/one-to-one",
+          "label": "One-to-One Relationships"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/one-to-many",
+          "label": "One-to-Many Relationships"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/many-to-many",
+          "label": "Many-to-Many Relationships"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/hierarchical-data",
+          "label": "Hierarchical Data"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/adjacency-list",
+          "label": "Adjacency List Pattern"
+        }
+      ]
+    },
+    {
+      "title": "Advanced Data Patterns",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/sparse-index",
+          "label": "Sparse Index Pattern"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/inverted-index",
+          "label": "Inverted Index Pattern"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/materialized-graph",
+          "label": "Materialized Graph Pattern"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/write-sharding",
+          "label": "Write Sharding"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/time-series-data",
+          "label": "Time-Series Data"
+        }
+      ]
+    },
+    {
+      "title": "Capacity Modes",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/capacity-modes",
+          "label": "DynamoDB Capacity Modes"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/on-demand-capacity",
+          "label": "On-Demand Capacity"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/provisioned-capacity",
+          "label": "Provisioned Capacity"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/read-write-capacity",
+          "label": "Read and Write Capacity Units"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/capacity-mode-selection",
+          "label": "Choose a Capacity Mode"
+        }
+      ]
+    },
+    {
+      "title": "Auto Scaling",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/auto-scaling",
+          "label": "DynamoDB Auto Scaling"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/target-utilization",
+          "label": "Target Utilization"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/scaling-policies",
+          "label": "Scaling Policies"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/index-auto-scaling",
+          "label": "Index Auto Scaling"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/scaling-best-practices",
+          "label": "Auto Scaling Best Practices"
+        }
+      ]
+    },
+    {
+      "title": "DynamoDB Streams",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/streams",
+          "label": "DynamoDB Streams"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/enable-streams",
+          "label": "Enable DynamoDB Streams"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/stream-records",
+          "label": "DynamoDB Stream Records"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/stream-view-types",
+          "label": "Stream View Types"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/process-stream-events",
+          "label": "Process Stream Events"
+        }
+      ]
+    },
+    {
+      "title": "AWS Lambda Integration",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/lambda-integration",
+          "label": "DynamoDB with AWS Lambda"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/lambda-stream-trigger",
+          "label": "Lambda Stream Trigger"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/event-source-mapping",
+          "label": "Event Source Mapping"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/lambda-batch-processing",
+          "label": "Lambda Batch Processing"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/lambda-retry-handling",
+          "label": "Lambda Retry Handling"
+        }
+      ]
+    },
+    {
+      "title": "API Development",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/rest-api",
+          "label": "DynamoDB REST API"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/express-api",
+          "label": "DynamoDB with Express"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/api-gateway",
+          "label": "DynamoDB with API Gateway"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/crud-api",
+          "label": "Build a CRUD API"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/api-validation",
+          "label": "API Request Validation"
+        }
+      ]
+    },
+    {
+      "title": "Serverless Applications",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/serverless-applications",
+          "label": "Serverless DynamoDB Applications"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/lambda-crud-api",
+          "label": "Lambda CRUD API"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/serverless-framework",
+          "label": "Serverless Framework"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/aws-sam",
+          "label": "DynamoDB with AWS SAM"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/aws-cdk",
+          "label": "DynamoDB with AWS CDK"
+        }
+      ]
+    },
+    {
+      "title": "DynamoDB Local",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/dynamodb-local",
+          "label": "DynamoDB Local"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/local-installation",
+          "label": "Install DynamoDB Local"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/docker-local",
+          "label": "DynamoDB Local with Docker"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/local-configuration",
+          "label": "Local Client Configuration"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/local-admin-tools",
+          "label": "Local Admin Tools"
+        }
+      ]
+    },
+    {
+      "title": "DynamoDB Toolbox and ODMs",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/dynamodb-toolbox",
+          "label": "DynamoDB Toolbox"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/dynamodb-onetable",
+          "label": "DynamoDB OneTable"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/dynamoose",
+          "label": "Dynamoose"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/electrodb",
+          "label": "ElectroDB"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/odm-comparison",
+          "label": "DynamoDB ODM Comparison"
+        }
+      ]
+    },
+    {
+      "title": "Caching",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/caching",
+          "label": "DynamoDB Caching"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/dax",
+          "label": "DynamoDB Accelerator"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/application-cache",
+          "label": "Application-Level Caching"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/cache-invalidation",
+          "label": "Cache Invalidation"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/cache-aside",
+          "label": "Cache-Aside Pattern"
+        }
+      ]
+    },
+    {
+      "title": "Global Tables",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/global-tables",
+          "label": "DynamoDB Global Tables"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/multi-region-replication",
+          "label": "Multi-Region Replication"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/conflict-resolution",
+          "label": "Conflict Resolution"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/global-table-failover",
+          "label": "Global Table Failover"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/global-table-design",
+          "label": "Global Table Design"
+        }
+      ]
+    },
+    {
+      "title": "Backup and Recovery",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/backups",
+          "label": "DynamoDB Backups"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/on-demand-backup",
+          "label": "On-Demand Backups"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/point-in-time-recovery",
+          "label": "Point-in-Time Recovery"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/restore-table",
+          "label": "Restore a DynamoDB Table"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/disaster-recovery",
+          "label": "Disaster Recovery"
+        }
+      ]
+    },
+    {
+      "title": "Import and Export",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/import-export",
+          "label": "DynamoDB Import and Export"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/export-to-s3",
+          "label": "Export DynamoDB to S3"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/import-from-s3",
+          "label": "Import DynamoDB from S3"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/data-migration",
+          "label": "DynamoDB Data Migration"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/bulk-data-load",
+          "label": "Bulk Data Loading"
+        }
+      ]
+    },
+    {
+      "title": "Security",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/security",
+          "label": "DynamoDB Security"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/iam-permissions",
+          "label": "IAM Permissions"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/least-privilege",
+          "label": "Least-Privilege Access"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/encryption",
+          "label": "Encryption at Rest"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/vpc-endpoints",
+          "label": "DynamoDB VPC Endpoints"
+        }
+      ]
+    },
+    {
+      "title": "Fine-Grained Access",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/fine-grained-access",
+          "label": "Fine-Grained Access Control"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/leading-keys",
+          "label": "dynamodb:LeadingKeys"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/attribute-access",
+          "label": "Attribute-Level Access"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/tenant-isolation",
+          "label": "Tenant Isolation"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/cognito-access",
+          "label": "Cognito-Based Access"
+        }
+      ]
+    },
+    {
+      "title": "Testing",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/testing",
+          "label": "DynamoDB Application Testing"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/unit-testing",
+          "label": "DynamoDB Unit Testing"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/jest",
+          "label": "DynamoDB Testing with Jest"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/integration-testing",
+          "label": "Integration Testing"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/mock-aws-sdk",
+          "label": "Mock the DynamoDB Client"
+        }
+      ]
+    },
+    {
+      "title": "Monitoring",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/monitoring",
+          "label": "DynamoDB Monitoring"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/cloudwatch-metrics",
+          "label": "CloudWatch Metrics"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/consumed-capacity",
+          "label": "Consumed Capacity"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/throttled-requests",
+          "label": "Throttled Requests"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/cloudwatch-alarms",
+          "label": "CloudWatch Alarms"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/contributor-insights",
+          "label": "Contributor Insights"
+        }
+      ]
+    },
+    {
+      "title": "Observability",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/observability",
+          "label": "DynamoDB Observability"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/structured-logging",
+          "label": "Structured Logging"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/aws-xray",
+          "label": "DynamoDB with AWS X-Ray"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/tracing-requests",
+          "label": "Trace DynamoDB Requests"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/correlation-ids",
+          "label": "Correlation IDs"
+        }
+      ]
+    },
+    {
+      "title": "Performance",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/performance",
+          "label": "DynamoDB Performance"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/hot-partitions",
+          "label": "Hot Partitions"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/key-distribution",
+          "label": "Partition Key Distribution"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/read-write-optimization",
+          "label": "Read and Write Optimization"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/performance-tuning",
+          "label": "DynamoDB Performance Tuning"
+        }
+      ]
+    },
+    {
+      "title": "Cost Optimization",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/cost-optimization",
+          "label": "DynamoDB Cost Optimization"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/capacity-costs",
+          "label": "Capacity Costs"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/index-costs",
+          "label": "Secondary Index Costs"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/storage-costs",
+          "label": "Storage Costs"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/cost-best-practices",
+          "label": "Cost Optimization Practices"
+        }
+      ]
+    },
+    {
+      "title": "Error Handling",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/error-handling",
+          "label": "DynamoDB Error Handling"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/conditional-check-failed",
+          "label": "ConditionalCheckFailedException"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/resource-not-found",
+          "label": "ResourceNotFoundException"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/throttling-errors",
+          "label": "Throttling Errors"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/retry-strategies",
+          "label": "Retry Strategies"
+        }
+      ]
+    },
+    {
+      "title": "Deployment",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/deployment",
+          "label": "Deploy DynamoDB Applications"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/cloudformation",
+          "label": "DynamoDB with CloudFormation"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/aws-sam-deployment",
+          "label": "Deploy with AWS SAM"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/cdk-deployment",
+          "label": "Deploy with AWS CDK"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/terraform",
+          "label": "DynamoDB with Terraform"
+        }
+      ]
+    },
+    {
+      "title": "CI/CD",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/ci-cd",
+          "label": "DynamoDB CI/CD"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/github-actions",
+          "label": "GitHub Actions"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/aws-codepipeline",
+          "label": "AWS CodePipeline"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/schema-migrations",
+          "label": "Data Model Migrations"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/zero-downtime-deployment",
+          "label": "Zero-Downtime Deployment"
+        }
+      ]
+    },
+    {
+      "title": "Projects",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/user-api-project",
+          "label": "User Management API"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/ecommerce-project",
+          "label": "E-Commerce Data Model"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/order-service-project",
+          "label": "Order Service"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/chat-application-project",
+          "label": "Real-Time Chat Application"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/url-shortener-project",
+          "label": "Serverless URL Shortener"
+        }
+      ]
+    },
+    {
+      "title": "Advanced",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/advanced-data-modeling",
+          "label": "Advanced Data Modeling"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/multi-tenant-design",
+          "label": "Multi-Tenant Design"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/event-sourcing",
+          "label": "Event Sourcing"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/cqrs",
+          "label": "CQRS with DynamoDB"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/change-data-capture",
+          "label": "Change Data Capture"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/opensearch-zero-etl",
+          "label": "OpenSearch Zero-ETL"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshooting",
+      "items": [
+        {
+          "href": "/tutorials/dynamodb-nodejs/debugging",
+          "label": "DynamoDB Debugging"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/access-denied",
+          "label": "Access Denied Errors"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/validation-errors",
+          "label": "Validation Errors"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/reserved-keywords",
+          "label": "Reserved Keyword Errors"
+        },
+        {
+          "href": "/tutorials/dynamodb-nodejs/performance-issues",
+          "label": "Performance Issues"
+        }
+      ]
+    }
+  ]
+}

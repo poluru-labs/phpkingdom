@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 09-Async/03-promises
+  example: 01-promise-basic.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Promise Basic | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Create a Promise</h1>
+  <p>resolve / reject.</p>
+  <pre id="out"></pre>
+  <script>
+const p = new Promise(function (resolve) {
+  setTimeout(function () { resolve("done"); }, 300);
+});
+p.then(function (value) {
+  document.getElementById("out").textContent = value;
+});
+  </script>
+</body>
+</html>

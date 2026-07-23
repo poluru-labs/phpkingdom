@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 032-max-with-for.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>032 — Maximum with for | phpkingdom.com</title>
+</head>
+<body>
+  <h1>032 — Maximum with for</h1>
+  <h2>Problem</h2>
+  <p>Find the max value by scanning with a loop.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const nums = [4, 17, 2, 9, 11];
+let max = nums[0];
+for (let i = 1; i < nums.length; i++) if (nums[i] > max) max = nums[i];
+document.getElementById("out").textContent = "max = " + max;
+  </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 08-ES6/02-template-literals
+  example: 03-expression-embed.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Embed Expressions | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Embed Expressions</h1>
+  <p>Any expression inside ${}.</p>
+  <pre id="out"></pre>
+  <script>
+const a = 4, b = 5;
+document.getElementById("out").textContent = `${a} + ${b} = ${a + b}`;
+  </script>
+</body>
+</html>

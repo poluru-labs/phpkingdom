@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 19-Recursion-Examples
+  example: 03-fibonacci.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>03 — Fibonacci | phpkingdom.com</title>
+</head>
+<body>
+  <h1>03 — Fibonacci</h1>
+  <h2>Problem</h2>
+  <p>Return the nth Fibonacci number using simple recursion (F(0)=0, F(1)=1).</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function fib(n) {
+  if (n <= 1) return n;
+  return fib(n - 1) + fib(n - 2);
+}
+const seq = Array.from({ length: 10 }, (_, i) => fib(i));
+document.getElementById("out").textContent = "fib(0..9): " + seq.join(", ");
+  </script>
+</body>
+</html>

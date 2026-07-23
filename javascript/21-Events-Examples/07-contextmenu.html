@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 21-Events-Examples
+  example: 07-contextmenu.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>07 — contextmenu (Right-Click) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>07 — contextmenu (Right-Click)</h1>
+  <h2>Problem</h2>
+  <p>Intercept right-click and show a custom message.</p>
+  <h2>Demo</h2>
+  <div id="area" style="padding:24px;border:1px dashed #333">Right-click here</div>
+  <pre id="out"></pre>
+  <script>
+document.getElementById("area").addEventListener("contextmenu", (e) => {
+  e.preventDefault();
+  document.getElementById("out").textContent =
+    "custom menu at (" + e.clientX + ", " + e.clientY + ")";
+});
+  </script>
+</body>
+</html>

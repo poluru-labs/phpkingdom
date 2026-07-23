@@ -1,0 +1,119 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Design System Tutorials
+section title: Component Architecture
+topic title: Component Composition
+content type: Exercise
+item number: 19
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Component Composition Exercise 19 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #fce7f3;
+      color: #9d174d;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Exercise 19</span>
+    <h1>Component Composition</h1>
+    <p><strong>Section:</strong> Component Architecture</p>
+    <p><strong>Focus:</strong> Visual Snapshot</p>
+    <p><strong>Scenario:</strong> checkout flow</p>
+    <p>Implement the pattern in a sandbox library and verify in Storybook + a11y checks.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Design System</h2>
+        <pre><code>// Component Composition — Exercise 19
+// Focus: visual snapshot | Scenario: checkout flow
+
+export function Card({ children }: { children: React.ReactNode }) {
+  return &lt;section className=&quot;ds-card&quot;&gt;{children}&lt;/section&gt;;
+}
+export function CardHeader({ children }: { children: React.ReactNode }) {
+  return &lt;header className=&quot;ds-card__header&quot;&gt;{children}&lt;/header&gt;;
+}
+export function CardBody({ children }: { children: React.ReactNode }) {
+  return &lt;div className=&quot;ds-card__body&quot;&gt;{children}&lt;/div&gt;;
+}
+
+// Compose: &lt;Card&gt;&lt;CardHeader/&gt;&lt;CardBody/&gt;&lt;/Card&gt; instead of mega-props</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Component Composition
+- Practice: visual snapshot
+- Scenario: checkout flow
+- Separate primitive → semantic → component tokens
+- Document usage, do/don&#x27;t, and accessibility in Storybook
+- Version with semver; deprecate before breaking
+- Measure adoption and bundle impact
+
+Useful commands:
+  npm init -y &amp;&amp; npm pkg set name=@phpkingdom/ds
+  npx storybook@latest init
+  npm run build &amp;&amp; npm publish --access public
+  npx chromatic --project-token=$CHROMATIC_PROJECT_TOKEN</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This exercise shows one way to apply <strong>Component Composition</strong> in a checkout flow context.</p>
+      <p>Treat the system as a product: tokens, components, docs, governance, and measurable adoption.</p>
+    </section>
+  </main>
+</body>
+</html>

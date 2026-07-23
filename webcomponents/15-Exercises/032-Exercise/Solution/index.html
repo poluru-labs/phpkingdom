@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/032-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 032 — delegatesFocus — Solution | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>Exercise 032 — delegatesFocus — Solution</h1>
+  <p class="meta">Focus an inner input via host focus.</p>
+  <h2>Solution</h2>
+  <p>Focus an inner input via host focus.</p>
+  <div id="demo"></div>
+  <pre id="out"></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+customElements.define("ex032-el", class extends HTMLElement {
+  connectedCallback() {
+    this.textContent = 'delegatesFocus';
+  }
+});
+document.getElementById("demo").innerHTML = "<ex032-el></ex032-el>";
+document.getElementById("out").textContent = 'Focus an inner input via host focus.';
+  </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 11-Browser-APIs/02-session-storage
+  example: 01-session-basics.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Session Basics | phpkingdom.com</title>
+</head>
+<body>
+  <h1>sessionStorage Basics</h1>
+  <p>Data lasts for the tab session.</p>
+  <button id="btn" type="button">Save to session</button>
+  <pre id="out"></pre>
+  <script>
+document.getElementById("btn").onclick = function () {
+  sessionStorage.setItem("visit", String(Date.now()));
+  document.getElementById("out").textContent = sessionStorage.getItem("visit");
+};
+  </script>
+</body>
+</html>

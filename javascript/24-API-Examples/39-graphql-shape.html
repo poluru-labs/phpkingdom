@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 24-API-Examples
+  example: 39-graphql-shape.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>39 — GraphQL Request Shape | phpkingdom.com</title>
+</head>
+<body>
+  <h1>39 — GraphQL Request Shape</h1>
+  <h2>Problem</h2>
+  <p>POST a GraphQL query payload.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const query = `
+  query Site($id: ID!) {
+    site(id: $id) { name author }
+  }`;
+const payload = {
+  query,
+  variables: { id: "phpkingdom" }
+};
+document.getElementById("out").textContent = JSON.stringify(payload, null, 2);
+// fetch("/graphql", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) })
+  </script>
+</body>
+</html>

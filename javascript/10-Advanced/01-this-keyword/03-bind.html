@@ -1,0 +1,27 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 10-Advanced/01-this-keyword
+  example: 03-bind.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>bind | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Function.prototype.bind</h1>
+  <p>Permanently set this.</p>
+  <pre id="out"></pre>
+  <script>
+function greet() { return "Hello " + this.name; }
+const bound = greet.bind({ name: "Ada" });
+document.getElementById("out").textContent = bound();
+  </script>
+</body>
+</html>

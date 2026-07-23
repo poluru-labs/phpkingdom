@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 11-Browser-APIs/04-web-apis
+  example: 02-clipboard.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Clipboard | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Clipboard Write</h1>
+  <p>Copy text with the Clipboard API.</p>
+  <button id="btn" type="button">Copy site name</button>
+  <pre id="out"></pre>
+  <script>
+document.getElementById("btn").onclick = async function () {
+  try {
+    await navigator.clipboard.writeText("phpkingdom.com");
+    document.getElementById("out").textContent = "Copied!";
+  } catch (e) {
+    document.getElementById("out").textContent = "Clipboard blocked: " + e.message;
+  }
+};
+  </script>
+</body>
+</html>

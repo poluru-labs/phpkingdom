@@ -1,0 +1,42 @@
+<!--
+  sitename: phpkingdom
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  topic: 09-Exercises/14-Exercise
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solution 14 — Select and Datalist | phpkingdom</title>
+</head>
+<body>
+
+  <form>
+    <p>
+      <label for="country">Country</label><br>
+      <select id="country" name="country">
+        <option value="">Choose…</option>
+        <option value="in">India</option>
+        <option value="us">USA</option>
+        <option value="uk">UK</option>
+      </select>
+    </p>
+    <p>
+      <label for="lang">Favorite language</label><br>
+      <input list="langs" id="lang" name="lang">
+      <datalist id="langs">
+        <option value="HTML"></option>
+        <option value="CSS"></option>
+        <option value="JavaScript"></option>
+        <option value="PHP"></option>
+      </datalist>
+    </p>
+  </form>
+  <hr>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+
+</body>
+</html>

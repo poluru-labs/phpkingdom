@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 03-Control-Flow/04-break-continue
+  example: 02-continue.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>continue | phpkingdom.com</title>
+</head>
+<body>
+  <h1>continue Statement</h1>
+  <p>Skip to the next iteration.</p>
+  <pre id="out"></pre>
+  <script>
+let text = "";
+for (let i = 1; i <= 5; i++) {
+  if (i === 3) continue;
+  text += i + " ";
+}
+document.getElementById("out").textContent = text;
+  </script>
+</body>
+</html>

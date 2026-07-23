@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 27-Regex-Examples
+  example: 45-backreferences.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>45 — Backreferences | phpkingdom.com</title>
+</head>
+<body>
+  <h1>45 — Backreferences</h1>
+  <h2>Problem</h2>
+  <p>Match repeated words using a backreference to group 1.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const text = "the the quick brown brown fox";
+const dupes = text.match(/\b(\w+)\s+\1\b/g);
+document.getElementById("out").textContent =
+  "text: " + text + "\n" +
+  "duplicates: " + JSON.stringify(dupes);
+  </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 26-Date-Time-Examples
+  example: 08-utc-vs-local.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>08 — UTC vs Local Getters | phpkingdom.com</title>
+</head>
+<body>
+  <h1>08 — UTC vs Local Getters</h1>
+  <h2>Problem</h2>
+  <p>Compare local getters with UTC getters for the same instant.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+
+const d = new Date(2024, 0, 15, 14, 30, 0);
+document.getElementById("out").textContent =
+  "Local: " + d.getFullYear() + "-" + (d.getMonth()+1) + "-" + d.getDate() + " " + d.getHours() + ":" + d.getMinutes() + "\n" +
+  "UTC:   " + d.getUTCFullYear() + "-" + (d.getUTCMonth()+1) + "-" + d.getUTCDate() + " " + d.getUTCHours() + ":" + d.getUTCMinutes() + "\n" +
+  "toISOString(): " + d.toISOString();
+
+  </script>
+</body>
+</html>

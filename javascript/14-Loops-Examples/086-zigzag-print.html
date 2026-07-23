@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 086-zigzag-print.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>086 — Zigzag 1..N | phpkingdom.com</title>
+</head>
+<body>
+  <h1>086 — Zigzag 1..N</h1>
+  <h2>Problem</h2>
+  <p>Print 1..N then N-1..1 in one go.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const N = 5;
+const out = [];
+for (let i = 1; i <= N; i++) out.push(i);
+for (let i = N - 1; i >= 1; i--) out.push(i);
+document.getElementById("out").textContent = out.join(" ");
+  </script>
+</body>
+</html>

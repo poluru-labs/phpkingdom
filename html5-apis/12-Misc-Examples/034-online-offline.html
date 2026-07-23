@@ -1,0 +1,25 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 12-Misc-Examples
+  example: 034-online-offline.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>034 — online/offline | phpkingdom.com</title>
+</head>
+<body>
+  <h1>034 — online/offline</h1>
+  <p>Network connectivity events.</p>
+<pre id="out"></pre>
+  <script>
+const s=()=>document.getElementById("out").textContent=navigator.onLine;s();addEventListener("online",s);addEventListener("offline",s);
+  </script>
+</body>
+</html>

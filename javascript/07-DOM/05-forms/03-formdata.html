@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 07-DOM/05-forms
+  example: 03-formdata.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>FormData | phpkingdom.com</title>
+</head>
+<body>
+  <h1>FormData API</h1>
+  <p>Collect named fields easily.</p>
+  <form id="f"><input name="title" value="JS"><input name="level" value="1"><button type="submit">Send</button></form>
+  <pre id="out"></pre>
+  <script>
+document.getElementById("f").addEventListener("submit", function (e) {
+  e.preventDefault();
+  const data = new FormData(e.target);
+  document.getElementById("out").textContent =
+    data.get("title") + " / " + data.get("level");
+});
+  </script>
+</body>
+</html>

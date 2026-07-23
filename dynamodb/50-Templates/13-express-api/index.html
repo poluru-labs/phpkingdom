@@ -1,0 +1,76 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 50-Templates/13-express-api
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <meta name="description" content="Express + DynamoDB CRUD routes">
+  <title>Express API | REST routes | phpkingdom.com</title>
+  <style>
+    body { margin:0; font-family: Georgia, "Times New Roman", serif; background:#f5f7fb; color:#1f2937; line-height:1.55; }
+    .wrap { max-width:900px; margin:0 auto; padding:1.5rem; }
+    .brand { color:#065f46; font-size:.78rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    h1 { font-size:1.75rem; margin:.4rem 0; }
+    .meta { color:#64748b; }
+    pre { background:#0f172a; color:#e2e8f0; padding:1rem; border-radius:.65rem; overflow:auto; font-size:.88rem; }
+    .card { background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:1rem; margin:1rem 0; }
+    a { color:#065f46; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">phpkingdom.com</div>
+    <p class="meta">Express API · DynamoDB Node.js template</p>
+    <h1>REST routes</h1>
+    <p class="meta">Express + DynamoDB CRUD routes</p>
+    <div class="card">
+      <h2>SDK Scaffold</h2>
+      <pre><code>import express from &quot;express&quot;;
+import { DynamoDBClient } from &quot;@aws-sdk/client-dynamodb&quot;;
+import { DynamoDBDocumentClient, GetCommand, PutCommand } from &quot;@aws-sdk/lib-dynamodb&quot;;
+
+const doc = DynamoDBDocumentClient.from(new DynamoDBClient({ region: &quot;us-east-1&quot; }));
+const TableName = process.env.TABLE_NAME || &quot;AppTable&quot;;
+const app = express();
+app.use(express.json());
+
+app.get(&quot;/users/:id&quot;, async (req, res) =&gt; {
+  const { Item } = await doc.send(new GetCommand({
+    TableName,
+    Key: { pk: `USER#${req.params.id}`, sk: &quot;PROFILE&quot; },
+  }));
+  if (!Item) return res.status(404).json({ error: &quot;not found&quot; });
+  res.json(Item);
+});
+
+app.post(&quot;/users&quot;, async (req, res) =&gt; {
+  const { id, email } = req.body;
+  await doc.send(new PutCommand({
+    TableName,
+    Item: { pk: `USER#${id}`, sk: &quot;PROFILE&quot;, email },
+    ConditionExpression: &quot;attribute_not_exists(pk)&quot;,
+  }));
+  res.status(201).json({ id, email });
+});
+
+export default app;</code></pre>
+    </div>
+    <div class="card">
+      <h2>Verify</h2>
+      <pre><code>npm install @aws-sdk/client-dynamodb @aws-sdk/lib-dynamodb
+# optional: DynamoDB Local
+export DDB_ENDPOINT=http://localhost:8000
+node index.mjs</code></pre>
+    </div>
+    <p><a href="../index.html">All templates</a></p>
+  </div>
+</body>
+</html>

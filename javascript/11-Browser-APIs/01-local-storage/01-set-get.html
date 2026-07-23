@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 11-Browser-APIs/01-local-storage
+  example: 01-set-get.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>setItem getItem | phpkingdom.com</title>
+</head>
+<body>
+  <h1>localStorage set/get</h1>
+  <p>Persist strings in the browser.</p>
+  <button id="save" type="button">Save</button>
+  <button id="load" type="button">Load</button>
+  <pre id="out"></pre>
+  <script>
+document.getElementById("save").onclick = function () {
+  localStorage.setItem("site", "phpkingdom.com");
+  document.getElementById("out").textContent = "saved";
+};
+document.getElementById("load").onclick = function () {
+  document.getElementById("out").textContent = localStorage.getItem("site");
+};
+  </script>
+</body>
+</html>

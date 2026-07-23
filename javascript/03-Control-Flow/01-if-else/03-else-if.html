@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 03-Control-Flow/01-if-else
+  example: 03-else-if.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>else if | phpkingdom.com</title>
+</head>
+<body>
+  <h1>else if Ladder</h1>
+  <p>Handle multiple conditions.</p>
+  <pre id="out"></pre>
+  <script>
+const score = 82;
+let grade;
+if (score >= 90) grade = "A";
+else if (score >= 80) grade = "B";
+else grade = "C";
+document.getElementById("out").textContent = grade;
+  </script>
+</body>
+</html>

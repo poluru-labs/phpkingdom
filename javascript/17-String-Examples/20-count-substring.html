@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 17-String-Examples
+  example: 20-count-substring.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>20 — Count Substring Occurrences | phpkingdom.com</title>
+</head>
+<body>
+  <h1>20 — Count Substring Occurrences</h1>
+  <h2>Problem</h2>
+  <p>Count non-overlapping occurrences of a word.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function countSubstring(text, sub) {
+  if (!sub) return 0;
+  let count = 0, i = 0;
+  while ((i = text.indexOf(sub, i)) !== -1) {
+    count++;
+    i += sub.length;
+  }
+  return count;
+}
+document.getElementById("out").textContent = String(countSubstring("ababababa", "aba"));
+  </script>
+</body>
+</html>

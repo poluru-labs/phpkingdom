@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 28-Tricky-Examples
+  example: 45-plus-plus-string.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>45 — ++ on Numeric Strings | phpkingdom.com</title>
+</head>
+<body>
+  <h1>45 — ++ on Numeric Strings</h1>
+  <h2>Problem / Gotcha</h2>
+  <p>Unary ++ coerces strings to numbers.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+let n = "5";
+n++;
+document.getElementById("out").textContent =
+  "n => " + n + " (type " + typeof n + ")";
+  </script>
+</body>
+</html>

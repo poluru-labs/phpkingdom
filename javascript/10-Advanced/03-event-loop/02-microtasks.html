@@ -1,0 +1,29 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 10-Advanced/03-event-loop
+  example: 02-microtasks.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Microtasks | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Promises as Microtasks</h1>
+  <p>Promise callbacks run before setTimeout.</p>
+  <pre id="out"></pre>
+  <script>
+let log = "";
+setTimeout(function () { log += "timeout "; document.getElementById("out").textContent = log; }, 0);
+Promise.resolve().then(function () { log += "promise "; document.getElementById("out").textContent = log; });
+log += "sync ";
+document.getElementById("out").textContent = log;
+  </script>
+</body>
+</html>

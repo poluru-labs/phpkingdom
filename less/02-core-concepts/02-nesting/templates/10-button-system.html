@@ -1,0 +1,121 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: LESS CSS Tutorials
+section title: Core Concepts
+topic title: LESS Nesting
+content type: Template
+item number: 10
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>LESS Nesting Template 10 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #e0f2fe;
+      color: #075985;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Template 10</span>
+    <h1>LESS Nesting</h1>
+    <p><strong>Section:</strong> Core Concepts</p>
+    <p><strong>Focus:</strong> Button System</p>
+    <p><strong>Scenario:</strong> mobile web app</p>
+    <p>Use this scaffold as a starting point and replace tokens, selectors, and mixins for your own project.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>LESS Snippet</h2>
+        <pre><code>// LESS Nesting — Template 10
+// Focus: button system | Scenario: mobile web app
+
+.nav {
+  display: flex;
+  gap: 1rem;
+
+  a {
+    color: #0d6efd;
+    text-decoration: none;
+
+    &amp;:hover {
+      text-decoration: underline;
+    }
+
+    &amp;.is-active {
+      font-weight: 700;
+    }
+  }
+
+  .dropdown {
+    position: relative;
+    &gt; menu { display: none; }
+  }
+}</code></pre>
+      </section>
+      <section>
+        <h2>HTML Markup</h2>
+        <pre><code>&lt;section class=&quot;panel-nesting&quot;&gt;
+  &lt;h2&gt;LESS Nesting&lt;/h2&gt;
+  &lt;p&gt;Button System for a mobile web app.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This template shows one way to apply <strong>LESS Nesting</strong> in a mobile web app context.</p>
+      <p>Adapt selectors, token names, and mixins to match your project naming rules.</p>
+    </section>
+  </main>
+</body>
+</html>

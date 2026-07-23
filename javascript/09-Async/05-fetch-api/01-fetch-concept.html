@@ -1,0 +1,26 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 09-Async/05-fetch-api
+  example: 01-fetch-concept.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Fetch Concept | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Fetch API Concept</h1>
+  <p>fetch returns a Promise for HTTP requests.</p>
+  <pre>fetch('https://api.example.com/data')
+  .then(r => r.json())
+  .then(data => console.log(data))
+  .catch(err => console.error(err));</pre>
+  <p>Live network demos may fail offline; pattern above is the standard shape.</p>
+</body>
+</html>

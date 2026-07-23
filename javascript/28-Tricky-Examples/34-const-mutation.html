@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 28-Tricky-Examples
+  example: 34-const-mutation.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>34 — const Does Not Mean Immutable | phpkingdom.com</title>
+</head>
+<body>
+  <h1>34 — const Does Not Mean Immutable</h1>
+  <h2>Problem / Gotcha</h2>
+  <p>const prevents rebinding, not mutation.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const arr = [1, 2];
+arr.push(3);
+const obj = { a: 1 };
+obj.a = 9;
+document.getElementById("out").textContent =
+  "arr=" + arr.join(",") + " obj.a=" + obj.a;
+  </script>
+</body>
+</html>

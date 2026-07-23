@@ -1,0 +1,44 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 23-Promises-Examples
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>23-Promises-Examples | phpkingdom.com</title>
+  <style>
+    body { font-family: Georgia, "Times New Roman", serif; max-width: 760px; margin: 2rem auto; padding: 0 1.25rem; line-height: 1.6; color: #1a1a1a; }
+    h1 { font-size: 1.75rem; margin-bottom: 0.35rem; }
+    .meta { color: #555; font-size: 0.95rem; margin-bottom: 1.25rem; }
+    .note { background: #f0f7fb; padding: 0.75rem 1rem; border-left: 3px solid #0f766e; margin: 1rem 0; }
+    .demo { margin: 1rem 0; padding: 1rem; border: 1px dashed #94a3b8; }
+    pre, code { font-family: ui-monospace, Menlo, monospace; }
+    pre { background: #111827; color: #e5e7eb; padding: 0.85rem 1rem; overflow: auto; }
+    button, input, select, textarea { font: inherit; padding: 0.4rem 0.55rem; }
+    button { cursor: pointer; background: #0f766e; color: #fff; border: 0; padding: 0.55rem 1rem; }
+    #out { white-space: pre-wrap; background: #f4f4f4; padding: 0.75rem; min-height: 2rem; }
+    a { color: #0f766e; }
+    footer { border-top: 1px solid #ccc; padding-top: 1rem; margin-top: 2rem; color: #555; font-size: 0.95rem; }
+
+    .brand { color:#0f766e; font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    ol { line-height: 1.75; }
+  </style>
+</head>
+<body>
+  <div class="brand">phpkingdom.com</div>
+  <h1>23-Promises-Examples</h1>
+  <p class="meta">50 examples. Minimal HTML — focus on the script.</p>
+  <p><a href="../index.html">← JavaScript Tutorials</a></p>
+  <ol><li><a href="01-create-resolve.html">01 — Create a Resolved Promise</a></li><li><a href="02-create-reject.html">02 — Create a Rejected Promise</a></li><li><a href="03-new-promise.html">03 — new Promise Executor</a></li><li><a href="04-executor-sync.html">04 — Executor Runs Synchronously</a></li><li><a href="05-then-chain.html">05 — then Chaining</a></li><li><a href="06-then-return-promise.html">06 — then Returning a Promise</a></li><li><a href="07-catch-recovery.html">07 — Recover in catch</a></li><li><a href="08-finally.html">08 — finally Always Runs</a></li><li><a href="09-finally-reject.html">09 — finally with Rejection</a></li><li><a href="10-error-in-then.html">10 — Throw Inside then</a></li><li><a href="11-missing-catch.html">11 — Unhandled Rejection Shape</a></li><li><a href="12-promise-all.html">12 — Promise.all Success</a></li><li><a href="13-promise-all-fail-fast.html">13 — Promise.all Fail-Fast</a></li><li><a href="14-promise-allsettled.html">14 — Promise.allSettled</a></li><li><a href="15-promise-race.html">15 — Promise.race</a></li><li><a href="16-promise-any.html">16 — Promise.any</a></li><li><a href="17-promise-any-all-reject.html">17 — Promise.any AggregateError</a></li><li><a href="18-delay-helper.html">18 — delay(ms) Helper</a></li><li><a href="19-timeout-race.html">19 — Timeout with Promise.race</a></li><li><a href="20-retry-promise.html">20 — Retry a Failing Promise</a></li><li><a href="21-sequential-then.html">21 — Run Promises Sequentially (then)</a></li><li><a href="22-sequential-reduce.html">22 — Sequential with reduce</a></li><li><a href="23-parallel-map.html">23 — Parallel map with Promise.all</a></li><li><a href="24-concurrency-limit.html">24 — Limited Concurrency</a></li><li><a href="25-promisify-callback.html">25 — Promisify a Callback API</a></li><li><a href="26-callback-to-promise-error.html">26 — Promisify Rejection Path</a></li><li><a href="27-async-await-basic.html">27 — async/await Basics</a></li><li><a href="28-async-await-try-catch.html">28 — async/await Error Handling</a></li><li><a href="29-await-in-loop.html">29 — Await in a for Loop</a></li><li><a href="30-await-mistake-foreach.html">30 — Avoid await in forEach</a></li><li><a href="31-promise-resolve-thenable.html">31 — Promise.resolve on Thenables</a></li><li><a href="32-nested-promise-resolve.html">32 — Promise.resolve Does Not Double-Wrap Values</a></li><li><a href="33-microtask-queue.html">33 — then Queues a Microtask</a></li><li><a href="34-then-vs-settimeout.html">34 — Microtask vs Macrotask</a></li><li><a href="35-catch-vs-then-onrejected.html">35 — catch vs then(null, onRejected)</a></li><li><a href="36-rethrow.html">36 — Re-throw in catch</a></li><li><a href="37-finally-cannot-replace-value.html">37 — finally Cannot Replace Fulfillment Value</a></li><li><a href="38-finally-throw.html">38 — Throwing in finally Rejects</a></li><li><a href="39-cancel-flag.html">39 — Cancellation Flag Pattern</a></li><li><a href="40-abort-controller-promise.html">40 — AbortController + Promise Wrapper</a></li><li><a href="41-memoize-promise.html">41 — Memoize an Async Function</a></li><li><a href="42-waterfall.html">42 — Waterfall Dependent Requests</a></li><li><a href="43-all-object-values.html">43 — Promise.all on Object Values</a></li><li><a href="44-settle-timeouts.html">44 — Mix resolve and delayed reject</a></li><li><a href="45-promise-queue.html">45 — Simple Promise Queue</a></li><li><a href="46-deferred-pattern.html">46 — Deferred Pattern</a></li><li><a href="47-convert-event-once.html">47 — Promise from One-Time Event</a></li><li><a href="48-error-types.html">48 — Custom Error Types in Promises</a></li><li><a href="49-promise-all-labeled.html">49 — Labeled Promise.all Results</a></li><li><a href="50-promises-checklist.html">50 — Promises Checklist</a></li></ol>
+  <footer>
+    <p>&copy; 2026 phpkingdom.com · Subrahmanyam Poluru · <a href="https://polurus.com">polurus.com</a></p>
+  </footer>
+</body>
+</html>

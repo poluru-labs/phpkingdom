@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  topic: 08-Misc-Examples
+  example: 63-input-url-tel.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URL and Tel Inputs | phpkingdom</title>
+</head>
+<body>
+  <h1>URL and Telephone Inputs</h1>
+
+  <form>
+    <p>
+      <label for="site">Website</label><br>
+      <input type="url" id="site" name="site" placeholder="https://example.com" required>
+    </p>
+    <p>
+      <label for="phone">Phone</label><br>
+      <input type="tel" id="phone" name="phone" placeholder="+1 555 0100" pattern="[+0-9\s()-]+">
+    </p>
+    <button type="submit">Save</button>
+  </form>
+
+</body>
+</html>

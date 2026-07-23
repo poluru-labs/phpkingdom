@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 26-Date-Time-Examples
+  example: 17-diff-days.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>17 — Difference in Days | phpkingdom.com</title>
+</head>
+<body>
+  <h1>17 — Difference in Days</h1>
+  <h2>Problem</h2>
+  <p>Compute whole-day difference between two dates (UTC midnight trick).</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+
+function diffDays(a, b) {
+  const utcA = Date.UTC(a.getFullYear(), a.getMonth(), a.getDate());
+  const utcB = Date.UTC(b.getFullYear(), b.getMonth(), b.getDate());
+  return Math.round((utcB - utcA) / (1000 * 60 * 60 * 24));
+}
+const a = new Date(2024, 0, 15);
+const b = new Date(2024, 1, 5);
+document.getElementById("out").textContent = "Days from Jan 15 to Feb 5, 2024: " + diffDays(a, b);
+
+  </script>
+</body>
+</html>

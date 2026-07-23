@@ -1,0 +1,35 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 23-Promises-Examples
+  example: 06-then-return-promise.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>06 — then Returning a Promise | phpkingdom.com</title>
+</head>
+<body>
+  <h1>06 — then Returning a Promise</h1>
+  <h2>Problem</h2>
+  <p>Flatten nested async work by returning a Promise from then.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+Promise.resolve("user")
+  .then((name) => {
+    return new Promise((resolve) => {
+      setTimeout(() => resolve(name + "-loaded"), 200);
+    });
+  })
+  .then((value) => {
+    document.getElementById("out").textContent = value;
+  });
+  </script>
+</body>
+</html>

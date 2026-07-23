@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 23-Promises-Examples
+  example: 32-nested-promise-resolve.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>32 — Promise.resolve Does Not Double-Wrap Values | phpkingdom.com</title>
+</head>
+<body>
+  <h1>32 — Promise.resolve Does Not Double-Wrap Values</h1>
+  <h2>Problem</h2>
+  <p>Returning/resolving a promise unwraps it.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const inner = Promise.resolve("inner");
+Promise.resolve(inner).then((v) => {
+  document.getElementById("out").textContent =
+    "value=" + v + " (not a nested Promise object)";
+});
+  </script>
+</body>
+</html>

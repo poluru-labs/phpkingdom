@@ -1,0 +1,63 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: Web Components UI library index
+  example: Navigation to all component demos
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Components UI — phpkingdom.com</title>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+  <style>
+  :root { --pk-accent: #0f766e; --pk-bg: #f8fafc; --pk-text: #0f172a; }
+  * { box-sizing: border-box; }
+  body { margin: 0; font-family: "Source Serif 4", Georgia, serif; background: var(--pk-bg); color: var(--pk-text); line-height: 1.5; }
+  header.brand { background: linear-gradient(135deg, #0f766e, #115e59); color: #fff; padding: 1.25rem 1.5rem; }
+  header.brand a { color: #ccfbf1; }
+  header.brand h1 { margin: 0; font-size: 1.35rem; font-weight: 600; }
+  header.brand p { margin: 0.35rem 0 0; opacity: 0.9; font-size: 0.95rem; }
+  main { max-width: 960px; margin: 0 auto; padding: 1.5rem; }
+  .panel { background: #fff; border: 1px solid #e2e8f0; border-radius: 10px; padding: 1.25rem; margin-bottom: 1rem; box-shadow: 0 1px 2px rgba(15,23,42,.06); }
+  .row { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: center; }
+  #out { font-family: ui-monospace, monospace; font-size: 0.85rem; background: #0f172a; color: #e2e8f0; padding: 0.75rem 1rem; border-radius: 8px; min-height: 2.5rem; white-space: pre-wrap; }
+  nav.back { margin-bottom: 1rem; }
+  nav.back a { color: var(--pk-accent); text-decoration: none; font-weight: 600; }
+  h2 { margin-top: 0; color: #115e59; }
+ ul { line-height: 1.9; } code { background: #ecfdf5; padding: .1rem .35rem; border-radius: 4px; }</style>
+</head>
+<body>
+<header class="brand"><h1>phpkingdom.com — Web Components UI</h1><p>25 vanilla custom elements · teal theme · Shadow DOM</p></header>
+  <main><section class="panel"><h2>Components</h2><ul>
+      <li><strong>Button</strong> — <a href="01-Button/01-basic.html">01-Button</a> (<code>pk-button</code>) · <a href="01-Button/02-variants.html">variants</a> · <a href="01-Button/03-events.html">events</a></li>
+      <li><strong>Input</strong> — <a href="02-Input/01-basic.html">02-Input</a> (<code>pk-input</code>) · <a href="02-Input/02-variants.html">variants</a> · <a href="02-Input/03-events.html">events</a></li>
+      <li><strong>Textarea</strong> — <a href="03-Textarea/01-basic.html">03-Textarea</a> (<code>pk-textarea</code>) · <a href="03-Textarea/02-variants.html">variants</a> · <a href="03-Textarea/03-events.html">events</a></li>
+      <li><strong>Select</strong> — <a href="04-Select/01-basic.html">04-Select</a> (<code>pk-select</code>) · <a href="04-Select/02-variants.html">variants</a> · <a href="04-Select/03-events.html">events</a></li>
+      <li><strong>Combobox</strong> — <a href="05-Combobox/01-basic.html">05-Combobox</a> (<code>pk-combobox</code>) · <a href="05-Combobox/02-variants.html">variants</a> · <a href="05-Combobox/03-events.html">events</a></li>
+      <li><strong>Checkbox</strong> — <a href="06-Checkbox/01-basic.html">06-Checkbox</a> (<code>pk-checkbox</code>) · <a href="06-Checkbox/02-variants.html">variants</a> · <a href="06-Checkbox/03-events.html">events</a></li>
+      <li><strong>Radio group</strong> — <a href="07-Radio-Group/01-basic.html">07-Radio-Group</a> (<code>pk-radio-group</code>) · <a href="07-Radio-Group/02-variants.html">variants</a> · <a href="07-Radio-Group/03-events.html">events</a></li>
+      <li><strong>Switch</strong> — <a href="08-Switch/01-basic.html">08-Switch</a> (<code>pk-switch</code>) · <a href="08-Switch/02-variants.html">variants</a> · <a href="08-Switch/03-events.html">events</a></li>
+      <li><strong>Slider</strong> — <a href="09-Slider/01-basic.html">09-Slider</a> (<code>pk-slider</code>) · <a href="09-Slider/02-variants.html">variants</a> · <a href="09-Slider/03-events.html">events</a></li>
+      <li><strong>Date picker</strong> — <a href="10-Date-Picker/01-basic.html">10-Date-Picker</a> (<code>pk-date-picker</code>) · <a href="10-Date-Picker/02-variants.html">variants</a> · <a href="10-Date-Picker/03-events.html">events</a></li>
+      <li><strong>Time picker</strong> — <a href="11-Time-Picker/01-basic.html">11-Time-Picker</a> (<code>pk-time-picker</code>) · <a href="11-Time-Picker/02-variants.html">variants</a> · <a href="11-Time-Picker/03-events.html">events</a></li>
+      <li><strong>Date range</strong> — <a href="12-Date-Range-Picker/01-basic.html">12-Date-Range-Picker</a> (<code>pk-date-range-picker</code>) · <a href="12-Date-Range-Picker/02-variants.html">variants</a> · <a href="12-Date-Range-Picker/03-events.html">events</a></li>
+      <li><strong>Autocomplete</strong> — <a href="13-Auto-Complete/01-basic.html">13-Auto-Complete</a> (<code>pk-autocomplete</code>) · <a href="13-Auto-Complete/02-variants.html">variants</a> · <a href="13-Auto-Complete/03-events.html">events</a></li>
+      <li><strong>Password</strong> — <a href="14-Password-Input/01-basic.html">14-Password-Input</a> (<code>pk-password</code>) · <a href="14-Password-Input/02-variants.html">variants</a> · <a href="14-Password-Input/03-events.html">events</a></li>
+      <li><strong>OTP</strong> — <a href="15-OTP-Input/01-basic.html">15-OTP-Input</a> (<code>pk-otp</code>) · <a href="15-OTP-Input/02-variants.html">variants</a> · <a href="15-OTP-Input/03-events.html">events</a></li>
+      <li><strong>Modal</strong> — <a href="16-Modal/01-basic.html">16-Modal</a> (<code>pk-modal</code>) · <a href="16-Modal/02-variants.html">variants</a> · <a href="16-Modal/03-events.html">events</a></li>
+      <li><strong>Drawer</strong> — <a href="17-Drawer/01-basic.html">17-Drawer</a> (<code>pk-drawer</code>) · <a href="17-Drawer/02-variants.html">variants</a> · <a href="17-Drawer/03-events.html">events</a></li>
+      <li><strong>Tooltip</strong> — <a href="18-Tooltip/01-basic.html">18-Tooltip</a> (<code>pk-tooltip</code>) · <a href="18-Tooltip/02-variants.html">variants</a> · <a href="18-Tooltip/03-events.html">events</a></li>
+      <li><strong>Popover</strong> — <a href="19-Popover/01-basic.html">19-Popover</a> (<code>pk-popover</code>) · <a href="19-Popover/02-variants.html">variants</a> · <a href="19-Popover/03-events.html">events</a></li>
+      <li><strong>Dropdown menu</strong> — <a href="20-Dropdown-Menu/01-basic.html">20-Dropdown-Menu</a> (<code>pk-dropdown-menu</code>) · <a href="20-Dropdown-Menu/02-variants.html">variants</a> · <a href="20-Dropdown-Menu/03-events.html">events</a></li>
+      <li><strong>Context menu</strong> — <a href="21-Context-Menu/01-basic.html">21-Context-Menu</a> (<code>pk-context-menu</code>) · <a href="21-Context-Menu/02-variants.html">variants</a> · <a href="21-Context-Menu/03-events.html">events</a></li>
+      <li><strong>Tabs</strong> — <a href="22-Tabs/01-basic.html">22-Tabs</a> (<code>pk-tabs</code>) · <a href="22-Tabs/02-variants.html">variants</a> · <a href="22-Tabs/03-events.html">events</a></li>
+      <li><strong>Accordion</strong> — <a href="23-Accordion/01-basic.html">23-Accordion</a> (<code>pk-accordion</code>) · <a href="23-Accordion/02-variants.html">variants</a> · <a href="23-Accordion/03-events.html">events</a></li>
+      <li><strong>Breadcrumb</strong> — <a href="24-Breadcrumb/01-basic.html">24-Breadcrumb</a> (<code>pk-breadcrumb</code>) · <a href="24-Breadcrumb/02-variants.html">variants</a> · <a href="24-Breadcrumb/03-events.html">events</a></li>
+      <li><strong>Pagination</strong> — <a href="25-Pagination/01-basic.html">25-Pagination</a> (<code>pk-pagination</code>) · <a href="25-Pagination/02-variants.html">variants</a> · <a href="25-Pagination/03-events.html">events</a></li>
+  </ul></section></main>
+</body>
+</html>

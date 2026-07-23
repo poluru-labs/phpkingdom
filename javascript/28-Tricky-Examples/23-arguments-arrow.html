@@ -1,0 +1,34 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 28-Tricky-Examples
+  example: 23-arguments-arrow.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>23 — Arrow Functions Have No arguments | phpkingdom.com</title>
+</head>
+<body>
+  <h1>23 — Arrow Functions Have No arguments</h1>
+  <h2>Problem / Gotcha</h2>
+  <p>arguments is not bound in arrow functions.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function regular() { return arguments.length; }
+const arrow = () => {
+  try { return arguments.length; }
+  catch (e) { return e.message; }
+};
+document.getElementById("out").textContent =
+  "regular(1,2) => " + regular(1, 2) + "\n" +
+  "arrow => " + arrow(1, 2);
+  </script>
+</body>
+</html>

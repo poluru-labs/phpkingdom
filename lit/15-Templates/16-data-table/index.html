@@ -1,0 +1,77 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Templates/16-data-table
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <meta name="description" content="Simple table element">
+  <title>Data Table | repeat rows | phpkingdom.com</title>
+  <style>
+    body { margin:0; font-family: Georgia, "Times New Roman", serif; background:#f5f7fb; color:#1f2937; line-height:1.55; }
+    .wrap { max-width:900px; margin:0 auto; padding:1.5rem; }
+    .brand { color:#0f766e; font-size:.78rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    h1 { font-size:1.75rem; margin:.4rem 0; }
+    .meta { color:#64748b; }
+    pre { background:#0f172a; color:#e2e8f0; padding:1rem; border-radius:.65rem; overflow:auto; font-size:.88rem; }
+    .card { background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:1rem; margin:1rem 0; }
+    a { color:#0f766e; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">phpkingdom.com</div>
+    <p class="meta">Data Table · Lit template</p>
+    <h1>repeat rows</h1>
+    <p class="meta">Simple table element</p>
+    <div class="card">
+      <h2>Starter Element</h2>
+      <pre><code>import { LitElement, html, css } from &quot;lit&quot;;
+import { repeat } from &quot;lit/directives/repeat.js&quot;;
+
+export class PkDataTable extends LitElement {
+  static properties = { rows: { type: Array } };
+  static styles = css`
+    table { width: 100%; border-collapse: collapse; }
+    th, td { border-bottom: 1px solid #e2e8f0; padding: 0.5rem; text-align: left; }
+  `;
+  constructor() {
+    super();
+    this.rows = [
+      { id: 1, name: &quot;Ada&quot;, role: &quot;Admin&quot; },
+      { id: 2, name: &quot;Grace&quot;, role: &quot;Editor&quot; },
+    ];
+  }
+  render() {
+    return html`
+      &lt;table&gt;
+        &lt;thead&gt;&lt;tr&gt;&lt;th&gt;Name&lt;/th&gt;&lt;th&gt;Role&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;
+        &lt;tbody&gt;
+          ${repeat(
+            this.rows,
+            (r) =&gt; r.id,
+            (r) =&gt; html`&lt;tr&gt;&lt;td&gt;${r.name}&lt;/td&gt;&lt;td&gt;${r.role}&lt;/td&gt;&lt;/tr&gt;`
+          )}
+        &lt;/tbody&gt;
+      &lt;/table&gt;
+    `;
+  }
+}
+customElements.define(&quot;pk-data-table&quot;, PkDataTable);</code></pre>
+    </div>
+    <div class="card">
+      <h2>Usage</h2>
+      <pre><code>npm install lit
+# import the module, then use the custom element in HTML</code></pre>
+    </div>
+    <p><a href="../index.html">All templates</a></p>
+  </div>
+</body>
+</html>

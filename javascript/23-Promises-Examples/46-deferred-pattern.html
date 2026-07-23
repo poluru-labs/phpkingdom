@@ -1,0 +1,39 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 23-Promises-Examples
+  example: 46-deferred-pattern.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>46 — Deferred Pattern | phpkingdom.com</title>
+</head>
+<body>
+  <h1>46 — Deferred Pattern</h1>
+  <h2>Problem</h2>
+  <p>Expose resolve/reject outside the executor (use sparingly).</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function deferred() {
+  let resolve, reject;
+  const promise = new Promise((res, rej) => {
+    resolve = res;
+    reject = rej;
+  });
+  return { promise, resolve, reject };
+}
+const d = deferred();
+d.promise.then((v) => {
+  document.getElementById("out").textContent = "deferred got " + v;
+});
+setTimeout(() => d.resolve("later"), 150);
+  </script>
+</body>
+</html>

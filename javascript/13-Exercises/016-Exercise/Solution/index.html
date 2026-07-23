@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 13-Exercises/016-Exercise
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solution 016 — FizzBuzz to N (16) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Solution 016 — FizzBuzz to N (16)</h1>
+  <pre id="out"></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+const n = 16;
+let t = [];
+for (let i = 1; i <= n; i++) {
+  if (i % 15 === 0) t.push("FizzBuzz");
+  else if (i % 3 === 0) t.push("Fizz");
+  else if (i % 5 === 0) t.push("Buzz");
+  else t.push(i);
+}
+document.getElementById("out").textContent = t.join(" ");
+  </script>
+</body>
+</html>

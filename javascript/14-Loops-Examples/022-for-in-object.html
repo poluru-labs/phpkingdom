@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 022-for-in-object.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>022 — for…in over Object | phpkingdom.com</title>
+</head>
+<body>
+  <h1>022 — for…in over Object</h1>
+  <h2>Problem</h2>
+  <p>Iterate object keys with for…in.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const user = { name: "Ada", role: "eng", city: "London" };
+const lines = [];
+for (const key in user) {
+  if (Object.hasOwn(user, key)) lines.push(key + "=" + user[key]);
+}
+document.getElementById("out").textContent = lines.join("\n");
+  </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Functions-Examples
+  example: 05-rest-parameters.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>05 — Rest Parameters | phpkingdom.com</title>
+</head>
+<body>
+  <h1>05 — Rest Parameters</h1>
+  <h2>Problem</h2>
+  <p>Collect remaining arguments into an array with rest syntax.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function sumAll(first, ...rest) {
+  return first + rest.reduce((a, b) => a + b, 0);
+}
+document.getElementById("out").textContent = "sumAll(1,2,3,4) = " + sumAll(1, 2, 3, 4);
+  </script>
+</body>
+</html>

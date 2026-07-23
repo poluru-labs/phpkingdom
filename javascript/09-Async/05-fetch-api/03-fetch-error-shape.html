@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 09-Async/05-fetch-api
+  example: 03-fetch-error-shape.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Fetch Error Shape | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Checking res.ok</h1>
+  <p>HTTP errors need manual checks.</p>
+  <pre id="out"></pre>
+  <script>
+function fakeFetch() {
+  return Promise.resolve({ ok: false, status: 404, json: async () => ({}) });
+}
+async function run() {
+  const res = await fakeFetch();
+  if (!res.ok) {
+    document.getElementById("out").textContent = "HTTP " + res.status;
+    return;
+  }
+  document.getElementById("out").textContent = "ok";
+}
+run();
+  </script>
+</body>
+</html>

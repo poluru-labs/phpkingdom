@@ -1,0 +1,39 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 30-Data-Structures-Examples
+  example: 04-queue-enqueue-dequeue.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>04 — Queue — Enqueue & Dequeue | phpkingdom.com</title>
+</head>
+<body>
+  <h1>04 — Queue — Enqueue & Dequeue</h1>
+  <h2>Problem</h2>
+  <p>Array-based queue using push (enqueue) and shift (dequeue).</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+class Queue {
+  constructor() { this.items = []; }
+  enqueue(x) { this.items.push(x); }
+  dequeue() { return this.items.shift(); }
+  front() { return this.items[0]; }
+  size() { return this.items.length; }
+}
+const q = new Queue();
+["A", "B", "C"].forEach(x => q.enqueue(x));
+const lines = ["enqueue A,B,C", "front = " + q.front(), "dequeue = " + q.dequeue()];
+lines.push("dequeue = " + q.dequeue());
+lines.push("front = " + q.front());
+document.getElementById("out").textContent = lines.join("\n");
+  </script>
+</body>
+</html>

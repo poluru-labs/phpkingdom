@@ -1,0 +1,35 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 18-Object-Examples
+  example: 34-object-diff.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>34 — Object Diff (Shallow) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>34 — Object Diff (Shallow)</h1>
+  <h2>Problem</h2>
+  <p>Find keys whose values differ between two objects.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function diff(a, b) {
+  const keys = new Set([...Object.keys(a), ...Object.keys(b)]);
+  const changed = {};
+  for (const k of keys) {
+    if (a[k] !== b[k]) changed[k] = { from: a[k], to: b[k] };
+  }
+  return changed;
+}
+document.getElementById("out").textContent = JSON.stringify(diff({ a: 1, b: 2 }, { a: 1, b: 9, c: 3 }), null, 2);
+  </script>
+</body>
+</html>

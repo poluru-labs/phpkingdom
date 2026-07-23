@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 27-Regex-Examples
+  example: 25-alternation.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>25 — Alternation | | phpkingdom.com</title>
+</head>
+<body>
+  <h1>25 — Alternation |</h1>
+  <h2>Problem</h2>
+  <p>Match one of several alternatives with the | operator.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const words = ["cat", "dog", "bird", "fish"];
+const re = /cat|dog|fish/;
+const hits = words.filter(w => re.test(w));
+document.getElementById("out").textContent =
+  "pattern: /cat|dog|fish/\n" +
+  "matches: " + JSON.stringify(hits);
+  </script>
+</body>
+</html>

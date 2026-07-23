@@ -1,0 +1,44 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 30-Data-Structures-Examples
+  example: 20-build-sample-tree.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>20 — Build Sample Tree | phpkingdom.com</title>
+</head>
+<body>
+  <h1>20 — Build Sample Tree</h1>
+  <h2>Problem</h2>
+  <p>Build a binary tree from a level-order array (null = missing child).</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+class TreeNode { constructor(val, left = null, right = null) { this.val = val; this.left = left; this.right = right; } }
+function buildLevel(arr) {
+  if (!arr.length || arr[0] == null) return null;
+  const root = new TreeNode(arr[0]);
+  const q = [root];
+  let i = 1;
+  while (q.length && i < arr.length) {
+    const node = q.shift();
+    if (i < arr.length && arr[i] != null) { node.left = new TreeNode(arr[i]); q.push(node.left); }
+    i++;
+    if (i < arr.length && arr[i] != null) { node.right = new TreeNode(arr[i]); q.push(node.right); }
+    i++;
+  }
+  return root;
+}
+const root = buildLevel([1, 2, 3, null, 4, 5]);
+function preorder(n) { return n ? [n.val, ...preorder(n.left), ...preorder(n.right)] : []; }
+document.getElementById("out").textContent = "preorder: " + preorder(root).join(", ");
+  </script>
+</body>
+</html>

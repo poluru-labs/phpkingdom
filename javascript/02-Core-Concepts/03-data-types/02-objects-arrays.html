@@ -1,0 +1,28 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 02-Core-Concepts/03-data-types
+  example: 02-objects-arrays.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Objects and Arrays | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Object and Array Types</h1>
+  <p>Objects and arrays are reference types.</p>
+  <pre id="out"></pre>
+  <script>
+const person = { name: "Ada" };
+const nums = [1, 2, 3];
+document.getElementById("out").textContent =
+  typeof person + " / " + Array.isArray(nums);
+  </script>
+</body>
+</html>

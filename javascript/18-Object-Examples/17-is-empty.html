@@ -1,0 +1,28 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 18-Object-Examples
+  example: 17-is-empty.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>17 — Check Empty Object | phpkingdom.com</title>
+</head>
+<body>
+  <h1>17 — Check Empty Object</h1>
+  <h2>Problem</h2>
+  <p>Return true if object has no own enumerable keys.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function isEmpty(obj) { return Object.keys(obj).length === 0; }
+document.getElementById("out").textContent = isEmpty({}) + " / " + isEmpty({ a: 1 });
+  </script>
+</body>
+</html>

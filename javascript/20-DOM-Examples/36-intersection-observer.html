@@ -1,0 +1,37 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 20-DOM-Examples
+  example: 36-intersection-observer.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>36 — IntersectionObserver | phpkingdom.com</title>
+</head>
+<body>
+  <h1>36 — IntersectionObserver</h1>
+  <h2>Problem</h2>
+  <p>Detect when an element enters the viewport.</p>
+  <h2>Demo</h2>
+  <p>Scroll down…</p>
+  <div style="height:500px"></div>
+  <div id="target" style="padding:16px;border:2px solid green">Watch me</div>
+  <div style="height:300px"></div>
+  <pre id="out" style="position:fixed;top:8px;right:8px;background:#fff;border:1px solid #333;padding:8px">waiting…</pre>
+  <script>
+const out = document.getElementById("out");
+const io = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    out.textContent = entry.isIntersecting ? "visible" : "hidden";
+  });
+}, { threshold: 0.25 });
+io.observe(document.getElementById("target"));
+  </script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Module Federation Tutorials
+section title: Routing
+topic title: Federated Routing
+content type: Exercise
+item number: 19
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Federated Routing Exercise 19 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ffedd5;
+      color: #9a3412;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Exercise 19</span>
+    <h1>Federated Routing</h1>
+    <p><strong>Section:</strong> Routing</p>
+    <p><strong>Focus:</strong> Route Outlet</p>
+    <p><strong>Scenario:</strong> mobile web shell</p>
+    <p>Run a host and remote locally, then verify import('remote/Module') and shared deps.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Module Federation</h2>
+        <pre><code>// Federated Routing — Exercise 19
+// Focus: route outlet | Scenario: mobile web shell
+
+// Federated routing: one history, many remotes
+
+import { BrowserRouter, Routes, Route } from &quot;react-router-dom&quot;;
+
+const Products = React.lazy(() =&gt; import(&quot;products/App&quot;));
+const Account = React.lazy(() =&gt; import(&quot;account/App&quot;));
+
+export default function App() {
+  return (
+    &lt;BrowserRouter&gt;
+      &lt;Routes&gt;
+        &lt;Route path=&quot;/products/*&quot; element={&lt;Products /&gt;} /&gt;
+        &lt;Route path=&quot;/account/*&quot; element={&lt;Account /&gt;} /&gt;
+      &lt;/Routes&gt;
+    &lt;/BrowserRouter&gt;
+  );
+}
+
+// Share react-router-dom as singleton across host + remotes</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Federated Routing
+- Practice: route outlet
+- Scenario: mobile web shell
+- Share framework runtimes as singletons with requiredVersion
+- Load remotes lazily; wrap with error boundaries / fallbacks
+- Deploy remotes independently; version remoteEntry URLs carefully
+- Align CORS and CSP for cross-origin remoteEntry.js
+
+Useful commands:
+  npm install -D webpack webpack-cli webpack-dev-server
+  # run host + remote on different ports
+  npx webpack serve --config webpack.host.js --port 3000
+  npx webpack serve --config webpack.remote.js --port 3002</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This exercise shows one way to apply <strong>Federated Routing</strong> in a mobile web shell context.</p>
+      <p>Keep remotes independently deployable, share carefully, and always plan for remote downtime.</p>
+    </section>
+  </main>
+</body>
+</html>

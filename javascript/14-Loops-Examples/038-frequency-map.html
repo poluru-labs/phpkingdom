@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 038-frequency-map.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>038 — Character Frequency Map | phpkingdom.com</title>
+</head>
+<body>
+  <h1>038 — Character Frequency Map</h1>
+  <h2>Problem</h2>
+  <p>Build a frequency object with a for…of loop.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const s = "banana";
+const freq = {};
+for (const ch of s) freq[ch] = (freq[ch] || 0) + 1;
+document.getElementById("out").textContent = JSON.stringify(freq, null, 2);
+  </script>
+</body>
+</html>

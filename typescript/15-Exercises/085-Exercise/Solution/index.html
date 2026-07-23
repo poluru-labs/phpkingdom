@@ -1,0 +1,26 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/085-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 085 — exact Result unwrap — Solution | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Exercise 085 — exact Result unwrap — Solution</h1>
+  <pre><code class="ts">type Result&lt;T&gt; = { ok: true; value: T } | { ok: false; error: string };
+function unwrap&lt;T&gt;(r: Result&lt;T&gt;): T {
+  if (r.ok) return r.value;
+  throw new Error(r.error);
+}</code></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+</body>
+</html>

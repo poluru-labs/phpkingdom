@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 16-Array-Examples
+  example: 04-reverse-array.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>04 — Reverse an Array | phpkingdom.com</title>
+</head>
+<body>
+  <h1>04 — Reverse an Array</h1>
+  <h2>Problem</h2>
+  <p>Reverse the order of elements without using reverse() (manual) and also show built-in.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const nums = [1, 2, 3, 4, 5];
+const manual = [];
+for (let i = nums.length - 1; i >= 0; i--) manual.push(nums[i]);
+document.getElementById("out").textContent =
+  "manual=[" + manual + "], built-in=[" + [...nums].reverse() + "]";
+  </script>
+</body>
+</html>

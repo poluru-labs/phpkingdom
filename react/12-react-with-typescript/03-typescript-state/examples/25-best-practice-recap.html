@@ -1,0 +1,122 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: React Tutorials
+section title: React with TypeScript
+topic title: TypeScript State
+content type: Example
+item number: 25
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>TypeScript State Example 25 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ffedd5;
+      color: #9a3412;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Example 25</span>
+    <h1>TypeScript State</h1>
+    <p><strong>Section:</strong> React with TypeScript</p>
+    <p><strong>Focus:</strong> Best Practice Recap</p>
+    <p><strong>Scenario:</strong> blog platform</p>
+    <p>Study the React component/hooks pattern and adapt it to your UI.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>React</h2>
+        <pre><code>// TypeScript State — Example 25
+// Focus: best practice recap | Scenario: blog platform
+
+import { useState } from &quot;react&quot;;
+
+type User = { id: string; name: string };
+
+export function UserPicker() {
+  const [user, setUser] = useState&lt;User | null&gt;(null);
+  return (
+    &lt;button onClick={() =&gt; setUser({ id: &quot;1&quot;, name: &quot;Ada&quot; })}&gt;
+      {user?.name ?? &quot;Select user&quot;}
+    &lt;/button&gt;
+  );
+}</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for TypeScript State
+- Practice: best practice recap
+- Scenario: blog platform
+- Prefer function components + Hooks over class components
+- Keep state local; lift only when siblings need to share
+- Keys must be stable and unique among siblings
+- Effects: declare dependencies; clean up subscriptions/timers
+- For shared UI state: Context / Zustand / Redux; for server state: React Query
+
+Useful commands:
+  npm create vite@latest my-app -- --template react
+  npm install
+  npm run dev
+  npm run build
+  npm run test</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This example focuses on <strong>TypeScript State</strong> in a blog platform context.</p>
+      <p>Prefer function components and Hooks, keep components focused, and choose the right state layer for UI vs server data.</p>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 03-Control-Flow/02-switch
+  example: 02-switch-fallthrough.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Fallthrough | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Intentional Fallthrough</h1>
+  <p>Group cases without break.</p>
+  <pre id="out"></pre>
+  <script>
+const fruit = "apple";
+let type;
+switch (fruit) {
+  case "apple":
+  case "pear":
+    type = "pome";
+    break;
+  default:
+    type = "other";
+}
+document.getElementById("out").textContent = type;
+  </script>
+</body>
+</html>

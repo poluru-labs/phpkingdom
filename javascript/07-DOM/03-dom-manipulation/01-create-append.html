@@ -1,0 +1,27 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 07-DOM/03-dom-manipulation
+  example: 01-create-append.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Create Append | phpkingdom.com</title>
+</head>
+<body>
+  <h1>createElement + append</h1>
+  <p>Build nodes in JavaScript.</p>
+  <ul id="list"></ul>
+  <script>
+const li = document.createElement("li");
+li.textContent = "Created item";
+document.getElementById("list").append(li);
+  </script>
+</body>
+</html>

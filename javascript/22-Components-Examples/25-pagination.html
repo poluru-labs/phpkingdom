@@ -1,0 +1,168 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 22-Components-Examples
+  example: 25-pagination.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>25 — Pagination | phpkingdom.com</title>
+  <link rel="stylesheet" href="css/base.css">
+  <style>
+    .c-pagination {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .c-pagination__btn {
+      min-width: 2.25rem;
+      height: 2.25rem;
+      padding: 0 0.5rem;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      background: var(--surface);
+      font: inherit;
+      font-weight: 500;
+      cursor: pointer;
+      transition: border-color 0.15s var(--ease), background 0.15s var(--ease);
+    }
+    .c-pagination__btn:hover:not(:disabled):not(.is-active) {
+      border-color: var(--accent);
+      background: var(--accent-soft);
+    }
+    .c-pagination__btn.is-active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+      font-weight: 600;
+    }
+    .c-pagination__btn:disabled {
+      opacity: 0.45;
+      cursor: not-allowed;
+    }
+    .c-pagination__ellipsis {
+      padding: 0 0.25rem;
+      color: var(--muted);
+    }
+    .c-pagination__info {
+      width: 100%;
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-bottom: 0.25rem;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <a class="back" href="index.html">← Components</a>
+    <h1>25 — Pagination</h1>
+    <p class="lead">Page controls with prev/next, numbered pages, and ellipsis for large sets.</p>
+    <section class="panel">
+      <h2>Demo</h2>
+      <div id="mount"></div>
+    </section>
+    <section class="panel">
+      <h2>Events / State</h2>
+      <pre class="log" id="log">Ready.</pre>
+    </section>
+  </main>
+  <script>
+    const logEl = document.getElementById("log");
+    function log(msg) { logEl.textContent = msg; }
+
+    function createPagination({ totalPages = 10, page = 1, siblingCount = 1 } = {}) {
+      let current = page;
+
+      const wrap = document.createElement("nav");
+      wrap.className = "c-pagination";
+      wrap.setAttribute("aria-label", "Pagination");
+
+      const info = document.createElement("div");
+      info.className = "c-pagination__info";
+
+      const controls = document.createElement("div");
+      controls.style.display = "flex";
+      controls.style.flexWrap = "wrap";
+      controls.style.gap = "0.35rem";
+
+      function pageRange() {
+        const pages = [];
+        const left = Math.max(1, current - siblingCount);
+        const right = Math.min(totalPages, current + siblingCount);
+
+        if (left > 1) {
+          pages.push(1);
+          if (left > 2) pages.push("…");
+        }
+        for (let i = left; i <= right; i++) pages.push(i);
+        if (right < totalPages) {
+          if (right < totalPages - 1) pages.push("…");
+          pages.push(totalPages);
+        }
+        return pages;
+      }
+
+      function goTo(p) {
+        if (p < 1 || p > totalPages || p === current) return;
+        current = p;
+        render();
+        log("page: " + current + " / " + totalPages);
+      }
+
+      function makeBtn(label, opts = {}) {
+        const btn = document.createElement("button");
+        btn.type = "button";
+        btn.className = "c-pagination__btn";
+        btn.textContent = label;
+        if (opts.active) btn.classList.add("is-active");
+        if (opts.disabled) btn.disabled = true;
+        if (opts.page) btn.addEventListener("click", () => goTo(opts.page));
+        if (opts.aria) btn.setAttribute("aria-current", "page");
+        return btn;
+      }
+
+      function render() {
+        info.textContent = "Page " + current + " of " + totalPages;
+        controls.innerHTML = "";
+
+        controls.appendChild(makeBtn("‹", { disabled: current === 1, page: current - 1 }));
+
+        pageRange().forEach((p) => {
+          if (p === "…") {
+            const span = document.createElement("span");
+            span.className = "c-pagination__ellipsis";
+            span.textContent = "…";
+            controls.appendChild(span);
+          } else {
+            controls.appendChild(makeBtn(String(p), {
+              page: p,
+              active: p === current,
+              aria: p === current
+            }));
+          }
+        });
+
+        controls.appendChild(makeBtn("›", { disabled: current === totalPages, page: current + 1 }));
+      }
+
+      render();
+      wrap.append(info, controls);
+
+      return {
+        el: wrap,
+        get page() { return current; },
+        goTo
+      };
+    }
+
+    document.getElementById("mount").appendChild(createPagination({ totalPages: 12, page: 5 }).el);
+  </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 23-Promises-Examples
+  example: 21-sequential-then.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>21 — Run Promises Sequentially (then) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>21 — Run Promises Sequentially (then)</h1>
+  <h2>Problem</h2>
+  <p>Chain dependent async steps in order.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function step(name, ms) {
+  return new Promise((resolve) => {
+    setTimeout(() => resolve(name), ms);
+  });
+}
+step("A", 100)
+  .then((a) => step(a + "->B", 100))
+  .then((ab) => step(ab + "->C", 100))
+  .then((result) => {
+    document.getElementById("out").textContent = result;
+  });
+  </script>
+</body>
+</html>

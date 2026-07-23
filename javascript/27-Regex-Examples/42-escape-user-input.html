@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 27-Regex-Examples
+  example: 42-escape-user-input.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>42 — Escape User Input | phpkingdom.com</title>
+</head>
+<body>
+  <h1>42 — Escape User Input</h1>
+  <h2>Problem</h2>
+  <p>Escape special regex characters in user input before building a RegExp.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function escapeRegex(str) {
+  return str.replace(/[.*+?^$\{}()|[\]\\]/g, "\\$&");
+}
+const userInput = "price ($)";
+const safe = new RegExp(escapeRegex(userInput), "i");
+const text = "The price ($) is shown below.";
+document.getElementById("out").textContent =
+  "user input: " + userInput + "\n" +
+  "escaped:    " + escapeRegex(userInput) + "\n" +
+  "match:      " + safe.test(text);
+  </script>
+</body>
+</html>

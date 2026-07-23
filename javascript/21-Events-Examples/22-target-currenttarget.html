@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 21-Events-Examples
+  example: 22-target-currenttarget.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>22 — target vs currentTarget | phpkingdom.com</title>
+</head>
+<body>
+  <h1>22 — target vs currentTarget</h1>
+  <h2>Problem</h2>
+  <p>Compare the clicked element with the element that owns the listener.</p>
+  <h2>Demo</h2>
+  <div id="wrap" style="padding:16px;border:1px solid #333">
+    wrap <button id="inner">inner</button>
+  </div>
+  <pre id="out"></pre>
+  <script>
+document.getElementById("wrap").addEventListener("click", (e) => {
+  document.getElementById("out").textContent =
+    "target=" + e.target.id + "\ncurrentTarget=" + e.currentTarget.id;
+});
+  </script>
+</body>
+</html>

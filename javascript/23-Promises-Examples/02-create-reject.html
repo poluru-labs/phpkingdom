@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 23-Promises-Examples
+  example: 02-create-reject.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>02 — Create a Rejected Promise | phpkingdom.com</title>
+</head>
+<body>
+  <h1>02 — Create a Rejected Promise</h1>
+  <h2>Problem</h2>
+  <p>Create a Promise that rejects and handle it with catch.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+Promise.reject(new Error("something failed"))
+  .then(() => "skipped")
+  .catch((err) => {
+    document.getElementById("out").textContent = "caught: " + err.message;
+  });
+  </script>
+</body>
+</html>

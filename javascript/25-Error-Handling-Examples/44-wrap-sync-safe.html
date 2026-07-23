@@ -1,0 +1,39 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 25-Error-Handling-Examples
+  example: 44-wrap-sync-safe.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>44 — Wrap Sync Function Safely | phpkingdom.com</title>
+</head>
+<body>
+  <h1>44 — Wrap Sync Function Safely</h1>
+  <h2>Problem</h2>
+  <p>Higher-order function returns [error, result] tuple.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const out = document.getElementById("out");
+function safeSync(fn) {
+  return function (...args) {
+    try {
+      return [null, fn(...args)];
+    } catch (e) {
+      return [e, null];
+    }
+  };
+}
+const parse = safeSync(JSON.parse);
+const [err] = parse("{bad");
+out.textContent = err ? err.name + ": caught safely" : "ok";
+  </script>
+</body>
+</html>

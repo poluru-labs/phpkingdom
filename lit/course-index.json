@@ -1,0 +1,342 @@
+{
+  "title": "Lit Tutorials",
+  "items": [
+    {
+      "title": "Basics",
+      "items": [
+        {
+          "href": "/tutorials/lit/introduction",
+          "label": "Lit - Introduction"
+        },
+        {
+          "href": "/tutorials/lit/basics",
+          "label": "Lit - Basics"
+        },
+        {
+          "href": "/tutorials/lit/setup",
+          "label": "Lit Setup"
+        },
+        {
+          "href": "/tutorials/lit/lit-vs-web-components",
+          "label": "Lit vs Web Components"
+        },
+        {
+          "href": "/tutorials/lit/first-lit-component",
+          "label": "First Lit Component"
+        }
+      ]
+    },
+    {
+      "title": "Core Concepts",
+      "items": [
+        {
+          "href": "/tutorials/lit/lit-element",
+          "label": "LitElement"
+        },
+        {
+          "href": "/tutorials/lit/templates",
+          "label": "Lit Templates"
+        },
+        {
+          "href": "/tutorials/lit/render-method",
+          "label": "render() Method"
+        },
+        {
+          "href": "/tutorials/lit/reactive-properties",
+          "label": "Reactive Properties"
+        },
+        {
+          "href": "/tutorials/lit/attributes-properties",
+          "label": "Attributes and Properties"
+        }
+      ]
+    },
+    {
+      "title": "Templates",
+      "items": [
+        {
+          "href": "/tutorials/lit/template-expressions",
+          "label": "Template Expressions"
+        },
+        {
+          "href": "/tutorials/lit/conditional-templates",
+          "label": "Conditional Templates"
+        },
+        {
+          "href": "/tutorials/lit/list-rendering",
+          "label": "List Rendering"
+        },
+        {
+          "href": "/tutorials/lit/template-binding",
+          "label": "Template Binding"
+        },
+        {
+          "href": "/tutorials/lit/nothing-and-nochange",
+          "label": "nothing and noChange"
+        }
+      ]
+    },
+    {
+      "title": "Properties and State",
+      "items": [
+        {
+          "href": "/tutorials/lit/properties",
+          "label": "Lit Properties"
+        },
+        {
+          "href": "/tutorials/lit/state",
+          "label": "Lit State"
+        },
+        {
+          "href": "/tutorials/lit/property-options",
+          "label": "Property Options"
+        },
+        {
+          "href": "/tutorials/lit/attribute-reflection",
+          "label": "Attribute Reflection"
+        },
+        {
+          "href": "/tutorials/lit/property-converters",
+          "label": "Property Converters"
+        }
+      ]
+    },
+    {
+      "title": "Lifecycle",
+      "items": [
+        {
+          "href": "/tutorials/lit/lifecycle",
+          "label": "Lit Lifecycle"
+        },
+        {
+          "href": "/tutorials/lit/connected-callback",
+          "label": "connectedCallback"
+        },
+        {
+          "href": "/tutorials/lit/updated",
+          "label": "updated() Method"
+        },
+        {
+          "href": "/tutorials/lit/first-updated",
+          "label": "firstUpdated() Method"
+        },
+        {
+          "href": "/tutorials/lit/disconnected-callback",
+          "label": "disconnectedCallback"
+        }
+      ]
+    },
+    {
+      "title": "Events",
+      "items": [
+        {
+          "href": "/tutorials/lit/events",
+          "label": "Lit Events"
+        },
+        {
+          "href": "/tutorials/lit/event-handling",
+          "label": "Event Handling"
+        },
+        {
+          "href": "/tutorials/lit/custom-events",
+          "label": "Custom Events"
+        },
+        {
+          "href": "/tutorials/lit/composed-events",
+          "label": "Composed Events"
+        },
+        {
+          "href": "/tutorials/lit/event-options",
+          "label": "Event Options"
+        }
+      ]
+    },
+    {
+      "title": "Slots and Composition",
+      "items": [
+        {
+          "href": "/tutorials/lit/slots",
+          "label": "Lit Slots"
+        },
+        {
+          "href": "/tutorials/lit/named-slots",
+          "label": "Named Slots"
+        },
+        {
+          "href": "/tutorials/lit/slotchange",
+          "label": "slotchange Event"
+        },
+        {
+          "href": "/tutorials/lit/component-composition",
+          "label": "Component Composition"
+        }
+      ]
+    },
+    {
+      "title": "Styling",
+      "items": [
+        {
+          "href": "/tutorials/lit/styles",
+          "label": "Lit Styles"
+        },
+        {
+          "href": "/tutorials/lit/css-tag",
+          "label": "css Template Tag"
+        },
+        {
+          "href": "/tutorials/lit/css-custom-properties",
+          "label": "CSS Custom Properties"
+        },
+        {
+          "href": "/tutorials/lit/css-parts",
+          "label": "CSS Shadow Parts"
+        },
+        {
+          "href": "/tutorials/lit/adopted-stylesheets",
+          "label": "Adopted Stylesheets"
+        }
+      ]
+    },
+    {
+      "title": "Directives",
+      "items": [
+        {
+          "href": "/tutorials/lit/directives",
+          "label": "Lit Directives"
+        },
+        {
+          "href": "/tutorials/lit/repeat-directive",
+          "label": "repeat Directive"
+        },
+        {
+          "href": "/tutorials/lit/classmap-directive",
+          "label": "classMap Directive"
+        },
+        {
+          "href": "/tutorials/lit/stylemap-directive",
+          "label": "styleMap Directive"
+        },
+        {
+          "href": "/tutorials/lit/when-directive",
+          "label": "when Directive"
+        },
+        {
+          "href": "/tutorials/lit/until-directive",
+          "label": "until Directive"
+        },
+        {
+          "href": "/tutorials/lit/choose-directive",
+          "label": "choose Directive"
+        },
+        {
+          "href": "/tutorials/lit/guard-directive",
+          "label": "guard Directive"
+        },
+        {
+          "href": "/tutorials/lit/live-directive",
+          "label": "live Directive"
+        }
+      ]
+    },
+    {
+      "title": "Controllers",
+      "items": [
+        {
+          "href": "/tutorials/lit/reactive-controllers",
+          "label": "Reactive Controllers"
+        },
+        {
+          "href": "/tutorials/lit/controller-lifecycle",
+          "label": "Controller Lifecycle"
+        },
+        {
+          "href": "/tutorials/lit/shared-state-controller",
+          "label": "Shared State Controller"
+        },
+        {
+          "href": "/tutorials/lit/custom-controller",
+          "label": "Custom Controller"
+        }
+      ]
+    },
+    {
+      "title": "Forms and Accessibility",
+      "items": [
+        {
+          "href": "/tutorials/lit/forms",
+          "label": "Lit Forms"
+        },
+        {
+          "href": "/tutorials/lit/form-associated-components",
+          "label": "Form-Associated Components"
+        },
+        {
+          "href": "/tutorials/lit/accessibility",
+          "label": "Lit Accessibility"
+        },
+        {
+          "href": "/tutorials/lit/keyboard-events",
+          "label": "Keyboard Events"
+        }
+      ]
+    },
+    {
+      "title": "Lit with TypeScript",
+      "items": [
+        {
+          "href": "/tutorials/lit/lit-typescript",
+          "label": "Lit with TypeScript"
+        },
+        {
+          "href": "/tutorials/lit/decorators",
+          "label": "Lit Decorators"
+        },
+        {
+          "href": "/tutorials/lit/typescript-properties",
+          "label": "TypeScript Properties"
+        },
+        {
+          "href": "/tutorials/lit/typescript-events",
+          "label": "TypeScript Events"
+        }
+      ]
+    },
+    {
+      "title": "Advanced",
+      "items": [
+        {
+          "href": "/tutorials/lit/performance",
+          "label": "Lit Performance"
+        },
+        {
+          "href": "/tutorials/lit/server-side-rendering",
+          "label": "Lit Server-Side Rendering"
+        },
+        {
+          "href": "/tutorials/lit/lazy-loading",
+          "label": "Lazy Loading"
+        },
+        {
+          "href": "/tutorials/lit/design-system",
+          "label": "Design System with Lit"
+        },
+        {
+          "href": "/tutorials/lit/testing",
+          "label": "Lit Testing"
+        },
+        {
+          "href": "/tutorials/lit/context",
+          "label": "Lit Context"
+        },
+        {
+          "href": "/tutorials/lit/task",
+          "label": "Lit Task"
+        },
+        {
+          "href": "/tutorials/lit/localization",
+          "label": "Lit Localization"
+        }
+      ]
+    }
+  ]
+}

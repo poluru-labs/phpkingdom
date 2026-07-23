@@ -1,0 +1,42 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 29-Algorithms-Examples
+  example: 32-daily-temperatures.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>32 — Daily Temperatures | phpkingdom.com</title>
+</head>
+<body>
+  <h1>32 — Daily Temperatures</h1>
+  <h2>Problem</h2>
+  <p>Days until a warmer temperature (monotonic stack style).</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function dailyTemperatures(temps) {
+  const ans = new Array(temps.length).fill(0);
+  const stack = [];
+  for (let i = 0; i < temps.length; i++) {
+    while (stack.length && temps[i] > temps[stack[stack.length - 1]]) {
+      const j = stack.pop();
+      ans[j] = i - j;
+    }
+    stack.push(i);
+  }
+  return ans;
+}
+const temps = [73, 74, 75, 71, 69, 72, 76, 73];
+document.getElementById("out").textContent =
+  "temps: " + JSON.stringify(temps) + "\n" +
+  "days until warmer: " + JSON.stringify(dailyTemperatures(temps));
+  </script>
+</body>
+</html>

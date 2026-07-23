@@ -1,0 +1,35 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 18-Object-Examples
+  example: 29-deep-equal.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>29 — Deep Equality | phpkingdom.com</title>
+</head>
+<body>
+  <h1>29 — Deep Equality</h1>
+  <h2>Problem</h2>
+  <p>Compare two plain objects deeply.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function deepEqual(a, b) {
+  if (a === b) return true;
+  if (typeof a !== "object" || typeof b !== "object" || !a || !b) return false;
+  const ak = Object.keys(a), bk = Object.keys(b);
+  if (ak.length !== bk.length) return false;
+  return ak.every((k) => deepEqual(a[k], b[k]));
+}
+document.getElementById("out").textContent =
+  deepEqual({ a: { b: 1 } }, { a: { b: 1 } }) + " / " + deepEqual({ a: 1 }, { a: 2 });
+  </script>
+</body>
+</html>

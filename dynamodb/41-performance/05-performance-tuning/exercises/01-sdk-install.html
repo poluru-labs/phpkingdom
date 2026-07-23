@@ -1,0 +1,114 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Amazon DynamoDB with Node.js Tutorials
+section title: Performance
+topic title: DynamoDB Performance Tuning
+content type: Exercise
+item number: 01
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>DynamoDB Performance Tuning Exercise 01 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #d1fae5;
+      color: #065f46;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Exercise 01</span>
+    <h1>DynamoDB Performance Tuning</h1>
+    <p><strong>Section:</strong> Performance</p>
+    <p><strong>Focus:</strong> Sdk Install</p>
+    <p><strong>Scenario:</strong> user profile API</p>
+    <p>Run against DynamoDB Local or AWS, then verify with GetItem/Query and CloudWatch metrics.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>DynamoDB (Node.js SDK v3)</h2>
+        <pre><code>// DynamoDB Performance Tuning — Exercise 01
+// Focus: sdk install | Scenario: user profile API
+
+export const tuningChecklist = [
+  &quot;ReturnConsumedCapacity while profiling&quot;,
+  &quot;watch hot keys via Contributor Insights&quot;,
+  &quot;right-size page Limit&quot;,
+];
+</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for DynamoDB Performance Tuning
+- Practice: sdk install
+- Scenario: user profile API
+- Design for access patterns first (Query over Scan)
+- Prefer Document Client for app code; raw client for admin
+- Use ConditionExpression for idempotency / optimistic locking
+- Paginate with ExclusiveStartKey / LastEvaluatedKey
+
+Useful commands:
+  npm install @aws-sdk/client-dynamodb @aws-sdk/lib-dynamodb
+  docker run -p 8000:8000 amazon/dynamodb-local
+  aws dynamodb list-tables --endpoint-url http://localhost:8000
+  node index.mjs</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This exercise shows one way to apply <strong>DynamoDB Performance Tuning</strong> in a user profile api context.</p>
+      <p>Model for queries, keep partition keys well distributed, and use GSIs only when access patterns require them.</p>
+    </section>
+  </main>
+</body>
+</html>

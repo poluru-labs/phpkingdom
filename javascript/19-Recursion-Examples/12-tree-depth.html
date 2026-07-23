@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 19-Recursion-Examples
+  example: 12-tree-depth.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>12 — Tree Depth | phpkingdom.com</title>
+</head>
+<body>
+  <h1>12 — Tree Depth</h1>
+  <h2>Problem</h2>
+  <p>Compute the maximum depth (height) of a binary tree recursively.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const tree = { val: 1, left: { val: 2, left: { val: 4 }, right: null }, right: { val: 3, left: { val: 5 }, right: { val: 6 } } };
+function depth(node) {
+  if (!node) return 0;
+  return 1 + Math.max(depth(node.left), depth(node.right));
+}
+document.getElementById("out").textContent = "max depth = " + depth(tree);
+  </script>
+</body>
+</html>

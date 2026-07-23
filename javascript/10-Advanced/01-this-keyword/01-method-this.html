@@ -1,0 +1,29 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 10-Advanced/01-this-keyword
+  example: 01-method-this.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Method this | phpkingdom.com</title>
+</head>
+<body>
+  <h1>this in Methods</h1>
+  <p>this refers to the object owning the method.</p>
+  <pre id="out"></pre>
+  <script>
+const user = {
+  name: "Ada",
+  hello() { return "Hi " + this.name; }
+};
+document.getElementById("out").textContent = user.hello();
+  </script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 22-Components-Examples
+  example: 18-tooltip.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>18 — Tooltip | phpkingdom.com</title>
+  <link rel="stylesheet" href="css/base.css">
+  <style>
+    .c-tooltip-wrap { display: inline-block; position: relative; }
+    .c-tooltip {
+      position: absolute;
+      z-index: 50;
+      bottom: calc(100% + 8px);
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 0.4rem 0.65rem;
+      background: var(--ink);
+      color: #fff;
+      font-size: 0.82rem;
+      border-radius: 6px;
+      white-space: nowrap;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.15s var(--ease);
+    }
+    .c-tooltip::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 5px solid transparent;
+      border-top-color: var(--ink);
+    }
+    .c-tooltip.is-visible { opacity: 1; }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <a class="back" href="index.html">← Components</a>
+    <h1>18 — Tooltip</h1>
+    <p class="lead">Lightweight tooltip shown on hover and keyboard focus.</p>
+    <section class="panel">
+      <h2>Demo</h2>
+      <div class="demo-row" id="mount"></div>
+    </section>
+    <section class="panel">
+      <h2>Events / State</h2>
+      <pre class="log" id="log">Ready.</pre>
+    </section>
+  </main>
+  <script>
+    const logEl = document.getElementById("log");
+    function log(msg) { logEl.textContent = msg; }
+
+    function createTooltip({ triggerLabel = "Hover me", text = "Helpful hint" } = {}) {
+      const wrap = document.createElement("span");
+      wrap.className = "c-tooltip-wrap";
+
+      const trigger = document.createElement("button");
+      trigger.type = "button";
+      trigger.className = "c-btn c-btn--secondary";
+      trigger.textContent = triggerLabel;
+      trigger.setAttribute("aria-describedby", "tip-" + Math.random().toString(36).slice(2, 7));
+
+      const tip = document.createElement("span");
+      tip.className = "c-tooltip";
+      tip.textContent = text;
+      tip.setAttribute("role", "tooltip");
+      tip.id = trigger.getAttribute("aria-describedby");
+
+      function show(reason) {
+        tip.classList.add("is-visible");
+        log("show (" + reason + "): " + text);
+      }
+      function hide(reason) {
+        tip.classList.remove("is-visible");
+        log("hide (" + reason + ")");
+      }
+
+      trigger.addEventListener("mouseenter", () => show("hover"));
+      trigger.addEventListener("mouseleave", () => hide("hover"));
+      trigger.addEventListener("focus", () => show("focus"));
+      trigger.addEventListener("blur", () => hide("focus"));
+
+      wrap.append(trigger, tip);
+
+      return { el: wrap, show: () => show("api"), hide: () => hide("api") };
+    }
+
+    const mount = document.getElementById("mount");
+    mount.append(
+      createTooltip({ triggerLabel: "Save", text: "Save changes to disk" }).el,
+      createTooltip({ triggerLabel: "Info", text: "More details available" }).el
+    );
+  </script>
+</body>
+</html>

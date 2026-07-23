@@ -1,0 +1,37 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 16-Array-Examples
+  example: 28-equilibrium-index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>28 — Equilibrium Index | phpkingdom.com</title>
+</head>
+<body>
+  <h1>28 — Equilibrium Index</h1>
+  <h2>Problem</h2>
+  <p>Index where left sum equals right sum.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function equilibriumIndex(arr) {
+  const total = arr.reduce((a, b) => a + b, 0);
+  let left = 0;
+  for (let i = 0; i < arr.length; i++) {
+    const right = total - left - arr[i];
+    if (left === right) return i;
+    left += arr[i];
+  }
+  return -1;
+}
+document.getElementById("out").textContent = String(equilibriumIndex([1,3,5,2,2]));
+  </script>
+</body>
+</html>

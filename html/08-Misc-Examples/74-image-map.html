@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  topic: 08-Misc-Examples
+  example: 74-image-map.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Map | phpkingdom</title>
+</head>
+<body>
+  <h1>Image Map with Areas</h1>
+
+  <p>Click hotspots on the image map:</p>
+  <img
+    src="https://placehold.co/400x200/666/fff?text=Left+%7C+Right"
+    alt="Two regions left and right"
+    width="400"
+    height="200"
+    usemap="#site-map">
+  <map name="site-map">
+    <area shape="rect" coords="0,0,200,200" href="01-hello-world.html" alt="Left region - Hello World">
+    <area shape="rect" coords="200,0,400,200" href="50-complete-mini-page.html" alt="Right region - Mini Page">
+  </map>
+
+</body>
+</html>

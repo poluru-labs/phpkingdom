@@ -1,0 +1,39 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 11-Exercises
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>11-Exercises | Sass Practice | phpkingdom.com</title>
+  <style>
+    body { margin:0; font-family: Georgia, "Times New Roman", serif; background:#f5f7fb; color:#1f2937; line-height:1.55; }
+    .wrap { max-width:760px; margin:0 auto; padding:1.5rem; }
+    .brand { color:#0f766e; font-size:.78rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    h1 { font-size:1.6rem; margin:.35rem 0; }
+    .meta { color:#64748b; }
+    pre { background:#0f172a; color:#e2e8f0; padding:1rem; border-radius:.65rem; overflow:auto; font-size:.88rem; }
+    code { font-family: ui-monospace, Menlo, Monaco, Consolas, monospace; }
+    .note { border-left:3px solid #0f766e; background:#ecfdf5; padding:.75rem 1rem; margin:1rem 0; }
+    a { color:#0f766e; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">phpkingdom.com</div>
+    <h1>11-Exercises — Sass Practice</h1>
+    <p class="meta">25 exercises. Each has Problem → Solution.</p>
+    <p><a href="../README.md">← Sass Tutorials</a></p>
+    <ol>
+      <li><strong>01-Exercise — Define Variables</strong><br><span class='meta'>Create $brand and $radius variables, then use them on a .btn class.</span><br><a href='01-Exercise/Problem/index.html'>Problem</a> | <a href='01-Exercise/Solution/index.html'>Solution</a></li><li><strong>02-Exercise — Nesting Selectors</strong><br><span class='meta'>Nest .nav a and &amp;:hover under .nav using Sass nesting.</span><br><a href='02-Exercise/Problem/index.html'>Problem</a> | <a href='02-Exercise/Solution/index.html'>Solution</a></li><li><strong>03-Exercise — Simple Mixin</strong><br><span class='meta'>Write a @mixin center-flex and @include it on .hero.</span><br><a href='03-Exercise/Problem/index.html'>Problem</a> | <a href='03-Exercise/Solution/index.html'>Solution</a></li><li><strong>04-Exercise — Mixin Parameters</strong><br><span class='meta'>Create @mixin button($bg, $color: #fff) and include it twice with different colors.</span><br><a href='04-Exercise/Problem/index.html'>Problem</a> | <a href='04-Exercise/Solution/index.html'>Solution</a></li><li><strong>05-Exercise — Custom Function</strong><br><span class='meta'>Write @function rem($px) that divides by 16 and returns rem units.</span><br><a href='05-Exercise/Problem/index.html'>Problem</a> | <a href='05-Exercise/Solution/index.html'>Solution</a></li><li><strong>06-Exercise — @if and @else</strong><br><span class='meta'>Use @if $theme == dark to set background and text colors.</span><br><a href='06-Exercise/Problem/index.html'>Problem</a> | <a href='06-Exercise/Solution/index.html'>Solution</a></li><li><strong>07-Exercise — @for Loop</strong><br><span class='meta'>Generate .m-1 through .m-4 margin utilities with @for.</span><br><a href='07-Exercise/Problem/index.html'>Problem</a> | <a href='07-Exercise/Solution/index.html'>Solution</a></li><li><strong>08-Exercise — @each Loop</strong><br><span class='meta'>Loop a list of colors and create .text-#{name} classes.</span><br><a href='08-Exercise/Problem/index.html'>Problem</a> | <a href='08-Exercise/Solution/index.html'>Solution</a></li><li><strong>09-Exercise — @while Loop</strong><br><span class='meta'>Use @while to generate .col-1 … .col-3 width percentages.</span><br><a href='09-Exercise/Problem/index.html'>Problem</a> | <a href='09-Exercise/Solution/index.html'>Solution</a></li><li><strong>10-Exercise — Parent Selector</strong><br><span class='meta'>Use &amp; to add .card--featured and &amp;:hover modifiers.</span><br><a href='10-Exercise/Problem/index.html'>Problem</a> | <a href='10-Exercise/Solution/index.html'>Solution</a></li><li><strong>11-Exercise — Interpolation</strong><br><span class='meta'>Build property names with #{$side}-radius using a map of sides.</span><br><a href='11-Exercise/Problem/index.html'>Problem</a> | <a href='11-Exercise/Solution/index.html'>Solution</a></li><li><strong>12-Exercise — Placeholder + @extend</strong><br><span class='meta'>Create %message placeholder and @extend it in .alert-success.</span><br><a href='12-Exercise/Problem/index.html'>Problem</a> | <a href='12-Exercise/Solution/index.html'>Solution</a></li><li><strong>13-Exercise — Color Adjust</strong><br><span class='meta'>Use sass:color to lighten a brand color for a hover state.</span><br><a href='13-Exercise/Problem/index.html'>Problem</a> | <a href='13-Exercise/Solution/index.html'>Solution</a></li><li><strong>14-Exercise — Maps Lookup</strong><br><span class='meta'>Store breakpoints in a map and read md with map.get.</span><br><a href='14-Exercise/Problem/index.html'>Problem</a> | <a href='14-Exercise/Solution/index.html'>Solution</a></li><li><strong>15-Exercise — Lists Index</strong><br><span class='meta'>Loop a space-separated list of spacing steps with @each.</span><br><a href='15-Exercise/Problem/index.html'>Problem</a> | <a href='15-Exercise/Solution/index.html'>Solution</a></li><li><strong>16-Exercise — @use Module</strong><br><span class='meta'>Show @use &quot;sass:math&quot; and call math.div in a font-size rule.</span><br><a href='16-Exercise/Problem/index.html'>Problem</a> | <a href='16-Exercise/Solution/index.html'>Solution</a></li><li><strong>17-Exercise — Responsive Mixin</strong><br><span class='meta'>Write @mixin respond-to($bp) wrapping @content in a media query.</span><br><a href='17-Exercise/Problem/index.html'>Problem</a> | <a href='17-Exercise/Solution/index.html'>Solution</a></li><li><strong>18-Exercise — Fluid Typography</strong><br><span class='meta'>Set font-size with clamp() using Sass variables for min/max.</span><br><a href='18-Exercise/Problem/index.html'>Problem</a> | <a href='18-Exercise/Solution/index.html'>Solution</a></li><li><strong>19-Exercise — CSS Custom Properties</strong><br><span class='meta'>Expose Sass tokens as CSS variables on :root.</span><br><a href='19-Exercise/Problem/index.html'>Problem</a> | <a href='19-Exercise/Solution/index.html'>Solution</a></li><li><strong>20-Exercise — BEM Nesting</strong><br><span class='meta'>Nest BEM elements and modifiers under .card using &amp;__ and &amp;--.</span><br><a href='20-Exercise/Problem/index.html'>Problem</a> | <a href='20-Exercise/Solution/index.html'>Solution</a></li><li><strong>21-Exercise — Partials Pattern</strong><br><span class='meta'>Show how main.scss would @use partials for variables and buttons.</span><br><a href='21-Exercise/Problem/index.html'>Problem</a> | <a href='21-Exercise/Solution/index.html'>Solution</a></li><li><strong>22-Exercise — @forward Barrel</strong><br><span class='meta'>Create an index partial that @forwards tokens and mixins.</span><br><a href='22-Exercise/Problem/index.html'>Problem</a> | <a href='22-Exercise/Solution/index.html'>Solution</a></li><li><strong>23-Exercise — @debug @warn</strong><br><span class='meta'>Add @debug for a computed value and @warn for an invalid theme.</span><br><a href='23-Exercise/Problem/index.html'>Problem</a> | <a href='23-Exercise/Solution/index.html'>Solution</a></li><li><strong>24-Exercise — 7-1 Folder Sketch</strong><br><span class='meta'>List the 7-1 folders and a main.scss that loads abstracts then components.</span><br><a href='24-Exercise/Problem/index.html'>Problem</a> | <a href='24-Exercise/Solution/index.html'>Solution</a></li><li><strong>25-Exercise — Performance Tip</strong><br><span class='meta'>Prefer @use over @import and avoid deep nesting beyond 3 levels.</span><br><a href='25-Exercise/Problem/index.html'>Problem</a> | <a href='25-Exercise/Solution/index.html'>Solution</a></li>
+    </ol>
+  </div>
+</body>
+</html>

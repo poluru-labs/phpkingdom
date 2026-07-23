@@ -1,0 +1,34 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 20-DOM-Examples
+  example: 10-clone-node.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>10 — cloneNode | phpkingdom.com</title>
+</head>
+<body>
+  <h1>10 — cloneNode</h1>
+  <h2>Problem</h2>
+  <p>Deep-clone an element and append the copy.</p>
+  <h2>Demo</h2>
+  <div id="card" style="border:1px solid #333;padding:8px;display:inline-block">
+    <strong>Card</strong><p>Details</p>
+  </div>
+  <div id="copies"></div>
+  <button id="btn">Clone</button>
+  <script>
+document.getElementById("btn").onclick = () => {
+  const copy = document.getElementById("card").cloneNode(true);
+  document.getElementById("copies").appendChild(copy);
+};
+  </script>
+</body>
+</html>

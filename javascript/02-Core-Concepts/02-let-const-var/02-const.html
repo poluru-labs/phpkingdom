@@ -1,0 +1,28 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 02-Core-Concepts/02-let-const-var
+  example: 02-const.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>const | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Using const</h1>
+  <p>Block-scoped, cannot reassign binding.</p>
+  <pre id="out"></pre>
+  <script>
+const PI = 3.14159;
+const user = { name: "Ada" };
+user.name = "Grace"; // object contents can change
+document.getElementById("out").textContent = PI + " / " + user.name;
+  </script>
+</body>
+</html>

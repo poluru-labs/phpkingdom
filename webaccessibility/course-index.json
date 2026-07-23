@@ -1,0 +1,246 @@
+{
+  "title": "Web Accessibility Tutorials",
+  "items": [
+    {
+      "title": "Basics",
+      "items": [
+        {
+          "href": "/tutorials/web-accessibility/introduction",
+          "label": "Introduction"
+        },
+        {
+          "href": "/tutorials/web-accessibility/basics",
+          "label": "Basics"
+        },
+        {
+          "href": "/tutorials/web-accessibility/why-accessibility",
+          "label": "Why Accessibility"
+        },
+        {
+          "href": "/tutorials/web-accessibility/wcag-introduction",
+          "label": "Wcag Introduction"
+        },
+        {
+          "href": "/tutorials/web-accessibility/standards-and-laws",
+          "label": "Standards And Laws"
+        }
+      ]
+    },
+    {
+      "title": "Semantic Html",
+      "items": [
+        {
+          "href": "/tutorials/web-accessibility/semantic-html",
+          "label": "Semantic Html"
+        },
+        {
+          "href": "/tutorials/web-accessibility/headings",
+          "label": "Headings"
+        },
+        {
+          "href": "/tutorials/web-accessibility/landmarks",
+          "label": "Landmarks"
+        },
+        {
+          "href": "/tutorials/web-accessibility/lists",
+          "label": "Lists"
+        },
+        {
+          "href": "/tutorials/web-accessibility/tables",
+          "label": "Tables"
+        }
+      ]
+    },
+    {
+      "title": "Keyboard",
+      "items": [
+        {
+          "href": "/tutorials/web-accessibility/keyboard-accessibility",
+          "label": "Keyboard Accessibility"
+        },
+        {
+          "href": "/tutorials/web-accessibility/focus-management",
+          "label": "Focus Management"
+        },
+        {
+          "href": "/tutorials/web-accessibility/focus-visible",
+          "label": "Focus Visible"
+        },
+        {
+          "href": "/tutorials/web-accessibility/tabindex",
+          "label": "Tabindex"
+        },
+        {
+          "href": "/tutorials/web-accessibility/skip-links",
+          "label": "Skip Links"
+        }
+      ]
+    },
+    {
+      "title": "Aria",
+      "items": [
+        {
+          "href": "/tutorials/web-accessibility/aria-introduction",
+          "label": "Aria Introduction"
+        },
+        {
+          "href": "/tutorials/web-accessibility/aria-labels",
+          "label": "Aria Labels"
+        },
+        {
+          "href": "/tutorials/web-accessibility/roles",
+          "label": "Roles"
+        },
+        {
+          "href": "/tutorials/web-accessibility/states-properties",
+          "label": "States Properties"
+        },
+        {
+          "href": "/tutorials/web-accessibility/live-regions",
+          "label": "Live Regions"
+        }
+      ]
+    },
+    {
+      "title": "Images And Media",
+      "items": [
+        {
+          "href": "/tutorials/web-accessibility/alt-text",
+          "label": "Alt Text"
+        },
+        {
+          "href": "/tutorials/web-accessibility/decorative-images",
+          "label": "Decorative Images"
+        },
+        {
+          "href": "/tutorials/web-accessibility/captions-transcripts",
+          "label": "Captions Transcripts"
+        },
+        {
+          "href": "/tutorials/web-accessibility/audio-video",
+          "label": "Audio Video"
+        },
+        {
+          "href": "/tutorials/web-accessibility/svg-and-icons",
+          "label": "Svg And Icons"
+        }
+      ]
+    },
+    {
+      "title": "Forms",
+      "items": [
+        {
+          "href": "/tutorials/web-accessibility/forms",
+          "label": "Forms"
+        },
+        {
+          "href": "/tutorials/web-accessibility/labels",
+          "label": "Labels"
+        },
+        {
+          "href": "/tutorials/web-accessibility/errors",
+          "label": "Errors"
+        },
+        {
+          "href": "/tutorials/web-accessibility/validation",
+          "label": "Validation"
+        },
+        {
+          "href": "/tutorials/web-accessibility/required-fields",
+          "label": "Required Fields"
+        }
+      ]
+    },
+    {
+      "title": "Visual Design",
+      "items": [
+        {
+          "href": "/tutorials/web-accessibility/color-contrast",
+          "label": "Color Contrast"
+        },
+        {
+          "href": "/tutorials/web-accessibility/text-spacing",
+          "label": "Text Spacing"
+        },
+        {
+          "href": "/tutorials/web-accessibility/reduced-motion",
+          "label": "Reduced Motion"
+        },
+        {
+          "href": "/tutorials/web-accessibility/responsive-accessibility",
+          "label": "Responsive Accessibility"
+        },
+        {
+          "href": "/tutorials/web-accessibility/target-size",
+          "label": "Target Size"
+        }
+      ]
+    },
+    {
+      "title": "Components",
+      "items": [
+        {
+          "href": "/tutorials/web-accessibility/buttons",
+          "label": "Buttons"
+        },
+        {
+          "href": "/tutorials/web-accessibility/links",
+          "label": "Links"
+        },
+        {
+          "href": "/tutorials/web-accessibility/navigation",
+          "label": "Navigation"
+        },
+        {
+          "href": "/tutorials/web-accessibility/modals",
+          "label": "Modals"
+        },
+        {
+          "href": "/tutorials/web-accessibility/dropdowns",
+          "label": "Dropdowns"
+        },
+        {
+          "href": "/tutorials/web-accessibility/tabs",
+          "label": "Tabs"
+        },
+        {
+          "href": "/tutorials/web-accessibility/disclosure",
+          "label": "Disclosure"
+        },
+        {
+          "href": "/tutorials/web-accessibility/toast-status",
+          "label": "Toast Status"
+        }
+      ]
+    },
+    {
+      "title": "Testing",
+      "items": [
+        {
+          "href": "/tutorials/web-accessibility/testing",
+          "label": "Testing"
+        },
+        {
+          "href": "/tutorials/web-accessibility/manual-testing",
+          "label": "Manual Testing"
+        },
+        {
+          "href": "/tutorials/web-accessibility/automated-testing",
+          "label": "Automated Testing"
+        },
+        {
+          "href": "/tutorials/web-accessibility/screen-readers",
+          "label": "Screen Readers"
+        },
+        {
+          "href": "/tutorials/web-accessibility/browser-devtools",
+          "label": "Browser Devtools"
+        },
+        {
+          "href": "/tutorials/web-accessibility/playwright-a11y",
+          "label": "Playwright A11Y"
+        }
+      ]
+    }
+  ]
+}

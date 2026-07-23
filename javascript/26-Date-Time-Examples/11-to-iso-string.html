@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 26-Date-Time-Examples
+  example: 11-to-iso-string.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>11 — toISOString | phpkingdom.com</title>
+</head>
+<body>
+  <h1>11 — toISOString</h1>
+  <h2>Problem</h2>
+  <p>Serialize a Date to an ISO 8601 UTC string.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+
+const d = new Date(2024, 0, 15, 14, 30, 45);
+document.getElementById("out").textContent = "toISOString(): " + d.toISOString();
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 20-DOM-Examples
+  example: 31-form-validation.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>31 — Constraint Validation API | phpkingdom.com</title>
+</head>
+<body>
+  <h1>31 — Constraint Validation API</h1>
+  <h2>Problem</h2>
+  <p>Use required/type and checkValidity / reportValidity.</p>
+  <h2>Demo</h2>
+  <form id="f" novalidate>
+    <label>Email <input id="email" type="email" required></label>
+    <button type="submit">Go</button>
+  </form>
+  <pre id="out"></pre>
+  <script>
+document.getElementById("f").addEventListener("submit", (e) => {
+  e.preventDefault();
+  const email = document.getElementById("email");
+  if (!email.checkValidity()) {
+    email.reportValidity();
+    document.getElementById("out").textContent = "invalid";
+    return;
+  }
+  document.getElementById("out").textContent = "valid: " + email.value;
+});
+  </script>
+</body>
+</html>

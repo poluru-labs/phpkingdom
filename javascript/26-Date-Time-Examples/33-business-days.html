@@ -1,0 +1,43 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 26-Date-Time-Examples
+  example: 33-business-days.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>33 — Business Days Intro | phpkingdom.com</title>
+</head>
+<body>
+  <h1>33 — Business Days Intro</h1>
+  <h2>Problem</h2>
+  <p>Count weekdays (Mon–Fri) between two dates, excluding weekends.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+
+function countBusinessDays(start, end) {
+  let count = 0;
+  const cur = new Date(start.getFullYear(), start.getMonth(), start.getDate());
+  const last = new Date(end.getFullYear(), end.getMonth(), end.getDate());
+  while (cur <= last) {
+    const day = cur.getDay();
+    if (day !== 0 && day !== 6) count++;
+    cur.setDate(cur.getDate() + 1);
+  }
+  return count;
+}
+const s = new Date(2024, 0, 15); // Mon
+const e = new Date(2024, 0, 19); // Fri
+document.getElementById("out").textContent =
+  "Jan 15–19, 2024 (Mon–Fri): " + countBusinessDays(s, e) + " business days";
+
+  </script>
+</body>
+</html>

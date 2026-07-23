@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/066-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 066 — Playwright pierce — Solution | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>Exercise 066 — Playwright pierce — Solution</h1>
+  <p class="meta">Write locator with >> piercing.</p>
+  <h2>Solution</h2>
+  <p>Write locator with >> piercing.</p>
+  <div id="demo"></div>
+  <pre id="out"></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+customElements.define("ex066-el", class extends HTMLElement {
+  connectedCallback() {
+    this.textContent = 'Playwright pierce';
+  }
+});
+document.getElementById("demo").innerHTML = "<ex066-el></ex066-el>";
+document.getElementById("out").textContent = 'Write locator with >> piercing.';
+  </script>
+</body>
+</html>

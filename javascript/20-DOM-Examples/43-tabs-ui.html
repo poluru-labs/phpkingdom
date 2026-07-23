@@ -1,0 +1,42 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 20-DOM-Examples
+  example: 43-tabs-ui.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>43 — Simple Tabs | phpkingdom.com</title>
+</head>
+<body>
+  <h1>43 — Simple Tabs</h1>
+  <h2>Problem</h2>
+  <p>Show one panel at a time with tab buttons.</p>
+  <h2>Demo</h2>
+  <div id="tabs">
+    <button data-tab="a" class="tab active">A</button>
+    <button data-tab="b" class="tab">B</button>
+    <button data-tab="c" class="tab">C</button>
+  </div>
+  <section id="panel-a" class="panel">Panel A</section>
+  <section id="panel-b" class="panel" hidden>Panel B</section>
+  <section id="panel-c" class="panel" hidden>Panel C</section>
+  <style>.active { font-weight: bold; }</style>
+  <script>
+document.getElementById("tabs").addEventListener("click", (e) => {
+  const btn = e.target.closest("[data-tab]");
+  if (!btn) return;
+  document.querySelectorAll(".tab").forEach((t) => t.classList.remove("active"));
+  document.querySelectorAll(".panel").forEach((p) => { p.hidden = true; });
+  btn.classList.add("active");
+  document.getElementById("panel-" + btn.dataset.tab).hidden = false;
+});
+  </script>
+</body>
+</html>

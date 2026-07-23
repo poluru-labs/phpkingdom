@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Functions-Examples
+  example: 40-settimeout-closure.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>40 — setTimeout Closure | phpkingdom.com</title>
+</head>
+<body>
+  <h1>40 — setTimeout Closure</h1>
+  <h2>Problem</h2>
+  <p>Capture loop index in a closure passed to setTimeout.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const labels = [];
+for (let i = 1; i <= 3; i++) {
+  setTimeout(() => labels.push("tick-" + i), i * 20);
+}
+setTimeout(() => {
+  document.getElementById("out").textContent = labels.join("\n");
+}, 100);
+  </script>
+</body>
+</html>

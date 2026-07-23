@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Functions-Examples
+  example: 16-pipe-functions.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>16 — Pipe Functions | phpkingdom.com</title>
+</head>
+<body>
+  <h1>16 — Pipe Functions</h1>
+  <h2>Problem</h2>
+  <p>Pipe functions left-to-right instead of compose right-to-left.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const pipe = (...fns) => (x) => fns.reduce((v, fn) => fn(v), x);
+const inc = (x) => x + 1;
+const double = (x) => x * 2;
+document.getElementById("out").textContent =
+  "pipe(inc, double)(5) = " + pipe(inc, double)(5);
+  </script>
+</body>
+</html>

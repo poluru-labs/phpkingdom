@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/040-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 040 — Retargeting observation — Solution | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>Exercise 040 — Retargeting observation — Solution</h1>
+  <p class="meta">Compare e.target outside vs inside.</p>
+  <h2>Solution</h2>
+  <p>Compare e.target outside vs inside.</p>
+  <div id="demo"></div>
+  <pre id="out"></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+customElements.define("ex040-el", class extends HTMLElement {
+  connectedCallback() {
+    this.textContent = 'Retargeting observation';
+  }
+});
+document.getElementById("demo").innerHTML = "<ex040-el></ex040-el>";
+document.getElementById("out").textContent = 'Compare e.target outside vs inside.';
+  </script>
+</body>
+</html>

@@ -1,0 +1,452 @@
+[
+  {
+    "type": "example",
+    "file": "34-advanced/04-ai-design-systems/examples/01-primitive-tokens.html",
+    "focus": "primitive tokens",
+    "scenario": "product SaaS"
+  },
+  {
+    "type": "example",
+    "file": "34-advanced/04-ai-design-systems/examples/02-semantic-tokens.html",
+    "focus": "semantic tokens",
+    "scenario": "multi-brand retail"
+  },
+  {
+    "type": "example",
+    "file": "34-advanced/04-ai-design-systems/examples/03-component-tokens.html",
+    "focus": "component tokens",
+    "scenario": "enterprise portal"
+  },
+  {
+    "type": "example",
+    "file": "34-advanced/04-ai-design-systems/examples/04-color-palette.html",
+    "focus": "color palette",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "example",
+    "file": "34-advanced/04-ai-design-systems/examples/05-type-scale.html",
+    "focus": "type scale",
+    "scenario": "mobile web"
+  },
+  {
+    "type": "example",
+    "file": "34-advanced/04-ai-design-systems/examples/06-spacing-scale.html",
+    "focus": "spacing scale",
+    "scenario": "component library"
+  },
+  {
+    "type": "example",
+    "file": "34-advanced/04-ai-design-systems/examples/07-button-variants.html",
+    "focus": "button variants",
+    "scenario": "docs portal"
+  },
+  {
+    "type": "example",
+    "file": "34-advanced/04-ai-design-systems/examples/08-form-field.html",
+    "focus": "form field",
+    "scenario": "admin console"
+  },
+  {
+    "type": "example",
+    "file": "34-advanced/04-ai-design-systems/examples/09-focus-ring.html",
+    "focus": "focus ring",
+    "scenario": "checkout flow"
+  },
+  {
+    "type": "example",
+    "file": "34-advanced/04-ai-design-systems/examples/10-dark-theme.html",
+    "focus": "dark theme",
+    "scenario": "design ops team"
+  },
+  {
+    "type": "example",
+    "file": "34-advanced/04-ai-design-systems/examples/11-storybook-story.html",
+    "focus": "storybook story",
+    "scenario": "product SaaS"
+  },
+  {
+    "type": "example",
+    "file": "34-advanced/04-ai-design-systems/examples/12-figma-variables.html",
+    "focus": "figma variables",
+    "scenario": "multi-brand retail"
+  },
+  {
+    "type": "example",
+    "file": "34-advanced/04-ai-design-systems/examples/13-css-variables.html",
+    "focus": "css variables",
+    "scenario": "enterprise portal"
+  },
+  {
+    "type": "example",
+    "file": "34-advanced/04-ai-design-systems/examples/14-theme-provider.html",
+    "focus": "theme provider",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "example",
+    "file": "34-advanced/04-ai-design-systems/examples/15-rtl-support.html",
+    "focus": "rtl support",
+    "scenario": "mobile web"
+  },
+  {
+    "type": "example",
+    "file": "34-advanced/04-ai-design-systems/examples/16-a11y-contrast.html",
+    "focus": "a11y contrast",
+    "scenario": "component library"
+  },
+  {
+    "type": "example",
+    "file": "34-advanced/04-ai-design-systems/examples/17-reduced-motion.html",
+    "focus": "reduced motion",
+    "scenario": "docs portal"
+  },
+  {
+    "type": "example",
+    "file": "34-advanced/04-ai-design-systems/examples/18-npm-package.html",
+    "focus": "npm package",
+    "scenario": "admin console"
+  },
+  {
+    "type": "example",
+    "file": "34-advanced/04-ai-design-systems/examples/19-semver-release.html",
+    "focus": "semver release",
+    "scenario": "checkout flow"
+  },
+  {
+    "type": "example",
+    "file": "34-advanced/04-ai-design-systems/examples/20-deprecation-note.html",
+    "focus": "deprecation note",
+    "scenario": "design ops team"
+  },
+  {
+    "type": "example",
+    "file": "34-advanced/04-ai-design-systems/examples/21-visual-regression.html",
+    "focus": "visual regression",
+    "scenario": "product SaaS"
+  },
+  {
+    "type": "example",
+    "file": "34-advanced/04-ai-design-systems/examples/22-adoption-metric.html",
+    "focus": "adoption metric",
+    "scenario": "multi-brand retail"
+  },
+  {
+    "type": "example",
+    "file": "34-advanced/04-ai-design-systems/examples/23-token-naming.html",
+    "focus": "token naming",
+    "scenario": "enterprise portal"
+  },
+  {
+    "type": "example",
+    "file": "34-advanced/04-ai-design-systems/examples/24-composition-api.html",
+    "focus": "composition api",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "example",
+    "file": "34-advanced/04-ai-design-systems/examples/25-best-practice-recap.html",
+    "focus": "best practice recap",
+    "scenario": "mobile web"
+  },
+  {
+    "type": "exercise",
+    "file": "34-advanced/04-ai-design-systems/exercises/01-define-color-tokens.html",
+    "focus": "define color tokens",
+    "scenario": "product SaaS"
+  },
+  {
+    "type": "exercise",
+    "file": "34-advanced/04-ai-design-systems/exercises/02-semantic-alias.html",
+    "focus": "semantic alias",
+    "scenario": "multi-brand retail"
+  },
+  {
+    "type": "exercise",
+    "file": "34-advanced/04-ai-design-systems/exercises/03-space-scale.html",
+    "focus": "space scale",
+    "scenario": "enterprise portal"
+  },
+  {
+    "type": "exercise",
+    "file": "34-advanced/04-ai-design-systems/exercises/04-button-css.html",
+    "focus": "button css",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "exercise",
+    "file": "34-advanced/04-ai-design-systems/exercises/05-input-states.html",
+    "focus": "input states",
+    "scenario": "mobile web"
+  },
+  {
+    "type": "exercise",
+    "file": "34-advanced/04-ai-design-systems/exercises/06-focus-visible.html",
+    "focus": "focus visible",
+    "scenario": "component library"
+  },
+  {
+    "type": "exercise",
+    "file": "34-advanced/04-ai-design-systems/exercises/07-dark-mode-vars.html",
+    "focus": "dark mode vars",
+    "scenario": "docs portal"
+  },
+  {
+    "type": "exercise",
+    "file": "34-advanced/04-ai-design-systems/exercises/08-story-args.html",
+    "focus": "story args",
+    "scenario": "admin console"
+  },
+  {
+    "type": "exercise",
+    "file": "34-advanced/04-ai-design-systems/exercises/09-docs-mdx.html",
+    "focus": "docs mdx",
+    "scenario": "checkout flow"
+  },
+  {
+    "type": "exercise",
+    "file": "34-advanced/04-ai-design-systems/exercises/10-wcag-contrast.html",
+    "focus": "wcag contrast",
+    "scenario": "design ops team"
+  },
+  {
+    "type": "exercise",
+    "file": "34-advanced/04-ai-design-systems/exercises/11-keyboard-modal.html",
+    "focus": "keyboard modal",
+    "scenario": "product SaaS"
+  },
+  {
+    "type": "exercise",
+    "file": "34-advanced/04-ai-design-systems/exercises/12-rtl-dir.html",
+    "focus": "rtl dir",
+    "scenario": "multi-brand retail"
+  },
+  {
+    "type": "exercise",
+    "file": "34-advanced/04-ai-design-systems/exercises/13-prefers-reduced.html",
+    "focus": "prefers reduced",
+    "scenario": "enterprise portal"
+  },
+  {
+    "type": "exercise",
+    "file": "34-advanced/04-ai-design-systems/exercises/14-theme-switch.html",
+    "focus": "theme switch",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "exercise",
+    "file": "34-advanced/04-ai-design-systems/exercises/15-publish-package.html",
+    "focus": "publish package",
+    "scenario": "mobile web"
+  },
+  {
+    "type": "exercise",
+    "file": "34-advanced/04-ai-design-systems/exercises/16-changelog-entry.html",
+    "focus": "changelog entry",
+    "scenario": "component library"
+  },
+  {
+    "type": "exercise",
+    "file": "34-advanced/04-ai-design-systems/exercises/17-deprecate-prop.html",
+    "focus": "deprecate prop",
+    "scenario": "docs portal"
+  },
+  {
+    "type": "exercise",
+    "file": "34-advanced/04-ai-design-systems/exercises/18-axe-test.html",
+    "focus": "axe test",
+    "scenario": "admin console"
+  },
+  {
+    "type": "exercise",
+    "file": "34-advanced/04-ai-design-systems/exercises/19-visual-snapshot.html",
+    "focus": "visual snapshot",
+    "scenario": "checkout flow"
+  },
+  {
+    "type": "exercise",
+    "file": "34-advanced/04-ai-design-systems/exercises/20-token-json.html",
+    "focus": "token json",
+    "scenario": "design ops team"
+  },
+  {
+    "type": "exercise",
+    "file": "34-advanced/04-ai-design-systems/exercises/21-css-parts.html",
+    "focus": "css parts",
+    "scenario": "product SaaS"
+  },
+  {
+    "type": "exercise",
+    "file": "34-advanced/04-ai-design-systems/exercises/22-react-button.html",
+    "focus": "react button",
+    "scenario": "multi-brand retail"
+  },
+  {
+    "type": "exercise",
+    "file": "34-advanced/04-ai-design-systems/exercises/23-lit-component.html",
+    "focus": "lit component",
+    "scenario": "enterprise portal"
+  },
+  {
+    "type": "exercise",
+    "file": "34-advanced/04-ai-design-systems/exercises/24-governance-rfc.html",
+    "focus": "governance rfc",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "exercise",
+    "file": "34-advanced/04-ai-design-systems/exercises/25-final-challenge.html",
+    "focus": "final challenge",
+    "scenario": "mobile web"
+  },
+  {
+    "type": "template",
+    "file": "34-advanced/04-ai-design-systems/templates/01-token-package.html",
+    "focus": "token package",
+    "scenario": "product SaaS"
+  },
+  {
+    "type": "template",
+    "file": "34-advanced/04-ai-design-systems/templates/02-button-library.html",
+    "focus": "button library",
+    "scenario": "multi-brand retail"
+  },
+  {
+    "type": "template",
+    "file": "34-advanced/04-ai-design-systems/templates/03-form-kit.html",
+    "focus": "form kit",
+    "scenario": "enterprise portal"
+  },
+  {
+    "type": "template",
+    "file": "34-advanced/04-ai-design-systems/templates/04-nav-shell.html",
+    "focus": "nav shell",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "template",
+    "file": "34-advanced/04-ai-design-systems/templates/05-modal-system.html",
+    "focus": "modal system",
+    "scenario": "mobile web"
+  },
+  {
+    "type": "template",
+    "file": "34-advanced/04-ai-design-systems/templates/06-theme-provider.html",
+    "focus": "theme provider",
+    "scenario": "component library"
+  },
+  {
+    "type": "template",
+    "file": "34-advanced/04-ai-design-systems/templates/07-storybook-ds.html",
+    "focus": "storybook ds",
+    "scenario": "docs portal"
+  },
+  {
+    "type": "template",
+    "file": "34-advanced/04-ai-design-systems/templates/08-figma-sync.html",
+    "focus": "figma sync",
+    "scenario": "admin console"
+  },
+  {
+    "type": "template",
+    "file": "34-advanced/04-ai-design-systems/templates/09-react-ds.html",
+    "focus": "react ds",
+    "scenario": "checkout flow"
+  },
+  {
+    "type": "template",
+    "file": "34-advanced/04-ai-design-systems/templates/10-web-components-ds.html",
+    "focus": "web components ds",
+    "scenario": "design ops team"
+  },
+  {
+    "type": "template",
+    "file": "34-advanced/04-ai-design-systems/templates/11-sass-tokens.html",
+    "focus": "sass tokens",
+    "scenario": "product SaaS"
+  },
+  {
+    "type": "template",
+    "file": "34-advanced/04-ai-design-systems/templates/12-multi-brand.html",
+    "focus": "multi brand",
+    "scenario": "multi-brand retail"
+  },
+  {
+    "type": "template",
+    "file": "34-advanced/04-ai-design-systems/templates/13-docs-site.html",
+    "focus": "docs site",
+    "scenario": "enterprise portal"
+  },
+  {
+    "type": "template",
+    "file": "34-advanced/04-ai-design-systems/templates/14-monorepo-packages.html",
+    "focus": "monorepo packages",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "template",
+    "file": "34-advanced/04-ai-design-systems/templates/15-release-pipeline.html",
+    "focus": "release pipeline",
+    "scenario": "mobile web"
+  },
+  {
+    "type": "template",
+    "file": "34-advanced/04-ai-design-systems/templates/16-a11y-checklist.html",
+    "focus": "a11y checklist",
+    "scenario": "component library"
+  },
+  {
+    "type": "template",
+    "file": "34-advanced/04-ai-design-systems/templates/17-visual-tests.html",
+    "focus": "visual tests",
+    "scenario": "docs portal"
+  },
+  {
+    "type": "template",
+    "file": "34-advanced/04-ai-design-systems/templates/18-adoption-kit.html",
+    "focus": "adoption kit",
+    "scenario": "admin console"
+  },
+  {
+    "type": "template",
+    "file": "34-advanced/04-ai-design-systems/templates/19-enterprise-scale.html",
+    "focus": "enterprise scale",
+    "scenario": "checkout flow"
+  },
+  {
+    "type": "template",
+    "file": "34-advanced/04-ai-design-systems/templates/20-analytics.html",
+    "focus": "analytics",
+    "scenario": "design ops team"
+  },
+  {
+    "type": "template",
+    "file": "34-advanced/04-ai-design-systems/templates/21-generator-plop.html",
+    "focus": "generator plop",
+    "scenario": "product SaaS"
+  },
+  {
+    "type": "template",
+    "file": "34-advanced/04-ai-design-systems/templates/22-css-variables.html",
+    "focus": "css variables",
+    "scenario": "multi-brand retail"
+  },
+  {
+    "type": "template",
+    "file": "34-advanced/04-ai-design-systems/templates/23-dark-mode.html",
+    "focus": "dark mode",
+    "scenario": "enterprise portal"
+  },
+  {
+    "type": "template",
+    "file": "34-advanced/04-ai-design-systems/templates/24-icon-set.html",
+    "focus": "icon set",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "template",
+    "file": "34-advanced/04-ai-design-systems/templates/25-production-starter.html",
+    "focus": "production starter",
+    "scenario": "mobile web"
+  }
+]

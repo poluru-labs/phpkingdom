@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 23-Promises-Examples
+  example: 10-error-in-then.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>10 — Throw Inside then | phpkingdom.com</title>
+</head>
+<body>
+  <h1>10 — Throw Inside then</h1>
+  <h2>Problem</h2>
+  <p>Throwing in then rejects the returned promise.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+Promise.resolve(1)
+  .then(() => {
+    throw new Error("boom");
+  })
+  .catch((err) => {
+    document.getElementById("out").textContent = "caught: " + err.message;
+  });
+  </script>
+</body>
+</html>

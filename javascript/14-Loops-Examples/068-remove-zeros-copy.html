@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 068-remove-zeros-copy.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>068 — Copy Without Zeros | phpkingdom.com</title>
+</head>
+<body>
+  <h1>068 — Copy Without Zeros</h1>
+  <h2>Problem</h2>
+  <p>Build a new array skipping zeros (loop).</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const nums = [0, 1, 0, 3, 12];
+const out = [];
+for (const x of nums) if (x !== 0) out.push(x);
+document.getElementById("out").textContent = out.join(", ");
+  </script>
+</body>
+</html>

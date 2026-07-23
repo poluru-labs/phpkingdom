@@ -1,0 +1,41 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 24-API-Examples
+  example: 26-error-body.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>26 — Parse API Error Body | phpkingdom.com</title>
+</head>
+<body>
+  <h1>26 — Parse API Error Body</h1>
+  <h2>Problem</h2>
+  <p>Read JSON error payloads from failed responses.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+async function readError(res) {
+  try {
+    const data = await res.json();
+    return data.message || data.error || JSON.stringify(data);
+  } catch {
+    return res.statusText || "Request failed";
+  }
+}
+const res = {
+  statusText: "Bad Request",
+  json: async () => ({ message: "Email is required" })
+};
+readError(res).then((msg) => {
+  document.getElementById("out").textContent = msg;
+});
+  </script>
+</body>
+</html>

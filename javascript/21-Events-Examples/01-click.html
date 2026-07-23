@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 21-Events-Examples
+  example: 01-click.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>01 — Click Event | phpkingdom.com</title>
+</head>
+<body>
+  <h1>01 — Click Event</h1>
+  <h2>Problem</h2>
+  <p>Count button clicks with addEventListener('click').</p>
+  <h2>Demo</h2>
+  <button id="btn">Click me</button>
+  <pre id="out">clicks: 0</pre>
+  <script>
+let n = 0;
+document.getElementById("btn").addEventListener("click", () => {
+  n += 1;
+  document.getElementById("out").textContent = "clicks: " + n;
+});
+  </script>
+</body>
+</html>

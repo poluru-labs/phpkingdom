@@ -1,0 +1,39 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 26-Date-Time-Examples
+  example: 36-is-same-day.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>36 — Is Same Day | phpkingdom.com</title>
+</head>
+<body>
+  <h1>36 — Is Same Day</h1>
+  <h2>Problem</h2>
+  <p>Check if two dates fall on the same local calendar day.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+
+function isSameDay(a, b) {
+  return a.getFullYear() === b.getFullYear() &&
+    a.getMonth() === b.getMonth() &&
+    a.getDate() === b.getDate();
+}
+const morning = new Date(2024, 0, 15, 8, 0, 0);
+const evening = new Date(2024, 0, 15, 20, 0, 0);
+const next = new Date(2024, 0, 16);
+document.getElementById("out").textContent =
+  "Morning vs evening: " + isSameDay(morning, evening) + "\n" +
+  "Morning vs next day: " + isSameDay(morning, next);
+
+  </script>
+</body>
+</html>

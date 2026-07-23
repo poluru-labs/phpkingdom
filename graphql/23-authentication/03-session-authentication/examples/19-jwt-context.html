@@ -1,0 +1,117 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: GraphQL with Node.js Tutorials
+section title: Authentication
+topic title: Session Authentication
+content type: Example
+item number: 19
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Session Authentication Example 19 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #fce7f3;
+      color: #9d174d;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Example 19</span>
+    <h1>Session Authentication</h1>
+    <p><strong>Section:</strong> Authentication</p>
+    <p><strong>Focus:</strong> Jwt Context</p>
+    <p><strong>Scenario:</strong> content CMS</p>
+    <p>Study the GraphQL schema/resolver pattern and adapt it to your API.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>GraphQL (Node.js)</h2>
+        <pre><code>// Session Authentication — Example 19
+// Focus: jwt context | Scenario: content CMS
+
+const resolvers = {
+  Query: {
+    me: (_p, _a, { req }) =&gt; {
+      if (!req.session?.userId) return null;
+      return db.users.findById(req.session.userId);
+    },
+  },
+};</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Session Authentication
+- Practice: jwt context
+- Scenario: content CMS
+- Keep resolvers thin; push logic into services
+- Use DataLoader to avoid N+1 nested queries
+- Put authz checks in context / field resolvers / directives
+- Prefer non-null carefully; return typed GraphQLError codes
+- Limit depth/complexity; deprecate before breaking changes
+
+Useful commands:
+  npm install @apollo/server graphql
+  npm install graphql-yoga  # alternative
+  node server.mjs
+  # query in Playground / Apollo Sandbox</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This example shows one way to apply <strong>Session Authentication</strong> in a content cms context.</p>
+      <p>Evolve schemas with deprecations, protect against expensive queries, and batch nested loads with DataLoader.</p>
+    </section>
+  </main>
+</body>
+</html>

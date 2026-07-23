@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 02-Core-Concepts/02-let-const-var
+  example: 03-var-vs-let.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>var vs let | phpkingdom.com</title>
+</head>
+<body>
+  <h1>var vs let Scope</h1>
+  <p>var is function-scoped; let is block-scoped.</p>
+  <pre id="out"></pre>
+  <script>
+var msg = "";
+if (true) {
+  var a = "var leaks";
+  let b = "let stays";
+  msg += a + "\n";
+}
+msg += "a outside=" + a + "\n";
+try { msg += b; } catch (e) { msg += "b outside throws"; }
+document.getElementById("out").textContent = msg;
+  </script>
+</body>
+</html>

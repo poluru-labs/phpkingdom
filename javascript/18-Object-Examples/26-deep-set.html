@@ -1,0 +1,39 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 18-Object-Examples
+  example: 26-deep-set.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>26 — Deep Set by Path | phpkingdom.com</title>
+</head>
+<body>
+  <h1>26 — Deep Set by Path</h1>
+  <h2>Problem</h2>
+  <p>Set a nested value using a dotted path string.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function deepSet(obj, path, value) {
+  const keys = path.split(".");
+  let cur = obj;
+  keys.slice(0, -1).forEach((k) => {
+    if (!cur[k] || typeof cur[k] !== "object") cur[k] = {};
+    cur = cur[k];
+  });
+  cur[keys[keys.length - 1]] = value;
+  return obj;
+}
+const data = {};
+deepSet(data, "user.profile.city", "Austin");
+document.getElementById("out").textContent = JSON.stringify(data);
+  </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 30-Data-Structures-Examples
+  example: 03-parentheses-check.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>03 — Valid Parentheses | phpkingdom.com</title>
+</head>
+<body>
+  <h1>03 — Valid Parentheses</h1>
+  <h2>Problem</h2>
+  <p>Use a stack to check if brackets (), [], {} are balanced.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function isValid(s) {
+  const pairs = { ")": "(", "]": "[", "}": "{" };
+  const stack = [];
+  for (const ch of s) {
+    if ("([{".includes(ch)) stack.push(ch);
+    else if (")]}".includes(ch)) {
+      if (stack.pop() !== pairs[ch]) return false;
+    }
+  }
+  return stack.length === 0;
+}
+const tests = ["()", "()[]{}", "(]", "([{}])", "{[()]}"];
+document.getElementById("out").textContent = tests.map(t => t + " => " + isValid(t)).join("\n");
+  </script>
+</body>
+</html>

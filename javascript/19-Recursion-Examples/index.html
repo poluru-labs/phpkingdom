@@ -1,0 +1,44 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 19-Recursion-Examples
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>19-Recursion-Examples | phpkingdom.com</title>
+  <style>
+    body { font-family: Georgia, "Times New Roman", serif; max-width: 760px; margin: 2rem auto; padding: 0 1.25rem; line-height: 1.6; color: #1a1a1a; }
+    h1 { font-size: 1.75rem; margin-bottom: 0.35rem; }
+    .meta { color: #555; font-size: 0.95rem; margin-bottom: 1.25rem; }
+    .note { background: #f0f7fb; padding: 0.75rem 1rem; border-left: 3px solid #0f766e; margin: 1rem 0; }
+    .demo { margin: 1rem 0; padding: 1rem; border: 1px dashed #94a3b8; }
+    pre, code { font-family: ui-monospace, Menlo, monospace; }
+    pre { background: #111827; color: #e5e7eb; padding: 0.85rem 1rem; overflow: auto; }
+    button, input, select, textarea { font: inherit; padding: 0.4rem 0.55rem; }
+    button { cursor: pointer; background: #0f766e; color: #fff; border: 0; padding: 0.55rem 1rem; }
+    #out { white-space: pre-wrap; background: #f4f4f4; padding: 0.75rem; min-height: 2rem; }
+    a { color: #0f766e; }
+    footer { border-top: 1px solid #ccc; padding-top: 1rem; margin-top: 2rem; color: #555; font-size: 0.95rem; }
+
+    .brand { color:#0f766e; font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    ol { line-height: 1.75; }
+  </style>
+</head>
+<body>
+  <div class="brand">phpkingdom.com</div>
+  <h1>19-Recursion-Examples</h1>
+  <p class="meta">50 examples. Minimal HTML — focus on the script.</p>
+  <p><a href="../index.html">← JavaScript Tutorials</a></p>
+  <ol><li><a href="01-countdown.html">01 — Countdown</a></li><li><a href="02-factorial.html">02 — Factorial</a></li><li><a href="03-fibonacci.html">03 — Fibonacci</a></li><li><a href="04-sum-array.html">04 — Sum Array</a></li><li><a href="05-reverse-string.html">05 — Reverse String</a></li><li><a href="06-palindrome.html">06 — Palindrome Check</a></li><li><a href="07-flatten-array.html">07 — Flatten Array</a></li><li><a href="08-binary-search.html">08 — Binary Search</a></li><li><a href="09-tree-preorder.html">09 — Tree Preorder Walk</a></li><li><a href="10-tree-inorder.html">10 — Tree Inorder Walk</a></li><li><a href="11-tree-postorder.html">11 — Tree Postorder Walk</a></li><li><a href="12-tree-depth.html">12 — Tree Depth</a></li><li><a href="13-tree-sum.html">13 — Tree Sum</a></li><li><a href="14-tree-count.html">14 — Tree Count Nodes</a></li><li><a href="15-linked-list-length.html">15 — Linked List Length</a></li><li><a href="16-permutations.html">16 — Permutations</a></li><li><a href="17-combinations.html">17 — Combinations</a></li><li><a href="18-subsets.html">18 — Subsets</a></li><li><a href="19-nested-object-walk.html">19 — Nested Object Walk</a></li><li><a href="20-deep-clone.html">20 — Deep Clone</a></li><li><a href="21-towers-of-hanoi.html">21 — Towers of Hanoi</a></li><li><a href="22-generate-parentheses.html">22 — Generate Parentheses</a></li><li><a href="23-phone-letter-combos.html">23 — Phone Letter Combos</a></li><li><a href="24-maze-grid-paths.html">24 — Maze Grid Paths</a></li><li><a href="25-mutual-recursion.html">25 — Mutual Recursion</a></li><li><a href="26-power.html">26 — Power x^n</a></li><li><a href="27-gcd.html">27 — GCD (Euclid)</a></li><li><a href="28-sum-digits.html">28 — Sum of Digits</a></li><li><a href="29-count-digits.html">29 — Count Digits</a></li><li><a href="30-reverse-number.html">30 — Reverse Number</a></li><li><a href="31-print-1-to-n.html">31 — Print 1 to n</a></li><li><a href="32-array-max.html">32 — Array Maximum</a></li><li><a href="33-array-includes.html">33 — Array Includes</a></li><li><a href="34-string-includes.html">34 — String Includes</a></li><li><a href="35-climb-stairs.html">35 — Climb Stairs</a></li><li><a href="36-coin-change-ways.html">36 — Coin Change Ways</a></li><li><a href="37-merge-sort-intro.html">37 — Merge Sort Intro</a></li><li><a href="38-quicksort-intro.html">38 — Quicksort Intro</a></li><li><a href="39-binary-to-decimal.html">39 — Binary to Decimal</a></li><li><a href="40-decimal-to-binary.html">40 — Decimal to Binary</a></li><li><a href="41-tree-find-value.html">41 — Tree Find Value</a></li><li><a href="42-tree-find-max.html">42 — Tree Find Max</a></li><li><a href="43-list-reverse.html">43 — Reverse Linked List</a></li><li><a href="44-directory-walk.html">44 — Directory Walk</a></li><li><a href="45-json-stringify-simple.html">45 — JSON Stringify Simple</a></li><li><a href="46-rod-cutting.html">46 — Rod Cutting</a></li><li><a href="47-n-queens-count.html">47 — N-Queens Count</a></li><li><a href="48-is-power-of-two.html">48 — Is Power of Two</a></li><li><a href="49-all-paths-in-tree.html">49 — All Root-to-Leaf Paths</a></li><li><a href="50-recursion-checklist.html">50 — Recursion Checklist</a></li></ol>
+  <footer>
+    <p>&copy; 2026 phpkingdom.com · Subrahmanyam Poluru · <a href="https://polurus.com">polurus.com</a></p>
+  </footer>
+</body>
+</html>

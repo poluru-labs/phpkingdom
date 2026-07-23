@@ -1,0 +1,120 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: React Tutorials
+section title: Core Concepts
+topic title: React State
+content type: Exercise
+item number: 13
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>React State Exercise 13 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ffedd5;
+      color: #9a3412;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Exercise 13</span>
+    <h1>React State</h1>
+    <p><strong>Section:</strong> Core Concepts</p>
+    <p><strong>Focus:</strong> Useref</p>
+    <p><strong>Scenario:</strong> todo app</p>
+    <p>Implement the focus in a Vite + React project and verify in the browser.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>React</h2>
+        <pre><code>// React State — Exercise 13
+// Focus: useRef | Scenario: todo app
+
+import { useState } from &quot;react&quot;;
+
+export default function Counter() {
+  const [count, setCount] = useState(0);
+  return (
+    &lt;button onClick={() =&gt; setCount((c) =&gt; c + 1)}&gt;
+      Count: {count}
+    &lt;/button&gt;
+  );
+}</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for React State
+- Practice: useRef
+- Scenario: todo app
+- Prefer function components + Hooks over class components
+- Keep state local; lift only when siblings need to share
+- Keys must be stable and unique among siblings
+- Effects: declare dependencies; clean up subscriptions/timers
+- For shared UI state: Context / Zustand / Redux; for server state: React Query
+
+Useful commands:
+  npm create vite@latest my-app -- --template react
+  npm install
+  npm run dev
+  npm run build
+  npm run test</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This exercise focuses on <strong>React State</strong> in a todo app context.</p>
+      <p>Prefer function components and Hooks, keep components focused, and choose the right state layer for UI vs server data.</p>
+    </section>
+  </main>
+</body>
+</html>

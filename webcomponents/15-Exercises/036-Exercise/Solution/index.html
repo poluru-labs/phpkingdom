@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/036-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 036 — Fallback slot content — Solution | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>Exercise 036 — Fallback slot content — Solution</h1>
+  <p class="meta">Show fallback when nothing slotted.</p>
+  <h2>Solution</h2>
+  <p>Show fallback when nothing slotted.</p>
+  <div id="demo"></div>
+  <pre id="out"></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+customElements.define("ex036-el", class extends HTMLElement {
+  connectedCallback() {
+    this.textContent = 'Fallback slot content';
+  }
+});
+document.getElementById("demo").innerHTML = "<ex036-el></ex036-el>";
+document.getElementById("out").textContent = 'Show fallback when nothing slotted.';
+  </script>
+</body>
+</html>

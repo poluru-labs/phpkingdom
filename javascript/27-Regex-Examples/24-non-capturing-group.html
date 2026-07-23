@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 27-Regex-Examples
+  example: 24-non-capturing-group.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>24 — Non-Capturing Group (?:) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>24 — Non-Capturing Group (?:)</h1>
+  <h2>Problem</h2>
+  <p>Group without capturing using (?:...) to keep match indices clean.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const text = "http https ftp";
+const withCap = /(https?):\/\/(\w+)/.exec("https://site.com");
+const nonCap = /(?:https?):\/\/(\w+)/.exec("https://site.com");
+document.getElementById("out").textContent =
+  "capturing groups:   " + withCap.length + " items\n" +
+  "non-capturing host: " + nonCap[1];
+  </script>
+</body>
+</html>

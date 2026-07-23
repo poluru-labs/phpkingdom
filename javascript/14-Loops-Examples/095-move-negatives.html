@@ -1,0 +1,35 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 095-move-negatives.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>095 — Move Negatives Left | phpkingdom.com</title>
+</head>
+<body>
+  <h1>095 — Move Negatives Left</h1>
+  <h2>Problem</h2>
+  <p>Partition negatives to the left with two pointers / swaps.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const arr = [1, -2, 3, -4, 5, -6];
+let left = 0;
+for (let i = 0; i < arr.length; i++) {
+  if (arr[i] < 0) {
+    const t = arr[left]; arr[left] = arr[i]; arr[i] = t;
+    left++;
+  }
+}
+document.getElementById("out").textContent = arr.join(", ");
+  </script>
+</body>
+</html>

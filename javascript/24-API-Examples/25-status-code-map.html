@@ -1,0 +1,41 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 24-API-Examples
+  example: 25-status-code-map.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>25 — Map Status Codes | phpkingdom.com</title>
+</head>
+<body>
+  <h1>25 — Map Status Codes</h1>
+  <h2>Problem</h2>
+  <p>Translate common HTTP status codes to messages.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function statusMessage(code) {
+  const map = {
+    200: "OK",
+    201: "Created",
+    204: "No Content",
+    400: "Bad Request",
+    401: "Unauthorized",
+    403: "Forbidden",
+    404: "Not Found",
+    500: "Server Error"
+  };
+  return map[code] || "Unknown";
+}
+document.getElementById("out").textContent =
+  [200, 201, 404, 500].map((c) => c + "=" + statusMessage(c)).join("\n");
+  </script>
+</body>
+</html>

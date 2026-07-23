@@ -1,0 +1,43 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 25-Error-Handling-Examples
+  example: 23-cleanup-finally.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>23 — Cleanup in Finally | phpkingdom.com</title>
+</head>
+<body>
+  <h1>23 — Cleanup in Finally</h1>
+  <h2>Problem</h2>
+  <p>Use finally to release resources even after errors.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const out = document.getElementById("out");
+const log = [];
+function useResource() {
+  log.push("open resource");
+  try {
+    log.push("work");
+    throw new Error("work failed");
+  } finally {
+    log.push("close resource");
+  }
+}
+try {
+  useResource();
+} catch (e) {
+  log.push("handled: " + e.message);
+}
+out.textContent = log.join("\n");
+  </script>
+</body>
+</html>

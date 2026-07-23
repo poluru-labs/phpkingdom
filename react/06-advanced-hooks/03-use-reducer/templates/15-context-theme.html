@@ -1,0 +1,133 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: React Tutorials
+section title: Advanced Hooks
+topic title: useReducer Hook
+content type: Template
+item number: 15
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>useReducer Hook Template 15 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ffedd5;
+      color: #9a3412;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Template 15</span>
+    <h1>useReducer Hook</h1>
+    <p><strong>Section:</strong> Advanced Hooks</p>
+    <p><strong>Focus:</strong> Context Theme</p>
+    <p><strong>Scenario:</strong> blog platform</p>
+    <p>Use this scaffold as a starting point for a React feature or page.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>React</h2>
+        <pre><code>// useReducer Hook — Template 15
+// Focus: context theme | Scenario: blog platform
+
+import { useReducer } from &quot;react&quot;;
+
+function reducer(state, action) {
+  switch (action.type) {
+    case &quot;increment&quot;:
+      return { count: state.count + 1 };
+    case &quot;reset&quot;:
+      return { count: 0 };
+    default:
+      return state;
+  }
+}
+
+export default function Counter() {
+  const [state, dispatch] = useReducer(reducer, { count: 0 });
+  return (
+    &lt;&gt;
+      &lt;p&gt;{state.count}&lt;/p&gt;
+      &lt;button onClick={() =&gt; dispatch({ type: &quot;increment&quot; })}&gt;+1&lt;/button&gt;
+      &lt;button onClick={() =&gt; dispatch({ type: &quot;reset&quot; })}&gt;Reset&lt;/button&gt;
+    &lt;/&gt;
+  );
+}</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for useReducer Hook
+- Practice: context theme
+- Scenario: blog platform
+- Prefer function components + Hooks over class components
+- Keep state local; lift only when siblings need to share
+- Keys must be stable and unique among siblings
+- Effects: declare dependencies; clean up subscriptions/timers
+- For shared UI state: Context / Zustand / Redux; for server state: React Query
+
+Useful commands:
+  npm create vite@latest my-app -- --template react
+  npm install
+  npm run dev
+  npm run build
+  npm run test</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This template focuses on <strong>useReducer Hook</strong> in a blog platform context.</p>
+      <p>Prefer function components and Hooks, keep components focused, and choose the right state layer for UI vs server data.</p>
+    </section>
+  </main>
+</body>
+</html>

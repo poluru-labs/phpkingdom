@@ -1,0 +1,43 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 16-Array-Examples
+  example: 45-trap-rain-water.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>45 — Trapping Rain Water | phpkingdom.com</title>
+</head>
+<body>
+  <h1>45 — Trapping Rain Water</h1>
+  <h2>Problem</h2>
+  <p>Compute how much water can be trapped.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function trap(height) {
+  let left = 0, right = height.length - 1;
+  let leftMax = 0, rightMax = 0, water = 0;
+  while (left < right) {
+    if (height[left] < height[right]) {
+      leftMax = Math.max(leftMax, height[left]);
+      water += leftMax - height[left];
+      left++;
+    } else {
+      rightMax = Math.max(rightMax, height[right]);
+      water += rightMax - height[right];
+      right--;
+    }
+  }
+  return water;
+}
+document.getElementById("out").textContent = String(trap([0,1,0,2,1,0,1,3,2,1,2,1]));
+  </script>
+</body>
+</html>

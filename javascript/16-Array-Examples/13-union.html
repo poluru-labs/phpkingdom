@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 16-Array-Examples
+  example: 13-union.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>13 — Array Union | phpkingdom.com</title>
+</head>
+<body>
+  <h1>13 — Array Union</h1>
+  <h2>Problem</h2>
+  <p>Combine two arrays into unique values.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function union(a, b) {
+  return [...new Set([...a, ...b])];
+}
+document.getElementById("out").textContent = union([1,2,3], [3,4,5]).join(", ");
+  </script>
+</body>
+</html>

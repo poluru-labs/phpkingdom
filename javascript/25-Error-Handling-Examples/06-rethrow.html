@@ -1,0 +1,40 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 25-Error-Handling-Examples
+  example: 06-rethrow.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>06 — Rethrow | phpkingdom.com</title>
+</head>
+<body>
+  <h1>06 — Rethrow</h1>
+  <h2>Problem</h2>
+  <p>Log locally, then rethrow so a caller can handle it.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const out = document.getElementById("out");
+function inner() {
+  try {
+    throw new Error("db timeout");
+  } catch (e) {
+    console.info("[demo] logged:", e.message);
+    throw e;
+  }
+}
+try {
+  inner();
+} catch (e) {
+  out.textContent = "outer caught: " + e.message;
+}
+  </script>
+</body>
+</html>

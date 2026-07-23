@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 25-Error-Handling-Examples
+  example: 09-optional-chaining.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>09 — Optional Chaining | phpkingdom.com</title>
+</head>
+<body>
+  <h1>09 — Optional Chaining</h1>
+  <h2>Problem</h2>
+  <p>Use ?. to avoid TypeError when a path may be missing.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const out = document.getElementById("out");
+const users = [{ profile: { city: "Austin" } }, {}];
+const cities = users.map(u => u?.profile?.city ?? "unknown");
+out.textContent = cities.join(", ");
+  </script>
+</body>
+</html>

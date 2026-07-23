@@ -1,0 +1,452 @@
+[
+  {
+    "type": "example",
+    "file": "10-authentication/05-oauth/examples/01-hello-world.html",
+    "focus": "hello world",
+    "scenario": "REST microservice"
+  },
+  {
+    "type": "example",
+    "file": "10-authentication/05-oauth/examples/02-read-file.html",
+    "focus": "read file",
+    "scenario": "CLI tool"
+  },
+  {
+    "type": "example",
+    "file": "10-authentication/05-oauth/examples/03-write-file.html",
+    "focus": "write file",
+    "scenario": "file processor"
+  },
+  {
+    "type": "example",
+    "file": "10-authentication/05-oauth/examples/04-path-join.html",
+    "focus": "path join",
+    "scenario": "auth API"
+  },
+  {
+    "type": "example",
+    "file": "10-authentication/05-oauth/examples/05-http-server.html",
+    "focus": "http server",
+    "scenario": "admin backend"
+  },
+  {
+    "type": "example",
+    "file": "10-authentication/05-oauth/examples/06-express-route.html",
+    "focus": "express route",
+    "scenario": "webhook receiver"
+  },
+  {
+    "type": "example",
+    "file": "10-authentication/05-oauth/examples/07-middleware.html",
+    "focus": "middleware",
+    "scenario": "batch job"
+  },
+  {
+    "type": "example",
+    "file": "10-authentication/05-oauth/examples/08-async-await.html",
+    "focus": "async await",
+    "scenario": "realtime API"
+  },
+  {
+    "type": "example",
+    "file": "10-authentication/05-oauth/examples/09-event-emitter.html",
+    "focus": "event emitter",
+    "scenario": "data sync"
+  },
+  {
+    "type": "example",
+    "file": "10-authentication/05-oauth/examples/10-stream-pipe.html",
+    "focus": "stream pipe",
+    "scenario": "public website API"
+  },
+  {
+    "type": "example",
+    "file": "10-authentication/05-oauth/examples/11-json-body.html",
+    "focus": "json body",
+    "scenario": "REST microservice"
+  },
+  {
+    "type": "example",
+    "file": "10-authentication/05-oauth/examples/12-crud-handler.html",
+    "focus": "crud handler",
+    "scenario": "CLI tool"
+  },
+  {
+    "type": "example",
+    "file": "10-authentication/05-oauth/examples/13-env-config.html",
+    "focus": "env config",
+    "scenario": "file processor"
+  },
+  {
+    "type": "example",
+    "file": "10-authentication/05-oauth/examples/14-jwt-auth.html",
+    "focus": "jwt auth",
+    "scenario": "auth API"
+  },
+  {
+    "type": "example",
+    "file": "10-authentication/05-oauth/examples/15-hash-password.html",
+    "focus": "hash password",
+    "scenario": "admin backend"
+  },
+  {
+    "type": "example",
+    "file": "10-authentication/05-oauth/examples/16-cors-helmet.html",
+    "focus": "cors helmet",
+    "scenario": "webhook receiver"
+  },
+  {
+    "type": "example",
+    "file": "10-authentication/05-oauth/examples/17-rate-limit.html",
+    "focus": "rate limit",
+    "scenario": "batch job"
+  },
+  {
+    "type": "example",
+    "file": "10-authentication/05-oauth/examples/18-mongoose-model.html",
+    "focus": "mongoose model",
+    "scenario": "realtime API"
+  },
+  {
+    "type": "example",
+    "file": "10-authentication/05-oauth/examples/19-pg-query.html",
+    "focus": "pg query",
+    "scenario": "data sync"
+  },
+  {
+    "type": "example",
+    "file": "10-authentication/05-oauth/examples/20-unit-test.html",
+    "focus": "unit test",
+    "scenario": "public website API"
+  },
+  {
+    "type": "example",
+    "file": "10-authentication/05-oauth/examples/21-logger.html",
+    "focus": "logger",
+    "scenario": "REST microservice"
+  },
+  {
+    "type": "example",
+    "file": "10-authentication/05-oauth/examples/22-worker-thread.html",
+    "focus": "worker thread",
+    "scenario": "CLI tool"
+  },
+  {
+    "type": "example",
+    "file": "10-authentication/05-oauth/examples/23-child-process.html",
+    "focus": "child process",
+    "scenario": "file processor"
+  },
+  {
+    "type": "example",
+    "file": "10-authentication/05-oauth/examples/24-cluster-fork.html",
+    "focus": "cluster fork",
+    "scenario": "auth API"
+  },
+  {
+    "type": "example",
+    "file": "10-authentication/05-oauth/examples/25-best-practice-recap.html",
+    "focus": "best practice recap",
+    "scenario": "admin backend"
+  },
+  {
+    "type": "exercise",
+    "file": "10-authentication/05-oauth/exercises/01-node-version.html",
+    "focus": "node version",
+    "scenario": "REST microservice"
+  },
+  {
+    "type": "exercise",
+    "file": "10-authentication/05-oauth/exercises/02-init-package.html",
+    "focus": "init package",
+    "scenario": "CLI tool"
+  },
+  {
+    "type": "exercise",
+    "file": "10-authentication/05-oauth/exercises/03-cjs-require.html",
+    "focus": "cjs require",
+    "scenario": "file processor"
+  },
+  {
+    "type": "exercise",
+    "file": "10-authentication/05-oauth/exercises/04-esm-import.html",
+    "focus": "esm import",
+    "scenario": "auth API"
+  },
+  {
+    "type": "exercise",
+    "file": "10-authentication/05-oauth/exercises/05-fs-promises.html",
+    "focus": "fs promises",
+    "scenario": "admin backend"
+  },
+  {
+    "type": "exercise",
+    "file": "10-authentication/05-oauth/exercises/06-create-server.html",
+    "focus": "create server",
+    "scenario": "webhook receiver"
+  },
+  {
+    "type": "exercise",
+    "file": "10-authentication/05-oauth/exercises/07-route-parse.html",
+    "focus": "route parse",
+    "scenario": "batch job"
+  },
+  {
+    "type": "exercise",
+    "file": "10-authentication/05-oauth/exercises/08-express-app.html",
+    "focus": "express app",
+    "scenario": "realtime API"
+  },
+  {
+    "type": "exercise",
+    "file": "10-authentication/05-oauth/exercises/09-error-middleware.html",
+    "focus": "error middleware",
+    "scenario": "data sync"
+  },
+  {
+    "type": "exercise",
+    "file": "10-authentication/05-oauth/exercises/10-validate-body.html",
+    "focus": "validate body",
+    "scenario": "public website API"
+  },
+  {
+    "type": "exercise",
+    "file": "10-authentication/05-oauth/exercises/11-jwt-sign.html",
+    "focus": "jwt sign",
+    "scenario": "REST microservice"
+  },
+  {
+    "type": "exercise",
+    "file": "10-authentication/05-oauth/exercises/12-bcrypt-hash.html",
+    "focus": "bcrypt hash",
+    "scenario": "CLI tool"
+  },
+  {
+    "type": "exercise",
+    "file": "10-authentication/05-oauth/exercises/13-dotenv-load.html",
+    "focus": "dotenv load",
+    "scenario": "file processor"
+  },
+  {
+    "type": "exercise",
+    "file": "10-authentication/05-oauth/exercises/14-supertest.html",
+    "focus": "supertest",
+    "scenario": "auth API"
+  },
+  {
+    "type": "exercise",
+    "file": "10-authentication/05-oauth/exercises/15-stream-copy.html",
+    "focus": "stream copy",
+    "scenario": "admin backend"
+  },
+  {
+    "type": "exercise",
+    "file": "10-authentication/05-oauth/exercises/16-event-once.html",
+    "focus": "event once",
+    "scenario": "webhook receiver"
+  },
+  {
+    "type": "exercise",
+    "file": "10-authentication/05-oauth/exercises/17-setimmediate.html",
+    "focus": "setImmediate",
+    "scenario": "batch job"
+  },
+  {
+    "type": "exercise",
+    "file": "10-authentication/05-oauth/exercises/18-path-resolve.html",
+    "focus": "path resolve",
+    "scenario": "realtime API"
+  },
+  {
+    "type": "exercise",
+    "file": "10-authentication/05-oauth/exercises/19-crypto-random.html",
+    "focus": "crypto random",
+    "scenario": "data sync"
+  },
+  {
+    "type": "exercise",
+    "file": "10-authentication/05-oauth/exercises/20-mongo-connect.html",
+    "focus": "mongo connect",
+    "scenario": "public website API"
+  },
+  {
+    "type": "exercise",
+    "file": "10-authentication/05-oauth/exercises/21-sql-param.html",
+    "focus": "sql param",
+    "scenario": "REST microservice"
+  },
+  {
+    "type": "exercise",
+    "file": "10-authentication/05-oauth/exercises/22-cors-setup.html",
+    "focus": "cors setup",
+    "scenario": "CLI tool"
+  },
+  {
+    "type": "exercise",
+    "file": "10-authentication/05-oauth/exercises/23-worker-pool.html",
+    "focus": "worker pool",
+    "scenario": "file processor"
+  },
+  {
+    "type": "exercise",
+    "file": "10-authentication/05-oauth/exercises/24-graceful-shutdown.html",
+    "focus": "graceful shutdown",
+    "scenario": "auth API"
+  },
+  {
+    "type": "exercise",
+    "file": "10-authentication/05-oauth/exercises/25-final-challenge.html",
+    "focus": "final challenge",
+    "scenario": "admin backend"
+  },
+  {
+    "type": "template",
+    "file": "10-authentication/05-oauth/templates/01-cli-script.html",
+    "focus": "cli script",
+    "scenario": "REST microservice"
+  },
+  {
+    "type": "template",
+    "file": "10-authentication/05-oauth/templates/02-http-api.html",
+    "focus": "http api",
+    "scenario": "CLI tool"
+  },
+  {
+    "type": "template",
+    "file": "10-authentication/05-oauth/templates/03-express-crud.html",
+    "focus": "express crud",
+    "scenario": "file processor"
+  },
+  {
+    "type": "template",
+    "file": "10-authentication/05-oauth/templates/04-static-site.html",
+    "focus": "static site",
+    "scenario": "auth API"
+  },
+  {
+    "type": "template",
+    "file": "10-authentication/05-oauth/templates/05-file-uploader.html",
+    "focus": "file uploader",
+    "scenario": "admin backend"
+  },
+  {
+    "type": "template",
+    "file": "10-authentication/05-oauth/templates/06-jwt-api.html",
+    "focus": "jwt api",
+    "scenario": "webhook receiver"
+  },
+  {
+    "type": "template",
+    "file": "10-authentication/05-oauth/templates/07-session-auth.html",
+    "focus": "session auth",
+    "scenario": "batch job"
+  },
+  {
+    "type": "template",
+    "file": "10-authentication/05-oauth/templates/08-mongo-api.html",
+    "focus": "mongo api",
+    "scenario": "realtime API"
+  },
+  {
+    "type": "template",
+    "file": "10-authentication/05-oauth/templates/09-postgres-api.html",
+    "focus": "postgres api",
+    "scenario": "data sync"
+  },
+  {
+    "type": "template",
+    "file": "10-authentication/05-oauth/templates/10-websocket-sketch.html",
+    "focus": "websocket sketch",
+    "scenario": "public website API"
+  },
+  {
+    "type": "template",
+    "file": "10-authentication/05-oauth/templates/11-job-worker.html",
+    "focus": "job worker",
+    "scenario": "REST microservice"
+  },
+  {
+    "type": "template",
+    "file": "10-authentication/05-oauth/templates/12-queue-consumer.html",
+    "focus": "queue consumer",
+    "scenario": "CLI tool"
+  },
+  {
+    "type": "template",
+    "file": "10-authentication/05-oauth/templates/13-logger-kit.html",
+    "focus": "logger kit",
+    "scenario": "file processor"
+  },
+  {
+    "type": "template",
+    "file": "10-authentication/05-oauth/templates/14-config-module.html",
+    "focus": "config module",
+    "scenario": "auth API"
+  },
+  {
+    "type": "template",
+    "file": "10-authentication/05-oauth/templates/15-test-suite.html",
+    "focus": "test suite",
+    "scenario": "admin backend"
+  },
+  {
+    "type": "template",
+    "file": "10-authentication/05-oauth/templates/16-docker-node.html",
+    "focus": "docker node",
+    "scenario": "webhook receiver"
+  },
+  {
+    "type": "template",
+    "file": "10-authentication/05-oauth/templates/17-cluster-app.html",
+    "focus": "cluster app",
+    "scenario": "batch job"
+  },
+  {
+    "type": "template",
+    "file": "10-authentication/05-oauth/templates/18-stream-etl.html",
+    "focus": "stream etl",
+    "scenario": "realtime API"
+  },
+  {
+    "type": "template",
+    "file": "10-authentication/05-oauth/templates/19-health-check.html",
+    "focus": "health check",
+    "scenario": "data sync"
+  },
+  {
+    "type": "template",
+    "file": "10-authentication/05-oauth/templates/20-rate-limited-api.html",
+    "focus": "rate limited api",
+    "scenario": "public website API"
+  },
+  {
+    "type": "template",
+    "file": "10-authentication/05-oauth/templates/21-oauth-stub.html",
+    "focus": "oauth stub",
+    "scenario": "REST microservice"
+  },
+  {
+    "type": "template",
+    "file": "10-authentication/05-oauth/templates/22-cache-layer.html",
+    "focus": "cache layer",
+    "scenario": "CLI tool"
+  },
+  {
+    "type": "template",
+    "file": "10-authentication/05-oauth/templates/23-metrics.html",
+    "focus": "metrics",
+    "scenario": "file processor"
+  },
+  {
+    "type": "template",
+    "file": "10-authentication/05-oauth/templates/24-deploy-checklist.html",
+    "focus": "deploy checklist",
+    "scenario": "auth API"
+  },
+  {
+    "type": "template",
+    "file": "10-authentication/05-oauth/templates/25-production-starter.html",
+    "focus": "production starter",
+    "scenario": "admin backend"
+  }
+]

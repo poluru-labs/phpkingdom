@@ -1,0 +1,132 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Karma Tutorials
+section title: Angular Testing
+topic title: Angular TestBed
+content type: Example
+item number: 07
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Angular TestBed Example 07 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #e0e7ff;
+      color: #3730a3;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Example 07</span>
+    <h1>Angular TestBed</h1>
+    <p><strong>Section:</strong> Angular Testing</p>
+    <p><strong>Focus:</strong> File Patterns</p>
+    <p><strong>Scenario:</strong> monorepo package</p>
+    <p>Study the Karma config or test pattern and adapt it to your project.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Karma</h2>
+        <pre><code>// Angular TestBed — Example 07
+// Focus: file patterns | Scenario: monorepo package
+
+import { TestBed } from &quot;@angular/core/testing&quot;;
+import { Component } from &quot;@angular/core&quot;;
+
+@Component({ selector: &quot;pk-hello&quot;, template: `&lt;p&gt;Hello {{ name }}&lt;/p&gt;` })
+class HelloComponent {
+  name = &quot;Angular&quot;;
+}
+
+describe(&quot;TestBed&quot;, () =&gt; {
+  beforeEach(async () =&gt; {
+    await TestBed.configureTestingModule({
+      declarations: [HelloComponent],
+    }).compileComponents();
+  });
+
+  it(&quot;creates the component&quot;, () =&gt; {
+    const fixture = TestBed.createComponent(HelloComponent);
+    expect(fixture.componentInstance).toBeTruthy();
+    fixture.detectChanges();
+    expect(fixture.nativeElement.textContent).toContain(&quot;Hello Angular&quot;);
+  });
+});
+// Run via Angular Karma builder: ng test</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Angular TestBed
+- Practice: file patterns
+- Scenario: monorepo package
+- Prefer ChromeHeadless (+ CI flags) for automation
+- Keep singleRun/autoWatch gated on process.env.CI
+- Pair frameworks (Jasmine/Mocha) with explicit plugins[]
+- Add junit + coverage reporters for CI gates
+- Open /debug.html with headed Chrome when diagnosing flakes
+
+Useful commands:
+  npm i -D karma karma-jasmine jasmine-core karma-chrome-launcher
+  npx karma init
+  npx karma start --single-run
+  npx karma start --browsers=Chrome</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This example shows one way to apply <strong>Angular TestBed</strong> in a monorepo package context.</p>
+      <p>Adapt frameworks, browsers, reporters, and file patterns to match your stack.</p>
+    </section>
+  </main>
+</body>
+</html>

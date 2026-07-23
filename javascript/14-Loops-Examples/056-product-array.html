@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 056-product-array.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>056 — Product of Array | phpkingdom.com</title>
+</head>
+<body>
+  <h1>056 — Product of Array</h1>
+  <h2>Problem</h2>
+  <p>Multiply all elements together with a loop.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const nums = [2, 3, 4];
+let prod = 1;
+for (const x of nums) prod *= x;
+document.getElementById("out").textContent = "product = " + prod;
+  </script>
+</body>
+</html>

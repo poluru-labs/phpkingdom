@@ -1,0 +1,39 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 25-Error-Handling-Examples
+  example: 04-custom-error-class.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>04 — Custom Error Subclass | phpkingdom.com</title>
+</head>
+<body>
+  <h1>04 — Custom Error Subclass</h1>
+  <h2>Problem</h2>
+  <p>Extend Error to create a ValidationError with extra context.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+class ValidationError extends Error {
+  constructor(field, message) {
+    super(message);
+    this.name = "ValidationError";
+    this.field = field;
+  }
+}
+const out = document.getElementById("out");
+try {
+  throw new ValidationError("email", "Invalid email format");
+} catch (e) {
+  out.textContent = e.name + " on " + e.field + ": " + e.message;
+}
+  </script>
+</body>
+</html>

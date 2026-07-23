@@ -1,0 +1,38 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 26-Date-Time-Examples
+  example: 20-end-of-day.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>20 — End of Day | phpkingdom.com</title>
+</head>
+<body>
+  <h1>20 — End of Day</h1>
+  <h2>Problem</h2>
+  <p>Normalize a Date to local end of day (23:59:59.999).</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+
+function endOfDay(d) {
+  const copy = new Date(d.getTime());
+  copy.setHours(23, 59, 59, 999);
+  return copy;
+}
+const d = new Date(2024, 0, 15, 14, 30, 45);
+const eod = endOfDay(d);
+document.getElementById("out").textContent =
+  "Original: " + d.toString() + "\n" +
+  "End of day: " + eod.toString();
+
+  </script>
+</body>
+</html>

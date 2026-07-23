@@ -1,0 +1,94 @@
+<!--
+  sitename: phpkingdom
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  topic: 12-Page-Templates
+  example: 05-contact-page.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — phpkingdom</title>
+  <style>
+    body { font-family: Georgia, "Times New Roman", serif; max-width: 720px; margin: 2rem auto; padding: 0 1.25rem; line-height: 1.6; color: #1a1a1a; }
+    h1 { font-size: 1.75rem; margin-bottom: 0.35rem; }
+    nav a { margin-right: 0.75rem; }
+    header { border-bottom: 1px solid #ccc; padding-bottom: 1rem; margin-bottom: 1.5rem; }
+    footer { border-top: 1px solid #ccc; padding-top: 1rem; margin-top: 2rem; color: #555; font-size: 0.95rem; }
+    form { display: grid; gap: 0.75rem; max-width: 420px; border: 1px solid #ccc; padding: 1.15rem; margin: 1rem 0; }
+    label { display: grid; gap: 0.25rem; }
+    input, select, textarea, button { font: inherit; padding: 0.4rem 0.55rem; }
+    button { cursor: pointer; background: #2a6f97; color: #fff; border: 0; padding: 0.55rem 1rem; justify-self: start; }
+    aside { border: 1px solid #ccc; padding: 1rem; margin-top: 1.5rem; background: #fafafa; }
+    ul { padding-left: 1.25rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Contact phpkingdom</h1>
+    <nav>
+      <a href="index.html">Templates</a>
+      <a href="04-company-about.html">About</a>
+      <a href="08-faq-page.html">FAQ</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Send a message</h2>
+      <p>Questions about tutorials, licensing templates, or workshop requests — use the form below.</p>
+
+      <form action="#" method="post">
+        <label>
+          Full name
+          <input type="text" name="name" required>
+        </label>
+        <label>
+          Email
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          Topic
+          <select name="topic">
+            <option value="general">General question</option>
+            <option value="tutorial">Tutorial feedback</option>
+            <option value="business">Business / partnership</option>
+            <option value="support">Account support</option>
+          </select>
+        </label>
+        <label>
+          Message
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <label>
+          <input type="checkbox" name="newsletter" value="yes">
+          Also subscribe to the phpkingdom newsletter
+        </label>
+        <button type="submit">Send message</button>
+      </form>
+    </section>
+
+    <aside>
+      <h2>Other ways to reach us</h2>
+      <ul>
+        <li>Email: <a href="mailto:mail.polurus@gmail.com">mail.polurus@gmail.com</a></li>
+        <li>Website: <a href="https://polurus.com">polurus.com</a></li>
+        <li>Response time: usually within 2 business days</li>
+      </ul>
+      <address>
+        phpkingdom<br>
+        Hyderabad, Telangana<br>
+        India
+      </address>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 phpkingdom · Subrahmanyam Poluru</p>
+  </footer>
+
+</body>
+</html>

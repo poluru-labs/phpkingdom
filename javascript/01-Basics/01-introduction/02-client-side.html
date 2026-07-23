@@ -1,0 +1,28 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 01-Basics/01-introduction
+  example: 02-client-side.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Client-side JS | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Client-side JavaScript</h1>
+  <p>JS runs in the browser on the user's device.</p>
+  <button id="btn" type="button">Show time</button>
+  <p id="out"></p>
+  <script>
+document.getElementById("btn").onclick = function () {
+  document.getElementById("out").textContent = "Now: " + new Date().toLocaleTimeString();
+};
+  </script>
+</body>
+</html>

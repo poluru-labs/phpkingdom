@@ -1,0 +1,115 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: LESS CSS Tutorials
+section title: Architecture
+topic title: Design Tokens with LESS
+content type: Example
+item number: 23
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Design Tokens with LESS Example 23 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #e0f2fe;
+      color: #075985;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Example 23</span>
+    <h1>Design Tokens with LESS</h1>
+    <p><strong>Section:</strong> Architecture</p>
+    <p><strong>Focus:</strong> Refactor Case</p>
+    <p><strong>Scenario:</strong> blog redesign</p>
+    <p>Study how the LESS snippet is structured and how the pattern can scale in a project.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>LESS Snippet</h2>
+        <pre><code>// Design Tokens with LESS — Example 23
+// Focus: refactor case | Scenario: blog redesign
+
+@color-brand: #0d6efd;
+@color-ink: #212529;
+@color-muted: #6c757d;
+@space-2: 0.5rem;
+@space-3: 1rem;
+@space-4: 1.5rem;
+@radius: 12px;
+@font-sans: system-ui, sans-serif;
+
+.card {
+  color: @color-ink;
+  padding: @space-3;
+  border-radius: @radius;
+  border: 1px solid fade(@color-brand, 25%);
+  font-family: @font-sans;
+}</code></pre>
+      </section>
+      <section>
+        <h2>HTML Markup</h2>
+        <pre><code>&lt;section class=&quot;panel-design-tokens&quot;&gt;
+  &lt;h2&gt;Design Tokens with LESS&lt;/h2&gt;
+  &lt;p&gt;Refactor Case for a blog redesign.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This example shows one way to apply <strong>Design Tokens with LESS</strong> in a blog redesign context.</p>
+      <p>Adapt selectors, token names, and mixins to match your project naming rules.</p>
+    </section>
+  </main>
+</body>
+</html>

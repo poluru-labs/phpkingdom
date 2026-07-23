@@ -1,0 +1,25 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 12-Misc-Examples
+  example: 044-raf.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>044 — requestAnimationFrame | phpkingdom.com</title>
+</head>
+<body>
+  <h1>044 — requestAnimationFrame</h1>
+  <p>Frame callback.</p>
+<pre id="out"></pre>
+  <script>
+requestAnimationFrame(t=>document.getElementById("out").textContent="t="+t.toFixed(0));
+  </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Functions-Examples
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>15-Functions-Examples | phpkingdom.com</title>
+  <style>
+    body { font-family: Georgia, "Times New Roman", serif; max-width: 760px; margin: 2rem auto; padding: 0 1.25rem; line-height: 1.6; color: #1a1a1a; }
+    h1 { font-size: 1.75rem; margin-bottom: 0.35rem; }
+    .meta { color: #555; font-size: 0.95rem; margin-bottom: 1.25rem; }
+    .note { background: #f0f7fb; padding: 0.75rem 1rem; border-left: 3px solid #0f766e; margin: 1rem 0; }
+    .demo { margin: 1rem 0; padding: 1rem; border: 1px dashed #94a3b8; }
+    pre, code { font-family: ui-monospace, Menlo, monospace; }
+    pre { background: #111827; color: #e5e7eb; padding: 0.85rem 1rem; overflow: auto; }
+    button, input, select, textarea { font: inherit; padding: 0.4rem 0.55rem; }
+    button { cursor: pointer; background: #0f766e; color: #fff; border: 0; padding: 0.55rem 1rem; }
+    #out { white-space: pre-wrap; background: #f4f4f4; padding: 0.75rem; min-height: 2rem; }
+    a { color: #0f766e; }
+    footer { border-top: 1px solid #ccc; padding-top: 1rem; margin-top: 2rem; color: #555; font-size: 0.95rem; }
+
+    .brand { color:#0f766e; font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    ol { line-height: 1.75; }
+  </style>
+</head>
+<body>
+  <div class="brand">phpkingdom.com</div>
+  <h1>15-Functions-Examples</h1>
+  <p class="meta">50 examples. Minimal HTML — focus on the script.</p>
+  <p><a href="../index.html">← JavaScript Tutorials</a></p>
+  <ol><li><a href="01-function-declaration.html">01 — Function Declaration</a></li><li><a href="02-function-expression.html">02 — Function Expression</a></li><li><a href="03-arrow-function.html">03 — Arrow Function</a></li><li><a href="04-default-parameters.html">04 — Default Parameters</a></li><li><a href="05-rest-parameters.html">05 — Rest Parameters</a></li><li><a href="06-higher-order-function.html">06 — Higher-Order Function</a></li><li><a href="07-callback-pattern.html">07 — Callback Pattern</a></li><li><a href="08-closure-counter.html">08 — Closure Counter</a></li><li><a href="09-private-variables.html">09 — Private Variables</a></li><li><a href="10-loop-closure.html">10 — Loop Closure Fix</a></li><li><a href="11-partial-application.html">11 — Partial Application</a></li><li><a href="12-curry-two-args.html">12 — Curry Two Arguments</a></li><li><a href="13-curry-variadic.html">13 — Variadic Curry</a></li><li><a href="14-compose-two.html">14 — Compose Two Functions</a></li><li><a href="15-compose-many.html">15 — Compose Many Functions</a></li><li><a href="16-pipe-functions.html">16 — Pipe Functions</a></li><li><a href="17-debounce.html">17 — Debounce</a></li><li><a href="18-throttle.html">18 — Throttle</a></li><li><a href="19-once.html">19 — Once</a></li><li><a href="20-memoize.html">20 — Memoize</a></li><li><a href="21-factorial-recursion.html">21 — Factorial Recursion</a></li><li><a href="22-fibonacci-recursion.html">22 — Fibonacci Recursion</a></li><li><a href="23-this-method.html">23 — this in Method</a></li><li><a href="24-arrow-this-lexical.html">24 — Arrow this Lexical</a></li><li><a href="25-function-call.html">25 — Function.call</a></li><li><a href="26-function-apply.html">26 — Function.apply</a></li><li><a href="27-function-bind.html">27 — Function.bind</a></li><li><a href="28-factory-function.html">28 — Factory Function</a></li><li><a href="29-iife.html">29 — IIFE</a></li><li><a href="30-module-pattern.html">30 — Module Pattern</a></li><li><a href="31-pure-function.html">31 — Pure Function</a></li><li><a href="32-impure-function.html">32 — Impure Function</a></li><li><a href="33-generator-basics.html">33 — Generator Basics</a></li><li><a href="34-generator-infinite.html">34 — Generator Infinite Sequence</a></li><li><a href="35-return-function.html">35 — Return Function</a></li><li><a href="36-nested-closure.html">36 — Nested Closure</a></li><li><a href="37-map-callback.html">37 — Map Callback</a></li><li><a href="38-filter-callback.html">38 — Filter Callback</a></li><li><a href="39-reduce-accumulator.html">39 — Reduce Accumulator</a></li><li><a href="40-settimeout-closure.html">40 — setTimeout Closure</a></li><li><a href="41-decorator-pattern.html">41 — Decorator Pattern</a></li><li><a href="42-retry-wrapper.html">42 — Retry Wrapper</a></li><li><a href="43-negate-predicate.html">43 — Negate Predicate</a></li><li><a href="44-tail-recursion-style.html">44 — Tail Recursion Style</a></li><li><a href="45-trampoline-style.html">45 — Trampoline Style</a></li><li><a href="46-function-length.html">46 — Function.length</a></li><li><a href="47-named-function-expression.html">47 — Named Function Expression</a></li><li><a href="48-immediate-return.html">48 — Immediate Return Arrow</a></li><li><a href="49-spread-arguments.html">49 — Spread Arguments</a></li><li><a href="50-function-patterns-checklist.html">50 — Function Patterns Checklist</a></li></ol>
+  <footer>
+    <p>&copy; 2026 phpkingdom.com · Subrahmanyam Poluru · <a href="https://polurus.com">polurus.com</a></p>
+  </footer>
+</body>
+</html>

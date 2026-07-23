@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 09-Async/02-callbacks
+  example: 02-error-first.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Error-first Callback | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Error-first Callback Style</h1>
+  <p>Common Node-style pattern.</p>
+  <pre id="out"></pre>
+  <script>
+function maybeFail(ok, cb) {
+  setTimeout(function () {
+    if (!ok) cb(new Error("failed"));
+    else cb(null, "success");
+  }, 200);
+}
+maybeFail(true, function (err, value) {
+  document.getElementById("out").textContent = err ? err.message : value;
+});
+  </script>
+</body>
+</html>

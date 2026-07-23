@@ -1,0 +1,120 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Single-SPA Tutorials
+section title: Import Maps
+topic title: Import Map Configuration
+content type: Template
+item number: 03
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Import Map Configuration Template 03 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ffedd5;
+      color: #9a3412;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Template 03</span>
+    <h1>Import Map Configuration</h1>
+    <p><strong>Section:</strong> Import Maps</p>
+    <p><strong>Focus:</strong> Vue Micro App</p>
+    <p><strong>Scenario:</strong> SaaS dashboard</p>
+    <p>Use this scaffold as a starting point for a single-spa application or root config.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Single-SPA</h2>
+        <pre><code>// Import Map Configuration — Template 03
+// Focus: vue micro app | Scenario: SaaS dashboard
+
+&lt;!-- type=&quot;systemjs-importmap&quot; --&gt;
+{
+  &quot;imports&quot;: {
+    &quot;single-spa&quot;: &quot;https://cdn.jsdelivr.net/npm/single-spa@6.0.3/lib/es2015/system/single-spa.min.js&quot;,
+    &quot;react&quot;: &quot;https://cdn.jsdelivr.net/npm/react@18.2.0/+esm&quot;,
+    &quot;react-dom&quot;: &quot;https://cdn.jsdelivr.net/npm/react-dom@18.2.0/+esm&quot;,
+    &quot;@org/root-config&quot;: &quot;//localhost:9000/org-root-config.js&quot;,
+    &quot;@org/navbar&quot;: &quot;//localhost:9001/org-navbar.js&quot;,
+    &quot;@org/products&quot;: &quot;//localhost:9002/org-products.js&quot;
+  }
+}</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Import Map Configuration
+- Practice: vue micro app
+- Scenario: SaaS dashboard
+- Register apps in the root config, then call start() once
+- Use activity functions / activeWhen for path-based mounting
+- Share dependencies via import maps; override locally for development
+- Prefer parcels for framework-agnostic widgets; utility modules for shared logic
+- Handle load/mount errors with addErrorHandler and layout error UI
+
+Useful commands:
+  npx create-single-spa
+  # or generate root-config / react-app / vue-app / angular-app
+  npm start
+  # Import Map Overrides UI: enable local micro-frontend URLs</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This template shows one way to apply <strong>Import Map Configuration</strong> in a saas dashboard context.</p>
+      <p>Keep micro-frontends independently deployable, share carefully via import maps, and always plan for load failures.</p>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Node.js Tutorials
+section title: Web Server
+topic title: Static Files
+content type: Template
+item number: 22
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Static Files Template 22 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #dcfce7;
+      color: #166534;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Template 22</span>
+    <h1>Static Files</h1>
+    <p><strong>Section:</strong> Web Server</p>
+    <p><strong>Focus:</strong> Cache Layer</p>
+    <p><strong>Scenario:</strong> CLI tool</p>
+    <p>Use this scaffold as a starting point for a Node.js project.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Node.js</h2>
+        <pre><code>// Static Files — Template 22
+// Focus: cache layer | Scenario: CLI tool
+
+import http from &quot;node:http&quot;;
+import { readFile } from &quot;node:fs/promises&quot;;
+import path from &quot;node:path&quot;;
+import { fileURLToPath } from &quot;node:url&quot;;
+
+const root = path.join(path.dirname(fileURLToPath(import.meta.url)), &quot;public&quot;);
+
+http.createServer(async (req, res) =&gt; {
+  const safe = path.normalize(req.url.split(&quot;?&quot;)[0]).replace(/^(\.\.[/\\])+/, &quot;&quot;);
+  const file = path.join(root, safe === &quot;/&quot; ? &quot;index.html&quot; : safe);
+  if (!file.startsWith(root)) {
+    res.writeHead(403); res.end(); return;
+  }
+  try {
+    const data = await readFile(file);
+    res.writeHead(200); res.end(data);
+  } catch {
+    res.writeHead(404); res.end(&quot;Not found&quot;);
+  }
+}).listen(3000);</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Static Files
+- Practice: cache layer
+- Scenario: CLI tool
+- Prefer promises / async-await over nested callbacks
+- Always handle errors; never leave streams without error listeners
+- Use environment variables for secrets and config
+- Validate inputs at API boundaries
+
+Useful commands:
+  node --version
+  npm init -y
+  node --watch server.mjs
+  npm test
+  NODE_ENV=production node server.mjs</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This template shows one way to apply <strong>Static Files</strong> in a cli tool context.</p>
+      <p>Keep the event loop free of heavy CPU work; offload with workers or queues when needed.</p>
+    </section>
+  </main>
+</body>
+</html>

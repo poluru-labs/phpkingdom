@@ -1,0 +1,355 @@
+{
+  "title": "Playwright Tutorials",
+  "items": [
+    {
+      "title": "Basics",
+      "items": [
+        {
+          "href": "/tutorials/playwright/introduction",
+          "label": "Playwright - Introduction"
+        },
+        {
+          "href": "/tutorials/playwright/basics",
+          "label": "Playwright - Basics"
+        },
+        {
+          "href": "/tutorials/playwright/setup",
+          "label": "Playwright Setup"
+        },
+        {
+          "href": "/tutorials/playwright/first-test",
+          "label": "First Playwright Test"
+        },
+        {
+          "href": "/tutorials/playwright/playwright-vs-cypress",
+          "label": "Playwright vs Cypress"
+        }
+      ]
+    },
+    {
+      "title": "Core Concepts",
+      "items": [
+        {
+          "href": "/tutorials/playwright/test-runner",
+          "label": "Playwright Test Runner"
+        },
+        {
+          "href": "/tutorials/playwright/spec-files",
+          "label": "Spec Files"
+        },
+        {
+          "href": "/tutorials/playwright/test-describe",
+          "label": "test and describe"
+        },
+        {
+          "href": "/tutorials/playwright/browser-context",
+          "label": "Browser Context"
+        },
+        {
+          "href": "/tutorials/playwright/page-object",
+          "label": "Page Object"
+        }
+      ]
+    },
+    {
+      "title": "Locators and Actions",
+      "items": [
+        {
+          "href": "/tutorials/playwright/locators",
+          "label": "Playwright Locators"
+        },
+        {
+          "href": "/tutorials/playwright/get-by-role",
+          "label": "getByRole"
+        },
+        {
+          "href": "/tutorials/playwright/get-by-text",
+          "label": "getByText"
+        },
+        {
+          "href": "/tutorials/playwright/click-fill-type",
+          "label": "click, fill and type"
+        },
+        {
+          "href": "/tutorials/playwright/best-locators",
+          "label": "Best Locators"
+        }
+      ]
+    },
+    {
+      "title": "Assertions",
+      "items": [
+        {
+          "href": "/tutorials/playwright/assertions",
+          "label": "Playwright Assertions"
+        },
+        {
+          "href": "/tutorials/playwright/expect",
+          "label": "expect()"
+        },
+        {
+          "href": "/tutorials/playwright/web-assertions",
+          "label": "Web Assertions"
+        },
+        {
+          "href": "/tutorials/playwright/locator-assertions",
+          "label": "Locator Assertions"
+        },
+        {
+          "href": "/tutorials/playwright/api-assertions",
+          "label": "API Assertions"
+        }
+      ]
+    },
+    {
+      "title": "Waiting and Auto Retry",
+      "items": [
+        {
+          "href": "/tutorials/playwright/auto-waiting",
+          "label": "Auto Waiting"
+        },
+        {
+          "href": "/tutorials/playwright/wait-for",
+          "label": "waitFor"
+        },
+        {
+          "href": "/tutorials/playwright/timeouts",
+          "label": "Timeouts"
+        },
+        {
+          "href": "/tutorials/playwright/retries",
+          "label": "Retries"
+        },
+        {
+          "href": "/tutorials/playwright/flaky-tests",
+          "label": "Flaky Tests"
+        }
+      ]
+    },
+    {
+      "title": "Fixtures and Data",
+      "items": [
+        {
+          "href": "/tutorials/playwright/fixtures",
+          "label": "Playwright Fixtures"
+        },
+        {
+          "href": "/tutorials/playwright/test-data",
+          "label": "Test Data"
+        },
+        {
+          "href": "/tutorials/playwright/environment-variables",
+          "label": "Environment Variables"
+        },
+        {
+          "href": "/tutorials/playwright/playwright-config",
+          "label": "playwright.config"
+        },
+        {
+          "href": "/tutorials/playwright/global-setup",
+          "label": "Global Setup and Teardown"
+        }
+      ]
+    },
+    {
+      "title": "Network and API",
+      "items": [
+        {
+          "href": "/tutorials/playwright/network-testing",
+          "label": "Network Testing"
+        },
+        {
+          "href": "/tutorials/playwright/route-mocking",
+          "label": "Route Mocking"
+        },
+        {
+          "href": "/tutorials/playwright/api-testing",
+          "label": "API Testing"
+        },
+        {
+          "href": "/tutorials/playwright/request-context",
+          "label": "Request Context"
+        },
+        {
+          "href": "/tutorials/playwright/intercept-requests",
+          "label": "Intercept Requests"
+        }
+      ]
+    },
+    {
+      "title": "Authentication",
+      "items": [
+        {
+          "href": "/tutorials/playwright/authentication",
+          "label": "Authentication Testing"
+        },
+        {
+          "href": "/tutorials/playwright/login-testing",
+          "label": "Login Testing"
+        },
+        {
+          "href": "/tutorials/playwright/storage-state",
+          "label": "Storage State"
+        },
+        {
+          "href": "/tutorials/playwright/jwt-auth",
+          "label": "JWT Auth Testing"
+        },
+        {
+          "href": "/tutorials/playwright/protected-routes",
+          "label": "Protected Routes Testing"
+        }
+      ]
+    },
+    {
+      "title": "Browsers and Devices",
+      "items": [
+        {
+          "href": "/tutorials/playwright/browsers",
+          "label": "Browsers"
+        },
+        {
+          "href": "/tutorials/playwright/chromium-firefox-webkit",
+          "label": "Chromium, Firefox and WebKit"
+        },
+        {
+          "href": "/tutorials/playwright/mobile-emulation",
+          "label": "Mobile Emulation"
+        },
+        {
+          "href": "/tutorials/playwright/device-testing",
+          "label": "Device Testing"
+        },
+        {
+          "href": "/tutorials/playwright/cross-browser-testing",
+          "label": "Cross-Browser Testing"
+        }
+      ]
+    },
+    {
+      "title": "Debugging",
+      "items": [
+        {
+          "href": "/tutorials/playwright/debugging",
+          "label": "Playwright Debugging"
+        },
+        {
+          "href": "/tutorials/playwright/ui-mode",
+          "label": "UI Mode"
+        },
+        {
+          "href": "/tutorials/playwright/codegen",
+          "label": "Codegen"
+        },
+        {
+          "href": "/tutorials/playwright/trace-viewer",
+          "label": "Trace Viewer"
+        },
+        {
+          "href": "/tutorials/playwright/screenshots-videos",
+          "label": "Screenshots and Videos"
+        }
+      ]
+    },
+    {
+      "title": "CI/CD",
+      "items": [
+        {
+          "href": "/tutorials/playwright/ci-cd",
+          "label": "Playwright CI/CD"
+        },
+        {
+          "href": "/tutorials/playwright/github-actions",
+          "label": "GitHub Actions"
+        },
+        {
+          "href": "/tutorials/playwright/jenkins",
+          "label": "Jenkins"
+        },
+        {
+          "href": "/tutorials/playwright/docker",
+          "label": "Docker with Playwright"
+        },
+        {
+          "href": "/tutorials/playwright/parallel-tests",
+          "label": "Parallel Tests"
+        }
+      ]
+    },
+    {
+      "title": "Advanced",
+      "items": [
+        {
+          "href": "/tutorials/playwright/visual-testing",
+          "label": "Visual Testing"
+        },
+        {
+          "href": "/tutorials/playwright/accessibility-testing",
+          "label": "Accessibility Testing"
+        },
+        {
+          "href": "/tutorials/playwright/page-object-model",
+          "label": "Page Object Model"
+        },
+        {
+          "href": "/tutorials/playwright/component-testing",
+          "label": "Component Testing"
+        },
+        {
+          "href": "/tutorials/playwright/performance",
+          "label": "Playwright Performance"
+        }
+      ]
+    },
+    {
+      "title": "Reference",
+      "items": [
+        {
+          "href": "/tutorials/playwright/best-practices",
+          "label": "Playwright Best Practices"
+        },
+        {
+          "href": "/tutorials/playwright/dos-and-donts",
+          "label": "Playwright Do's and Don'ts"
+        },
+        {
+          "href": "/tutorials/playwright/common-mistakes",
+          "label": "Common Playwright Mistakes"
+        },
+        {
+          "href": "/tutorials/playwright/cheat-sheet",
+          "label": "Playwright Cheat Sheet"
+        },
+        {
+          "href": "/tutorials/playwright/resources",
+          "label": "Playwright Resources"
+        }
+      ]
+    },
+    {
+      "title": "Interview",
+      "items": [
+        {
+          "href": "/tutorials/playwright/interview-questions",
+          "label": "Playwright Interview Questions"
+        },
+        {
+          "href": "/tutorials/playwright/quiz",
+          "label": "Playwright Quiz"
+        },
+        {
+          "href": "/tutorials/playwright/scenario-answers",
+          "label": "Scenario Answers"
+        },
+        {
+          "href": "/tutorials/playwright/debugging-interview",
+          "label": "Debugging Interview"
+        },
+        {
+          "href": "/tutorials/playwright/architecture-interview",
+          "label": "Architecture Interview"
+        }
+      ]
+    }
+  ]
+}

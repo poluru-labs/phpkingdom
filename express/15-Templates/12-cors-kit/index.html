@@ -1,0 +1,58 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Templates/12-cors-kit
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <meta name="description" content="Restricted origin CORS setup">
+  <title>CORS Kit | cors package | phpkingdom.com</title>
+  <style>
+    body { margin:0; font-family: Georgia, "Times New Roman", serif; background:#f5f7fb; color:#1f2937; line-height:1.55; }
+    .wrap { max-width:900px; margin:0 auto; padding:1.5rem; }
+    .brand { color:#3730a3; font-size:.78rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    h1 { font-size:1.75rem; margin:.4rem 0; }
+    .meta { color:#64748b; }
+    pre { background:#0f172a; color:#e2e8f0; padding:1rem; border-radius:.65rem; overflow:auto; font-size:.88rem; }
+    .card { background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:1rem; margin:1rem 0; }
+    a { color:#3730a3; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">phpkingdom.com</div>
+    <p class="meta">CORS Kit · Express template</p>
+    <h1>cors package</h1>
+    <p class="meta">Restricted origin CORS setup</p>
+    <div class="card">
+      <h2>Starter Server</h2>
+      <pre><code>const express = require(&quot;express&quot;);
+const cors = require(&quot;cors&quot;);
+
+const app = express();
+app.use(cors({
+  origin: [&quot;https://phpkingdom.com&quot;, &quot;http://localhost:5173&quot;],
+  credentials: true,
+  methods: [&quot;GET&quot;, &quot;POST&quot;, &quot;PUT&quot;, &quot;PATCH&quot;, &quot;DELETE&quot;],
+}));
+
+app.get(&quot;/api/public&quot;, (req, res) =&gt; res.json({ ok: true }));
+app.listen(3000);</code></pre>
+    </div>
+    <div class="card">
+      <h2>Run</h2>
+      <pre><code>npm install express
+node server.js
+curl http://localhost:3000/health</code></pre>
+    </div>
+    <p><a href="../index.html">All templates</a></p>
+  </div>
+</body>
+</html>

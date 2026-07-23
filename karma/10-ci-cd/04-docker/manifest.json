@@ -1,0 +1,452 @@
+[
+  {
+    "type": "example",
+    "file": "10-ci-cd/04-docker/examples/01-starter-config.html",
+    "focus": "starter config",
+    "scenario": "Angular app"
+  },
+  {
+    "type": "example",
+    "file": "10-ci-cd/04-docker/examples/02-single-browser-run.html",
+    "focus": "single browser run",
+    "scenario": "legacy SPA"
+  },
+  {
+    "type": "example",
+    "file": "10-ci-cd/04-docker/examples/03-multi-browser-run.html",
+    "focus": "multi browser run",
+    "scenario": "component library"
+  },
+  {
+    "type": "example",
+    "file": "10-ci-cd/04-docker/examples/04-jasmine-suite.html",
+    "focus": "jasmine suite",
+    "scenario": "admin dashboard"
+  },
+  {
+    "type": "example",
+    "file": "10-ci-cd/04-docker/examples/05-mocha-suite.html",
+    "focus": "mocha suite",
+    "scenario": "design system"
+  },
+  {
+    "type": "example",
+    "file": "10-ci-cd/04-docker/examples/06-chai-assertions.html",
+    "focus": "chai assertions",
+    "scenario": "CI pipeline"
+  },
+  {
+    "type": "example",
+    "file": "10-ci-cd/04-docker/examples/07-file-patterns.html",
+    "focus": "file patterns",
+    "scenario": "monorepo package"
+  },
+  {
+    "type": "example",
+    "file": "10-ci-cd/04-docker/examples/08-preprocessor-setup.html",
+    "focus": "preprocessor setup",
+    "scenario": "TypeScript SDK"
+  },
+  {
+    "type": "example",
+    "file": "10-ci-cd/04-docker/examples/09-webpack-integration.html",
+    "focus": "webpack integration",
+    "scenario": "Webpack app"
+  },
+  {
+    "type": "example",
+    "file": "10-ci-cd/04-docker/examples/10-typescript-specs.html",
+    "focus": "typescript specs",
+    "scenario": "documentation site"
+  },
+  {
+    "type": "example",
+    "file": "10-ci-cd/04-docker/examples/11-chrome-launcher.html",
+    "focus": "chrome launcher",
+    "scenario": "Angular app"
+  },
+  {
+    "type": "example",
+    "file": "10-ci-cd/04-docker/examples/12-headless-chrome.html",
+    "focus": "headless chrome",
+    "scenario": "legacy SPA"
+  },
+  {
+    "type": "example",
+    "file": "10-ci-cd/04-docker/examples/13-firefox-launcher.html",
+    "focus": "firefox launcher",
+    "scenario": "component library"
+  },
+  {
+    "type": "example",
+    "file": "10-ci-cd/04-docker/examples/14-custom-launcher.html",
+    "focus": "custom launcher",
+    "scenario": "admin dashboard"
+  },
+  {
+    "type": "example",
+    "file": "10-ci-cd/04-docker/examples/15-watch-mode.html",
+    "focus": "watch mode",
+    "scenario": "design system"
+  },
+  {
+    "type": "example",
+    "file": "10-ci-cd/04-docker/examples/16-progress-reporter.html",
+    "focus": "progress reporter",
+    "scenario": "CI pipeline"
+  },
+  {
+    "type": "example",
+    "file": "10-ci-cd/04-docker/examples/17-spec-reporter.html",
+    "focus": "spec reporter",
+    "scenario": "monorepo package"
+  },
+  {
+    "type": "example",
+    "file": "10-ci-cd/04-docker/examples/18-junit-output.html",
+    "focus": "junit output",
+    "scenario": "TypeScript SDK"
+  },
+  {
+    "type": "example",
+    "file": "10-ci-cd/04-docker/examples/19-html-report.html",
+    "focus": "html report",
+    "scenario": "Webpack app"
+  },
+  {
+    "type": "example",
+    "file": "10-ci-cd/04-docker/examples/20-coverage-setup.html",
+    "focus": "coverage setup",
+    "scenario": "documentation site"
+  },
+  {
+    "type": "example",
+    "file": "10-ci-cd/04-docker/examples/21-coverage-thresholds.html",
+    "focus": "coverage thresholds",
+    "scenario": "Angular app"
+  },
+  {
+    "type": "example",
+    "file": "10-ci-cd/04-docker/examples/22-angular-testbed.html",
+    "focus": "angular testbed",
+    "scenario": "legacy SPA"
+  },
+  {
+    "type": "example",
+    "file": "10-ci-cd/04-docker/examples/23-component-spec.html",
+    "focus": "component spec",
+    "scenario": "component library"
+  },
+  {
+    "type": "example",
+    "file": "10-ci-cd/04-docker/examples/24-service-spec.html",
+    "focus": "service spec",
+    "scenario": "admin dashboard"
+  },
+  {
+    "type": "example",
+    "file": "10-ci-cd/04-docker/examples/25-best-practice-recap.html",
+    "focus": "best practice recap",
+    "scenario": "design system"
+  },
+  {
+    "type": "exercise",
+    "file": "10-ci-cd/04-docker/exercises/01-install-challenge.html",
+    "focus": "install challenge",
+    "scenario": "Angular app"
+  },
+  {
+    "type": "exercise",
+    "file": "10-ci-cd/04-docker/exercises/02-config-cleanup.html",
+    "focus": "config cleanup",
+    "scenario": "legacy SPA"
+  },
+  {
+    "type": "exercise",
+    "file": "10-ci-cd/04-docker/exercises/03-files-pattern-fix.html",
+    "focus": "files pattern fix",
+    "scenario": "component library"
+  },
+  {
+    "type": "exercise",
+    "file": "10-ci-cd/04-docker/exercises/04-framework-switch.html",
+    "focus": "framework switch",
+    "scenario": "admin dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "10-ci-cd/04-docker/exercises/05-launcher-setup.html",
+    "focus": "launcher setup",
+    "scenario": "design system"
+  },
+  {
+    "type": "exercise",
+    "file": "10-ci-cd/04-docker/exercises/06-headless-tweak.html",
+    "focus": "headless tweak",
+    "scenario": "CI pipeline"
+  },
+  {
+    "type": "exercise",
+    "file": "10-ci-cd/04-docker/exercises/07-preprocessor-drill.html",
+    "focus": "preprocessor drill",
+    "scenario": "monorepo package"
+  },
+  {
+    "type": "exercise",
+    "file": "10-ci-cd/04-docker/exercises/08-plugin-enable.html",
+    "focus": "plugin enable",
+    "scenario": "TypeScript SDK"
+  },
+  {
+    "type": "exercise",
+    "file": "10-ci-cd/04-docker/exercises/09-client-config.html",
+    "focus": "client config",
+    "scenario": "Webpack app"
+  },
+  {
+    "type": "exercise",
+    "file": "10-ci-cd/04-docker/exercises/10-reporter-choice.html",
+    "focus": "reporter choice",
+    "scenario": "documentation site"
+  },
+  {
+    "type": "exercise",
+    "file": "10-ci-cd/04-docker/exercises/11-coverage-report.html",
+    "focus": "coverage report",
+    "scenario": "Angular app"
+  },
+  {
+    "type": "exercise",
+    "file": "10-ci-cd/04-docker/exercises/12-threshold-gate.html",
+    "focus": "threshold gate",
+    "scenario": "legacy SPA"
+  },
+  {
+    "type": "exercise",
+    "file": "10-ci-cd/04-docker/exercises/13-angular-component.html",
+    "focus": "angular component",
+    "scenario": "component library"
+  },
+  {
+    "type": "exercise",
+    "file": "10-ci-cd/04-docker/exercises/14-angular-service.html",
+    "focus": "angular service",
+    "scenario": "admin dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "10-ci-cd/04-docker/exercises/15-pipe-test.html",
+    "focus": "pipe test",
+    "scenario": "design system"
+  },
+  {
+    "type": "exercise",
+    "file": "10-ci-cd/04-docker/exercises/16-debug-failure.html",
+    "focus": "debug failure",
+    "scenario": "CI pipeline"
+  },
+  {
+    "type": "exercise",
+    "file": "10-ci-cd/04-docker/exercises/17-source-map-enable.html",
+    "focus": "source map enable",
+    "scenario": "monorepo package"
+  },
+  {
+    "type": "exercise",
+    "file": "10-ci-cd/04-docker/exercises/18-ci-yaml.html",
+    "focus": "ci yaml",
+    "scenario": "TypeScript SDK"
+  },
+  {
+    "type": "exercise",
+    "file": "10-ci-cd/04-docker/exercises/19-docker-run.html",
+    "focus": "docker run",
+    "scenario": "Webpack app"
+  },
+  {
+    "type": "exercise",
+    "file": "10-ci-cd/04-docker/exercises/20-github-action.html",
+    "focus": "github action",
+    "scenario": "documentation site"
+  },
+  {
+    "type": "exercise",
+    "file": "10-ci-cd/04-docker/exercises/21-jenkins-stage.html",
+    "focus": "jenkins stage",
+    "scenario": "Angular app"
+  },
+  {
+    "type": "exercise",
+    "file": "10-ci-cd/04-docker/exercises/22-custom-launcher.html",
+    "focus": "custom launcher",
+    "scenario": "legacy SPA"
+  },
+  {
+    "type": "exercise",
+    "file": "10-ci-cd/04-docker/exercises/23-custom-reporter.html",
+    "focus": "custom reporter",
+    "scenario": "component library"
+  },
+  {
+    "type": "exercise",
+    "file": "10-ci-cd/04-docker/exercises/24-performance-pass.html",
+    "focus": "performance pass",
+    "scenario": "admin dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "10-ci-cd/04-docker/exercises/25-final-challenge.html",
+    "focus": "final challenge",
+    "scenario": "design system"
+  },
+  {
+    "type": "template",
+    "file": "10-ci-cd/04-docker/templates/01-karma-conf-starter.html",
+    "focus": "karma conf starter",
+    "scenario": "Angular app"
+  },
+  {
+    "type": "template",
+    "file": "10-ci-cd/04-docker/templates/02-jasmine-project.html",
+    "focus": "jasmine project",
+    "scenario": "legacy SPA"
+  },
+  {
+    "type": "template",
+    "file": "10-ci-cd/04-docker/templates/03-mocha-project.html",
+    "focus": "mocha project",
+    "scenario": "component library"
+  },
+  {
+    "type": "template",
+    "file": "10-ci-cd/04-docker/templates/04-typescript-project.html",
+    "focus": "typescript project",
+    "scenario": "admin dashboard"
+  },
+  {
+    "type": "template",
+    "file": "10-ci-cd/04-docker/templates/05-webpack-project.html",
+    "focus": "webpack project",
+    "scenario": "design system"
+  },
+  {
+    "type": "template",
+    "file": "10-ci-cd/04-docker/templates/06-angular-project.html",
+    "focus": "angular project",
+    "scenario": "CI pipeline"
+  },
+  {
+    "type": "template",
+    "file": "10-ci-cd/04-docker/templates/07-coverage-project.html",
+    "focus": "coverage project",
+    "scenario": "monorepo package"
+  },
+  {
+    "type": "template",
+    "file": "10-ci-cd/04-docker/templates/08-ci-headless.html",
+    "focus": "ci headless",
+    "scenario": "TypeScript SDK"
+  },
+  {
+    "type": "template",
+    "file": "10-ci-cd/04-docker/templates/09-multi-browser.html",
+    "focus": "multi browser",
+    "scenario": "Webpack app"
+  },
+  {
+    "type": "template",
+    "file": "10-ci-cd/04-docker/templates/10-custom-launcher-kit.html",
+    "focus": "custom launcher kit",
+    "scenario": "documentation site"
+  },
+  {
+    "type": "template",
+    "file": "10-ci-cd/04-docker/templates/11-spec-reporter-kit.html",
+    "focus": "spec reporter kit",
+    "scenario": "Angular app"
+  },
+  {
+    "type": "template",
+    "file": "10-ci-cd/04-docker/templates/12-junit-ci-kit.html",
+    "focus": "junit ci kit",
+    "scenario": "legacy SPA"
+  },
+  {
+    "type": "template",
+    "file": "10-ci-cd/04-docker/templates/13-html-reporter-kit.html",
+    "focus": "html reporter kit",
+    "scenario": "component library"
+  },
+  {
+    "type": "template",
+    "file": "10-ci-cd/04-docker/templates/14-debug-kit.html",
+    "focus": "debug kit",
+    "scenario": "admin dashboard"
+  },
+  {
+    "type": "template",
+    "file": "10-ci-cd/04-docker/templates/15-watch-kit.html",
+    "focus": "watch kit",
+    "scenario": "design system"
+  },
+  {
+    "type": "template",
+    "file": "10-ci-cd/04-docker/templates/16-chrome-only.html",
+    "focus": "chrome only",
+    "scenario": "CI pipeline"
+  },
+  {
+    "type": "template",
+    "file": "10-ci-cd/04-docker/templates/17-firefox-only.html",
+    "focus": "firefox only",
+    "scenario": "monorepo package"
+  },
+  {
+    "type": "template",
+    "file": "10-ci-cd/04-docker/templates/18-plugin-pack.html",
+    "focus": "plugin pack",
+    "scenario": "TypeScript SDK"
+  },
+  {
+    "type": "template",
+    "file": "10-ci-cd/04-docker/templates/19-preprocessor-pack.html",
+    "focus": "preprocessor pack",
+    "scenario": "Webpack app"
+  },
+  {
+    "type": "template",
+    "file": "10-ci-cd/04-docker/templates/20-client-options.html",
+    "focus": "client options",
+    "scenario": "documentation site"
+  },
+  {
+    "type": "template",
+    "file": "10-ci-cd/04-docker/templates/21-threshold-gate.html",
+    "focus": "threshold gate",
+    "scenario": "Angular app"
+  },
+  {
+    "type": "template",
+    "file": "10-ci-cd/04-docker/templates/22-docker-compose.html",
+    "focus": "docker compose",
+    "scenario": "legacy SPA"
+  },
+  {
+    "type": "template",
+    "file": "10-ci-cd/04-docker/templates/23-github-workflow.html",
+    "focus": "github workflow",
+    "scenario": "component library"
+  },
+  {
+    "type": "template",
+    "file": "10-ci-cd/04-docker/templates/24-jenkinsfile.html",
+    "focus": "jenkinsfile",
+    "scenario": "admin dashboard"
+  },
+  {
+    "type": "template",
+    "file": "10-ci-cd/04-docker/templates/25-production-starter.html",
+    "focus": "production starter",
+    "scenario": "design system"
+  }
+]

@@ -1,0 +1,34 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 28-Tricky-Examples
+  example: 02-double-equals.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>02 — == Type Coercion Traps | phpkingdom.com</title>
+</head>
+<body>
+  <h1>02 — == Type Coercion Traps</h1>
+  <h2>Problem / Gotcha</h2>
+  <p>Show surprising results of == coercion.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const lines = [
+  '"" == false => ' + ("" == false),
+  '0 == false => ' + (0 == false),
+  'null == undefined => ' + (null == undefined),
+  'null == 0 => ' + (null == 0),
+  '" \t\r\n" == 0 => ' + (" \t\r\n" == 0)
+];
+document.getElementById("out").textContent = lines.join("\n");
+  </script>
+</body>
+</html>

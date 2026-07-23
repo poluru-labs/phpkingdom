@@ -1,0 +1,61 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Templates/05-file-uploader
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <meta name="description" content="Upload endpoint">
+  <title>File Uploader | multipart | phpkingdom.com</title>
+  <style>
+    body { margin:0; font-family: Georgia, "Times New Roman", serif; background:#f5f7fb; color:#1f2937; line-height:1.55; }
+    .wrap { max-width:900px; margin:0 auto; padding:1.5rem; }
+    .brand { color:#166534; font-size:.78rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    h1 { font-size:1.75rem; margin:.4rem 0; }
+    .meta { color:#64748b; }
+    pre { background:#0f172a; color:#e2e8f0; padding:1rem; border-radius:.65rem; overflow:auto; font-size:.88rem; }
+    .card { background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:1rem; margin:1rem 0; }
+    a { color:#166534; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">phpkingdom.com</div>
+    <p class="meta">File Uploader · Node.js template</p>
+    <h1>multipart</h1>
+    <p class="meta">Upload endpoint</p>
+    <div class="card">
+      <h2>Server Scaffold</h2>
+      <pre><code>import express from &quot;express&quot;;
+import multer from &quot;multer&quot;;
+import path from &quot;node:path&quot;;
+
+const upload = multer({ dest: path.join(process.cwd(), &quot;uploads&quot;) });
+const app = express();
+
+app.post(&quot;/upload&quot;, upload.single(&quot;file&quot;), (req, res) =&gt; {
+  res.status(201).json({
+    field: req.file?.fieldname,
+    original: req.file?.originalname,
+    size: req.file?.size,
+  });
+});
+app.listen(3000);</code></pre>
+    </div>
+    <div class="card">
+      <h2>Verify</h2>
+      <pre><code>node server.mjs
+# or: npm start
+curl http://localhost:3000/health</code></pre>
+    </div>
+    <p><a href="../index.html">All templates</a></p>
+  </div>
+</body>
+</html>

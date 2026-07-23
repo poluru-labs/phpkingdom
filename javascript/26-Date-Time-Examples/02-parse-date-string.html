@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 26-Date-Time-Examples
+  example: 02-parse-date-string.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>02 — Parse Date String | phpkingdom.com</title>
+</head>
+<body>
+  <h1>02 — Parse Date String</h1>
+  <h2>Problem</h2>
+  <p>Parse common date string formats into Date objects.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+
+const samples = [
+  "2024-01-15",
+  "2024-01-15T14:30:45",
+  "January 15, 2024",
+  "01/15/2024"
+];
+const lines = samples.map(s => s + " => " + new Date(s).toString());
+document.getElementById("out").textContent = lines.join("\n");
+
+  </script>
+</body>
+</html>

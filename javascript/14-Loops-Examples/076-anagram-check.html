@@ -1,0 +1,42 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 076-anagram-check.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>076 — Anagram Check (Counts) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>076 — Anagram Check (Counts)</h1>
+  <h2>Problem</h2>
+  <p>Check anagrams by counting characters with loops.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function counts(s) {
+  const c = {};
+  for (const ch of s.toLowerCase()) {
+    if (ch === " ") continue;
+    c[ch] = (c[ch] || 0) + 1;
+  }
+  return c;
+}
+function same(a, b) {
+  const ka = Object.keys(a), kb = Object.keys(b);
+  if (ka.length !== kb.length) return false;
+  for (const k of ka) if (a[k] !== b[k]) return false;
+  return true;
+}
+document.getElementById("out").textContent =
+  "listen/silent → " + same(counts("listen"), counts("silent"));
+  </script>
+</body>
+</html>

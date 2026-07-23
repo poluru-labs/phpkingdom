@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 24-API-Examples
+  example: 35-validate-payload.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>35 — Validate Request Payload | phpkingdom.com</title>
+</head>
+<body>
+  <h1>35 — Validate Request Payload</h1>
+  <h2>Problem</h2>
+  <p>Validate body fields before calling an API.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function validateUser(payload) {
+  const errors = [];
+  if (!payload.email || !payload.email.includes("@")) errors.push("email");
+  if (!payload.name || payload.name.length < 2) errors.push("name");
+  return { ok: errors.length === 0, errors };
+}
+document.getElementById("out").textContent = JSON.stringify({
+  bad: validateUser({ name: "A", email: "x" }),
+  good: validateUser({ name: "Ada", email: "ada@example.com" })
+}, null, 2);
+  </script>
+</body>
+</html>

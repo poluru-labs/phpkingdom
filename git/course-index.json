@@ -1,0 +1,1267 @@
+{
+  "title": "Git Tutorials",
+  "items": [
+    {
+      "title": "Git Basics",
+      "items": [
+        {
+          "href": "/tutorials/git/introduction",
+          "label": "Git - Introduction"
+        },
+        {
+          "href": "/tutorials/git/basics",
+          "label": "Git - Basics"
+        },
+        {
+          "href": "/tutorials/git/what-is-git",
+          "label": "What Is Git?"
+        },
+        {
+          "href": "/tutorials/git/how-git-works",
+          "label": "How Git Works"
+        },
+        {
+          "href": "/tutorials/git/git-use-cases",
+          "label": "Git Use Cases"
+        }
+      ]
+    },
+    {
+      "title": "Version Control",
+      "items": [
+        {
+          "href": "/tutorials/git/version-control",
+          "label": "Version Control Systems"
+        },
+        {
+          "href": "/tutorials/git/local-version-control",
+          "label": "Local Version Control"
+        },
+        {
+          "href": "/tutorials/git/centralized-version-control",
+          "label": "Centralized Version Control"
+        },
+        {
+          "href": "/tutorials/git/distributed-version-control",
+          "label": "Distributed Version Control"
+        },
+        {
+          "href": "/tutorials/git/git-vs-svn",
+          "label": "Git vs SVN"
+        }
+      ]
+    },
+    {
+      "title": "Installation and Setup",
+      "items": [
+        {
+          "href": "/tutorials/git/install-git",
+          "label": "Install Git"
+        },
+        {
+          "href": "/tutorials/git/install-git-windows",
+          "label": "Install Git on Windows"
+        },
+        {
+          "href": "/tutorials/git/install-git-macos",
+          "label": "Install Git on macOS"
+        },
+        {
+          "href": "/tutorials/git/install-git-linux",
+          "label": "Install Git on Linux"
+        },
+        {
+          "href": "/tutorials/git/verify-installation",
+          "label": "Verify Git Installation"
+        }
+      ]
+    },
+    {
+      "title": "Git Configuration",
+      "items": [
+        {
+          "href": "/tutorials/git/configuration",
+          "label": "Git Configuration"
+        },
+        {
+          "href": "/tutorials/git/git-config",
+          "label": "git config"
+        },
+        {
+          "href": "/tutorials/git/user-name-email",
+          "label": "Configure Username and Email"
+        },
+        {
+          "href": "/tutorials/git/default-editor",
+          "label": "Configure Default Editor"
+        },
+        {
+          "href": "/tutorials/git/configuration-levels",
+          "label": "Git Configuration Levels"
+        }
+      ]
+    },
+    {
+      "title": "Repositories",
+      "items": [
+        {
+          "href": "/tutorials/git/repositories",
+          "label": "Git Repositories"
+        },
+        {
+          "href": "/tutorials/git/init",
+          "label": "git init"
+        },
+        {
+          "href": "/tutorials/git/clone",
+          "label": "git clone"
+        },
+        {
+          "href": "/tutorials/git/bare-repository",
+          "label": "Bare Repositories"
+        },
+        {
+          "href": "/tutorials/git/repository-structure",
+          "label": "Git Repository Structure"
+        }
+      ]
+    },
+    {
+      "title": "Git Working Areas",
+      "items": [
+        {
+          "href": "/tutorials/git/working-directory",
+          "label": "Working Directory"
+        },
+        {
+          "href": "/tutorials/git/staging-area",
+          "label": "Staging Area"
+        },
+        {
+          "href": "/tutorials/git/local-repository",
+          "label": "Local Repository"
+        },
+        {
+          "href": "/tutorials/git/remote-repository",
+          "label": "Remote Repository"
+        },
+        {
+          "href": "/tutorials/git/git-workflow",
+          "label": "Basic Git Workflow"
+        }
+      ]
+    },
+    {
+      "title": "Tracking Changes",
+      "items": [
+        {
+          "href": "/tutorials/git/status",
+          "label": "git status"
+        },
+        {
+          "href": "/tutorials/git/add",
+          "label": "git add"
+        },
+        {
+          "href": "/tutorials/git/add-all",
+          "label": "Stage All Changes"
+        },
+        {
+          "href": "/tutorials/git/untracked-files",
+          "label": "Untracked Files"
+        },
+        {
+          "href": "/tutorials/git/tracked-files",
+          "label": "Tracked Files"
+        }
+      ]
+    },
+    {
+      "title": "Commits",
+      "items": [
+        {
+          "href": "/tutorials/git/commits",
+          "label": "Git Commits"
+        },
+        {
+          "href": "/tutorials/git/commit",
+          "label": "git commit"
+        },
+        {
+          "href": "/tutorials/git/commit-messages",
+          "label": "Write Good Commit Messages"
+        },
+        {
+          "href": "/tutorials/git/amend-commit",
+          "label": "Amend a Commit"
+        },
+        {
+          "href": "/tutorials/git/commit-history",
+          "label": "Commit History"
+        }
+      ]
+    },
+    {
+      "title": "Viewing Changes",
+      "items": [
+        {
+          "href": "/tutorials/git/diff",
+          "label": "git diff"
+        },
+        {
+          "href": "/tutorials/git/diff-staged",
+          "label": "View Staged Changes"
+        },
+        {
+          "href": "/tutorials/git/show",
+          "label": "git show"
+        },
+        {
+          "href": "/tutorials/git/log",
+          "label": "git log"
+        },
+        {
+          "href": "/tutorials/git/log-options",
+          "label": "Git Log Options"
+        }
+      ]
+    },
+    {
+      "title": "Ignoring Files",
+      "items": [
+        {
+          "href": "/tutorials/git/gitignore",
+          "label": ".gitignore"
+        },
+        {
+          "href": "/tutorials/git/ignore-patterns",
+          "label": "Git Ignore Patterns"
+        },
+        {
+          "href": "/tutorials/git/global-gitignore",
+          "label": "Global .gitignore"
+        },
+        {
+          "href": "/tutorials/git/ignore-tracked-files",
+          "label": "Ignore Previously Tracked Files"
+        },
+        {
+          "href": "/tutorials/git/gitignore-best-practices",
+          "label": ".gitignore Best Practices"
+        }
+      ]
+    },
+    {
+      "title": "Branches",
+      "items": [
+        {
+          "href": "/tutorials/git/branches",
+          "label": "Git Branches"
+        },
+        {
+          "href": "/tutorials/git/branch",
+          "label": "git branch"
+        },
+        {
+          "href": "/tutorials/git/create-branch",
+          "label": "Create a Branch"
+        },
+        {
+          "href": "/tutorials/git/delete-branch",
+          "label": "Delete a Branch"
+        },
+        {
+          "href": "/tutorials/git/rename-branch",
+          "label": "Rename a Branch"
+        }
+      ]
+    },
+    {
+      "title": "Switching Branches",
+      "items": [
+        {
+          "href": "/tutorials/git/checkout",
+          "label": "git checkout"
+        },
+        {
+          "href": "/tutorials/git/switch",
+          "label": "git switch"
+        },
+        {
+          "href": "/tutorials/git/checkout-new-branch",
+          "label": "Create and Checkout a Branch"
+        },
+        {
+          "href": "/tutorials/git/detached-head",
+          "label": "Detached HEAD"
+        },
+        {
+          "href": "/tutorials/git/default-branch",
+          "label": "Default Branch"
+        }
+      ]
+    },
+    {
+      "title": "Merging",
+      "items": [
+        {
+          "href": "/tutorials/git/merge",
+          "label": "Git Merge"
+        },
+        {
+          "href": "/tutorials/git/fast-forward-merge",
+          "label": "Fast-Forward Merge"
+        },
+        {
+          "href": "/tutorials/git/three-way-merge",
+          "label": "Three-Way Merge"
+        },
+        {
+          "href": "/tutorials/git/no-fast-forward",
+          "label": "No Fast-Forward Merge"
+        },
+        {
+          "href": "/tutorials/git/abort-merge",
+          "label": "Abort a Merge"
+        }
+      ]
+    },
+    {
+      "title": "Merge Conflicts",
+      "items": [
+        {
+          "href": "/tutorials/git/merge-conflicts",
+          "label": "Git Merge Conflicts"
+        },
+        {
+          "href": "/tutorials/git/resolve-conflicts",
+          "label": "Resolve Merge Conflicts"
+        },
+        {
+          "href": "/tutorials/git/conflict-markers",
+          "label": "Conflict Markers"
+        },
+        {
+          "href": "/tutorials/git/merge-tools",
+          "label": "Git Merge Tools"
+        },
+        {
+          "href": "/tutorials/git/prevent-conflicts",
+          "label": "Prevent Merge Conflicts"
+        }
+      ]
+    },
+    {
+      "title": "Rebasing",
+      "items": [
+        {
+          "href": "/tutorials/git/rebase",
+          "label": "Git Rebase"
+        },
+        {
+          "href": "/tutorials/git/rebase-branch",
+          "label": "Rebase a Branch"
+        },
+        {
+          "href": "/tutorials/git/rebase-vs-merge",
+          "label": "Rebase vs Merge"
+        },
+        {
+          "href": "/tutorials/git/continue-rebase",
+          "label": "Continue a Rebase"
+        },
+        {
+          "href": "/tutorials/git/abort-rebase",
+          "label": "Abort a Rebase"
+        }
+      ]
+    },
+    {
+      "title": "Interactive Rebase",
+      "items": [
+        {
+          "href": "/tutorials/git/interactive-rebase",
+          "label": "Interactive Rebase"
+        },
+        {
+          "href": "/tutorials/git/squash-commits",
+          "label": "Squash Commits"
+        },
+        {
+          "href": "/tutorials/git/reword-commits",
+          "label": "Reword Commit Messages"
+        },
+        {
+          "href": "/tutorials/git/reorder-commits",
+          "label": "Reorder Commits"
+        },
+        {
+          "href": "/tutorials/git/drop-commits",
+          "label": "Drop Commits"
+        }
+      ]
+    },
+    {
+      "title": "Remote Repositories",
+      "items": [
+        {
+          "href": "/tutorials/git/remotes",
+          "label": "Git Remote Repositories"
+        },
+        {
+          "href": "/tutorials/git/remote-add",
+          "label": "Add a Remote"
+        },
+        {
+          "href": "/tutorials/git/remote-list",
+          "label": "List Remotes"
+        },
+        {
+          "href": "/tutorials/git/remote-rename",
+          "label": "Rename a Remote"
+        },
+        {
+          "href": "/tutorials/git/remote-remove",
+          "label": "Remove a Remote"
+        }
+      ]
+    },
+    {
+      "title": "Fetch, Pull, and Push",
+      "items": [
+        {
+          "href": "/tutorials/git/fetch",
+          "label": "git fetch"
+        },
+        {
+          "href": "/tutorials/git/pull",
+          "label": "git pull"
+        },
+        {
+          "href": "/tutorials/git/push",
+          "label": "git push"
+        },
+        {
+          "href": "/tutorials/git/pull-vs-fetch",
+          "label": "git pull vs git fetch"
+        },
+        {
+          "href": "/tutorials/git/push-upstream",
+          "label": "Set an Upstream Branch"
+        }
+      ]
+    },
+    {
+      "title": "Remote Branches",
+      "items": [
+        {
+          "href": "/tutorials/git/remote-branches",
+          "label": "Remote Branches"
+        },
+        {
+          "href": "/tutorials/git/tracking-branches",
+          "label": "Tracking Branches"
+        },
+        {
+          "href": "/tutorials/git/checkout-remote-branch",
+          "label": "Checkout a Remote Branch"
+        },
+        {
+          "href": "/tutorials/git/delete-remote-branch",
+          "label": "Delete a Remote Branch"
+        },
+        {
+          "href": "/tutorials/git/prune-branches",
+          "label": "Prune Remote Branches"
+        }
+      ]
+    },
+    {
+      "title": "GitHub Integration",
+      "items": [
+        {
+          "href": "/tutorials/git/github",
+          "label": "Git with GitHub"
+        },
+        {
+          "href": "/tutorials/git/create-github-repository",
+          "label": "Create a GitHub Repository"
+        },
+        {
+          "href": "/tutorials/git/connect-github-repository",
+          "label": "Connect Git to GitHub"
+        },
+        {
+          "href": "/tutorials/git/github-clone",
+          "label": "Clone a GitHub Repository"
+        },
+        {
+          "href": "/tutorials/git/github-fork",
+          "label": "Fork a GitHub Repository"
+        }
+      ]
+    },
+    {
+      "title": "Authentication",
+      "items": [
+        {
+          "href": "/tutorials/git/authentication",
+          "label": "Git Authentication"
+        },
+        {
+          "href": "/tutorials/git/https-authentication",
+          "label": "HTTPS Authentication"
+        },
+        {
+          "href": "/tutorials/git/ssh-authentication",
+          "label": "SSH Authentication"
+        },
+        {
+          "href": "/tutorials/git/ssh-keys",
+          "label": "Generate SSH Keys"
+        },
+        {
+          "href": "/tutorials/git/personal-access-token",
+          "label": "Personal Access Tokens"
+        }
+      ]
+    },
+    {
+      "title": "Pull Requests",
+      "items": [
+        {
+          "href": "/tutorials/git/pull-requests",
+          "label": "Pull Requests"
+        },
+        {
+          "href": "/tutorials/git/create-pull-request",
+          "label": "Create a Pull Request"
+        },
+        {
+          "href": "/tutorials/git/review-pull-request",
+          "label": "Review a Pull Request"
+        },
+        {
+          "href": "/tutorials/git/update-pull-request",
+          "label": "Update a Pull Request"
+        },
+        {
+          "href": "/tutorials/git/merge-pull-request",
+          "label": "Merge a Pull Request"
+        }
+      ]
+    },
+    {
+      "title": "Code Reviews",
+      "items": [
+        {
+          "href": "/tutorials/git/code-reviews",
+          "label": "Git Code Reviews"
+        },
+        {
+          "href": "/tutorials/git/review-comments",
+          "label": "Review Comments"
+        },
+        {
+          "href": "/tutorials/git/request-changes",
+          "label": "Request Changes"
+        },
+        {
+          "href": "/tutorials/git/approve-changes",
+          "label": "Approve Changes"
+        },
+        {
+          "href": "/tutorials/git/code-review-best-practices",
+          "label": "Code Review Best Practices"
+        }
+      ]
+    },
+    {
+      "title": "Stashing",
+      "items": [
+        {
+          "href": "/tutorials/git/stash",
+          "label": "git stash"
+        },
+        {
+          "href": "/tutorials/git/stash-list",
+          "label": "List Stashes"
+        },
+        {
+          "href": "/tutorials/git/stash-apply",
+          "label": "Apply a Stash"
+        },
+        {
+          "href": "/tutorials/git/stash-pop",
+          "label": "Pop a Stash"
+        },
+        {
+          "href": "/tutorials/git/stash-drop",
+          "label": "Delete a Stash"
+        }
+      ]
+    },
+    {
+      "title": "Undoing Changes",
+      "items": [
+        {
+          "href": "/tutorials/git/undo-changes",
+          "label": "Undo Changes in Git"
+        },
+        {
+          "href": "/tutorials/git/restore",
+          "label": "git restore"
+        },
+        {
+          "href": "/tutorials/git/reset",
+          "label": "git reset"
+        },
+        {
+          "href": "/tutorials/git/revert",
+          "label": "git revert"
+        },
+        {
+          "href": "/tutorials/git/reset-vs-revert",
+          "label": "git reset vs git revert"
+        }
+      ]
+    },
+    {
+      "title": "Git Reset",
+      "items": [
+        {
+          "href": "/tutorials/git/reset-soft",
+          "label": "Soft Reset"
+        },
+        {
+          "href": "/tutorials/git/reset-mixed",
+          "label": "Mixed Reset"
+        },
+        {
+          "href": "/tutorials/git/reset-hard",
+          "label": "Hard Reset"
+        },
+        {
+          "href": "/tutorials/git/reset-file",
+          "label": "Reset a File"
+        },
+        {
+          "href": "/tutorials/git/recover-reset",
+          "label": "Recover from Git Reset"
+        }
+      ]
+    },
+    {
+      "title": "Cherry-Pick",
+      "items": [
+        {
+          "href": "/tutorials/git/cherry-pick",
+          "label": "git cherry-pick"
+        },
+        {
+          "href": "/tutorials/git/cherry-pick-commit",
+          "label": "Cherry-Pick a Commit"
+        },
+        {
+          "href": "/tutorials/git/cherry-pick-multiple",
+          "label": "Cherry-Pick Multiple Commits"
+        },
+        {
+          "href": "/tutorials/git/cherry-pick-conflicts",
+          "label": "Resolve Cherry-Pick Conflicts"
+        },
+        {
+          "href": "/tutorials/git/abort-cherry-pick",
+          "label": "Abort Cherry-Pick"
+        }
+      ]
+    },
+    {
+      "title": "Tags and Releases",
+      "items": [
+        {
+          "href": "/tutorials/git/tags",
+          "label": "Git Tags"
+        },
+        {
+          "href": "/tutorials/git/lightweight-tags",
+          "label": "Lightweight Tags"
+        },
+        {
+          "href": "/tutorials/git/annotated-tags",
+          "label": "Annotated Tags"
+        },
+        {
+          "href": "/tutorials/git/push-tags",
+          "label": "Push Tags"
+        },
+        {
+          "href": "/tutorials/git/delete-tags",
+          "label": "Delete Tags"
+        }
+      ]
+    },
+    {
+      "title": "Git History",
+      "items": [
+        {
+          "href": "/tutorials/git/history",
+          "label": "Git History"
+        },
+        {
+          "href": "/tutorials/git/log-oneline",
+          "label": "One-Line Git Log"
+        },
+        {
+          "href": "/tutorials/git/log-graph",
+          "label": "Git Log Graph"
+        },
+        {
+          "href": "/tutorials/git/log-filtering",
+          "label": "Filter Git History"
+        },
+        {
+          "href": "/tutorials/git/file-history",
+          "label": "View File History"
+        }
+      ]
+    },
+    {
+      "title": "Inspecting Changes",
+      "items": [
+        {
+          "href": "/tutorials/git/blame",
+          "label": "git blame"
+        },
+        {
+          "href": "/tutorials/git/bisect",
+          "label": "git bisect"
+        },
+        {
+          "href": "/tutorials/git/shortlog",
+          "label": "git shortlog"
+        },
+        {
+          "href": "/tutorials/git/describe",
+          "label": "git describe"
+        },
+        {
+          "href": "/tutorials/git/reflog",
+          "label": "git reflog"
+        }
+      ]
+    },
+    {
+      "title": "Recovering Work",
+      "items": [
+        {
+          "href": "/tutorials/git/recovery",
+          "label": "Recover Lost Git Work"
+        },
+        {
+          "href": "/tutorials/git/recover-deleted-commit",
+          "label": "Recover a Deleted Commit"
+        },
+        {
+          "href": "/tutorials/git/recover-deleted-branch",
+          "label": "Recover a Deleted Branch"
+        },
+        {
+          "href": "/tutorials/git/recover-file",
+          "label": "Recover a Deleted File"
+        },
+        {
+          "href": "/tutorials/git/reflog-recovery",
+          "label": "Recovery with Reflog"
+        }
+      ]
+    },
+    {
+      "title": "Git Workflows",
+      "items": [
+        {
+          "href": "/tutorials/git/workflows",
+          "label": "Git Workflows"
+        },
+        {
+          "href": "/tutorials/git/centralized-workflow",
+          "label": "Centralized Workflow"
+        },
+        {
+          "href": "/tutorials/git/feature-branch-workflow",
+          "label": "Feature Branch Workflow"
+        },
+        {
+          "href": "/tutorials/git/forking-workflow",
+          "label": "Forking Workflow"
+        },
+        {
+          "href": "/tutorials/git/trunk-based-development",
+          "label": "Trunk-Based Development"
+        }
+      ]
+    },
+    {
+      "title": "Git Flow",
+      "items": [
+        {
+          "href": "/tutorials/git/git-flow",
+          "label": "Git Flow"
+        },
+        {
+          "href": "/tutorials/git/feature-branches",
+          "label": "Feature Branches"
+        },
+        {
+          "href": "/tutorials/git/release-branches",
+          "label": "Release Branches"
+        },
+        {
+          "href": "/tutorials/git/hotfix-branches",
+          "label": "Hotfix Branches"
+        },
+        {
+          "href": "/tutorials/git/git-flow-vs-trunk-based",
+          "label": "Git Flow vs Trunk-Based Development"
+        }
+      ]
+    },
+    {
+      "title": "Commit Conventions",
+      "items": [
+        {
+          "href": "/tutorials/git/commit-conventions",
+          "label": "Git Commit Conventions"
+        },
+        {
+          "href": "/tutorials/git/conventional-commits",
+          "label": "Conventional Commits"
+        },
+        {
+          "href": "/tutorials/git/semantic-commit-messages",
+          "label": "Semantic Commit Messages"
+        },
+        {
+          "href": "/tutorials/git/commit-message-template",
+          "label": "Commit Message Templates"
+        },
+        {
+          "href": "/tutorials/git/commitlint",
+          "label": "Commitlint"
+        }
+      ]
+    },
+    {
+      "title": "Hooks",
+      "items": [
+        {
+          "href": "/tutorials/git/hooks",
+          "label": "Git Hooks"
+        },
+        {
+          "href": "/tutorials/git/pre-commit-hook",
+          "label": "Pre-Commit Hook"
+        },
+        {
+          "href": "/tutorials/git/commit-msg-hook",
+          "label": "Commit Message Hook"
+        },
+        {
+          "href": "/tutorials/git/pre-push-hook",
+          "label": "Pre-Push Hook"
+        },
+        {
+          "href": "/tutorials/git/custom-hooks",
+          "label": "Custom Git Hooks"
+        }
+      ]
+    },
+    {
+      "title": "Husky and lint-staged",
+      "items": [
+        {
+          "href": "/tutorials/git/husky",
+          "label": "Git Hooks with Husky"
+        },
+        {
+          "href": "/tutorials/git/husky-setup",
+          "label": "Husky Setup"
+        },
+        {
+          "href": "/tutorials/git/lint-staged",
+          "label": "lint-staged"
+        },
+        {
+          "href": "/tutorials/git/pre-commit-linting",
+          "label": "Pre-Commit Linting"
+        },
+        {
+          "href": "/tutorials/git/prevent-bad-commits",
+          "label": "Prevent Invalid Commits"
+        }
+      ]
+    },
+    {
+      "title": "Submodules and Subtrees",
+      "items": [
+        {
+          "href": "/tutorials/git/submodules",
+          "label": "Git Submodules"
+        },
+        {
+          "href": "/tutorials/git/add-submodule",
+          "label": "Add a Submodule"
+        },
+        {
+          "href": "/tutorials/git/update-submodule",
+          "label": "Update Submodules"
+        },
+        {
+          "href": "/tutorials/git/subtrees",
+          "label": "Git Subtrees"
+        },
+        {
+          "href": "/tutorials/git/submodule-vs-subtree",
+          "label": "Submodule vs Subtree"
+        }
+      ]
+    },
+    {
+      "title": "Git Large File Storage",
+      "items": [
+        {
+          "href": "/tutorials/git/git-lfs",
+          "label": "Git Large File Storage"
+        },
+        {
+          "href": "/tutorials/git/install-git-lfs",
+          "label": "Install Git LFS"
+        },
+        {
+          "href": "/tutorials/git/track-large-files",
+          "label": "Track Large Files"
+        },
+        {
+          "href": "/tutorials/git/migrate-to-lfs",
+          "label": "Migrate Files to Git LFS"
+        },
+        {
+          "href": "/tutorials/git/git-lfs-best-practices",
+          "label": "Git LFS Best Practices"
+        }
+      ]
+    },
+    {
+      "title": "Monorepos",
+      "items": [
+        {
+          "href": "/tutorials/git/monorepos",
+          "label": "Git Monorepos"
+        },
+        {
+          "href": "/tutorials/git/monorepo-branching",
+          "label": "Monorepo Branching Strategy"
+        },
+        {
+          "href": "/tutorials/git/monorepo-commits",
+          "label": "Monorepo Commit Practices"
+        },
+        {
+          "href": "/tutorials/git/sparse-checkout",
+          "label": "Sparse Checkout"
+        },
+        {
+          "href": "/tutorials/git/partial-clone",
+          "label": "Partial Clone"
+        }
+      ]
+    },
+    {
+      "title": "Advanced Git",
+      "items": [
+        {
+          "href": "/tutorials/git/advanced",
+          "label": "Advanced Git"
+        },
+        {
+          "href": "/tutorials/git/worktrees",
+          "label": "Git Worktrees"
+        },
+        {
+          "href": "/tutorials/git/replace",
+          "label": "git replace"
+        },
+        {
+          "href": "/tutorials/git/notes",
+          "label": "Git Notes"
+        },
+        {
+          "href": "/tutorials/git/bundles",
+          "label": "Git Bundles"
+        },
+        {
+          "href": "/tutorials/git/mailmap",
+          "label": "Git Mailmap"
+        },
+        {
+          "href": "/tutorials/git/git-notes",
+          "label": "Git Notes"
+        },
+        {
+          "href": "/tutorials/git/range-diff",
+          "label": "git range-diff"
+        }
+      ]
+    },
+    {
+      "title": "History Rewriting",
+      "items": [
+        {
+          "href": "/tutorials/git/history-rewriting",
+          "label": "Rewrite Git History"
+        },
+        {
+          "href": "/tutorials/git/filter-repo",
+          "label": "git filter-repo"
+        },
+        {
+          "href": "/tutorials/git/remove-sensitive-data",
+          "label": "Remove Sensitive Data"
+        },
+        {
+          "href": "/tutorials/git/change-author-history",
+          "label": "Change Commit Authors"
+        },
+        {
+          "href": "/tutorials/git/force-push-safely",
+          "label": "Safe Force Push"
+        }
+      ]
+    },
+    {
+      "title": "Security",
+      "items": [
+        {
+          "href": "/tutorials/git/security",
+          "label": "Git Security"
+        },
+        {
+          "href": "/tutorials/git/signed-commits",
+          "label": "Signed Commits"
+        },
+        {
+          "href": "/tutorials/git/signed-tags",
+          "label": "Signed Tags"
+        },
+        {
+          "href": "/tutorials/git/secret-scanning",
+          "label": "Secret Scanning"
+        },
+        {
+          "href": "/tutorials/git/security-best-practices",
+          "label": "Git Security Best Practices"
+        }
+      ]
+    },
+    {
+      "title": "Branch Protection",
+      "items": [
+        {
+          "href": "/tutorials/git/branch-protection",
+          "label": "Branch Protection Rules"
+        },
+        {
+          "href": "/tutorials/git/required-reviews",
+          "label": "Required Pull Request Reviews"
+        },
+        {
+          "href": "/tutorials/git/status-checks",
+          "label": "Required Status Checks"
+        },
+        {
+          "href": "/tutorials/git/restrict-force-push",
+          "label": "Restrict Force Pushes"
+        },
+        {
+          "href": "/tutorials/git/code-owners",
+          "label": "CODEOWNERS"
+        }
+      ]
+    },
+    {
+      "title": "CI/CD Integration",
+      "items": [
+        {
+          "href": "/tutorials/git/ci-cd",
+          "label": "Git with CI/CD"
+        },
+        {
+          "href": "/tutorials/git/github-actions",
+          "label": "GitHub Actions"
+        },
+        {
+          "href": "/tutorials/git/gitlab-ci",
+          "label": "GitLab CI/CD"
+        },
+        {
+          "href": "/tutorials/git/jenkins",
+          "label": "Git with Jenkins"
+        },
+        {
+          "href": "/tutorials/git/branch-based-deployment",
+          "label": "Branch-Based Deployment"
+        }
+      ]
+    },
+    {
+      "title": "Release Management",
+      "items": [
+        {
+          "href": "/tutorials/git/release-management",
+          "label": "Git Release Management"
+        },
+        {
+          "href": "/tutorials/git/semantic-versioning",
+          "label": "Semantic Versioning"
+        },
+        {
+          "href": "/tutorials/git/changelog",
+          "label": "Maintain a Changelog"
+        },
+        {
+          "href": "/tutorials/git/release-tags",
+          "label": "Release Tags"
+        },
+        {
+          "href": "/tutorials/git/automated-releases",
+          "label": "Automated Releases"
+        }
+      ]
+    },
+    {
+      "title": "Team Collaboration",
+      "items": [
+        {
+          "href": "/tutorials/git/team-collaboration",
+          "label": "Git Team Collaboration"
+        },
+        {
+          "href": "/tutorials/git/branch-naming",
+          "label": "Branch Naming Conventions"
+        },
+        {
+          "href": "/tutorials/git/team-commit-guidelines",
+          "label": "Team Commit Guidelines"
+        },
+        {
+          "href": "/tutorials/git/shared-workflows",
+          "label": "Shared Git Workflows"
+        },
+        {
+          "href": "/tutorials/git/collaboration-best-practices",
+          "label": "Collaboration Best Practices"
+        }
+      ]
+    },
+    {
+      "title": "GitHub CLI",
+      "items": [
+        {
+          "href": "/tutorials/git/github-cli",
+          "label": "GitHub CLI"
+        },
+        {
+          "href": "/tutorials/git/gh-auth",
+          "label": "GitHub CLI Authentication"
+        },
+        {
+          "href": "/tutorials/git/gh-repo",
+          "label": "Manage Repositories with gh"
+        },
+        {
+          "href": "/tutorials/git/gh-pr",
+          "label": "Manage Pull Requests with gh"
+        },
+        {
+          "href": "/tutorials/git/gh-issue",
+          "label": "Manage Issues with gh"
+        }
+      ]
+    },
+    {
+      "title": "Git GUIs and Editors",
+      "items": [
+        {
+          "href": "/tutorials/git/gui-tools",
+          "label": "Git GUI Tools"
+        },
+        {
+          "href": "/tutorials/git/github-desktop",
+          "label": "GitHub Desktop"
+        },
+        {
+          "href": "/tutorials/git/gitkraken",
+          "label": "GitKraken"
+        },
+        {
+          "href": "/tutorials/git/vscode",
+          "label": "Git in Visual Studio Code"
+        },
+        {
+          "href": "/tutorials/git/ide-integration",
+          "label": "Git IDE Integration"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshooting",
+      "items": [
+        {
+          "href": "/tutorials/git/debugging",
+          "label": "Git Troubleshooting"
+        },
+        {
+          "href": "/tutorials/git/permission-denied",
+          "label": "Permission Denied Errors"
+        },
+        {
+          "href": "/tutorials/git/non-fast-forward-error",
+          "label": "Non-Fast-Forward Errors"
+        },
+        {
+          "href": "/tutorials/git/rejected-push",
+          "label": "Rejected Push Errors"
+        },
+        {
+          "href": "/tutorials/git/unrelated-histories",
+          "label": "Unrelated Histories Error"
+        }
+      ]
+    },
+    {
+      "title": "Projects",
+      "items": [
+        {
+          "href": "/tutorials/git/first-repository-project",
+          "label": "Create Your First Repository"
+        },
+        {
+          "href": "/tutorials/git/team-workflow-project",
+          "label": "Team Collaboration Workflow"
+        },
+        {
+          "href": "/tutorials/git/open-source-project",
+          "label": "Open-Source Contribution"
+        },
+        {
+          "href": "/tutorials/git/release-workflow-project",
+          "label": "Release Management Workflow"
+        },
+        {
+          "href": "/tutorials/git/ci-cd-project",
+          "label": "Git CI/CD Workflow"
+        }
+      ]
+    }
+  ]
+}

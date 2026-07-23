@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/091-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 091 — Password show toggle — Solution | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>Exercise 091 — Password show toggle — Solution</h1>
+  <p class="meta">Toggle input type in shadow.</p>
+  <h2>Solution</h2>
+  <p>Toggle input type in shadow.</p>
+  <div id="demo"></div>
+  <pre id="out"></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+customElements.define("ex091-el", class extends HTMLElement {
+  connectedCallback() {
+    this.textContent = 'Password show toggle';
+  }
+});
+document.getElementById("demo").innerHTML = "<ex091-el></ex091-el>";
+document.getElementById("out").textContent = 'Toggle input type in shadow.';
+  </script>
+</body>
+</html>

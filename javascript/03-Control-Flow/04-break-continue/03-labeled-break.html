@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 03-Control-Flow/04-break-continue
+  example: 03-labeled-break.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Labeled Break | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Labeled break</h1>
+  <p>Break an outer loop.</p>
+  <pre id="out"></pre>
+  <script>
+let result = "";
+outer: for (let i = 0; i < 3; i++) {
+  for (let j = 0; j < 3; j++) {
+    if (i === 1 && j === 1) break outer;
+    result += i + "," + j + " ";
+  }
+}
+document.getElementById("out").textContent = result;
+  </script>
+</body>
+</html>

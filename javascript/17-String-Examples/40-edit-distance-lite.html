@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 17-String-Examples
+  example: 40-edit-distance-lite.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>40 — Hamming Distance | phpkingdom.com</title>
+</head>
+<body>
+  <h1>40 — Hamming Distance</h1>
+  <h2>Problem</h2>
+  <p>Count differing positions in equal-length strings.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function hamming(a, b) {
+  if (a.length !== b.length) return -1;
+  let d = 0;
+  for (let i = 0; i < a.length; i++) if (a[i] !== b[i]) d++;
+  return d;
+}
+document.getElementById("out").textContent = String(hamming("karolin", "kathrin"));
+  </script>
+</body>
+</html>

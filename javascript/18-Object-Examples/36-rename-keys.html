@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 18-Object-Examples
+  example: 36-rename-keys.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>36 — Rename Object Keys | phpkingdom.com</title>
+</head>
+<body>
+  <h1>36 — Rename Object Keys</h1>
+  <h2>Problem</h2>
+  <p>Rename keys using a mapping object.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function renameKeys(obj, map) {
+  return Object.fromEntries(Object.entries(obj).map(([k, v]) => [map[k] || k, v]));
+}
+document.getElementById("out").textContent = JSON.stringify(renameKeys({ first_name: "Ada", age: 36 }, { first_name: "firstName" }));
+  </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Functions-Examples
+  example: 17-debounce.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>17 — Debounce | phpkingdom.com</title>
+</head>
+<body>
+  <h1>17 — Debounce</h1>
+  <h2>Problem</h2>
+  <p>Debounce a function so rapid calls execute only after a delay.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function debounce(fn, wait) {
+  let timer;
+  return function (...args) {
+    clearTimeout(timer);
+    timer = setTimeout(() => fn.apply(this, args), wait);
+  };
+}
+let count = 0;
+const bump = debounce(() => { count += 1; }, 50);
+bump(); bump(); bump();
+setTimeout(() => {
+  document.getElementById("out").textContent = "debounced calls = " + count;
+}, 120);
+  </script>
+</body>
+</html>

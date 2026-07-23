@@ -1,0 +1,35 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 23-Promises-Examples
+  example: 16-promise-any.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>16 — Promise.any | phpkingdom.com</title>
+</head>
+<body>
+  <h1>16 — Promise.any</h1>
+  <h2>Problem</h2>
+  <p>Resolve with the first fulfilled value; ignore rejections unless all fail.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+Promise.any([
+  Promise.reject(new Error("1")),
+  new Promise((resolve) => setTimeout(() => resolve("first success"), 120)),
+  Promise.reject(new Error("3"))
+]).then((value) => {
+  document.getElementById("out").textContent = value;
+}).catch((err) => {
+  document.getElementById("out").textContent = err.name + ": " + err.message;
+});
+  </script>
+</body>
+</html>

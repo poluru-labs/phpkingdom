@@ -1,0 +1,49 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 29-Algorithms-Examples
+  example: 21-three-sum-small.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>21 — Three Sum (Small Demo) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>21 — Three Sum (Small Demo)</h1>
+  <h2>Problem</h2>
+  <p>Find all unique triplets in a sorted array that sum to zero.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function threeSum(arr) {
+  arr.sort((a, b) => a - b);
+  const out = [];
+  for (let i = 0; i < arr.length - 2; i++) {
+    if (i > 0 && arr[i] === arr[i - 1]) continue;
+    let lo = i + 1, hi = arr.length - 1;
+    while (lo < hi) {
+      const sum = arr[i] + arr[lo] + arr[hi];
+      if (sum === 0) {
+        out.push([arr[i], arr[lo], arr[hi]]);
+        while (lo < hi && arr[lo] === arr[lo + 1]) lo++;
+        while (lo < hi && arr[hi] === arr[hi - 1]) hi--;
+        lo++; hi--;
+      } else if (sum < 0) lo++;
+      else hi--;
+    }
+  }
+  return out;
+}
+const input = [-1, 0, 1, 2, -1, -4];
+document.getElementById("out").textContent =
+  "input:  " + JSON.stringify(input) + "\n" +
+  "triplets: " + JSON.stringify(threeSum(input.slice()));
+  </script>
+</body>
+</html>

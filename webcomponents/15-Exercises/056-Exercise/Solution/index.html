@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/056-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 056 — Document public API — Solution | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>Exercise 056 — Document public API — Solution</h1>
+  <p class="meta">List attrs/events/slots for a card.</p>
+  <h2>Solution</h2>
+  <p>List attrs/events/slots for a card.</p>
+  <div id="demo"></div>
+  <pre id="out"></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+customElements.define("ex056-el", class extends HTMLElement {
+  connectedCallback() {
+    this.textContent = 'Document public API';
+  }
+});
+document.getElementById("demo").innerHTML = "<ex056-el></ex056-el>";
+document.getElementById("out").textContent = 'List attrs/events/slots for a card.';
+  </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 13-Templates/15-sourcemaps
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <meta name="description" content="Map failures to TS/JS sources">
+  <title>Source Maps | webpack + sourcemap | phpkingdom.com</title>
+  <style>
+    body { margin:0; font-family: Georgia, "Times New Roman", serif; background:#f5f7fb; color:#1f2937; line-height:1.55; }
+    .wrap { max-width:900px; margin:0 auto; padding:1.5rem; }
+    .brand { color:#4338ca; font-size:.78rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    h1 { font-size:1.75rem; margin:.4rem 0; }
+    .meta { color:#64748b; }
+    pre { background:#0f172a; color:#e2e8f0; padding:1rem; border-radius:.65rem; overflow:auto; font-size:.88rem; }
+    .card { background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:1rem; margin:1rem 0; }
+    a { color:#4338ca; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">phpkingdom.com</div>
+    <p class="meta">Source Maps · Karma template</p>
+    <h1>webpack + sourcemap</h1>
+    <p class="meta">Map failures to TS/JS sources</p>
+    <div class="card">
+      <h2>Starter Scaffold</h2>
+      <pre><code>module.exports = function (config) {
+  config.set({
+    frameworks: [&quot;jasmine&quot;],
+    files: [&quot;src/test.ts&quot;],
+    preprocessors: { &quot;src/test.ts&quot;: [&quot;webpack&quot;, &quot;sourcemap&quot;] },
+    webpack: { mode: &quot;development&quot;, devtool: &quot;inline-source-map&quot; },
+    webpackMiddleware: { stats: &quot;errors-only&quot; },
+    browsers: [&quot;ChromeHeadless&quot;],
+    singleRun: true,
+  });
+};</code></pre>
+    </div>
+    <div class="card">
+      <h2>Run</h2>
+      <pre><code>npx karma start --single-run</code></pre>
+    </div>
+    <p><a href="../index.html">All templates</a></p>
+  </div>
+</body>
+</html>

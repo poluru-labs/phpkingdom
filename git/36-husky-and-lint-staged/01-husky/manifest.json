@@ -1,0 +1,452 @@
+[
+  {
+    "type": "example",
+    "file": "36-husky-and-lint-staged/01-husky/examples/01-starter-command.html",
+    "focus": "starter command",
+    "scenario": "solo project"
+  },
+  {
+    "type": "example",
+    "file": "36-husky-and-lint-staged/01-husky/examples/02-repo-init.html",
+    "focus": "repo init",
+    "scenario": "team feature"
+  },
+  {
+    "type": "example",
+    "file": "36-husky-and-lint-staged/01-husky/examples/03-stage-files.html",
+    "focus": "stage files",
+    "scenario": "open source fork"
+  },
+  {
+    "type": "example",
+    "file": "36-husky-and-lint-staged/01-husky/examples/04-first-commit.html",
+    "focus": "first commit",
+    "scenario": "hotfix release"
+  },
+  {
+    "type": "example",
+    "file": "36-husky-and-lint-staged/01-husky/examples/05-status-check.html",
+    "focus": "status check",
+    "scenario": "monorepo app"
+  },
+  {
+    "type": "example",
+    "file": "36-husky-and-lint-staged/01-husky/examples/06-branch-create.html",
+    "focus": "branch create",
+    "scenario": "docs site"
+  },
+  {
+    "type": "example",
+    "file": "36-husky-and-lint-staged/01-husky/examples/07-switch-branch.html",
+    "focus": "switch branch",
+    "scenario": "CI pipeline"
+  },
+  {
+    "type": "example",
+    "file": "36-husky-and-lint-staged/01-husky/examples/08-merge-flow.html",
+    "focus": "merge flow",
+    "scenario": "design system"
+  },
+  {
+    "type": "example",
+    "file": "36-husky-and-lint-staged/01-husky/examples/09-rebase-flow.html",
+    "focus": "rebase flow",
+    "scenario": "mobile app"
+  },
+  {
+    "type": "example",
+    "file": "36-husky-and-lint-staged/01-husky/examples/10-remote-add.html",
+    "focus": "remote add",
+    "scenario": "api service"
+  },
+  {
+    "type": "example",
+    "file": "36-husky-and-lint-staged/01-husky/examples/11-fetch-pull.html",
+    "focus": "fetch pull",
+    "scenario": "solo project"
+  },
+  {
+    "type": "example",
+    "file": "36-husky-and-lint-staged/01-husky/examples/12-push-upstream.html",
+    "focus": "push upstream",
+    "scenario": "team feature"
+  },
+  {
+    "type": "example",
+    "file": "36-husky-and-lint-staged/01-husky/examples/13-stash-work.html",
+    "focus": "stash work",
+    "scenario": "open source fork"
+  },
+  {
+    "type": "example",
+    "file": "36-husky-and-lint-staged/01-husky/examples/14-diff-staged.html",
+    "focus": "diff staged",
+    "scenario": "hotfix release"
+  },
+  {
+    "type": "example",
+    "file": "36-husky-and-lint-staged/01-husky/examples/15-log-graph.html",
+    "focus": "log graph",
+    "scenario": "monorepo app"
+  },
+  {
+    "type": "example",
+    "file": "36-husky-and-lint-staged/01-husky/examples/16-gitignore-rule.html",
+    "focus": "gitignore rule",
+    "scenario": "docs site"
+  },
+  {
+    "type": "example",
+    "file": "36-husky-and-lint-staged/01-husky/examples/17-tag-release.html",
+    "focus": "tag release",
+    "scenario": "CI pipeline"
+  },
+  {
+    "type": "example",
+    "file": "36-husky-and-lint-staged/01-husky/examples/18-cherry-pick.html",
+    "focus": "cherry pick",
+    "scenario": "design system"
+  },
+  {
+    "type": "example",
+    "file": "36-husky-and-lint-staged/01-husky/examples/19-resolve-conflict.html",
+    "focus": "resolve conflict",
+    "scenario": "mobile app"
+  },
+  {
+    "type": "example",
+    "file": "36-husky-and-lint-staged/01-husky/examples/20-amend-message.html",
+    "focus": "amend message",
+    "scenario": "api service"
+  },
+  {
+    "type": "example",
+    "file": "36-husky-and-lint-staged/01-husky/examples/21-ssh-auth.html",
+    "focus": "ssh auth",
+    "scenario": "solo project"
+  },
+  {
+    "type": "example",
+    "file": "36-husky-and-lint-staged/01-husky/examples/22-pull-request.html",
+    "focus": "pull request",
+    "scenario": "team feature"
+  },
+  {
+    "type": "example",
+    "file": "36-husky-and-lint-staged/01-husky/examples/23-hook-setup.html",
+    "focus": "hook setup",
+    "scenario": "open source fork"
+  },
+  {
+    "type": "example",
+    "file": "36-husky-and-lint-staged/01-husky/examples/24-reflog-recover.html",
+    "focus": "reflog recover",
+    "scenario": "hotfix release"
+  },
+  {
+    "type": "example",
+    "file": "36-husky-and-lint-staged/01-husky/examples/25-best-practice-recap.html",
+    "focus": "best practice recap",
+    "scenario": "monorepo app"
+  },
+  {
+    "type": "exercise",
+    "file": "36-husky-and-lint-staged/01-husky/exercises/01-install-verify.html",
+    "focus": "install verify",
+    "scenario": "solo project"
+  },
+  {
+    "type": "exercise",
+    "file": "36-husky-and-lint-staged/01-husky/exercises/02-config-user.html",
+    "focus": "config user",
+    "scenario": "team feature"
+  },
+  {
+    "type": "exercise",
+    "file": "36-husky-and-lint-staged/01-husky/exercises/03-init-clone.html",
+    "focus": "init clone",
+    "scenario": "open source fork"
+  },
+  {
+    "type": "exercise",
+    "file": "36-husky-and-lint-staged/01-husky/exercises/04-add-commit.html",
+    "focus": "add commit",
+    "scenario": "hotfix release"
+  },
+  {
+    "type": "exercise",
+    "file": "36-husky-and-lint-staged/01-husky/exercises/05-status-drill.html",
+    "focus": "status drill",
+    "scenario": "monorepo app"
+  },
+  {
+    "type": "exercise",
+    "file": "36-husky-and-lint-staged/01-husky/exercises/06-branch-rename.html",
+    "focus": "branch rename",
+    "scenario": "docs site"
+  },
+  {
+    "type": "exercise",
+    "file": "36-husky-and-lint-staged/01-husky/exercises/07-checkout-switch.html",
+    "focus": "checkout switch",
+    "scenario": "CI pipeline"
+  },
+  {
+    "type": "exercise",
+    "file": "36-husky-and-lint-staged/01-husky/exercises/08-merge-abort.html",
+    "focus": "merge abort",
+    "scenario": "design system"
+  },
+  {
+    "type": "exercise",
+    "file": "36-husky-and-lint-staged/01-husky/exercises/09-rebase-continue.html",
+    "focus": "rebase continue",
+    "scenario": "mobile app"
+  },
+  {
+    "type": "exercise",
+    "file": "36-husky-and-lint-staged/01-husky/exercises/10-remote-list.html",
+    "focus": "remote list",
+    "scenario": "api service"
+  },
+  {
+    "type": "exercise",
+    "file": "36-husky-and-lint-staged/01-husky/exercises/11-push-set-upstream.html",
+    "focus": "push set-upstream",
+    "scenario": "solo project"
+  },
+  {
+    "type": "exercise",
+    "file": "36-husky-and-lint-staged/01-husky/exercises/12-pull-rebase.html",
+    "focus": "pull rebase",
+    "scenario": "team feature"
+  },
+  {
+    "type": "exercise",
+    "file": "36-husky-and-lint-staged/01-husky/exercises/13-stash-pop.html",
+    "focus": "stash pop",
+    "scenario": "open source fork"
+  },
+  {
+    "type": "exercise",
+    "file": "36-husky-and-lint-staged/01-husky/exercises/14-restore-file.html",
+    "focus": "restore file",
+    "scenario": "hotfix release"
+  },
+  {
+    "type": "exercise",
+    "file": "36-husky-and-lint-staged/01-husky/exercises/15-reset-soft.html",
+    "focus": "reset soft",
+    "scenario": "monorepo app"
+  },
+  {
+    "type": "exercise",
+    "file": "36-husky-and-lint-staged/01-husky/exercises/16-revert-commit.html",
+    "focus": "revert commit",
+    "scenario": "docs site"
+  },
+  {
+    "type": "exercise",
+    "file": "36-husky-and-lint-staged/01-husky/exercises/17-tag-annotated.html",
+    "focus": "tag annotated",
+    "scenario": "CI pipeline"
+  },
+  {
+    "type": "exercise",
+    "file": "36-husky-and-lint-staged/01-husky/exercises/18-log-oneline.html",
+    "focus": "log oneline",
+    "scenario": "design system"
+  },
+  {
+    "type": "exercise",
+    "file": "36-husky-and-lint-staged/01-husky/exercises/19-blame-line.html",
+    "focus": "blame line",
+    "scenario": "mobile app"
+  },
+  {
+    "type": "exercise",
+    "file": "36-husky-and-lint-staged/01-husky/exercises/20-bisect-start.html",
+    "focus": "bisect start",
+    "scenario": "api service"
+  },
+  {
+    "type": "exercise",
+    "file": "36-husky-and-lint-staged/01-husky/exercises/21-gh-pr-create.html",
+    "focus": "gh pr create",
+    "scenario": "solo project"
+  },
+  {
+    "type": "exercise",
+    "file": "36-husky-and-lint-staged/01-husky/exercises/22-pre-commit-hook.html",
+    "focus": "pre-commit hook",
+    "scenario": "team feature"
+  },
+  {
+    "type": "exercise",
+    "file": "36-husky-and-lint-staged/01-husky/exercises/23-lfs-track.html",
+    "focus": "lfs track",
+    "scenario": "open source fork"
+  },
+  {
+    "type": "exercise",
+    "file": "36-husky-and-lint-staged/01-husky/exercises/24-force-push-lease.html",
+    "focus": "force push lease",
+    "scenario": "hotfix release"
+  },
+  {
+    "type": "exercise",
+    "file": "36-husky-and-lint-staged/01-husky/exercises/25-final-challenge.html",
+    "focus": "final challenge",
+    "scenario": "monorepo app"
+  },
+  {
+    "type": "template",
+    "file": "36-husky-and-lint-staged/01-husky/templates/01-first-repo.html",
+    "focus": "first repo",
+    "scenario": "solo project"
+  },
+  {
+    "type": "template",
+    "file": "36-husky-and-lint-staged/01-husky/templates/02-feature-branch.html",
+    "focus": "feature branch",
+    "scenario": "team feature"
+  },
+  {
+    "type": "template",
+    "file": "36-husky-and-lint-staged/01-husky/templates/03-hotfix-flow.html",
+    "focus": "hotfix flow",
+    "scenario": "open source fork"
+  },
+  {
+    "type": "template",
+    "file": "36-husky-and-lint-staged/01-husky/templates/04-pr-template.html",
+    "focus": "pr template",
+    "scenario": "hotfix release"
+  },
+  {
+    "type": "template",
+    "file": "36-husky-and-lint-staged/01-husky/templates/05-commitlint.html",
+    "focus": "commitlint",
+    "scenario": "monorepo app"
+  },
+  {
+    "type": "template",
+    "file": "36-husky-and-lint-staged/01-husky/templates/06-husky-lint.html",
+    "focus": "husky lint",
+    "scenario": "docs site"
+  },
+  {
+    "type": "template",
+    "file": "36-husky-and-lint-staged/01-husky/templates/07-gitignore-node.html",
+    "focus": "gitignore node",
+    "scenario": "CI pipeline"
+  },
+  {
+    "type": "template",
+    "file": "36-husky-and-lint-staged/01-husky/templates/08-ssh-setup.html",
+    "focus": "ssh setup",
+    "scenario": "design system"
+  },
+  {
+    "type": "template",
+    "file": "36-husky-and-lint-staged/01-husky/templates/09-gh-workflow.html",
+    "focus": "gh workflow",
+    "scenario": "mobile app"
+  },
+  {
+    "type": "template",
+    "file": "36-husky-and-lint-staged/01-husky/templates/10-release-tags.html",
+    "focus": "release tags",
+    "scenario": "api service"
+  },
+  {
+    "type": "template",
+    "file": "36-husky-and-lint-staged/01-husky/templates/11-codeowners.html",
+    "focus": "codeowners",
+    "scenario": "solo project"
+  },
+  {
+    "type": "template",
+    "file": "36-husky-and-lint-staged/01-husky/templates/12-branch-protect.html",
+    "focus": "branch protect",
+    "scenario": "team feature"
+  },
+  {
+    "type": "template",
+    "file": "36-husky-and-lint-staged/01-husky/templates/13-monorepo-sparse.html",
+    "focus": "monorepo sparse",
+    "scenario": "open source fork"
+  },
+  {
+    "type": "template",
+    "file": "36-husky-and-lint-staged/01-husky/templates/14-submodule-kit.html",
+    "focus": "submodule kit",
+    "scenario": "hotfix release"
+  },
+  {
+    "type": "template",
+    "file": "36-husky-and-lint-staged/01-husky/templates/15-lfs-kit.html",
+    "focus": "lfs kit",
+    "scenario": "monorepo app"
+  },
+  {
+    "type": "template",
+    "file": "36-husky-and-lint-staged/01-husky/templates/16-conventional-commits.html",
+    "focus": "conventional commits",
+    "scenario": "docs site"
+  },
+  {
+    "type": "template",
+    "file": "36-husky-and-lint-staged/01-husky/templates/17-rebase-clean.html",
+    "focus": "rebase clean",
+    "scenario": "CI pipeline"
+  },
+  {
+    "type": "template",
+    "file": "36-husky-and-lint-staged/01-husky/templates/18-conflict-drill.html",
+    "focus": "conflict drill",
+    "scenario": "design system"
+  },
+  {
+    "type": "template",
+    "file": "36-husky-and-lint-staged/01-husky/templates/19-reflog-kit.html",
+    "focus": "reflog kit",
+    "scenario": "mobile app"
+  },
+  {
+    "type": "template",
+    "file": "36-husky-and-lint-staged/01-husky/templates/20-worktree-kit.html",
+    "focus": "worktree kit",
+    "scenario": "api service"
+  },
+  {
+    "type": "template",
+    "file": "36-husky-and-lint-staged/01-husky/templates/21-signed-commits.html",
+    "focus": "signed commits",
+    "scenario": "solo project"
+  },
+  {
+    "type": "template",
+    "file": "36-husky-and-lint-staged/01-husky/templates/22-ci-github.html",
+    "focus": "ci github",
+    "scenario": "team feature"
+  },
+  {
+    "type": "template",
+    "file": "36-husky-and-lint-staged/01-husky/templates/23-fork-contribute.html",
+    "focus": "fork contribute",
+    "scenario": "open source fork"
+  },
+  {
+    "type": "template",
+    "file": "36-husky-and-lint-staged/01-husky/templates/24-changelog.html",
+    "focus": "changelog",
+    "scenario": "hotfix release"
+  },
+  {
+    "type": "template",
+    "file": "36-husky-and-lint-staged/01-husky/templates/25-production-starter.html",
+    "focus": "production starter",
+    "scenario": "monorepo app"
+  }
+]

@@ -1,0 +1,34 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 050-strong-number.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>050 — Strong Number | phpkingdom.com</title>
+</head>
+<body>
+  <h1>050 — Strong Number</h1>
+  <h2>Problem</h2>
+  <p>Check if N equals the sum of factorials of its digits.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function fact(k) { let f = 1; for (let i = 2; i <= k; i++) f *= i; return f; }
+function isStrong(n) {
+  let sum = 0, x = n;
+  while (x > 0) { sum += fact(x % 10); x = Math.floor(x / 10); }
+  return sum === n;
+}
+document.getElementById("out").textContent =
+  "145 → " + isStrong(145) + "\n123 → " + isStrong(123);
+  </script>
+</body>
+</html>

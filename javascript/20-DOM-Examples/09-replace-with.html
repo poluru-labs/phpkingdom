@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 20-DOM-Examples
+  example: 09-replace-with.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>09 — replaceWith | phpkingdom.com</title>
+</head>
+<body>
+  <h1>09 — replaceWith</h1>
+  <h2>Problem</h2>
+  <p>Replace an existing element with a new one.</p>
+  <h2>Demo</h2>
+  <p id="old">Old paragraph</p>
+  <button id="btn">Replace</button>
+  <script>
+document.getElementById("btn").onclick = () => {
+  const neu = document.createElement("h3");
+  neu.textContent = "Replaced with h3";
+  document.getElementById("old").replaceWith(neu);
+};
+  </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 061-until-sentinel.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>061 — Loop Until Sentinel | phpkingdom.com</title>
+</head>
+<body>
+  <h1>061 — Loop Until Sentinel</h1>
+  <h2>Problem</h2>
+  <p>Process values until a sentinel (0) appears.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const stream = [4, 7, 2, 0, 9];
+let sum = 0, i = 0;
+while (i < stream.length && stream[i] !== 0) {
+  sum += stream[i];
+  i++;
+}
+document.getElementById("out").textContent = "sum before 0 = " + sum;
+  </script>
+</body>
+</html>

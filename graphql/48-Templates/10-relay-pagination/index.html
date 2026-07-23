@@ -1,0 +1,72 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 48-Templates/10-relay-pagination
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <meta name="description" content="Cursor connection with PageInfo">
+  <title>Relay Pagination | Connection | phpkingdom.com</title>
+  <style>
+    body { margin:0; font-family: Georgia, "Times New Roman", serif; background:#f5f7fb; color:#1f2937; line-height:1.55; }
+    .wrap { max-width:900px; margin:0 auto; padding:1.5rem; }
+    .brand { color:#9d174d; font-size:.78rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    h1 { font-size:1.75rem; margin:.4rem 0; }
+    .meta { color:#64748b; }
+    pre { background:#0f172a; color:#e2e8f0; padding:1rem; border-radius:.65rem; overflow:auto; font-size:.88rem; }
+    .card { background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:1rem; margin:1rem 0; }
+    a { color:#9d174d; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">phpkingdom.com</div>
+    <p class="meta">Relay Pagination · GraphQL Node.js template</p>
+    <h1>Connection</h1>
+    <p class="meta">Cursor connection with PageInfo</p>
+    <div class="card">
+      <h2>Server Scaffold</h2>
+      <pre><code>const typeDefs = `#graphql
+  type PageInfo { hasNextPage: Boolean! endCursor: String }
+  type PostEdge { cursor: String! node: Post! }
+  type PostConnection { edges: [PostEdge!]! pageInfo: PageInfo! }
+  type Post { id: ID! title: String! }
+  type Query { posts(first: Int = 10, after: String): PostConnection! }
+`;
+function connection(nodes, hasNextPage) {
+  return {
+    edges: nodes.map((node) =&gt; ({ cursor: node.id, node })),
+    pageInfo: { hasNextPage, endCursor: nodes.at(-1)?.id ?? null },
+  };
+}
+const resolvers = {
+  Query: {
+    posts: async (_p, { first, after }, { prisma }) =&gt; {
+      const rows = await prisma.post.findMany({
+        take: first + 1,
+        ...(after ? { cursor: { id: after }, skip: 1 } : {}),
+        orderBy: { id: &quot;asc&quot; },
+      });
+      const hasNext = rows.length &gt; first;
+      return connection(hasNext ? rows.slice(0, -1) : rows, hasNext);
+    },
+  },
+};</code></pre>
+    </div>
+    <div class="card">
+      <h2>Verify</h2>
+      <pre><code>npm install @apollo/server graphql
+node server.mjs
+# open http://localhost:4000 — Sandbox / Playground</code></pre>
+    </div>
+    <p><a href="../index.html">All templates</a></p>
+  </div>
+</body>
+</html>

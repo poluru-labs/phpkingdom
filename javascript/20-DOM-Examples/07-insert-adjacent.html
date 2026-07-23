@@ -1,0 +1,35 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 20-DOM-Examples
+  example: 07-insert-adjacent.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>07 — insertAdjacentHTML / Element | phpkingdom.com</title>
+</head>
+<body>
+  <h1>07 — insertAdjacentHTML / Element</h1>
+  <h2>Problem</h2>
+  <p>Insert HTML relative to an element using insertAdjacentHTML.</p>
+  <h2>Demo</h2>
+  <p id="anchor">Anchor</p>
+  <button id="before">beforebegin</button>
+  <button id="after">afterend</button>
+  <script>
+const a = document.getElementById("anchor");
+document.getElementById("before").onclick = () => {
+  a.insertAdjacentHTML("beforebegin", "<em>before </em>");
+};
+document.getElementById("after").onclick = () => {
+  a.insertAdjacentHTML("afterend", " <strong>after</strong>");
+};
+  </script>
+</body>
+</html>

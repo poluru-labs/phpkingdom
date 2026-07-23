@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Functions-Examples
+  example: 04-default-parameters.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>04 — Default Parameters | phpkingdom.com</title>
+</head>
+<body>
+  <h1>04 — Default Parameters</h1>
+  <h2>Problem</h2>
+  <p>Provide a default value when an argument is omitted.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function greet(name = "Guest") {
+  return "Hi, " + name;
+}
+document.getElementById("out").textContent =
+  greet() + "\n" + greet("Ada");
+  </script>
+</body>
+</html>

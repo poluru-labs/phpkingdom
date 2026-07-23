@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 27-Regex-Examples
+  example: 34-replace-spaces.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>34 — Replace Multiple Spaces | phpkingdom.com</title>
+</head>
+<body>
+  <h1>34 — Replace Multiple Spaces</h1>
+  <h2>Problem</h2>
+  <p>Collapse runs of whitespace to a single space and trim.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const messy = "  Hello    world   from   regex  ";
+const clean = messy.replace(/\s+/g, " ").trim();
+document.getElementById("out").textContent =
+  "before: [" + messy + "]\n" +
+  "after:  [" + clean + "]";
+  </script>
+</body>
+</html>

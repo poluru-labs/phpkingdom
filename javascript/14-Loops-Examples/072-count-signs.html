@@ -1,0 +1,35 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 072-count-signs.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>072 — Count Pos / Neg / Zero | phpkingdom.com</title>
+</head>
+<body>
+  <h1>072 — Count Pos / Neg / Zero</h1>
+  <h2>Problem</h2>
+  <p>Count positives, negatives, and zeros.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const nums = [3, -1, 0, 4, -2, 0, 7];
+let pos = 0, neg = 0, zero = 0;
+for (const x of nums) {
+  if (x > 0) pos++;
+  else if (x < 0) neg++;
+  else zero++;
+}
+document.getElementById("out").textContent =
+  "pos=" + pos + " neg=" + neg + " zero=" + zero;
+  </script>
+</body>
+</html>

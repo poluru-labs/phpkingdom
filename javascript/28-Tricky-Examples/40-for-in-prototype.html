@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 28-Tricky-Examples
+  example: 40-for-in-prototype.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>40 — for...in Includes Inherited Keys | phpkingdom.com</title>
+</head>
+<body>
+  <h1>40 — for...in Includes Inherited Keys</h1>
+  <h2>Problem / Gotcha</h2>
+  <p>for...in walks enumerable prototype props; guard with hasOwn.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const proto = { inherited: true };
+const obj = Object.create(proto);
+obj.own = 1;
+const all = [];
+for (const k in obj) all.push(k);
+const owns = [];
+for (const k in obj) if (Object.hasOwn(obj, k)) owns.push(k);
+document.getElementById("out").textContent =
+  "for...in => " + all.join(",") + "\n" +
+  "own only => " + owns.join(",");
+  </script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 12-Misc-Examples
+  example: 029-postmessage-self.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>029 — postMessage self | phpkingdom.com</title>
+</head>
+<body>
+  <h1>029 — postMessage self</h1>
+  <p>Same-window message.</p>
+<button id="b" type="button">Send</button><pre id="out"></pre>
+  <script>
+onmessage=e=>{if(e.origin===location.origin)document.getElementById("out").textContent=e.data;};document.getElementById("b").onclick=()=>postMessage("hi",location.origin);
+  </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 20-DOM-Examples
+  example: 20-matches.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>20 — matches() | phpkingdom.com</title>
+</head>
+<body>
+  <h1>20 — matches()</h1>
+  <h2>Problem</h2>
+  <p>Test whether an element matches a CSS selector.</p>
+  <h2>Demo</h2>
+  <button id="a" class="primary">A</button>
+  <button id="b">B</button>
+  <pre id="out"></pre>
+  <script>
+const a = document.getElementById("a");
+const b = document.getElementById("b");
+document.getElementById("out").textContent =
+  "A.primary? " + a.matches(".primary") +
+  "\nB.primary? " + b.matches(".primary");
+  </script>
+</body>
+</html>

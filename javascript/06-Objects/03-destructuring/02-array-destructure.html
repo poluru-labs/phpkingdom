@@ -1,0 +1,27 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 06-Objects/03-destructuring
+  example: 02-array-destructure.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Array Destructure | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Array Destructuring</h1>
+  <p>Unpack items by position.</p>
+  <pre id="out"></pre>
+  <script>
+const rgb = [12, 140, 110];
+const [r, g, b] = rgb;
+document.getElementById("out").textContent = r + "," + g + "," + b;
+  </script>
+</body>
+</html>

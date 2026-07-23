@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 20-DOM-Examples
+  example: 32-toggle-visibility.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>32 — Toggle Visibility | phpkingdom.com</title>
+</head>
+<body>
+  <h1>32 — Toggle Visibility</h1>
+  <h2>Problem</h2>
+  <p>Show and hide an element with the hidden property.</p>
+  <h2>Demo</h2>
+  <p id="panel">Secret panel</p>
+  <button id="btn">Toggle</button>
+  <script>
+document.getElementById("btn").onclick = () => {
+  const panel = document.getElementById("panel");
+  panel.hidden = !panel.hidden;
+};
+  </script>
+</body>
+</html>

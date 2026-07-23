@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/094-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 094 — Color swatch — Solution | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>Exercise 094 — Color swatch — Solution</h1>
+  <p class="meta">Background from color attribute.</p>
+  <h2>Solution</h2>
+  <p>Background from color attribute.</p>
+  <div id="demo"></div>
+  <pre id="out"></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+customElements.define("ex094-el", class extends HTMLElement {
+  connectedCallback() {
+    this.textContent = 'Color swatch';
+  }
+});
+document.getElementById("demo").innerHTML = "<ex094-el></ex094-el>";
+document.getElementById("out").textContent = 'Background from color attribute.';
+  </script>
+</body>
+</html>

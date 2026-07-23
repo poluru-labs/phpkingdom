@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 23-Promises-Examples
+  example: 33-microtask-queue.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>33 — then Queues a Microtask | phpkingdom.com</title>
+</head>
+<body>
+  <h1>33 — then Queues a Microtask</h1>
+  <h2>Problem</h2>
+  <p>then callbacks run after current sync code.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+let log = "sync1 ";
+Promise.resolve().then(() => {
+  log += "microtask ";
+  document.getElementById("out").textContent = log;
+});
+log += "sync2 ";
+document.getElementById("out").textContent = log;
+  </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 25-Error-Handling-Examples
+  example: 43-error-in-loop.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>43 — Errors in a Loop | phpkingdom.com</title>
+</head>
+<body>
+  <h1>43 — Errors in a Loop</h1>
+  <h2>Problem</h2>
+  <p>Collect per-item errors instead of stopping the whole loop.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const out = document.getElementById("out");
+const inputs = ["1", "x", "3"];
+const ok = [];
+const bad = [];
+for (const s of inputs) {
+  const n = Number(s);
+  if (Number.isNaN(n)) {
+    bad.push(s);
+    continue;
+  }
+  ok.push(n);
+}
+out.textContent = "ok: [" + ok + "]\ninvalid: [" + bad + "]";
+  </script>
+</body>
+</html>

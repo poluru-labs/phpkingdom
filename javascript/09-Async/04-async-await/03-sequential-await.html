@@ -1,0 +1,35 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 09-Async/04-async-await
+  example: 03-sequential-await.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Sequential Await | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Await in Sequence</h1>
+  <p>Each await waits for the previous.</p>
+  <pre id="out"></pre>
+  <script>
+function wait(ms, label) {
+  return new Promise(function (resolve) {
+    setTimeout(function () { resolve(label); }, ms);
+  });
+}
+async function run() {
+  const a = await wait(150, "A");
+  const b = await wait(150, "B");
+  document.getElementById("out").textContent = a + " then " + b;
+}
+run();
+  </script>
+</body>
+</html>

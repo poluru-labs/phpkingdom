@@ -1,0 +1,255 @@
+{
+  "title": "Sass and SCSS Tutorials",
+  "items": [
+    {
+      "title": "Basics",
+      "items": [
+        {
+          "href": "/tutorials/sass/introduction",
+          "label": "Sass - Introduction"
+        },
+        {
+          "href": "/tutorials/sass/basics",
+          "label": "Sass - Basics"
+        },
+        {
+          "href": "/tutorials/sass/setup",
+          "label": "Sass Setup"
+        },
+        {
+          "href": "/tutorials/sass/sass-vs-scss",
+          "label": "Sass vs SCSS"
+        },
+        {
+          "href": "/tutorials/sass/syntax",
+          "label": "Sass Syntax"
+        }
+      ]
+    },
+    {
+      "title": "Core Concepts",
+      "items": [
+        {
+          "href": "/tutorials/sass/variables",
+          "label": "Sass Variables"
+        },
+        {
+          "href": "/tutorials/sass/nesting",
+          "label": "Sass Nesting"
+        },
+        {
+          "href": "/tutorials/sass/partials",
+          "label": "Sass Partials"
+        },
+        {
+          "href": "/tutorials/sass/modules",
+          "label": "Sass Modules"
+        },
+        {
+          "href": "/tutorials/sass/comments",
+          "label": "Sass Comments"
+        }
+      ]
+    },
+    {
+      "title": "Sass Modules",
+      "items": [
+        {
+          "href": "/tutorials/sass/use-rule",
+          "label": "@use Rule"
+        },
+        {
+          "href": "/tutorials/sass/forward-rule",
+          "label": "@forward Rule"
+        },
+        {
+          "href": "/tutorials/sass/import-rule",
+          "label": "@import Rule"
+        },
+        {
+          "href": "/tutorials/sass/built-in-modules",
+          "label": "Built-in Modules"
+        },
+        {
+          "href": "/tutorials/sass/module-system",
+          "label": "Sass Module System"
+        }
+      ]
+    },
+    {
+      "title": "Mixins and Functions",
+      "items": [
+        {
+          "href": "/tutorials/sass/mixins",
+          "label": "Sass Mixins"
+        },
+        {
+          "href": "/tutorials/sass/include",
+          "label": "@include Rule"
+        },
+        {
+          "href": "/tutorials/sass/functions",
+          "label": "Sass Functions"
+        },
+        {
+          "href": "/tutorials/sass/custom-functions",
+          "label": "Custom Functions"
+        },
+        {
+          "href": "/tutorials/sass/parameters",
+          "label": "Mixin Parameters"
+        }
+      ]
+    },
+    {
+      "title": "Values and Operators",
+      "items": [
+        {
+          "href": "/tutorials/sass/data-types",
+          "label": "Sass Data Types"
+        },
+        {
+          "href": "/tutorials/sass/operators",
+          "label": "Sass Operators"
+        },
+        {
+          "href": "/tutorials/sass/colors",
+          "label": "Sass Colors"
+        },
+        {
+          "href": "/tutorials/sass/lists",
+          "label": "Sass Lists"
+        },
+        {
+          "href": "/tutorials/sass/maps",
+          "label": "Sass Maps"
+        }
+      ]
+    },
+    {
+      "title": "Control Rules",
+      "items": [
+        {
+          "href": "/tutorials/sass/control-rules",
+          "label": "Sass Control Rules"
+        },
+        {
+          "href": "/tutorials/sass/if-else",
+          "label": "@if and @else"
+        },
+        {
+          "href": "/tutorials/sass/for-loop",
+          "label": "@for Loop"
+        },
+        {
+          "href": "/tutorials/sass/each-loop",
+          "label": "@each Loop"
+        },
+        {
+          "href": "/tutorials/sass/while-loop",
+          "label": "@while Loop"
+        }
+      ]
+    },
+    {
+      "title": "Selectors",
+      "items": [
+        {
+          "href": "/tutorials/sass/parent-selector",
+          "label": "Parent Selector"
+        },
+        {
+          "href": "/tutorials/sass/selector-functions",
+          "label": "Selector Functions"
+        },
+        {
+          "href": "/tutorials/sass/interpolation",
+          "label": "Sass Interpolation"
+        },
+        {
+          "href": "/tutorials/sass/placeholder-selectors",
+          "label": "Placeholder Selectors"
+        },
+        {
+          "href": "/tutorials/sass/extend",
+          "label": "@extend Rule"
+        }
+      ]
+    },
+    {
+      "title": "Architecture",
+      "items": [
+        {
+          "href": "/tutorials/sass/project-structure",
+          "label": "Sass Project Structure"
+        },
+        {
+          "href": "/tutorials/sass/7-1-pattern",
+          "label": "7-1 Sass Pattern"
+        },
+        {
+          "href": "/tutorials/sass/bem-with-sass",
+          "label": "BEM with Sass"
+        },
+        {
+          "href": "/tutorials/sass/design-tokens",
+          "label": "Design Tokens"
+        },
+        {
+          "href": "/tutorials/sass/responsive-architecture",
+          "label": "Responsive Architecture"
+        }
+      ]
+    },
+    {
+      "title": "Responsive Design",
+      "items": [
+        {
+          "href": "/tutorials/sass/media-queries",
+          "label": "Sass Media Queries"
+        },
+        {
+          "href": "/tutorials/sass/responsive-mixins",
+          "label": "Responsive Mixins"
+        },
+        {
+          "href": "/tutorials/sass/breakpoints",
+          "label": "Sass Breakpoints"
+        },
+        {
+          "href": "/tutorials/sass/fluid-typography",
+          "label": "Fluid Typography"
+        },
+        {
+          "href": "/tutorials/sass/container-queries",
+          "label": "Container Queries with Sass"
+        }
+      ]
+    },
+    {
+      "title": "Advanced",
+      "items": [
+        {
+          "href": "/tutorials/sass/built-in-functions",
+          "label": "Built-in Functions"
+        },
+        {
+          "href": "/tutorials/sass/debug-warn-error",
+          "label": "@debug, @warn and @error"
+        },
+        {
+          "href": "/tutorials/sass/css-custom-properties",
+          "label": "CSS Custom Properties"
+        },
+        {
+          "href": "/tutorials/sass/sass-with-bootstrap",
+          "label": "Sass with Bootstrap"
+        },
+        {
+          "href": "/tutorials/sass/performance",
+          "label": "Sass Performance"
+        }
+      ]
+    }
+  ]
+}

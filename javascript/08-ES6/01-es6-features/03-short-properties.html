@@ -1,0 +1,27 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 08-ES6/01-es6-features
+  example: 03-short-properties.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Shorthand Properties | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Property Shorthand</h1>
+  <p>Concise object literals.</p>
+  <pre id="out"></pre>
+  <script>
+const name = "phpkingdom.com";
+const site = { name, online: true };
+document.getElementById("out").textContent = JSON.stringify(site);
+  </script>
+</body>
+</html>

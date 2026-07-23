@@ -1,0 +1,27 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Misc-Examples
+  example: 087-aggregate-error.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>087 — AggregateError | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>087 — AggregateError</h1>
+  <p class="meta">Multiple errors in one object.</p>
+  <p>Multiple errors in one object.</p>
+<pre id="out"></pre>
+  <script>
+const e=new AggregateError([new Error('a'),new Error('b')],'fail');document.getElementById('out').textContent=e.message+':'+e.errors.length;
+  </script>
+</body>
+</html>

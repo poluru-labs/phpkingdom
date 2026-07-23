@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 054-range-sum.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>054 — Sum of a Range [L, R] | phpkingdom.com</title>
+</head>
+<body>
+  <h1>054 — Sum of a Range [L, R]</h1>
+  <h2>Problem</h2>
+  <p>Sum every integer from L to R inclusive.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const L = 5, R = 10;
+let sum = 0;
+for (let i = L; i <= R; i++) sum += i;
+document.getElementById("out").textContent = "sum[" + L + ".." + R + "] = " + sum;
+  </script>
+</body>
+</html>

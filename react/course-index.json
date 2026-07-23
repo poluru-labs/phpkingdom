@@ -1,0 +1,305 @@
+{
+  "title": "React Tutorials",
+  "items": [
+    {
+      "title": "Basics",
+      "items": [
+        {
+          "href": "/tutorials/react/introduction",
+          "label": "React - Introduction"
+        },
+        {
+          "href": "/tutorials/react/basics",
+          "label": "React - Basics"
+        },
+        {
+          "href": "/tutorials/react/setup",
+          "label": "React Setup"
+        },
+        {
+          "href": "/tutorials/react/create-react-app",
+          "label": "Create React App"
+        },
+        {
+          "href": "/tutorials/react/vite-react",
+          "label": "Vite React Setup"
+        }
+      ]
+    },
+    {
+      "title": "Core Concepts",
+      "items": [
+        {
+          "href": "/tutorials/react/jsx",
+          "label": "React JSX"
+        },
+        {
+          "href": "/tutorials/react/components",
+          "label": "React Components"
+        },
+        {
+          "href": "/tutorials/react/functional-components",
+          "label": "Functional Components"
+        },
+        {
+          "href": "/tutorials/react/props",
+          "label": "React Props"
+        },
+        {
+          "href": "/tutorials/react/state",
+          "label": "React State"
+        }
+      ]
+    },
+    {
+      "title": "Rendering",
+      "items": [
+        {
+          "href": "/tutorials/react/rendering",
+          "label": "React Rendering"
+        },
+        {
+          "href": "/tutorials/react/conditional-rendering",
+          "label": "Conditional Rendering"
+        },
+        {
+          "href": "/tutorials/react/lists-and-keys",
+          "label": "Lists and Keys"
+        },
+        {
+          "href": "/tutorials/react/fragments",
+          "label": "React Fragments"
+        },
+        {
+          "href": "/tutorials/react/children-prop",
+          "label": "Children Prop"
+        }
+      ]
+    },
+    {
+      "title": "Events and Forms",
+      "items": [
+        {
+          "href": "/tutorials/react/events",
+          "label": "React Events"
+        },
+        {
+          "href": "/tutorials/react/forms",
+          "label": "React Forms"
+        },
+        {
+          "href": "/tutorials/react/controlled-components",
+          "label": "Controlled Components"
+        },
+        {
+          "href": "/tutorials/react/uncontrolled-components",
+          "label": "Uncontrolled Components"
+        },
+        {
+          "href": "/tutorials/react/form-validation",
+          "label": "Form Validation"
+        }
+      ]
+    },
+    {
+      "title": "Hooks",
+      "items": [
+        {
+          "href": "/tutorials/react/hooks",
+          "label": "React Hooks"
+        },
+        {
+          "href": "/tutorials/react/use-state",
+          "label": "useState Hook"
+        },
+        {
+          "href": "/tutorials/react/use-effect",
+          "label": "useEffect Hook"
+        },
+        {
+          "href": "/tutorials/react/use-ref",
+          "label": "useRef Hook"
+        },
+        {
+          "href": "/tutorials/react/custom-hooks",
+          "label": "Custom Hooks"
+        }
+      ]
+    },
+    {
+      "title": "Advanced Hooks",
+      "items": [
+        {
+          "href": "/tutorials/react/use-memo",
+          "label": "useMemo Hook"
+        },
+        {
+          "href": "/tutorials/react/use-callback",
+          "label": "useCallback Hook"
+        },
+        {
+          "href": "/tutorials/react/use-reducer",
+          "label": "useReducer Hook"
+        },
+        {
+          "href": "/tutorials/react/use-context",
+          "label": "useContext Hook"
+        },
+        {
+          "href": "/tutorials/react/use-id",
+          "label": "useId Hook"
+        }
+      ]
+    },
+    {
+      "title": "State Management",
+      "items": [
+        {
+          "href": "/tutorials/react/state-management",
+          "label": "State Management"
+        },
+        {
+          "href": "/tutorials/react/context-api",
+          "label": "Context API"
+        },
+        {
+          "href": "/tutorials/react/reducer-pattern",
+          "label": "Reducer Pattern"
+        },
+        {
+          "href": "/tutorials/react/redux",
+          "label": "React Redux"
+        },
+        {
+          "href": "/tutorials/react/zustand",
+          "label": "Zustand"
+        }
+      ]
+    },
+    {
+      "title": "Routing",
+      "items": [
+        {
+          "href": "/tutorials/react/react-router",
+          "label": "React Router"
+        },
+        {
+          "href": "/tutorials/react/routes",
+          "label": "React Routes"
+        },
+        {
+          "href": "/tutorials/react/nested-routes",
+          "label": "Nested Routes"
+        },
+        {
+          "href": "/tutorials/react/route-params",
+          "label": "Route Parameters"
+        },
+        {
+          "href": "/tutorials/react/protected-routes",
+          "label": "Protected Routes"
+        }
+      ]
+    },
+    {
+      "title": "API and Data",
+      "items": [
+        {
+          "href": "/tutorials/react/api-calls",
+          "label": "React API Calls"
+        },
+        {
+          "href": "/tutorials/react/fetch-data",
+          "label": "Fetch Data"
+        },
+        {
+          "href": "/tutorials/react/axios",
+          "label": "Axios with React"
+        },
+        {
+          "href": "/tutorials/react/loading-error-states",
+          "label": "Loading and Error States"
+        },
+        {
+          "href": "/tutorials/react/react-query",
+          "label": "React Query"
+        }
+      ]
+    },
+    {
+      "title": "Performance",
+      "items": [
+        {
+          "href": "/tutorials/react/performance",
+          "label": "React Performance"
+        },
+        {
+          "href": "/tutorials/react/memo",
+          "label": "React.memo"
+        },
+        {
+          "href": "/tutorials/react/lazy-loading",
+          "label": "Lazy Loading"
+        },
+        {
+          "href": "/tutorials/react/code-splitting",
+          "label": "Code Splitting"
+        },
+        {
+          "href": "/tutorials/react/virtualization",
+          "label": "List Virtualization"
+        }
+      ]
+    },
+    {
+      "title": "Advanced",
+      "items": [
+        {
+          "href": "/tutorials/react/error-boundaries",
+          "label": "Error Boundaries"
+        },
+        {
+          "href": "/tutorials/react/portals",
+          "label": "React Portals"
+        },
+        {
+          "href": "/tutorials/react/refs",
+          "label": "React Refs"
+        },
+        {
+          "href": "/tutorials/react/higher-order-components",
+          "label": "Higher Order Components"
+        },
+        {
+          "href": "/tutorials/react/render-props",
+          "label": "Render Props"
+        }
+      ]
+    },
+    {
+      "title": "React with TypeScript",
+      "items": [
+        {
+          "href": "/tutorials/react/react-typescript",
+          "label": "React with TypeScript"
+        },
+        {
+          "href": "/tutorials/react/typescript-props",
+          "label": "TypeScript Props"
+        },
+        {
+          "href": "/tutorials/react/typescript-state",
+          "label": "TypeScript State"
+        },
+        {
+          "href": "/tutorials/react/typescript-hooks",
+          "label": "TypeScript Hooks"
+        },
+        {
+          "href": "/tutorials/react/typescript-events",
+          "label": "TypeScript Events"
+        }
+      ]
+    }
+  ]
+}

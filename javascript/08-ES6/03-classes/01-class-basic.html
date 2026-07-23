@@ -1,0 +1,29 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 08-ES6/03-classes
+  example: 01-class-basic.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Class Basic | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Class Syntax</h1>
+  <p>constructor and methods.</p>
+  <pre id="out"></pre>
+  <script>
+class Person {
+  constructor(name) { this.name = name; }
+  greet() { return `Hi, I am ${this.name}`; }
+}
+document.getElementById("out").textContent = new Person("Ada").greet();
+  </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 26-Date-Time-Examples
+  example: 48-sort-dates.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>48 — Sort Dates | phpkingdom.com</title>
+</head>
+<body>
+  <h1>48 — Sort Dates</h1>
+  <h2>Problem</h2>
+  <p>Sort an array of date strings chronologically.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+
+const dates = ["2024-03-01", "2024-01-15", "2024-12-25", "2024-06-10"];
+const sorted = [...dates].sort((a, b) => new Date(a) - new Date(b));
+document.getElementById("out").textContent = "Sorted:\n" + sorted.join("\n");
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Jest Tutorials
+section title: Jest with Backend
+topic title: Jest with Node.js
+content type: Exercise
+item number: 14
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Jest with Node.js Exercise 14 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #fce7f3;
+      color: #9d174d;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Exercise 14</span>
+    <h1>Jest with Node.js</h1>
+    <p><strong>Section:</strong> Jest with Backend</p>
+    <p><strong>Focus:</strong> Rtl Click</p>
+    <p><strong>Scenario:</strong> Express API</p>
+    <p>Complete the task locally and verify with npx jest.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Jest</h2>
+        <pre><code>// Jest with Node.js — Exercise 14
+// Focus: rtl click | Scenario: Express API
+
+const fs = require(&quot;fs&quot;);
+const path = require(&quot;path&quot;);
+const os = require(&quot;os&quot;);
+
+test(&quot;node built-ins in Jest&quot;, () =&gt; {
+  const dir = fs.mkdtempSync(path.join(os.tmpdir(), &quot;jest-&quot;));
+  const file = path.join(dir, &quot;note.txt&quot;);
+  fs.writeFileSync(file, &quot;phpkingdom.com&quot;);
+  expect(fs.readFileSync(file, &quot;utf8&quot;)).toBe(&quot;phpkingdom.com&quot;);
+  fs.rmSync(dir, { recursive: true, force: true });
+});
+// testEnvironment: &#x27;node&#x27; (default for many projects)</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Jest with Node.js
+- Practice: rtl click
+- Scenario: Express API
+- Keep arrange / act / assert clear and deterministic
+- Clear or restore mocks between tests (clearMocks / restoreMocks)
+- Prefer async/await with resolves / rejects over done()
+- Mock at boundaries; avoid over-mocking pure logic
+- Review snapshot diffs before updating
+
+Useful commands:
+  npm install --save-dev jest
+  npx jest
+  npx jest --watch
+  npx jest --coverage
+  npx jest -u</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This exercise shows one way to apply <strong>Jest with Node.js</strong> in a express api context.</p>
+      <p>Prefer clear arrange/act/assert structure and keep mocks close to the behavior under test.</p>
+    </section>
+  </main>
+</body>
+</html>

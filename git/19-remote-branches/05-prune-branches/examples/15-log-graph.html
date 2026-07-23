@@ -1,0 +1,115 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Git Tutorials
+section title: Remote Branches
+topic title: Prune Remote Branches
+content type: Example
+item number: 15
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Prune Remote Branches Example 15 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #fee2e2;
+      color: #991b1b;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Example 15</span>
+    <h1>Prune Remote Branches</h1>
+    <p><strong>Section:</strong> Remote Branches</p>
+    <p><strong>Focus:</strong> Log Graph</p>
+    <p><strong>Scenario:</strong> monorepo app</p>
+    <p>Study the Git commands and adapt them to your repository workflow.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Git Commands</h2>
+        <pre><code># Prune Remote Branches — Example 15
+# Focus: log graph | Scenario: monorepo app
+
+
+# Prune stale remote-tracking branches (prune-branches)
+git fetch --prune
+git remote prune origin
+git branch -vv | grep &#x27;: gone]&#x27; || true
+</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Prune Remote Branches
+- Practice: log graph
+- Scenario: monorepo app
+- Prefer small commits with clear messages
+- Never rewrite shared history without coordination
+- Use git status often before commit/push
+- Prefer pull --rebase on feature branches; protect main
+
+Useful companions:
+  git status -sb
+  git log --oneline --graph --decorate
+  git reflog
+  git restore --staged &lt;file&gt;
+  git push --force-with-lease</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This example shows one way to apply <strong>Prune Remote Branches</strong> in a monorepo app context.</p>
+      <p>Commit often, review diffs before push, and keep main/master protected with reviews.</p>
+    </section>
+  </main>
+</body>
+</html>

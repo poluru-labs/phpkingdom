@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 27-Regex-Examples
+  example: 48-pad-zeros.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>48 — Pad Numbers with Zeros | phpkingdom.com</title>
+</head>
+<body>
+  <h1>48 — Pad Numbers with Zeros</h1>
+  <h2>Problem</h2>
+  <p>Left-pad numbers to a fixed width using replace.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const ids = [3, 42, 789, 1000];
+const padded = ids.map(n => String(n).replace(/^\d+$/, m => m.padStart(4, "0")));
+document.getElementById("out").textContent =
+  "ids:    " + JSON.stringify(ids) + "\n" +
+  "padded: " + JSON.stringify(padded);
+  </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 26-Date-Time-Examples
+  example: 06-get-time-components.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>06 — Time Getters | phpkingdom.com</title>
+</head>
+<body>
+  <h1>06 — Time Getters</h1>
+  <h2>Problem</h2>
+  <p>Read hours, minutes, seconds, and milliseconds.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+
+const d = new Date(2024, 0, 15, 14, 30, 45, 250);
+document.getElementById("out").textContent =
+  "getHours(): " + d.getHours() + "\n" +
+  "getMinutes(): " + d.getMinutes() + "\n" +
+  "getSeconds(): " + d.getSeconds() + "\n" +
+  "getMilliseconds(): " + d.getMilliseconds();
+
+  </script>
+</body>
+</html>

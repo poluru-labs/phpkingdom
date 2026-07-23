@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 28-Tricky-Examples
+  example: 17-prototype-mutation.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>17 — Shared Prototype Mutation | phpkingdom.com</title>
+</head>
+<body>
+  <h1>17 — Shared Prototype Mutation</h1>
+  <h2>Problem / Gotcha</h2>
+  <p>Mutating prototype affects all instances.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function Box() {}
+Box.prototype.items = [];
+const a = new Box();
+const b = new Box();
+a.items.push("x");
+document.getElementById("out").textContent =
+  "b.items => [" + b.items.join(",") + "]  (shared reference!)";
+  </script>
+</body>
+</html>

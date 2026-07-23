@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Functions-Examples
+  example: 34-generator-infinite.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>34 — Generator Infinite Sequence | phpkingdom.com</title>
+</head>
+<body>
+  <h1>34 — Generator Infinite Sequence</h1>
+  <h2>Problem</h2>
+  <p>Create an infinite ID generator with yield.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function* idGenerator(start = 1) {
+  let id = start;
+  while (true) yield id++;
+}
+const gen = idGenerator(100);
+document.getElementById("out").textContent =
+  [gen.next().value, gen.next().value, gen.next().value].join(", ");
+  </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/048-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 048 — Template list stamp — Solution | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>Exercise 048 — Template list stamp — Solution</h1>
+  <p class="meta">Clone template 3 times into a list.</p>
+  <h2>Solution</h2>
+  <p>Clone template 3 times into a list.</p>
+  <div id="demo"></div>
+  <pre id="out"></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+customElements.define("ex048-el", class extends HTMLElement {
+  connectedCallback() {
+    this.textContent = 'Template list stamp';
+  }
+});
+document.getElementById("demo").innerHTML = "<ex048-el></ex048-el>";
+document.getElementById("out").textContent = 'Clone template 3 times into a list.';
+  </script>
+</body>
+</html>

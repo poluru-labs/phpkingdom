@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 04-Functions/04-scope
+  example: 03-lexical-scope.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Lexical Scope | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Lexical Scope</h1>
+  <p>Inner functions see outer variables.</p>
+  <pre id="out"></pre>
+  <script>
+function outer() {
+  const label = "outer";
+  function inner() { return label; }
+  return inner();
+}
+document.getElementById("out").textContent = outer();
+  </script>
+</body>
+</html>

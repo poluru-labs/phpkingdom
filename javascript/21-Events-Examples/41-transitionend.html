@@ -1,0 +1,38 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 21-Events-Examples
+  example: 41-transitionend.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>41 — transitionend | phpkingdom.com</title>
+</head>
+<body>
+  <h1>41 — transitionend</h1>
+  <h2>Problem</h2>
+  <p>Run code when a CSS transition finishes.</p>
+  <h2>Demo</h2>
+  <style>
+    #box { width:80px;height:80px;background:teal;transition:transform .4s ease; }
+    #box.move { transform:translateX(140px); }
+  </style>
+  <div id="box"></div>
+  <button id="btn">Move</button>
+  <pre id="out"></pre>
+  <script>
+const box = document.getElementById("box");
+box.addEventListener("transitionend", (e) => {
+  document.getElementById("out").textContent =
+    "transitionend property=" + e.propertyName;
+});
+document.getElementById("btn").onclick = () => box.classList.toggle("move");
+  </script>
+</body>
+</html>

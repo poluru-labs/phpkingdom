@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Functions-Examples
+  example: 08-closure-counter.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>08 — Closure Counter | phpkingdom.com</title>
+</head>
+<body>
+  <h1>08 — Closure Counter</h1>
+  <h2>Problem</h2>
+  <p>Use a closure to keep private count state between calls.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function createCounter() {
+  let count = 0;
+  return function () {
+    count += 1;
+    return count;
+  };
+}
+const next = createCounter();
+document.getElementById("out").textContent =
+  [next(), next(), next()].join(", ");
+  </script>
+</body>
+</html>

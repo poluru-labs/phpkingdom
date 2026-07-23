@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 21-Events-Examples
+  example: 28-resize-window.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>28 — Window Resize | phpkingdom.com</title>
+</head>
+<body>
+  <h1>28 — Window Resize</h1>
+  <h2>Problem</h2>
+  <p>Update when the viewport size changes.</p>
+  <h2>Demo</h2>
+  <p>Resize the browser window.</p>
+  <pre id="out"></pre>
+  <script>
+function show() {
+  document.getElementById("out").textContent =
+    "innerWidth=" + window.innerWidth + " innerHeight=" + window.innerHeight;
+}
+show();
+window.addEventListener("resize", show);
+  </script>
+</body>
+</html>

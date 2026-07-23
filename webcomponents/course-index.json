@@ -1,0 +1,310 @@
+{
+  "title": "Web Components Tutorials",
+  "items": [
+    {
+      "title": "Basics",
+      "items": [
+        {
+          "href": "/tutorials/web-components/introduction",
+          "label": "Introduction"
+        },
+        {
+          "href": "/tutorials/web-components/basics",
+          "label": "Basics"
+        },
+        {
+          "href": "/tutorials/web-components/why-web-components",
+          "label": "Why Web Components"
+        },
+        {
+          "href": "/tutorials/web-components/browser-support",
+          "label": "Browser Support"
+        },
+        {
+          "href": "/tutorials/web-components/dev-setup",
+          "label": "Dev Setup"
+        }
+      ]
+    },
+    {
+      "title": "Core Standards",
+      "items": [
+        {
+          "href": "/tutorials/web-components/custom-elements",
+          "label": "Custom Elements"
+        },
+        {
+          "href": "/tutorials/web-components/shadow-dom",
+          "label": "Shadow Dom"
+        },
+        {
+          "href": "/tutorials/web-components/html-templates",
+          "label": "Html Templates"
+        },
+        {
+          "href": "/tutorials/web-components/es-modules",
+          "label": "Es Modules"
+        }
+      ]
+    },
+    {
+      "title": "Custom Elements",
+      "items": [
+        {
+          "href": "/tutorials/web-components/define-elements",
+          "label": "Define Elements"
+        },
+        {
+          "href": "/tutorials/web-components/lifecycle-callbacks",
+          "label": "Lifecycle Callbacks"
+        },
+        {
+          "href": "/tutorials/web-components/connected-callback",
+          "label": "Connected Callback"
+        },
+        {
+          "href": "/tutorials/web-components/disconnected-callback",
+          "label": "Disconnected Callback"
+        },
+        {
+          "href": "/tutorials/web-components/attribute-changed-callback",
+          "label": "Attribute Changed Callback"
+        },
+        {
+          "href": "/tutorials/web-components/customized-built-ins",
+          "label": "Customized Built Ins"
+        }
+      ]
+    },
+    {
+      "title": "Attributes And Properties",
+      "items": [
+        {
+          "href": "/tutorials/web-components/attributes",
+          "label": "Attributes"
+        },
+        {
+          "href": "/tutorials/web-components/properties",
+          "label": "Properties"
+        },
+        {
+          "href": "/tutorials/web-components/observed-attributes",
+          "label": "Observed Attributes"
+        },
+        {
+          "href": "/tutorials/web-components/attribute-property-sync",
+          "label": "Attribute Property Sync"
+        }
+      ]
+    },
+    {
+      "title": "Shadow Dom",
+      "items": [
+        {
+          "href": "/tutorials/web-components/shadow-root",
+          "label": "Shadow Root"
+        },
+        {
+          "href": "/tutorials/web-components/shadow-dom-styling",
+          "label": "Shadow Dom Styling"
+        },
+        {
+          "href": "/tutorials/web-components/shadow-dom-events",
+          "label": "Shadow Dom Events"
+        },
+        {
+          "href": "/tutorials/web-components/declarative-shadow-dom",
+          "label": "Declarative Shadow Dom"
+        }
+      ]
+    },
+    {
+      "title": "Templates And Slots",
+      "items": [
+        {
+          "href": "/tutorials/web-components/template-element",
+          "label": "Template Element"
+        },
+        {
+          "href": "/tutorials/web-components/slots",
+          "label": "Slots"
+        },
+        {
+          "href": "/tutorials/web-components/named-slots",
+          "label": "Named Slots"
+        },
+        {
+          "href": "/tutorials/web-components/slotchange-event",
+          "label": "Slotchange Event"
+        }
+      ]
+    },
+    {
+      "title": "Styling",
+      "items": [
+        {
+          "href": "/tutorials/web-components/css-custom-properties",
+          "label": "Css Custom Properties"
+        },
+        {
+          "href": "/tutorials/web-components/css-parts",
+          "label": "Css Parts"
+        },
+        {
+          "href": "/tutorials/web-components/css-shadow-parts",
+          "label": "Css Shadow Parts"
+        },
+        {
+          "href": "/tutorials/web-components/adopted-stylesheets",
+          "label": "Adopted Stylesheets"
+        },
+        {
+          "href": "/tutorials/web-components/design-tokens",
+          "label": "Design Tokens"
+        }
+      ]
+    },
+    {
+      "title": "Events",
+      "items": [
+        {
+          "href": "/tutorials/web-components/custom-events",
+          "label": "Custom Events"
+        },
+        {
+          "href": "/tutorials/web-components/event-bubbling",
+          "label": "Event Bubbling"
+        },
+        {
+          "href": "/tutorials/web-components/composed-events",
+          "label": "Composed Events"
+        },
+        {
+          "href": "/tutorials/web-components/event-retargeting",
+          "label": "Event Retargeting"
+        }
+      ]
+    },
+    {
+      "title": "Forms",
+      "items": [
+        {
+          "href": "/tutorials/web-components/form-associated-custom-elements",
+          "label": "Form Associated Custom Elements"
+        },
+        {
+          "href": "/tutorials/web-components/element-internals",
+          "label": "Element Internals"
+        },
+        {
+          "href": "/tutorials/web-components/form-validation",
+          "label": "Form Validation"
+        },
+        {
+          "href": "/tutorials/web-components/accessibility-semantics",
+          "label": "Accessibility Semantics"
+        }
+      ]
+    },
+    {
+      "title": "Lit",
+      "items": [
+        {
+          "href": "/tutorials/web-components/lit-introduction",
+          "label": "Lit Introduction"
+        },
+        {
+          "href": "/tutorials/web-components/lit-components",
+          "label": "Lit Components"
+        },
+        {
+          "href": "/tutorials/web-components/lit-properties",
+          "label": "Lit Properties"
+        },
+        {
+          "href": "/tutorials/web-components/lit-templates",
+          "label": "Lit Templates"
+        },
+        {
+          "href": "/tutorials/web-components/lit-directives",
+          "label": "Lit Directives"
+        }
+      ]
+    },
+    {
+      "title": "Advanced",
+      "items": [
+        {
+          "href": "/tutorials/web-components/web-components-architecture",
+          "label": "Web Components Architecture"
+        },
+        {
+          "href": "/tutorials/web-components/design-systems",
+          "label": "Design Systems"
+        },
+        {
+          "href": "/tutorials/web-components/framework-integration",
+          "label": "Framework Integration"
+        },
+        {
+          "href": "/tutorials/web-components/server-side-rendering",
+          "label": "Server Side Rendering"
+        },
+        {
+          "href": "/tutorials/web-components/performance",
+          "label": "Performance"
+        }
+      ]
+    },
+    {
+      "title": "Testing",
+      "items": [
+        {
+          "href": "/tutorials/web-components/testing",
+          "label": "Testing"
+        },
+        {
+          "href": "/tutorials/web-components/unit-testing",
+          "label": "Unit Testing"
+        },
+        {
+          "href": "/tutorials/web-components/accessibility-testing",
+          "label": "Accessibility Testing"
+        },
+        {
+          "href": "/tutorials/web-components/playwright-testing",
+          "label": "Playwright Testing"
+        },
+        {
+          "href": "/tutorials/web-components/open-wc",
+          "label": "Open Wc"
+        }
+      ]
+    },
+    {
+      "title": "Patterns",
+      "items": [
+        {
+          "href": "/tutorials/web-components/common-patterns",
+          "label": "Common Patterns"
+        },
+        {
+          "href": "/tutorials/web-components/best-practices",
+          "label": "Best Practices"
+        },
+        {
+          "href": "/tutorials/web-components/debugging",
+          "label": "Debugging"
+        },
+        {
+          "href": "/tutorials/web-components/controller-pattern",
+          "label": "Controller Pattern"
+        },
+        {
+          "href": "/tutorials/web-components/context-protocol",
+          "label": "Context Protocol"
+        }
+      ]
+    }
+  ]
+}

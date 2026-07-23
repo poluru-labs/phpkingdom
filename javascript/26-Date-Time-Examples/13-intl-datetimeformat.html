@@ -1,0 +1,34 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 26-Date-Time-Examples
+  example: 13-intl-datetimeformat.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>13 — Intl.DateTimeFormat | phpkingdom.com</title>
+</head>
+<body>
+  <h1>13 — Intl.DateTimeFormat</h1>
+  <h2>Problem</h2>
+  <p>Format dates with Intl.DateTimeFormat for locale-aware output.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+
+const d = new Date(2024, 0, 15, 14, 30, 45);
+const fmtUS = new Intl.DateTimeFormat("en-US", { dateStyle: "full", timeStyle: "short" });
+const fmtIN = new Intl.DateTimeFormat("en-IN", { weekday: "long", year: "numeric", month: "long", day: "numeric" });
+document.getElementById("out").textContent =
+  "en-US: " + fmtUS.format(d) + "\n" +
+  "en-IN: " + fmtIN.format(d);
+
+  </script>
+</body>
+</html>

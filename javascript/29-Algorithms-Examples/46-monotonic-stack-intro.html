@@ -1,0 +1,40 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 29-Algorithms-Examples
+  example: 46-monotonic-stack-intro.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>46 — Monotonic Stack (Intro) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>46 — Monotonic Stack (Intro)</h1>
+  <h2>Problem</h2>
+  <p>Demonstrate increasing monotonic stack for previous smaller element.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function prevSmaller(arr) {
+  const out = new Array(arr.length).fill(-1);
+  const stack = [];
+  for (let i = 0; i < arr.length; i++) {
+    while (stack.length && arr[stack[stack.length - 1]] >= arr[i]) stack.pop();
+    out[i] = stack.length ? arr[stack[stack.length - 1]] : -1;
+    stack.push(i);
+  }
+  return out;
+}
+const arr = [3, 1, 4, 2, 5];
+document.getElementById("out").textContent =
+  "array: " + JSON.stringify(arr) + "\n" +
+  "previous smaller: " + JSON.stringify(prevSmaller(arr));
+  </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 18-Object-Examples
+  example: 28-unflatten-object.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>28 — Unflatten Dotted Object | phpkingdom.com</title>
+</head>
+<body>
+  <h1>28 — Unflatten Dotted Object</h1>
+  <h2>Problem</h2>
+  <p>Convert dotted keys back into a nested object.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function unflatten(obj) {
+  const out = {};
+  for (const [path, value] of Object.entries(obj)) {
+    const keys = path.split(".");
+    let cur = out;
+    keys.slice(0, -1).forEach((k) => {
+      if (!cur[k]) cur[k] = {};
+      cur = cur[k];
+    });
+    cur[keys[keys.length - 1]] = value;
+  }
+  return out;
+}
+document.getElementById("out").textContent = JSON.stringify(unflatten({ a: 1, "b.c": 2, "b.d.e": 3 }), null, 2);
+  </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 30-Data-Structures-Examples
+  example: 18-doubly-linked-list-intro.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>18 — Doubly Linked List Intro | phpkingdom.com</title>
+</head>
+<body>
+  <h1>18 — Doubly Linked List Intro</h1>
+  <h2>Problem</h2>
+  <p>Node with prev/next; insert at tail and traverse forward and backward.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+class DNode {
+  constructor(val) { this.val = val; this.prev = null; this.next = null; }
+}
+class DoublyList {
+  constructor() { this.head = null; this.tail = null; }
+  append(val) {
+    const node = new DNode(val);
+    if (!this.head) { this.head = this.tail = node; return; }
+    node.prev = this.tail;
+    this.tail.next = node;
+    this.tail = node;
+  }
+}
+const dl = new DoublyList();
+[1, 2, 3].forEach(v => dl.append(v));
+const fwd = [], bwd = [];
+for (let c = dl.head; c; c = c.next) fwd.push(c.val);
+for (let c = dl.tail; c; c = c.prev) bwd.push(c.val);
+document.getElementById("out").textContent = "forward: " + fwd.join(" <-> ") + "\nbackward: " + bwd.join(" <-> ");
+  </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 20-DOM-Examples
+  example: 35-bounding-rect.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>35 — getBoundingClientRect | phpkingdom.com</title>
+</head>
+<body>
+  <h1>35 — getBoundingClientRect</h1>
+  <h2>Problem</h2>
+  <p>Measure an element's position and size in the viewport.</p>
+  <h2>Demo</h2>
+  <div id="box" style="margin:40px;width:120px;height:60px;border:2px solid #333">Measure me</div>
+  <button id="btn">Measure</button>
+  <pre id="out"></pre>
+  <script>
+document.getElementById("btn").onclick = () => {
+  const r = document.getElementById("box").getBoundingClientRect();
+  document.getElementById("out").textContent =
+    "x=" + Math.round(r.x) + " y=" + Math.round(r.y) +
+    " w=" + Math.round(r.width) + " h=" + Math.round(r.height);
+};
+  </script>
+</body>
+</html>

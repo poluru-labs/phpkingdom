@@ -1,0 +1,25 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 12-Misc-Examples
+  example: 017-canvas-filltext.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>017 — canvas fillText | phpkingdom.com</title>
+</head>
+<body>
+  <h1>017 — canvas fillText</h1>
+  <p>Draw text.</p>
+<canvas id="c" width="200" height="80"></canvas>
+  <script>
+const x=document.getElementById("c").getContext("2d");x.font="16px sans-serif";x.fillText("API",20,40);
+  </script>
+</body>
+</html>

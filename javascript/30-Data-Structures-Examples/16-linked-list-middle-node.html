@@ -1,0 +1,39 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 30-Data-Structures-Examples
+  example: 16-linked-list-middle-node.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>16 — Middle Node | phpkingdom.com</title>
+</head>
+<body>
+  <h1>16 — Middle Node</h1>
+  <h2>Problem</h2>
+  <p>Find the middle node using slow/fast pointers.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+class ListNode { constructor(val, next = null) { this.val = val; this.next = next; } }
+function middleNode(head) {
+  let slow = head, fast = head;
+  while (fast && fast.next) {
+    slow = slow.next;
+    fast = fast.next.next;
+  }
+  return slow;
+}
+const head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(5)))));
+document.getElementById("out").textContent = "middle value (odd len): " + middleNode(head).val;
+const head2 = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4))));
+document.getElementById("out").textContent += "\nmiddle value (even len): " + middleNode(head2).val;
+  </script>
+</body>
+</html>

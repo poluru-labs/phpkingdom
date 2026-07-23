@@ -1,0 +1,40 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 29-Algorithms-Examples
+  example: 25-longest-substring-unique.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>25 — Longest Substring Without Repeating | phpkingdom.com</title>
+</head>
+<body>
+  <h1>25 — Longest Substring Without Repeating</h1>
+  <h2>Problem</h2>
+  <p>Sliding window: longest substring with all unique characters.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function lengthOfLongest(s) {
+  const last = new Map();
+  let start = 0, best = 0;
+  for (let i = 0; i < s.length; i++) {
+    if (last.has(s[i])) start = Math.max(start, last.get(s[i]) + 1);
+    last.set(s[i], i);
+    best = Math.max(best, i - start + 1);
+  }
+  return best;
+}
+const s = "abcabcbb";
+document.getElementById("out").textContent =
+  "string: " + JSON.stringify(s) + "\n" +
+  "longest unique length: " + lengthOfLongest(s);
+  </script>
+</body>
+</html>

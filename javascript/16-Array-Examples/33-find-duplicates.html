@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 16-Array-Examples
+  example: 33-find-duplicates.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>33 — Find All Duplicates | phpkingdom.com</title>
+</head>
+<body>
+  <h1>33 — Find All Duplicates</h1>
+  <h2>Problem</h2>
+  <p>Return values that appear more than once.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function findDuplicates(arr) {
+  const freq = {};
+  for (const n of arr) freq[n] = (freq[n] || 0) + 1;
+  return Object.keys(freq).filter((k) => freq[k] > 1).map(Number);
+}
+document.getElementById("out").textContent = findDuplicates([4,3,2,7,8,2,3,1]).join(", ");
+  </script>
+</body>
+</html>

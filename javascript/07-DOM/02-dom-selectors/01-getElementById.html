@@ -1,0 +1,27 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 07-DOM/02-dom-selectors
+  example: 01-getElementById.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>getElementById | phpkingdom.com</title>
+</head>
+<body>
+  <h1>getElementById</h1>
+  <p>Select one element by id.</p>
+  <p id="target">Hello</p>
+  <pre id="out"></pre>
+  <script>
+const el = document.getElementById("target");
+document.getElementById("out").textContent = el.textContent;
+  </script>
+</body>
+</html>

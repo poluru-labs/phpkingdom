@@ -1,0 +1,41 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 01-Basics/03-why-web-components
+  example: 04-define-and-use.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Define &amp; Use (why-web-components) | phpkingdom.com</title>
+  <style>
+    body { font-family: Georgia, "Times New Roman", serif; max-width: 760px; margin: 2rem auto; padding: 0 1.25rem; line-height: 1.6; color: #1a1a1a; }
+    h1 { font-size: 1.75rem; margin-bottom: 0.35rem; }
+    .meta { color: #555; font-size: 0.95rem; margin-bottom: 1.25rem; }
+    .note { background: #ecfeff; padding: 0.75rem 1rem; border-left: 3px solid #0e7490; margin: 1rem 0; }
+    pre, code { font-family: ui-monospace, Menlo, monospace; }
+    pre { background: #111827; color: #e5e7eb; padding: 0.85rem 1rem; overflow: auto; }
+    #out { white-space: pre-wrap; background: #f4f4f4; padding: 0.75rem; min-height: 2rem; }
+    .demo { margin: 1rem 0; padding: 1rem; border: 1px dashed #94a3b8; }
+</style>
+</head>
+<body>
+  <h1>Define &amp; Use (why-web-components)</h1>
+  <p class="meta">Register a small element for this topic.</p>
+<div class="demo"><pk-why-web-components-x></pk-why-web-components-x></div><pre id="out"></pre>
+  <script>
+class DemoX extends HTMLElement {
+  connectedCallback() {
+    this.textContent = "why-web-components";
+    document.getElementById("out").textContent = "ok: " + this.localName;
+  }
+}
+if (!customElements.get("pk-why-web-components-x")) customElements.define("pk-why-web-components-x", DemoX);
+  </script>
+</body>
+</html>

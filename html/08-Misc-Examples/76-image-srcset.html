@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  topic: 08-Misc-Examples
+  example: 76-image-srcset.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Srcset | phpkingdom</title>
+</head>
+<body>
+  <h1>Responsive Srcset</h1>
+
+  <img
+    src="https://placehold.co/400x200/444/fff?text=400w"
+    srcset="
+      https://placehold.co/400x200/444/fff?text=400w 400w,
+      https://placehold.co/800x400/333/fff?text=800w 800w
+    "
+    sizes="(max-width: 600px) 100vw, 400px"
+    alt="Responsive srcset example"
+    width="400"
+    height="200">
+
+</body>
+</html>

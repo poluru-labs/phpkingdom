@@ -1,0 +1,135 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Playwright Tutorials
+section title: Authentication
+topic title: Storage State
+content type: Exercise
+item number: 08
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Storage State Exercise 08 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #fef3c7;
+      color: #92400e;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Exercise 08</span>
+    <h1>Storage State</h1>
+    <p><strong>Section:</strong> Authentication</p>
+    <p><strong>Focus:</strong> Retry Enable</p>
+    <p><strong>Scenario:</strong> mobile web app</p>
+    <p>Complete the task locally and verify with npx playwright test / --ui.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Spec Sample</h2>
+        <pre><code>// Storage State — Exercise 08
+// Focus: retry enable | Scenario: mobile web app
+
+// global-setup.ts — save storageState after login
+import { chromium, FullConfig } from &#x27;@playwright/test&#x27;;
+
+async function globalSetup(config: FullConfig) {
+  const browser = await chromium.launch();
+  const page = await browser.newPage();
+  await page.goto(config.projects[0].use.baseURL + &#x27;/login&#x27;);
+  await page.getByLabel(&#x27;Email&#x27;).fill(&#x27;user@phpkingdom.com&#x27;);
+  await page.getByLabel(&#x27;Password&#x27;).fill(&#x27;secret&#x27;);
+  await page.getByRole(&#x27;button&#x27;, { name: &#x27;Sign in&#x27; }).click();
+  await page.context().storageState({ path: &#x27;playwright/.auth/user.json&#x27; });
+  await browser.close();
+}
+export default globalSetup;
+
+// playwright.config.ts
+// use: { storageState: &#x27;playwright/.auth/user.json&#x27; }</code></pre>
+      </section>
+      <section>
+        <h2>Config Notes</h2>
+        <pre><code>// playwright.config.ts — notes for Storage State
+import { defineConfig, devices } from &#x27;@playwright/test&#x27;;
+
+export default defineConfig({
+  testDir: &#x27;./tests&#x27;,
+  fullyParallel: true,
+  forbidOnly: !!process.env.CI,
+  retries: process.env.CI ? 2 : 0,
+  workers: process.env.CI ? 2 : undefined,
+  reporter: [[&#x27;html&#x27;], [&#x27;list&#x27;]],
+  use: {
+    baseURL: &#x27;http://localhost:3000&#x27;,
+    trace: &#x27;on-first-retry&#x27;,
+    screenshot: &#x27;only-on-failure&#x27;,
+    video: &#x27;retain-on-failure&#x27;,
+  },
+  projects: [
+    { name: &#x27;chromium&#x27;, use: { ...devices[&#x27;Desktop Chrome&#x27;] } },
+    { name: &#x27;firefox&#x27;, use: { ...devices[&#x27;Desktop Firefox&#x27;] } },
+    { name: &#x27;webkit&#x27;, use: { ...devices[&#x27;Desktop Safari&#x27;] } },
+  ],
+  // Focus: retry enable for mobile web app (storage-state)
+});</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This exercise shows one way to apply <strong>Storage State</strong> in a mobile web app context.</p>
+      <p>Prefer role/label/test-id locators and rely on Playwright auto-waiting over fixed sleeps.</p>
+    </section>
+  </main>
+</body>
+</html>

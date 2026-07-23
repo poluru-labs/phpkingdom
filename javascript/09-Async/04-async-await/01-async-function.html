@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 09-Async/04-async-await
+  example: 01-async-function.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Async Function | phpkingdom.com</title>
+</head>
+<body>
+  <h1>async / await</h1>
+  <p>Write async code that looks sync.</p>
+  <pre id="out"></pre>
+  <script>
+function wait(ms) {
+  return new Promise(function (resolve) { setTimeout(resolve, ms); });
+}
+async function run() {
+  await wait(250);
+  document.getElementById("out").textContent = "await finished";
+}
+run();
+  </script>
+</body>
+</html>

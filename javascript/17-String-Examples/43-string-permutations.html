@@ -1,0 +1,38 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 17-String-Examples
+  example: 43-string-permutations.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>43 — All Permutations of a String | phpkingdom.com</title>
+</head>
+<body>
+  <h1>43 — All Permutations of a String</h1>
+  <h2>Problem</h2>
+  <p>Generate all unique permutations (small string).</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function permutations(s) {
+  const out = [];
+  function dfs(path, rest) {
+    if (!rest.length) { out.push(path); return; }
+    for (let i = 0; i < rest.length; i++) {
+      dfs(path + rest[i], rest.slice(0, i) + rest.slice(i + 1));
+    }
+  }
+  dfs("", s);
+  return [...new Set(out)];
+}
+document.getElementById("out").textContent = permutations("abc").join(", ");
+  </script>
+</body>
+</html>

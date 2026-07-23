@@ -1,0 +1,452 @@
+[
+  {
+    "type": "example",
+    "file": "02-core-concepts/03-partials/examples/01-starter-syntax.html",
+    "focus": "starter syntax",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "example",
+    "file": "02-core-concepts/03-partials/examples/02-real-world-layout.html",
+    "focus": "real-world layout",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "example",
+    "file": "02-core-concepts/03-partials/examples/03-component-styling.html",
+    "focus": "component styling",
+    "scenario": "blog redesign"
+  },
+  {
+    "type": "example",
+    "file": "02-core-concepts/03-partials/examples/04-dashboard-widgets.html",
+    "focus": "dashboard widgets",
+    "scenario": "storefront"
+  },
+  {
+    "type": "example",
+    "file": "02-core-concepts/03-partials/examples/05-navigation.html",
+    "focus": "navigation",
+    "scenario": "portfolio"
+  },
+  {
+    "type": "example",
+    "file": "02-core-concepts/03-partials/examples/06-forms.html",
+    "focus": "forms",
+    "scenario": "admin panel"
+  },
+  {
+    "type": "example",
+    "file": "02-core-concepts/03-partials/examples/07-cards.html",
+    "focus": "cards",
+    "scenario": "booking app"
+  },
+  {
+    "type": "example",
+    "file": "02-core-concepts/03-partials/examples/08-buttons.html",
+    "focus": "buttons",
+    "scenario": "analytics page"
+  },
+  {
+    "type": "example",
+    "file": "02-core-concepts/03-partials/examples/09-alerts.html",
+    "focus": "alerts",
+    "scenario": "documentation site"
+  },
+  {
+    "type": "example",
+    "file": "02-core-concepts/03-partials/examples/10-pricing-section.html",
+    "focus": "pricing section",
+    "scenario": "mobile web app"
+  },
+  {
+    "type": "example",
+    "file": "02-core-concepts/03-partials/examples/11-hero-section.html",
+    "focus": "hero section",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "example",
+    "file": "02-core-concepts/03-partials/examples/12-sidebar.html",
+    "focus": "sidebar",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "example",
+    "file": "02-core-concepts/03-partials/examples/13-modal-styles.html",
+    "focus": "modal styles",
+    "scenario": "blog redesign"
+  },
+  {
+    "type": "example",
+    "file": "02-core-concepts/03-partials/examples/14-tables.html",
+    "focus": "tables",
+    "scenario": "storefront"
+  },
+  {
+    "type": "example",
+    "file": "02-core-concepts/03-partials/examples/15-product-grid.html",
+    "focus": "product grid",
+    "scenario": "portfolio"
+  },
+  {
+    "type": "example",
+    "file": "02-core-concepts/03-partials/examples/16-blog-layout.html",
+    "focus": "blog layout",
+    "scenario": "admin panel"
+  },
+  {
+    "type": "example",
+    "file": "02-core-concepts/03-partials/examples/17-landing-page.html",
+    "focus": "landing page",
+    "scenario": "booking app"
+  },
+  {
+    "type": "example",
+    "file": "02-core-concepts/03-partials/examples/18-admin-theme.html",
+    "focus": "admin theme",
+    "scenario": "analytics page"
+  },
+  {
+    "type": "example",
+    "file": "02-core-concepts/03-partials/examples/19-animation-prep.html",
+    "focus": "animation prep",
+    "scenario": "documentation site"
+  },
+  {
+    "type": "example",
+    "file": "02-core-concepts/03-partials/examples/20-theme-variants.html",
+    "focus": "theme variants",
+    "scenario": "mobile web app"
+  },
+  {
+    "type": "example",
+    "file": "02-core-concepts/03-partials/examples/21-dark-surface.html",
+    "focus": "dark surface",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "example",
+    "file": "02-core-concepts/03-partials/examples/22-marketing-block.html",
+    "focus": "marketing block",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "example",
+    "file": "02-core-concepts/03-partials/examples/23-refactor-case.html",
+    "focus": "refactor case",
+    "scenario": "blog redesign"
+  },
+  {
+    "type": "example",
+    "file": "02-core-concepts/03-partials/examples/24-utility-pattern.html",
+    "focus": "utility pattern",
+    "scenario": "storefront"
+  },
+  {
+    "type": "example",
+    "file": "02-core-concepts/03-partials/examples/25-best-practice-recap.html",
+    "focus": "best practice recap",
+    "scenario": "portfolio"
+  },
+  {
+    "type": "exercise",
+    "file": "02-core-concepts/03-partials/exercises/01-variables-challenge.html",
+    "focus": "variables challenge",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "02-core-concepts/03-partials/exercises/02-nesting-refactor.html",
+    "focus": "nesting refactor",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "exercise",
+    "file": "02-core-concepts/03-partials/exercises/03-selector-cleanup.html",
+    "focus": "selector cleanup",
+    "scenario": "blog redesign"
+  },
+  {
+    "type": "exercise",
+    "file": "02-core-concepts/03-partials/exercises/04-responsive-tweak.html",
+    "focus": "responsive tweak",
+    "scenario": "storefront"
+  },
+  {
+    "type": "exercise",
+    "file": "02-core-concepts/03-partials/exercises/05-theme-setup.html",
+    "focus": "theme setup",
+    "scenario": "portfolio"
+  },
+  {
+    "type": "exercise",
+    "file": "02-core-concepts/03-partials/exercises/06-mixin-practice.html",
+    "focus": "mixin practice",
+    "scenario": "admin panel"
+  },
+  {
+    "type": "exercise",
+    "file": "02-core-concepts/03-partials/exercises/07-module-import.html",
+    "focus": "module import",
+    "scenario": "booking app"
+  },
+  {
+    "type": "exercise",
+    "file": "02-core-concepts/03-partials/exercises/08-color-system.html",
+    "focus": "color system",
+    "scenario": "analytics page"
+  },
+  {
+    "type": "exercise",
+    "file": "02-core-concepts/03-partials/exercises/09-component-extraction.html",
+    "focus": "component extraction",
+    "scenario": "documentation site"
+  },
+  {
+    "type": "exercise",
+    "file": "02-core-concepts/03-partials/exercises/10-layout-scaling.html",
+    "focus": "layout scaling",
+    "scenario": "mobile web app"
+  },
+  {
+    "type": "exercise",
+    "file": "02-core-concepts/03-partials/exercises/11-token-mapping.html",
+    "focus": "token mapping",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "02-core-concepts/03-partials/exercises/12-partial-strategy.html",
+    "focus": "partial strategy",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "exercise",
+    "file": "02-core-concepts/03-partials/exercises/13-extend-pattern.html",
+    "focus": "extend pattern",
+    "scenario": "blog redesign"
+  },
+  {
+    "type": "exercise",
+    "file": "02-core-concepts/03-partials/exercises/14-bem-conversion.html",
+    "focus": "BEM conversion",
+    "scenario": "storefront"
+  },
+  {
+    "type": "exercise",
+    "file": "02-core-concepts/03-partials/exercises/15-performance-pass.html",
+    "focus": "performance pass",
+    "scenario": "portfolio"
+  },
+  {
+    "type": "exercise",
+    "file": "02-core-concepts/03-partials/exercises/16-function-drill.html",
+    "focus": "function drill",
+    "scenario": "admin panel"
+  },
+  {
+    "type": "exercise",
+    "file": "02-core-concepts/03-partials/exercises/17-grid-adjustment.html",
+    "focus": "grid adjustment",
+    "scenario": "booking app"
+  },
+  {
+    "type": "exercise",
+    "file": "02-core-concepts/03-partials/exercises/18-loop-generation.html",
+    "focus": "loop generation",
+    "scenario": "analytics page"
+  },
+  {
+    "type": "exercise",
+    "file": "02-core-concepts/03-partials/exercises/19-map-iteration.html",
+    "focus": "map iteration",
+    "scenario": "documentation site"
+  },
+  {
+    "type": "exercise",
+    "file": "02-core-concepts/03-partials/exercises/20-debugging.html",
+    "focus": "debugging",
+    "scenario": "mobile web app"
+  },
+  {
+    "type": "exercise",
+    "file": "02-core-concepts/03-partials/exercises/21-documentation-task.html",
+    "focus": "documentation task",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "02-core-concepts/03-partials/exercises/22-accessibility-pass.html",
+    "focus": "accessibility pass",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "exercise",
+    "file": "02-core-concepts/03-partials/exercises/23-mobile-optimization.html",
+    "focus": "mobile optimization",
+    "scenario": "blog redesign"
+  },
+  {
+    "type": "exercise",
+    "file": "02-core-concepts/03-partials/exercises/24-code-review.html",
+    "focus": "code review",
+    "scenario": "storefront"
+  },
+  {
+    "type": "exercise",
+    "file": "02-core-concepts/03-partials/exercises/25-final-challenge.html",
+    "focus": "final challenge",
+    "scenario": "portfolio"
+  },
+  {
+    "type": "template",
+    "file": "02-core-concepts/03-partials/templates/01-starter-file.html",
+    "focus": "starter file",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "template",
+    "file": "02-core-concepts/03-partials/templates/02-component-shell.html",
+    "focus": "component shell",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "template",
+    "file": "02-core-concepts/03-partials/templates/03-form-kit.html",
+    "focus": "form kit",
+    "scenario": "blog redesign"
+  },
+  {
+    "type": "template",
+    "file": "02-core-concepts/03-partials/templates/04-dashboard-kit.html",
+    "focus": "dashboard kit",
+    "scenario": "storefront"
+  },
+  {
+    "type": "template",
+    "file": "02-core-concepts/03-partials/templates/05-ecommerce-kit.html",
+    "focus": "ecommerce kit",
+    "scenario": "portfolio"
+  },
+  {
+    "type": "template",
+    "file": "02-core-concepts/03-partials/templates/06-landing-block.html",
+    "focus": "landing block",
+    "scenario": "admin panel"
+  },
+  {
+    "type": "template",
+    "file": "02-core-concepts/03-partials/templates/07-navigation-bar.html",
+    "focus": "navigation bar",
+    "scenario": "booking app"
+  },
+  {
+    "type": "template",
+    "file": "02-core-concepts/03-partials/templates/08-footer-block.html",
+    "focus": "footer block",
+    "scenario": "analytics page"
+  },
+  {
+    "type": "template",
+    "file": "02-core-concepts/03-partials/templates/09-card-system.html",
+    "focus": "card system",
+    "scenario": "documentation site"
+  },
+  {
+    "type": "template",
+    "file": "02-core-concepts/03-partials/templates/10-button-system.html",
+    "focus": "button system",
+    "scenario": "mobile web app"
+  },
+  {
+    "type": "template",
+    "file": "02-core-concepts/03-partials/templates/11-alert-pack.html",
+    "focus": "alert pack",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "template",
+    "file": "02-core-concepts/03-partials/templates/12-typography-base.html",
+    "focus": "typography base",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "template",
+    "file": "02-core-concepts/03-partials/templates/13-color-palette.html",
+    "focus": "color palette",
+    "scenario": "blog redesign"
+  },
+  {
+    "type": "template",
+    "file": "02-core-concepts/03-partials/templates/14-theme-switcher.html",
+    "focus": "theme switcher",
+    "scenario": "storefront"
+  },
+  {
+    "type": "template",
+    "file": "02-core-concepts/03-partials/templates/15-responsive-shell.html",
+    "focus": "responsive shell",
+    "scenario": "portfolio"
+  },
+  {
+    "type": "template",
+    "file": "02-core-concepts/03-partials/templates/16-blog-starter.html",
+    "focus": "blog starter",
+    "scenario": "admin panel"
+  },
+  {
+    "type": "template",
+    "file": "02-core-concepts/03-partials/templates/17-portfolio-starter.html",
+    "focus": "portfolio starter",
+    "scenario": "booking app"
+  },
+  {
+    "type": "template",
+    "file": "02-core-concepts/03-partials/templates/18-admin-starter.html",
+    "focus": "admin starter",
+    "scenario": "analytics page"
+  },
+  {
+    "type": "template",
+    "file": "02-core-concepts/03-partials/templates/19-modal-starter.html",
+    "focus": "modal starter",
+    "scenario": "documentation site"
+  },
+  {
+    "type": "template",
+    "file": "02-core-concepts/03-partials/templates/20-table-starter.html",
+    "focus": "table starter",
+    "scenario": "mobile web app"
+  },
+  {
+    "type": "template",
+    "file": "02-core-concepts/03-partials/templates/21-pricing-starter.html",
+    "focus": "pricing starter",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "template",
+    "file": "02-core-concepts/03-partials/templates/22-grid-starter.html",
+    "focus": "grid starter",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "template",
+    "file": "02-core-concepts/03-partials/templates/23-utility-starter.html",
+    "focus": "utility starter",
+    "scenario": "blog redesign"
+  },
+  {
+    "type": "template",
+    "file": "02-core-concepts/03-partials/templates/24-token-starter.html",
+    "focus": "token starter",
+    "scenario": "storefront"
+  },
+  {
+    "type": "template",
+    "file": "02-core-concepts/03-partials/templates/25-production-starter.html",
+    "focus": "production starter",
+    "scenario": "portfolio"
+  }
+]

@@ -1,0 +1,42 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 28-Tricky-Examples
+  example: 15-this-lost-method.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>15 — Losing this when Passing Methods | phpkingdom.com</title>
+</head>
+<body>
+  <h1>15 — Losing this when Passing Methods</h1>
+  <h2>Problem / Gotcha</h2>
+  <p>Extracted methods lose their object binding.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const user = {
+  name: "Ada",
+  greet() { return "Hi " + this.name; }
+};
+const fn = user.greet;
+try {
+  document.getElementById("out").textContent =
+    "direct => " + user.greet() + "\n" +
+    "detached => " + fn() + "\n" +
+    "bound => " + fn.bind(user)();
+} catch (e) {
+  document.getElementById("out").textContent =
+    "direct => " + user.greet() + "\n" +
+    "detached threw => " + e.message + "\n" +
+    "bound => " + fn.bind(user)();
+}
+  </script>
+</body>
+</html>

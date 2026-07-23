@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 24-API-Examples
+  example: 09-get-set-headers.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>09 — Custom Headers | phpkingdom.com</title>
+</head>
+<body>
+  <h1>09 — Custom Headers</h1>
+  <h2>Problem</h2>
+  <p>Send Accept and X-Request-Id headers.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const headers = new Headers();
+headers.set("Accept", "application/json");
+headers.set("X-Request-Id", crypto.randomUUID ? crypto.randomUUID() : "req-1");
+document.getElementById("out").textContent =
+  "Accept=" + headers.get("Accept") + "\nX-Request-Id=" + headers.get("X-Request-Id");
+  </script>
+</body>
+</html>

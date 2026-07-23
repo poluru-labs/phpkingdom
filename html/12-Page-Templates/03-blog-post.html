@@ -1,0 +1,88 @@
+<!--
+  sitename: phpkingdom
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  topic: 12-Page-Templates
+  example: 03-blog-post.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why structure comes before styling | phpkingdom</title>
+  <style>
+    body { font-family: Georgia, "Times New Roman", serif; max-width: 720px; margin: 2rem auto; padding: 0 1.25rem; line-height: 1.6; color: #1a1a1a; }
+    h1 { font-size: 1.75rem; margin-bottom: 0.35rem; }
+    .meta { color: #555; font-size: 0.95rem; margin-bottom: 1.5rem; }
+    nav a { margin-right: 0.75rem; }
+    header, footer { margin: 1.25rem 0; }
+    footer { border-top: 1px solid #ccc; padding-top: 1rem; color: #555; font-size: 0.95rem; }
+    section { margin: 1.5rem 0; }
+    blockquote { border-left: 3px solid #2a6f97; margin: 1rem 0; padding: 0.5rem 0 0.5rem 1rem; color: #333; background: #f0f7fb; }
+    ul, ol { padding-left: 1.25rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <p><a href="02-blog-home.html">← Back to blog</a></p>
+    <nav>
+      <a href="index.html">Templates</a>
+      <a href="04-company-about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <header>
+        <h1>Why structure comes before styling</h1>
+        <p class="meta">
+          By Subrahmanyam Poluru ·
+          <time datetime="2026-07-19">July 19, 2026</time> ·
+          Tags: HTML, beginners
+        </p>
+      </header>
+
+      <p>When I teach at phpkingdom, I ask students to disable CSS in the browser. If the page still reads logically, the HTML is doing its job.</p>
+
+      <section>
+        <h2>Use landmarks early</h2>
+        <p>Wrap recurring regions in semantic elements:</p>
+        <ul>
+          <li><strong>header</strong> — site or article introduction</li>
+          <li><strong>nav</strong> — primary navigation links</li>
+          <li><strong>main</strong> — unique page content</li>
+          <li><strong>footer</strong> — copyright, contact, secondary links</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Headings tell the story</h2>
+        <p>One <code>h1</code> per page. Section titles step down levels (<code>h2</code>, then <code>h3</code>) without skipping.</p>
+        <blockquote>
+          <p>Good markup is documentation for the next developer — often yourself, six months later.</p>
+        </blockquote>
+      </section>
+
+      <section>
+        <h2>Next steps</h2>
+        <ol>
+          <li>Pick a template from <a href="index.html">12-Page-Templates</a>.</li>
+          <li>Rebuild it from scratch without looking at the source.</li>
+          <li>Add minimal CSS only after the outline feels complete.</li>
+        </ol>
+      </section>
+
+      <footer>
+        <p>Questions? Email <a href="mailto:mail.polurus@gmail.com">mail.polurus@gmail.com</a> or visit <a href="https://polurus.com">polurus.com</a>.</p>
+      </footer>
+    </article>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 phpkingdom</p>
+  </footer>
+
+</body>
+</html>

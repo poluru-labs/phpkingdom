@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 16-Array-Examples
+  example: 09-two-sum.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>09 — Two Sum | phpkingdom.com</title>
+</head>
+<body>
+  <h1>09 — Two Sum</h1>
+  <h2>Problem</h2>
+  <p>Find indexes of two numbers that add up to a target.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function twoSum(nums, target) {
+  const map = new Map();
+  for (let i = 0; i < nums.length; i++) {
+    const need = target - nums[i];
+    if (map.has(need)) return [map.get(need), i];
+    map.set(nums[i], i);
+  }
+  return [];
+}
+document.getElementById("out").textContent = "[" + twoSum([2,7,11,15], 9) + "]";
+  </script>
+</body>
+</html>

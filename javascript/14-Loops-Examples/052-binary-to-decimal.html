@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 052-binary-to-decimal.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>052 — Binary to Decimal | phpkingdom.com</title>
+</head>
+<body>
+  <h1>052 — Binary to Decimal</h1>
+  <h2>Problem</h2>
+  <p>Convert a binary string to decimal with a loop.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const bin = "1011";
+let dec = 0;
+for (const bit of bin) dec = dec * 2 + Number(bit);
+document.getElementById("out").textContent = bin + "₂ = " + dec + "₁₀";
+  </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 25-Error-Handling-Examples
+  example: 37-validate-early.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>37 — Validate Early | phpkingdom.com</title>
+</head>
+<body>
+  <h1>37 — Validate Early</h1>
+  <h2>Problem</h2>
+  <p>Fail fast at the top of a function with clear errors.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const out = document.getElementById("out");
+function createUser(data) {
+  if (!data) throw new Error("data required");
+  if (!data.email) throw new Error("email required");
+  if (!data.email.includes("@")) throw new Error("email invalid");
+  return { id: 1, email: data.email };
+}
+try {
+  createUser({ email: "bad" });
+} catch (e) {
+  out.textContent = e.message;
+}
+  </script>
+</body>
+</html>

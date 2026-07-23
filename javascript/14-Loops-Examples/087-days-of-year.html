@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 087-days-of-year.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>087 — Sum Days in Months | phpkingdom.com</title>
+</head>
+<body>
+  <h1>087 — Sum Days in Months</h1>
+  <h2>Problem</h2>
+  <p>Sum days across months with a for loop.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const days = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+let total = 0;
+for (const d of days) total += d;
+document.getElementById("out").textContent = "non-leap year days = " + total;
+  </script>
+</body>
+</html>

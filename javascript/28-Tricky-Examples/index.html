@@ -1,0 +1,44 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 28-Tricky-Examples
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>28-Tricky-Examples | phpkingdom.com</title>
+  <style>
+    body { font-family: Georgia, "Times New Roman", serif; max-width: 760px; margin: 2rem auto; padding: 0 1.25rem; line-height: 1.6; color: #1a1a1a; }
+    h1 { font-size: 1.75rem; margin-bottom: 0.35rem; }
+    .meta { color: #555; font-size: 0.95rem; margin-bottom: 1.25rem; }
+    .note { background: #f0f7fb; padding: 0.75rem 1rem; border-left: 3px solid #0f766e; margin: 1rem 0; }
+    .demo { margin: 1rem 0; padding: 1rem; border: 1px dashed #94a3b8; }
+    pre, code { font-family: ui-monospace, Menlo, monospace; }
+    pre { background: #111827; color: #e5e7eb; padding: 0.85rem 1rem; overflow: auto; }
+    button, input, select, textarea { font: inherit; padding: 0.4rem 0.55rem; }
+    button { cursor: pointer; background: #0f766e; color: #fff; border: 0; padding: 0.55rem 1rem; }
+    #out { white-space: pre-wrap; background: #f4f4f4; padding: 0.75rem; min-height: 2rem; }
+    a { color: #0f766e; }
+    footer { border-top: 1px solid #ccc; padding-top: 1rem; margin-top: 2rem; color: #555; font-size: 0.95rem; }
+
+    .brand { color:#0f766e; font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    ol { line-height: 1.75; }
+  </style>
+</head>
+<body>
+  <div class="brand">phpkingdom.com</div>
+  <h1>28-Tricky-Examples</h1>
+  <p class="meta">50 examples. Minimal HTML — focus on the script.</p>
+  <p><a href="../index.html">← JavaScript Tutorials</a></p>
+  <ol><li><a href="01-typeof-null.html">01 — typeof null === &#x27;object&#x27;</a></li><li><a href="02-double-equals.html">02 — == Type Coercion Traps</a></li><li><a href="03-triple-equals.html">03 — Prefer ===</a></li><li><a href="04-nan-comparisons.html">04 — NaN is not equal to NaN</a></li><li><a href="05-addition-vs-concat.html">05 — + Overload Confusion</a></li><li><a href="06-true-false-array.html">06 — [] == ![] and friends</a></li><li><a href="07-object-keys-order.html">07 — Object Key Oddities</a></li><li><a href="08-array-length-hole.html">08 — Sparse Arrays / Holes</a></li><li><a href="09-sort-default.html">09 — Array sort is Lexicographic by Default</a></li><li><a href="10-parseint-map.html">10 — parseInt as map Callback Trap</a></li><li><a href="11-closure-var-loop.html">11 — var Closure in Loop</a></li><li><a href="12-tdz-let.html">12 — Temporal Dead Zone</a></li><li><a href="13-hoisting-var.html">13 — var Hoisting</a></li><li><a href="14-this-regular-vs-arrow.html">14 — this in Regular vs Arrow</a></li><li><a href="15-this-lost-method.html">15 — Losing this when Passing Methods</a></li><li><a href="16-new-target.html">16 — Constructor without new</a></li><li><a href="17-prototype-mutation.html">17 — Shared Prototype Mutation</a></li><li><a href="18-instanceof-realm.html">18 — instanceof Across Realms Idea</a></li><li><a href="19-float-math.html">19 — Floating Point Math</a></li><li><a href="20-minmax-empty.html">20 — Math.max() with No Args</a></li><li><a href="21-automatic-semicolon.html">21 — ASI Pitfall with return</a></li><li><a href="22-block-scope-function.html">22 — Function Declaration Scope Notes</a></li><li><a href="23-arguments-arrow.html">23 — Arrow Functions Have No arguments</a></li><li><a href="24-default-params-temporal.html">24 — Default Params Left-to-Right</a></li><li><a href="25-optional-chaining-assign.html">25 — Optional chaining is read-only</a></li><li><a href="26-nullish-vs-or.html">26 — ?? vs ||</a></li><li><a href="27-promise-constructor-sync.html">27 — Promise Executor Runs Sync</a></li><li><a href="28-microtask-order.html">28 — Microtasks before Timers</a></li><li><a href="29-async-return-promise.html">29 — async Always Returns a Promise</a></li><li><a href="30-await-non-promise.html">30 — await Wraps Non-Promises</a></li><li><a href="31-json-stringify-limits.html">31 — JSON.stringify Drops Functions/Undefined</a></li><li><a href="32-json-parse-numbers.html">32 — JSON has no undefined / bigint</a></li><li><a href="33-object-freeze-shallow.html">33 — Object.freeze is Shallow</a></li><li><a href="34-const-mutation.html">34 — const Does Not Mean Immutable</a></li><li><a href="35-with-delete-array.html">35 — delete on Array Leaves Holes</a></li><li><a href="36-string-immutability.html">36 — Strings are Immutable</a></li><li><a href="37-typeof-undeclared.html">37 — typeof Undeclared is Safe</a></li><li><a href="38-spread-vs-rest.html">38 — Spread vs Rest Look Alike</a></li><li><a href="39-destructure-defaults.html">39 — Destructuring Defaults Only for Missing</a></li><li><a href="40-for-in-prototype.html">40 — for...in Includes Inherited Keys</a></li><li><a href="41-settimeout-string.html">41 — Avoid setTimeout String Code</a></li><li><a href="42-implicit-globals.html">42 — Accidental Globals (sloppy mode idea)</a></li><li><a href="43-function-length.html">43 — function.length Quirk</a></li><li><a href="44-label-break-switch.html">44 — switch Uses Strict Equality</a></li><li><a href="45-plus-plus-string.html">45 — ++ on Numeric Strings</a></li><li><a href="46-void-operator.html">46 — void Operator</a></li><li><a href="47-comma-operator.html">47 — Comma Operator</a></li><li><a href="48-promise-then-chains.html">48 — then Callback Return Values</a></li><li><a href="49-array-like.html">49 — Array-like vs Real Array</a></li><li><a href="50-min-max-infinity.html">50 — Infinite Values</a></li></ol>
+  <footer>
+    <p>&copy; 2026 phpkingdom.com · Subrahmanyam Poluru · <a href="https://polurus.com">polurus.com</a></p>
+  </footer>
+</body>
+</html>

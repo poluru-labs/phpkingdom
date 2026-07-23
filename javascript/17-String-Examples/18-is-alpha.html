@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 17-String-Examples
+  example: 18-is-alpha.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>18 — Alphabetic Check | phpkingdom.com</title>
+</head>
+<body>
+  <h1>18 — Alphabetic Check</h1>
+  <h2>Problem</h2>
+  <p>Return true if string contains only letters.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function isAlpha(s) {
+  return /^[A-Za-z]+$/.test(s);
+}
+document.getElementById("out").textContent =
+  isAlpha("JavaScript") + " / " + isAlpha("JS123");
+  </script>
+</body>
+</html>

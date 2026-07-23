@@ -1,0 +1,34 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 19-Recursion-Examples
+  example: 41-tree-find-value.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>41 — Tree Find Value | phpkingdom.com</title>
+</head>
+<body>
+  <h1>41 — Tree Find Value</h1>
+  <h2>Problem</h2>
+  <p>Search a binary tree recursively for a target value.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const tree = { val: 8, left: { val: 3, left: { val: 1 }, right: { val: 6 } }, right: { val: 10, left: null, right: { val: 14 } } };
+function findValue(node, target) {
+  if (!node) return false;
+  if (node.val === target) return true;
+  return findValue(node.left, target) || findValue(node.right, target);
+}
+document.getElementById("out").textContent =
+  "find 6: " + findValue(tree, 6) + "\nfind 99: " + findValue(tree, 99);
+  </script>
+</body>
+</html>

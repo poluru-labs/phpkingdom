@@ -1,0 +1,37 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 25-Error-Handling-Examples
+  example: 03-try-catch-finally.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>03 — Try / Catch / Finally | phpkingdom.com</title>
+</head>
+<body>
+  <h1>03 — Try / Catch / Finally</h1>
+  <h2>Problem</h2>
+  <p>finally runs whether or not an error was thrown.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const out = document.getElementById("out");
+const log = [];
+try {
+  log.push("try");
+  throw new Error("fail");
+} catch (e) {
+  log.push("catch: " + e.message);
+} finally {
+  log.push("finally");
+}
+out.textContent = log.join("\n");
+  </script>
+</body>
+</html>

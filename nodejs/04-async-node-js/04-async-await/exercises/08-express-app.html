@@ -1,0 +1,123 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Node.js Tutorials
+section title: Async Node.js
+topic title: Async Await
+content type: Exercise
+item number: 08
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Async Await Exercise 08 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #dcfce7;
+      color: #166534;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Exercise 08</span>
+    <h1>Async Await</h1>
+    <p><strong>Section:</strong> Async Node.js</p>
+    <p><strong>Focus:</strong> Express App</p>
+    <p><strong>Scenario:</strong> realtime API</p>
+    <p>Run the code locally, then verify with curl, logs, or tests.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Node.js</h2>
+        <pre><code>// Async Await — Exercise 08
+// Focus: express app | Scenario: realtime API
+
+import { readFile } from &quot;node:fs/promises&quot;;
+
+async function loadJson(file) {
+  try {
+    const raw = await readFile(file, &quot;utf8&quot;);
+    return JSON.parse(raw);
+  } catch (err) {
+    err.message = `loadJson(${file}): ${err.message}`;
+    throw err;
+  }
+}
+
+const config = await loadJson(&quot;./config.json&quot;).catch(() =&gt; ({ port: 3000 }));
+console.log(config);</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Async Await
+- Practice: express app
+- Scenario: realtime API
+- Prefer promises / async-await over nested callbacks
+- Always handle errors; never leave streams without error listeners
+- Use environment variables for secrets and config
+- Validate inputs at API boundaries
+
+Useful commands:
+  node --version
+  npm init -y
+  node --watch server.mjs
+  npm test
+  NODE_ENV=production node server.mjs</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This exercise shows one way to apply <strong>Async Await</strong> in a realtime api context.</p>
+      <p>Keep the event loop free of heavy CPU work; offload with workers or queues when needed.</p>
+    </section>
+  </main>
+</body>
+</html>

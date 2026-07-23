@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 18-Object-Examples
+  example: 46-frequency-object.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>46 — Word Frequency Object | phpkingdom.com</title>
+</head>
+<body>
+  <h1>46 — Word Frequency Object</h1>
+  <h2>Problem</h2>
+  <p>Count word occurrences into an object.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function wordFrequency(text) {
+  return text.toLowerCase().match(/[a-z]+/g).reduce((acc, w) => {
+    acc[w] = (acc[w] || 0) + 1;
+    return acc;
+  }, {});
+}
+document.getElementById("out").textContent = JSON.stringify(wordFrequency("to be or not to be"));
+  </script>
+</body>
+</html>

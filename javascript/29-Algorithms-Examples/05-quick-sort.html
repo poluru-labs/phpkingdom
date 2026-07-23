@@ -1,0 +1,44 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 29-Algorithms-Examples
+  example: 05-quick-sort.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>05 — Quick Sort | phpkingdom.com</title>
+</head>
+<body>
+  <h1>05 — Quick Sort</h1>
+  <h2>Problem</h2>
+  <p>Pick a pivot, partition smaller/larger, then sort subarrays recursively.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function quickSort(arr, lo = 0, hi = arr.length - 1) {
+  if (lo >= hi) return arr;
+  const pivot = arr[hi];
+  let i = lo;
+  for (let j = lo; j < hi; j++) {
+    if (arr[j] <= pivot) {
+      [arr[i], arr[j]] = [arr[j], arr[i]];
+      i++;
+    }
+  }
+  [arr[i], arr[hi]] = [arr[hi], arr[i]];
+  quickSort(arr, lo, i - 1);
+  quickSort(arr, i + 1, hi);
+  return arr;
+}
+const input = [10, 7, 8, 9, 1, 5];
+document.getElementById("out").textContent =
+  "input:  " + JSON.stringify(input) + "\noutput: " + JSON.stringify(quickSort(input.slice()));
+  </script>
+</body>
+</html>

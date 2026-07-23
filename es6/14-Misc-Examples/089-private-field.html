@@ -1,0 +1,27 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Misc-Examples
+  example: 089-private-field.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>089 — Private field | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>089 — Private field</h1>
+  <p class="meta">class { #x } encapsulation.</p>
+  <p>class { #x } encapsulation.</p>
+<pre id="out"></pre>
+  <script>
+class A{ #n=7; get(){return this.#n;} } document.getElementById('out').textContent=String(new A().get());
+  </script>
+</body>
+</html>

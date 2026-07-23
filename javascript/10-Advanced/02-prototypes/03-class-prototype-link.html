@@ -1,0 +1,28 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 10-Advanced/02-prototypes
+  example: 03-class-prototype-link.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Class Prototype Link | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Classes use Prototypes</h1>
+  <p>class syntax is sugar over prototypes.</p>
+  <pre id="out"></pre>
+  <script>
+class Car { drive() { return "vroom"; } }
+const c = new Car();
+document.getElementById("out").textContent =
+  c.drive() + " / " + (Object.getPrototypeOf(c) === Car.prototype);
+  </script>
+</body>
+</html>

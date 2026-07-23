@@ -1,0 +1,123 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Module Federation Tutorials
+section title: Design Systems
+topic title: Style Isolation
+content type: Exercise
+item number: 06
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Style Isolation Exercise 06 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ffedd5;
+      color: #9a3412;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Exercise 06</span>
+    <h1>Style Isolation</h1>
+    <p><strong>Section:</strong> Design Systems</p>
+    <p><strong>Focus:</strong> Remotes Map</p>
+    <p><strong>Scenario:</strong> design system CDN</p>
+    <p>Run a host and remote locally, then verify import('remote/Module') and shared deps.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Module Federation</h2>
+        <pre><code>// Style Isolation — Exercise 06
+// Focus: remotes map | Scenario: design system CDN
+
+// Prevent CSS collisions across remotes
+
+// Techniques:
+// 1) CSS Modules / scoped Vue styles / Angular emulated encapsulation
+// 2) Shadow DOM via Web Components
+// 3) Unique BEM prefixes per team: .cart-mfe__button
+// 4) CSS-in-JS with deterministic prefixes
+
+// Avoid global tag selectors in remotes (h1 { ... })
+// Shell may reset layout; remotes style only their root class
+
+// Example root:
+export default function CartApp() {
+  return &lt;div className=&quot;cart-mfe-root&quot;&gt;...&lt;/div&gt;;
+}</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Style Isolation
+- Practice: remotes map
+- Scenario: design system CDN
+- Share framework runtimes as singletons with requiredVersion
+- Load remotes lazily; wrap with error boundaries / fallbacks
+- Deploy remotes independently; version remoteEntry URLs carefully
+- Align CORS and CSP for cross-origin remoteEntry.js
+
+Useful commands:
+  npm install -D webpack webpack-cli webpack-dev-server
+  # run host + remote on different ports
+  npx webpack serve --config webpack.host.js --port 3000
+  npx webpack serve --config webpack.remote.js --port 3002</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This exercise shows one way to apply <strong>Style Isolation</strong> in a design system cdn context.</p>
+      <p>Keep remotes independently deployable, share carefully, and always plan for remote downtime.</p>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 20-DOM-Examples
+  example: 13-attributes.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>13 — get / set / remove Attribute | phpkingdom.com</title>
+</head>
+<body>
+  <h1>13 — get / set / remove Attribute</h1>
+  <h2>Problem</h2>
+  <p>Read, write, and remove HTML attributes.</p>
+  <h2>Demo</h2>
+  <a id="link" href="https://polurus.com" target="_blank">link</a>
+  <button id="set">set title</button>
+  <button id="rm">remove target</button>
+  <pre id="out"></pre>
+  <script>
+const link = document.getElementById("link");
+const out = document.getElementById("out");
+function show() {
+  out.textContent =
+    "href=" + link.getAttribute("href") +
+    " | target=" + link.getAttribute("target") +
+    " | title=" + link.getAttribute("title");
+}
+show();
+document.getElementById("set").onclick = () => {
+  link.setAttribute("title", "Author site");
+  show();
+};
+document.getElementById("rm").onclick = () => {
+  link.removeAttribute("target");
+  show();
+};
+  </script>
+</body>
+</html>

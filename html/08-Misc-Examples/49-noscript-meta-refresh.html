@@ -1,0 +1,28 @@
+<!--
+  sitename: phpkingdom
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  topic: 08-Misc-Examples
+  example: 49-noscript-meta-refresh.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Noscript Fallback | phpkingdom</title>
+</head>
+<body>
+  <h1>Noscript Fallback</h1>
+
+  <p>If JavaScript is enabled, a short message appears below via script.</p>
+  <p id="js-status">JavaScript is off or not running.</p>
+  <script>
+    document.getElementById("js-status").textContent = "JavaScript is working.";
+  </script>
+  <noscript>
+    <p>Please enable JavaScript for the interactive examples on phpkingdom.</p>
+  </noscript>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 16-Array-Examples
+  example: 46-valid-anagram-arrays.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>46 — Valid Anagram (Arrays/Counts) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>46 — Valid Anagram (Arrays/Counts)</h1>
+  <h2>Problem</h2>
+  <p>Check if two strings are anagrams using char counts.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function isAnagram(a, b) {
+  if (a.length !== b.length) return false;
+  const count = {};
+  for (const ch of a) count[ch] = (count[ch] || 0) + 1;
+  for (const ch of b) {
+    if (!count[ch]) return false;
+    count[ch]--;
+  }
+  return true;
+}
+document.getElementById("out").textContent =
+  isAnagram("listen", "silent") + " / " + isAnagram("hello", "world");
+  </script>
+</body>
+</html>

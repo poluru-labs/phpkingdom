@@ -1,0 +1,26 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 06-Objects/05-json
+  example: 02-pretty-print.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Pretty Print | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Pretty-print JSON</h1>
+  <p>Indent with stringify spaces.</p>
+  <pre id="out"></pre>
+  <script>
+const data = { site: "phpkingdom.com", ok: true };
+document.getElementById("out").textContent = JSON.stringify(data, null, 2);
+  </script>
+</body>
+</html>

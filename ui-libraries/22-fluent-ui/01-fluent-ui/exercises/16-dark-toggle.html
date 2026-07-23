@@ -1,0 +1,117 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Popular UI Libraries Tutorials
+section title: Fluent UI
+topic title: Fluent UI
+content type: Exercise
+item number: 16
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Fluent UI Exercise 16 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #f3e8ff;
+      color: #6b21a8;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Exercise 16</span>
+    <h1>Fluent UI</h1>
+    <p><strong>Section:</strong> Fluent UI</p>
+    <p><strong>Focus:</strong> Dark Toggle</p>
+    <p><strong>Scenario:</strong> design system kit</p>
+    <p>Implement the pattern in a sandbox app and verify responsive + a11y behavior.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>UI Patterns</h2>
+        <pre><code>// Fluent UI — Exercise 16
+// Focus: dark toggle | Scenario: design system kit
+
+import { FluentProvider, webLightTheme, Button } from &quot;@fluentui/react-components&quot;;
+
+export function App() {
+  return (
+    &lt;FluentProvider theme={webLightTheme}&gt;
+      &lt;Button appearance=&quot;primary&quot;&gt;Save&lt;/Button&gt;
+    &lt;/FluentProvider&gt;
+  );
+}</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Fluent UI
+- Practice: dark toggle
+- Scenario: design system kit
+- Prefer tree-shakeable imports / component wrappers for your design system
+- Keep accessibility: keyboard, focus, labels, contrast
+- Theme via tokens (color/spacing/type) instead of one-off overrides
+- Measure bundle size before adopting heavy enterprise kits
+
+Useful commands:
+  npm install &lt;ui-library&gt;
+  npx shadcn@latest add button
+  npx storybook@latest init
+  npm run build &amp;&amp; npx bundlesize  # or source-map-explorer</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This exercise shows one way to apply <strong>Fluent UI</strong> in a design system kit context.</p>
+      <p>Choose styled vs headless based on brand control needs; wrap third-party components behind your design-system API.</p>
+    </section>
+  </main>
+</body>
+</html>

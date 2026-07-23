@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 26-Date-Time-Examples
+  example: 10-offset-pitfall.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>10 — Timezone Offset Pitfall | phpkingdom.com</title>
+</head>
+<body>
+  <h1>10 — Timezone Offset Pitfall</h1>
+  <h2>Problem</h2>
+  <p>Same calendar date at local midnight can map to different UTC days depending on offset.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+
+const localMidnight = new Date(2024, 0, 15, 0, 0, 0);
+document.getElementById("out").textContent =
+  "Local midnight: " + localMidnight.toString() + "\n" +
+  "UTC via ISO: " + localMidnight.toISOString() + "\n" +
+  "Pitfall: date-only strings like '2024-01-15' parse as UTC midnight, not local.";
+
+  </script>
+</body>
+</html>

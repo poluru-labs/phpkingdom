@@ -1,0 +1,29 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 18-Object-Examples
+  example: 41-constructor-function.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>41 — Constructor Function | phpkingdom.com</title>
+</head>
+<body>
+  <h1>41 — Constructor Function</h1>
+  <h2>Problem</h2>
+  <p>Create objects with a constructor and prototype method.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function Person(name) { this.name = name; }
+Person.prototype.hello = function () { return "Hi, I am " + this.name; };
+document.getElementById("out").textContent = new Person("Ada").hello();
+  </script>
+</body>
+</html>

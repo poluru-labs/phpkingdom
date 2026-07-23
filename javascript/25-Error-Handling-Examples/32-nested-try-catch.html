@@ -1,0 +1,43 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 25-Error-Handling-Examples
+  example: 32-nested-try-catch.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>32 — Nested Try/Catch | phpkingdom.com</title>
+</head>
+<body>
+  <h1>32 — Nested Try/Catch</h1>
+  <h2>Problem</h2>
+  <p>Inner catch can handle; outer catch gets rethrows.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const out = document.getElementById("out");
+const log = [];
+try {
+  try {
+    throw new TypeError("inner");
+  } catch (e) {
+    if (e instanceof TypeError) {
+      log.push("inner handled TypeError");
+    } else {
+      throw e;
+    }
+  }
+  throw new Error("outer");
+} catch (e) {
+  log.push("outer: " + e.message);
+}
+out.textContent = log.join("\n");
+  </script>
+</body>
+</html>

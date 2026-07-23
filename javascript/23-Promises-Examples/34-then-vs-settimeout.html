@@ -1,0 +1,37 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 23-Promises-Examples
+  example: 34-then-vs-settimeout.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>34 — Microtask vs Macrotask | phpkingdom.com</title>
+</head>
+<body>
+  <h1>34 — Microtask vs Macrotask</h1>
+  <h2>Problem</h2>
+  <p>Promise then runs before setTimeout(fn, 0).</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+let log = "";
+setTimeout(() => {
+  log += "timeout ";
+  document.getElementById("out").textContent = log;
+}, 0);
+Promise.resolve().then(() => {
+  log += "promise ";
+  document.getElementById("out").textContent = log;
+});
+log += "sync ";
+document.getElementById("out").textContent = log;
+  </script>
+</body>
+</html>

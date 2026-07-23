@@ -1,0 +1,110 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 22-Components-Examples
+  example: 07-radio-group.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>07 — Radio Group | phpkingdom.com</title>
+  <link rel="stylesheet" href="css/base.css">
+  <style>
+    .c-radio-group {
+      display: grid;
+      gap: 0.65rem;
+      border: none;
+      padding: 0;
+      margin: 0;
+    }
+    .c-radio-group legend {
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .c-radio {
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      cursor: pointer;
+    }
+    .c-radio input {
+      width: 1.1rem;
+      height: 1.1rem;
+      accent-color: var(--accent);
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <a class="back" href="index.html">← Components</a>
+    <h1>07 — Radio Group</h1>
+    <p class="lead">Mutually exclusive options grouped with a shared name.</p>
+    <section class="panel">
+      <h2>Demo</h2>
+      <div id="mount"></div>
+    </section>
+    <section class="panel">
+      <h2>Events / State</h2>
+      <pre class="log" id="log">Ready.</pre>
+    </section>
+  </main>
+  <script>
+    const logEl = document.getElementById("log");
+    function log(msg) { logEl.textContent = msg; }
+
+    function createRadioGroup({ legend = "Plan", name = "plan", options = [], value = null } = {}) {
+      let selected = value ?? options[0]?.value ?? null;
+      const fieldset = document.createElement("fieldset");
+      fieldset.className = "c-radio-group";
+
+      const leg = document.createElement("legend");
+      leg.textContent = legend;
+      fieldset.appendChild(leg);
+
+      const inputs = options.map((opt) => {
+        const label = document.createElement("label");
+        label.className = "c-radio";
+        const input = document.createElement("input");
+        input.type = "radio";
+        input.name = name;
+        input.value = opt.value;
+        input.checked = opt.value === selected;
+        const span = document.createElement("span");
+        span.textContent = opt.label;
+        input.addEventListener("change", () => {
+          if (input.checked) {
+            selected = opt.value;
+            log("change: " + opt.label + " (" + opt.value + ")");
+          }
+        });
+        label.append(input, span);
+        fieldset.appendChild(label);
+        return input;
+      });
+
+      return {
+        el: fieldset,
+        get value() { return selected; },
+        set value(v) {
+          selected = v;
+          inputs.forEach((inp) => { inp.checked = inp.value === v; });
+        }
+      };
+    }
+
+    document.getElementById("mount").appendChild(createRadioGroup({
+      options: [
+        { label: "Free — $0/mo", value: "free" },
+        { label: "Pro — $12/mo", value: "pro" },
+        { label: "Team — $29/mo", value: "team" }
+      ]
+    }).el);
+  </script>
+</body>
+</html>

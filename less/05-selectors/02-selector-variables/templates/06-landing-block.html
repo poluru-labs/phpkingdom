@@ -1,0 +1,117 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: LESS CSS Tutorials
+section title: Selectors
+topic title: Selector Variables
+content type: Template
+item number: 06
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Selector Variables Template 06 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #e0f2fe;
+      color: #075985;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Template 06</span>
+    <h1>Selector Variables</h1>
+    <p><strong>Section:</strong> Selectors</p>
+    <p><strong>Focus:</strong> Landing Block</p>
+    <p><strong>Scenario:</strong> admin panel</p>
+    <p>Use this scaffold as a starting point and replace tokens, selectors, and mixins for your own project.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>LESS Snippet</h2>
+        <pre><code>// Selector Variables — Template 06
+// Focus: landing block | Scenario: admin panel
+
+@name: primary;
+@state: hover;
+
+.btn-@{name} {
+  background: #0d6efd;
+  color: #fff;
+  padding: 0.5rem 1rem;
+
+  &amp;:@{state} {
+    filter: brightness(1.05);
+  }
+}
+
+@theme: dark;
+body.theme-@{theme} {
+  background: #111;
+  color: #f8f9fa;
+}</code></pre>
+      </section>
+      <section>
+        <h2>HTML Markup</h2>
+        <pre><code>&lt;section class=&quot;panel-selector-variables&quot;&gt;
+  &lt;h2&gt;Selector Variables&lt;/h2&gt;
+  &lt;p&gt;Landing Block for a admin panel.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This template shows one way to apply <strong>Selector Variables</strong> in a admin panel context.</p>
+      <p>Adapt selectors, token names, and mixins to match your project naming rules.</p>
+    </section>
+  </main>
+</body>
+</html>

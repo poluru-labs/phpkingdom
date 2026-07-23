@@ -1,0 +1,29 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 18-Object-Examples
+  example: 50-immutable-update.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>50 — Immutable Object Update | phpkingdom.com</title>
+</head>
+<body>
+  <h1>50 — Immutable Object Update</h1>
+  <h2>Problem</h2>
+  <p>Update nested data without mutating the original.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const state = { user: { name: "Ada", score: 10 }, ok: true };
+const next = { ...state, user: { ...state.user, score: state.user.score + 5 } };
+document.getElementById("out").textContent = "old=" + state.user.score + ", new=" + next.user.score;
+  </script>
+</body>
+</html>

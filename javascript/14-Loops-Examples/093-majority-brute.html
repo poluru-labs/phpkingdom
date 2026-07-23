@@ -1,0 +1,34 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 093-majority-brute.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>093 — Majority Element (Brute) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>093 — Majority Element (Brute)</h1>
+  <h2>Problem</h2>
+  <p>Find an element that appears more than n/2 times.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const arr = [2, 2, 1, 2, 3, 2, 2];
+let majority = null;
+for (let i = 0; i < arr.length; i++) {
+  let count = 0;
+  for (let j = 0; j < arr.length; j++) if (arr[j] === arr[i]) count++;
+  if (count > arr.length / 2) { majority = arr[i]; break; }
+}
+document.getElementById("out").textContent = "majority = " + majority;
+  </script>
+</body>
+</html>

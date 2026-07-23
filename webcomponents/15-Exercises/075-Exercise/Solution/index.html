@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/075-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 075 — Boolean disabled FACE — Solution | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>Exercise 075 — Boolean disabled FACE — Solution</h1>
+  <p class="meta">Reflect disabled to inner input.</p>
+  <h2>Solution</h2>
+  <p>Reflect disabled to inner input.</p>
+  <div id="demo"></div>
+  <pre id="out"></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+customElements.define("ex075-el", class extends HTMLElement {
+  connectedCallback() {
+    this.textContent = 'Boolean disabled FACE';
+  }
+});
+document.getElementById("demo").innerHTML = "<ex075-el></ex075-el>";
+document.getElementById("out").textContent = 'Reflect disabled to inner input.';
+  </script>
+</body>
+</html>

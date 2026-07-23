@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 17-String-Examples
+  example: 32-atoi.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>32 — String to Integer (atoi lite) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>32 — String to Integer (atoi lite)</h1>
+  <h2>Problem</h2>
+  <p>Parse an integer from a string with optional sign.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function myAtoi(s) {
+  const m = s.trim().match(/^[+-]?\d+/);
+  if (!m) return 0;
+  return Number(m[0]);
+}
+document.getElementById("out").textContent =
+  myAtoi("   -42") + " / " + myAtoi("4193 with words");
+  </script>
+</body>
+</html>

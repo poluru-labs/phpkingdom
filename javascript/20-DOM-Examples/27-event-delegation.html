@@ -1,0 +1,46 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 20-DOM-Examples
+  example: 27-event-delegation.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>27 — Event Delegation | phpkingdom.com</title>
+</head>
+<body>
+  <h1>27 — Event Delegation</h1>
+  <h2>Problem</h2>
+  <p>Handle clicks for many list items with one parent listener.</p>
+  <h2>Demo</h2>
+  <ul id="list">
+    <li data-id="1">Alpha</li>
+    <li data-id="2">Beta</li>
+    <li data-id="3">Gamma</li>
+  </ul>
+  <button id="more">Add item</button>
+  <pre id="out"></pre>
+  <script>
+const list = document.getElementById("list");
+list.addEventListener("click", (e) => {
+  const li = e.target.closest("li");
+  if (!li || !list.contains(li)) return;
+  document.getElementById("out").textContent = "clicked id=" + li.dataset.id + " text=" + li.textContent;
+});
+let n = 3;
+document.getElementById("more").onclick = () => {
+  n += 1;
+  const li = document.createElement("li");
+  li.dataset.id = String(n);
+  li.textContent = "Item " + n;
+  list.appendChild(li);
+};
+  </script>
+</body>
+</html>

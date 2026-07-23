@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 21-Events-Examples
+  example: 49-event-object-props.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>49 — Event Object Props | phpkingdom.com</title>
+</head>
+<body>
+  <h1>49 — Event Object Props</h1>
+  <h2>Problem</h2>
+  <p>Inspect common Event properties on a click.</p>
+  <h2>Demo</h2>
+  <button id="btn">Inspect event</button>
+  <pre id="out"></pre>
+  <script>
+document.getElementById("btn").addEventListener("click", (e) => {
+  document.getElementById("out").textContent = [
+    "type=" + e.type,
+    "timeStamp=" + Math.round(e.timeStamp),
+    "isTrusted=" + e.isTrusted,
+    "defaultPrevented=" + e.defaultPrevented,
+    "eventPhase=" + e.eventPhase,
+  ].join("\n");
+});
+  </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 17-String-Examples
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>17-String-Examples | phpkingdom.com</title>
+  <style>
+    body { font-family: Georgia, "Times New Roman", serif; max-width: 760px; margin: 2rem auto; padding: 0 1.25rem; line-height: 1.6; color: #1a1a1a; }
+    h1 { font-size: 1.75rem; margin-bottom: 0.35rem; }
+    .meta { color: #555; font-size: 0.95rem; margin-bottom: 1.25rem; }
+    .note { background: #f0f7fb; padding: 0.75rem 1rem; border-left: 3px solid #0f766e; margin: 1rem 0; }
+    .demo { margin: 1rem 0; padding: 1rem; border: 1px dashed #94a3b8; }
+    pre, code { font-family: ui-monospace, Menlo, monospace; }
+    pre { background: #111827; color: #e5e7eb; padding: 0.85rem 1rem; overflow: auto; }
+    button, input, select, textarea { font: inherit; padding: 0.4rem 0.55rem; }
+    button { cursor: pointer; background: #0f766e; color: #fff; border: 0; padding: 0.55rem 1rem; }
+    #out { white-space: pre-wrap; background: #f4f4f4; padding: 0.75rem; min-height: 2rem; }
+    a { color: #0f766e; }
+    footer { border-top: 1px solid #ccc; padding-top: 1rem; margin-top: 2rem; color: #555; font-size: 0.95rem; }
+
+    .brand { color:#0f766e; font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    ol { line-height: 1.75; }
+  </style>
+</head>
+<body>
+  <div class="brand">phpkingdom.com</div>
+  <h1>17-String-Examples</h1>
+  <p class="meta">50 examples. Minimal HTML — focus on the script.</p>
+  <p><a href="../index.html">← JavaScript Tutorials</a></p>
+  <ol><li><a href="01-reverse-string.html">01 — Reverse a String</a></li><li><a href="02-palindrome.html">02 — Check Palindrome</a></li><li><a href="03-count-vowels.html">03 — Count Vowels</a></li><li><a href="04-count-consonants.html">04 — Count Consonants</a></li><li><a href="05-char-frequency.html">05 — Character Frequency</a></li><li><a href="06-first-non-repeating.html">06 — First Non-Repeating Character</a></li><li><a href="07-remove-duplicates.html">07 — Remove Duplicate Characters</a></li><li><a href="08-anagram-check.html">08 — Valid Anagram</a></li><li><a href="09-longest-word.html">09 — Longest Word</a></li><li><a href="10-title-case.html">10 — Title Case a Sentence</a></li><li><a href="11-camel-to-snake.html">11 — CamelCase to snake_case</a></li><li><a href="12-snake-to-camel.html">12 — snake_case to camelCase</a></li><li><a href="13-reverse-words.html">13 — Reverse Words in a Sentence</a></li><li><a href="14-reverse-each-word.html">14 — Reverse Each Word</a></li><li><a href="15-count-words.html">15 — Count Words</a></li><li><a href="16-remove-spaces.html">16 — Remove All Spaces</a></li><li><a href="17-is-digits-only.html">17 — Digits Only Check</a></li><li><a href="18-is-alpha.html">18 — Alphabetic Check</a></li><li><a href="19-substring-search.html">19 — Substring Search (indexOf)</a></li><li><a href="20-count-substring.html">20 — Count Substring Occurrences</a></li><li><a href="21-longest-common-prefix.html">21 — Longest Common Prefix</a></li><li><a href="22-compress-string.html">22 — String Compression</a></li><li><a href="23-run-length-decode.html">23 — Run-Length Decode</a></li><li><a href="24-are-rotations.html">24 — String Rotations</a></li><li><a href="25-remove-char.html">25 — Remove a Character</a></li><li><a href="26-replace-spaces-url.html">26 — URL Encode Spaces</a></li><li><a href="27-toggle-case.html">27 — Toggle Case</a></li><li><a href="28-max-frequency-char.html">28 — Max Frequency Character</a></li><li><a href="29-isomorphic-strings.html">29 — Isomorphic Strings</a></li><li><a href="30-longest-unique-substring.html">30 — Longest Substring Without Repeating</a></li><li><a href="31-valid-parentheses.html">31 — Valid Parentheses</a></li><li><a href="32-atoi.html">32 — String to Integer (atoi lite)</a></li><li><a href="33-integer-to-roman.html">33 — Integer to Roman</a></li><li><a href="34-roman-to-integer.html">34 — Roman to Integer</a></li><li><a href="35-str-str.html">35 — Implement strStr / indexOf</a></li><li><a href="36-generate-parentheses.html">36 — Generate Parentheses</a></li><li><a href="37-longest-palindromic-substring.html">37 — Longest Palindromic Substring</a></li><li><a href="38-group-anagrams.html">38 — Group Anagrams</a></li><li><a href="39-is-subsequence.html">39 — Is Subsequence</a></li><li><a href="40-edit-distance-lite.html">40 — Hamming Distance</a></li><li><a href="41-remove-adjacent-duplicates.html">41 — Remove Adjacent Duplicates</a></li><li><a href="42-valid-palindrome-ii.html">42 — Valid Palindrome II</a></li><li><a href="43-string-permutations.html">43 — All Permutations of a String</a></li><li><a href="44-wildcard-simple.html">44 — Simple Wildcard Match (* and ?)</a></li><li><a href="45-min-window-substring.html">45 — Minimum Window Substring (lite)</a></li><li><a href="46-excel-column.html">46 — Excel Column Title</a></li><li><a href="47-add-binary.html">47 — Add Binary Strings</a></li><li><a href="48-compare-version.html">48 — Compare Version Numbers</a></li><li><a href="49-zigzag-conversion.html">49 — Zigzag Conversion</a></li><li><a href="50-mask-email-phone.html">50 — Mask Email / Phone</a></li></ol>
+  <footer>
+    <p>&copy; 2026 phpkingdom.com · Subrahmanyam Poluru · <a href="https://polurus.com">polurus.com</a></p>
+  </footer>
+</body>
+</html>

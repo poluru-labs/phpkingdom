@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 27-Regex-Examples
+  example: 07-string-split.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>07 — String.split() | phpkingdom.com</title>
+</head>
+<body>
+  <h1>07 — String.split()</h1>
+  <h2>Problem</h2>
+  <p>Split a string on a regex delimiter pattern.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const csv = "apple, banana;  cherry | date";
+const parts = csv.split(/[,;|\s]+/);
+document.getElementById("out").textContent =
+  "input: " + csv + "\n" +
+  "split(/[,;|\\s]+/) =>\n" +
+  JSON.stringify(parts, null, 2);
+  </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 18-Object-Examples
+  example: 04-object-methods.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>04 — Object with Methods | phpkingdom.com</title>
+</head>
+<body>
+  <h1>04 — Object with Methods</h1>
+  <h2>Problem</h2>
+  <p>Attach methods that use this.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const counter = {
+  value: 0,
+  inc() { this.value += 1; return this.value; }
+};
+counter.inc();
+counter.inc();
+document.getElementById("out").textContent = "value=" + counter.value;
+  </script>
+</body>
+</html>

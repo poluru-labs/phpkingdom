@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/017-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 017 — Listen composedPath — Solution | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>Exercise 017 — Listen composedPath — Solution</h1>
+  <p class="meta">Print first 3 composedPath names on click.</p>
+  <h2>Solution</h2>
+  <p>Print first 3 composedPath names on click.</p>
+  <div id="demo"></div>
+  <pre id="out"></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+customElements.define("ex017-el", class extends HTMLElement {
+  connectedCallback() {
+    this.textContent = 'Listen composedPath';
+  }
+});
+document.getElementById("demo").innerHTML = "<ex017-el></ex017-el>";
+document.getElementById("out").textContent = 'Print first 3 composedPath names on click.';
+  </script>
+</body>
+</html>

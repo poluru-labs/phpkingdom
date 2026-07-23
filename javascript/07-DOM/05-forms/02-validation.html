@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 07-DOM/05-forms
+  example: 02-validation.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Simple Validation | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Simple Form Validation</h1>
+  <p>Check before accepting.</p>
+  <form id="f"><input id="user" type="text" placeholder="Username"><button type="submit">Join</button></form>
+  <pre id="out"></pre>
+  <script>
+document.getElementById("f").addEventListener("submit", function (e) {
+  e.preventDefault();
+  const v = document.getElementById("user").value.trim();
+  document.getElementById("out").textContent =
+    v.length < 3 ? "Too short" : "OK: " + v;
+});
+  </script>
+</body>
+</html>

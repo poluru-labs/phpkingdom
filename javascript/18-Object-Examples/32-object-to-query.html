@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 18-Object-Examples
+  example: 32-object-to-query.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>32 — Object to Query String | phpkingdom.com</title>
+</head>
+<body>
+  <h1>32 — Object to Query String</h1>
+  <h2>Problem</h2>
+  <p>Serialize a flat object to a query string.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function toQuery(obj) {
+  return Object.entries(obj)
+    .map(([k, v]) => encodeURIComponent(k) + "=" + encodeURIComponent(v))
+    .join("&");
+}
+document.getElementById("out").textContent = toQuery({ site: "phpkingdom.com", author: "Subrahmanyam Poluru" });
+  </script>
+</body>
+</html>

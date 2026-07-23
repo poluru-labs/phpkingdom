@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 27-Regex-Examples
+  example: 32-extract-emails.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>32 — Extract Emails | phpkingdom.com</title>
+</head>
+<body>
+  <h1>32 — Extract Emails</h1>
+  <h2>Problem</h2>
+  <p>Find all email addresses in a block of text.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const text = "Contact alice@corp.io or bob+dev@example.org for help.";
+const emails = text.match(/[\w.+-]+@[\w-]+\.[\w.-]+/g);
+document.getElementById("out").textContent =
+  "found: " + JSON.stringify(emails);
+  </script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 21-Events-Examples
+  example: 29-load-domcontentloaded.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>29 — DOMContentLoaded vs load | phpkingdom.com</title>
+</head>
+<body>
+  <h1>29 — DOMContentLoaded vs load</h1>
+  <h2>Problem</h2>
+  <p>Log document readyState transitions related to parsing vs full load.</p>
+  <h2>Demo</h2>
+  <pre id="out"></pre>
+  <script>
+const lines = [];
+lines.push("script readyState=" + document.readyState);
+document.addEventListener("DOMContentLoaded", () => {
+  lines.push("DOMContentLoaded readyState=" + document.readyState);
+  document.getElementById("out").textContent = lines.join("\n");
+});
+window.addEventListener("load", () => {
+  lines.push("load readyState=" + document.readyState);
+  document.getElementById("out").textContent = lines.join("\n");
+});
+document.getElementById("out").textContent = lines.join("\n");
+  </script>
+</body>
+</html>

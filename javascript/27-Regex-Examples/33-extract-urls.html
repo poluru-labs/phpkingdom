@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 27-Regex-Examples
+  example: 33-extract-urls.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>33 — Extract URLs | phpkingdom.com</title>
+</head>
+<body>
+  <h1>33 — Extract URLs</h1>
+  <h2>Problem</h2>
+  <p>Extract http/https URLs from mixed content.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const text = "See https://example.com and http://test.io/page?q=1 today.";
+const urls = text.match(/https?:\/\/[^\s]+/g);
+document.getElementById("out").textContent =
+  "found: " + JSON.stringify(urls);
+  </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 17-String-Examples
+  example: 33-integer-to-roman.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>33 — Integer to Roman | phpkingdom.com</title>
+</head>
+<body>
+  <h1>33 — Integer to Roman</h1>
+  <h2>Problem</h2>
+  <p>Convert an integer to a Roman numeral.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function intToRoman(num) {
+  const map = [
+    [1000,"M"],[900,"CM"],[500,"D"],[400,"CD"],
+    [100,"C"],[90,"XC"],[50,"L"],[40,"XL"],
+    [10,"X"],[9,"IX"],[5,"V"],[4,"IV"],[1,"I"]
+  ];
+  let out = "";
+  for (const [v, sym] of map) {
+    while (num >= v) { out += sym; num -= v; }
+  }
+  return out;
+}
+document.getElementById("out").textContent = intToRoman(1994);
+  </script>
+</body>
+</html>

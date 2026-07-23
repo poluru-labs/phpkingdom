@@ -1,0 +1,72 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 50-Templates/21-jest-suite
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <meta name="description" content="aws-sdk-client-mock unit test">
+  <title>Jest Suite | mock client | phpkingdom.com</title>
+  <style>
+    body { margin:0; font-family: Georgia, "Times New Roman", serif; background:#f5f7fb; color:#1f2937; line-height:1.55; }
+    .wrap { max-width:900px; margin:0 auto; padding:1.5rem; }
+    .brand { color:#065f46; font-size:.78rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    h1 { font-size:1.75rem; margin:.4rem 0; }
+    .meta { color:#64748b; }
+    pre { background:#0f172a; color:#e2e8f0; padding:1rem; border-radius:.65rem; overflow:auto; font-size:.88rem; }
+    .card { background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:1rem; margin:1rem 0; }
+    a { color:#065f46; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">phpkingdom.com</div>
+    <p class="meta">Jest Suite · DynamoDB Node.js template</p>
+    <h1>mock client</h1>
+    <p class="meta">aws-sdk-client-mock unit test</p>
+    <div class="card">
+      <h2>SDK Scaffold</h2>
+      <pre><code>import { mockClient } from &quot;aws-sdk-client-mock&quot;;
+import { DynamoDBDocumentClient, GetCommand, PutCommand } from &quot;@aws-sdk/lib-dynamodb&quot;;
+
+const ddbMock = mockClient(DynamoDBDocumentClient);
+
+beforeEach(() =&gt; ddbMock.reset());
+
+test(&quot;get profile&quot;, async () =&gt; {
+  ddbMock.on(GetCommand).resolves({ Item: { pk: &quot;USER#1&quot;, sk: &quot;PROFILE&quot;, email: &quot;a@b.com&quot; } });
+  const res = await DynamoDBDocumentClient.prototype.send.call(
+    { send: ddbMock },
+    new GetCommand({ TableName: &quot;AppTable&quot;, Key: { pk: &quot;USER#1&quot;, sk: &quot;PROFILE&quot; } })
+  );
+  expect(res.Item.email).toBe(&quot;a@b.com&quot;);
+});
+
+test(&quot;put profile&quot;, async () =&gt; {
+  ddbMock.on(PutCommand).resolves({});
+  await expect(
+    DynamoDBDocumentClient.prototype.send.call(
+      { send: ddbMock },
+      new PutCommand({ TableName: &quot;AppTable&quot;, Item: { pk: &quot;USER#2&quot;, sk: &quot;PROFILE&quot; } })
+    )
+  ).resolves.toBeDefined();
+});</code></pre>
+    </div>
+    <div class="card">
+      <h2>Verify</h2>
+      <pre><code>npm install @aws-sdk/client-dynamodb @aws-sdk/lib-dynamodb
+# optional: DynamoDB Local
+export DDB_ENDPOINT=http://localhost:8000
+node index.mjs</code></pre>
+    </div>
+    <p><a href="../index.html">All templates</a></p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 04-Functions/02-function-expressions
+  example: 02-named-expression.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Named Expression | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Named Function Expression</h1>
+  <p>Useful for recursion and stack traces.</p>
+  <pre id="out"></pre>
+  <script>
+const fact = function factorial(n) {
+  return n <= 1 ? 1 : n * factorial(n - 1);
+};
+document.getElementById("out").textContent = String(fact(5));
+  </script>
+</body>
+</html>

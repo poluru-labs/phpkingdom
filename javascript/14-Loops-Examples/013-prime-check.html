@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 013-prime-check.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>013 — Prime Check | phpkingdom.com</title>
+</head>
+<body>
+  <h1>013 — Prime Check</h1>
+  <h2>Problem</h2>
+  <p>Decide if N is prime using a loop up to √N.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function isPrime(n) {
+  if (n < 2) return false;
+  for (let i = 2; i * i <= n; i++) if (n % i === 0) return false;
+  return true;
+}
+document.getElementById("out").textContent =
+  "17 → " + isPrime(17) + "\n18 → " + isPrime(18);
+  </script>
+</body>
+</html>

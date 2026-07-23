@@ -1,0 +1,26 @@
+<!--
+  sitename: phpkingdom
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  topic: 08-Misc-Examples
+  example: 81-track-captions.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Track Captions Structure | phpkingdom</title>
+</head>
+<body>
+  <h1>Video Track for Captions</h1>
+
+  <p>Structure for captions (needs a real .vtt file to display):</p>
+  <pre>&lt;video controls&gt;
+  &lt;source src="movie.mp4" type="video/mp4"&gt;
+  &lt;track kind="captions" src="captions-en.vtt" srclang="en" label="English" default&gt;
+  &lt;track kind="subtitles" src="captions-es.vtt" srclang="es" label="Español"&gt;
+&lt;/video&gt;</pre>
+
+</body>
+</html>

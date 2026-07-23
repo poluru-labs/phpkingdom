@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 21-Events-Examples
+  example: 38-wheel-event.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>38 — wheel Event | phpkingdom.com</title>
+</head>
+<body>
+  <h1>38 — wheel Event</h1>
+  <h2>Problem</h2>
+  <p>Detect mouse wheel / trackpad scroll deltas over an element.</p>
+  <h2>Demo</h2>
+  <div id="box" style="width:200px;height:100px;border:1px solid #333;display:grid;place-items:center">Wheel here</div>
+  <pre id="out"></pre>
+  <script>
+document.getElementById("box").addEventListener("wheel", (e) => {
+  e.preventDefault();
+  document.getElementById("out").textContent =
+    "deltaY=" + e.deltaY.toFixed(1) + " deltaMode=" + e.deltaMode;
+}, { passive: false });
+  </script>
+</body>
+</html>

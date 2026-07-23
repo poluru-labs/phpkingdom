@@ -1,0 +1,35 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 039-bubble-sort.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>039 — Bubble Sort | phpkingdom.com</title>
+</head>
+<body>
+  <h1>039 — Bubble Sort</h1>
+  <h2>Problem</h2>
+  <p>Sort an array ascending using nested bubble-sort loops.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const arr = [5, 1, 4, 2, 8];
+for (let i = 0; i < arr.length - 1; i++) {
+  for (let j = 0; j < arr.length - 1 - i; j++) {
+    if (arr[j] > arr[j + 1]) {
+      const t = arr[j]; arr[j] = arr[j + 1]; arr[j + 1] = t;
+    }
+  }
+}
+document.getElementById("out").textContent = arr.join(", ");
+  </script>
+</body>
+</html>

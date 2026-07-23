@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 26-Date-Time-Examples
+  example: 47-validate-date-format.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>47 — Validate Date Format | phpkingdom.com</title>
+</head>
+<body>
+  <h1>47 — Validate Date Format</h1>
+  <h2>Problem</h2>
+  <p>Check YYYY-MM-DD with a regex, then verify with Date.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+
+function isValidYYYYMMDD(str) {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(str)) return false;
+  const [y, m, d] = str.split("-").map(Number);
+  const dt = new Date(y, m - 1, d);
+  return dt.getFullYear() === y && dt.getMonth() === m - 1 && dt.getDate() === d;
+}
+const samples = ["2024-01-15", "2024-02-30", "24-01-15"];
+document.getElementById("out").textContent = samples.map(s => s + " => " + isValidYYYYMMDD(s)).join("\n");
+
+  </script>
+</body>
+</html>

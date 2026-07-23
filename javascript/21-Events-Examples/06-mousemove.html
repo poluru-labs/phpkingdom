@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 21-Events-Examples
+  example: 06-mousemove.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>06 — mousemove Coordinates | phpkingdom.com</title>
+</head>
+<body>
+  <h1>06 — mousemove Coordinates</h1>
+  <h2>Problem</h2>
+  <p>Show clientX/clientY while moving the mouse over a box.</p>
+  <h2>Demo</h2>
+  <div id="box" style="width:240px;height:120px;border:1px solid #333;background:#f5f5f5"></div>
+  <pre id="out">move over the box</pre>
+  <script>
+document.getElementById("box").addEventListener("mousemove", (e) => {
+  document.getElementById("out").textContent =
+    "clientX=" + e.clientX + " clientY=" + e.clientY +
+    "\noffsetX=" + e.offsetX + " offsetY=" + e.offsetY;
+});
+  </script>
+</body>
+</html>

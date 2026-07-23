@@ -1,0 +1,38 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 21-Events-Examples
+  example: 19-stop-propagation.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>19 — stopPropagation | phpkingdom.com</title>
+</head>
+<body>
+  <h1>19 — stopPropagation</h1>
+  <h2>Problem</h2>
+  <p>Keep a child click from reaching a parent listener.</p>
+  <h2>Demo</h2>
+  <div id="parent" style="padding:20px;border:1px solid #333">
+    Parent
+    <button id="child">Child (stops)</button>
+  </div>
+  <pre id="out"></pre>
+  <script>
+const out = document.getElementById("out");
+document.getElementById("parent").addEventListener("click", () => {
+  out.textContent += "parent ";
+});
+document.getElementById("child").addEventListener("click", (e) => {
+  e.stopPropagation();
+  out.textContent += "child ";
+});
+  </script>
+</body>
+</html>

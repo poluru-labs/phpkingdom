@@ -1,0 +1,132 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Express.js Tutorials
+section title: Authentication
+topic title: JWT Authentication
+content type: Template
+item number: 24
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>JWT Authentication Template 24 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #e0e7ff;
+      color: #3730a3;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Template 24</span>
+    <h1>JWT Authentication</h1>
+    <p><strong>Section:</strong> Authentication</p>
+    <p><strong>Focus:</strong> Layered Architecture</p>
+    <p><strong>Scenario:</strong> file service</p>
+    <p>Use this scaffold as a starting point for servers, routers, or API modules.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Express</h2>
+        <pre><code>// JWT Authentication — Template 24
+// Focus: layered architecture | Scenario: file service
+
+const jwt = require(&quot;jsonwebtoken&quot;);
+const secret = process.env.JWT_SECRET || &quot;dev-secret&quot;;
+
+app.post(&quot;/auth/login&quot;, (req, res) =&gt; {
+  const { email, password } = req.body || {};
+  if (password !== &quot;secret&quot;) return res.status(401).json({ error: &quot;bad credentials&quot; });
+  const token = jwt.sign({ sub: 1, email }, secret, { expiresIn: &quot;1h&quot; });
+  res.json({ accessToken: token });
+});
+
+function requireJwt(req, res, next) {
+  const header = req.headers.authorization || &quot;&quot;;
+  const token = header.startsWith(&quot;Bearer &quot;) ? header.slice(7) : null;
+  if (!token) return res.status(401).json({ error: &quot;missing token&quot; });
+  try {
+    req.user = jwt.verify(token, secret);
+    next();
+  } catch {
+    res.status(401).json({ error: &quot;invalid token&quot; });
+  }
+}
+
+app.get(&quot;/auth/me&quot;, requireJwt, (req, res) =&gt; res.json(req.user));</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for JWT Authentication
+- Practice: layered architecture
+- Scenario: file service
+- Keep route handlers thin; push logic into controllers/services
+- Always attach final 4-arg error middleware
+- Validate input; load secrets from environment variables
+- Export app separately from listen() for easier testing
+
+Useful commands:
+  npm init -y
+  npm install express
+  node --watch server.js
+  curl http://localhost:3000/health
+  npx jest   # or node --test / mocha + supertest</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This template shows one way to apply <strong>JWT Authentication</strong> in a file service context.</p>
+      <p>Keep routes thin, push logic into services, and always attach a final error middleware.</p>
+    </section>
+  </main>
+</body>
+</html>

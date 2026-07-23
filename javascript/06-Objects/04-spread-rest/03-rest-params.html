@@ -1,0 +1,28 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 06-Objects/04-spread-rest
+  example: 03-rest-params.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Rest Parameters | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Rest Parameters</h1>
+  <p>Collect remaining args.</p>
+  <pre id="out"></pre>
+  <script>
+function total(first, ...rest) {
+  return rest.reduce((s, n) => s + n, first);
+}
+document.getElementById("out").textContent = String(total(1, 2, 3, 4));
+  </script>
+</body>
+</html>

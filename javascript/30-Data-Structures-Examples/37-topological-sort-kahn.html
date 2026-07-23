@@ -1,0 +1,44 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 30-Data-Structures-Examples
+  example: 37-topological-sort-kahn.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>37 — Topological Sort (Kahn) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>37 — Topological Sort (Kahn)</h1>
+  <h2>Problem</h2>
+  <p>Kahn's algorithm for topological sort on a DAG.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function topoSort(n, edges) {
+  const adj = Array.from({ length: n }, () => []);
+  const indeg = new Array(n).fill(0);
+  for (const [u, v] of edges) { adj[u].push(v); indeg[v]++; }
+  const q = [];
+  for (let i = 0; i < n; i++) if (indeg[i] === 0) q.push(i);
+  const order = [];
+  while (q.length) {
+    const u = q.shift();
+    order.push(u);
+    for (const v of adj[u]) {
+      if (--indeg[v] === 0) q.push(v);
+    }
+  }
+  return order;
+}
+const edges = [[5,2],[5,0],[4,0],[4,1],[2,3],[3,1]];
+document.getElementById("out").textContent = "topo order: " + topoSort(6, edges).join(" -> ");
+  </script>
+</body>
+</html>

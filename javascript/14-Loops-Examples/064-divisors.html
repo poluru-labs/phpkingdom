@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 064-divisors.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>064 — List Divisors | phpkingdom.com</title>
+</head>
+<body>
+  <h1>064 — List Divisors</h1>
+  <h2>Problem</h2>
+  <p>Print all positive divisors of N.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const N = 36;
+const divs = [];
+for (let i = 1; i <= N; i++) if (N % i === 0) divs.push(i);
+document.getElementById("out").textContent = divs.join(", ");
+  </script>
+</body>
+</html>

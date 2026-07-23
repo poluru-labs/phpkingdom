@@ -1,0 +1,25 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 12-Misc-Examples
+  example: 022-object-url.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>022 — createObjectURL | phpkingdom.com</title>
+</head>
+<body>
+  <h1>022 — createObjectURL</h1>
+  <p>Blob URL for download/preview.</p>
+<pre id="out"></pre>
+  <script>
+const u=URL.createObjectURL(new Blob(["a"]));document.getElementById("out").textContent=u.slice(0,32)+"…";URL.revokeObjectURL(u);
+  </script>
+</body>
+</html>

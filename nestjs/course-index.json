@@ -1,0 +1,355 @@
+{
+  "title": "NestJS Tutorials",
+  "items": [
+    {
+      "title": "Basics",
+      "items": [
+        {
+          "href": "/tutorials/nestjs/introduction",
+          "label": "NestJS - Introduction"
+        },
+        {
+          "href": "/tutorials/nestjs/basics",
+          "label": "NestJS - Basics"
+        },
+        {
+          "href": "/tutorials/nestjs/setup",
+          "label": "NestJS Setup"
+        },
+        {
+          "href": "/tutorials/nestjs/nest-cli",
+          "label": "Nest CLI"
+        },
+        {
+          "href": "/tutorials/nestjs/nestjs-vs-express",
+          "label": "NestJS vs Express"
+        }
+      ]
+    },
+    {
+      "title": "Core Concepts",
+      "items": [
+        {
+          "href": "/tutorials/nestjs/modules",
+          "label": "NestJS Modules"
+        },
+        {
+          "href": "/tutorials/nestjs/controllers",
+          "label": "NestJS Controllers"
+        },
+        {
+          "href": "/tutorials/nestjs/providers",
+          "label": "NestJS Providers"
+        },
+        {
+          "href": "/tutorials/nestjs/services",
+          "label": "NestJS Services"
+        },
+        {
+          "href": "/tutorials/nestjs/dependency-injection",
+          "label": "Dependency Injection"
+        }
+      ]
+    },
+    {
+      "title": "Controllers and Routing",
+      "items": [
+        {
+          "href": "/tutorials/nestjs/routing",
+          "label": "NestJS Routing"
+        },
+        {
+          "href": "/tutorials/nestjs/request-object",
+          "label": "Request Object"
+        },
+        {
+          "href": "/tutorials/nestjs/route-parameters",
+          "label": "Route Parameters"
+        },
+        {
+          "href": "/tutorials/nestjs/query-parameters",
+          "label": "Query Parameters"
+        },
+        {
+          "href": "/tutorials/nestjs/request-body",
+          "label": "Request Body"
+        }
+      ]
+    },
+    {
+      "title": "REST APIs",
+      "items": [
+        {
+          "href": "/tutorials/nestjs/rest-api",
+          "label": "NestJS REST API"
+        },
+        {
+          "href": "/tutorials/nestjs/crud-api",
+          "label": "CRUD API"
+        },
+        {
+          "href": "/tutorials/nestjs/dto",
+          "label": "DTO"
+        },
+        {
+          "href": "/tutorials/nestjs/validation",
+          "label": "Validation"
+        },
+        {
+          "href": "/tutorials/nestjs/api-versioning",
+          "label": "API Versioning"
+        }
+      ]
+    },
+    {
+      "title": "Middleware and Guards",
+      "items": [
+        {
+          "href": "/tutorials/nestjs/middleware",
+          "label": "NestJS Middleware"
+        },
+        {
+          "href": "/tutorials/nestjs/guards",
+          "label": "NestJS Guards"
+        },
+        {
+          "href": "/tutorials/nestjs/auth-guards",
+          "label": "Auth Guards"
+        },
+        {
+          "href": "/tutorials/nestjs/role-based-access",
+          "label": "Role-Based Access"
+        },
+        {
+          "href": "/tutorials/nestjs/execution-context",
+          "label": "Execution Context"
+        }
+      ]
+    },
+    {
+      "title": "Pipes and Interceptors",
+      "items": [
+        {
+          "href": "/tutorials/nestjs/pipes",
+          "label": "NestJS Pipes"
+        },
+        {
+          "href": "/tutorials/nestjs/validation-pipe",
+          "label": "Validation Pipe"
+        },
+        {
+          "href": "/tutorials/nestjs/custom-pipes",
+          "label": "Custom Pipes"
+        },
+        {
+          "href": "/tutorials/nestjs/interceptors",
+          "label": "NestJS Interceptors"
+        },
+        {
+          "href": "/tutorials/nestjs/custom-interceptors",
+          "label": "Custom Interceptors"
+        }
+      ]
+    },
+    {
+      "title": "Exception Handling",
+      "items": [
+        {
+          "href": "/tutorials/nestjs/exception-filters",
+          "label": "Exception Filters"
+        },
+        {
+          "href": "/tutorials/nestjs/http-exceptions",
+          "label": "HTTP Exceptions"
+        },
+        {
+          "href": "/tutorials/nestjs/custom-exceptions",
+          "label": "Custom Exceptions"
+        },
+        {
+          "href": "/tutorials/nestjs/error-handling",
+          "label": "Error Handling"
+        },
+        {
+          "href": "/tutorials/nestjs/logging-exceptions",
+          "label": "Logging Exceptions"
+        }
+      ]
+    },
+    {
+      "title": "Databases",
+      "items": [
+        {
+          "href": "/tutorials/nestjs/databases",
+          "label": "NestJS Databases"
+        },
+        {
+          "href": "/tutorials/nestjs/typeorm",
+          "label": "TypeORM"
+        },
+        {
+          "href": "/tutorials/nestjs/prisma",
+          "label": "Prisma"
+        },
+        {
+          "href": "/tutorials/nestjs/mongoose",
+          "label": "Mongoose"
+        },
+        {
+          "href": "/tutorials/nestjs/repositories",
+          "label": "Repositories"
+        }
+      ]
+    },
+    {
+      "title": "Authentication",
+      "items": [
+        {
+          "href": "/tutorials/nestjs/authentication",
+          "label": "NestJS Authentication"
+        },
+        {
+          "href": "/tutorials/nestjs/passport",
+          "label": "Passport.js"
+        },
+        {
+          "href": "/tutorials/nestjs/jwt",
+          "label": "JWT Authentication"
+        },
+        {
+          "href": "/tutorials/nestjs/refresh-tokens",
+          "label": "Refresh Tokens"
+        },
+        {
+          "href": "/tutorials/nestjs/oauth",
+          "label": "OAuth"
+        }
+      ]
+    },
+    {
+      "title": "Configuration",
+      "items": [
+        {
+          "href": "/tutorials/nestjs/configuration",
+          "label": "NestJS Configuration"
+        },
+        {
+          "href": "/tutorials/nestjs/config-module",
+          "label": "Config Module"
+        },
+        {
+          "href": "/tutorials/nestjs/environment-variables",
+          "label": "Environment Variables"
+        },
+        {
+          "href": "/tutorials/nestjs/custom-providers",
+          "label": "Custom Providers"
+        },
+        {
+          "href": "/tutorials/nestjs/validation-schema",
+          "label": "Validation Schema"
+        }
+      ]
+    },
+    {
+      "title": "GraphQL and APIs",
+      "items": [
+        {
+          "href": "/tutorials/nestjs/graphql",
+          "label": "NestJS GraphQL"
+        },
+        {
+          "href": "/tutorials/nestjs/resolvers",
+          "label": "GraphQL Resolvers"
+        },
+        {
+          "href": "/tutorials/nestjs/code-first",
+          "label": "Code First Approach"
+        },
+        {
+          "href": "/tutorials/nestjs/schema-first",
+          "label": "Schema First Approach"
+        },
+        {
+          "href": "/tutorials/nestjs/subscriptions",
+          "label": "GraphQL Subscriptions"
+        }
+      ]
+    },
+    {
+      "title": "Microservices",
+      "items": [
+        {
+          "href": "/tutorials/nestjs/microservices",
+          "label": "NestJS Microservices"
+        },
+        {
+          "href": "/tutorials/nestjs/message-patterns",
+          "label": "Message Patterns"
+        },
+        {
+          "href": "/tutorials/nestjs/event-patterns",
+          "label": "Event Patterns"
+        },
+        {
+          "href": "/tutorials/nestjs/kafka",
+          "label": "Kafka with NestJS"
+        },
+        {
+          "href": "/tutorials/nestjs/rabbitmq",
+          "label": "RabbitMQ with NestJS"
+        }
+      ]
+    },
+    {
+      "title": "Testing",
+      "items": [
+        {
+          "href": "/tutorials/nestjs/testing",
+          "label": "NestJS Testing"
+        },
+        {
+          "href": "/tutorials/nestjs/unit-testing",
+          "label": "Unit Testing"
+        },
+        {
+          "href": "/tutorials/nestjs/e2e-testing",
+          "label": "E2E Testing"
+        },
+        {
+          "href": "/tutorials/nestjs/testing-services",
+          "label": "Testing Services"
+        },
+        {
+          "href": "/tutorials/nestjs/testing-controllers",
+          "label": "Testing Controllers"
+        }
+      ]
+    },
+    {
+      "title": "Advanced",
+      "items": [
+        {
+          "href": "/tutorials/nestjs/lifecycle-events",
+          "label": "Lifecycle Events"
+        },
+        {
+          "href": "/tutorials/nestjs/dynamic-modules",
+          "label": "Dynamic Modules"
+        },
+        {
+          "href": "/tutorials/nestjs/custom-decorators",
+          "label": "Custom Decorators"
+        },
+        {
+          "href": "/tutorials/nestjs/performance",
+          "label": "NestJS Performance"
+        },
+        {
+          "href": "/tutorials/nestjs/deployment",
+          "label": "NestJS Deployment"
+        }
+      ]
+    }
+  ]
+}

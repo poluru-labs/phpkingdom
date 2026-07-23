@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 071-running-product.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>071 — Running Product | phpkingdom.com</title>
+</head>
+<body>
+  <h1>071 — Running Product</h1>
+  <h2>Problem</h2>
+  <p>Build a running product array.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const nums = [2, 3, 4];
+const out = [];
+let p = 1;
+for (const x of nums) { p *= x; out.push(p); }
+document.getElementById("out").textContent = out.join(", ");
+  </script>
+</body>
+</html>

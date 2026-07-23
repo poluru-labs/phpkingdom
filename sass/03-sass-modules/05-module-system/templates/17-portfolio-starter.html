@@ -1,0 +1,108 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Sass and SCSS Tutorials
+section title: Sass Modules
+topic title: Sass Module System
+content type: Template
+item number: 17
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Sass Module System Template 17 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ecfdf5;
+      color: #0f766e;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Template 17</span>
+    <h1>Sass Module System</h1>
+    <p><strong>Section:</strong> Sass Modules</p>
+    <p><strong>Focus:</strong> Portfolio Starter</p>
+    <p><strong>Scenario:</strong> booking app</p>
+    <p>Use this scaffold as a starting point and replace tokens, selectors, and mixins for your own project.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>SCSS Snippet</h2>
+        <pre><code>// Sass Module System — Template 17
+// Focus: portfolio starter | Scenario: booking app
+
+// Load once; members are namespaced
+@use &quot;sass:color&quot;;
+@use &quot;../tokens&quot; as t with (
+  $brand: #0e7490
+);
+
+.panel {
+  background: color.mix(t.$brand, white, 12%);
+}</code></pre>
+      </section>
+      <section>
+        <h2>HTML Markup</h2>
+        <pre><code>&lt;section class=&quot;block-module-system&quot;&gt;
+  &lt;h2&gt;Sass Module System&lt;/h2&gt;
+  &lt;p&gt;Portfolio Starter for a booking app.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This template focuses on <strong>Sass Module System</strong> in a booking app context.</p>
+      <p>Prefer <code>@use</code>/<code>@forward</code>, keep tokens in abstracts, and compile with Dart Sass.</p>
+    </section>
+  </main>
+</body>
+</html>

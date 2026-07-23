@@ -1,0 +1,79 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 48-Templates/25-production
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <meta name="description" content="Auth, limits, DataLoader, masking, CI-ready server">
+  <title>Production Starter | Full checklist | phpkingdom.com</title>
+  <style>
+    body { margin:0; font-family: Georgia, "Times New Roman", serif; background:#f5f7fb; color:#1f2937; line-height:1.55; }
+    .wrap { max-width:900px; margin:0 auto; padding:1.5rem; }
+    .brand { color:#9d174d; font-size:.78rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    h1 { font-size:1.75rem; margin:.4rem 0; }
+    .meta { color:#64748b; }
+    pre { background:#0f172a; color:#e2e8f0; padding:1rem; border-radius:.65rem; overflow:auto; font-size:.88rem; }
+    .card { background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:1rem; margin:1rem 0; }
+    a { color:#9d174d; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">phpkingdom.com</div>
+    <p class="meta">Production Starter · GraphQL Node.js template</p>
+    <h1>Full checklist</h1>
+    <p class="meta">Auth, limits, DataLoader, masking, CI-ready server</p>
+    <div class="card">
+      <h2>Server Scaffold</h2>
+      <pre><code>import { ApolloServer } from &quot;@apollo/server&quot;;
+import { startStandaloneServer } from &quot;@apollo/server/standalone&quot;;
+import depthLimit from &quot;graphql-depth-limit&quot;;
+import { GraphQLError } from &quot;graphql&quot;;
+import { createLoaders } from &quot;./loaders.js&quot;;
+import { typeDefs, resolvers } from &quot;./schema.js&quot;;
+
+const server = new ApolloServer({
+  typeDefs,
+  resolvers,
+  introspection: process.env.NODE_ENV !== &quot;production&quot;,
+  validationRules: [depthLimit(8)],
+  formatError: (formatted) =&gt; {
+    if (process.env.NODE_ENV === &quot;production&quot; &amp;&amp; !formatted.extensions?.code) {
+      return { message: &quot;Internal error&quot;, extensions: { code: &quot;INTERNAL_SERVER_ERROR&quot; } };
+    }
+    return formatted;
+  },
+});
+
+const { url } = await startStandaloneServer(server, {
+  listen: { port: Number(process.env.PORT) || 4000 },
+  context: async ({ req }) =&gt; {
+    const user = await userFromAuth(req.headers.authorization);
+    return { user, loaders: createLoaders() };
+  },
+});
+console.log(`production GraphQL at ${url}`);
+function userFromAuth(header) {
+  if (!header) return null;
+  // verify JWT…
+  return { id: &quot;demo&quot;, role: &quot;USER&quot; };
+}</code></pre>
+    </div>
+    <div class="card">
+      <h2>Verify</h2>
+      <pre><code>npm install @apollo/server graphql
+node server.mjs
+# open http://localhost:4000 — Sandbox / Playground</code></pre>
+    </div>
+    <p><a href="../index.html">All templates</a></p>
+  </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 19-Recursion-Examples
+  example: 28-sum-digits.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>28 — Sum of Digits | phpkingdom.com</title>
+</head>
+<body>
+  <h1>28 — Sum of Digits</h1>
+  <h2>Problem</h2>
+  <p>Sum the digits of a positive integer recursively.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function sumDigits(n) {
+  if (n < 10) return n;
+  return (n % 10) + sumDigits(Math.floor(n / 10));
+}
+document.getElementById("out").textContent = "sumDigits(12345) = " + sumDigits(12345);
+  </script>
+</body>
+</html>

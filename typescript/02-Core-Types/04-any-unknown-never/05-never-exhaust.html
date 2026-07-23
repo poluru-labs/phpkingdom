@@ -1,0 +1,43 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 02-Core-Types/04-any-unknown-never
+  example: 05-never-exhaust.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>never Exhaustiveness | phpkingdom.com</title>
+  <style>
+    body { font-family: Georgia, "Times New Roman", serif; max-width: 760px; margin: 2rem auto; padding: 0 1.25rem; line-height: 1.6; color: #1a1a1a; }
+    h1 { font-size: 1.75rem; margin-bottom: 0.35rem; }
+    .meta { color: #555; font-size: 0.95rem; margin-bottom: 1.25rem; }
+    .note { background: #ecfeff; padding: 0.75rem 1rem; border-left: 3px solid #0e7490; margin: 1rem 0; }
+    pre, code { font-family: ui-monospace, Menlo, monospace; }
+    pre { background: #111827; color: #e5e7eb; padding: 0.85rem 1rem; overflow: auto; }
+    code.ts { display: block; white-space: pre; }
+    #out { white-space: pre-wrap; background: #f4f4f4; padding: 0.75rem; min-height: 2rem; }
+</style>
+</head>
+<body>
+  <h1>never Exhaustiveness</h1>
+  <p class="meta">Use never to catch missing cases.</p>
+<div class="note">Fails compile when a union case is forgotten.</div>
+<pre><code class="ts">type Shape = &quot;circle&quot; | &quot;square&quot;;
+function area(s: Shape): number {
+  switch (s) {
+    case &quot;circle&quot;: return 1;
+    case &quot;square&quot;: return 4;
+    default: {
+      const _exhaustive: never = s;
+      return _exhaustive;
+    }
+  }
+}</code></pre>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 17-String-Examples
+  example: 24-are-rotations.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>24 — String Rotations | phpkingdom.com</title>
+</head>
+<body>
+  <h1>24 — String Rotations</h1>
+  <h2>Problem</h2>
+  <p>Check if one string is a rotation of another.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function areRotations(a, b) {
+  return a.length === b.length && (a + a).includes(b);
+}
+document.getElementById("out").textContent =
+  areRotations("ABCD", "CDAB") + " / " + areRotations("ABCD", "ACBD");
+  </script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Karma Tutorials
+section title: Frameworks
+topic title: Karma with Mocha
+content type: Exercise
+item number: 11
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Karma with Mocha Exercise 11 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #e0e7ff;
+      color: #3730a3;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Exercise 11</span>
+    <h1>Karma with Mocha</h1>
+    <p><strong>Section:</strong> Frameworks</p>
+    <p><strong>Focus:</strong> Coverage Report</p>
+    <p><strong>Scenario:</strong> Angular app</p>
+    <p>Complete the task, adjust the config or specs, and verify with karma start.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Karma</h2>
+        <pre><code>// Karma with Mocha — Exercise 11
+// Focus: coverage report | Scenario: Angular app
+
+// karma-mocha + mocha
+// npm i -D karma-mocha mocha
+
+module.exports = function (config) {
+  config.set({
+    frameworks: [&quot;mocha&quot;],
+    files: [&quot;src/**/*.spec.js&quot;],
+    browsers: [&quot;ChromeHeadless&quot;],
+    client: { mocha: { timeout: 5000, ui: &quot;bdd&quot; } },
+    singleRun: true,
+  });
+};
+
+describe(&quot;mocha suite&quot;, function () {
+  it(&quot;passes&quot;, function (done) {
+    setTimeout(done, 10);
+  });
+});</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Karma with Mocha
+- Practice: coverage report
+- Scenario: Angular app
+- Prefer ChromeHeadless (+ CI flags) for automation
+- Keep singleRun/autoWatch gated on process.env.CI
+- Pair frameworks (Jasmine/Mocha) with explicit plugins[]
+- Add junit + coverage reporters for CI gates
+- Open /debug.html with headed Chrome when diagnosing flakes
+
+Useful commands:
+  npm i -D karma karma-jasmine jasmine-core karma-chrome-launcher
+  npx karma init
+  npx karma start --single-run
+  npx karma start --browsers=Chrome</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This exercise shows one way to apply <strong>Karma with Mocha</strong> in a angular app context.</p>
+      <p>Adapt frameworks, browsers, reporters, and file patterns to match your stack.</p>
+    </section>
+  </main>
+</body>
+</html>

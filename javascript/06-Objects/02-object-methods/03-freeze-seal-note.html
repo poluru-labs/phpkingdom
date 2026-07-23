@@ -1,0 +1,27 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 06-Objects/02-object-methods
+  example: 03-freeze-seal-note.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>hasOwnProperty | phpkingdom.com</title>
+</head>
+<body>
+  <h1>hasOwnProperty</h1>
+  <p>Check own properties safely.</p>
+  <pre id="out"></pre>
+  <script>
+const obj = { color: "teal" };
+document.getElementById("out").textContent =
+  String(Object.prototype.hasOwnProperty.call(obj, "color"));
+  </script>
+</body>
+</html>

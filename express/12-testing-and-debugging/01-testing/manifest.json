@@ -1,0 +1,452 @@
+[
+  {
+    "type": "example",
+    "file": "12-testing-and-debugging/01-testing/examples/01-hello-server.html",
+    "focus": "hello server",
+    "scenario": "REST API"
+  },
+  {
+    "type": "example",
+    "file": "12-testing-and-debugging/01-testing/examples/02-json-response.html",
+    "focus": "json response",
+    "scenario": "admin backend"
+  },
+  {
+    "type": "example",
+    "file": "12-testing-and-debugging/01-testing/examples/03-get-route.html",
+    "focus": "get route",
+    "scenario": "auth service"
+  },
+  {
+    "type": "example",
+    "file": "12-testing-and-debugging/01-testing/examples/04-post-route.html",
+    "focus": "post route",
+    "scenario": "file service"
+  },
+  {
+    "type": "example",
+    "file": "12-testing-and-debugging/01-testing/examples/05-route-params.html",
+    "focus": "route params",
+    "scenario": "blog API"
+  },
+  {
+    "type": "example",
+    "file": "12-testing-and-debugging/01-testing/examples/06-query-string.html",
+    "focus": "query string",
+    "scenario": "ecommerce API"
+  },
+  {
+    "type": "example",
+    "file": "12-testing-and-debugging/01-testing/examples/07-middleware-log.html",
+    "focus": "middleware log",
+    "scenario": "realtime chat"
+  },
+  {
+    "type": "example",
+    "file": "12-testing-and-debugging/01-testing/examples/08-error-handler.html",
+    "focus": "error handler",
+    "scenario": "SSR site"
+  },
+  {
+    "type": "example",
+    "file": "12-testing-and-debugging/01-testing/examples/09-express-router.html",
+    "focus": "express router",
+    "scenario": "microservice"
+  },
+  {
+    "type": "example",
+    "file": "12-testing-and-debugging/01-testing/examples/10-crud-list.html",
+    "focus": "crud list",
+    "scenario": "public docs API"
+  },
+  {
+    "type": "example",
+    "file": "12-testing-and-debugging/01-testing/examples/11-controller-split.html",
+    "focus": "controller split",
+    "scenario": "REST API"
+  },
+  {
+    "type": "example",
+    "file": "12-testing-and-debugging/01-testing/examples/12-service-layer.html",
+    "focus": "service layer",
+    "scenario": "admin backend"
+  },
+  {
+    "type": "example",
+    "file": "12-testing-and-debugging/01-testing/examples/13-body-parser.html",
+    "focus": "body parser",
+    "scenario": "auth service"
+  },
+  {
+    "type": "example",
+    "file": "12-testing-and-debugging/01-testing/examples/14-file-upload.html",
+    "focus": "file upload",
+    "scenario": "file service"
+  },
+  {
+    "type": "example",
+    "file": "12-testing-and-debugging/01-testing/examples/15-cookie-set.html",
+    "focus": "cookie set",
+    "scenario": "blog API"
+  },
+  {
+    "type": "example",
+    "file": "12-testing-and-debugging/01-testing/examples/16-joi-validate.html",
+    "focus": "joi validate",
+    "scenario": "ecommerce API"
+  },
+  {
+    "type": "example",
+    "file": "12-testing-and-debugging/01-testing/examples/17-jwt-protect.html",
+    "focus": "jwt protect",
+    "scenario": "realtime chat"
+  },
+  {
+    "type": "example",
+    "file": "12-testing-and-debugging/01-testing/examples/18-mongoose-model.html",
+    "focus": "mongoose model",
+    "scenario": "SSR site"
+  },
+  {
+    "type": "example",
+    "file": "12-testing-and-debugging/01-testing/examples/19-cors-helmet.html",
+    "focus": "cors helmet",
+    "scenario": "microservice"
+  },
+  {
+    "type": "example",
+    "file": "12-testing-and-debugging/01-testing/examples/20-rate-limit.html",
+    "focus": "rate limit",
+    "scenario": "public docs API"
+  },
+  {
+    "type": "example",
+    "file": "12-testing-and-debugging/01-testing/examples/21-static-public.html",
+    "focus": "static public",
+    "scenario": "REST API"
+  },
+  {
+    "type": "example",
+    "file": "12-testing-and-debugging/01-testing/examples/22-ejs-view.html",
+    "focus": "ejs view",
+    "scenario": "admin backend"
+  },
+  {
+    "type": "example",
+    "file": "12-testing-and-debugging/01-testing/examples/23-supertest-get.html",
+    "focus": "supertest get",
+    "scenario": "auth service"
+  },
+  {
+    "type": "example",
+    "file": "12-testing-and-debugging/01-testing/examples/24-morgan-log.html",
+    "focus": "morgan log",
+    "scenario": "file service"
+  },
+  {
+    "type": "example",
+    "file": "12-testing-and-debugging/01-testing/examples/25-best-practice-recap.html",
+    "focus": "best practice recap",
+    "scenario": "blog API"
+  },
+  {
+    "type": "exercise",
+    "file": "12-testing-and-debugging/01-testing/exercises/01-install-challenge.html",
+    "focus": "install challenge",
+    "scenario": "REST API"
+  },
+  {
+    "type": "exercise",
+    "file": "12-testing-and-debugging/01-testing/exercises/02-first-listen.html",
+    "focus": "first listen",
+    "scenario": "admin backend"
+  },
+  {
+    "type": "exercise",
+    "file": "12-testing-and-debugging/01-testing/exercises/03-res-json.html",
+    "focus": "res json",
+    "scenario": "auth service"
+  },
+  {
+    "type": "exercise",
+    "file": "12-testing-and-debugging/01-testing/exercises/04-route-method.html",
+    "focus": "route method",
+    "scenario": "file service"
+  },
+  {
+    "type": "exercise",
+    "file": "12-testing-and-debugging/01-testing/exercises/05-param-id.html",
+    "focus": "param id",
+    "scenario": "blog API"
+  },
+  {
+    "type": "exercise",
+    "file": "12-testing-and-debugging/01-testing/exercises/06-query-filter.html",
+    "focus": "query filter",
+    "scenario": "ecommerce API"
+  },
+  {
+    "type": "exercise",
+    "file": "12-testing-and-debugging/01-testing/exercises/07-app-use.html",
+    "focus": "app use",
+    "scenario": "realtime chat"
+  },
+  {
+    "type": "exercise",
+    "file": "12-testing-and-debugging/01-testing/exercises/08-router-mount.html",
+    "focus": "router mount",
+    "scenario": "SSR site"
+  },
+  {
+    "type": "exercise",
+    "file": "12-testing-and-debugging/01-testing/exercises/09-async-handler.html",
+    "focus": "async handler",
+    "scenario": "microservice"
+  },
+  {
+    "type": "exercise",
+    "file": "12-testing-and-debugging/01-testing/exercises/10-status-codes.html",
+    "focus": "status codes",
+    "scenario": "public docs API"
+  },
+  {
+    "type": "exercise",
+    "file": "12-testing-and-debugging/01-testing/exercises/11-create-resource.html",
+    "focus": "create resource",
+    "scenario": "REST API"
+  },
+  {
+    "type": "exercise",
+    "file": "12-testing-and-debugging/01-testing/exercises/12-update-delete.html",
+    "focus": "update delete",
+    "scenario": "admin backend"
+  },
+  {
+    "type": "exercise",
+    "file": "12-testing-and-debugging/01-testing/exercises/13-validation-fail.html",
+    "focus": "validation fail",
+    "scenario": "auth service"
+  },
+  {
+    "type": "exercise",
+    "file": "12-testing-and-debugging/01-testing/exercises/14-custom-error.html",
+    "focus": "custom error",
+    "scenario": "file service"
+  },
+  {
+    "type": "exercise",
+    "file": "12-testing-and-debugging/01-testing/exercises/15-auth-header.html",
+    "focus": "auth header",
+    "scenario": "blog API"
+  },
+  {
+    "type": "exercise",
+    "file": "12-testing-and-debugging/01-testing/exercises/16-session-sketch.html",
+    "focus": "session sketch",
+    "scenario": "ecommerce API"
+  },
+  {
+    "type": "exercise",
+    "file": "12-testing-and-debugging/01-testing/exercises/17-mongo-connect.html",
+    "focus": "mongo connect",
+    "scenario": "realtime chat"
+  },
+  {
+    "type": "exercise",
+    "file": "12-testing-and-debugging/01-testing/exercises/18-env-config.html",
+    "focus": "env config",
+    "scenario": "SSR site"
+  },
+  {
+    "type": "exercise",
+    "file": "12-testing-and-debugging/01-testing/exercises/19-cors-setup.html",
+    "focus": "cors setup",
+    "scenario": "microservice"
+  },
+  {
+    "type": "exercise",
+    "file": "12-testing-and-debugging/01-testing/exercises/20-helmet-enable.html",
+    "focus": "helmet enable",
+    "scenario": "public docs API"
+  },
+  {
+    "type": "exercise",
+    "file": "12-testing-and-debugging/01-testing/exercises/21-static-mount.html",
+    "focus": "static mount",
+    "scenario": "REST API"
+  },
+  {
+    "type": "exercise",
+    "file": "12-testing-and-debugging/01-testing/exercises/22-render-view.html",
+    "focus": "render view",
+    "scenario": "admin backend"
+  },
+  {
+    "type": "exercise",
+    "file": "12-testing-and-debugging/01-testing/exercises/23-supertest-post.html",
+    "focus": "supertest post",
+    "scenario": "auth service"
+  },
+  {
+    "type": "exercise",
+    "file": "12-testing-and-debugging/01-testing/exercises/24-compression.html",
+    "focus": "compression",
+    "scenario": "file service"
+  },
+  {
+    "type": "exercise",
+    "file": "12-testing-and-debugging/01-testing/exercises/25-final-challenge.html",
+    "focus": "final challenge",
+    "scenario": "blog API"
+  },
+  {
+    "type": "template",
+    "file": "12-testing-and-debugging/01-testing/templates/01-api-starter.html",
+    "focus": "api starter",
+    "scenario": "REST API"
+  },
+  {
+    "type": "template",
+    "file": "12-testing-and-debugging/01-testing/templates/02-hello-world.html",
+    "focus": "hello world",
+    "scenario": "admin backend"
+  },
+  {
+    "type": "template",
+    "file": "12-testing-and-debugging/01-testing/templates/03-router-module.html",
+    "focus": "router module",
+    "scenario": "auth service"
+  },
+  {
+    "type": "template",
+    "file": "12-testing-and-debugging/01-testing/templates/04-crud-users.html",
+    "focus": "crud users",
+    "scenario": "file service"
+  },
+  {
+    "type": "template",
+    "file": "12-testing-and-debugging/01-testing/templates/05-auth-jwt.html",
+    "focus": "auth jwt",
+    "scenario": "blog API"
+  },
+  {
+    "type": "template",
+    "file": "12-testing-and-debugging/01-testing/templates/06-auth-session.html",
+    "focus": "auth session",
+    "scenario": "ecommerce API"
+  },
+  {
+    "type": "template",
+    "file": "12-testing-and-debugging/01-testing/templates/07-mongoose-app.html",
+    "focus": "mongoose app",
+    "scenario": "realtime chat"
+  },
+  {
+    "type": "template",
+    "file": "12-testing-and-debugging/01-testing/templates/08-postgres-app.html",
+    "focus": "postgres app",
+    "scenario": "SSR site"
+  },
+  {
+    "type": "template",
+    "file": "12-testing-and-debugging/01-testing/templates/09-multer-upload.html",
+    "focus": "multer upload",
+    "scenario": "microservice"
+  },
+  {
+    "type": "template",
+    "file": "12-testing-and-debugging/01-testing/templates/10-validator-kit.html",
+    "focus": "validator kit",
+    "scenario": "public docs API"
+  },
+  {
+    "type": "template",
+    "file": "12-testing-and-debugging/01-testing/templates/11-error-kit.html",
+    "focus": "error kit",
+    "scenario": "REST API"
+  },
+  {
+    "type": "template",
+    "file": "12-testing-and-debugging/01-testing/templates/12-cors-kit.html",
+    "focus": "cors kit",
+    "scenario": "admin backend"
+  },
+  {
+    "type": "template",
+    "file": "12-testing-and-debugging/01-testing/templates/13-helmet-kit.html",
+    "focus": "helmet kit",
+    "scenario": "auth service"
+  },
+  {
+    "type": "template",
+    "file": "12-testing-and-debugging/01-testing/templates/14-rate-limit-kit.html",
+    "focus": "rate limit kit",
+    "scenario": "file service"
+  },
+  {
+    "type": "template",
+    "file": "12-testing-and-debugging/01-testing/templates/15-static-site.html",
+    "focus": "static site",
+    "scenario": "blog API"
+  },
+  {
+    "type": "template",
+    "file": "12-testing-and-debugging/01-testing/templates/16-ejs-app.html",
+    "focus": "ejs app",
+    "scenario": "ecommerce API"
+  },
+  {
+    "type": "template",
+    "file": "12-testing-and-debugging/01-testing/templates/17-pug-app.html",
+    "focus": "pug app",
+    "scenario": "realtime chat"
+  },
+  {
+    "type": "template",
+    "file": "12-testing-and-debugging/01-testing/templates/18-hbs-app.html",
+    "focus": "hbs app",
+    "scenario": "SSR site"
+  },
+  {
+    "type": "template",
+    "file": "12-testing-and-debugging/01-testing/templates/19-supertest-suite.html",
+    "focus": "supertest suite",
+    "scenario": "microservice"
+  },
+  {
+    "type": "template",
+    "file": "12-testing-and-debugging/01-testing/templates/20-winston-log.html",
+    "focus": "winston log",
+    "scenario": "public docs API"
+  },
+  {
+    "type": "template",
+    "file": "12-testing-and-debugging/01-testing/templates/21-redis-cache.html",
+    "focus": "redis cache",
+    "scenario": "REST API"
+  },
+  {
+    "type": "template",
+    "file": "12-testing-and-debugging/01-testing/templates/22-socket-io.html",
+    "focus": "socket io",
+    "scenario": "admin backend"
+  },
+  {
+    "type": "template",
+    "file": "12-testing-and-debugging/01-testing/templates/23-docker-deploy.html",
+    "focus": "docker deploy",
+    "scenario": "auth service"
+  },
+  {
+    "type": "template",
+    "file": "12-testing-and-debugging/01-testing/templates/24-layered-architecture.html",
+    "focus": "layered architecture",
+    "scenario": "file service"
+  },
+  {
+    "type": "template",
+    "file": "12-testing-and-debugging/01-testing/templates/25-production-starter.html",
+    "focus": "production starter",
+    "scenario": "blog API"
+  }
+]

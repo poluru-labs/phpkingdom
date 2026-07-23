@@ -1,0 +1,114 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Design System Tutorials
+section title: Testing
+topic title: Chromatic Visual Tests
+content type: Template
+item number: 23
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Chromatic Visual Tests Template 23 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #fce7f3;
+      color: #9d174d;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Template 23</span>
+    <h1>Chromatic Visual Tests</h1>
+    <p><strong>Section:</strong> Testing</p>
+    <p><strong>Focus:</strong> Dark Mode</p>
+    <p><strong>Scenario:</strong> enterprise portal</p>
+    <p>Use this scaffold as a starting point for a production design system package.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Design System</h2>
+        <pre><code>// Chromatic Visual Tests — Template 23
+// Focus: dark mode | Scenario: enterprise portal
+
+# package.json scripts
+# &quot;chromatic&quot;: &quot;chromatic --build-script-name=build-storybook&quot;
+
+# .github/workflows/chromatic.yml
+# - run: npx chromatic --project-token=$CHROMATIC_PROJECT_TOKEN
+# Modes: light/dark; viewports: 320, 768, 1280</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Chromatic Visual Tests
+- Practice: dark mode
+- Scenario: enterprise portal
+- Separate primitive → semantic → component tokens
+- Document usage, do/don&#x27;t, and accessibility in Storybook
+- Version with semver; deprecate before breaking
+- Measure adoption and bundle impact
+
+Useful commands:
+  npm init -y &amp;&amp; npm pkg set name=@phpkingdom/ds
+  npx storybook@latest init
+  npm run build &amp;&amp; npm publish --access public
+  npx chromatic --project-token=$CHROMATIC_PROJECT_TOKEN</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This template shows one way to apply <strong>Chromatic Visual Tests</strong> in a enterprise portal context.</p>
+      <p>Treat the system as a product: tokens, components, docs, governance, and measurable adoption.</p>
+    </section>
+  </main>
+</body>
+</html>

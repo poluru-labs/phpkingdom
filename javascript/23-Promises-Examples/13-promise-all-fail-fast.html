@@ -1,0 +1,35 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 23-Promises-Examples
+  example: 13-promise-all-fail-fast.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>13 — Promise.all Fail-Fast | phpkingdom.com</title>
+</head>
+<body>
+  <h1>13 — Promise.all Fail-Fast</h1>
+  <h2>Problem</h2>
+  <p>If any promise rejects, all rejects immediately.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+Promise.all([
+  Promise.resolve("ok"),
+  Promise.reject(new Error("second failed")),
+  Promise.resolve("never used")
+]).then((values) => {
+  document.getElementById("out").textContent = values.join(",");
+}).catch((err) => {
+  document.getElementById("out").textContent = "all rejected: " + err.message;
+});
+  </script>
+</body>
+</html>

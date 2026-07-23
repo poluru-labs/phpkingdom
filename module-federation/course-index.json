@@ -1,0 +1,534 @@
+{
+  "title": "Module Federation Tutorials",
+  "items": [
+    {
+      "title": "Basics",
+      "items": [
+        {
+          "href": "/tutorials/module-federation/introduction",
+          "label": "Module Federation - Introduction"
+        },
+        {
+          "href": "/tutorials/module-federation/basics",
+          "label": "Module Federation - Basics"
+        },
+        {
+          "href": "/tutorials/module-federation/setup",
+          "label": "Module Federation Setup"
+        },
+        {
+          "href": "/tutorials/module-federation/first-application",
+          "label": "First Federated Application"
+        },
+        {
+          "href": "/tutorials/module-federation/module-federation-vs-monorepo",
+          "label": "Module Federation vs Monorepo"
+        }
+      ]
+    },
+    {
+      "title": "Core Concepts",
+      "items": [
+        {
+          "href": "/tutorials/module-federation/host-application",
+          "label": "Host Application"
+        },
+        {
+          "href": "/tutorials/module-federation/remote-application",
+          "label": "Remote Application"
+        },
+        {
+          "href": "/tutorials/module-federation/exposes",
+          "label": "Exposed Modules"
+        },
+        {
+          "href": "/tutorials/module-federation/remotes",
+          "label": "Remote Modules"
+        },
+        {
+          "href": "/tutorials/module-federation/remote-entry",
+          "label": "Remote Entry"
+        }
+      ]
+    },
+    {
+      "title": "Webpack Configuration",
+      "items": [
+        {
+          "href": "/tutorials/module-federation/webpack-setup",
+          "label": "Webpack Setup"
+        },
+        {
+          "href": "/tutorials/module-federation/module-federation-plugin",
+          "label": "ModuleFederationPlugin"
+        },
+        {
+          "href": "/tutorials/module-federation/host-configuration",
+          "label": "Host Configuration"
+        },
+        {
+          "href": "/tutorials/module-federation/remote-configuration",
+          "label": "Remote Configuration"
+        },
+        {
+          "href": "/tutorials/module-federation/federation-options",
+          "label": "Federation Options"
+        }
+      ]
+    },
+    {
+      "title": "Shared Dependencies",
+      "items": [
+        {
+          "href": "/tutorials/module-federation/shared-dependencies",
+          "label": "Shared Dependencies"
+        },
+        {
+          "href": "/tutorials/module-federation/singleton-dependencies",
+          "label": "Singleton Dependencies"
+        },
+        {
+          "href": "/tutorials/module-federation/eager-loading",
+          "label": "Eager Loading"
+        },
+        {
+          "href": "/tutorials/module-federation/version-matching",
+          "label": "Version Matching"
+        },
+        {
+          "href": "/tutorials/module-federation/share-scope",
+          "label": "Share Scope"
+        }
+      ]
+    },
+    {
+      "title": "Dynamic Federation",
+      "items": [
+        {
+          "href": "/tutorials/module-federation/dynamic-remotes",
+          "label": "Dynamic Remotes"
+        },
+        {
+          "href": "/tutorials/module-federation/runtime-remotes",
+          "label": "Runtime Remotes"
+        },
+        {
+          "href": "/tutorials/module-federation/dynamic-remote-url",
+          "label": "Dynamic Remote URLs"
+        },
+        {
+          "href": "/tutorials/module-federation/remote-manifest",
+          "label": "Remote Manifest"
+        },
+        {
+          "href": "/tutorials/module-federation/remote-loader",
+          "label": "Remote Loader"
+        }
+      ]
+    },
+    {
+      "title": "Micro Frontends",
+      "items": [
+        {
+          "href": "/tutorials/module-federation/micro-frontends",
+          "label": "Micro Frontends"
+        },
+        {
+          "href": "/tutorials/module-federation/micro-frontend-architecture",
+          "label": "Micro Frontend Architecture"
+        },
+        {
+          "href": "/tutorials/module-federation/application-shell",
+          "label": "Application Shell"
+        },
+        {
+          "href": "/tutorials/module-federation/domain-driven-frontends",
+          "label": "Domain-Driven Frontends"
+        },
+        {
+          "href": "/tutorials/module-federation/team-ownership",
+          "label": "Team Ownership"
+        }
+      ]
+    },
+    {
+      "title": "React Integration",
+      "items": [
+        {
+          "href": "/tutorials/module-federation/react",
+          "label": "Module Federation with React"
+        },
+        {
+          "href": "/tutorials/module-federation/react-host",
+          "label": "React Host Application"
+        },
+        {
+          "href": "/tutorials/module-federation/react-remote",
+          "label": "React Remote Application"
+        },
+        {
+          "href": "/tutorials/module-federation/react-routing",
+          "label": "React Routing"
+        },
+        {
+          "href": "/tutorials/module-federation/react-state-sharing",
+          "label": "React State Sharing"
+        }
+      ]
+    },
+    {
+      "title": "Angular Integration",
+      "items": [
+        {
+          "href": "/tutorials/module-federation/angular",
+          "label": "Module Federation with Angular"
+        },
+        {
+          "href": "/tutorials/module-federation/angular-host",
+          "label": "Angular Host Application"
+        },
+        {
+          "href": "/tutorials/module-federation/angular-remote",
+          "label": "Angular Remote Application"
+        },
+        {
+          "href": "/tutorials/module-federation/angular-routing",
+          "label": "Angular Routing"
+        },
+        {
+          "href": "/tutorials/module-federation/angular-shared-libraries",
+          "label": "Angular Shared Libraries"
+        }
+      ]
+    },
+    {
+      "title": "Vue Integration",
+      "items": [
+        {
+          "href": "/tutorials/module-federation/vue",
+          "label": "Module Federation with Vue"
+        },
+        {
+          "href": "/tutorials/module-federation/vue-host",
+          "label": "Vue Host Application"
+        },
+        {
+          "href": "/tutorials/module-federation/vue-remote",
+          "label": "Vue Remote Application"
+        },
+        {
+          "href": "/tutorials/module-federation/vue-router",
+          "label": "Vue Router Integration"
+        }
+      ]
+    },
+    {
+      "title": "Cross-Framework",
+      "items": [
+        {
+          "href": "/tutorials/module-federation/cross-framework",
+          "label": "Cross-Framework Federation"
+        },
+        {
+          "href": "/tutorials/module-federation/react-angular",
+          "label": "React and Angular Integration"
+        },
+        {
+          "href": "/tutorials/module-federation/web-components",
+          "label": "Federation with Web Components"
+        },
+        {
+          "href": "/tutorials/module-federation/framework-agnostic",
+          "label": "Framework-Agnostic Remotes"
+        }
+      ]
+    },
+    {
+      "title": "Communication",
+      "items": [
+        {
+          "href": "/tutorials/module-federation/component-communication",
+          "label": "Component Communication"
+        },
+        {
+          "href": "/tutorials/module-federation/custom-events",
+          "label": "Custom Events"
+        },
+        {
+          "href": "/tutorials/module-federation/shared-state",
+          "label": "Shared State"
+        },
+        {
+          "href": "/tutorials/module-federation/event-bus",
+          "label": "Event Bus"
+        },
+        {
+          "href": "/tutorials/module-federation/url-state",
+          "label": "URL-Based State"
+        }
+      ]
+    },
+    {
+      "title": "Routing",
+      "items": [
+        {
+          "href": "/tutorials/module-federation/routing",
+          "label": "Federated Routing"
+        },
+        {
+          "href": "/tutorials/module-federation/host-routing",
+          "label": "Host Routing"
+        },
+        {
+          "href": "/tutorials/module-federation/remote-routing",
+          "label": "Remote Routing"
+        },
+        {
+          "href": "/tutorials/module-federation/nested-routes",
+          "label": "Nested Routes"
+        },
+        {
+          "href": "/tutorials/module-federation/deep-linking",
+          "label": "Deep Linking"
+        }
+      ]
+    },
+    {
+      "title": "State Management",
+      "items": [
+        {
+          "href": "/tutorials/module-federation/state-management",
+          "label": "Federated State Management"
+        },
+        {
+          "href": "/tutorials/module-federation/redux",
+          "label": "Redux with Module Federation"
+        },
+        {
+          "href": "/tutorials/module-federation/rxjs",
+          "label": "RxJS State Sharing"
+        },
+        {
+          "href": "/tutorials/module-federation/context-api",
+          "label": "Context API Sharing"
+        },
+        {
+          "href": "/tutorials/module-federation/state-isolation",
+          "label": "State Isolation"
+        }
+      ]
+    },
+    {
+      "title": "Design Systems",
+      "items": [
+        {
+          "href": "/tutorials/module-federation/design-systems",
+          "label": "Federated Design Systems"
+        },
+        {
+          "href": "/tutorials/module-federation/shared-ui-library",
+          "label": "Shared UI Library"
+        },
+        {
+          "href": "/tutorials/module-federation/design-tokens",
+          "label": "Shared Design Tokens"
+        },
+        {
+          "href": "/tutorials/module-federation/component-versioning",
+          "label": "Component Versioning"
+        },
+        {
+          "href": "/tutorials/module-federation/style-isolation",
+          "label": "Style Isolation"
+        }
+      ]
+    },
+    {
+      "title": "Testing",
+      "items": [
+        {
+          "href": "/tutorials/module-federation/testing",
+          "label": "Module Federation Testing"
+        },
+        {
+          "href": "/tutorials/module-federation/unit-testing",
+          "label": "Unit Testing"
+        },
+        {
+          "href": "/tutorials/module-federation/integration-testing",
+          "label": "Integration Testing"
+        },
+        {
+          "href": "/tutorials/module-federation/e2e-testing",
+          "label": "End-to-End Testing"
+        },
+        {
+          "href": "/tutorials/module-federation/contract-testing",
+          "label": "Contract Testing"
+        }
+      ]
+    },
+    {
+      "title": "Deployment",
+      "items": [
+        {
+          "href": "/tutorials/module-federation/deployment",
+          "label": "Module Federation Deployment"
+        },
+        {
+          "href": "/tutorials/module-federation/independent-deployment",
+          "label": "Independent Deployment"
+        },
+        {
+          "href": "/tutorials/module-federation/cdn-deployment",
+          "label": "CDN Deployment"
+        },
+        {
+          "href": "/tutorials/module-federation/environment-configuration",
+          "label": "Environment Configuration"
+        },
+        {
+          "href": "/tutorials/module-federation/versioned-deployment",
+          "label": "Versioned Deployment"
+        }
+      ]
+    },
+    {
+      "title": "Security",
+      "items": [
+        {
+          "href": "/tutorials/module-federation/security",
+          "label": "Module Federation Security"
+        },
+        {
+          "href": "/tutorials/module-federation/remote-validation",
+          "label": "Remote Validation"
+        },
+        {
+          "href": "/tutorials/module-federation/content-security-policy",
+          "label": "Content Security Policy"
+        },
+        {
+          "href": "/tutorials/module-federation/authentication",
+          "label": "Authentication Sharing"
+        },
+        {
+          "href": "/tutorials/module-federation/authorization",
+          "label": "Authorization"
+        }
+      ]
+    },
+    {
+      "title": "Performance",
+      "items": [
+        {
+          "href": "/tutorials/module-federation/performance",
+          "label": "Module Federation Performance"
+        },
+        {
+          "href": "/tutorials/module-federation/lazy-loading",
+          "label": "Lazy Loading"
+        },
+        {
+          "href": "/tutorials/module-federation/preloading",
+          "label": "Remote Preloading"
+        },
+        {
+          "href": "/tutorials/module-federation/caching",
+          "label": "Remote Caching"
+        },
+        {
+          "href": "/tutorials/module-federation/bundle-optimization",
+          "label": "Bundle Optimization"
+        }
+      ]
+    },
+    {
+      "title": "Resilience",
+      "items": [
+        {
+          "href": "/tutorials/module-federation/error-handling",
+          "label": "Error Handling"
+        },
+        {
+          "href": "/tutorials/module-federation/fallback-components",
+          "label": "Fallback Components"
+        },
+        {
+          "href": "/tutorials/module-federation/remote-failures",
+          "label": "Remote Failure Handling"
+        },
+        {
+          "href": "/tutorials/module-federation/error-boundaries",
+          "label": "Error Boundaries"
+        },
+        {
+          "href": "/tutorials/module-federation/retry-strategies",
+          "label": "Retry Strategies"
+        }
+      ]
+    },
+    {
+      "title": "Advanced",
+      "items": [
+        {
+          "href": "/tutorials/module-federation/runtime-api",
+          "label": "Module Federation Runtime API"
+        },
+        {
+          "href": "/tutorials/module-federation/bi-directional-hosts",
+          "label": "Bi-Directional Hosts"
+        },
+        {
+          "href": "/tutorials/module-federation/nested-federation",
+          "label": "Nested Federation"
+        },
+        {
+          "href": "/tutorials/module-federation/server-side-rendering",
+          "label": "Server-Side Rendering"
+        },
+        {
+          "href": "/tutorials/module-federation/native-federation",
+          "label": "Native Federation"
+        },
+        {
+          "href": "/tutorials/module-federation/vite-federation",
+          "label": "Vite Module Federation"
+        },
+        {
+          "href": "/tutorials/module-federation/rspack-federation",
+          "label": "Rspack Module Federation"
+        },
+        {
+          "href": "/tutorials/module-federation/module-federation-2",
+          "label": "Module Federation 2.0"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshooting",
+      "items": [
+        {
+          "href": "/tutorials/module-federation/debugging",
+          "label": "Module Federation Debugging"
+        },
+        {
+          "href": "/tutorials/module-federation/shared-module-errors",
+          "label": "Shared Module Errors"
+        },
+        {
+          "href": "/tutorials/module-federation/remote-loading-errors",
+          "label": "Remote Loading Errors"
+        },
+        {
+          "href": "/tutorials/module-federation/version-conflicts",
+          "label": "Version Conflicts"
+        },
+        {
+          "href": "/tutorials/module-federation/cors-errors",
+          "label": "CORS Errors"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 12-Misc-Examples
+  example: 021-blob-create.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>021 — new Blob | phpkingdom.com</title>
+</head>
+<body>
+  <h1>021 — new Blob</h1>
+  <p>Create binary/text blob.</p>
+<pre id="out"></pre>
+  <script>
+const b=new Blob(["x"],{type:"text/plain"});document.getElementById("out").textContent=b.size;
+  </script>
+</body>
+</html>

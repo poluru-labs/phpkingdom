@@ -1,0 +1,128 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Module Federation Tutorials
+section title: Dynamic Federation
+topic title: Remote Manifest
+content type: Example
+item number: 25
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Remote Manifest Example 25 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ffedd5;
+      color: #9a3412;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Example 25</span>
+    <h1>Remote Manifest</h1>
+    <p><strong>Section:</strong> Dynamic Federation</p>
+    <p><strong>Focus:</strong> Best Practice Recap</p>
+    <p><strong>Scenario:</strong> profile remote</p>
+    <p>Study the host/remote federation pattern and adapt it to your micro-frontend setup.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Module Federation</h2>
+        <pre><code>// Remote Manifest — Example 25
+// Focus: best practice recap | Scenario: profile remote
+
+// Central JSON registry of remote entries + versions
+
+// public/remotes.manifest.json
+// {
+//   &quot;products&quot;: { &quot;url&quot;: &quot;https://cdn.example.com/products/1.4.0/remoteEntry.js&quot;, &quot;version&quot;: &quot;1.4.0&quot; },
+//   &quot;cart&quot;: { &quot;url&quot;: &quot;https://cdn.example.com/cart/2.1.0/remoteEntry.js&quot;, &quot;version&quot;: &quot;2.1.0&quot; }
+// }
+
+async function fetchManifest() {
+  const res = await fetch(&quot;/remotes.manifest.json&quot;, { cache: &quot;no-cache&quot; });
+  return res.json();
+}
+
+async function entryFor(name) {
+  const manifest = await fetchManifest();
+  return manifest[name].url;
+}
+
+// Host bootstrap uses entryFor(&quot;products&quot;) before loading the container
+// CI publishes new version + updates manifest atomically</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Remote Manifest
+- Practice: best practice recap
+- Scenario: profile remote
+- Share framework runtimes as singletons with requiredVersion
+- Load remotes lazily; wrap with error boundaries / fallbacks
+- Deploy remotes independently; version remoteEntry URLs carefully
+- Align CORS and CSP for cross-origin remoteEntry.js
+
+Useful commands:
+  npm install -D webpack webpack-cli webpack-dev-server
+  # run host + remote on different ports
+  npx webpack serve --config webpack.host.js --port 3000
+  npx webpack serve --config webpack.remote.js --port 3002</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This example shows one way to apply <strong>Remote Manifest</strong> in a profile remote context.</p>
+      <p>Keep remotes independently deployable, share carefully, and always plan for remote downtime.</p>
+    </section>
+  </main>
+</body>
+</html>

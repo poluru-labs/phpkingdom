@@ -1,0 +1,29 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 16-Array-Examples
+  example: 14-flatten.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>14 — Flatten Nested Array | phpkingdom.com</title>
+</head>
+<body>
+  <h1>14 — Flatten Nested Array</h1>
+  <h2>Problem</h2>
+  <p>Flatten one or more levels of nested arrays.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const nested = [1, [2, [3, 4]], 5];
+document.getElementById("out").textContent =
+  "flat(1)=[" + nested.flat(1) + "], flat(Infinity)=[" + nested.flat(Infinity) + "]";
+  </script>
+</body>
+</html>

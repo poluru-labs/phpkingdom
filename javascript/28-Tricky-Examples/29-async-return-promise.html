@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 28-Tricky-Examples
+  example: 29-async-return-promise.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>29 — async Always Returns a Promise | phpkingdom.com</title>
+</head>
+<body>
+  <h1>29 — async Always Returns a Promise</h1>
+  <h2>Problem / Gotcha</h2>
+  <p>Even returning a value wraps it in a Promise.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+async function answer() { return 42; }
+const p = answer();
+document.getElementById("out").textContent =
+  "isPromise=" + (p instanceof Promise) + "\n";
+p.then((v) => {
+  document.getElementById("out").textContent += "value=" + v;
+});
+  </script>
+</body>
+</html>

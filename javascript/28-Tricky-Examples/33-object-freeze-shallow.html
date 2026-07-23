@@ -1,0 +1,29 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 28-Tricky-Examples
+  example: 33-object-freeze-shallow.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>33 — Object.freeze is Shallow | phpkingdom.com</title>
+</head>
+<body>
+  <h1>33 — Object.freeze is Shallow</h1>
+  <h2>Problem / Gotcha</h2>
+  <p>Nested objects remain mutable.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const config = Object.freeze({ nested: { mode: "light" } });
+config.nested.mode = "dark";
+document.getElementById("out").textContent = config.nested.mode;
+  </script>
+</body>
+</html>

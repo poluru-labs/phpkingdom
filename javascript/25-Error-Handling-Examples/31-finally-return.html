@@ -1,0 +1,41 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 25-Error-Handling-Examples
+  example: 31-finally-return.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>31 — Finally vs Return | phpkingdom.com</title>
+</head>
+<body>
+  <h1>31 — Finally vs Return</h1>
+  <h2>Problem</h2>
+  <p>finally runs even when try or catch returns.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const out = document.getElementById("out");
+const log = [];
+function demo() {
+  try {
+    log.push("try return");
+    return "from try";
+  } catch (e) {
+    return "from catch";
+  } finally {
+    log.push("finally always");
+  }
+}
+const v = demo();
+log.push("result: " + v);
+out.textContent = log.join("\n");
+  </script>
+</body>
+</html>

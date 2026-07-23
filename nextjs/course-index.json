@@ -1,0 +1,355 @@
+{
+  "title": "Next.js Tutorials",
+  "items": [
+    {
+      "title": "Basics",
+      "items": [
+        {
+          "href": "/tutorials/nextjs/introduction",
+          "label": "Next.js - Introduction"
+        },
+        {
+          "href": "/tutorials/nextjs/basics",
+          "label": "Next.js - Basics"
+        },
+        {
+          "href": "/tutorials/nextjs/setup",
+          "label": "Next.js Setup"
+        },
+        {
+          "href": "/tutorials/nextjs/create-next-app",
+          "label": "Create Next App"
+        },
+        {
+          "href": "/tutorials/nextjs/nextjs-vs-react",
+          "label": "Next.js vs React"
+        }
+      ]
+    },
+    {
+      "title": "Core Concepts",
+      "items": [
+        {
+          "href": "/tutorials/nextjs/app-router",
+          "label": "App Router"
+        },
+        {
+          "href": "/tutorials/nextjs/pages-router",
+          "label": "Pages Router"
+        },
+        {
+          "href": "/tutorials/nextjs/file-based-routing",
+          "label": "File-Based Routing"
+        },
+        {
+          "href": "/tutorials/nextjs/project-structure",
+          "label": "Project Structure"
+        },
+        {
+          "href": "/tutorials/nextjs/next-config",
+          "label": "next.config.js"
+        }
+      ]
+    },
+    {
+      "title": "Routing",
+      "items": [
+        {
+          "href": "/tutorials/nextjs/routes",
+          "label": "Next.js Routes"
+        },
+        {
+          "href": "/tutorials/nextjs/dynamic-routes",
+          "label": "Dynamic Routes"
+        },
+        {
+          "href": "/tutorials/nextjs/nested-routes",
+          "label": "Nested Routes"
+        },
+        {
+          "href": "/tutorials/nextjs/route-groups",
+          "label": "Route Groups"
+        },
+        {
+          "href": "/tutorials/nextjs/navigation",
+          "label": "Navigation"
+        }
+      ]
+    },
+    {
+      "title": "Pages and Layouts",
+      "items": [
+        {
+          "href": "/tutorials/nextjs/pages",
+          "label": "Next.js Pages"
+        },
+        {
+          "href": "/tutorials/nextjs/layouts",
+          "label": "Next.js Layouts"
+        },
+        {
+          "href": "/tutorials/nextjs/templates",
+          "label": "Templates"
+        },
+        {
+          "href": "/tutorials/nextjs/loading-ui",
+          "label": "Loading UI"
+        },
+        {
+          "href": "/tutorials/nextjs/error-pages",
+          "label": "Error Pages"
+        }
+      ]
+    },
+    {
+      "title": "Components",
+      "items": [
+        {
+          "href": "/tutorials/nextjs/server-components",
+          "label": "Server Components"
+        },
+        {
+          "href": "/tutorials/nextjs/client-components",
+          "label": "Client Components"
+        },
+        {
+          "href": "/tutorials/nextjs/shared-components",
+          "label": "Shared Components"
+        },
+        {
+          "href": "/tutorials/nextjs/component-composition",
+          "label": "Component Composition"
+        },
+        {
+          "href": "/tutorials/nextjs/children-pattern",
+          "label": "Children Pattern"
+        }
+      ]
+    },
+    {
+      "title": "Data Fetching",
+      "items": [
+        {
+          "href": "/tutorials/nextjs/data-fetching",
+          "label": "Data Fetching"
+        },
+        {
+          "href": "/tutorials/nextjs/fetch-api",
+          "label": "fetch API"
+        },
+        {
+          "href": "/tutorials/nextjs/static-rendering",
+          "label": "Static Rendering"
+        },
+        {
+          "href": "/tutorials/nextjs/server-side-rendering",
+          "label": "Server-Side Rendering"
+        },
+        {
+          "href": "/tutorials/nextjs/incremental-static-regeneration",
+          "label": "ISR"
+        }
+      ]
+    },
+    {
+      "title": "API and Backend",
+      "items": [
+        {
+          "href": "/tutorials/nextjs/api-routes",
+          "label": "API Routes"
+        },
+        {
+          "href": "/tutorials/nextjs/route-handlers",
+          "label": "Route Handlers"
+        },
+        {
+          "href": "/tutorials/nextjs/middleware",
+          "label": "Middleware"
+        },
+        {
+          "href": "/tutorials/nextjs/server-actions",
+          "label": "Server Actions"
+        },
+        {
+          "href": "/tutorials/nextjs/forms",
+          "label": "Forms"
+        }
+      ]
+    },
+    {
+      "title": "Rendering",
+      "items": [
+        {
+          "href": "/tutorials/nextjs/rendering",
+          "label": "Next.js Rendering"
+        },
+        {
+          "href": "/tutorials/nextjs/static-site-generation",
+          "label": "Static Site Generation"
+        },
+        {
+          "href": "/tutorials/nextjs/ssr",
+          "label": "SSR"
+        },
+        {
+          "href": "/tutorials/nextjs/csr",
+          "label": "CSR"
+        },
+        {
+          "href": "/tutorials/nextjs/streaming",
+          "label": "Streaming"
+        }
+      ]
+    },
+    {
+      "title": "Styling",
+      "items": [
+        {
+          "href": "/tutorials/nextjs/styling",
+          "label": "Next.js Styling"
+        },
+        {
+          "href": "/tutorials/nextjs/css-modules",
+          "label": "CSS Modules"
+        },
+        {
+          "href": "/tutorials/nextjs/global-css",
+          "label": "Global CSS"
+        },
+        {
+          "href": "/tutorials/nextjs/tailwind-css",
+          "label": "Tailwind CSS"
+        },
+        {
+          "href": "/tutorials/nextjs/sass",
+          "label": "Sass with Next.js"
+        }
+      ]
+    },
+    {
+      "title": "SEO and Metadata",
+      "items": [
+        {
+          "href": "/tutorials/nextjs/seo",
+          "label": "Next.js SEO"
+        },
+        {
+          "href": "/tutorials/nextjs/metadata-api",
+          "label": "Metadata API"
+        },
+        {
+          "href": "/tutorials/nextjs/dynamic-metadata",
+          "label": "Dynamic Metadata"
+        },
+        {
+          "href": "/tutorials/nextjs/sitemap",
+          "label": "Sitemap"
+        },
+        {
+          "href": "/tutorials/nextjs/robots",
+          "label": "Robots.txt"
+        }
+      ]
+    },
+    {
+      "title": "Authentication",
+      "items": [
+        {
+          "href": "/tutorials/nextjs/authentication",
+          "label": "Next.js Authentication"
+        },
+        {
+          "href": "/tutorials/nextjs/nextauth",
+          "label": "NextAuth.js"
+        },
+        {
+          "href": "/tutorials/nextjs/jwt-auth",
+          "label": "JWT Authentication"
+        },
+        {
+          "href": "/tutorials/nextjs/protected-routes",
+          "label": "Protected Routes"
+        },
+        {
+          "href": "/tutorials/nextjs/session-management",
+          "label": "Session Management"
+        }
+      ]
+    },
+    {
+      "title": "Performance",
+      "items": [
+        {
+          "href": "/tutorials/nextjs/performance",
+          "label": "Next.js Performance"
+        },
+        {
+          "href": "/tutorials/nextjs/image-optimization",
+          "label": "Image Optimization"
+        },
+        {
+          "href": "/tutorials/nextjs/font-optimization",
+          "label": "Font Optimization"
+        },
+        {
+          "href": "/tutorials/nextjs/script-optimization",
+          "label": "Script Optimization"
+        },
+        {
+          "href": "/tutorials/nextjs/bundle-analysis",
+          "label": "Bundle Analysis"
+        }
+      ]
+    },
+    {
+      "title": "Deployment",
+      "items": [
+        {
+          "href": "/tutorials/nextjs/deployment",
+          "label": "Next.js Deployment"
+        },
+        {
+          "href": "/tutorials/nextjs/vercel-deployment",
+          "label": "Vercel Deployment"
+        },
+        {
+          "href": "/tutorials/nextjs/environment-variables",
+          "label": "Environment Variables"
+        },
+        {
+          "href": "/tutorials/nextjs/production-build",
+          "label": "Production Build"
+        },
+        {
+          "href": "/tutorials/nextjs/docker",
+          "label": "Docker with Next.js"
+        }
+      ]
+    },
+    {
+      "title": "Advanced",
+      "items": [
+        {
+          "href": "/tutorials/nextjs/internationalization",
+          "label": "Internationalization"
+        },
+        {
+          "href": "/tutorials/nextjs/parallel-routes",
+          "label": "Parallel Routes"
+        },
+        {
+          "href": "/tutorials/nextjs/intercepting-routes",
+          "label": "Intercepting Routes"
+        },
+        {
+          "href": "/tutorials/nextjs/error-handling",
+          "label": "Error Handling"
+        },
+        {
+          "href": "/tutorials/nextjs/testing",
+          "label": "Next.js Testing"
+        }
+      ]
+    }
+  ]
+}

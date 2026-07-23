@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/019-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 019 — CSS variable accent — Solution | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>Exercise 019 — CSS variable accent — Solution</h1>
+  <p class="meta">Use var(--accent) for text color.</p>
+  <h2>Solution</h2>
+  <p>Use var(--accent) for text color.</p>
+  <div id="demo"></div>
+  <pre id="out"></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+customElements.define("ex019-el", class extends HTMLElement {
+  connectedCallback() {
+    this.textContent = 'CSS variable accent';
+  }
+});
+document.getElementById("demo").innerHTML = "<ex019-el></ex019-el>";
+document.getElementById("out").textContent = 'Use var(--accent) for text color.';
+  </script>
+</body>
+</html>

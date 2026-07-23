@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 16-Array-Examples
+  example: 35-separate-even-odd.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>35 — Separate Even and Odd | phpkingdom.com</title>
+</head>
+<body>
+  <h1>35 — Separate Even and Odd</h1>
+  <h2>Problem</h2>
+  <p>Place even numbers first, then odd numbers.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function separateEvenOdd(arr) {
+  return arr.filter((n) => n % 2 === 0).concat(arr.filter((n) => n % 2 !== 0));
+}
+document.getElementById("out").textContent = separateEvenOdd([1,2,3,4,5,6]).join(", ");
+  </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 17-String-Examples
+  example: 13-reverse-words.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>13 — Reverse Words in a Sentence | phpkingdom.com</title>
+</head>
+<body>
+  <h1>13 — Reverse Words in a Sentence</h1>
+  <h2>Problem</h2>
+  <p>Reverse word order while keeping words intact.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function reverseWords(s) {
+  return s.trim().split(/\s+/).reverse().join(" ");
+}
+document.getElementById("out").textContent = reverseWords("learn javascript every day");
+  </script>
+</body>
+</html>

@@ -1,0 +1,296 @@
+{
+  "title": "JavaScript Tutorials",
+  "items": [
+    {
+      "title": "Basics",
+      "items": [
+        {
+          "href": "/tutorials/javascript/introduction",
+          "label": "Introduction"
+        },
+        {
+          "href": "/tutorials/javascript/basics",
+          "label": "Basics"
+        },
+        {
+          "href": "/tutorials/javascript/syntax",
+          "label": "Syntax"
+        },
+        {
+          "href": "/tutorials/javascript/how-to-add-javascript",
+          "label": "How To Add Javascript"
+        },
+        {
+          "href": "/tutorials/javascript/comments",
+          "label": "Comments"
+        }
+      ]
+    },
+    {
+      "title": "Core Concepts",
+      "items": [
+        {
+          "href": "/tutorials/javascript/variables",
+          "label": "Variables"
+        },
+        {
+          "href": "/tutorials/javascript/let-const-var",
+          "label": "Let Const Var"
+        },
+        {
+          "href": "/tutorials/javascript/data-types",
+          "label": "Data Types"
+        },
+        {
+          "href": "/tutorials/javascript/operators",
+          "label": "Operators"
+        },
+        {
+          "href": "/tutorials/javascript/type-conversion",
+          "label": "Type Conversion"
+        }
+      ]
+    },
+    {
+      "title": "Control Flow",
+      "items": [
+        {
+          "href": "/tutorials/javascript/if-else",
+          "label": "If Else"
+        },
+        {
+          "href": "/tutorials/javascript/switch",
+          "label": "Switch"
+        },
+        {
+          "href": "/tutorials/javascript/loops",
+          "label": "Loops"
+        },
+        {
+          "href": "/tutorials/javascript/break-continue",
+          "label": "Break Continue"
+        }
+      ]
+    },
+    {
+      "title": "Functions",
+      "items": [
+        {
+          "href": "/tutorials/javascript/functions",
+          "label": "Functions"
+        },
+        {
+          "href": "/tutorials/javascript/function-expressions",
+          "label": "Function Expressions"
+        },
+        {
+          "href": "/tutorials/javascript/arrow-functions",
+          "label": "Arrow Functions"
+        },
+        {
+          "href": "/tutorials/javascript/scope",
+          "label": "Scope"
+        },
+        {
+          "href": "/tutorials/javascript/closures",
+          "label": "Closures"
+        }
+      ]
+    },
+    {
+      "title": "Arrays",
+      "items": [
+        {
+          "href": "/tutorials/javascript/arrays",
+          "label": "Arrays"
+        },
+        {
+          "href": "/tutorials/javascript/array-methods",
+          "label": "Array Methods"
+        },
+        {
+          "href": "/tutorials/javascript/map-filter-reduce",
+          "label": "Map Filter Reduce"
+        },
+        {
+          "href": "/tutorials/javascript/array-iteration",
+          "label": "Array Iteration"
+        }
+      ]
+    },
+    {
+      "title": "Objects",
+      "items": [
+        {
+          "href": "/tutorials/javascript/objects",
+          "label": "Objects"
+        },
+        {
+          "href": "/tutorials/javascript/object-methods",
+          "label": "Object Methods"
+        },
+        {
+          "href": "/tutorials/javascript/destructuring",
+          "label": "Destructuring"
+        },
+        {
+          "href": "/tutorials/javascript/spread-rest",
+          "label": "Spread Rest"
+        },
+        {
+          "href": "/tutorials/javascript/json",
+          "label": "Json"
+        }
+      ]
+    },
+    {
+      "title": "Dom",
+      "items": [
+        {
+          "href": "/tutorials/javascript/dom",
+          "label": "Dom"
+        },
+        {
+          "href": "/tutorials/javascript/dom-selectors",
+          "label": "Dom Selectors"
+        },
+        {
+          "href": "/tutorials/javascript/dom-manipulation",
+          "label": "Dom Manipulation"
+        },
+        {
+          "href": "/tutorials/javascript/events",
+          "label": "Events"
+        },
+        {
+          "href": "/tutorials/javascript/forms",
+          "label": "Forms"
+        }
+      ]
+    },
+    {
+      "title": "Es6",
+      "items": [
+        {
+          "href": "/tutorials/javascript/es6-features",
+          "label": "Es6 Features"
+        },
+        {
+          "href": "/tutorials/javascript/template-literals",
+          "label": "Template Literals"
+        },
+        {
+          "href": "/tutorials/javascript/classes",
+          "label": "Classes"
+        },
+        {
+          "href": "/tutorials/javascript/modules",
+          "label": "Modules"
+        },
+        {
+          "href": "/tutorials/javascript/optional-chaining-nullish",
+          "label": "Optional Chaining Nullish"
+        },
+        {
+          "href": "/tutorials/javascript/sets-maps",
+          "label": "Sets Maps"
+        }
+      ]
+    },
+    {
+      "title": "Async",
+      "items": [
+        {
+          "href": "/tutorials/javascript/asynchronous-javascript",
+          "label": "Asynchronous Javascript"
+        },
+        {
+          "href": "/tutorials/javascript/callbacks",
+          "label": "Callbacks"
+        },
+        {
+          "href": "/tutorials/javascript/promises",
+          "label": "Promises"
+        },
+        {
+          "href": "/tutorials/javascript/async-await",
+          "label": "Async Await"
+        },
+        {
+          "href": "/tutorials/javascript/fetch-api",
+          "label": "Fetch Api"
+        },
+        {
+          "href": "/tutorials/javascript/abort-controller",
+          "label": "Abort Controller"
+        }
+      ]
+    },
+    {
+      "title": "Advanced",
+      "items": [
+        {
+          "href": "/tutorials/javascript/this-keyword",
+          "label": "This Keyword"
+        },
+        {
+          "href": "/tutorials/javascript/prototypes",
+          "label": "Prototypes"
+        },
+        {
+          "href": "/tutorials/javascript/event-loop",
+          "label": "Event Loop"
+        },
+        {
+          "href": "/tutorials/javascript/hoisting",
+          "label": "Hoisting"
+        },
+        {
+          "href": "/tutorials/javascript/error-handling",
+          "label": "Error Handling"
+        },
+        {
+          "href": "/tutorials/javascript/generators-iterators",
+          "label": "Generators Iterators"
+        },
+        {
+          "href": "/tutorials/javascript/proxy-reflect",
+          "label": "Proxy Reflect"
+        },
+        {
+          "href": "/tutorials/javascript/symbols-bigint",
+          "label": "Symbols Bigint"
+        }
+      ]
+    },
+    {
+      "title": "Browser Apis",
+      "items": [
+        {
+          "href": "/tutorials/javascript/local-storage",
+          "label": "Local Storage"
+        },
+        {
+          "href": "/tutorials/javascript/session-storage",
+          "label": "Session Storage"
+        },
+        {
+          "href": "/tutorials/javascript/timers",
+          "label": "Timers"
+        },
+        {
+          "href": "/tutorials/javascript/web-apis",
+          "label": "Web Apis"
+        },
+        {
+          "href": "/tutorials/javascript/intl-api",
+          "label": "Intl Api"
+        },
+        {
+          "href": "/tutorials/javascript/url-search-params",
+          "label": "Url Search Params"
+        }
+      ]
+    }
+  ]
+}

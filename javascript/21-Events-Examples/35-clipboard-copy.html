@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 21-Events-Examples
+  example: 35-clipboard-copy.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>35 — Clipboard copy Event | phpkingdom.com</title>
+</head>
+<body>
+  <h1>35 — Clipboard copy Event</h1>
+  <h2>Problem</h2>
+  <p>Listen for copy and optionally modify copied text.</p>
+  <h2>Demo</h2>
+  <p id="text">Select this text and copy (Ctrl/Cmd+C).</p>
+  <pre id="out"></pre>
+  <script>
+document.getElementById("text").addEventListener("copy", (e) => {
+  const selected = window.getSelection().toString();
+  e.clipboardData.setData("text/plain", selected + " — via events demo");
+  e.preventDefault();
+  document.getElementById("out").textContent = "copied with suffix";
+});
+  </script>
+</body>
+</html>

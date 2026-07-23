@@ -1,0 +1,25 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Misc-Examples
+  example: 032-promise-all.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>032 — Promise.all | phpkingdom.com</title>
+</head>
+<body>
+  <h1>032 — Promise.all</h1>
+  <p>Promise.all([])</p>
+<pre id="out"></pre>
+  <script>
+Promise.all([Promise.resolve(1),Promise.resolve(2)]).then(v=>document.getElementById('out').textContent=v.join(','));
+  </script>
+</body>
+</html>

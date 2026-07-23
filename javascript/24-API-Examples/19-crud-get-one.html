@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 24-API-Examples
+  example: 19-crud-get-one.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>19 — CRUD: Get One by ID | phpkingdom.com</title>
+</head>
+<body>
+  <h1>19 — CRUD: Get One by ID</h1>
+  <h2>Problem</h2>
+  <p>GET /resources/:id pattern.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+async function getUser(id) {
+  const db = { 1: { id: 1, name: "Ada" }, 2: { id: 2, name: "Lin" } };
+  if (!db[id]) throw new Error("404 Not Found");
+  return db[id];
+}
+getUser(1).then((u) => {
+  document.getElementById("out").textContent = JSON.stringify(u);
+}).catch((e) => {
+  document.getElementById("out").textContent = e.message;
+});
+  </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 23-Promises-Examples
+  example: 23-parallel-map.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>23 — Parallel map with Promise.all | phpkingdom.com</title>
+</head>
+<body>
+  <h1>23 — Parallel map with Promise.all</h1>
+  <h2>Problem</h2>
+  <p>Transform items concurrently.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const ids = [1, 2, 3];
+Promise.all(ids.map((id) =>
+  Promise.resolve({ id, title: "Item " + id })
+)).then((items) => {
+  document.getElementById("out").textContent = JSON.stringify(items);
+});
+  </script>
+</body>
+</html>

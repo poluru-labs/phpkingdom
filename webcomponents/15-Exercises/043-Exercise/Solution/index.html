@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/043-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 043 — Remove listener on disconnect — Solution | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>Exercise 043 — Remove listener on disconnect — Solution</h1>
+  <p class="meta">No leaked click handlers.</p>
+  <h2>Solution</h2>
+  <p>No leaked click handlers.</p>
+  <div id="demo"></div>
+  <pre id="out"></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+customElements.define("ex043-el", class extends HTMLElement {
+  connectedCallback() {
+    this.textContent = 'Remove listener on disconnect';
+  }
+});
+document.getElementById("demo").innerHTML = "<ex043-el></ex043-el>";
+document.getElementById("out").textContent = 'No leaked click handlers.';
+  </script>
+</body>
+</html>

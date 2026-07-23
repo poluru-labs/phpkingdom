@@ -1,0 +1,37 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 49-Exercises
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>49-Exercises | DynamoDB Practice | phpkingdom.com</title>
+  <style>
+    body { margin:0; font-family: Georgia, "Times New Roman", serif; background:#f5f7fb; color:#1f2937; line-height:1.55; }
+    .wrap { max-width:760px; margin:0 auto; padding:1.5rem; }
+    .brand { color:#065f46; font-size:.78rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    h1 { font-size:1.6rem; margin:.35rem 0; }
+    .meta { color:#64748b; }
+    pre { background:#0f172a; color:#e2e8f0; padding:1rem; border-radius:.65rem; overflow:auto; font-size:.88rem; }
+    code { font-family: ui-monospace, Menlo, Monaco, Consolas, monospace; }
+    .note { border-left:3px solid #059669; background:#ecfdf5; padding:.75rem 1rem; margin:1rem 0; }
+    a { color:#065f46; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">phpkingdom.com</div>
+    <h1>49-Exercises — DynamoDB Node.js Practice</h1>
+    <p class="meta">25 exercises. Each has Problem → Solution.</p>
+    <p><a href="../README.md">← DynamoDB Node.js Tutorials</a></p>
+    <ol><li><strong>01-Exercise — Install SDK</strong><br><span class='meta'>Install DynamoDB client packages.</span><br><a href='01-Exercise/Problem/index.html'>Problem</a> | <a href='01-Exercise/Solution/index.html'>Solution</a></li><li><strong>02-Exercise — Local Docker</strong><br><span class='meta'>Start DynamoDB Local on port 8000.</span><br><a href='02-Exercise/Problem/index.html'>Problem</a> | <a href='02-Exercise/Solution/index.html'>Solution</a></li><li><strong>03-Exercise — Document Client</strong><br><span class='meta'>Create a Document Client with optional local endpoint.</span><br><a href='03-Exercise/Problem/index.html'>Problem</a> | <a href='03-Exercise/Solution/index.html'>Solution</a></li><li><strong>04-Exercise — Create Table</strong><br><span class='meta'>Sketch CreateTable with pk (S) and sk (S).</span><br><a href='04-Exercise/Problem/index.html'>Problem</a> | <a href='04-Exercise/Solution/index.html'>Solution</a></li><li><strong>05-Exercise — Put Item</strong><br><span class='meta'>Put a user profile with ConditionExpression.</span><br><a href='05-Exercise/Problem/index.html'>Problem</a> | <a href='05-Exercise/Solution/index.html'>Solution</a></li><li><strong>06-Exercise — Get Item</strong><br><span class='meta'>Get the user profile by key.</span><br><a href='06-Exercise/Problem/index.html'>Problem</a> | <a href='06-Exercise/Solution/index.html'>Solution</a></li><li><strong>07-Exercise — Update Email</strong><br><span class='meta'>Update email and bump version.</span><br><a href='07-Exercise/Problem/index.html'>Problem</a> | <a href='07-Exercise/Solution/index.html'>Solution</a></li><li><strong>08-Exercise — Delete Item</strong><br><span class='meta'>Delete the profile by key.</span><br><a href='08-Exercise/Problem/index.html'>Problem</a> | <a href='08-Exercise/Solution/index.html'>Solution</a></li><li><strong>09-Exercise — Query Orders</strong><br><span class='meta'>Query orders for a user with begins_with.</span><br><a href='09-Exercise/Problem/index.html'>Problem</a> | <a href='09-Exercise/Solution/index.html'>Solution</a></li><li><strong>10-Exercise — Paginate</strong><br><span class='meta'>Loop until LastEvaluatedKey is undefined.</span><br><a href='10-Exercise/Problem/index.html'>Problem</a> | <a href='10-Exercise/Solution/index.html'>Solution</a></li><li><strong>11-Exercise — GSI Query</strong><br><span class='meta'>Query EmailIndex by email.</span><br><a href='11-Exercise/Problem/index.html'>Problem</a> | <a href='11-Exercise/Solution/index.html'>Solution</a></li><li><strong>12-Exercise — Batch Write</strong><br><span class='meta'>Batch put two items.</span><br><a href='12-Exercise/Problem/index.html'>Problem</a> | <a href='12-Exercise/Solution/index.html'>Solution</a></li><li><strong>13-Exercise — Unprocessed Retry</strong><br><span class='meta'>Retry UnprocessedItems with backoff (sketch).</span><br><a href='13-Exercise/Problem/index.html'>Problem</a> | <a href='13-Exercise/Solution/index.html'>Solution</a></li><li><strong>14-Exercise — Transact Write</strong><br><span class='meta'>Create order and decrement inventory in one transaction.</span><br><a href='14-Exercise/Problem/index.html'>Problem</a> | <a href='14-Exercise/Solution/index.html'>Solution</a></li><li><strong>15-Exercise — Optimistic Lock</strong><br><span class='meta'>Fail update if version mismatches.</span><br><a href='15-Exercise/Problem/index.html'>Problem</a> | <a href='15-Exercise/Solution/index.html'>Solution</a></li><li><strong>16-Exercise — Entity Prefix</strong><br><span class='meta'>Show pk/sk for user and order entities.</span><br><a href='16-Exercise/Problem/index.html'>Problem</a> | <a href='16-Exercise/Solution/index.html'>Solution</a></li><li><strong>17-Exercise — Projection</strong><br><span class='meta'>Return only email and version.</span><br><a href='17-Exercise/Problem/index.html'>Problem</a> | <a href='17-Exercise/Solution/index.html'>Solution</a></li><li><strong>18-Exercise — Soft Delete</strong><br><span class='meta'>Set deletedAt instead of DeleteItem.</span><br><a href='18-Exercise/Problem/index.html'>Problem</a> | <a href='18-Exercise/Solution/index.html'>Solution</a></li><li><strong>19-Exercise — Reserved Word</strong><br><span class='meta'>Fix filter using reserved word name.</span><br><a href='19-Exercise/Problem/index.html'>Problem</a> | <a href='19-Exercise/Solution/index.html'>Solution</a></li><li><strong>20-Exercise — Throttle Retry</strong><br><span class='meta'>Name the SDK default retry behavior for throttling.</span><br><a href='20-Exercise/Problem/index.html'>Problem</a> | <a href='20-Exercise/Solution/index.html'>Solution</a></li><li><strong>21-Exercise — LeadingKeys</strong><br><span class='meta'>Restrict IAM to pk beginning with USER#sub.</span><br><a href='21-Exercise/Problem/index.html'>Problem</a> | <a href='21-Exercise/Solution/index.html'>Solution</a></li><li><strong>22-Exercise — Query vs Scan</strong><br><span class='meta'>When should you prefer Query over Scan?</span><br><a href='22-Exercise/Problem/index.html'>Problem</a> | <a href='22-Exercise/Solution/index.html'>Solution</a></li><li><strong>23-Exercise — Hot Partition</strong><br><span class='meta'>Name one fix for a hot partition key.</span><br><a href='23-Exercise/Problem/index.html'>Problem</a> | <a href='23-Exercise/Solution/index.html'>Solution</a></li><li><strong>24-Exercise — PITR</strong><br><span class='meta'>Enable point-in-time recovery (CLI sketch).</span><br><a href='24-Exercise/Problem/index.html'>Problem</a> | <a href='24-Exercise/Solution/index.html'>Solution</a></li><li><strong>25-Exercise — Best Practice Recap</strong><br><span class='meta'>List three DynamoDB best practices.</span><br><a href='25-Exercise/Problem/index.html'>Problem</a> | <a href='25-Exercise/Solution/index.html'>Solution</a></li></ol>
+  </div>
+</body>
+</html>

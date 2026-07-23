@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/097-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 097 — Safe HTML policy note — Solution | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>Exercise 097 — Safe HTML policy note — Solution</h1>
+  <p class="meta">Avoid innerHTML with untrusted strings.</p>
+  <h2>Solution</h2>
+  <p>Avoid innerHTML with untrusted strings.</p>
+  <div id="demo"></div>
+  <pre id="out"></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+customElements.define("ex097-el", class extends HTMLElement {
+  connectedCallback() {
+    this.textContent = 'Safe HTML policy note';
+  }
+});
+document.getElementById("demo").innerHTML = "<ex097-el></ex097-el>";
+document.getElementById("out").textContent = 'Avoid innerHTML with untrusted strings.';
+  </script>
+</body>
+</html>

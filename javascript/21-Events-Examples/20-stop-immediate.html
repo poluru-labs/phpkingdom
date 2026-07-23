@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 21-Events-Examples
+  example: 20-stop-immediate.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>20 — stopImmediatePropagation | phpkingdom.com</title>
+</head>
+<body>
+  <h1>20 — stopImmediatePropagation</h1>
+  <h2>Problem</h2>
+  <p>Prevent other listeners on the same element from running.</p>
+  <h2>Demo</h2>
+  <button id="btn">Click</button>
+  <pre id="out"></pre>
+  <script>
+const btn = document.getElementById("btn");
+const out = document.getElementById("out");
+btn.addEventListener("click", (e) => {
+  out.textContent = "first ";
+  e.stopImmediatePropagation();
+});
+btn.addEventListener("click", () => {
+  out.textContent += "second";
+});
+  </script>
+</body>
+</html>

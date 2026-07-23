@@ -1,0 +1,38 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 20-DOM-Examples
+  example: 18-tree-walking.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>18 — parent / children / siblings | phpkingdom.com</title>
+</head>
+<body>
+  <h1>18 — parent / children / siblings</h1>
+  <h2>Problem</h2>
+  <p>Walk the element tree with parentElement, children, and nextElementSibling.</p>
+  <h2>Demo</h2>
+  <ul id="list">
+    <li id="a">A</li>
+    <li id="b">B</li>
+    <li id="c">C</li>
+  </ul>
+  <pre id="out"></pre>
+  <script>
+const b = document.getElementById("b");
+const kids = [...b.parentElement.children].map((el) => el.textContent);
+document.getElementById("out").textContent =
+  "parent tag=" + b.parentElement.tagName +
+  "\nchildren=[" + kids.join(", ") + "]" +
+  "\nnext of B=" + b.nextElementSibling.textContent +
+  "\nprev of B=" + b.previousElementSibling.textContent;
+  </script>
+</body>
+</html>

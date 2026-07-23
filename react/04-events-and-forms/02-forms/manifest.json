@@ -1,0 +1,452 @@
+[
+  {
+    "type": "example",
+    "file": "04-events-and-forms/02-forms/examples/01-vite-create.html",
+    "focus": "vite create",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "example",
+    "file": "04-events-and-forms/02-forms/examples/02-jsx-element.html",
+    "focus": "jsx element",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "example",
+    "file": "04-events-and-forms/02-forms/examples/03-functional-component.html",
+    "focus": "functional component",
+    "scenario": "todo app"
+  },
+  {
+    "type": "example",
+    "file": "04-events-and-forms/02-forms/examples/04-props-pass.html",
+    "focus": "props pass",
+    "scenario": "e-commerce store"
+  },
+  {
+    "type": "example",
+    "file": "04-events-and-forms/02-forms/examples/05-usestate-counter.html",
+    "focus": "useState counter",
+    "scenario": "blog platform"
+  },
+  {
+    "type": "example",
+    "file": "04-events-and-forms/02-forms/examples/06-useeffect-fetch.html",
+    "focus": "useEffect fetch",
+    "scenario": "admin console"
+  },
+  {
+    "type": "example",
+    "file": "04-events-and-forms/02-forms/examples/07-conditional-render.html",
+    "focus": "conditional render",
+    "scenario": "portfolio site"
+  },
+  {
+    "type": "example",
+    "file": "04-events-and-forms/02-forms/examples/08-list-keys.html",
+    "focus": "list keys",
+    "scenario": "chat widget"
+  },
+  {
+    "type": "example",
+    "file": "04-events-and-forms/02-forms/examples/09-controlled-input.html",
+    "focus": "controlled input",
+    "scenario": "learning app"
+  },
+  {
+    "type": "example",
+    "file": "04-events-and-forms/02-forms/examples/10-form-submit.html",
+    "focus": "form submit",
+    "scenario": "B2B portal"
+  },
+  {
+    "type": "example",
+    "file": "04-events-and-forms/02-forms/examples/11-useref-focus.html",
+    "focus": "useRef focus",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "example",
+    "file": "04-events-and-forms/02-forms/examples/12-custom-hook.html",
+    "focus": "custom hook",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "example",
+    "file": "04-events-and-forms/02-forms/examples/13-usememo-value.html",
+    "focus": "useMemo value",
+    "scenario": "todo app"
+  },
+  {
+    "type": "example",
+    "file": "04-events-and-forms/02-forms/examples/14-usecallback-fn.html",
+    "focus": "useCallback fn",
+    "scenario": "e-commerce store"
+  },
+  {
+    "type": "example",
+    "file": "04-events-and-forms/02-forms/examples/15-usereducer.html",
+    "focus": "useReducer",
+    "scenario": "blog platform"
+  },
+  {
+    "type": "example",
+    "file": "04-events-and-forms/02-forms/examples/16-context-provider.html",
+    "focus": "context provider",
+    "scenario": "admin console"
+  },
+  {
+    "type": "example",
+    "file": "04-events-and-forms/02-forms/examples/17-react-router.html",
+    "focus": "react router",
+    "scenario": "portfolio site"
+  },
+  {
+    "type": "example",
+    "file": "04-events-and-forms/02-forms/examples/18-route-params.html",
+    "focus": "route params",
+    "scenario": "chat widget"
+  },
+  {
+    "type": "example",
+    "file": "04-events-and-forms/02-forms/examples/19-protected-route.html",
+    "focus": "protected route",
+    "scenario": "learning app"
+  },
+  {
+    "type": "example",
+    "file": "04-events-and-forms/02-forms/examples/20-react-query.html",
+    "focus": "react query",
+    "scenario": "B2B portal"
+  },
+  {
+    "type": "example",
+    "file": "04-events-and-forms/02-forms/examples/21-react-memo.html",
+    "focus": "react memo",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "example",
+    "file": "04-events-and-forms/02-forms/examples/22-lazy-suspense.html",
+    "focus": "lazy suspense",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "example",
+    "file": "04-events-and-forms/02-forms/examples/23-error-boundary.html",
+    "focus": "error boundary",
+    "scenario": "todo app"
+  },
+  {
+    "type": "example",
+    "file": "04-events-and-forms/02-forms/examples/24-typescript-props.html",
+    "focus": "typescript props",
+    "scenario": "e-commerce store"
+  },
+  {
+    "type": "example",
+    "file": "04-events-and-forms/02-forms/examples/25-best-practice-recap.html",
+    "focus": "best practice recap",
+    "scenario": "blog platform"
+  },
+  {
+    "type": "exercise",
+    "file": "04-events-and-forms/02-forms/exercises/01-npm-create-vite.html",
+    "focus": "npm create vite",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "exercise",
+    "file": "04-events-and-forms/02-forms/exercises/02-hello-component.html",
+    "focus": "hello component",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "04-events-and-forms/02-forms/exercises/03-props-title.html",
+    "focus": "props title",
+    "scenario": "todo app"
+  },
+  {
+    "type": "exercise",
+    "file": "04-events-and-forms/02-forms/exercises/04-usestate.html",
+    "focus": "useState",
+    "scenario": "e-commerce store"
+  },
+  {
+    "type": "exercise",
+    "file": "04-events-and-forms/02-forms/exercises/05-toggle-boolean.html",
+    "focus": "toggle boolean",
+    "scenario": "blog platform"
+  },
+  {
+    "type": "exercise",
+    "file": "04-events-and-forms/02-forms/exercises/06-map-list.html",
+    "focus": "map list",
+    "scenario": "admin console"
+  },
+  {
+    "type": "exercise",
+    "file": "04-events-and-forms/02-forms/exercises/07-key-prop.html",
+    "focus": "key prop",
+    "scenario": "portfolio site"
+  },
+  {
+    "type": "exercise",
+    "file": "04-events-and-forms/02-forms/exercises/08-onclick.html",
+    "focus": "onClick",
+    "scenario": "chat widget"
+  },
+  {
+    "type": "exercise",
+    "file": "04-events-and-forms/02-forms/exercises/09-controlled-form.html",
+    "focus": "controlled form",
+    "scenario": "learning app"
+  },
+  {
+    "type": "exercise",
+    "file": "04-events-and-forms/02-forms/exercises/10-validate-input.html",
+    "focus": "validate input",
+    "scenario": "B2B portal"
+  },
+  {
+    "type": "exercise",
+    "file": "04-events-and-forms/02-forms/exercises/11-useeffect-mount.html",
+    "focus": "useEffect mount",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "exercise",
+    "file": "04-events-and-forms/02-forms/exercises/12-cleanup-effect.html",
+    "focus": "cleanup effect",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "04-events-and-forms/02-forms/exercises/13-useref.html",
+    "focus": "useRef",
+    "scenario": "todo app"
+  },
+  {
+    "type": "exercise",
+    "file": "04-events-and-forms/02-forms/exercises/14-usefetch-hook.html",
+    "focus": "useFetch hook",
+    "scenario": "e-commerce store"
+  },
+  {
+    "type": "exercise",
+    "file": "04-events-and-forms/02-forms/exercises/15-usememo.html",
+    "focus": "useMemo",
+    "scenario": "blog platform"
+  },
+  {
+    "type": "exercise",
+    "file": "04-events-and-forms/02-forms/exercises/16-usecallback.html",
+    "focus": "useCallback",
+    "scenario": "admin console"
+  },
+  {
+    "type": "exercise",
+    "file": "04-events-and-forms/02-forms/exercises/17-usereducer.html",
+    "focus": "useReducer",
+    "scenario": "portfolio site"
+  },
+  {
+    "type": "exercise",
+    "file": "04-events-and-forms/02-forms/exercises/18-createcontext.html",
+    "focus": "createContext",
+    "scenario": "chat widget"
+  },
+  {
+    "type": "exercise",
+    "file": "04-events-and-forms/02-forms/exercises/19-browserrouter.html",
+    "focus": "BrowserRouter",
+    "scenario": "learning app"
+  },
+  {
+    "type": "exercise",
+    "file": "04-events-and-forms/02-forms/exercises/20-useparams.html",
+    "focus": "useParams",
+    "scenario": "B2B portal"
+  },
+  {
+    "type": "exercise",
+    "file": "04-events-and-forms/02-forms/exercises/21-navigate-guard.html",
+    "focus": "Navigate guard",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "exercise",
+    "file": "04-events-and-forms/02-forms/exercises/22-fetch-loading.html",
+    "focus": "fetch loading",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "04-events-and-forms/02-forms/exercises/23-react-lazy.html",
+    "focus": "React.lazy",
+    "scenario": "todo app"
+  },
+  {
+    "type": "exercise",
+    "file": "04-events-and-forms/02-forms/exercises/24-errorboundary.html",
+    "focus": "ErrorBoundary",
+    "scenario": "e-commerce store"
+  },
+  {
+    "type": "exercise",
+    "file": "04-events-and-forms/02-forms/exercises/25-final-challenge.html",
+    "focus": "final challenge",
+    "scenario": "blog platform"
+  },
+  {
+    "type": "template",
+    "file": "04-events-and-forms/02-forms/templates/01-vite-starter.html",
+    "focus": "vite starter",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "template",
+    "file": "04-events-and-forms/02-forms/templates/02-todo-app.html",
+    "focus": "todo app",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "template",
+    "file": "04-events-and-forms/02-forms/templates/03-counter-widget.html",
+    "focus": "counter widget",
+    "scenario": "todo app"
+  },
+  {
+    "type": "template",
+    "file": "04-events-and-forms/02-forms/templates/04-login-form.html",
+    "focus": "login form",
+    "scenario": "e-commerce store"
+  },
+  {
+    "type": "template",
+    "file": "04-events-and-forms/02-forms/templates/05-product-list.html",
+    "focus": "product list",
+    "scenario": "blog platform"
+  },
+  {
+    "type": "template",
+    "file": "04-events-and-forms/02-forms/templates/06-modal-portal.html",
+    "focus": "modal portal",
+    "scenario": "admin console"
+  },
+  {
+    "type": "template",
+    "file": "04-events-and-forms/02-forms/templates/07-tabs-children.html",
+    "focus": "tabs children",
+    "scenario": "portfolio site"
+  },
+  {
+    "type": "template",
+    "file": "04-events-and-forms/02-forms/templates/08-blog-router.html",
+    "focus": "blog router",
+    "scenario": "chat widget"
+  },
+  {
+    "type": "template",
+    "file": "04-events-and-forms/02-forms/templates/09-zustand-store.html",
+    "focus": "zustand store",
+    "scenario": "learning app"
+  },
+  {
+    "type": "template",
+    "file": "04-events-and-forms/02-forms/templates/10-redux-toolkit.html",
+    "focus": "redux toolkit",
+    "scenario": "B2B portal"
+  },
+  {
+    "type": "template",
+    "file": "04-events-and-forms/02-forms/templates/11-fetch-users.html",
+    "focus": "fetch users",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "template",
+    "file": "04-events-and-forms/02-forms/templates/12-axios-client.html",
+    "focus": "axios client",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "template",
+    "file": "04-events-and-forms/02-forms/templates/13-react-query.html",
+    "focus": "react query",
+    "scenario": "todo app"
+  },
+  {
+    "type": "template",
+    "file": "04-events-and-forms/02-forms/templates/14-auth-guard.html",
+    "focus": "auth guard",
+    "scenario": "e-commerce store"
+  },
+  {
+    "type": "template",
+    "file": "04-events-and-forms/02-forms/templates/15-context-theme.html",
+    "focus": "context theme",
+    "scenario": "blog platform"
+  },
+  {
+    "type": "template",
+    "file": "04-events-and-forms/02-forms/templates/16-error-boundary.html",
+    "focus": "error boundary",
+    "scenario": "admin console"
+  },
+  {
+    "type": "template",
+    "file": "04-events-and-forms/02-forms/templates/17-lazy-routes.html",
+    "focus": "lazy routes",
+    "scenario": "portfolio site"
+  },
+  {
+    "type": "template",
+    "file": "04-events-and-forms/02-forms/templates/18-virtual-list.html",
+    "focus": "virtual list",
+    "scenario": "chat widget"
+  },
+  {
+    "type": "template",
+    "file": "04-events-and-forms/02-forms/templates/19-ts-components.html",
+    "focus": "ts components",
+    "scenario": "learning app"
+  },
+  {
+    "type": "template",
+    "file": "04-events-and-forms/02-forms/templates/20-custom-hooks-kit.html",
+    "focus": "custom hooks kit",
+    "scenario": "B2B portal"
+  },
+  {
+    "type": "template",
+    "file": "04-events-and-forms/02-forms/templates/21-form-validation.html",
+    "focus": "form validation",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "template",
+    "file": "04-events-and-forms/02-forms/templates/22-hoc-notes.html",
+    "focus": "hoc notes",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "template",
+    "file": "04-events-and-forms/02-forms/templates/23-render-props.html",
+    "focus": "render props",
+    "scenario": "todo app"
+  },
+  {
+    "type": "template",
+    "file": "04-events-and-forms/02-forms/templates/24-perf-memo.html",
+    "focus": "perf memo",
+    "scenario": "e-commerce store"
+  },
+  {
+    "type": "template",
+    "file": "04-events-and-forms/02-forms/templates/25-production-starter.html",
+    "focus": "production starter",
+    "scenario": "blog platform"
+  }
+]

@@ -1,0 +1,28 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 18-Object-Examples
+  example: 35-defaults-fill.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>35 — Fill Defaults | phpkingdom.com</title>
+</head>
+<body>
+  <h1>35 — Fill Defaults</h1>
+  <h2>Problem</h2>
+  <p>Fill missing values from a defaults object.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function withDefaults(obj, defaults) { return { ...defaults, ...obj }; }
+document.getElementById("out").textContent = JSON.stringify(withDefaults({ theme: "dark" }, { theme: "light", lang: "en", page: 1 }));
+  </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 21-Events-Examples
+  example: 23-capture-phase.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>23 — Capture vs Bubble | phpkingdom.com</title>
+</head>
+<body>
+  <h1>23 — Capture vs Bubble</h1>
+  <h2>Problem</h2>
+  <p>Log capture phase then bubble phase order.</p>
+  <h2>Demo</h2>
+  <div id="outer" style="padding:20px;border:1px solid #333">
+    <div id="inner" style="padding:16px;border:1px dashed #666">
+      <button id="btn">Click</button>
+    </div>
+  </div>
+  <pre id="out"></pre>
+  <script>
+const out = document.getElementById("out");
+const log = (label) => () => { out.textContent += label + "\n"; };
+document.getElementById("outer").addEventListener("click", () => { out.textContent = ""; }, true);
+document.getElementById("outer").addEventListener("click", log("outer capture"), true);
+document.getElementById("inner").addEventListener("click", log("inner capture"), true);
+document.getElementById("btn").addEventListener("click", log("btn target"));
+document.getElementById("inner").addEventListener("click", log("inner bubble"));
+document.getElementById("outer").addEventListener("click", log("outer bubble"));
+  </script>
+</body>
+</html>

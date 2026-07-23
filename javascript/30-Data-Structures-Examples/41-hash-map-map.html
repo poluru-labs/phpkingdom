@@ -1,0 +1,39 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 30-Data-Structures-Examples
+  example: 41-hash-map-map.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>41 — Hash Map (Map) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>41 — Hash Map (Map)</h1>
+  <h2>Problem</h2>
+  <p>Use JavaScript Map as a hash map: set, get, has, delete.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const map = new Map();
+map.set("alice", 90);
+map.set("bob", 85);
+map.set("carol", 92);
+const lines = [
+  "get alice => " + map.get("alice"),
+  "has bob => " + map.has("bob"),
+  "size => " + map.size
+];
+map.delete("bob");
+lines.push("after delete bob, size => " + map.size);
+lines.push("keys => " + [...map.keys()].join(", "));
+document.getElementById("out").textContent = lines.join("\n");
+  </script>
+</body>
+</html>

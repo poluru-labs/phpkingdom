@@ -1,0 +1,44 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 23-Promises-Examples
+  example: 41-memoize-promise.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>41 — Memoize an Async Function | phpkingdom.com</title>
+</head>
+<body>
+  <h1>41 — Memoize an Async Function</h1>
+  <h2>Problem</h2>
+  <p>Cache the in-flight/completed promise for repeat calls.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function memoizeAsync(fn) {
+  const cache = new Map();
+  return (key) => {
+    if (!cache.has(key)) {
+      cache.set(key, fn(key));
+    }
+    return cache.get(key);
+  };
+}
+let calls = 0;
+const loadUser = memoizeAsync(async (id) => {
+  calls++;
+  return { id, calls };
+});
+Promise.all([loadUser(1), loadUser(1), loadUser(1)]).then((results) => {
+  document.getElementById("out").textContent =
+    JSON.stringify(results) + "\nloaderCalls=" + calls;
+});
+  </script>
+</body>
+</html>

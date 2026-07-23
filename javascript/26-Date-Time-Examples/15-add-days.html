@@ -1,0 +1,38 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 26-Date-Time-Examples
+  example: 15-add-days.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>15 — Add Days | phpkingdom.com</title>
+</head>
+<body>
+  <h1>15 — Add Days</h1>
+  <h2>Problem</h2>
+  <p>Add a number of days without mutating the original Date.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+
+function addDays(date, days) {
+  const copy = new Date(date.getTime());
+  copy.setDate(copy.getDate() + days);
+  return copy;
+}
+const start = new Date(2024, 0, 15);
+const result = addDays(start, 10);
+document.getElementById("out").textContent =
+  "Start: " + start.toDateString() + "\n" +
+  "+10 days: " + result.toDateString();
+
+  </script>
+</body>
+</html>

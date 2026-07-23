@@ -1,0 +1,37 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 24-API-Examples
+  example: 03-check-res-ok.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>03 — Check response.ok | phpkingdom.com</title>
+</head>
+<body>
+  <h1>03 — Check response.ok</h1>
+  <h2>Problem</h2>
+  <p>Handle HTTP error statuses manually after fetch.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+async function mockFetchFail() {
+  return { ok: false, status: 404, statusText: "Not Found", json: async () => ({ error: "missing" }) };
+}
+async function getUser() {
+  const res = await mockFetchFail();
+  if (!res.ok) throw new Error("HTTP " + res.status + " " + res.statusText);
+  return res.json();
+}
+getUser()
+  .then((data) => { document.getElementById("out").textContent = JSON.stringify(data); })
+  .catch((err) => { document.getElementById("out").textContent = "Caught: " + err.message; });
+  </script>
+</body>
+</html>

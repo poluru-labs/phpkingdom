@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 070-prefix-sums.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>070 — Prefix Sums | phpkingdom.com</title>
+</head>
+<body>
+  <h1>070 — Prefix Sums</h1>
+  <h2>Problem</h2>
+  <p>Build a prefix-sum array with a loop.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const nums = [2, 4, 1, 3];
+const pref = [];
+let running = 0;
+for (const x of nums) { running += x; pref.push(running); }
+document.getElementById("out").textContent = pref.join(", ");
+  </script>
+</body>
+</html>

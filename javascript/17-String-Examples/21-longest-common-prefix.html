@@ -1,0 +1,38 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 17-String-Examples
+  example: 21-longest-common-prefix.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>21 — Longest Common Prefix | phpkingdom.com</title>
+</head>
+<body>
+  <h1>21 — Longest Common Prefix</h1>
+  <h2>Problem</h2>
+  <p>Find the longest shared prefix among strings.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function longestCommonPrefix(strs) {
+  if (!strs.length) return "";
+  let prefix = strs[0];
+  for (let i = 1; i < strs.length; i++) {
+    while (!strs[i].startsWith(prefix)) {
+      prefix = prefix.slice(0, -1);
+      if (!prefix) return "";
+    }
+  }
+  return prefix;
+}
+document.getElementById("out").textContent = longestCommonPrefix(["flower","flow","flight"]);
+  </script>
+</body>
+</html>

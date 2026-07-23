@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 25-Error-Handling-Examples
+  example: 29-error-stack.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>29 — Error Stack | phpkingdom.com</title>
+</head>
+<body>
+  <h1>29 — Error Stack</h1>
+  <h2>Problem</h2>
+  <p>Read stack traces for debugging (first line shown).</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const out = document.getElementById("out");
+function deep() {
+  throw new Error("trace me");
+}
+try {
+  deep();
+} catch (e) {
+  const first = (e.stack || "").split("\n")[1] || "(no stack)";
+  out.textContent = "stack line: " + first.trim();
+}
+  </script>
+</body>
+</html>

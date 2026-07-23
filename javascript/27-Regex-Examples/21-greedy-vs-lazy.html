@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 27-Regex-Examples
+  example: 21-greedy-vs-lazy.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>21 — Greedy vs Lazy Quantifiers | phpkingdom.com</title>
+</head>
+<body>
+  <h1>21 — Greedy vs Lazy Quantifiers</h1>
+  <h2>Problem</h2>
+  <p>Compare greedy * vs lazy *? when matching HTML-like tags.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const html = "<b>bold</b> and <i>italic</i>";
+const greedy = html.match(/<.*>/);
+const lazy = html.match(/<.*?>/g);
+document.getElementById("out").textContent =
+  "greedy <.*>:   " + greedy[0] + "\n" +
+  "lazy <.*?>:    " + JSON.stringify(lazy);
+  </script>
+</body>
+</html>

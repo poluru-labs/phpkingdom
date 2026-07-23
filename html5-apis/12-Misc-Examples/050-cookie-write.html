@@ -1,0 +1,25 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 12-Misc-Examples
+  example: 050-cookie-write.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>050 — document.cookie | phpkingdom.com</title>
+</head>
+<body>
+  <h1>050 — document.cookie</h1>
+  <p>Set a cookie.</p>
+<pre id="out"></pre>
+  <script>
+document.cookie="demo=1; path=/; SameSite=Lax";document.getElementById("out").textContent=document.cookie;
+  </script>
+</body>
+</html>

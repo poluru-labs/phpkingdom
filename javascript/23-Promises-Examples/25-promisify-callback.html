@@ -1,0 +1,40 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 23-Promises-Examples
+  example: 25-promisify-callback.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>25 — Promisify a Callback API | phpkingdom.com</title>
+</head>
+<body>
+  <h1>25 — Promisify a Callback API</h1>
+  <h2>Problem</h2>
+  <p>Wrap an error-first callback function in a Promise.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function legacyLoad(cb) {
+  setTimeout(() => cb(null, "legacy-data"), 150);
+}
+function loadAsync() {
+  return new Promise((resolve, reject) => {
+    legacyLoad((err, data) => {
+      if (err) reject(err);
+      else resolve(data);
+    });
+  });
+}
+loadAsync().then((data) => {
+  document.getElementById("out").textContent = data;
+});
+  </script>
+</body>
+</html>

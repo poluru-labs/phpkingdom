@@ -1,0 +1,25 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 12-Misc-Examples
+  example: 011-url-parse.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>011 — new URL | phpkingdom.com</title>
+</head>
+<body>
+  <h1>011 — new URL</h1>
+  <p>Parse href parts.</p>
+<pre id="out"></pre>
+  <script>
+const u=new URL("https://phpkingdom.com/a?b=1");document.getElementById("out").textContent=u.host+" "+u.search;
+  </script>
+</body>
+</html>

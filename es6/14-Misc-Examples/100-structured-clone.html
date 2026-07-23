@@ -1,0 +1,27 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Misc-Examples
+  example: 100-structured-clone.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>100 — structuredClone | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>100 — structuredClone</h1>
+  <p class="meta">Deep clone structured data.</p>
+  <p>Deep clone structured data.</p>
+<pre id="out"></pre>
+  <script>
+const a={x:{y:1}};const b=structuredClone(a);b.x.y=2;document.getElementById('out').textContent=a.x.y+','+b.x.y;
+  </script>
+</body>
+</html>

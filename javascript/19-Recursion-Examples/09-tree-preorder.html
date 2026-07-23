@@ -1,0 +1,35 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 19-Recursion-Examples
+  example: 09-tree-preorder.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>09 — Tree Preorder Walk | phpkingdom.com</title>
+</head>
+<body>
+  <h1>09 — Tree Preorder Walk</h1>
+  <h2>Problem</h2>
+  <p>Visit root, then left subtree, then right subtree (preorder).</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const tree = { val: 1, left: { val: 2, left: { val: 4 }, right: null }, right: { val: 3, left: { val: 5 }, right: { val: 6 } } };
+function preorder(node, out = []) {
+  if (!node) return out;
+  out.push(node.val);
+  preorder(node.left, out);
+  preorder(node.right, out);
+  return out;
+}
+document.getElementById("out").textContent = "preorder: " + preorder(tree).join(" → ");
+  </script>
+</body>
+</html>

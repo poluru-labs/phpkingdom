@@ -1,0 +1,39 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 25-Error-Handling-Examples
+  example: 45-wrap-async-safe.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>45 — Wrap Async Function Safely | phpkingdom.com</title>
+</head>
+<body>
+  <h1>45 — Wrap Async Function Safely</h1>
+  <h2>Problem</h2>
+  <p>Async wrapper catches rejections and returns Result-like object.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const out = document.getElementById("out");
+async function safeAsync(fn) {
+  try {
+    const value = await fn();
+    return { ok: true, value };
+  } catch (error) {
+    return { ok: false, error };
+  }
+}
+(async () => {
+  const r = await safeAsync(async () => { throw new Error("async fail"); });
+  out.textContent = r.ok ? r.value : "safe: " + r.error.message;
+})();
+  </script>
+</body>
+</html>

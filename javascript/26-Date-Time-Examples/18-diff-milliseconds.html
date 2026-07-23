@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 26-Date-Time-Examples
+  example: 18-diff-milliseconds.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>18 — Difference in Milliseconds | phpkingdom.com</title>
+</head>
+<body>
+  <h1>18 — Difference in Milliseconds</h1>
+  <h2>Problem</h2>
+  <p>Subtract two Date objects to get elapsed milliseconds.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+
+const start = new Date(2024, 0, 15, 10, 0, 0);
+const end = new Date(2024, 0, 15, 14, 30, 45);
+const ms = end - start;
+document.getElementById("out").textContent =
+  "Start: " + start.toLocaleTimeString() + "\n" +
+  "End: " + end.toLocaleTimeString() + "\n" +
+  "Difference (ms): " + ms + "\n" +
+  "Hours: " + (ms / (1000 * 60 * 60)).toFixed(2);
+
+  </script>
+</body>
+</html>

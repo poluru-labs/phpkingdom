@@ -1,0 +1,35 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 19-Recursion-Examples
+  example: 06-palindrome.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>06 — Palindrome Check | phpkingdom.com</title>
+</head>
+<body>
+  <h1>06 — Palindrome Check</h1>
+  <h2>Problem</h2>
+  <p>Check if a string reads the same forwards and backwards using recursion.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function isPalindrome(s, left = 0, right = s.length - 1) {
+  if (left >= right) return true;
+  if (s[left] !== s[right]) return false;
+  return isPalindrome(s, left + 1, right - 1);
+}
+const words = ["level", "hello", "racecar"];
+document.getElementById("out").textContent = words
+  .map((w) => w + " → " + isPalindrome(w))
+  .join("\n");
+  </script>
+</body>
+</html>

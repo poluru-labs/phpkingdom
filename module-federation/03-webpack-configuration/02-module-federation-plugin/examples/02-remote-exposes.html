@@ -1,0 +1,128 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Module Federation Tutorials
+section title: Webpack Configuration
+topic title: ModuleFederationPlugin
+content type: Example
+item number: 02
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>ModuleFederationPlugin Example 02 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ffedd5;
+      color: #9a3412;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Example 02</span>
+    <h1>ModuleFederationPlugin</h1>
+    <p><strong>Section:</strong> Webpack Configuration</p>
+    <p><strong>Focus:</strong> Remote Exposes</p>
+    <p><strong>Scenario:</strong> admin portal</p>
+    <p>Study the host/remote federation pattern and adapt it to your micro-frontend setup.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Module Federation</h2>
+        <pre><code>// ModuleFederationPlugin — Example 02
+// Focus: remote exposes | Scenario: admin portal
+
+const { ModuleFederationPlugin } = require(&quot;webpack&quot;).container;
+
+// Core options:
+// name, filename, exposes, remotes, shared, library, shareScope
+
+module.exports = {
+  plugins: [
+    new ModuleFederationPlugin({
+      name: &quot;products&quot;,
+      filename: &quot;remoteEntry.js&quot;,
+      library: { type: &quot;var&quot;, name: &quot;products&quot; },
+      exposes: { &quot;./Widget&quot;: &quot;./src/Widget&quot; },
+      remotes: {},
+      shared: {
+        react: { singleton: true, requiredVersion: &quot;^18.0.0&quot; },
+      },
+    }),
+  ],
+};
+// Host uses remotes; remote uses exposes; either may use both (bi-di)</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for ModuleFederationPlugin
+- Practice: remote exposes
+- Scenario: admin portal
+- Share framework runtimes as singletons with requiredVersion
+- Load remotes lazily; wrap with error boundaries / fallbacks
+- Deploy remotes independently; version remoteEntry URLs carefully
+- Align CORS and CSP for cross-origin remoteEntry.js
+
+Useful commands:
+  npm install -D webpack webpack-cli webpack-dev-server
+  # run host + remote on different ports
+  npx webpack serve --config webpack.host.js --port 3000
+  npx webpack serve --config webpack.remote.js --port 3002</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This example shows one way to apply <strong>ModuleFederationPlugin</strong> in a admin portal context.</p>
+      <p>Keep remotes independently deployable, share carefully, and always plan for remote downtime.</p>
+    </section>
+  </main>
+</body>
+</html>

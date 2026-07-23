@@ -1,0 +1,35 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Functions-Examples
+  example: 13-curry-variadic.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>13 — Variadic Curry | phpkingdom.com</title>
+</head>
+<body>
+  <h1>13 — Variadic Curry</h1>
+  <h2>Problem</h2>
+  <p>Curry a function that accepts any number of arguments.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function curry(fn) {
+  return function curried(...args) {
+    if (args.length >= fn.length) return fn(...args);
+    return (...more) => curried(...args, ...more);
+  };
+}
+const sum = curry((a, b, c) => a + b + c);
+document.getElementById("out").textContent =
+  "sum(1)(2)(3) = " + sum(1)(2)(3);
+  </script>
+</body>
+</html>

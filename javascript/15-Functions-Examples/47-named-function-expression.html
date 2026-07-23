@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Functions-Examples
+  example: 47-named-function-expression.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>47 — Named Function Expression | phpkingdom.com</title>
+</head>
+<body>
+  <h1>47 — Named Function Expression</h1>
+  <h2>Problem</h2>
+  <p>Use a named function expression for safer recursion inside.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const factorial = function fact(n) {
+  return n <= 1 ? 1 : n * fact(n - 1);
+};
+document.getElementById("out").textContent = "4! = " + factorial(4);
+  </script>
+</body>
+</html>

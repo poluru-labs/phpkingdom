@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 19-Recursion-Examples
+  example: 05-reverse-string.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>05 — Reverse String | phpkingdom.com</title>
+</head>
+<body>
+  <h1>05 — Reverse String</h1>
+  <h2>Problem</h2>
+  <p>Reverse a string recursively by swapping ends.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function reverseString(s) {
+  if (s.length <= 1) return s;
+  return reverseString(s.slice(1)) + s[0];
+}
+const s = "recursion";
+document.getElementById("out").textContent = reverseString(s);
+  </script>
+</body>
+</html>

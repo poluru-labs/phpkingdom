@@ -1,0 +1,40 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Functions-Examples
+  example: 20-memoize.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>20 — Memoize | phpkingdom.com</title>
+</head>
+<body>
+  <h1>20 — Memoize</h1>
+  <h2>Problem</h2>
+  <p>Cache function results to avoid repeated expensive work.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function memoize(fn) {
+  const cache = new Map();
+  return function (key) {
+    if (cache.has(key)) return cache.get(key);
+    const value = fn(key);
+    cache.set(key, value);
+    return value;
+  };
+}
+let calls = 0;
+const slowSquare = memoize((n) => { calls += 1; return n * n; });
+slowSquare(6); slowSquare(6); slowSquare(8);
+document.getElementById("out").textContent =
+  "results: " + slowSquare(6) + ", " + slowSquare(8) + "\ncalls = " + calls;
+  </script>
+</body>
+</html>

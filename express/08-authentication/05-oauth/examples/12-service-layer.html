@@ -1,0 +1,127 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Express.js Tutorials
+section title: Authentication
+topic title: OAuth
+content type: Example
+item number: 12
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>OAuth Example 12 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #e0e7ff;
+      color: #3730a3;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Example 12</span>
+    <h1>OAuth</h1>
+    <p><strong>Section:</strong> Authentication</p>
+    <p><strong>Focus:</strong> Service Layer</p>
+    <p><strong>Scenario:</strong> admin backend</p>
+    <p>Study the Express route/middleware pattern and adapt it to your API.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Express</h2>
+        <pre><code>// OAuth — Example 12
+// Focus: service layer | Scenario: admin backend
+
+const passport = require(&quot;passport&quot;);
+const GitHubStrategy = require(&quot;passport-github2&quot;).Strategy;
+
+passport.use(new GitHubStrategy({
+  clientID: process.env.GITHUB_CLIENT_ID,
+  clientSecret: process.env.GITHUB_CLIENT_SECRET,
+  callbackURL: &quot;/auth/github/callback&quot;,
+}, (accessToken, refreshToken, profile, done) =&gt; {
+  done(null, { id: profile.id, login: profile.username });
+}));
+
+app.get(&quot;/auth/github&quot;, passport.authenticate(&quot;github&quot;, { scope: [&quot;user:email&quot;] }));
+app.get(
+  &quot;/auth/github/callback&quot;,
+  passport.authenticate(&quot;github&quot;, { failureRedirect: &quot;/login&quot; }),
+  (req, res) =&gt; res.redirect(&quot;/dashboard&quot;)
+);
+// Store tokens securely; never expose client secrets</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for OAuth
+- Practice: service layer
+- Scenario: admin backend
+- Keep route handlers thin; push logic into controllers/services
+- Always attach final 4-arg error middleware
+- Validate input; load secrets from environment variables
+- Export app separately from listen() for easier testing
+
+Useful commands:
+  npm init -y
+  npm install express
+  node --watch server.js
+  curl http://localhost:3000/health
+  npx jest   # or node --test / mocha + supertest</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This example shows one way to apply <strong>OAuth</strong> in a admin backend context.</p>
+      <p>Keep routes thin, push logic into services, and always attach a final error middleware.</p>
+    </section>
+  </main>
+</body>
+</html>

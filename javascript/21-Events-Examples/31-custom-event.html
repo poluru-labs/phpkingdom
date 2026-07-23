@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 21-Events-Examples
+  example: 31-custom-event.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>31 — CustomEvent | phpkingdom.com</title>
+</head>
+<body>
+  <h1>31 — CustomEvent</h1>
+  <h2>Problem</h2>
+  <p>Dispatch and listen for a custom event with a detail payload.</p>
+  <h2>Demo</h2>
+  <button id="btn">Dispatch order:created</button>
+  <pre id="out"></pre>
+  <script>
+document.addEventListener("order:created", (e) => {
+  document.getElementById("out").textContent =
+    "heard detail=" + JSON.stringify(e.detail);
+});
+document.getElementById("btn").onclick = () => {
+  document.dispatchEvent(new CustomEvent("order:created", {
+    detail: { id: 42, total: 19.99 },
+  }));
+};
+  </script>
+</body>
+</html>

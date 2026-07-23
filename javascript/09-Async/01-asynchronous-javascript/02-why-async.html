@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 09-Async/01-asynchronous-javascript
+  example: 02-why-async.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Why Async | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Why Async Matters</h1>
+  <p>Keep the UI responsive during waits.</p>
+  <button id="btn" type="button">Fake network call</button>
+  <pre id="out"></pre>
+  <script>
+document.getElementById("btn").onclick = function () {
+  const out = document.getElementById("out");
+  out.textContent = "Loading...";
+  setTimeout(function () {
+    out.textContent = "Done (after 700ms)";
+  }, 700);
+};
+  </script>
+</body>
+</html>

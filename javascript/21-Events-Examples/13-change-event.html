@@ -1,0 +1,35 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 21-Events-Examples
+  example: 13-change-event.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>13 — change Event | phpkingdom.com</title>
+</head>
+<body>
+  <h1>13 — change Event</h1>
+  <h2>Problem</h2>
+  <p>Fire when a value is committed (blur for text, select for options).</p>
+  <h2>Demo</h2>
+  <input id="name" placeholder="Type then leave field">
+  <select id="color"><option>red</option><option>blue</option></select>
+  <pre id="out"></pre>
+  <script>
+const out = document.getElementById("out");
+document.getElementById("name").addEventListener("change", (e) => {
+  out.textContent = "input change → " + e.target.value;
+});
+document.getElementById("color").addEventListener("change", (e) => {
+  out.textContent = "select change → " + e.target.value;
+});
+  </script>
+</body>
+</html>

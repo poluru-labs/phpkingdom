@@ -1,0 +1,25 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 12-Misc-Examples
+  example: 026-fetch-status.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>026 — fetch status | phpkingdom.com</title>
+</head>
+<body>
+  <h1>026 — fetch status</h1>
+  <p>Check Response.ok.</p>
+<button id="b" type="button">GET</button><pre id="out"></pre>
+  <script>
+document.getElementById("b").onclick=async()=>{try{const r=await fetch("https://httpbin.org/get");document.getElementById("out").textContent=r.status;}catch(e){document.getElementById("out").textContent=e.message;}};
+  </script>
+</body>
+</html>

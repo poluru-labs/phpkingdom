@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/063-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 063 — Unit test fixture sketch — Solution | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>Exercise 063 — Unit test fixture sketch — Solution</h1>
+  <p class="meta">Write a fixture setup snippet.</p>
+  <h2>Solution</h2>
+  <p>Write a fixture setup snippet.</p>
+  <div id="demo"></div>
+  <pre id="out"></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+customElements.define("ex063-el", class extends HTMLElement {
+  connectedCallback() {
+    this.textContent = 'Unit test fixture sketch';
+  }
+});
+document.getElementById("demo").innerHTML = "<ex063-el></ex063-el>";
+document.getElementById("out").textContent = 'Write a fixture setup snippet.';
+  </script>
+</body>
+</html>

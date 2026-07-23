@@ -1,0 +1,28 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 06-Objects/01-objects
+  example: 02-access-update.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Access Update | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Dot and Bracket Access</h1>
+  <p>Read and update properties.</p>
+  <pre id="out"></pre>
+  <script>
+const book = { title: "JS" };
+book.pages = 200;
+book["title"] = "JavaScript";
+document.getElementById("out").textContent = book.title + " / " + book.pages;
+  </script>
+</body>
+</html>

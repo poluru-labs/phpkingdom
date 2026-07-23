@@ -1,0 +1,117 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Vue.js Tutorials
+section title: Computed and Watchers
+topic title: watchEffect
+content type: Example
+item number: 13
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>watchEffect Example 13 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ffedd5;
+      color: #9a3412;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Example 13</span>
+    <h1>watchEffect</h1>
+    <p><strong>Section:</strong> Computed and Watchers</p>
+    <p><strong>Focus:</strong> Composable Hook</p>
+    <p><strong>Scenario:</strong> todo app</p>
+    <p>Study the Vue 3 pattern for this topic and adapt it to your component.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Vue.js</h2>
+        <pre><code>// watchEffect — Example 13
+// Focus: composable hook | Scenario: todo app
+
+&lt;script setup&gt;
+import { ref, watchEffect } from &quot;vue&quot;;
+const q = ref(&quot;&quot;);
+watchEffect(() =&gt; {
+  console.log(&quot;query&quot;, q.value);
+});
+&lt;/script&gt;</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for watchEffect
+- Practice: composable hook
+- Scenario: todo app
+- Prefer &lt;script setup&gt; + Composition API for Vue 3
+- Use ref for primitives, reactive for objects; computed for derived state
+- Key lists with stable ids; v-if for costly trees, v-show for toggles
+- Props down / emits up; Pinia or provide/inject for shared state
+- Route with vue-router; guard auth; fetch with composables + loading/error
+
+Useful commands:
+  npm create vue@latest
+  npm install
+  npm run dev
+  npm run build
+  npm run type-check   # vue-tsc when TypeScript enabled</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This example focuses on <strong>watchEffect</strong> in a todo app context.</p>
+      <p>Prefer Composition API, keep components focused, and lift shared state into composables or Pinia.</p>
+    </section>
+  </main>
+</body>
+</html>

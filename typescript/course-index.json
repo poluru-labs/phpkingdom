@@ -1,0 +1,330 @@
+{
+  "title": "TypeScript Tutorials",
+  "items": [
+    {
+      "title": "Basics",
+      "items": [
+        {
+          "href": "/tutorials/typescript/introduction",
+          "label": "Introduction"
+        },
+        {
+          "href": "/tutorials/typescript/basics",
+          "label": "Basics"
+        },
+        {
+          "href": "/tutorials/typescript/setup",
+          "label": "Setup"
+        },
+        {
+          "href": "/tutorials/typescript/syntax",
+          "label": "Syntax"
+        },
+        {
+          "href": "/tutorials/typescript/typescript-vs-javascript",
+          "label": "Typescript Vs Javascript"
+        }
+      ]
+    },
+    {
+      "title": "Core Types",
+      "items": [
+        {
+          "href": "/tutorials/typescript/types",
+          "label": "Types"
+        },
+        {
+          "href": "/tutorials/typescript/string-number-boolean",
+          "label": "String Number Boolean"
+        },
+        {
+          "href": "/tutorials/typescript/arrays-tuples",
+          "label": "Arrays Tuples"
+        },
+        {
+          "href": "/tutorials/typescript/any-unknown-never",
+          "label": "Any Unknown Never"
+        },
+        {
+          "href": "/tutorials/typescript/type-inference",
+          "label": "Type Inference"
+        }
+      ]
+    },
+    {
+      "title": "Objects",
+      "items": [
+        {
+          "href": "/tutorials/typescript/objects",
+          "label": "Objects"
+        },
+        {
+          "href": "/tutorials/typescript/object-types",
+          "label": "Object Types"
+        },
+        {
+          "href": "/tutorials/typescript/optional-properties",
+          "label": "Optional Properties"
+        },
+        {
+          "href": "/tutorials/typescript/readonly-properties",
+          "label": "Readonly Properties"
+        },
+        {
+          "href": "/tutorials/typescript/index-signatures",
+          "label": "Index Signatures"
+        }
+      ]
+    },
+    {
+      "title": "Functions",
+      "items": [
+        {
+          "href": "/tutorials/typescript/functions",
+          "label": "Functions"
+        },
+        {
+          "href": "/tutorials/typescript/function-types",
+          "label": "Function Types"
+        },
+        {
+          "href": "/tutorials/typescript/optional-default-parameters",
+          "label": "Optional Default Parameters"
+        },
+        {
+          "href": "/tutorials/typescript/rest-parameters",
+          "label": "Rest Parameters"
+        },
+        {
+          "href": "/tutorials/typescript/arrow-functions",
+          "label": "Arrow Functions"
+        }
+      ]
+    },
+    {
+      "title": "Interfaces And Types",
+      "items": [
+        {
+          "href": "/tutorials/typescript/interfaces",
+          "label": "Interfaces"
+        },
+        {
+          "href": "/tutorials/typescript/type-aliases",
+          "label": "Type Aliases"
+        },
+        {
+          "href": "/tutorials/typescript/interface-vs-type",
+          "label": "Interface Vs Type"
+        },
+        {
+          "href": "/tutorials/typescript/extending-interfaces",
+          "label": "Extending Interfaces"
+        },
+        {
+          "href": "/tutorials/typescript/intersection-types",
+          "label": "Intersection Types"
+        }
+      ]
+    },
+    {
+      "title": "Union And Narrowing",
+      "items": [
+        {
+          "href": "/tutorials/typescript/union-types",
+          "label": "Union Types"
+        },
+        {
+          "href": "/tutorials/typescript/literal-types",
+          "label": "Literal Types"
+        },
+        {
+          "href": "/tutorials/typescript/type-narrowing",
+          "label": "Type Narrowing"
+        },
+        {
+          "href": "/tutorials/typescript/type-guards",
+          "label": "Type Guards"
+        },
+        {
+          "href": "/tutorials/typescript/discriminated-unions",
+          "label": "Discriminated Unions"
+        }
+      ]
+    },
+    {
+      "title": "Classes And Oop",
+      "items": [
+        {
+          "href": "/tutorials/typescript/classes",
+          "label": "Classes"
+        },
+        {
+          "href": "/tutorials/typescript/constructors",
+          "label": "Constructors"
+        },
+        {
+          "href": "/tutorials/typescript/access-modifiers",
+          "label": "Access Modifiers"
+        },
+        {
+          "href": "/tutorials/typescript/inheritance",
+          "label": "Inheritance"
+        },
+        {
+          "href": "/tutorials/typescript/abstract-classes",
+          "label": "Abstract Classes"
+        }
+      ]
+    },
+    {
+      "title": "Generics",
+      "items": [
+        {
+          "href": "/tutorials/typescript/generics",
+          "label": "Generics"
+        },
+        {
+          "href": "/tutorials/typescript/generic-functions",
+          "label": "Generic Functions"
+        },
+        {
+          "href": "/tutorials/typescript/generic-interfaces",
+          "label": "Generic Interfaces"
+        },
+        {
+          "href": "/tutorials/typescript/generic-classes",
+          "label": "Generic Classes"
+        },
+        {
+          "href": "/tutorials/typescript/generic-constraints",
+          "label": "Generic Constraints"
+        }
+      ]
+    },
+    {
+      "title": "Advanced Types",
+      "items": [
+        {
+          "href": "/tutorials/typescript/keyof",
+          "label": "Keyof"
+        },
+        {
+          "href": "/tutorials/typescript/typeof",
+          "label": "Typeof"
+        },
+        {
+          "href": "/tutorials/typescript/indexed-access-types",
+          "label": "Indexed Access Types"
+        },
+        {
+          "href": "/tutorials/typescript/mapped-types",
+          "label": "Mapped Types"
+        },
+        {
+          "href": "/tutorials/typescript/conditional-types",
+          "label": "Conditional Types"
+        }
+      ]
+    },
+    {
+      "title": "Utility Types",
+      "items": [
+        {
+          "href": "/tutorials/typescript/utility-types",
+          "label": "Utility Types"
+        },
+        {
+          "href": "/tutorials/typescript/partial-required-readonly",
+          "label": "Partial Required Readonly"
+        },
+        {
+          "href": "/tutorials/typescript/pick-omit-record",
+          "label": "Pick Omit Record"
+        },
+        {
+          "href": "/tutorials/typescript/exclude-extract",
+          "label": "Exclude Extract"
+        },
+        {
+          "href": "/tutorials/typescript/returntype-parameters",
+          "label": "Returntype Parameters"
+        }
+      ]
+    },
+    {
+      "title": "Modules And Config",
+      "items": [
+        {
+          "href": "/tutorials/typescript/modules",
+          "label": "Modules"
+        },
+        {
+          "href": "/tutorials/typescript/namespaces",
+          "label": "Namespaces"
+        },
+        {
+          "href": "/tutorials/typescript/tsconfig",
+          "label": "Tsconfig"
+        },
+        {
+          "href": "/tutorials/typescript/compiler-options",
+          "label": "Compiler Options"
+        },
+        {
+          "href": "/tutorials/typescript/strict-mode",
+          "label": "Strict Mode"
+        }
+      ]
+    },
+    {
+      "title": "Typescript With Frontend",
+      "items": [
+        {
+          "href": "/tutorials/typescript/typescript-with-react",
+          "label": "Typescript With React"
+        },
+        {
+          "href": "/tutorials/typescript/react-props-state",
+          "label": "React Props State"
+        },
+        {
+          "href": "/tutorials/typescript/typescript-with-dom",
+          "label": "Typescript With Dom"
+        },
+        {
+          "href": "/tutorials/typescript/typescript-with-apis",
+          "label": "Typescript With Apis"
+        },
+        {
+          "href": "/tutorials/typescript/typescript-with-nodejs",
+          "label": "Typescript With Nodejs"
+        }
+      ]
+    },
+    {
+      "title": "Patterns",
+      "items": [
+        {
+          "href": "/tutorials/typescript/common-patterns",
+          "label": "Common Patterns"
+        },
+        {
+          "href": "/tutorials/typescript/best-practices",
+          "label": "Best Practices"
+        },
+        {
+          "href": "/tutorials/typescript/debugging",
+          "label": "Debugging"
+        },
+        {
+          "href": "/tutorials/typescript/branded-types",
+          "label": "Branded Types"
+        },
+        {
+          "href": "/tutorials/typescript/result-error-pattern",
+          "label": "Result Error Pattern"
+        }
+      ]
+    }
+  ]
+}

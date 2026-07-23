@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 17-String-Examples
+  example: 28-max-frequency-char.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>28 — Max Frequency Character | phpkingdom.com</title>
+</head>
+<body>
+  <h1>28 — Max Frequency Character</h1>
+  <h2>Problem</h2>
+  <p>Find the character that appears most often.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function maxFreqChar(s) {
+  const map = {};
+  let best = "", bestCount = 0;
+  for (const ch of s.replace(/\s/g, "")) {
+    map[ch] = (map[ch] || 0) + 1;
+    if (map[ch] > bestCount) { bestCount = map[ch]; best = ch; }
+  }
+  return best + " (" + bestCount + ")";
+}
+document.getElementById("out").textContent = maxFreqChar("success");
+  </script>
+</body>
+</html>

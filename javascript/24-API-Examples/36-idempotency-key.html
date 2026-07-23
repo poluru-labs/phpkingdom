@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 24-API-Examples
+  example: 36-idempotency-key.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>36 — Idempotency-Key Header | phpkingdom.com</title>
+</head>
+<body>
+  <h1>36 — Idempotency-Key Header</h1>
+  <h2>Problem</h2>
+  <p>Send an idempotency key for safe retries on POST.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function createPayment(amount) {
+  const key = "pay-" + Date.now();
+  const headers = { "Idempotency-Key": key, "Content-Type": "application/json" };
+  // fetch("/api/payments", { method: "POST", headers, body: JSON.stringify({ amount }) })
+  return { headers, body: { amount } };
+}
+document.getElementById("out").textContent = JSON.stringify(createPayment(19.99), null, 2);
+  </script>
+</body>
+</html>

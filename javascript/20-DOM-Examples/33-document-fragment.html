@@ -1,0 +1,38 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 20-DOM-Examples
+  example: 33-document-fragment.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>33 — DocumentFragment | phpkingdom.com</title>
+</head>
+<body>
+  <h1>33 — DocumentFragment</h1>
+  <h2>Problem</h2>
+  <p>Build many nodes off-DOM, then append once.</p>
+  <h2>Demo</h2>
+  <ul id="list"></ul>
+  <button id="btn">Add 5 via fragment</button>
+  <script>
+let base = 0;
+document.getElementById("btn").onclick = () => {
+  const frag = document.createDocumentFragment();
+  for (let i = 1; i <= 5; i += 1) {
+    const li = document.createElement("li");
+    li.textContent = "Row " + (base + i);
+    frag.appendChild(li);
+  }
+  base += 5;
+  document.getElementById("list").appendChild(frag);
+};
+  </script>
+</body>
+</html>

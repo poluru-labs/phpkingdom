@@ -1,0 +1,44 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>14-Loops-Examples | phpkingdom.com</title>
+  <style>
+    body { font-family: Georgia, "Times New Roman", serif; max-width: 760px; margin: 2rem auto; padding: 0 1.25rem; line-height: 1.6; color: #1a1a1a; }
+    h1 { font-size: 1.75rem; margin-bottom: 0.35rem; }
+    .meta { color: #555; font-size: 0.95rem; margin-bottom: 1.25rem; }
+    .note { background: #f0f7fb; padding: 0.75rem 1rem; border-left: 3px solid #0f766e; margin: 1rem 0; }
+    .demo { margin: 1rem 0; padding: 1rem; border: 1px dashed #94a3b8; }
+    pre, code { font-family: ui-monospace, Menlo, monospace; }
+    pre { background: #111827; color: #e5e7eb; padding: 0.85rem 1rem; overflow: auto; }
+    button, input, select, textarea { font: inherit; padding: 0.4rem 0.55rem; }
+    button { cursor: pointer; background: #0f766e; color: #fff; border: 0; padding: 0.55rem 1rem; }
+    #out { white-space: pre-wrap; background: #f4f4f4; padding: 0.75rem; min-height: 2rem; }
+    a { color: #0f766e; }
+    footer { border-top: 1px solid #ccc; padding-top: 1rem; margin-top: 2rem; color: #555; font-size: 0.95rem; }
+
+    .brand { color:#0f766e; font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    ol { line-height: 1.75; }
+  </style>
+</head>
+<body>
+  <div class="brand">phpkingdom.com</div>
+  <h1>14-Loops-Examples</h1>
+  <p class="meta">100 examples. Minimal HTML — focus on the script.</p>
+  <p><a href="../index.html">← JavaScript Tutorials</a></p>
+  <ol><li><a href="001-print-1-to-n.html">001 — Print 1 to N</a></li><li><a href="002-print-n-to-1.html">002 — Print N to 1</a></li><li><a href="003-sum-1-to-n.html">003 — Sum 1 to N</a></li><li><a href="004-factorial.html">004 — Factorial</a></li><li><a href="005-even-numbers.html">005 — Even Numbers in Range</a></li><li><a href="006-odd-numbers.html">006 — Odd Numbers in Range</a></li><li><a href="007-multiplication-table.html">007 — Multiplication Table</a></li><li><a href="008-fibonacci.html">008 — Fibonacci Sequence</a></li><li><a href="009-count-digits.html">009 — Count Digits</a></li><li><a href="010-reverse-number.html">010 — Reverse a Number</a></li><li><a href="011-palindrome-number.html">011 — Palindrome Number</a></li><li><a href="012-armstrong.html">012 — Armstrong Number</a></li><li><a href="013-prime-check.html">013 — Prime Check</a></li><li><a href="014-primes-in-range.html">014 — Primes in a Range</a></li><li><a href="015-sum-of-digits.html">015 — Sum of Digits</a></li><li><a href="016-power-loop.html">016 — Power with a Loop</a></li><li><a href="017-gcd.html">017 — GCD (Euclidean Algorithm)</a></li><li><a href="018-lcm.html">018 — LCM</a></li><li><a href="019-while-countdown.html">019 — while Countdown</a></li><li><a href="020-do-while-once.html">020 — do…while Runs Once</a></li><li><a href="021-for-of-array.html">021 — for…of over Array</a></li><li><a href="022-for-in-object.html">022 — for…in over Object</a></li><li><a href="023-break-early.html">023 — break Early Exit</a></li><li><a href="024-continue-skip.html">024 — continue Skip</a></li><li><a href="025-nested-tables.html">025 — Nested Loops: Tables</a></li><li><a href="026-star-triangle.html">026 — Right Triangle of Stars</a></li><li><a href="027-inverted-triangle.html">027 — Inverted Triangle</a></li><li><a href="028-number-pyramid.html">028 — Number Pyramid</a></li><li><a href="029-diamond-pattern.html">029 — Diamond Pattern</a></li><li><a href="030-hollow-square.html">030 — Hollow Square</a></li><li><a href="031-sum-array-for.html">031 — Sum Array with for</a></li><li><a href="032-max-with-for.html">032 — Maximum with for</a></li><li><a href="033-min-with-for.html">033 — Minimum with for</a></li><li><a href="034-linear-search.html">034 — Linear Search</a></li><li><a href="035-count-occurrences.html">035 — Count Occurrences</a></li><li><a href="036-reverse-string-loop.html">036 — Reverse String with Loop</a></li><li><a href="037-count-vowels.html">037 — Count Vowels</a></li><li><a href="038-frequency-map.html">038 — Character Frequency Map</a></li><li><a href="039-bubble-sort.html">039 — Bubble Sort</a></li><li><a href="040-selection-sort.html">040 — Selection Sort</a></li><li><a href="041-insertion-sort.html">041 — Insertion Sort</a></li><li><a href="042-two-pointer-merge.html">042 — Merge Two Sorted Arrays</a></li><li><a href="043-two-sum-nested.html">043 — Two Sum (Nested Loops)</a></li><li><a href="044-print-matrix.html">044 — Print a Matrix</a></li><li><a href="045-matrix-diagonal.html">045 — Matrix Diagonal Sum</a></li><li><a href="046-transpose-matrix.html">046 — Transpose a Matrix</a></li><li><a href="047-flatten-nested.html">047 — Flatten Nested Arrays</a></li><li><a href="048-collatz.html">048 — Collatz Sequence</a></li><li><a href="049-perfect-number.html">049 — Perfect Number</a></li><li><a href="050-strong-number.html">050 — Strong Number</a></li><li><a href="051-happy-number.html">051 — Happy Number</a></li><li><a href="052-binary-to-decimal.html">052 — Binary to Decimal</a></li><li><a href="053-decimal-to-binary.html">053 — Decimal to Binary</a></li><li><a href="054-range-sum.html">054 — Sum of a Range [L, R]</a></li><li><a href="055-average-n.html">055 — Average of N Numbers</a></li><li><a href="056-product-array.html">056 — Product of Array</a></li><li><a href="057-square-each.html">057 — Square Each Element</a></li><li><a href="058-sum-of-cubes.html">058 — Sum of Cubes 1³..N³</a></li><li><a href="059-harmonic-series.html">059 — Harmonic Series</a></li><li><a href="060-geometric-series.html">060 — Geometric Series Sum</a></li><li><a href="061-until-sentinel.html">061 — Loop Until Sentinel</a></li><li><a href="062-all-pairs.html">062 — All Pairs (Nested)</a></li><li><a href="063-pascal-row.html">063 — Pascal Triangle Row</a></li><li><a href="064-divisors.html">064 — List Divisors</a></li><li><a href="065-factor-pairs.html">065 — Factor Pairs</a></li><li><a href="066-gcd-array.html">066 — GCD of an Array</a></li><li><a href="067-second-max-loop.html">067 — Second Maximum</a></li><li><a href="068-remove-zeros-copy.html">068 — Copy Without Zeros</a></li><li><a href="069-rotate-left-loop.html">069 — Rotate Left by 1</a></li><li><a href="070-prefix-sums.html">070 — Prefix Sums</a></li><li><a href="071-running-product.html">071 — Running Product</a></li><li><a href="072-count-signs.html">072 — Count Pos / Neg / Zero</a></li><li><a href="073-split-even-odd.html">073 — Split Even / Odd</a></li><li><a href="074-array-intersection.html">074 — Array Intersection</a></li><li><a href="075-array-union.html">075 — Array Union</a></li><li><a href="076-anagram-check.html">076 — Anagram Check (Counts)</a></li><li><a href="077-reverse-words.html">077 — Reverse Each Word</a></li><li><a href="078-capitalize-words.html">078 — Capitalize Words</a></li><li><a href="079-foreach-vs-for.html">079 — forEach vs for</a></li><li><a href="080-map-like-for.html">080 — Map-like with for</a></li><li><a href="081-filter-like-for.html">081 — Filter-like with for</a></li><li><a href="082-reduce-like-for.html">082 — Reduce-like with for</a></li><li><a href="083-loop-guard.html">083 — Loop Guard / Max Iterations</a></li><li><a href="084-labeled-break.html">084 — Labeled break (Outer)</a></li><li><a href="085-break-vs-flag.html">085 — Nested Loop Flag</a></li><li><a href="086-zigzag-print.html">086 — Zigzag 1..N</a></li><li><a href="087-days-of-year.html">087 — Sum Days in Months</a></li><li><a href="088-spiral-order-small.html">088 — Spiral Order (3×3)</a></li><li><a href="089-digital-root.html">089 — Digital Root</a></li><li><a href="090-toggle-case.html">090 — Toggle Case</a></li><li><a href="091-is-sorted.html">091 — Check Sorted Ascending</a></li><li><a href="092-missing-number.html">092 — Missing Number 1..N</a></li><li><a href="093-majority-brute.html">093 — Majority Element (Brute)</a></li><li><a href="094-longest-run.html">094 — Longest Equal Run</a></li><li><a href="095-move-negatives.html">095 — Move Negatives Left</a></li><li><a href="096-sliding-window-sum.html">096 — Sliding Window Sum</a></li><li><a href="097-while-true-break.html">097 — while(true) + break</a></li><li><a href="098-for-of-entries.html">098 — for…of with entries()</a></li><li><a href="099-fizzbuzz.html">099 — FizzBuzz</a></li><li><a href="100-loops-checklist.html">100 — Loops Checklist</a></li></ol>
+  <footer>
+    <p>&copy; 2026 phpkingdom.com · Subrahmanyam Poluru · <a href="https://polurus.com">polurus.com</a></p>
+  </footer>
+</body>
+</html>

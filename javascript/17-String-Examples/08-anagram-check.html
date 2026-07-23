@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 17-String-Examples
+  example: 08-anagram-check.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>08 — Valid Anagram | phpkingdom.com</title>
+</head>
+<body>
+  <h1>08 — Valid Anagram</h1>
+  <h2>Problem</h2>
+  <p>Check whether two strings are anagrams.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function isAnagram(a, b) {
+  const norm = (s) => s.toLowerCase().split("").sort().join("");
+  return norm(a) === norm(b);
+}
+document.getElementById("out").textContent =
+  isAnagram("Listen", "Silent") + " / " + isAnagram("hello", "world");
+  </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 26-Date-Time-Examples
+  example: 40-to-date-time-string.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>40 — toDateString and toTimeString | phpkingdom.com</title>
+</head>
+<body>
+  <h1>40 — toDateString and toTimeString</h1>
+  <h2>Problem</h2>
+  <p>Built-in string methods for human-readable date/time parts.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+
+const d = new Date(2024, 0, 15, 14, 30, 45);
+document.getElementById("out").textContent =
+  "toDateString(): " + d.toDateString() + "\n" +
+  "toTimeString(): " + d.toTimeString();
+
+  </script>
+</body>
+</html>

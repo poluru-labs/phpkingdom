@@ -1,0 +1,27 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 06-Objects/02-object-methods
+  example: 01-keys-values.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>keys values | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Object.keys / values</h1>
+  <p>List keys and values.</p>
+  <pre id="out"></pre>
+  <script>
+const user = { a: 1, b: 2 };
+document.getElementById("out").textContent =
+  Object.keys(user) + " / " + Object.values(user);
+  </script>
+</body>
+</html>

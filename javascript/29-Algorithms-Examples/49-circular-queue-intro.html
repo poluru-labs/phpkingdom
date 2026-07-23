@@ -1,0 +1,59 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 29-Algorithms-Examples
+  example: 49-circular-queue-intro.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>49 — Circular Queue (Intro) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>49 — Circular Queue (Intro)</h1>
+  <h2>Problem</h2>
+  <p>Fixed-size queue with front/rear wrapping using an array.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+class CircularQueue {
+  constructor(k) {
+    this.buf = new Array(k);
+    this.head = 0; this.tail = 0; this.size = 0; this.k = k;
+  }
+  enQueue(v) {
+    if (this.isFull()) return false;
+    this.buf[this.tail] = v;
+    this.tail = (this.tail + 1) % this.k;
+    this.size++;
+    return true;
+  }
+  deQueue() {
+    if (this.isEmpty()) return false;
+    this.head = (this.head + 1) % this.k;
+    this.size--;
+    return true;
+  }
+  front() { return this.isEmpty() ? -1 : this.buf[this.head]; }
+  rear() { return this.isEmpty() ? -1 : this.buf[(this.tail - 1 + this.k) % this.k]; }
+  isEmpty() { return this.size === 0; }
+  isFull() { return this.size === this.k; }
+}
+const q = new CircularQueue(3);
+const log = [];
+log.push("enq 1: " + q.enQueue(1));
+log.push("enq 2: " + q.enQueue(2));
+log.push("enq 3: " + q.enQueue(3));
+log.push("enq 4: " + q.enQueue(4));
+log.push("deq:   " + q.deQueue());
+log.push("enq 4: " + q.enQueue(4));
+log.push("rear:  " + q.rear());
+document.getElementById("out").textContent = log.join("\n");
+  </script>
+</body>
+</html>

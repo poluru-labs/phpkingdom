@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 23-Promises-Examples
+  example: 31-promise-resolve-thenable.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>31 — Promise.resolve on Thenables | phpkingdom.com</title>
+</head>
+<body>
+  <h1>31 — Promise.resolve on Thenables</h1>
+  <h2>Problem</h2>
+  <p>Resolve assimilates thenable objects.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const thenable = {
+  then(resolve) { resolve("from thenable"); }
+};
+Promise.resolve(thenable).then((v) => {
+  document.getElementById("out").textContent = v;
+});
+  </script>
+</body>
+</html>

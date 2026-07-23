@@ -1,0 +1,1171 @@
+{
+  "title": "GraphQL with Node.js Tutorials",
+  "items": [
+    {
+      "title": "GraphQL Basics",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/introduction",
+          "label": "GraphQL - Introduction"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/basics",
+          "label": "GraphQL - Basics"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/what-is-graphql",
+          "label": "What Is GraphQL?"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/how-graphql-works",
+          "label": "How GraphQL Works"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/graphql-use-cases",
+          "label": "GraphQL Use Cases"
+        }
+      ]
+    },
+    {
+      "title": "Setup and Installation",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/nodejs-setup",
+          "label": "Node.js Setup"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/project-setup",
+          "label": "GraphQL Project Setup"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/install-graphql",
+          "label": "Install GraphQL"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/first-server",
+          "label": "First GraphQL Server"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/graphql-playground",
+          "label": "GraphQL Playground / Sandbox"
+        }
+      ]
+    },
+    {
+      "title": "Core Concepts",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/schema",
+          "label": "GraphQL Schema"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/types",
+          "label": "GraphQL Types"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/fields",
+          "label": "Fields and Arguments"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/resolvers",
+          "label": "GraphQL Resolvers"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/execution",
+          "label": "GraphQL Execution"
+        }
+      ]
+    },
+    {
+      "title": "Schema Definition Language",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/schema-definition-language",
+          "label": "GraphQL SDL"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/type-definitions",
+          "label": "Type Definitions"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/schema-first",
+          "label": "Schema-First Development"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/code-first",
+          "label": "Code-First Development"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/schema-first-vs-code-first",
+          "label": "Schema-First vs Code-First"
+        }
+      ]
+    },
+    {
+      "title": "Scalar Types",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/scalar-types",
+          "label": "GraphQL Scalar Types"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/string-int-float",
+          "label": "String, Int, and Float"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/boolean-id",
+          "label": "Boolean and ID"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/custom-scalars",
+          "label": "Custom Scalars"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/date-scalar",
+          "label": "Date and Time Scalars"
+        }
+      ]
+    },
+    {
+      "title": "Object and Input Types",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/object-types",
+          "label": "Object Types"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/input-types",
+          "label": "Input Object Types"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/enum-types",
+          "label": "Enum Types"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/list-types",
+          "label": "List Types"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/non-null-types",
+          "label": "Non-Null Types"
+        }
+      ]
+    },
+    {
+      "title": "Queries",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/queries",
+          "label": "GraphQL Queries"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/query-fields",
+          "label": "Query Fields"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/query-arguments",
+          "label": "Query Arguments"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/query-aliases",
+          "label": "Query Aliases"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/nested-queries",
+          "label": "Nested Queries"
+        }
+      ]
+    },
+    {
+      "title": "Mutations",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/mutations",
+          "label": "GraphQL Mutations"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/create-mutation",
+          "label": "Create Mutation"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/update-mutation",
+          "label": "Update Mutation"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/delete-mutation",
+          "label": "Delete Mutation"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/mutation-payloads",
+          "label": "Mutation Payloads"
+        }
+      ]
+    },
+    {
+      "title": "Resolvers",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/resolver-functions",
+          "label": "Resolver Functions"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/resolver-parent",
+          "label": "Resolver Parent"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/resolver-arguments",
+          "label": "Resolver Arguments"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/resolver-context",
+          "label": "Resolver Context"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/resolver-info",
+          "label": "Resolver Info"
+        }
+      ]
+    },
+    {
+      "title": "Fragments and Variables",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/fragments",
+          "label": "GraphQL Fragments"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/named-fragments",
+          "label": "Named Fragments"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/inline-fragments",
+          "label": "Inline Fragments"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/query-variables",
+          "label": "Query Variables"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/default-values",
+          "label": "Default Variable Values"
+        }
+      ]
+    },
+    {
+      "title": "Directives",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/directives",
+          "label": "GraphQL Directives"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/include-directive",
+          "label": "@include Directive"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/skip-directive",
+          "label": "@skip Directive"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/deprecated-directive",
+          "label": "@deprecated Directive"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/custom-directives",
+          "label": "Custom Directives"
+        }
+      ]
+    },
+    {
+      "title": "Interfaces and Unions",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/interfaces",
+          "label": "GraphQL Interfaces"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/union-types",
+          "label": "Union Types"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/resolve-type",
+          "label": "__resolveType"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/is-type-of",
+          "label": "__isTypeOf"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/polymorphic-types",
+          "label": "Polymorphic Types"
+        }
+      ]
+    },
+    {
+      "title": "Apollo Server",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/apollo-server",
+          "label": "Apollo Server"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/apollo-setup",
+          "label": "Apollo Server Setup"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/apollo-schema",
+          "label": "Apollo Schema"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/apollo-context",
+          "label": "Apollo Context"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/apollo-plugins",
+          "label": "Apollo Server Plugins"
+        }
+      ]
+    },
+    {
+      "title": "GraphQL Yoga",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/graphql-yoga",
+          "label": "GraphQL Yoga"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/yoga-setup",
+          "label": "GraphQL Yoga Setup"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/yoga-schema",
+          "label": "Yoga Schema"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/yoga-context",
+          "label": "Yoga Context"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/yoga-plugins",
+          "label": "GraphQL Yoga Plugins"
+        }
+      ]
+    },
+    {
+      "title": "Express Integration",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/express",
+          "label": "GraphQL with Express"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/express-middleware",
+          "label": "GraphQL Express Middleware"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/express-routing",
+          "label": "Express Routing"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/express-context",
+          "label": "Express Request Context"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/rest-and-graphql",
+          "label": "REST and GraphQL Together"
+        }
+      ]
+    },
+    {
+      "title": "Database Integration",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/database-integration",
+          "label": "GraphQL Database Integration"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/mongodb",
+          "label": "GraphQL with MongoDB"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/postgresql",
+          "label": "GraphQL with PostgreSQL"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/mysql",
+          "label": "GraphQL with MySQL"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/dynamodb",
+          "label": "GraphQL with DynamoDB"
+        }
+      ]
+    },
+    {
+      "title": "ORM Integration",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/prisma",
+          "label": "GraphQL with Prisma"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/typeorm",
+          "label": "GraphQL with TypeORM"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/sequelize",
+          "label": "GraphQL with Sequelize"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/mongoose",
+          "label": "GraphQL with Mongoose"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/drizzle",
+          "label": "GraphQL with Drizzle ORM"
+        }
+      ]
+    },
+    {
+      "title": "CRUD Operations",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/crud",
+          "label": "GraphQL CRUD Operations"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/create-record",
+          "label": "Create Database Records"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/read-records",
+          "label": "Read Database Records"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/update-record",
+          "label": "Update Database Records"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/delete-record",
+          "label": "Delete Database Records"
+        }
+      ]
+    },
+    {
+      "title": "Relationships",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/relationships",
+          "label": "GraphQL Relationships"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/one-to-one",
+          "label": "One-to-One Relationships"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/one-to-many",
+          "label": "One-to-Many Relationships"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/many-to-many",
+          "label": "Many-to-Many Relationships"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/nested-resolvers",
+          "label": "Nested Relationship Resolvers"
+        }
+      ]
+    },
+    {
+      "title": "Pagination",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/pagination",
+          "label": "GraphQL Pagination"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/offset-pagination",
+          "label": "Offset Pagination"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/cursor-pagination",
+          "label": "Cursor Pagination"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/relay-pagination",
+          "label": "Relay-Style Pagination"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/page-info",
+          "label": "PageInfo and Edges"
+        }
+      ]
+    },
+    {
+      "title": "Filtering and Sorting",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/filtering",
+          "label": "GraphQL Filtering"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/sorting",
+          "label": "GraphQL Sorting"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/search",
+          "label": "GraphQL Search"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/dynamic-filters",
+          "label": "Dynamic Filters"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/filter-input-types",
+          "label": "Filter Input Types"
+        }
+      ]
+    },
+    {
+      "title": "Subscriptions",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/subscriptions",
+          "label": "GraphQL Subscriptions"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/websockets",
+          "label": "GraphQL WebSockets"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/pubsub",
+          "label": "GraphQL PubSub"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/subscription-resolvers",
+          "label": "Subscription Resolvers"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/real-time-updates",
+          "label": "Real-Time Updates"
+        }
+      ]
+    },
+    {
+      "title": "Authentication",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/authentication",
+          "label": "GraphQL Authentication"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/jwt-authentication",
+          "label": "JWT Authentication"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/session-authentication",
+          "label": "Session Authentication"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/oauth",
+          "label": "OAuth Authentication"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/auth-context",
+          "label": "Authentication Context"
+        }
+      ]
+    },
+    {
+      "title": "Authorization",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/authorization",
+          "label": "GraphQL Authorization"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/role-based-access",
+          "label": "Role-Based Access Control"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/field-level-authorization",
+          "label": "Field-Level Authorization"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/directive-authorization",
+          "label": "Directive-Based Authorization"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/permission-rules",
+          "label": "Permission Rules"
+        }
+      ]
+    },
+    {
+      "title": "Validation",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/validation",
+          "label": "GraphQL Validation"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/input-validation",
+          "label": "Input Validation"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/custom-validation",
+          "label": "Custom Validation Rules"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/schema-validation",
+          "label": "Schema Validation"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/validation-errors",
+          "label": "Validation Error Handling"
+        }
+      ]
+    },
+    {
+      "title": "Error Handling",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/error-handling",
+          "label": "GraphQL Error Handling"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/graphql-errors",
+          "label": "GraphQL Errors"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/custom-errors",
+          "label": "Custom GraphQL Errors"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/error-extensions",
+          "label": "Error Extensions"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/error-masking",
+          "label": "Error Masking"
+        }
+      ]
+    },
+    {
+      "title": "DataLoader",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/dataloader",
+          "label": "GraphQL DataLoader"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/n-plus-one-problem",
+          "label": "N+1 Query Problem"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/batching",
+          "label": "DataLoader Batching"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/request-caching",
+          "label": "Request-Level Caching"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/dataloader-patterns",
+          "label": "DataLoader Patterns"
+        }
+      ]
+    },
+    {
+      "title": "Caching",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/caching",
+          "label": "GraphQL Caching"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/resolver-caching",
+          "label": "Resolver Caching"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/redis-caching",
+          "label": "GraphQL with Redis"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/response-caching",
+          "label": "Response Caching"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/cache-invalidation",
+          "label": "Cache Invalidation"
+        }
+      ]
+    },
+    {
+      "title": "File Uploads",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/file-uploads",
+          "label": "GraphQL File Uploads"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/multipart-requests",
+          "label": "Multipart Requests"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/upload-scalar",
+          "label": "Upload Scalar"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/s3-uploads",
+          "label": "Upload Files to Amazon S3"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/upload-validation",
+          "label": "File Upload Validation"
+        }
+      ]
+    },
+    {
+      "title": "Schema Management",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/schema-management",
+          "label": "GraphQL Schema Management"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/schema-modules",
+          "label": "Schema Modules"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/schema-stitching",
+          "label": "Schema Stitching"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/schema-versioning",
+          "label": "Schema Versioning"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/schema-registry",
+          "label": "Schema Registry"
+        }
+      ]
+    },
+    {
+      "title": "Schema Evolution",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/schema-evolution",
+          "label": "GraphQL Schema Evolution"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/deprecating-fields",
+          "label": "Deprecating Fields"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/breaking-changes",
+          "label": "Breaking Changes"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/backward-compatibility",
+          "label": "Backward Compatibility"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/schema-migrations",
+          "label": "Schema Migrations"
+        }
+      ]
+    },
+    {
+      "title": "GraphQL Federation",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/federation",
+          "label": "GraphQL Federation"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/federated-subgraphs",
+          "label": "Federated Subgraphs"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/entities",
+          "label": "Federated Entities"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/federation-gateway",
+          "label": "Federation Gateway"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/supergraph",
+          "label": "GraphQL Supergraph"
+        }
+      ]
+    },
+    {
+      "title": "Microservices",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/microservices",
+          "label": "GraphQL with Microservices"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/api-gateway",
+          "label": "GraphQL API Gateway"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/service-boundaries",
+          "label": "Service Boundaries"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/distributed-graphql",
+          "label": "Distributed GraphQL"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/backend-for-frontend",
+          "label": "GraphQL Backend for Frontend"
+        }
+      ]
+    },
+    {
+      "title": "REST Integration",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/rest-integration",
+          "label": "GraphQL with REST APIs"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/rest-data-source",
+          "label": "REST Data Sources"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/wrap-rest-api",
+          "label": "Wrap a REST API with GraphQL"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/rest-error-mapping",
+          "label": "REST Error Mapping"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/rest-to-graphql-migration",
+          "label": "REST to GraphQL Migration"
+        }
+      ]
+    },
+    {
+      "title": "Security",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/security",
+          "label": "GraphQL Security"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/query-depth-limiting",
+          "label": "Query Depth Limiting"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/query-complexity",
+          "label": "Query Complexity Analysis"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/rate-limiting",
+          "label": "GraphQL Rate Limiting"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/introspection-security",
+          "label": "Introspection Security"
+        }
+      ]
+    },
+    {
+      "title": "Performance",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/performance",
+          "label": "GraphQL Performance"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/resolver-optimization",
+          "label": "Resolver Optimization"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/database-query-optimization",
+          "label": "Database Query Optimization"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/persisted-queries",
+          "label": "Persisted Queries"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/n-plus-one",
+          "label": "N+1 Problem and DataLoader"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/performance-monitoring",
+          "label": "GraphQL Performance Monitoring"
+        }
+      ]
+    },
+    {
+      "title": "Testing",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/testing",
+          "label": "GraphQL API Testing"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/unit-testing",
+          "label": "Resolver Unit Testing"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/integration-testing",
+          "label": "GraphQL Integration Testing"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/jest",
+          "label": "GraphQL Testing with Jest"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/schema-testing",
+          "label": "GraphQL Schema Testing"
+        }
+      ]
+    },
+    {
+      "title": "Mocking",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/mocking",
+          "label": "GraphQL Mocking"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/mock-schema",
+          "label": "Mock a GraphQL Schema"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/mock-resolvers",
+          "label": "Mock Resolvers"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/mock-data",
+          "label": "Generate Mock Data"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/testing-mocks",
+          "label": "Testing with GraphQL Mocks"
+        }
+      ]
+    },
+    {
+      "title": "Monitoring",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/monitoring",
+          "label": "GraphQL Monitoring"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/request-logging",
+          "label": "GraphQL Request Logging"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/resolver-metrics",
+          "label": "Resolver Metrics"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/error-monitoring",
+          "label": "GraphQL Error Monitoring"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/apollo-studio",
+          "label": "Apollo Studio"
+        }
+      ]
+    },
+    {
+      "title": "Observability",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/observability",
+          "label": "GraphQL Observability"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/distributed-tracing",
+          "label": "Distributed Tracing"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/opentelemetry",
+          "label": "GraphQL with OpenTelemetry"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/correlation-ids",
+          "label": "Correlation IDs"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/operation-analytics",
+          "label": "GraphQL Operation Analytics"
+        }
+      ]
+    },
+    {
+      "title": "Deployment",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/deployment",
+          "label": "Deploy a GraphQL API"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/docker",
+          "label": "GraphQL with Docker"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/aws-lambda",
+          "label": "GraphQL on AWS Lambda"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/vercel",
+          "label": "Deploy GraphQL to Vercel"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/cloud-deployment",
+          "label": "GraphQL Cloud Deployment"
+        }
+      ]
+    },
+    {
+      "title": "CI/CD",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/ci-cd",
+          "label": "GraphQL CI/CD"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/github-actions",
+          "label": "GitHub Actions"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/schema-checks",
+          "label": "GraphQL Schema Checks"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/breaking-change-detection",
+          "label": "Breaking Change Detection"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/production-releases",
+          "label": "Production Releases"
+        }
+      ]
+    },
+    {
+      "title": "TypeScript",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/typescript",
+          "label": "GraphQL with TypeScript"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/typed-resolvers",
+          "label": "Typed Resolvers"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/graphql-code-generator",
+          "label": "GraphQL Code Generator"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/generated-types",
+          "label": "Generated GraphQL Types"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/type-safe-context",
+          "label": "Type-Safe GraphQL Context"
+        }
+      ]
+    },
+    {
+      "title": "Advanced",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/advanced-architecture",
+          "label": "Advanced GraphQL Architecture"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/custom-execution",
+          "label": "Custom GraphQL Execution"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/graphql-transforms",
+          "label": "GraphQL Schema Transforms"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/live-queries",
+          "label": "GraphQL Live Queries"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/graphql-over-http",
+          "label": "GraphQL over HTTP"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/apollo-client",
+          "label": "Apollo Client Basics"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/defer-stream",
+          "label": "Defer and Stream"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/field-middleware",
+          "label": "Field Middleware"
+        }
+      ]
+    },
+    {
+      "title": "Projects",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/blog-api-project",
+          "label": "GraphQL Blog API"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/ecommerce-api-project",
+          "label": "E-Commerce GraphQL API"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/social-network-project",
+          "label": "Social Network API"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/chat-api-project",
+          "label": "Real-Time Chat API"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/federation-project",
+          "label": "Federated GraphQL Platform"
+        }
+      ]
+    },
+    {
+      "title": "Troubleshooting",
+      "items": [
+        {
+          "href": "/tutorials/graphql-nodejs/debugging",
+          "label": "GraphQL Debugging"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/schema-errors",
+          "label": "GraphQL Schema Errors"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/resolver-errors",
+          "label": "Resolver Errors"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/null-value-errors",
+          "label": "Non-Nullable Field Errors"
+        },
+        {
+          "href": "/tutorials/graphql-nodejs/performance-issues",
+          "label": "GraphQL Performance Issues"
+        }
+      ]
+    }
+  ]
+}

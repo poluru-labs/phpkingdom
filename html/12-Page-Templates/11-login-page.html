@@ -1,0 +1,77 @@
+<!--
+  sitename: phpkingdom
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  topic: 12-Page-Templates
+  example: 11-login-page.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Member Login — phpkingdom</title>
+  <style>
+    body { font-family: Georgia, "Times New Roman", serif; max-width: 720px; margin: 2rem auto; padding: 0 1.25rem; line-height: 1.6; color: #1a1a1a; }
+    h1 { font-size: 1.75rem; margin-bottom: 0.35rem; }
+    nav a { margin-right: 0.75rem; }
+    header { border-bottom: 1px solid #ccc; padding-bottom: 1rem; margin-bottom: 1.5rem; text-align: center; }
+    footer { border-top: 1px solid #ccc; padding-top: 1rem; margin-top: 2rem; color: #555; font-size: 0.95rem; text-align: center; }
+    main { max-width: 380px; margin: 0 auto; }
+    form { display: grid; gap: 0.75rem; border: 1px solid #ccc; padding: 1.25rem; }
+    fieldset { border: 1px solid #ccc; padding: 1rem; margin: 0; }
+    legend { padding: 0 0.35rem; font-weight: bold; }
+    label { display: grid; gap: 0.25rem; }
+    input, button { font: inherit; padding: 0.4rem 0.55rem; }
+    button { cursor: pointer; background: #2a6f97; color: #fff; border: 0; padding: 0.55rem 1rem; }
+    .links { margin-top: 1rem; font-size: 0.95rem; }
+    .links p { margin: 0.35rem 0; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>phpkingdom</h1>
+    <p>Member area — sign in to access tutorials and downloads.</p>
+    <nav>
+      <a href="index.html">Templates</a>
+      <a href="09-pricing-table-page.html">Pricing</a>
+      <a href="15-newsletter-signup.html">Sign up free</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Login</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Account credentials</legend>
+          <label>
+            Email address
+            <input type="email" name="email" autocomplete="username" required>
+          </label>
+          <label>
+            Password
+            <input type="password" name="password" autocomplete="current-password" required>
+          </label>
+          <label>
+            <input type="checkbox" name="remember" value="yes">
+            Remember me on this device
+          </label>
+        </fieldset>
+        <button type="submit">Sign in</button>
+      </form>
+
+      <div class="links">
+        <p><a href="#">Forgot password?</a></p>
+        <p>New here? <a href="09-pricing-table-page.html">View plans</a> or <a href="15-newsletter-signup.html">join the newsletter</a>.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 phpkingdom · Subrahmanyam Poluru · <a href="mailto:mail.polurus@gmail.com">Support</a></p>
+  </footer>
+
+</body>
+</html>

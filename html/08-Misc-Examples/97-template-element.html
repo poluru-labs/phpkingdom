@@ -1,0 +1,35 @@
+<!--
+  sitename: phpkingdom
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  topic: 08-Misc-Examples
+  example: 97-template-element.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Template Element | phpkingdom</title>
+</head>
+<body>
+  <h1>HTML Template Tag</h1>
+
+  <p>Content inside <code>&lt;template&gt;</code> is inert until cloned with JavaScript.</p>
+  <template id="card-template">
+    <article>
+      <h2 class="title"></h2>
+      <p class="body"></p>
+    </article>
+  </template>
+  <div id="mount"></div>
+  <script>
+    const tpl = document.getElementById("card-template");
+    const node = tpl.content.cloneNode(true);
+    node.querySelector(".title").textContent = "From template";
+    node.querySelector(".body").textContent = "Cloned and inserted with JS.";
+    document.getElementById("mount").appendChild(node);
+  </script>
+
+</body>
+</html>

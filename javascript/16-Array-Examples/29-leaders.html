@@ -1,0 +1,38 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 16-Array-Examples
+  example: 29-leaders.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>29 — Leaders in Array | phpkingdom.com</title>
+</head>
+<body>
+  <h1>29 — Leaders in Array</h1>
+  <h2>Problem</h2>
+  <p>An element is a leader if all on its right are smaller.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function leaders(arr) {
+  const out = [];
+  let maxRight = -Infinity;
+  for (let i = arr.length - 1; i >= 0; i--) {
+    if (arr[i] >= maxRight) {
+      out.push(arr[i]);
+      maxRight = arr[i];
+    }
+  }
+  return out.reverse();
+}
+document.getElementById("out").textContent = leaders([16,17,4,3,5,2]).join(", ");
+  </script>
+</body>
+</html>

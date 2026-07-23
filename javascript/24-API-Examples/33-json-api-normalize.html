@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 24-API-Examples
+  example: 33-json-api-normalize.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>33 — Normalize API Response | phpkingdom.com</title>
+</head>
+<body>
+  <h1>33 — Normalize API Response</h1>
+  <h2>Problem</h2>
+  <p>Convert snake_case API fields to camelCase objects.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function toCamelKey(key) {
+  return key.replace(/_([a-z])/g, (_, c) => c.toUpperCase());
+}
+function normalize(obj) {
+  return Object.fromEntries(
+    Object.entries(obj).map(([k, v]) => [toCamelKey(k), v])
+  );
+}
+const apiUser = { first_name: "Ada", last_name: "Lovelace", is_active: true };
+document.getElementById("out").textContent = JSON.stringify(normalize(apiUser));
+  </script>
+</body>
+</html>

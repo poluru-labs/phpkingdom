@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 27-Regex-Examples
+  example: 13-flag-dotall.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>13 — DotAll Flag (s) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>13 — DotAll Flag (s)</h1>
+  <h2>Problem</h2>
+  <p>Make . match newline characters using the s (dotAll) flag.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const text = "start\nend";
+const noDotAll = /start.end/.test(text);
+const dotAll = /start.end/s.test(text);
+document.getElementById("out").textContent =
+  "/start.end/  => " + noDotAll + "\n" +
+  "/start.end/s => " + dotAll;
+  </script>
+</body>
+</html>

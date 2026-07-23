@@ -1,0 +1,50 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 25-Error-Handling-Examples
+  example: 15-retry-helper.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>15 — Retry Helper | phpkingdom.com</title>
+</head>
+<body>
+  <h1>15 — Retry Helper</h1>
+  <h2>Problem</h2>
+  <p>Retry a flaky operation up to n times before failing.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const out = document.getElementById("out");
+let attempts = 0;
+async function flaky() {
+  attempts += 1;
+  if (attempts < 3) throw new Error("temporary");
+  return "done";
+}
+async function retry(fn, max) {
+  for (let i = 1; i <= max; i++) {
+    try {
+      return await fn();
+    } catch (e) {
+      if (i === max) throw e;
+    }
+  }
+}
+(async () => {
+  try {
+    const v = await retry(flaky, 3);
+    out.textContent = v + " after " + attempts + " attempts";
+  } catch (e) {
+    out.textContent = "failed: " + e.message;
+  }
+})();
+  </script>
+</body>
+</html>

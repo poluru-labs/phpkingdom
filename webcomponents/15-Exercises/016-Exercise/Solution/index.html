@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/016-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 016 — composed event from shadow — Solution | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>Exercise 016 — composed event from shadow — Solution</h1>
+  <p class="meta">Button in shadow emits composed custom event.</p>
+  <h2>Solution</h2>
+  <p>Button in shadow emits composed custom event.</p>
+  <div id="demo"></div>
+  <pre id="out"></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+customElements.define("ex016-el", class extends HTMLElement {
+  connectedCallback() {
+    this.textContent = 'composed event from shadow';
+  }
+});
+document.getElementById("demo").innerHTML = "<ex016-el></ex016-el>";
+document.getElementById("out").textContent = 'Button in shadow emits composed custom event.';
+  </script>
+</body>
+</html>

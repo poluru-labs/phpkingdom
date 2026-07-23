@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 03-Control-Flow/03-loops
+  example: 03-for-of-in.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>for...of / for...in | phpkingdom.com</title>
+</head>
+<body>
+  <h1>for...of and for...in</h1>
+  <p>Iterate values vs keys.</p>
+  <pre id="out"></pre>
+  <script>
+const arr = ["a", "b"];
+let out = "of: ";
+for (const v of arr) out += v + " ";
+const obj = {x:1,y:2};
+out += "| in: ";
+for (const k in obj) out += k + " ";
+document.getElementById("out").textContent = out;
+  </script>
+</body>
+</html>

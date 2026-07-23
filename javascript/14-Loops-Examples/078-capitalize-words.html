@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 078-capitalize-words.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>078 — Capitalize Words | phpkingdom.com</title>
+</head>
+<body>
+  <h1>078 — Capitalize Words</h1>
+  <h2>Problem</h2>
+  <p>Uppercase the first letter of each word with loops.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const s = "java script loops";
+const words = s.split(" ");
+for (let i = 0; i < words.length; i++) {
+  if (!words[i]) continue;
+  words[i] = words[i][0].toUpperCase() + words[i].slice(1);
+}
+document.getElementById("out").textContent = words.join(" ");
+  </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  topic: 09-Exercises/15-Exercise
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solution 15 — Input Validation | phpkingdom</title>
+</head>
+<body>
+
+  <form>
+    <p>
+      <label for="username">Username</label><br>
+      <input
+        id="username"
+        name="username"
+        type="text"
+        required
+        minlength="4"
+        maxlength="12"
+        pattern="[A-Za-z]+"
+        title="Letters only, 4 to 12 characters">
+    </p>
+    <button type="submit">Register</button>
+  </form>
+  <hr>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+
+</body>
+</html>

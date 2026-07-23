@@ -1,0 +1,37 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 17-String-Examples
+  example: 36-generate-parentheses.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>36 — Generate Parentheses | phpkingdom.com</title>
+</head>
+<body>
+  <h1>36 — Generate Parentheses</h1>
+  <h2>Problem</h2>
+  <p>Generate all combinations of n pairs of balanced parentheses.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function generateParenthesis(n) {
+  const out = [];
+  function dfs(cur, open, close) {
+    if (cur.length === n * 2) { out.push(cur); return; }
+    if (open < n) dfs(cur + "(", open + 1, close);
+    if (close < open) dfs(cur + ")", open, close + 1);
+  }
+  dfs("", 0, 0);
+  return out;
+}
+document.getElementById("out").textContent = generateParenthesis(3).join(" | ");
+  </script>
+</body>
+</html>

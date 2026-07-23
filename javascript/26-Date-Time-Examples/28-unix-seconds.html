@@ -1,0 +1,35 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 26-Date-Time-Examples
+  example: 28-unix-seconds.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>28 — Unix Timestamp (Seconds) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>28 — Unix Timestamp (Seconds)</h1>
+  <h2>Problem</h2>
+  <p>Convert between Date and Unix seconds since epoch.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+
+const d = new Date(2024, 0, 15, 0, 0, 0);
+const seconds = Math.floor(d.getTime() / 1000);
+const back = new Date(seconds * 1000);
+document.getElementById("out").textContent =
+  "Date: " + d.toString() + "\n" +
+  "Unix seconds: " + seconds + "\n" +
+  "Restored: " + back.toString();
+
+  </script>
+</body>
+</html>

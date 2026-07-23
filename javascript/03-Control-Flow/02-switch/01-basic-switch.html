@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 03-Control-Flow/02-switch
+  example: 01-basic-switch.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Basic Switch | phpkingdom.com</title>
+</head>
+<body>
+  <h1>switch Statement</h1>
+  <p>Match a value against cases.</p>
+  <pre id="out"></pre>
+  <script>
+const day = "Mon";
+let label;
+switch (day) {
+  case "Mon": label = "Start of week"; break;
+  case "Fri": label = "Almost weekend"; break;
+  default: label = "Midweek";
+}
+document.getElementById("out").textContent = label;
+  </script>
+</body>
+</html>

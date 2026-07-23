@@ -1,0 +1,40 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 25-Error-Handling-Examples
+  example: 11-result-ok-err.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>11 — Result ok / err Pattern | phpkingdom.com</title>
+</head>
+<body>
+  <h1>11 — Result ok / err Pattern</h1>
+  <h2>Problem</h2>
+  <p>Return { ok, value } or { ok, error } instead of throwing.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function ok(value) { return { ok: true, value }; }
+function err(error) { return { ok: false, error }; }
+function parseAge(s) {
+  const n = Number(s);
+  if (Number.isNaN(n) || n < 0) return err("invalid age");
+  return ok(n);
+}
+const out = document.getElementById("out");
+const r1 = parseAge("25");
+const r2 = parseAge("x");
+out.textContent = [
+  r1.ok ? "ok: " + r1.value : "err: " + r1.error,
+  r2.ok ? "ok: " + r2.value : "err: " + r2.error,
+].join("\n");
+  </script>
+</body>
+</html>

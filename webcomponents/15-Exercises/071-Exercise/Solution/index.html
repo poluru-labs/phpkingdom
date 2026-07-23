@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/071-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 071 — Slot empty attribute — Solution | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>Exercise 071 — Slot empty attribute — Solution</h1>
+  <p class="meta">Set empty attr when no assigned nodes.</p>
+  <h2>Solution</h2>
+  <p>Set empty attr when no assigned nodes.</p>
+  <div id="demo"></div>
+  <pre id="out"></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+customElements.define("ex071-el", class extends HTMLElement {
+  connectedCallback() {
+    this.textContent = 'Slot empty attribute';
+  }
+});
+document.getElementById("demo").innerHTML = "<ex071-el></ex071-el>";
+document.getElementById("out").textContent = 'Set empty attr when no assigned nodes.';
+  </script>
+</body>
+</html>

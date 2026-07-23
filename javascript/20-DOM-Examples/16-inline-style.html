@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 20-DOM-Examples
+  example: 16-inline-style.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>16 — element.style | phpkingdom.com</title>
+</head>
+<body>
+  <h1>16 — element.style</h1>
+  <h2>Problem</h2>
+  <p>Change inline styles from JavaScript.</p>
+  <h2>Demo</h2>
+  <div id="box">Box</div>
+  <button id="btn">Color me</button>
+  <script>
+document.getElementById("btn").onclick = () => {
+  const box = document.getElementById("box");
+  box.style.background = "#def";
+  box.style.padding = "12px";
+  box.style.border = "2px solid #369";
+};
+  </script>
+</body>
+</html>

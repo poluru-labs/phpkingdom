@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 26-Date-Time-Examples
+  example: 07-get-day-of-week.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>07 — getDay | phpkingdom.com</title>
+</head>
+<body>
+  <h1>07 — getDay</h1>
+  <h2>Problem</h2>
+  <p>getDay() returns 0 (Sunday) through 6 (Saturday).</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+
+const d = new Date(2024, 0, 15); // Monday
+const names = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+document.getElementById("out").textContent =
+  "getDay(): " + d.getDay() + " (" + names[d.getDay()] + ")";
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Module Federation Tutorials
+section title: Dynamic Federation
+topic title: Remote Loader
+content type: Template
+item number: 15
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Remote Loader Template 15 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ffedd5;
+      color: #9a3412;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Template 15</span>
+    <h1>Remote Loader</h1>
+    <p><strong>Section:</strong> Dynamic Federation</p>
+    <p><strong>Focus:</strong> Manifest Loader</p>
+    <p><strong>Scenario:</strong> profile remote</p>
+    <p>Use this scaffold as a starting point for a federated application.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Module Federation</h2>
+        <pre><code>// Remote Loader — Template 15
+// Focus: manifest loader | Scenario: profile remote
+
+// Reusable loader with timeout, retry, and fallback component
+
+async function loadFederated(scope, module, { retries = 1, ms = 8000 } = {}) {
+  const attempt = async () =&gt; {
+    await __webpack_init_sharing__(&quot;default&quot;);
+    const container = window[scope];
+    if (!container) throw new Error(`Missing container ${scope}`);
+    await container.init(__webpack_share_scopes__.default);
+    const factory = await container.get(module);
+    return factory();
+  };
+
+  let lastErr;
+  for (let i = 0; i &lt;= retries; i++) {
+    try {
+      return await Promise.race([
+        attempt(),
+        new Promise((_, rej) =&gt; setTimeout(() =&gt; rej(new Error(&quot;timeout&quot;)), ms)),
+      ]);
+    } catch (e) {
+      lastErr = e;
+      await new Promise((r) =&gt; setTimeout(r, 400 * (i + 1)));
+    }
+  }
+  throw lastErr;
+}
+
+// const Mod = await loadFederated(&quot;products&quot;, &quot;./ProductList&quot;);</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Remote Loader
+- Practice: manifest loader
+- Scenario: profile remote
+- Share framework runtimes as singletons with requiredVersion
+- Load remotes lazily; wrap with error boundaries / fallbacks
+- Deploy remotes independently; version remoteEntry URLs carefully
+- Align CORS and CSP for cross-origin remoteEntry.js
+
+Useful commands:
+  npm install -D webpack webpack-cli webpack-dev-server
+  # run host + remote on different ports
+  npx webpack serve --config webpack.host.js --port 3000
+  npx webpack serve --config webpack.remote.js --port 3002</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This template shows one way to apply <strong>Remote Loader</strong> in a profile remote context.</p>
+      <p>Keep remotes independently deployable, share carefully, and always plan for remote downtime.</p>
+    </section>
+  </main>
+</body>
+</html>

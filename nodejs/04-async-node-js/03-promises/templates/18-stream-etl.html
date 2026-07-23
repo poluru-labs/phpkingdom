@@ -1,0 +1,118 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Node.js Tutorials
+section title: Async Node.js
+topic title: Node.js Promises
+content type: Template
+item number: 18
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Node.js Promises Template 18 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #dcfce7;
+      color: #166534;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Template 18</span>
+    <h1>Node.js Promises</h1>
+    <p><strong>Section:</strong> Async Node.js</p>
+    <p><strong>Focus:</strong> Stream Etl</p>
+    <p><strong>Scenario:</strong> realtime API</p>
+    <p>Use this scaffold as a starting point for a Node.js project.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Node.js</h2>
+        <pre><code>// Node.js Promises — Template 18
+// Focus: stream etl | Scenario: realtime API
+
+import { readFile } from &quot;node:fs/promises&quot;;
+
+readFile(&quot;README.md&quot;, &quot;utf8&quot;)
+  .then((text) =&gt; text.toUpperCase())
+  .then((upper) =&gt; console.log(upper.slice(0, 40)))
+  .catch((err) =&gt; console.error(&quot;failed&quot;, err.message));
+
+const sleep = (ms) =&gt; new Promise((r) =&gt; setTimeout(r, ms));
+await Promise.all([sleep(10), sleep(20)]);</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Node.js Promises
+- Practice: stream etl
+- Scenario: realtime API
+- Prefer promises / async-await over nested callbacks
+- Always handle errors; never leave streams without error listeners
+- Use environment variables for secrets and config
+- Validate inputs at API boundaries
+
+Useful commands:
+  node --version
+  npm init -y
+  node --watch server.mjs
+  npm test
+  NODE_ENV=production node server.mjs</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This template shows one way to apply <strong>Node.js Promises</strong> in a realtime api context.</p>
+      <p>Keep the event loop free of heavy CPU work; offload with workers or queues when needed.</p>
+    </section>
+  </main>
+</body>
+</html>

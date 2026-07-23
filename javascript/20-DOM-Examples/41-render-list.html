@@ -1,0 +1,38 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 20-DOM-Examples
+  example: 41-render-list.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>41 — Render a List from Data | phpkingdom.com</title>
+</head>
+<body>
+  <h1>41 — Render a List from Data</h1>
+  <h2>Problem</h2>
+  <p>Clear a container and render items from a JavaScript array.</p>
+  <h2>Demo</h2>
+  <ul id="list"></ul>
+  <button id="btn">Render fruits</button>
+  <script>
+const fruits = ["Apple", "Banana", "Cherry"];
+document.getElementById("btn").onclick = () => {
+  const list = document.getElementById("list");
+  list.replaceChildren(
+    ...fruits.map((name) => {
+      const li = document.createElement("li");
+      li.textContent = name;
+      return li;
+    })
+  );
+};
+  </script>
+</body>
+</html>

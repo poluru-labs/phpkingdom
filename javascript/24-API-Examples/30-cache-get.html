@@ -1,0 +1,40 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 24-API-Examples
+  example: 30-cache-get.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>30 — Simple GET Cache | phpkingdom.com</title>
+</head>
+<body>
+  <h1>30 — Simple GET Cache</h1>
+  <h2>Problem</h2>
+  <p>Cache GET JSON responses in memory.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const cache = new Map();
+async function cachedGet(key, loader) {
+  if (cache.has(key)) return { ...cache.get(key), cached: true };
+  const data = await loader();
+  cache.set(key, data);
+  return { ...data, cached: false };
+}
+async function load() {
+  const loader = async () => ({ site: "phpkingdom.com", ts: Date.now() });
+  const a = await cachedGet("/api/site", loader);
+  const b = await cachedGet("/api/site", loader);
+  document.getElementById("out").textContent = JSON.stringify({ a, b }, null, 2);
+}
+load();
+  </script>
+</body>
+</html>

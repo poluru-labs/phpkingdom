@@ -1,0 +1,34 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 30-Data-Structures-Examples
+  example: 44-linked-list-length.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>44 — Linked List Length | phpkingdom.com</title>
+</head>
+<body>
+  <h1>44 — Linked List Length</h1>
+  <h2>Problem</h2>
+  <p>Count nodes in a singly linked list.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+class ListNode { constructor(val, next = null) { this.val = val; this.next = next; } }
+function length(head) {
+  let count = 0, cur = head;
+  while (cur) { count++; cur = cur.next; }
+  return count;
+}
+const head = new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4))));
+document.getElementById("out").textContent = "length = " + length(head);
+  </script>
+</body>
+</html>

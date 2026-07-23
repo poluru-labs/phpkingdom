@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 034-linear-search.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>034 — Linear Search | phpkingdom.com</title>
+</head>
+<body>
+  <h1>034 — Linear Search</h1>
+  <h2>Problem</h2>
+  <p>Return the index of a target, or -1 if missing.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function linearSearch(arr, target) {
+  for (let i = 0; i < arr.length; i++) if (arr[i] === target) return i;
+  return -1;
+}
+const arr = [5, 3, 8, 1, 9];
+document.getElementById("out").textContent =
+  "index of 8 = " + linearSearch(arr, 8) + "\nindex of 2 = " + linearSearch(arr, 2);
+  </script>
+</body>
+</html>

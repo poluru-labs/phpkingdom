@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 28-Tricky-Examples
+  example: 10-parseint-map.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>10 — parseInt as map Callback Trap | phpkingdom.com</title>
+</head>
+<body>
+  <h1>10 — parseInt as map Callback Trap</h1>
+  <h2>Problem / Gotcha</h2>
+  <p>map passes index as radix to parseInt.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const arr = ["10", "10", "10"];
+document.getElementById("out").textContent =
+  "bad: [" + arr.map(parseInt).join(", ") + "]\n" +
+  "good: [" + arr.map((n) => parseInt(n, 10)).join(", ") + "]";
+  </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 19-Recursion-Examples
+  example: 30-reverse-number.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>30 — Reverse Number | phpkingdom.com</title>
+</head>
+<body>
+  <h1>30 — Reverse Number</h1>
+  <h2>Problem</h2>
+  <p>Reverse the digits of an integer recursively.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function reverseNumber(n, acc = 0) {
+  if (n === 0) return acc;
+  return reverseNumber(Math.floor(n / 10), acc * 10 + (n % 10));
+}
+document.getElementById("out").textContent = "reverse(12345) = " + reverseNumber(12345);
+  </script>
+</body>
+</html>

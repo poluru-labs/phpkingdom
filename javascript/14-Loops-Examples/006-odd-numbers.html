@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 006-odd-numbers.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>006 — Odd Numbers in Range | phpkingdom.com</title>
+</head>
+<body>
+  <h1>006 — Odd Numbers in Range</h1>
+  <h2>Problem</h2>
+  <p>Print all odd numbers from 1 to N.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const N = 20;
+const odds = [];
+for (let i = 1; i <= N; i++) if (i % 2 !== 0) odds.push(i);
+document.getElementById("out").textContent = odds.join(" ");
+  </script>
+</body>
+</html>

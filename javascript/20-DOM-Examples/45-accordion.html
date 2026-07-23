@@ -1,0 +1,41 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 20-DOM-Examples
+  example: 45-accordion.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>45 — Accordion | phpkingdom.com</title>
+</head>
+<body>
+  <h1>45 — Accordion</h1>
+  <h2>Problem</h2>
+  <p>Expand/collapse sections one at a time.</p>
+  <h2>Demo</h2>
+  <div class="acc">
+    <button data-panel="1">Section 1</button>
+    <div id="p1" hidden>Content one</div>
+    <button data-panel="2">Section 2</button>
+    <div id="p2" hidden>Content two</div>
+    <button data-panel="3">Section 3</button>
+    <div id="p3" hidden>Content three</div>
+  </div>
+  <script>
+document.querySelector(".acc").addEventListener("click", (e) => {
+  const btn = e.target.closest("[data-panel]");
+  if (!btn) return;
+  const id = "p" + btn.dataset.panel;
+  document.querySelectorAll(".acc > div").forEach((panel) => {
+    panel.hidden = panel.id !== id ? true : !panel.hidden;
+  });
+});
+  </script>
+</body>
+</html>

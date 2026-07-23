@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 16-Array-Examples
+  example: 40-wave-array.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>40 — Wave Array | phpkingdom.com</title>
+</head>
+<body>
+  <h1>40 — Wave Array</h1>
+  <h2>Problem</h2>
+  <p>Arrange as arr[0] >= arr[1] <= arr[2] >= arr[3] ...</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function wave(arr) {
+  const a = [...arr].sort((x, y) => x - y);
+  for (let i = 0; i < a.length - 1; i += 2) [a[i], a[i + 1]] = [a[i + 1], a[i]];
+  return a;
+}
+document.getElementById("out").textContent = wave([10,5,6,3,2,20,100,80]).join(", ");
+  </script>
+</body>
+</html>

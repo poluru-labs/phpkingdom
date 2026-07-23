@@ -1,0 +1,44 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 12-Misc-Examples
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>12-Misc-Examples | phpkingdom.com</title>
+  <style>
+    body { font-family: Georgia, "Times New Roman", serif; max-width: 760px; margin: 2rem auto; padding: 0 1.25rem; line-height: 1.6; color: #1a1a1a; }
+    h1 { font-size: 1.75rem; margin-bottom: 0.35rem; }
+    .meta { color: #555; font-size: 0.95rem; margin-bottom: 1.25rem; }
+    .note { background: #f0f7fb; padding: 0.75rem 1rem; border-left: 3px solid #0f766e; margin: 1rem 0; }
+    .demo { margin: 1rem 0; padding: 1rem; border: 1px dashed #94a3b8; }
+    pre, code { font-family: ui-monospace, Menlo, monospace; }
+    pre { background: #111827; color: #e5e7eb; padding: 0.85rem 1rem; overflow: auto; }
+    button, input, select, textarea { font: inherit; padding: 0.4rem 0.55rem; }
+    button { cursor: pointer; background: #0f766e; color: #fff; border: 0; padding: 0.55rem 1rem; }
+    #out { white-space: pre-wrap; background: #f4f4f4; padding: 0.75rem; min-height: 2rem; }
+    a { color: #0f766e; }
+    footer { border-top: 1px solid #ccc; padding-top: 1rem; margin-top: 2rem; color: #555; font-size: 0.95rem; }
+
+    .brand { color:#0f766e; font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    ol { line-height: 1.75; }
+  </style>
+</head>
+<body>
+  <div class="brand">phpkingdom.com</div>
+  <h1>12-Misc-Examples</h1>
+  <p class="meta">100 examples. Minimal HTML — focus on the script.</p>
+  <p><a href="../index.html">← JavaScript Tutorials</a></p>
+  <ol><li><a href="001-console-log.html">001 — console.log</a></li><li><a href="002-typeof.html">002 — typeof</a></li><li><a href="003-template-string.html">003 — Template string</a></li><li><a href="004-const-array.html">004 — Const array mutate</a></li><li><a href="005-object-freeze-note.html">005 — Object.assign copy</a></li><li><a href="006-number-isnan.html">006 — Number.isNaN</a></li><li><a href="007-parse-int.html">007 — parseInt</a></li><li><a href="008-math-random.html">008 — Math.random</a></li><li><a href="009-math-max-min.html">009 — Math.max/min</a></li><li><a href="010-string-methods.html">010 — String methods</a></li><li><a href="011-includes-string.html">011 — String includes</a></li><li><a href="012-split-join.html">012 — split/join</a></li><li><a href="013-array-push-pop.html">013 — push/pop</a></li><li><a href="014-array-map.html">014 — map</a></li><li><a href="015-array-filter.html">015 — filter</a></li><li><a href="016-array-reduce.html">016 — reduce</a></li><li><a href="017-array-find.html">017 — find</a></li><li><a href="018-array-some-every.html">018 — some/every</a></li><li><a href="019-array-sort-numbers.html">019 — sort numbers</a></li><li><a href="020-array-flat.html">020 — flat</a></li><li><a href="021-destructure-obj.html">021 — Destructure object</a></li><li><a href="022-destructure-arr.html">022 — Destructure array</a></li><li><a href="023-spread-array.html">023 — Spread array</a></li><li><a href="024-spread-object.html">024 — Spread object</a></li><li><a href="025-rest-args.html">025 — Rest args</a></li><li><a href="026-optional-chaining.html">026 — Optional chaining</a></li><li><a href="027-nullish.html">027 — Nullish coalescing</a></li><li><a href="028-ternary.html">028 — Ternary</a></li><li><a href="029-short-circuit.html">029 — Short-circuit &amp;&amp;</a></li><li><a href="030-for-of.html">030 — for...of</a></li><li><a href="031-for-in.html">031 — for...in</a></li><li><a href="032-while-loop.html">032 — while</a></li><li><a href="033-switch-case.html">033 — switch</a></li><li><a href="034-function-decl.html">034 — Function decl</a></li><li><a href="035-arrow-fn.html">035 — Arrow fn</a></li><li><a href="036-default-params.html">036 — Default params</a></li><li><a href="037-closure-make.html">037 — Closure</a></li><li><a href="038-iife.html">038 — IIFE</a></li><li><a href="039-callback.html">039 — Callback</a></li><li><a href="040-promise-resolve.html">040 — Promise.resolve</a></li><li><a href="041-promise-all.html">041 — Promise.all</a></li><li><a href="042-async-await.html">042 — async/await</a></li><li><a href="043-settimeout.html">043 — setTimeout</a></li><li><a href="044-json-roundtrip.html">044 — JSON roundtrip</a></li><li><a href="045-date-now.html">045 — Date.now</a></li><li><a href="046-date-format.html">046 — Date locale</a></li><li><a href="047-regexp-test.html">047 — RegExp test</a></li><li><a href="048-regexp-match.html">048 — String match</a></li><li><a href="049-try-catch.html">049 — try/catch</a></li><li><a href="050-throw-error.html">050 — throw</a></li><li><a href="051-class-basic.html">051 — class</a></li><li><a href="052-extends.html">052 — extends</a></li><li><a href="053-map-object.html">053 — Map</a></li><li><a href="054-set-unique.html">054 — Set</a></li><li><a href="055-object-keys.html">055 — Object.keys</a></li><li><a href="056-object-values.html">056 — Object.values</a></li><li><a href="057-object-entries.html">057 — Object.entries</a></li><li><a href="058-from-entries.html">058 — Object.fromEntries</a></li><li><a href="059-pad-start.html">059 — padStart</a></li><li><a href="060-repeat-string.html">060 — repeat</a></li><li><a href="061-starts-ends.html">061 — startsWith/endsWith</a></li><li><a href="062-array-at.html">062 — at()</a></li><li><a href="063-array-includes.html">063 — includes</a></li><li><a href="064-fill-array.html">064 — fill</a></li><li><a href="065-array-from.html">065 — Array.from</a></li><li><a href="066-query-id.html">066 — getElementById</a></li><li><a href="067-create-element.html">067 — createElement</a></li><li><a href="068-classlist-toggle.html">068 — classList</a></li><li><a href="069-dataset.html">069 — dataset</a></li><li><a href="070-add-listener.html">070 — addEventListener</a></li><li><a href="071-prevent-default-shape.html">071 — preventDefault shape</a></li><li><a href="072-localstorage.html">072 — localStorage</a></li><li><a href="073-sessionstorage.html">073 — sessionStorage</a></li><li><a href="074-json-storage.html">074 — JSON storage</a></li><li><a href="075-encode-uri.html">075 — encodeURIComponent</a></li><li><a href="076-decode-uri.html">076 — decodeURIComponent</a></li><li><a href="077-number-format.html">077 — toFixed</a></li><li><a href="078-parse-float.html">078 — parseFloat</a></li><li><a href="079-is-finite.html">079 — Number.isFinite</a></li><li><a href="080-bigint.html">080 — BigInt</a></li><li><a href="081-symbol.html">081 — Symbol</a></li><li><a href="082-equality.html">082 — == vs ===</a></li><li><a href="083-bitwise-and.html">083 — Bitwise &amp;</a></li><li><a href="084-increment.html">084 — ++ operator</a></li><li><a href="085-comma-operator.html">085 — Comma operator</a></li><li><a href="086-void-op.html">086 — void 0</a></li><li><a href="087-in-operator.html">087 — in operator</a></li><li><a href="088-instanceof.html">088 — instanceof</a></li><li><a href="089-this-method.html">089 — this method</a></li><li><a href="090-bind.html">090 — bind</a></li><li><a href="091-call-apply.html">091 — call</a></li><li><a href="092-debounce-shape.html">092 — Debounce shape</a></li><li><a href="093-throttle-shape.html">093 — Throttle shape</a></li><li><a href="094-deep-clone-json.html">094 — JSON clone</a></li><li><a href="095-unique-array.html">095 — Unique via Set</a></li><li><a href="096-chunk-shape.html">096 — Chunk idea</a></li><li><a href="097-capitalize.html">097 — Capitalize</a></li><li><a href="098-count-chars.html">098 — Count chars</a></li><li><a href="099-reverse-string.html">099 — Reverse string</a></li><li><a href="100-palindrome.html">100 — Palindrome check</a></li></ol>
+  <footer>
+    <p>&copy; 2026 phpkingdom.com · Subrahmanyam Poluru · <a href="https://polurus.com">polurus.com</a></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,305 @@
+{
+  "title": "Tailwind CSS Tutorials",
+  "items": [
+    {
+      "title": "Basics",
+      "items": [
+        {
+          "href": "/tutorials/tailwind-css/introduction",
+          "label": "Introduction"
+        },
+        {
+          "href": "/tutorials/tailwind-css/basics",
+          "label": "Basics"
+        },
+        {
+          "href": "/tutorials/tailwind-css/setup",
+          "label": "Setup"
+        },
+        {
+          "href": "/tutorials/tailwind-css/cdn-installation",
+          "label": "Cdn Installation"
+        },
+        {
+          "href": "/tutorials/tailwind-css/utility-first",
+          "label": "Utility First"
+        }
+      ]
+    },
+    {
+      "title": "Core Concepts",
+      "items": [
+        {
+          "href": "/tutorials/tailwind-css/utility-classes",
+          "label": "Utility Classes"
+        },
+        {
+          "href": "/tutorials/tailwind-css/responsive-design",
+          "label": "Responsive Design"
+        },
+        {
+          "href": "/tutorials/tailwind-css/hover-focus-states",
+          "label": "Hover Focus States"
+        },
+        {
+          "href": "/tutorials/tailwind-css/dark-mode",
+          "label": "Dark Mode"
+        },
+        {
+          "href": "/tutorials/tailwind-css/apply-directive",
+          "label": "Apply Directive"
+        }
+      ]
+    },
+    {
+      "title": "Layout",
+      "items": [
+        {
+          "href": "/tutorials/tailwind-css/container",
+          "label": "Container"
+        },
+        {
+          "href": "/tutorials/tailwind-css/display",
+          "label": "Display"
+        },
+        {
+          "href": "/tutorials/tailwind-css/position",
+          "label": "Position"
+        },
+        {
+          "href": "/tutorials/tailwind-css/z-index",
+          "label": "Z Index"
+        },
+        {
+          "href": "/tutorials/tailwind-css/overflow",
+          "label": "Overflow"
+        }
+      ]
+    },
+    {
+      "title": "Flexbox And Grid",
+      "items": [
+        {
+          "href": "/tutorials/tailwind-css/flexbox",
+          "label": "Flexbox"
+        },
+        {
+          "href": "/tutorials/tailwind-css/flex-direction",
+          "label": "Flex Direction"
+        },
+        {
+          "href": "/tutorials/tailwind-css/justify-content",
+          "label": "Justify Content"
+        },
+        {
+          "href": "/tutorials/tailwind-css/align-items",
+          "label": "Align Items"
+        },
+        {
+          "href": "/tutorials/tailwind-css/grid",
+          "label": "Grid"
+        }
+      ]
+    },
+    {
+      "title": "Spacing And Sizing",
+      "items": [
+        {
+          "href": "/tutorials/tailwind-css/margin",
+          "label": "Margin"
+        },
+        {
+          "href": "/tutorials/tailwind-css/padding",
+          "label": "Padding"
+        },
+        {
+          "href": "/tutorials/tailwind-css/width",
+          "label": "Width"
+        },
+        {
+          "href": "/tutorials/tailwind-css/height",
+          "label": "Height"
+        },
+        {
+          "href": "/tutorials/tailwind-css/gap",
+          "label": "Gap"
+        }
+      ]
+    },
+    {
+      "title": "Typography",
+      "items": [
+        {
+          "href": "/tutorials/tailwind-css/typography",
+          "label": "Typography"
+        },
+        {
+          "href": "/tutorials/tailwind-css/font-size",
+          "label": "Font Size"
+        },
+        {
+          "href": "/tutorials/tailwind-css/font-weight",
+          "label": "Font Weight"
+        },
+        {
+          "href": "/tutorials/tailwind-css/text-color",
+          "label": "Text Color"
+        },
+        {
+          "href": "/tutorials/tailwind-css/text-alignment",
+          "label": "Text Alignment"
+        }
+      ]
+    },
+    {
+      "title": "Colors And Backgrounds",
+      "items": [
+        {
+          "href": "/tutorials/tailwind-css/colors",
+          "label": "Colors"
+        },
+        {
+          "href": "/tutorials/tailwind-css/background-color",
+          "label": "Background Color"
+        },
+        {
+          "href": "/tutorials/tailwind-css/gradients",
+          "label": "Gradients"
+        },
+        {
+          "href": "/tutorials/tailwind-css/opacity",
+          "label": "Opacity"
+        },
+        {
+          "href": "/tutorials/tailwind-css/shadows",
+          "label": "Shadows"
+        }
+      ]
+    },
+    {
+      "title": "Borders And Effects",
+      "items": [
+        {
+          "href": "/tutorials/tailwind-css/borders",
+          "label": "Borders"
+        },
+        {
+          "href": "/tutorials/tailwind-css/border-radius",
+          "label": "Border Radius"
+        },
+        {
+          "href": "/tutorials/tailwind-css/ring",
+          "label": "Ring"
+        },
+        {
+          "href": "/tutorials/tailwind-css/filters",
+          "label": "Filters"
+        },
+        {
+          "href": "/tutorials/tailwind-css/transitions",
+          "label": "Transitions"
+        }
+      ]
+    },
+    {
+      "title": "Forms",
+      "items": [
+        {
+          "href": "/tutorials/tailwind-css/forms",
+          "label": "Forms"
+        },
+        {
+          "href": "/tutorials/tailwind-css/input-styling",
+          "label": "Input Styling"
+        },
+        {
+          "href": "/tutorials/tailwind-css/checkbox-radio",
+          "label": "Checkbox Radio"
+        },
+        {
+          "href": "/tutorials/tailwind-css/form-validation",
+          "label": "Form Validation"
+        },
+        {
+          "href": "/tutorials/tailwind-css/select-and-textarea",
+          "label": "Select And Textarea"
+        }
+      ]
+    },
+    {
+      "title": "Components",
+      "items": [
+        {
+          "href": "/tutorials/tailwind-css/buttons",
+          "label": "Buttons"
+        },
+        {
+          "href": "/tutorials/tailwind-css/cards",
+          "label": "Cards"
+        },
+        {
+          "href": "/tutorials/tailwind-css/navbar",
+          "label": "Navbar"
+        },
+        {
+          "href": "/tutorials/tailwind-css/modal",
+          "label": "Modal"
+        },
+        {
+          "href": "/tutorials/tailwind-css/dropdown",
+          "label": "Dropdown"
+        }
+      ]
+    },
+    {
+      "title": "Customization",
+      "items": [
+        {
+          "href": "/tutorials/tailwind-css/configuration",
+          "label": "Configuration"
+        },
+        {
+          "href": "/tutorials/tailwind-css/theme-customization",
+          "label": "Theme Customization"
+        },
+        {
+          "href": "/tutorials/tailwind-css/custom-colors",
+          "label": "Custom Colors"
+        },
+        {
+          "href": "/tutorials/tailwind-css/custom-spacing",
+          "label": "Custom Spacing"
+        },
+        {
+          "href": "/tutorials/tailwind-css/plugins",
+          "label": "Plugins"
+        }
+      ]
+    },
+    {
+      "title": "Advanced",
+      "items": [
+        {
+          "href": "/tutorials/tailwind-css/arbitrary-values",
+          "label": "Arbitrary Values"
+        },
+        {
+          "href": "/tutorials/tailwind-css/arbitrary-variants",
+          "label": "Arbitrary Variants"
+        },
+        {
+          "href": "/tutorials/tailwind-css/responsive-patterns",
+          "label": "Responsive Patterns"
+        },
+        {
+          "href": "/tutorials/tailwind-css/performance",
+          "label": "Performance"
+        },
+        {
+          "href": "/tutorials/tailwind-css/accessibility",
+          "label": "Accessibility"
+        }
+      ]
+    }
+  ]
+}

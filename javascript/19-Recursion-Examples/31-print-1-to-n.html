@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 19-Recursion-Examples
+  example: 31-print-1-to-n.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>31 — Print 1 to n | phpkingdom.com</title>
+</head>
+<body>
+  <h1>31 — Print 1 to n</h1>
+  <h2>Problem</h2>
+  <p>Print numbers from 1 up to n using recursion (ascending).</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function printAsc(n) {
+  if (n <= 0) return [];
+  return printAsc(n - 1).concat(n);
+}
+document.getElementById("out").textContent = printAsc(8).join(" ");
+  </script>
+</body>
+</html>

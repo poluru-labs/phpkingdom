@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 17-String-Examples
+  example: 05-char-frequency.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>05 — Character Frequency | phpkingdom.com</title>
+</head>
+<body>
+  <h1>05 — Character Frequency</h1>
+  <h2>Problem</h2>
+  <p>Build a frequency map of each character.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function charFrequency(s) {
+  const map = {};
+  for (const ch of s) map[ch] = (map[ch] || 0) + 1;
+  return map;
+}
+document.getElementById("out").textContent = JSON.stringify(charFrequency("banana"));
+  </script>
+</body>
+</html>

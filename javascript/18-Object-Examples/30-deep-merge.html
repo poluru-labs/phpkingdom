@@ -1,0 +1,37 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 18-Object-Examples
+  example: 30-deep-merge.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>30 — Deep Merge Objects | phpkingdom.com</title>
+</head>
+<body>
+  <h1>30 — Deep Merge Objects</h1>
+  <h2>Problem</h2>
+  <p>Recursively merge plain objects.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function deepMerge(target, source) {
+  const out = { ...target };
+  for (const [k, v] of Object.entries(source)) {
+    if (v && typeof v === "object" && !Array.isArray(v)) out[k] = deepMerge(out[k] || {}, v);
+    else out[k] = v;
+  }
+  return out;
+}
+const a = { theme: { mode: "light", font: 16 }, ok: true };
+const b = { theme: { mode: "dark" }, lang: "en" };
+document.getElementById("out").textContent = JSON.stringify(deepMerge(a, b), null, 2);
+  </script>
+</body>
+</html>

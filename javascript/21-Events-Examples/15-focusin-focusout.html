@@ -1,0 +1,39 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 21-Events-Examples
+  example: 15-focusin-focusout.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>15 — focusin / focusout Bubbling | phpkingdom.com</title>
+</head>
+<body>
+  <h1>15 — focusin / focusout Bubbling</h1>
+  <h2>Problem</h2>
+  <p>Use bubbling focusin/focusout on a parent container.</p>
+  <h2>Demo</h2>
+  <fieldset id="wrap">
+    <legend>Form</legend>
+    <input id="x" placeholder="x">
+    <input id="y" placeholder="y">
+  </fieldset>
+  <pre id="out"></pre>
+  <script>
+const wrap = document.getElementById("wrap");
+const out = document.getElementById("out");
+wrap.addEventListener("focusin", (e) => {
+  out.textContent = "focusin → " + e.target.id;
+});
+wrap.addEventListener("focusout", (e) => {
+  out.textContent = "focusout → " + e.target.id;
+});
+  </script>
+</body>
+</html>

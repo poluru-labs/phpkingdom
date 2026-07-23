@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 07-DOM/03-dom-manipulation
+  example: 02-classlist-style.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>classList | phpkingdom.com</title>
+</head>
+<body>
+  <h1>classList Toggle</h1>
+  <p>Add/remove CSS classes (no stylesheet required for demo).</p>
+  <p id="box">Box</p>
+  <button id="btn" type="button">Toggle highlight class</button>
+  <pre id="out"></pre>
+  <script>
+document.getElementById("btn").onclick = function () {
+  const box = document.getElementById("box");
+  box.classList.toggle("highlight");
+  document.getElementById("out").textContent = box.className;
+};
+  </script>
+</body>
+</html>

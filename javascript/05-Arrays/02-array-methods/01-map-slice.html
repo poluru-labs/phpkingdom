@@ -1,0 +1,27 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 05-Arrays/02-array-methods
+  example: 01-map-slice.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>includes indexOf | phpkingdom.com</title>
+</head>
+<body>
+  <h1>includes and indexOf</h1>
+  <p>Search inside arrays.</p>
+  <pre id="out"></pre>
+  <script>
+const colors = ["red", "green", "blue"];
+document.getElementById("out").textContent =
+  colors.includes("green") + " / " + colors.indexOf("blue");
+  </script>
+</body>
+</html>

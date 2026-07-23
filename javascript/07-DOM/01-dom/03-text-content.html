@@ -1,0 +1,28 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 07-DOM/01-dom
+  example: 03-text-content.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>textContent | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Read/Write textContent</h1>
+  <p>Update element text.</p>
+  <p id="msg">Old text</p>
+  <button id="btn" type="button">Update</button>
+  <script>
+document.getElementById("btn").onclick = function () {
+  document.getElementById("msg").textContent = "Updated by JavaScript";
+};
+  </script>
+</body>
+</html>

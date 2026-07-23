@@ -1,0 +1,40 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 30-Data-Structures-Examples
+  example: 38-shortest-path-bfs.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>38 — Shortest Path (Unweighted BFS) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>38 — Shortest Path (Unweighted BFS)</h1>
+  <h2>Problem</h2>
+  <p>Find shortest path length in an unweighted graph using BFS.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const adj = { A: ["B","C"], B: ["A","D","E"], C: ["A","F"], D: ["B"], E: ["B","F"], F: ["C","E"] };
+function shortestPath(start, goal) {
+  const q = [[start, 0]];
+  const visited = new Set([start]);
+  while (q.length) {
+    const [v, dist] = q.shift();
+    if (v === goal) return dist;
+    for (const nb of adj[v] || []) {
+      if (!visited.has(nb)) { visited.add(nb); q.push([nb, dist + 1]); }
+    }
+  }
+  return -1;
+}
+document.getElementById("out").textContent = "A to F distance = " + shortestPath("A", "F");
+  </script>
+</body>
+</html>

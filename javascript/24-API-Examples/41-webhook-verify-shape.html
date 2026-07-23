@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 24-API-Examples
+  example: 41-webhook-verify-shape.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>41 — Webhook Signature Check (Shape) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>41 — Webhook Signature Check (Shape)</h1>
+  <h2>Problem</h2>
+  <p>Compare a provided signature with a shared secret digest pattern.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function verifyWebhook(payload, signature, secret) {
+  // In Node: crypto.createHmac("sha256", secret).update(payload).digest("hex")
+  // Browser demo uses a simplified equality check:
+  const expected = "sha256=" + btoa(secret + ":" + payload).slice(0, 16);
+  return signature === expected;
+}
+const payload = '{"event":"order.created"}';
+const secret = "whsec_demo";
+const signature = "sha256=" + btoa(secret + ":" + payload).slice(0, 16);
+document.getElementById("out").textContent = String(verifyWebhook(payload, signature, secret));
+  </script>
+</body>
+</html>

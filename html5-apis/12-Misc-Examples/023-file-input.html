@@ -1,0 +1,25 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 12-Misc-Examples
+  example: 023-file-input.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>023 — File input change | phpkingdom.com</title>
+</head>
+<body>
+  <h1>023 — File input change</h1>
+  <p>Read File metadata.</p>
+<input id="f" type="file"><pre id="out"></pre>
+  <script>
+document.getElementById("f").onchange=e=>{const f=e.target.files[0];document.getElementById("out").textContent=f?f.name:"";};
+  </script>
+</body>
+</html>

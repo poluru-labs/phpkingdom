@@ -1,0 +1,40 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 19-Recursion-Examples
+  example: 17-combinations.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>17 — Combinations | phpkingdom.com</title>
+</head>
+<body>
+  <h1>17 — Combinations</h1>
+  <h2>Problem</h2>
+  <p>Choose k elements from n items (order does not matter) using recursion.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function combinations(arr, k, start = 0, path = [], result = []) {
+  if (path.length === k) {
+    result.push([...path]);
+    return result;
+  }
+  for (let i = start; i < arr.length; i++) {
+    path.push(arr[i]);
+    combinations(arr, k, i + 1, path, result);
+    path.pop();
+  }
+  return result;
+}
+const combos = combinations([1, 2, 3, 4], 2);
+document.getElementById("out").textContent = combos.map((c) => c.join(",")).join("\n");
+  </script>
+</body>
+</html>

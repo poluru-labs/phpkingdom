@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 21-Events-Examples
+  example: 03-mousedown-mouseup.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>03 — mousedown / mouseup | phpkingdom.com</title>
+</head>
+<body>
+  <h1>03 — mousedown / mouseup</h1>
+  <h2>Problem</h2>
+  <p>Track press and release separately from click.</p>
+  <h2>Demo</h2>
+  <button id="btn">Press and release</button>
+  <pre id="out"></pre>
+  <script>
+const out = document.getElementById("out");
+const btn = document.getElementById("btn");
+btn.addEventListener("mousedown", () => { out.textContent = "mousedown"; });
+btn.addEventListener("mouseup", () => { out.textContent += " → mouseup"; });
+btn.addEventListener("click", () => { out.textContent += " → click"; });
+  </script>
+</body>
+</html>

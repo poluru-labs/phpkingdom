@@ -1,0 +1,34 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 19-Recursion-Examples
+  example: 33-array-includes.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>33 — Array Includes | phpkingdom.com</title>
+</head>
+<body>
+  <h1>33 — Array Includes</h1>
+  <h2>Problem</h2>
+  <p>Check if an array contains a value using recursion.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function arrayIncludes(arr, target, i = 0) {
+  if (i >= arr.length) return false;
+  if (arr[i] === target) return true;
+  return arrayIncludes(arr, target, i + 1);
+}
+const fruits = ["apple", "banana", "cherry"];
+document.getElementById("out").textContent =
+  "banana: " + arrayIncludes(fruits, "banana") + "\ngrape: " + arrayIncludes(fruits, "grape");
+  </script>
+</body>
+</html>

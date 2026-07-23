@@ -1,0 +1,37 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 27-Regex-Examples
+  example: 41-lastindex-pitfall.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>41 — lastIndex Global Pitfall | phpkingdom.com</title>
+</head>
+<body>
+  <h1>41 — lastIndex Global Pitfall</h1>
+  <h2>Problem</h2>
+  <p>Show how a global regex remembers lastIndex between test() calls.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const re = /a/g;
+const text = "aba";
+const results = [
+  "test #1: " + re.test(text) + " lastIndex=" + re.lastIndex,
+  "test #2: " + re.test(text) + " lastIndex=" + re.lastIndex,
+  "test #3: " + re.test(text) + " lastIndex=" + re.lastIndex,
+  "fix: reset lastIndex to 0 before each test"
+];
+re.lastIndex = 0;
+results.push("reset test: " + re.test(text));
+document.getElementById("out").textContent = results.join("\n");
+  </script>
+</body>
+</html>

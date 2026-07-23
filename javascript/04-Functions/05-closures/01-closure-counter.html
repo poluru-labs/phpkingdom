@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 04-Functions/05-closures
+  example: 01-closure-counter.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Closure Counter | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Closure Counter</h1>
+  <p>Inner function remembers outer state.</p>
+  <button id="btn" type="button">Increment</button>
+  <pre id="out">0</pre>
+  <script>
+function makeCounter() {
+  let count = 0;
+  return function () {
+    count += 1;
+    return count;
+  };
+}
+const next = makeCounter();
+document.getElementById("btn").onclick = function () {
+  document.getElementById("out").textContent = String(next());
+};
+  </script>
+</body>
+</html>

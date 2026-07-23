@@ -1,0 +1,879 @@
+{
+  "title": "Design System Tutorials",
+  "items": [
+    {
+      "title": "Design System Basics",
+      "items": [
+        {
+          "href": "/tutorials/design-system/introduction",
+          "label": "Design System - Introduction"
+        },
+        {
+          "href": "/tutorials/design-system/basics",
+          "label": "Design System - Basics"
+        },
+        {
+          "href": "/tutorials/design-system/what-is-a-design-system",
+          "label": "What Is a Design System?"
+        },
+        {
+          "href": "/tutorials/design-system/why-design-systems",
+          "label": "Why Design Systems Matter"
+        },
+        {
+          "href": "/tutorials/design-system/design-system-vs-style-guide",
+          "label": "Design System vs Style Guide"
+        }
+      ]
+    },
+    {
+      "title": "Strategy and Planning",
+      "items": [
+        {
+          "href": "/tutorials/design-system/design-system-strategy",
+          "label": "Design System Strategy"
+        },
+        {
+          "href": "/tutorials/design-system/business-case",
+          "label": "Design System Business Case"
+        },
+        {
+          "href": "/tutorials/design-system/stakeholder-alignment",
+          "label": "Stakeholder Alignment"
+        },
+        {
+          "href": "/tutorials/design-system/design-system-roadmap",
+          "label": "Design System Roadmap"
+        },
+        {
+          "href": "/tutorials/design-system/success-metrics",
+          "label": "Design System Success Metrics"
+        }
+      ]
+    },
+    {
+      "title": "Design Foundations",
+      "items": [
+        {
+          "href": "/tutorials/design-system/design-foundations",
+          "label": "Design Foundations"
+        },
+        {
+          "href": "/tutorials/design-system/design-principles",
+          "label": "Design Principles"
+        },
+        {
+          "href": "/tutorials/design-system/visual-language",
+          "label": "Visual Language"
+        },
+        {
+          "href": "/tutorials/design-system/brand-foundations",
+          "label": "Brand Foundations"
+        },
+        {
+          "href": "/tutorials/design-system/content-guidelines",
+          "label": "Content Guidelines"
+        }
+      ]
+    },
+    {
+      "title": "Design Tokens",
+      "items": [
+        {
+          "href": "/tutorials/design-system/design-tokens",
+          "label": "Design Tokens"
+        },
+        {
+          "href": "/tutorials/design-system/token-types",
+          "label": "Design Token Types"
+        },
+        {
+          "href": "/tutorials/design-system/primitive-tokens",
+          "label": "Primitive Tokens"
+        },
+        {
+          "href": "/tutorials/design-system/semantic-tokens",
+          "label": "Semantic Tokens"
+        },
+        {
+          "href": "/tutorials/design-system/component-tokens",
+          "label": "Component Tokens"
+        }
+      ]
+    },
+    {
+      "title": "Token Architecture",
+      "items": [
+        {
+          "href": "/tutorials/design-system/token-architecture",
+          "label": "Token Architecture"
+        },
+        {
+          "href": "/tutorials/design-system/token-naming",
+          "label": "Token Naming Conventions"
+        },
+        {
+          "href": "/tutorials/design-system/token-hierarchy",
+          "label": "Token Hierarchy"
+        },
+        {
+          "href": "/tutorials/design-system/multi-brand-tokens",
+          "label": "Multi-Brand Tokens"
+        },
+        {
+          "href": "/tutorials/design-system/token-versioning",
+          "label": "Token Versioning"
+        }
+      ]
+    },
+    {
+      "title": "Color System",
+      "items": [
+        {
+          "href": "/tutorials/design-system/color-system",
+          "label": "Design System Colors"
+        },
+        {
+          "href": "/tutorials/design-system/color-palette",
+          "label": "Color Palette"
+        },
+        {
+          "href": "/tutorials/design-system/semantic-colors",
+          "label": "Semantic Colors"
+        },
+        {
+          "href": "/tutorials/design-system/color-accessibility",
+          "label": "Accessible Colors"
+        },
+        {
+          "href": "/tutorials/design-system/dark-mode-colors",
+          "label": "Dark Mode Colors"
+        }
+      ]
+    },
+    {
+      "title": "Typography",
+      "items": [
+        {
+          "href": "/tutorials/design-system/typography",
+          "label": "Design System Typography"
+        },
+        {
+          "href": "/tutorials/design-system/type-scale",
+          "label": "Typography Scale"
+        },
+        {
+          "href": "/tutorials/design-system/font-tokens",
+          "label": "Font Tokens"
+        },
+        {
+          "href": "/tutorials/design-system/responsive-typography",
+          "label": "Responsive Typography"
+        },
+        {
+          "href": "/tutorials/design-system/accessible-typography",
+          "label": "Accessible Typography"
+        }
+      ]
+    },
+    {
+      "title": "Spacing and Layout",
+      "items": [
+        {
+          "href": "/tutorials/design-system/spacing-system",
+          "label": "Spacing System"
+        },
+        {
+          "href": "/tutorials/design-system/grid-system",
+          "label": "Grid System"
+        },
+        {
+          "href": "/tutorials/design-system/layout-primitives",
+          "label": "Layout Primitives"
+        },
+        {
+          "href": "/tutorials/design-system/responsive-layout",
+          "label": "Responsive Layout"
+        },
+        {
+          "href": "/tutorials/design-system/breakpoints",
+          "label": "Responsive Breakpoints"
+        }
+      ]
+    },
+    {
+      "title": "Visual Foundations",
+      "items": [
+        {
+          "href": "/tutorials/design-system/iconography",
+          "label": "Design System Iconography"
+        },
+        {
+          "href": "/tutorials/design-system/elevation",
+          "label": "Elevation and Shadows"
+        },
+        {
+          "href": "/tutorials/design-system/border-radius",
+          "label": "Border Radius"
+        },
+        {
+          "href": "/tutorials/design-system/motion",
+          "label": "Motion and Animation"
+        },
+        {
+          "href": "/tutorials/design-system/illustrations",
+          "label": "Illustration Guidelines"
+        }
+      ]
+    },
+    {
+      "title": "Component Architecture",
+      "items": [
+        {
+          "href": "/tutorials/design-system/component-architecture",
+          "label": "Component Architecture"
+        },
+        {
+          "href": "/tutorials/design-system/component-anatomy",
+          "label": "Component Anatomy"
+        },
+        {
+          "href": "/tutorials/design-system/component-api",
+          "label": "Component API Design"
+        },
+        {
+          "href": "/tutorials/design-system/component-composition",
+          "label": "Component Composition"
+        },
+        {
+          "href": "/tutorials/design-system/component-variants",
+          "label": "Component Variants"
+        }
+      ]
+    },
+    {
+      "title": "Core Components",
+      "items": [
+        {
+          "href": "/tutorials/design-system/buttons",
+          "label": "Button Component"
+        },
+        {
+          "href": "/tutorials/design-system/links",
+          "label": "Link Component"
+        },
+        {
+          "href": "/tutorials/design-system/icons",
+          "label": "Icon Component"
+        },
+        {
+          "href": "/tutorials/design-system/badges",
+          "label": "Badge Component"
+        },
+        {
+          "href": "/tutorials/design-system/avatars",
+          "label": "Avatar Component"
+        }
+      ]
+    },
+    {
+      "title": "Form Components",
+      "items": [
+        {
+          "href": "/tutorials/design-system/forms",
+          "label": "Design System Forms"
+        },
+        {
+          "href": "/tutorials/design-system/text-input",
+          "label": "Text Input Component"
+        },
+        {
+          "href": "/tutorials/design-system/select",
+          "label": "Select Component"
+        },
+        {
+          "href": "/tutorials/design-system/checkbox-radio",
+          "label": "Checkbox and Radio"
+        },
+        {
+          "href": "/tutorials/design-system/form-validation",
+          "label": "Form Validation"
+        }
+      ]
+    },
+    {
+      "title": "Navigation Components",
+      "items": [
+        {
+          "href": "/tutorials/design-system/navigation",
+          "label": "Navigation Components"
+        },
+        {
+          "href": "/tutorials/design-system/navbar",
+          "label": "Navbar Component"
+        },
+        {
+          "href": "/tutorials/design-system/sidebar",
+          "label": "Sidebar Component"
+        },
+        {
+          "href": "/tutorials/design-system/tabs",
+          "label": "Tabs Component"
+        },
+        {
+          "href": "/tutorials/design-system/breadcrumbs",
+          "label": "Breadcrumbs Component"
+        }
+      ]
+    },
+    {
+      "title": "Feedback Components",
+      "items": [
+        {
+          "href": "/tutorials/design-system/alerts",
+          "label": "Alert Component"
+        },
+        {
+          "href": "/tutorials/design-system/toasts",
+          "label": "Toast Component"
+        },
+        {
+          "href": "/tutorials/design-system/progress",
+          "label": "Progress Component"
+        },
+        {
+          "href": "/tutorials/design-system/spinners",
+          "label": "Loading Spinner"
+        },
+        {
+          "href": "/tutorials/design-system/empty-states",
+          "label": "Empty States"
+        }
+      ]
+    },
+    {
+      "title": "Overlay Components",
+      "items": [
+        {
+          "href": "/tutorials/design-system/modal",
+          "label": "Modal Component"
+        },
+        {
+          "href": "/tutorials/design-system/dialog",
+          "label": "Dialog Component"
+        },
+        {
+          "href": "/tutorials/design-system/tooltip",
+          "label": "Tooltip Component"
+        },
+        {
+          "href": "/tutorials/design-system/popover",
+          "label": "Popover Component"
+        },
+        {
+          "href": "/tutorials/design-system/drawer",
+          "label": "Drawer Component"
+        }
+      ]
+    },
+    {
+      "title": "Data Display",
+      "items": [
+        {
+          "href": "/tutorials/design-system/tables",
+          "label": "Table Component"
+        },
+        {
+          "href": "/tutorials/design-system/data-grid",
+          "label": "Data Grid"
+        },
+        {
+          "href": "/tutorials/design-system/cards",
+          "label": "Card Component"
+        },
+        {
+          "href": "/tutorials/design-system/lists",
+          "label": "List Component"
+        },
+        {
+          "href": "/tutorials/design-system/charts",
+          "label": "Data Visualization"
+        }
+      ]
+    },
+    {
+      "title": "Accessibility",
+      "items": [
+        {
+          "href": "/tutorials/design-system/accessibility",
+          "label": "Design System Accessibility"
+        },
+        {
+          "href": "/tutorials/design-system/wcag",
+          "label": "WCAG Guidelines"
+        },
+        {
+          "href": "/tutorials/design-system/keyboard-accessibility",
+          "label": "Keyboard Accessibility"
+        },
+        {
+          "href": "/tutorials/design-system/screen-readers",
+          "label": "Screen Reader Support"
+        },
+        {
+          "href": "/tutorials/design-system/focus-management",
+          "label": "Focus Management"
+        }
+      ]
+    },
+    {
+      "title": "Inclusive Design",
+      "items": [
+        {
+          "href": "/tutorials/design-system/inclusive-design",
+          "label": "Inclusive Design"
+        },
+        {
+          "href": "/tutorials/design-system/reduced-motion",
+          "label": "Reduced Motion"
+        },
+        {
+          "href": "/tutorials/design-system/high-contrast",
+          "label": "High Contrast Mode"
+        },
+        {
+          "href": "/tutorials/design-system/localization",
+          "label": "Localization"
+        },
+        {
+          "href": "/tutorials/design-system/rtl-support",
+          "label": "RTL Support"
+        }
+      ]
+    },
+    {
+      "title": "Figma",
+      "items": [
+        {
+          "href": "/tutorials/design-system/figma",
+          "label": "Design Systems in Figma"
+        },
+        {
+          "href": "/tutorials/design-system/figma-libraries",
+          "label": "Figma Libraries"
+        },
+        {
+          "href": "/tutorials/design-system/figma-variables",
+          "label": "Figma Variables"
+        },
+        {
+          "href": "/tutorials/design-system/figma-components",
+          "label": "Figma Components"
+        },
+        {
+          "href": "/tutorials/design-system/design-to-code",
+          "label": "Design-to-Code Workflow"
+        }
+      ]
+    },
+    {
+      "title": "Storybook",
+      "items": [
+        {
+          "href": "/tutorials/design-system/storybook",
+          "label": "Storybook for Design Systems"
+        },
+        {
+          "href": "/tutorials/design-system/storybook-stories",
+          "label": "Storybook Stories"
+        },
+        {
+          "href": "/tutorials/design-system/storybook-controls",
+          "label": "Storybook Controls"
+        },
+        {
+          "href": "/tutorials/design-system/storybook-docs",
+          "label": "Storybook Documentation"
+        },
+        {
+          "href": "/tutorials/design-system/storybook-testing",
+          "label": "Storybook Testing"
+        }
+      ]
+    },
+    {
+      "title": "React Design Systems",
+      "items": [
+        {
+          "href": "/tutorials/design-system/react",
+          "label": "Design System with React"
+        },
+        {
+          "href": "/tutorials/design-system/react-components",
+          "label": "React Components"
+        },
+        {
+          "href": "/tutorials/design-system/react-theming",
+          "label": "React Theming"
+        },
+        {
+          "href": "/tutorials/design-system/react-typescript",
+          "label": "React with TypeScript"
+        },
+        {
+          "href": "/tutorials/design-system/react-component-library",
+          "label": "React Component Library"
+        }
+      ]
+    },
+    {
+      "title": "Web Components",
+      "items": [
+        {
+          "href": "/tutorials/design-system/web-components",
+          "label": "Design System with Web Components"
+        },
+        {
+          "href": "/tutorials/design-system/lit",
+          "label": "Design System with Lit"
+        },
+        {
+          "href": "/tutorials/design-system/shadow-dom",
+          "label": "Shadow DOM Styling"
+        },
+        {
+          "href": "/tutorials/design-system/css-parts",
+          "label": "CSS Shadow Parts"
+        },
+        {
+          "href": "/tutorials/design-system/framework-agnostic",
+          "label": "Framework-Agnostic Components"
+        }
+      ]
+    },
+    {
+      "title": "Styling Architecture",
+      "items": [
+        {
+          "href": "/tutorials/design-system/styling-architecture",
+          "label": "Styling Architecture"
+        },
+        {
+          "href": "/tutorials/design-system/css-custom-properties",
+          "label": "CSS Custom Properties"
+        },
+        {
+          "href": "/tutorials/design-system/css-modules",
+          "label": "CSS Modules"
+        },
+        {
+          "href": "/tutorials/design-system/sass",
+          "label": "Sass for Design Systems"
+        },
+        {
+          "href": "/tutorials/design-system/css-in-js",
+          "label": "CSS-in-JS"
+        },
+        {
+          "href": "/tutorials/design-systems/style-dictionary",
+          "label": "Style Dictionary"
+        },
+        {
+          "href": "/tutorials/design-systems/tailwind-tokens",
+          "label": "Tailwind + Design Tokens"
+        }
+      ]
+    },
+    {
+      "title": "Theming",
+      "items": [
+        {
+          "href": "/tutorials/design-system/theming",
+          "label": "Design System Theming"
+        },
+        {
+          "href": "/tutorials/design-system/dark-mode",
+          "label": "Dark Mode"
+        },
+        {
+          "href": "/tutorials/design-system/multi-brand",
+          "label": "Multi-Brand Design Systems"
+        },
+        {
+          "href": "/tutorials/design-system/theme-switching",
+          "label": "Runtime Theme Switching"
+        },
+        {
+          "href": "/tutorials/design-system/theme-inheritance",
+          "label": "Theme Inheritance"
+        }
+      ]
+    },
+    {
+      "title": "Documentation",
+      "items": [
+        {
+          "href": "/tutorials/design-system/documentation",
+          "label": "Design System Documentation"
+        },
+        {
+          "href": "/tutorials/design-system/component-documentation",
+          "label": "Component Documentation"
+        },
+        {
+          "href": "/tutorials/design-system/usage-guidelines",
+          "label": "Usage Guidelines"
+        },
+        {
+          "href": "/tutorials/design-system/content-standards",
+          "label": "Content Standards"
+        },
+        {
+          "href": "/tutorials/design-system/code-examples",
+          "label": "Code Examples"
+        }
+      ]
+    },
+    {
+      "title": "Governance",
+      "items": [
+        {
+          "href": "/tutorials/design-system/governance",
+          "label": "Design System Governance"
+        },
+        {
+          "href": "/tutorials/design-system/contribution-model",
+          "label": "Contribution Model"
+        },
+        {
+          "href": "/tutorials/design-system/component-proposals",
+          "label": "Component Proposals"
+        },
+        {
+          "href": "/tutorials/design-system/design-reviews",
+          "label": "Design Reviews"
+        },
+        {
+          "href": "/tutorials/design-system/decision-making",
+          "label": "Decision-Making Process"
+        }
+      ]
+    },
+    {
+      "title": "Team and Operations",
+      "items": [
+        {
+          "href": "/tutorials/design-system/team-structure",
+          "label": "Design System Team Structure"
+        },
+        {
+          "href": "/tutorials/design-system/roles-responsibilities",
+          "label": "Roles and Responsibilities"
+        },
+        {
+          "href": "/tutorials/design-system/operating-model",
+          "label": "Operating Model"
+        },
+        {
+          "href": "/tutorials/design-system/workflows",
+          "label": "Design System Workflows"
+        },
+        {
+          "href": "/tutorials/design-system/support-model",
+          "label": "Support Model"
+        }
+      ]
+    },
+    {
+      "title": "Versioning and Releases",
+      "items": [
+        {
+          "href": "/tutorials/design-system/versioning",
+          "label": "Design System Versioning"
+        },
+        {
+          "href": "/tutorials/design-system/semantic-versioning",
+          "label": "Semantic Versioning"
+        },
+        {
+          "href": "/tutorials/design-system/release-process",
+          "label": "Release Process"
+        },
+        {
+          "href": "/tutorials/design-system/changelog",
+          "label": "Design System Changelog"
+        },
+        {
+          "href": "/tutorials/design-system/deprecation",
+          "label": "Component Deprecation"
+        }
+      ]
+    },
+    {
+      "title": "Testing",
+      "items": [
+        {
+          "href": "/tutorials/design-system/testing",
+          "label": "Design System Testing"
+        },
+        {
+          "href": "/tutorials/design-system/unit-testing",
+          "label": "Component Unit Testing"
+        },
+        {
+          "href": "/tutorials/design-system/visual-regression-testing",
+          "label": "Visual Regression Testing"
+        },
+        {
+          "href": "/tutorials/design-system/accessibility-testing",
+          "label": "Accessibility Testing"
+        },
+        {
+          "href": "/tutorials/design-system/cross-browser-testing",
+          "label": "Cross-Browser Testing"
+        },
+        {
+          "href": "/tutorials/design-systems/chromatic",
+          "label": "Chromatic Visual Tests"
+        }
+      ]
+    },
+    {
+      "title": "Distribution",
+      "items": [
+        {
+          "href": "/tutorials/design-system/component-packages",
+          "label": "Component Packages"
+        },
+        {
+          "href": "/tutorials/design-system/npm-package",
+          "label": "Publishing to npm"
+        },
+        {
+          "href": "/tutorials/design-system/monorepo",
+          "label": "Design System Monorepo"
+        },
+        {
+          "href": "/tutorials/design-system/package-architecture",
+          "label": "Package Architecture"
+        },
+        {
+          "href": "/tutorials/design-system/cdn-distribution",
+          "label": "CDN Distribution"
+        }
+      ]
+    },
+    {
+      "title": "Adoption",
+      "items": [
+        {
+          "href": "/tutorials/design-system/adoption",
+          "label": "Design System Adoption"
+        },
+        {
+          "href": "/tutorials/design-system/onboarding",
+          "label": "Team Onboarding"
+        },
+        {
+          "href": "/tutorials/design-system/migration-strategy",
+          "label": "Migration Strategy"
+        },
+        {
+          "href": "/tutorials/design-system/adoption-metrics",
+          "label": "Adoption Metrics"
+        },
+        {
+          "href": "/tutorials/design-system/developer-experience",
+          "label": "Developer Experience"
+        }
+      ]
+    },
+    {
+      "title": "Scaling",
+      "items": [
+        {
+          "href": "/tutorials/design-system/scaling",
+          "label": "Scaling a Design System"
+        },
+        {
+          "href": "/tutorials/design-system/enterprise-design-system",
+          "label": "Enterprise Design Systems"
+        },
+        {
+          "href": "/tutorials/design-system/federated-design-system",
+          "label": "Federated Design Systems"
+        },
+        {
+          "href": "/tutorials/design-system/global-design-system",
+          "label": "Global Design Systems"
+        },
+        {
+          "href": "/tutorials/design-system/multi-platform",
+          "label": "Multi-Platform Design Systems"
+        }
+      ]
+    },
+    {
+      "title": "Performance",
+      "items": [
+        {
+          "href": "/tutorials/design-system/performance",
+          "label": "Design System Performance"
+        },
+        {
+          "href": "/tutorials/design-system/tree-shaking",
+          "label": "Tree Shaking"
+        },
+        {
+          "href": "/tutorials/design-system/bundle-size",
+          "label": "Bundle Size Optimization"
+        },
+        {
+          "href": "/tutorials/design-system/lazy-loading",
+          "label": "Lazy Loading Components"
+        },
+        {
+          "href": "/tutorials/design-system/css-performance",
+          "label": "CSS Performance"
+        }
+      ]
+    },
+    {
+      "title": "Advanced",
+      "items": [
+        {
+          "href": "/tutorials/design-system/design-system-api",
+          "label": "Design System API"
+        },
+        {
+          "href": "/tutorials/design-system/component-generators",
+          "label": "Component Generators"
+        },
+        {
+          "href": "/tutorials/design-system/automated-documentation",
+          "label": "Automated Documentation"
+        },
+        {
+          "href": "/tutorials/design-system/ai-design-systems",
+          "label": "AI for Design Systems"
+        },
+        {
+          "href": "/tutorials/design-system/design-system-analytics",
+          "label": "Design System Analytics"
+        },
+        {
+          "href": "/tutorials/design-systems/radix-primitives",
+          "label": "Radix Primitives Patterns"
+        },
+        {
+          "href": "/tutorials/design-systems/shadcn-patterns",
+          "label": "shadcn/ui Patterns"
+        },
+        {
+          "href": "/tutorials/design-systems/density-scaling",
+          "label": "Density Scaling"
+        }
+      ]
+    }
+  ]
+}

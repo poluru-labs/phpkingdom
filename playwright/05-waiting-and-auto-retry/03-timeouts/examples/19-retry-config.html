@@ -1,0 +1,130 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Playwright Tutorials
+section title: Waiting and Auto Retry
+topic title: Timeouts
+content type: Example
+item number: 19
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Timeouts Example 19 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #fef3c7;
+      color: #92400e;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Example 19</span>
+    <h1>Timeouts</h1>
+    <p><strong>Section:</strong> Waiting and Auto Retry</p>
+    <p><strong>Focus:</strong> Retry Config</p>
+    <p><strong>Scenario:</strong> docs site</p>
+    <p>Study the Playwright spec and config notes, then adapt them to your app.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Spec Sample</h2>
+        <pre><code>// Timeouts — Example 19
+// Focus: retry config | Scenario: docs site
+
+import { test, expect } from &#x27;@playwright/test&#x27;;
+
+test(&#x27;scoped timeouts&#x27;, async ({ page }) =&gt; {
+  test.setTimeout(60_000);
+  await page.goto(&#x27;/slow&#x27;, { timeout: 15_000 });
+  await expect(page.getByText(&#x27;Ready&#x27;)).toBeVisible({ timeout: 10_000 });
+});
+
+// playwright.config.ts
+// timeout: 30_000,
+// expect: { timeout: 5_000 },
+// use: { actionTimeout: 10_000, navigationTimeout: 15_000 },</code></pre>
+      </section>
+      <section>
+        <h2>Config Notes</h2>
+        <pre><code>// playwright.config.ts — notes for Timeouts
+import { defineConfig, devices } from &#x27;@playwright/test&#x27;;
+
+export default defineConfig({
+  testDir: &#x27;./tests&#x27;,
+  fullyParallel: true,
+  forbidOnly: !!process.env.CI,
+  retries: process.env.CI ? 2 : 0,
+  workers: process.env.CI ? 2 : undefined,
+  reporter: [[&#x27;html&#x27;], [&#x27;list&#x27;]],
+  use: {
+    baseURL: &#x27;http://localhost:3000&#x27;,
+    trace: &#x27;on-first-retry&#x27;,
+    screenshot: &#x27;only-on-failure&#x27;,
+    video: &#x27;retain-on-failure&#x27;,
+  },
+  projects: [
+    { name: &#x27;chromium&#x27;, use: { ...devices[&#x27;Desktop Chrome&#x27;] } },
+    { name: &#x27;firefox&#x27;, use: { ...devices[&#x27;Desktop Firefox&#x27;] } },
+    { name: &#x27;webkit&#x27;, use: { ...devices[&#x27;Desktop Safari&#x27;] } },
+  ],
+  // Focus: retry config for docs site (timeouts)
+});</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This example shows one way to apply <strong>Timeouts</strong> in a docs site context.</p>
+      <p>Prefer role/label/test-id locators and rely on Playwright auto-waiting over fixed sleeps.</p>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 096-sliding-window-sum.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>096 — Sliding Window Sum | phpkingdom.com</title>
+</head>
+<body>
+  <h1>096 — Sliding Window Sum</h1>
+  <h2>Problem</h2>
+  <p>Compute every sum of window size K.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const arr = [1, 2, 3, 4, 5];
+const K = 3;
+const sums = [];
+for (let i = 0; i <= arr.length - K; i++) {
+  let s = 0;
+  for (let j = i; j < i + K; j++) s += arr[j];
+  sums.push(s);
+}
+document.getElementById("out").textContent = "window sums = " + sums.join(", ");
+  </script>
+</body>
+</html>

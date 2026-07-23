@@ -1,0 +1,25 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 12-Misc-Examples
+  example: 012-urlsearchparams.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>012 — URLSearchParams | phpkingdom.com</title>
+</head>
+<body>
+  <h1>012 — URLSearchParams</h1>
+  <p>Query string helper.</p>
+<pre id="out"></pre>
+  <script>
+const p=new URLSearchParams("q=api");document.getElementById("out").textContent=p.get("q");
+  </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Functions-Examples
+  example: 46-function-length.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>46 — Function.length | phpkingdom.com</title>
+</head>
+<body>
+  <h1>46 — Function.length</h1>
+  <h2>Problem</h2>
+  <p>Read how many formal parameters a function declares.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function add(a, b) { return a + b; }
+const variadic = (...args) => args.length;
+document.getElementById("out").textContent =
+  "add.length = " + add.length + "\nvariadic.length = " + variadic.length;
+  </script>
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: LESS CSS Tutorials
+section title: Values and Functions
+topic title: List Functions
+content type: Example
+item number: 10
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>List Functions Example 10 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #e0f2fe;
+      color: #075985;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Example 10</span>
+    <h1>List Functions</h1>
+    <p><strong>Section:</strong> Values and Functions</p>
+    <p><strong>Focus:</strong> Pricing Section</p>
+    <p><strong>Scenario:</strong> mobile web app</p>
+    <p>Study how the LESS snippet is structured and how the pattern can scale in a project.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>LESS Snippet</h2>
+        <pre><code>// List Functions — Example 10
+// Focus: pricing section | Scenario: mobile web app
+
+@spaces: 4px, 8px, 16px, 24px;
+
+.first { padding: extract(@spaces, 1); }
+.last { padding: extract(@spaces, length(@spaces)); }
+
+@merged: join(@spaces, 32px, comma);
+.wide { margin: extract(@merged, 5); }
+
+// length(), extract(), index(), join() work on comma/space lists</code></pre>
+      </section>
+      <section>
+        <h2>HTML Markup</h2>
+        <pre><code>&lt;section class=&quot;panel-list-functions&quot;&gt;
+  &lt;h2&gt;List Functions&lt;/h2&gt;
+  &lt;p&gt;Pricing Section for a mobile web app.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This example shows one way to apply <strong>List Functions</strong> in a mobile web app context.</p>
+      <p>Adapt selectors, token names, and mixins to match your project naming rules.</p>
+    </section>
+  </main>
+</body>
+</html>

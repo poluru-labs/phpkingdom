@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 11-Browser-APIs/04-web-apis
+  example: 03-online-status.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Online Status | phpkingdom.com</title>
+</head>
+<body>
+  <h1>navigator.onLine</h1>
+  <p>Detect connectivity.</p>
+  <pre id="out"></pre>
+  <script>
+function show() {
+  document.getElementById("out").textContent =
+    "online=" + navigator.onLine;
+}
+show();
+window.addEventListener("online", show);
+window.addEventListener("offline", show);
+  </script>
+</body>
+</html>

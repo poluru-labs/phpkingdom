@@ -1,0 +1,129 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Jest Tutorials
+section title: Test Setup
+topic title: beforeAll and afterAll
+content type: Template
+item number: 06
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>beforeAll and afterAll Template 06 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #fce7f3;
+      color: #9d174d;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Template 06</span>
+    <h1>beforeAll and afterAll</h1>
+    <p><strong>Section:</strong> Test Setup</p>
+    <p><strong>Focus:</strong> Mock Kit</p>
+    <p><strong>Scenario:</strong> design system</p>
+    <p>Use this scaffold as a starting point for specs, mocks, or coverage config.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Jest</h2>
+        <pre><code>// beforeAll and afterAll — Template 06
+// Focus: mock kit | Scenario: design system
+
+let server;
+
+beforeAll(async () =&gt; {
+  server = { port: 3000, started: true };
+});
+
+afterAll(async () =&gt; {
+  server.started = false;
+  server = null;
+});
+
+test(&quot;server is up&quot;, () =&gt; {
+  expect(server.started).toBe(true);
+});
+
+test(&quot;port is set&quot;, () =&gt; {
+  expect(server.port).toBe(3000);
+});
+// Use beforeAll for expensive shared setup (DB container, HTTP server)</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for beforeAll and afterAll
+- Practice: mock kit
+- Scenario: design system
+- Keep arrange / act / assert clear and deterministic
+- Clear or restore mocks between tests (clearMocks / restoreMocks)
+- Prefer async/await with resolves / rejects over done()
+- Mock at boundaries; avoid over-mocking pure logic
+- Review snapshot diffs before updating
+
+Useful commands:
+  npm install --save-dev jest
+  npx jest
+  npx jest --watch
+  npx jest --coverage
+  npx jest -u</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This template shows one way to apply <strong>beforeAll and afterAll</strong> in a design system context.</p>
+      <p>Prefer clear arrange/act/assert structure and keep mocks close to the behavior under test.</p>
+    </section>
+  </main>
+</body>
+</html>

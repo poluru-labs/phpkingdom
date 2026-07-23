@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 07-DOM/05-forms
+  example: 01-read-values.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Read Form Values | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Read Form Values</h1>
+  <p>Get input values on submit.</p>
+  <form id="f"><input id="email" type="email" placeholder="Email"><button type="submit">Go</button></form>
+  <pre id="out"></pre>
+  <script>
+document.getElementById("f").addEventListener("submit", function (e) {
+  e.preventDefault();
+  document.getElementById("out").textContent =
+    document.getElementById("email").value;
+});
+  </script>
+</body>
+</html>

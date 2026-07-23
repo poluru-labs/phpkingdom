@@ -1,0 +1,123 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Express.js Tutorials
+section title: REST APIs
+topic title: API Response Format
+content type: Exercise
+item number: 06
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>API Response Format Exercise 06 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #e0e7ff;
+      color: #3730a3;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Exercise 06</span>
+    <h1>API Response Format</h1>
+    <p><strong>Section:</strong> REST APIs</p>
+    <p><strong>Focus:</strong> Query Filter</p>
+    <p><strong>Scenario:</strong> ecommerce API</p>
+    <p>Implement the task locally and verify with curl or a REST client.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Express</h2>
+        <pre><code>// API Response Format — Exercise 06
+// Focus: query filter | Scenario: ecommerce API
+
+function ok(res, data, meta = {}) {
+  return res.json({ success: true, data, meta });
+}
+function fail(res, status, message, details) {
+  return res.status(status).json({ success: false, error: { message, details } });
+}
+
+app.get(&quot;/api/users&quot;, (req, res) =&gt; {
+  ok(res, [{ id: 1, name: &quot;Ada&quot; }], { page: 1 });
+});
+app.get(&quot;/api/users/:id&quot;, (req, res) =&gt; {
+  fail(res, 404, &quot;User not found&quot;, { id: req.params.id });
+});
+// Consistent envelopes help clients and API gateways</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for API Response Format
+- Practice: query filter
+- Scenario: ecommerce API
+- Keep route handlers thin; push logic into controllers/services
+- Always attach final 4-arg error middleware
+- Validate input; load secrets from environment variables
+- Export app separately from listen() for easier testing
+
+Useful commands:
+  npm init -y
+  npm install express
+  node --watch server.js
+  curl http://localhost:3000/health
+  npx jest   # or node --test / mocha + supertest</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This exercise shows one way to apply <strong>API Response Format</strong> in a ecommerce api context.</p>
+      <p>Keep routes thin, push logic into services, and always attach a final error middleware.</p>
+    </section>
+  </main>
+</body>
+</html>

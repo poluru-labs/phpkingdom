@@ -1,0 +1,35 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 19-Recursion-Examples
+  example: 10-tree-inorder.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>10 — Tree Inorder Walk | phpkingdom.com</title>
+</head>
+<body>
+  <h1>10 — Tree Inorder Walk</h1>
+  <h2>Problem</h2>
+  <p>Visit left subtree, root, then right subtree (inorder).</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const tree = { val: 1, left: { val: 2, left: { val: 4 }, right: null }, right: { val: 3, left: { val: 5 }, right: { val: 6 } } };
+function inorder(node, out = []) {
+  if (!node) return out;
+  inorder(node.left, out);
+  out.push(node.val);
+  inorder(node.right, out);
+  return out;
+}
+document.getElementById("out").textContent = "inorder: " + inorder(tree).join(" → ");
+  </script>
+</body>
+</html>

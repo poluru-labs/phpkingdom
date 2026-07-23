@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 18-Object-Examples
+  example: 08-shallow-copy.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>08 — Shallow Copy Object | phpkingdom.com</title>
+</head>
+<body>
+  <h1>08 — Shallow Copy Object</h1>
+  <h2>Problem</h2>
+  <p>Copy an object with spread and Object.assign.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const a = { x: 1, nested: { y: 2 } };
+const b = { ...a };
+b.x = 9;
+document.getElementById("out").textContent = "a.x=" + a.x + ", b.x=" + b.x;
+  </script>
+</body>
+</html>

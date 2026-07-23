@@ -1,0 +1,25 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 12-Misc-Examples
+  example: 025-drag-drop-div.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>025 — Drag and drop div | phpkingdom.com</title>
+</head>
+<body>
+  <h1>025 — Drag and drop div</h1>
+  <p>HTML5 DnD events.</p>
+<div id="a" draggable="true">Drag</div><div id="z" style="border:1px dashed #333;padding:12px">Drop</div><pre id="out"></pre>
+  <script>
+a.ondragstart=e=>e.dataTransfer.setData("text/plain","x");z.ondragover=e=>e.preventDefault();z.ondrop=e=>{e.preventDefault();document.getElementById("out").textContent=e.dataTransfer.getData("text/plain");};
+  </script>
+</body>
+</html>

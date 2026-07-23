@@ -1,0 +1,136 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Express.js Tutorials
+section title: Advanced
+topic title: Multer File Uploads
+content type: Exercise
+item number: 12
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Multer File Uploads Exercise 12 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #e0e7ff;
+      color: #3730a3;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Exercise 12</span>
+    <h1>Multer File Uploads</h1>
+    <p><strong>Section:</strong> Advanced</p>
+    <p><strong>Focus:</strong> Update Delete</p>
+    <p><strong>Scenario:</strong> admin backend</p>
+    <p>Implement the task locally and verify with curl or a REST client.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Express</h2>
+        <pre><code>// Multer File Uploads — Exercise 12
+// Focus: update delete | Scenario: admin backend
+
+const path = require(&quot;path&quot;);
+const multer = require(&quot;multer&quot;);
+
+const storage = multer.diskStorage({
+  destination: (req, file, cb) =&gt; cb(null, &quot;uploads/&quot;),
+  filename: (req, file, cb) =&gt; {
+    const safe = file.originalname.replace(/[^a-zA-Z0-9._-]/g, &quot;_&quot;);
+    cb(null, `${Date.now()}-${safe}`);
+  },
+});
+
+const upload = multer({
+  storage,
+  fileFilter: (req, file, cb) =&gt; {
+    const ok = [&quot;image/png&quot;, &quot;image/jpeg&quot;].includes(file.mimetype);
+    cb(ok ? null : new Error(&quot;Only PNG/JPEG&quot;), ok);
+  },
+  limits: { fileSize: 5 * 1024 * 1024 },
+});
+
+app.post(&quot;/avatars&quot;, upload.single(&quot;avatar&quot;), (req, res) =&gt; {
+  res.status(201).json({ path: req.file.path, mime: req.file.mimetype });
+});
+
+app.post(&quot;/gallery&quot;, upload.array(&quot;photos&quot;, 8), (req, res) =&gt; {
+  res.status(201).json({ count: req.files.length });
+});</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Multer File Uploads
+- Practice: update delete
+- Scenario: admin backend
+- Keep route handlers thin; push logic into controllers/services
+- Always attach final 4-arg error middleware
+- Validate input; load secrets from environment variables
+- Export app separately from listen() for easier testing
+
+Useful commands:
+  npm init -y
+  npm install express
+  node --watch server.js
+  curl http://localhost:3000/health
+  npx jest   # or node --test / mocha + supertest</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This exercise shows one way to apply <strong>Multer File Uploads</strong> in a admin backend context.</p>
+      <p>Keep routes thin, push logic into services, and always attach a final error middleware.</p>
+    </section>
+  </main>
+</body>
+</html>

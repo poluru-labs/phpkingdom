@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/080-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 080 — Toast event — Solution | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>Exercise 080 — Toast event — Solution</h1>
+  <p class="meta">Emit toast event with message detail.</p>
+  <h2>Solution</h2>
+  <p>Emit toast event with message detail.</p>
+  <div id="demo"></div>
+  <pre id="out"></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+customElements.define("ex080-el", class extends HTMLElement {
+  connectedCallback() {
+    this.textContent = 'Toast event';
+  }
+});
+document.getElementById("demo").innerHTML = "<ex080-el></ex080-el>";
+document.getElementById("out").textContent = 'Emit toast event with message detail.';
+  </script>
+</body>
+</html>

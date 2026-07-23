@@ -1,0 +1,134 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 22-Components-Examples
+  example: 11-time-picker.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>11 — Time Picker | phpkingdom.com</title>
+  <link rel="stylesheet" href="css/base.css">
+  <style>
+    .c-timepicker { max-width: 280px; }
+    .c-timepicker__row {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .c-timepicker__field { flex: 1; display: grid; gap: 0.25rem; text-align: center; }
+    .c-timepicker__field label { font-size: 0.78rem; color: var(--muted); font-weight: 500; }
+    .c-timepicker__spin {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.15rem;
+    }
+    .c-timepicker__spin button {
+      border: 1px solid var(--line);
+      background: var(--surface);
+      border-radius: 6px;
+      width: 2rem;
+      height: 1.6rem;
+      cursor: pointer;
+      font: inherit;
+      line-height: 1;
+    }
+    .c-timepicker__spin button:hover { border-color: var(--accent); background: var(--accent-soft); }
+    .c-timepicker__value {
+      font-family: var(--mono);
+      font-size: 1.4rem;
+      font-weight: 600;
+      min-width: 2.5ch;
+    }
+    .c-timepicker__sep { font-size: 1.4rem; font-weight: 600; padding-top: 1rem; color: var(--muted); }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <a class="back" href="index.html">← Components</a>
+    <h1>11 — Time Picker</h1>
+    <p class="lead">Pick hours and minutes with stepper buttons and direct input.</p>
+    <section class="panel">
+      <h2>Demo</h2>
+      <div id="mount"></div>
+    </section>
+    <section class="panel">
+      <h2>Events / State</h2>
+      <pre class="log" id="log">Ready.</pre>
+    </section>
+  </main>
+  <script>
+    const logEl = document.getElementById("log");
+    function log(msg) { logEl.textContent = msg; }
+
+    function createTimePicker({ label = "Time", hours = 9, minutes = 30 } = {}) {
+      let h = hours;
+      let m = minutes;
+
+      const wrap = document.createElement("div");
+      wrap.className = "c-timepicker";
+
+      const lbl = document.createElement("div");
+      lbl.className = "field-label";
+      lbl.textContent = label;
+
+      const row = document.createElement("div");
+      row.className = "c-timepicker__row";
+
+      function pad(n) { return String(n).padStart(2, "0"); }
+
+      function emit() { log("change: " + pad(h) + ":" + pad(m)); }
+
+      function makeSpin(part, get, set, max) {
+        const field = document.createElement("div");
+        field.className = "c-timepicker__field";
+        const sub = document.createElement("label");
+        sub.textContent = part;
+        const spin = document.createElement("div");
+        spin.className = "c-timepicker__spin";
+        const up = document.createElement("button");
+        up.type = "button";
+        up.textContent = "▲";
+        const val = document.createElement("span");
+        val.className = "c-timepicker__value";
+        val.textContent = pad(get());
+        const down = document.createElement("button");
+        down.type = "button";
+        down.textContent = "▼";
+        up.addEventListener("click", () => { set((get() + 1) % (max + 1)); val.textContent = pad(get()); emit(); });
+        down.addEventListener("click", () => { set((get() - 1 + max + 1) % (max + 1)); val.textContent = pad(get()); emit(); });
+        spin.append(up, val, down);
+        field.append(sub, spin);
+        return { field, update: () => { val.textContent = pad(get()); } };
+      }
+
+      const hoursSpin = makeSpin("Hours", () => h, (v) => { h = v; }, 23);
+      const sep = document.createElement("span");
+      sep.className = "c-timepicker__sep";
+      sep.textContent = ":";
+      const minsSpin = makeSpin("Minutes", () => m, (v) => { m = v; }, 59);
+
+      row.append(hoursSpin.field, sep, minsSpin.field);
+      wrap.append(lbl, row);
+
+      return {
+        el: wrap,
+        get value() { return pad(h) + ":" + pad(m); },
+        set value(v) {
+          const [hh, mm] = v.split(":").map(Number);
+          h = hh; m = mm;
+          hoursSpin.update(); minsSpin.update();
+        }
+      };
+    }
+
+    document.getElementById("mount").appendChild(createTimePicker({}).el);
+  </script>
+</body>
+</html>

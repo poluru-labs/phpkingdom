@@ -1,0 +1,48 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 23-Promises-Examples
+  example: 30-await-mistake-foreach.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>30 — Avoid await in forEach | phpkingdom.com</title>
+</head>
+<body>
+  <h1>30 — Avoid await in forEach</h1>
+  <h2>Problem</h2>
+  <p>forEach does not wait for async callbacks.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function tick(n) {
+  return new Promise((resolve) => setTimeout(() => resolve(n), 50));
+}
+async function wrong() {
+  const order = [];
+  [1, 2, 3].forEach(async (n) => {
+    order.push(await tick(n));
+  });
+  return order; // usually empty or incomplete
+}
+async function right() {
+  const order = [];
+  for (const n of [1, 2, 3]) order.push(await tick(n));
+  return order;
+}
+(async () => {
+  const w = await wrong();
+  await new Promise((r) => setTimeout(r, 200));
+  const r = await right();
+  document.getElementById("out").textContent =
+    "forEach snapshot=" + JSON.stringify(w) + "\nfor-of=" + r.join(",");
+})();
+  </script>
+</body>
+</html>

@@ -1,0 +1,452 @@
+[
+  {
+    "type": "example",
+    "file": "54-angular-integration/02-angular-module-setup/examples/01-install-library.html",
+    "focus": "install library",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "example",
+    "file": "54-angular-integration/02-angular-module-setup/examples/02-theme-provider.html",
+    "focus": "theme provider",
+    "scenario": "admin dashboard"
+  },
+  {
+    "type": "example",
+    "file": "54-angular-integration/02-angular-module-setup/examples/03-button-variants.html",
+    "focus": "button variants",
+    "scenario": "SaaS settings"
+  },
+  {
+    "type": "example",
+    "file": "54-angular-integration/02-angular-module-setup/examples/04-form-controls.html",
+    "focus": "form controls",
+    "scenario": "e-commerce catalog"
+  },
+  {
+    "type": "example",
+    "file": "54-angular-integration/02-angular-module-setup/examples/05-grid-layout.html",
+    "focus": "grid layout",
+    "scenario": "mobile web app"
+  },
+  {
+    "type": "example",
+    "file": "54-angular-integration/02-angular-module-setup/examples/06-navbar-shell.html",
+    "focus": "navbar shell",
+    "scenario": "design system kit"
+  },
+  {
+    "type": "example",
+    "file": "54-angular-integration/02-angular-module-setup/examples/07-modal-dialog.html",
+    "focus": "modal dialog",
+    "scenario": "enterprise portal"
+  },
+  {
+    "type": "example",
+    "file": "54-angular-integration/02-angular-module-setup/examples/08-data-table.html",
+    "focus": "data table",
+    "scenario": "docs site"
+  },
+  {
+    "type": "example",
+    "file": "54-angular-integration/02-angular-module-setup/examples/09-toast-alert.html",
+    "focus": "toast alert",
+    "scenario": "form-heavy CRM"
+  },
+  {
+    "type": "example",
+    "file": "54-angular-integration/02-angular-module-setup/examples/10-dark-mode.html",
+    "focus": "dark mode",
+    "scenario": "data analytics UI"
+  },
+  {
+    "type": "example",
+    "file": "54-angular-integration/02-angular-module-setup/examples/11-design-tokens.html",
+    "focus": "design tokens",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "example",
+    "file": "54-angular-integration/02-angular-module-setup/examples/12-responsive-props.html",
+    "focus": "responsive props",
+    "scenario": "admin dashboard"
+  },
+  {
+    "type": "example",
+    "file": "54-angular-integration/02-angular-module-setup/examples/13-focus-trap.html",
+    "focus": "focus trap",
+    "scenario": "SaaS settings"
+  },
+  {
+    "type": "example",
+    "file": "54-angular-integration/02-angular-module-setup/examples/14-rtl-locale.html",
+    "focus": "rtl locale",
+    "scenario": "e-commerce catalog"
+  },
+  {
+    "type": "example",
+    "file": "54-angular-integration/02-angular-module-setup/examples/15-tree-shake-import.html",
+    "focus": "tree shake import",
+    "scenario": "mobile web app"
+  },
+  {
+    "type": "example",
+    "file": "54-angular-integration/02-angular-module-setup/examples/16-storybook-story.html",
+    "focus": "storybook story",
+    "scenario": "design system kit"
+  },
+  {
+    "type": "example",
+    "file": "54-angular-integration/02-angular-module-setup/examples/17-a11y-check.html",
+    "focus": "a11y check",
+    "scenario": "enterprise portal"
+  },
+  {
+    "type": "example",
+    "file": "54-angular-integration/02-angular-module-setup/examples/18-ssr-styles.html",
+    "focus": "ssr styles",
+    "scenario": "docs site"
+  },
+  {
+    "type": "example",
+    "file": "54-angular-integration/02-angular-module-setup/examples/19-wrap-component.html",
+    "focus": "wrap component",
+    "scenario": "form-heavy CRM"
+  },
+  {
+    "type": "example",
+    "file": "54-angular-integration/02-angular-module-setup/examples/20-custom-variant.html",
+    "focus": "custom variant",
+    "scenario": "data analytics UI"
+  },
+  {
+    "type": "example",
+    "file": "54-angular-integration/02-angular-module-setup/examples/21-compare-tradeoffs.html",
+    "focus": "compare tradeoffs",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "example",
+    "file": "54-angular-integration/02-angular-module-setup/examples/22-migrate-styles.html",
+    "focus": "migrate styles",
+    "scenario": "admin dashboard"
+  },
+  {
+    "type": "example",
+    "file": "54-angular-integration/02-angular-module-setup/examples/23-bundle-audit.html",
+    "focus": "bundle audit",
+    "scenario": "SaaS settings"
+  },
+  {
+    "type": "example",
+    "file": "54-angular-integration/02-angular-module-setup/examples/24-hydration-fix.html",
+    "focus": "hydration fix",
+    "scenario": "e-commerce catalog"
+  },
+  {
+    "type": "example",
+    "file": "54-angular-integration/02-angular-module-setup/examples/25-best-practice-recap.html",
+    "focus": "best practice recap",
+    "scenario": "mobile web app"
+  },
+  {
+    "type": "exercise",
+    "file": "54-angular-integration/02-angular-module-setup/exercises/01-cdn-bootstrap.html",
+    "focus": "cdn bootstrap",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "exercise",
+    "file": "54-angular-integration/02-angular-module-setup/exercises/02-tailwind-utilities.html",
+    "focus": "tailwind utilities",
+    "scenario": "admin dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "54-angular-integration/02-angular-module-setup/exercises/03-mui-button.html",
+    "focus": "mui button",
+    "scenario": "SaaS settings"
+  },
+  {
+    "type": "exercise",
+    "file": "54-angular-integration/02-angular-module-setup/exercises/04-antd-form.html",
+    "focus": "antd form",
+    "scenario": "e-commerce catalog"
+  },
+  {
+    "type": "exercise",
+    "file": "54-angular-integration/02-angular-module-setup/exercises/05-chakra-stack.html",
+    "focus": "chakra stack",
+    "scenario": "mobile web app"
+  },
+  {
+    "type": "exercise",
+    "file": "54-angular-integration/02-angular-module-setup/exercises/06-mantine-hook.html",
+    "focus": "mantine hook",
+    "scenario": "design system kit"
+  },
+  {
+    "type": "exercise",
+    "file": "54-angular-integration/02-angular-module-setup/exercises/07-shadcn-button.html",
+    "focus": "shadcn button",
+    "scenario": "enterprise portal"
+  },
+  {
+    "type": "exercise",
+    "file": "54-angular-integration/02-angular-module-setup/exercises/08-radix-dialog.html",
+    "focus": "radix dialog",
+    "scenario": "docs site"
+  },
+  {
+    "type": "exercise",
+    "file": "54-angular-integration/02-angular-module-setup/exercises/09-headless-menu.html",
+    "focus": "headless menu",
+    "scenario": "form-heavy CRM"
+  },
+  {
+    "type": "exercise",
+    "file": "54-angular-integration/02-angular-module-setup/exercises/10-daisy-card.html",
+    "focus": "daisy card",
+    "scenario": "data analytics UI"
+  },
+  {
+    "type": "exercise",
+    "file": "54-angular-integration/02-angular-module-setup/exercises/11-vuetify-grid.html",
+    "focus": "vuetify grid",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "exercise",
+    "file": "54-angular-integration/02-angular-module-setup/exercises/12-primevue-table.html",
+    "focus": "primevue table",
+    "scenario": "admin dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "54-angular-integration/02-angular-module-setup/exercises/13-angular-material.html",
+    "focus": "angular material",
+    "scenario": "SaaS settings"
+  },
+  {
+    "type": "exercise",
+    "file": "54-angular-integration/02-angular-module-setup/exercises/14-storybook-args.html",
+    "focus": "storybook args",
+    "scenario": "e-commerce catalog"
+  },
+  {
+    "type": "exercise",
+    "file": "54-angular-integration/02-angular-module-setup/exercises/15-theme-tokens.html",
+    "focus": "theme tokens",
+    "scenario": "mobile web app"
+  },
+  {
+    "type": "exercise",
+    "file": "54-angular-integration/02-angular-module-setup/exercises/16-dark-toggle.html",
+    "focus": "dark toggle",
+    "scenario": "design system kit"
+  },
+  {
+    "type": "exercise",
+    "file": "54-angular-integration/02-angular-module-setup/exercises/17-responsive-grid.html",
+    "focus": "responsive grid",
+    "scenario": "enterprise portal"
+  },
+  {
+    "type": "exercise",
+    "file": "54-angular-integration/02-angular-module-setup/exercises/18-keyboard-nav.html",
+    "focus": "keyboard nav",
+    "scenario": "docs site"
+  },
+  {
+    "type": "exercise",
+    "file": "54-angular-integration/02-angular-module-setup/exercises/19-lazy-import.html",
+    "focus": "lazy import",
+    "scenario": "form-heavy CRM"
+  },
+  {
+    "type": "exercise",
+    "file": "54-angular-integration/02-angular-module-setup/exercises/20-rtl-direction.html",
+    "focus": "rtl direction",
+    "scenario": "data analytics UI"
+  },
+  {
+    "type": "exercise",
+    "file": "54-angular-integration/02-angular-module-setup/exercises/21-testing-library.html",
+    "focus": "testing library",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "exercise",
+    "file": "54-angular-integration/02-angular-module-setup/exercises/22-visual-snapshot.html",
+    "focus": "visual snapshot",
+    "scenario": "admin dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "54-angular-integration/02-angular-module-setup/exercises/23-ssr-provider.html",
+    "focus": "ssr provider",
+    "scenario": "SaaS settings"
+  },
+  {
+    "type": "exercise",
+    "file": "54-angular-integration/02-angular-module-setup/exercises/24-governance-wrap.html",
+    "focus": "governance wrap",
+    "scenario": "e-commerce catalog"
+  },
+  {
+    "type": "exercise",
+    "file": "54-angular-integration/02-angular-module-setup/exercises/25-final-challenge.html",
+    "focus": "final challenge",
+    "scenario": "mobile web app"
+  },
+  {
+    "type": "template",
+    "file": "54-angular-integration/02-angular-module-setup/templates/01-bootstrap-dashboard.html",
+    "focus": "bootstrap dashboard",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "template",
+    "file": "54-angular-integration/02-angular-module-setup/templates/02-tailwind-landing.html",
+    "focus": "tailwind landing",
+    "scenario": "admin dashboard"
+  },
+  {
+    "type": "template",
+    "file": "54-angular-integration/02-angular-module-setup/templates/03-mui-admin.html",
+    "focus": "mui admin",
+    "scenario": "SaaS settings"
+  },
+  {
+    "type": "template",
+    "file": "54-angular-integration/02-angular-module-setup/templates/04-antd-crm.html",
+    "focus": "antd crm",
+    "scenario": "e-commerce catalog"
+  },
+  {
+    "type": "template",
+    "file": "54-angular-integration/02-angular-module-setup/templates/05-chakra-app.html",
+    "focus": "chakra app",
+    "scenario": "mobile web app"
+  },
+  {
+    "type": "template",
+    "file": "54-angular-integration/02-angular-module-setup/templates/06-mantine-app.html",
+    "focus": "mantine app",
+    "scenario": "design system kit"
+  },
+  {
+    "type": "template",
+    "file": "54-angular-integration/02-angular-module-setup/templates/07-shadcn-saas.html",
+    "focus": "shadcn saas",
+    "scenario": "enterprise portal"
+  },
+  {
+    "type": "template",
+    "file": "54-angular-integration/02-angular-module-setup/templates/08-radix-kit.html",
+    "focus": "radix kit",
+    "scenario": "docs site"
+  },
+  {
+    "type": "template",
+    "file": "54-angular-integration/02-angular-module-setup/templates/09-headless-tw.html",
+    "focus": "headless + tw",
+    "scenario": "form-heavy CRM"
+  },
+  {
+    "type": "template",
+    "file": "54-angular-integration/02-angular-module-setup/templates/10-flowbite-page.html",
+    "focus": "flowbite page",
+    "scenario": "data analytics UI"
+  },
+  {
+    "type": "template",
+    "file": "54-angular-integration/02-angular-module-setup/templates/11-heroui-next.html",
+    "focus": "heroui next",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "template",
+    "file": "54-angular-integration/02-angular-module-setup/templates/12-vuetify-app.html",
+    "focus": "vuetify app",
+    "scenario": "admin dashboard"
+  },
+  {
+    "type": "template",
+    "file": "54-angular-integration/02-angular-module-setup/templates/13-primevue-admin.html",
+    "focus": "primevue admin",
+    "scenario": "SaaS settings"
+  },
+  {
+    "type": "template",
+    "file": "54-angular-integration/02-angular-module-setup/templates/14-quasar-app.html",
+    "focus": "quasar app",
+    "scenario": "e-commerce catalog"
+  },
+  {
+    "type": "template",
+    "file": "54-angular-integration/02-angular-module-setup/templates/15-element-plus.html",
+    "focus": "element plus",
+    "scenario": "mobile web app"
+  },
+  {
+    "type": "template",
+    "file": "54-angular-integration/02-angular-module-setup/templates/16-angular-material.html",
+    "focus": "angular material",
+    "scenario": "design system kit"
+  },
+  {
+    "type": "template",
+    "file": "54-angular-integration/02-angular-module-setup/templates/17-primeng-grid.html",
+    "focus": "primeng grid",
+    "scenario": "enterprise portal"
+  },
+  {
+    "type": "template",
+    "file": "54-angular-integration/02-angular-module-setup/templates/18-ionic-tabs.html",
+    "focus": "ionic tabs",
+    "scenario": "docs site"
+  },
+  {
+    "type": "template",
+    "file": "54-angular-integration/02-angular-module-setup/templates/19-ag-grid-table.html",
+    "focus": "ag-grid table",
+    "scenario": "form-heavy CRM"
+  },
+  {
+    "type": "template",
+    "file": "54-angular-integration/02-angular-module-setup/templates/20-storybook-ds.html",
+    "focus": "storybook ds",
+    "scenario": "data analytics UI"
+  },
+  {
+    "type": "template",
+    "file": "54-angular-integration/02-angular-module-setup/templates/21-multi-theme.html",
+    "focus": "multi theme",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "template",
+    "file": "54-angular-integration/02-angular-module-setup/templates/22-ecommerce-ui.html",
+    "focus": "ecommerce ui",
+    "scenario": "admin dashboard"
+  },
+  {
+    "type": "template",
+    "file": "54-angular-integration/02-angular-module-setup/templates/23-admin-portal.html",
+    "focus": "admin portal",
+    "scenario": "SaaS settings"
+  },
+  {
+    "type": "template",
+    "file": "54-angular-integration/02-angular-module-setup/templates/24-custom-tokens.html",
+    "focus": "custom tokens",
+    "scenario": "e-commerce catalog"
+  },
+  {
+    "type": "template",
+    "file": "54-angular-integration/02-angular-module-setup/templates/25-production-starter.html",
+    "focus": "production starter",
+    "scenario": "mobile web app"
+  }
+]

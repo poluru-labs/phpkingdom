@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 26-Date-Time-Examples
+  example: 22-end-of-month.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>22 — End of Month | phpkingdom.com</title>
+</head>
+<body>
+  <h1>22 — End of Month</h1>
+  <h2>Problem</h2>
+  <p>Get the last moment of the month using day 0 of next month.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+
+function endOfMonth(d) {
+  return new Date(d.getFullYear(), d.getMonth() + 1, 0, 23, 59, 59, 999);
+}
+const d = new Date(2024, 0, 15);
+document.getElementById("out").textContent = "End of month: " + endOfMonth(d).toString();
+
+  </script>
+</body>
+</html>

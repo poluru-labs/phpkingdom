@@ -1,0 +1,37 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 23-Promises-Examples
+  example: 43-all-object-values.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>43 — Promise.all on Object Values | phpkingdom.com</title>
+</head>
+<body>
+  <h1>43 — Promise.all on Object Values</h1>
+  <h2>Problem</h2>
+  <p>Resolve every value in an object of promises.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+async function allValues(obj) {
+  const entries = Object.entries(obj);
+  const values = await Promise.all(entries.map(([, p]) => p));
+  return Object.fromEntries(entries.map(([k], i) => [k, values[i]]));
+}
+allValues({
+  site: Promise.resolve("phpkingdom.com"),
+  author: Promise.resolve("Subrahmanyam Poluru")
+}).then((result) => {
+  document.getElementById("out").textContent = JSON.stringify(result, null, 2);
+});
+  </script>
+</body>
+</html>

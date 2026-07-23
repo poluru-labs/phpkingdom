@@ -1,0 +1,26 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 05-Arrays/03-map-filter-reduce
+  example: 01-map.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>map | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Array map</h1>
+  <p>Transform each item.</p>
+  <pre id="out"></pre>
+  <script>
+const nums = [1, 2, 3];
+document.getElementById("out").textContent = nums.map((n) => n * 10).join(", ");
+  </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 10-Advanced/02-prototypes
+  example: 02-constructor-prototype.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Constructor Prototype | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Constructor + prototype</h1>
+  <p>Share methods on prototype.</p>
+  <pre id="out"></pre>
+  <script>
+function Person(name) { this.name = name; }
+Person.prototype.hello = function () { return "Hi " + this.name; };
+document.getElementById("out").textContent = new Person("Ada").hello();
+  </script>
+</body>
+</html>

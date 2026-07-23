@@ -1,0 +1,27 @@
+<!--
+  sitename: phpkingdom
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  topic: 08-Misc-Examples
+  example: 44-output-element.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Output Element | phpkingdom</title>
+</head>
+<body>
+  <h1>Form Output Element</h1>
+
+  <form oninput="result.value = Number(a.value) + Number(b.value)">
+    <input type="number" id="a" name="a" value="10">
+    +
+    <input type="number" id="b" name="b" value="5">
+    =
+    <output name="result" for="a b">15</output>
+  </form>
+
+</body>
+</html>

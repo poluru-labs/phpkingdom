@@ -1,0 +1,27 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 11-Browser-APIs/03-timers
+  example: 01-setTimeout.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>setTimeout | phpkingdom.com</title>
+</head>
+<body>
+  <h1>setTimeout</h1>
+  <p>Run once after a delay.</p>
+  <pre id="out">waiting…</pre>
+  <script>
+setTimeout(function () {
+  document.getElementById("out").textContent = "fired after 500ms";
+}, 500);
+  </script>
+</body>
+</html>

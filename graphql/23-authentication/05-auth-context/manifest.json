@@ -1,0 +1,452 @@
+[
+  {
+    "type": "example",
+    "file": "23-authentication/05-auth-context/examples/01-hello-schema.html",
+    "focus": "hello schema",
+    "scenario": "blog API"
+  },
+  {
+    "type": "example",
+    "file": "23-authentication/05-auth-context/examples/02-query-field.html",
+    "focus": "query field",
+    "scenario": "e-commerce catalog"
+  },
+  {
+    "type": "example",
+    "file": "23-authentication/05-auth-context/examples/03-mutation-create.html",
+    "focus": "mutation create",
+    "scenario": "social feed"
+  },
+  {
+    "type": "example",
+    "file": "23-authentication/05-auth-context/examples/04-resolver-args.html",
+    "focus": "resolver args",
+    "scenario": "chat service"
+  },
+  {
+    "type": "example",
+    "file": "23-authentication/05-auth-context/examples/05-context-auth.html",
+    "focus": "context auth",
+    "scenario": "admin dashboard"
+  },
+  {
+    "type": "example",
+    "file": "23-authentication/05-auth-context/examples/06-nested-field.html",
+    "focus": "nested field",
+    "scenario": "BFF for mobile"
+  },
+  {
+    "type": "example",
+    "file": "23-authentication/05-auth-context/examples/07-input-type.html",
+    "focus": "input type",
+    "scenario": "federated platform"
+  },
+  {
+    "type": "example",
+    "file": "23-authentication/05-auth-context/examples/08-enum-status.html",
+    "focus": "enum status",
+    "scenario": "SaaS multi-tenant"
+  },
+  {
+    "type": "example",
+    "file": "23-authentication/05-auth-context/examples/09-fragment-reuse.html",
+    "focus": "fragment reuse",
+    "scenario": "content CMS"
+  },
+  {
+    "type": "example",
+    "file": "23-authentication/05-auth-context/examples/10-variables.html",
+    "focus": "variables",
+    "scenario": "analytics API"
+  },
+  {
+    "type": "example",
+    "file": "23-authentication/05-auth-context/examples/11-include-skip.html",
+    "focus": "include skip",
+    "scenario": "blog API"
+  },
+  {
+    "type": "example",
+    "file": "23-authentication/05-auth-context/examples/12-interface-type.html",
+    "focus": "interface type",
+    "scenario": "e-commerce catalog"
+  },
+  {
+    "type": "example",
+    "file": "23-authentication/05-auth-context/examples/13-apollo-setup.html",
+    "focus": "apollo setup",
+    "scenario": "social feed"
+  },
+  {
+    "type": "example",
+    "file": "23-authentication/05-auth-context/examples/14-yoga-setup.html",
+    "focus": "yoga setup",
+    "scenario": "chat service"
+  },
+  {
+    "type": "example",
+    "file": "23-authentication/05-auth-context/examples/15-dataloader-batch.html",
+    "focus": "dataloader batch",
+    "scenario": "admin dashboard"
+  },
+  {
+    "type": "example",
+    "file": "23-authentication/05-auth-context/examples/16-cursor-page.html",
+    "focus": "cursor page",
+    "scenario": "BFF for mobile"
+  },
+  {
+    "type": "example",
+    "file": "23-authentication/05-auth-context/examples/17-filter-sort.html",
+    "focus": "filter sort",
+    "scenario": "federated platform"
+  },
+  {
+    "type": "example",
+    "file": "23-authentication/05-auth-context/examples/18-subscription.html",
+    "focus": "subscription",
+    "scenario": "SaaS multi-tenant"
+  },
+  {
+    "type": "example",
+    "file": "23-authentication/05-auth-context/examples/19-jwt-context.html",
+    "focus": "jwt context",
+    "scenario": "content CMS"
+  },
+  {
+    "type": "example",
+    "file": "23-authentication/05-auth-context/examples/20-custom-error.html",
+    "focus": "custom error",
+    "scenario": "analytics API"
+  },
+  {
+    "type": "example",
+    "file": "23-authentication/05-auth-context/examples/21-depth-limit.html",
+    "focus": "depth limit",
+    "scenario": "blog API"
+  },
+  {
+    "type": "example",
+    "file": "23-authentication/05-auth-context/examples/22-persisted-query.html",
+    "focus": "persisted query",
+    "scenario": "e-commerce catalog"
+  },
+  {
+    "type": "example",
+    "file": "23-authentication/05-auth-context/examples/23-schema-module.html",
+    "focus": "schema module",
+    "scenario": "social feed"
+  },
+  {
+    "type": "example",
+    "file": "23-authentication/05-auth-context/examples/24-federation-entity.html",
+    "focus": "federation entity",
+    "scenario": "chat service"
+  },
+  {
+    "type": "example",
+    "file": "23-authentication/05-auth-context/examples/25-best-practice-recap.html",
+    "focus": "best practice recap",
+    "scenario": "admin dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "23-authentication/05-auth-context/exercises/01-install-apollo.html",
+    "focus": "install apollo",
+    "scenario": "blog API"
+  },
+  {
+    "type": "exercise",
+    "file": "23-authentication/05-auth-context/exercises/02-type-defs.html",
+    "focus": "type defs",
+    "scenario": "e-commerce catalog"
+  },
+  {
+    "type": "exercise",
+    "file": "23-authentication/05-auth-context/exercises/03-query-users.html",
+    "focus": "query users",
+    "scenario": "social feed"
+  },
+  {
+    "type": "exercise",
+    "file": "23-authentication/05-auth-context/exercises/04-mutation-create.html",
+    "focus": "mutation create",
+    "scenario": "chat service"
+  },
+  {
+    "type": "exercise",
+    "file": "23-authentication/05-auth-context/exercises/05-resolver-parent.html",
+    "focus": "resolver parent",
+    "scenario": "admin dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "23-authentication/05-auth-context/exercises/06-auth-context.html",
+    "focus": "auth context",
+    "scenario": "BFF for mobile"
+  },
+  {
+    "type": "exercise",
+    "file": "23-authentication/05-auth-context/exercises/07-require-role.html",
+    "focus": "require role",
+    "scenario": "federated platform"
+  },
+  {
+    "type": "exercise",
+    "file": "23-authentication/05-auth-context/exercises/08-validate-input.html",
+    "focus": "validate input",
+    "scenario": "SaaS multi-tenant"
+  },
+  {
+    "type": "exercise",
+    "file": "23-authentication/05-auth-context/exercises/09-throw-graphql-error.html",
+    "focus": "throw graphql error",
+    "scenario": "content CMS"
+  },
+  {
+    "type": "exercise",
+    "file": "23-authentication/05-auth-context/exercises/10-dataloader.html",
+    "focus": "dataloader",
+    "scenario": "analytics API"
+  },
+  {
+    "type": "exercise",
+    "file": "23-authentication/05-auth-context/exercises/11-offset-page.html",
+    "focus": "offset page",
+    "scenario": "blog API"
+  },
+  {
+    "type": "exercise",
+    "file": "23-authentication/05-auth-context/exercises/12-relay-connection.html",
+    "focus": "relay connection",
+    "scenario": "e-commerce catalog"
+  },
+  {
+    "type": "exercise",
+    "file": "23-authentication/05-auth-context/exercises/13-pubsub-event.html",
+    "focus": "pubsub event",
+    "scenario": "social feed"
+  },
+  {
+    "type": "exercise",
+    "file": "23-authentication/05-auth-context/exercises/14-upload-sketch.html",
+    "focus": "upload sketch",
+    "scenario": "chat service"
+  },
+  {
+    "type": "exercise",
+    "file": "23-authentication/05-auth-context/exercises/15-deprecate-field.html",
+    "focus": "deprecate field",
+    "scenario": "admin dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "23-authentication/05-auth-context/exercises/16-wrap-rest.html",
+    "focus": "wrap rest",
+    "scenario": "BFF for mobile"
+  },
+  {
+    "type": "exercise",
+    "file": "23-authentication/05-auth-context/exercises/17-depth-limit.html",
+    "focus": "depth limit",
+    "scenario": "federated platform"
+  },
+  {
+    "type": "exercise",
+    "file": "23-authentication/05-auth-context/exercises/18-jest-resolver.html",
+    "focus": "jest resolver",
+    "scenario": "SaaS multi-tenant"
+  },
+  {
+    "type": "exercise",
+    "file": "23-authentication/05-auth-context/exercises/19-mock-schema.html",
+    "focus": "mock schema",
+    "scenario": "content CMS"
+  },
+  {
+    "type": "exercise",
+    "file": "23-authentication/05-auth-context/exercises/20-log-operation.html",
+    "focus": "log operation",
+    "scenario": "analytics API"
+  },
+  {
+    "type": "exercise",
+    "file": "23-authentication/05-auth-context/exercises/21-docker-deploy.html",
+    "focus": "docker deploy",
+    "scenario": "blog API"
+  },
+  {
+    "type": "exercise",
+    "file": "23-authentication/05-auth-context/exercises/22-schema-check.html",
+    "focus": "schema check",
+    "scenario": "e-commerce catalog"
+  },
+  {
+    "type": "exercise",
+    "file": "23-authentication/05-auth-context/exercises/23-codegen-types.html",
+    "focus": "codegen types",
+    "scenario": "social feed"
+  },
+  {
+    "type": "exercise",
+    "file": "23-authentication/05-auth-context/exercises/24-nullability-fix.html",
+    "focus": "nullability fix",
+    "scenario": "chat service"
+  },
+  {
+    "type": "exercise",
+    "file": "23-authentication/05-auth-context/exercises/25-final-challenge.html",
+    "focus": "final challenge",
+    "scenario": "admin dashboard"
+  },
+  {
+    "type": "template",
+    "file": "23-authentication/05-auth-context/templates/01-hello-server.html",
+    "focus": "hello server",
+    "scenario": "blog API"
+  },
+  {
+    "type": "template",
+    "file": "23-authentication/05-auth-context/templates/02-blog-schema.html",
+    "focus": "blog schema",
+    "scenario": "e-commerce catalog"
+  },
+  {
+    "type": "template",
+    "file": "23-authentication/05-auth-context/templates/03-ecommerce-api.html",
+    "focus": "ecommerce api",
+    "scenario": "social feed"
+  },
+  {
+    "type": "template",
+    "file": "23-authentication/05-auth-context/templates/04-social-graph.html",
+    "focus": "social graph",
+    "scenario": "chat service"
+  },
+  {
+    "type": "template",
+    "file": "23-authentication/05-auth-context/templates/05-chat-subscription.html",
+    "focus": "chat subscription",
+    "scenario": "admin dashboard"
+  },
+  {
+    "type": "template",
+    "file": "23-authentication/05-auth-context/templates/06-auth-jwt.html",
+    "focus": "auth jwt",
+    "scenario": "BFF for mobile"
+  },
+  {
+    "type": "template",
+    "file": "23-authentication/05-auth-context/templates/07-rbac-directive.html",
+    "focus": "rbac directive",
+    "scenario": "federated platform"
+  },
+  {
+    "type": "template",
+    "file": "23-authentication/05-auth-context/templates/08-prisma-crud.html",
+    "focus": "prisma crud",
+    "scenario": "SaaS multi-tenant"
+  },
+  {
+    "type": "template",
+    "file": "23-authentication/05-auth-context/templates/09-dataloader-kit.html",
+    "focus": "dataloader kit",
+    "scenario": "content CMS"
+  },
+  {
+    "type": "template",
+    "file": "23-authentication/05-auth-context/templates/10-relay-pagination.html",
+    "focus": "relay pagination",
+    "scenario": "analytics API"
+  },
+  {
+    "type": "template",
+    "file": "23-authentication/05-auth-context/templates/11-filter-input.html",
+    "focus": "filter input",
+    "scenario": "blog API"
+  },
+  {
+    "type": "template",
+    "file": "23-authentication/05-auth-context/templates/12-file-upload.html",
+    "focus": "file upload",
+    "scenario": "e-commerce catalog"
+  },
+  {
+    "type": "template",
+    "file": "23-authentication/05-auth-context/templates/13-redis-cache.html",
+    "focus": "redis cache",
+    "scenario": "social feed"
+  },
+  {
+    "type": "template",
+    "file": "23-authentication/05-auth-context/templates/14-federation-subgraph.html",
+    "focus": "federation subgraph",
+    "scenario": "chat service"
+  },
+  {
+    "type": "template",
+    "file": "23-authentication/05-auth-context/templates/15-rest-wrapper.html",
+    "focus": "rest wrapper",
+    "scenario": "admin dashboard"
+  },
+  {
+    "type": "template",
+    "file": "23-authentication/05-auth-context/templates/16-yoga-server.html",
+    "focus": "yoga server",
+    "scenario": "BFF for mobile"
+  },
+  {
+    "type": "template",
+    "file": "23-authentication/05-auth-context/templates/17-express-apollo.html",
+    "focus": "express apollo",
+    "scenario": "federated platform"
+  },
+  {
+    "type": "template",
+    "file": "23-authentication/05-auth-context/templates/18-security-limits.html",
+    "focus": "security limits",
+    "scenario": "SaaS multi-tenant"
+  },
+  {
+    "type": "template",
+    "file": "23-authentication/05-auth-context/templates/19-otel-tracing.html",
+    "focus": "otel tracing",
+    "scenario": "content CMS"
+  },
+  {
+    "type": "template",
+    "file": "23-authentication/05-auth-context/templates/20-jest-suite.html",
+    "focus": "jest suite",
+    "scenario": "analytics API"
+  },
+  {
+    "type": "template",
+    "file": "23-authentication/05-auth-context/templates/21-docker-compose.html",
+    "focus": "docker compose",
+    "scenario": "blog API"
+  },
+  {
+    "type": "template",
+    "file": "23-authentication/05-auth-context/templates/22-github-actions.html",
+    "focus": "github actions",
+    "scenario": "e-commerce catalog"
+  },
+  {
+    "type": "template",
+    "file": "23-authentication/05-auth-context/templates/23-typescript-codegen.html",
+    "focus": "typescript codegen",
+    "scenario": "social feed"
+  },
+  {
+    "type": "template",
+    "file": "23-authentication/05-auth-context/templates/24-bff-gateway.html",
+    "focus": "bff gateway",
+    "scenario": "chat service"
+  },
+  {
+    "type": "template",
+    "file": "23-authentication/05-auth-context/templates/25-production-starter.html",
+    "focus": "production starter",
+    "scenario": "admin dashboard"
+  }
+]

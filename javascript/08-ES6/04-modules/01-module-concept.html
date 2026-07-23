@@ -1,0 +1,29 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 08-ES6/04-modules
+  example: 01-module-concept.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Module Concept | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Modules Concept</h1>
+  <p>Browsers load modules with type=module.</p>
+  <pre id="out">See modules-demo.mjs notes below.</pre>
+  <p>In real projects: <code>&lt;script type="module" src="app.js"&gt;</code></p>
+  <pre>// math.js
+export function add(a, b) { return a + b; }
+
+// app.js
+import { add } from "./math.js";
+console.log(add(2, 3));</pre>
+</body>
+</html>

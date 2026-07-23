@@ -1,0 +1,38 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 30-Data-Structures-Examples
+  example: 12-linked-list-find.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>12 — Singly Linked List — Find | phpkingdom.com</title>
+</head>
+<body>
+  <h1>12 — Singly Linked List — Find</h1>
+  <h2>Problem</h2>
+  <p>Search for a value in a singly linked list.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+class ListNode { constructor(val, next = null) { this.val = val; this.next = next; } }
+function find(head, target) {
+  let cur = head, idx = 0;
+  while (cur) {
+    if (cur.val === target) return idx;
+    cur = cur.next; idx++;
+  }
+  return -1;
+}
+const head = new ListNode(5, new ListNode(10, new ListNode(15)));
+document.getElementById("out").textContent =
+  "find 10 => index " + find(head, 10) + "\nfind 99 => index " + find(head, 99);
+  </script>
+</body>
+</html>

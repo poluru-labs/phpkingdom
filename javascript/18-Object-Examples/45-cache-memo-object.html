@@ -1,0 +1,38 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 18-Object-Examples
+  example: 45-cache-memo-object.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>45 — Memoization Cache Object | phpkingdom.com</title>
+</head>
+<body>
+  <h1>45 — Memoization Cache Object</h1>
+  <h2>Problem</h2>
+  <p>Cache expensive function results in an object map.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function memoize(fn) {
+  const cache = {};
+  return function (n) {
+    const key = String(n);
+    if (key in cache) return cache[key] + " (cache)";
+    const value = fn(n);
+    cache[key] = value;
+    return value + " (fresh)";
+  };
+}
+const slowSquare = memoize((n) => n * n);
+document.getElementById("out").textContent = slowSquare(9) + " | " + slowSquare(9);
+  </script>
+</body>
+</html>

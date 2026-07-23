@@ -1,0 +1,124 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Git Tutorials
+section title: Projects
+topic title: Git CI/CD Workflow
+content type: Exercise
+item number: 19
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Git CI/CD Workflow Exercise 19 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #fee2e2;
+      color: #991b1b;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Exercise 19</span>
+    <h1>Git CI/CD Workflow</h1>
+    <p><strong>Section:</strong> Projects</p>
+    <p><strong>Focus:</strong> Blame Line</p>
+    <p><strong>Scenario:</strong> mobile app</p>
+    <p>Run the commands in a practice repo and verify with git status / git log.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Git Commands</h2>
+        <pre><code># Git CI/CD Workflow — Exercise 19
+# Focus: blame line | Scenario: mobile app
+
+
+# Project: CI/CD with Git (ci-cd-project)
+mkdir -p .github/workflows
+cat &gt; .github/workflows/ci.yml &lt;&lt;&#x27;EOF&#x27;
+name: ci
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: echo CI
+EOF
+git add -A &amp;&amp; git commit -m &quot;ci(ci-cd-project): project workflow&quot;
+</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Git CI/CD Workflow
+- Practice: blame line
+- Scenario: mobile app
+- Prefer small commits with clear messages
+- Never rewrite shared history without coordination
+- Use git status often before commit/push
+- Prefer pull --rebase on feature branches; protect main
+
+Useful companions:
+  git status -sb
+  git log --oneline --graph --decorate
+  git reflog
+  git restore --staged &lt;file&gt;
+  git push --force-with-lease</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This exercise shows one way to apply <strong>Git CI/CD Workflow</strong> in a mobile app context.</p>
+      <p>Commit often, review diffs before push, and keep main/master protected with reviews.</p>
+    </section>
+  </main>
+</body>
+</html>

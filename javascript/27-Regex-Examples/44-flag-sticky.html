@@ -1,0 +1,35 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 27-Regex-Examples
+  example: 44-flag-sticky.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>44 — Sticky Flag (y) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>44 — Sticky Flag (y)</h1>
+  <h2>Problem</h2>
+  <p>Use the sticky y flag to match only at lastIndex.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const text = "abc abc abc";
+const re = /abc/y;
+const hits = [];
+let m;
+while ((m = re.exec(text)) !== null) {
+  hits.push("index " + m.index + ": " + m[0]);
+  re.lastIndex += 1;
+}
+document.getElementById("out").textContent = hits.join("\n");
+  </script>
+</body>
+</html>

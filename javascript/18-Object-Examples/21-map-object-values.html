@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 18-Object-Examples
+  example: 21-map-object-values.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>21 — Map Object Values | phpkingdom.com</title>
+</head>
+<body>
+  <h1>21 — Map Object Values</h1>
+  <h2>Problem</h2>
+  <p>Transform every value and keep the same keys.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function mapValues(obj, fn) {
+  return Object.fromEntries(Object.entries(obj).map(([k, v]) => [k, fn(v, k)]));
+}
+document.getElementById("out").textContent = JSON.stringify(mapValues({ a: 1, b: 2 }, (v) => v * 10));
+  </script>
+</body>
+</html>

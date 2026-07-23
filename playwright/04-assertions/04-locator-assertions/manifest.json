@@ -1,0 +1,452 @@
+[
+  {
+    "type": "example",
+    "file": "04-assertions/04-locator-assertions/examples/01-starter-navigate.html",
+    "focus": "starter navigate",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "example",
+    "file": "04-assertions/04-locator-assertions/examples/02-login-flow.html",
+    "focus": "login flow",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "example",
+    "file": "04-assertions/04-locator-assertions/examples/03-form-submit.html",
+    "focus": "form submit",
+    "scenario": "checkout flow"
+  },
+  {
+    "type": "example",
+    "file": "04-assertions/04-locator-assertions/examples/04-getbyrole.html",
+    "focus": "getByRole",
+    "scenario": "admin panel"
+  },
+  {
+    "type": "example",
+    "file": "04-assertions/04-locator-assertions/examples/05-getbytestid.html",
+    "focus": "getByTestId",
+    "scenario": "auth portal"
+  },
+  {
+    "type": "example",
+    "file": "04-assertions/04-locator-assertions/examples/06-expect-visible.html",
+    "focus": "expect visible",
+    "scenario": "component library"
+  },
+  {
+    "type": "example",
+    "file": "04-assertions/04-locator-assertions/examples/07-url-assertion.html",
+    "focus": "url assertion",
+    "scenario": "API-backed SPA"
+  },
+  {
+    "type": "example",
+    "file": "04-assertions/04-locator-assertions/examples/08-auto-waiting.html",
+    "focus": "auto waiting",
+    "scenario": "mobile web app"
+  },
+  {
+    "type": "example",
+    "file": "04-assertions/04-locator-assertions/examples/09-route-mock.html",
+    "focus": "route mock",
+    "scenario": "docs site"
+  },
+  {
+    "type": "example",
+    "file": "04-assertions/04-locator-assertions/examples/10-api-request.html",
+    "focus": "api request",
+    "scenario": "booking app"
+  },
+  {
+    "type": "example",
+    "file": "04-assertions/04-locator-assertions/examples/11-storage-state.html",
+    "focus": "storage state",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "example",
+    "file": "04-assertions/04-locator-assertions/examples/12-browser-context.html",
+    "focus": "browser context",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "example",
+    "file": "04-assertions/04-locator-assertions/examples/13-mobile-project.html",
+    "focus": "mobile project",
+    "scenario": "checkout flow"
+  },
+  {
+    "type": "example",
+    "file": "04-assertions/04-locator-assertions/examples/14-trace-on.html",
+    "focus": "trace on",
+    "scenario": "admin panel"
+  },
+  {
+    "type": "example",
+    "file": "04-assertions/04-locator-assertions/examples/15-ui-mode.html",
+    "focus": "ui mode",
+    "scenario": "auth portal"
+  },
+  {
+    "type": "example",
+    "file": "04-assertions/04-locator-assertions/examples/16-codegen-clip.html",
+    "focus": "codegen clip",
+    "scenario": "component library"
+  },
+  {
+    "type": "example",
+    "file": "04-assertions/04-locator-assertions/examples/17-screenshot.html",
+    "focus": "screenshot",
+    "scenario": "API-backed SPA"
+  },
+  {
+    "type": "example",
+    "file": "04-assertions/04-locator-assertions/examples/18-video-record.html",
+    "focus": "video record",
+    "scenario": "mobile web app"
+  },
+  {
+    "type": "example",
+    "file": "04-assertions/04-locator-assertions/examples/19-retry-config.html",
+    "focus": "retry config",
+    "scenario": "docs site"
+  },
+  {
+    "type": "example",
+    "file": "04-assertions/04-locator-assertions/examples/20-fixture-extend.html",
+    "focus": "fixture extend",
+    "scenario": "booking app"
+  },
+  {
+    "type": "example",
+    "file": "04-assertions/04-locator-assertions/examples/21-a11y-check.html",
+    "focus": "a11y check",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "example",
+    "file": "04-assertions/04-locator-assertions/examples/22-visual-snapshot.html",
+    "focus": "visual snapshot",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "example",
+    "file": "04-assertions/04-locator-assertions/examples/23-ci-workers.html",
+    "focus": "ci workers",
+    "scenario": "checkout flow"
+  },
+  {
+    "type": "example",
+    "file": "04-assertions/04-locator-assertions/examples/24-pom-page.html",
+    "focus": "pom page",
+    "scenario": "admin panel"
+  },
+  {
+    "type": "example",
+    "file": "04-assertions/04-locator-assertions/examples/25-best-practice-recap.html",
+    "focus": "best practice recap",
+    "scenario": "auth portal"
+  },
+  {
+    "type": "exercise",
+    "file": "04-assertions/04-locator-assertions/exercises/01-install-challenge.html",
+    "focus": "install challenge",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "04-assertions/04-locator-assertions/exercises/02-first-test.html",
+    "focus": "first test",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "exercise",
+    "file": "04-assertions/04-locator-assertions/exercises/03-locator-cleanup.html",
+    "focus": "locator cleanup",
+    "scenario": "checkout flow"
+  },
+  {
+    "type": "exercise",
+    "file": "04-assertions/04-locator-assertions/exercises/04-fill-click-drill.html",
+    "focus": "fill click drill",
+    "scenario": "admin panel"
+  },
+  {
+    "type": "exercise",
+    "file": "04-assertions/04-locator-assertions/exercises/05-expect-practice.html",
+    "focus": "expect practice",
+    "scenario": "auth portal"
+  },
+  {
+    "type": "exercise",
+    "file": "04-assertions/04-locator-assertions/exercises/06-wait-for-url.html",
+    "focus": "wait for url",
+    "scenario": "component library"
+  },
+  {
+    "type": "exercise",
+    "file": "04-assertions/04-locator-assertions/exercises/07-timeout-tweak.html",
+    "focus": "timeout tweak",
+    "scenario": "API-backed SPA"
+  },
+  {
+    "type": "exercise",
+    "file": "04-assertions/04-locator-assertions/exercises/08-retry-enable.html",
+    "focus": "retry enable",
+    "scenario": "mobile web app"
+  },
+  {
+    "type": "exercise",
+    "file": "04-assertions/04-locator-assertions/exercises/09-fixture-usage.html",
+    "focus": "fixture usage",
+    "scenario": "docs site"
+  },
+  {
+    "type": "exercise",
+    "file": "04-assertions/04-locator-assertions/exercises/10-env-config.html",
+    "focus": "env config",
+    "scenario": "booking app"
+  },
+  {
+    "type": "exercise",
+    "file": "04-assertions/04-locator-assertions/exercises/11-route-fulfill.html",
+    "focus": "route fulfill",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "04-assertions/04-locator-assertions/exercises/12-api-assert.html",
+    "focus": "api assert",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "exercise",
+    "file": "04-assertions/04-locator-assertions/exercises/13-storage-save.html",
+    "focus": "storage save",
+    "scenario": "checkout flow"
+  },
+  {
+    "type": "exercise",
+    "file": "04-assertions/04-locator-assertions/exercises/14-jwt-header.html",
+    "focus": "jwt header",
+    "scenario": "admin panel"
+  },
+  {
+    "type": "exercise",
+    "file": "04-assertions/04-locator-assertions/exercises/15-protected-route.html",
+    "focus": "protected route",
+    "scenario": "auth portal"
+  },
+  {
+    "type": "exercise",
+    "file": "04-assertions/04-locator-assertions/exercises/16-device-project.html",
+    "focus": "device project",
+    "scenario": "component library"
+  },
+  {
+    "type": "exercise",
+    "file": "04-assertions/04-locator-assertions/exercises/17-debug-headed.html",
+    "focus": "debug headed",
+    "scenario": "API-backed SPA"
+  },
+  {
+    "type": "exercise",
+    "file": "04-assertions/04-locator-assertions/exercises/18-codegen-task.html",
+    "focus": "codegen task",
+    "scenario": "mobile web app"
+  },
+  {
+    "type": "exercise",
+    "file": "04-assertions/04-locator-assertions/exercises/19-trace-open.html",
+    "focus": "trace open",
+    "scenario": "docs site"
+  },
+  {
+    "type": "exercise",
+    "file": "04-assertions/04-locator-assertions/exercises/20-screenshot-assert.html",
+    "focus": "screenshot assert",
+    "scenario": "booking app"
+  },
+  {
+    "type": "exercise",
+    "file": "04-assertions/04-locator-assertions/exercises/21-github-action.html",
+    "focus": "github action",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "04-assertions/04-locator-assertions/exercises/22-docker-run.html",
+    "focus": "docker run",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "exercise",
+    "file": "04-assertions/04-locator-assertions/exercises/23-flake-fix.html",
+    "focus": "flake fix",
+    "scenario": "checkout flow"
+  },
+  {
+    "type": "exercise",
+    "file": "04-assertions/04-locator-assertions/exercises/24-pom-refactor.html",
+    "focus": "pom refactor",
+    "scenario": "admin panel"
+  },
+  {
+    "type": "exercise",
+    "file": "04-assertions/04-locator-assertions/exercises/25-final-challenge.html",
+    "focus": "final challenge",
+    "scenario": "auth portal"
+  },
+  {
+    "type": "template",
+    "file": "04-assertions/04-locator-assertions/templates/01-e2e-starter.html",
+    "focus": "e2e starter",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "template",
+    "file": "04-assertions/04-locator-assertions/templates/02-config-ts.html",
+    "focus": "config ts",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "template",
+    "file": "04-assertions/04-locator-assertions/templates/03-login-kit.html",
+    "focus": "login kit",
+    "scenario": "checkout flow"
+  },
+  {
+    "type": "template",
+    "file": "04-assertions/04-locator-assertions/templates/04-form-kit.html",
+    "focus": "form kit",
+    "scenario": "admin panel"
+  },
+  {
+    "type": "template",
+    "file": "04-assertions/04-locator-assertions/templates/05-api-kit.html",
+    "focus": "api kit",
+    "scenario": "auth portal"
+  },
+  {
+    "type": "template",
+    "file": "04-assertions/04-locator-assertions/templates/06-route-kit.html",
+    "focus": "route kit",
+    "scenario": "component library"
+  },
+  {
+    "type": "template",
+    "file": "04-assertions/04-locator-assertions/templates/07-storage-kit.html",
+    "focus": "storage kit",
+    "scenario": "API-backed SPA"
+  },
+  {
+    "type": "template",
+    "file": "04-assertions/04-locator-assertions/templates/08-fixture-kit.html",
+    "focus": "fixture kit",
+    "scenario": "mobile web app"
+  },
+  {
+    "type": "template",
+    "file": "04-assertions/04-locator-assertions/templates/09-pom-kit.html",
+    "focus": "pom kit",
+    "scenario": "docs site"
+  },
+  {
+    "type": "template",
+    "file": "04-assertions/04-locator-assertions/templates/10-mobile-kit.html",
+    "focus": "mobile kit",
+    "scenario": "booking app"
+  },
+  {
+    "type": "template",
+    "file": "04-assertions/04-locator-assertions/templates/11-multi-browser.html",
+    "focus": "multi browser",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "template",
+    "file": "04-assertions/04-locator-assertions/templates/12-ci-github.html",
+    "focus": "ci github",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "template",
+    "file": "04-assertions/04-locator-assertions/templates/13-ci-jenkins.html",
+    "focus": "ci jenkins",
+    "scenario": "checkout flow"
+  },
+  {
+    "type": "template",
+    "file": "04-assertions/04-locator-assertions/templates/14-docker-compose.html",
+    "focus": "docker compose",
+    "scenario": "admin panel"
+  },
+  {
+    "type": "template",
+    "file": "04-assertions/04-locator-assertions/templates/15-parallel-workers.html",
+    "focus": "parallel workers",
+    "scenario": "auth portal"
+  },
+  {
+    "type": "template",
+    "file": "04-assertions/04-locator-assertions/templates/16-a11y-kit.html",
+    "focus": "a11y kit",
+    "scenario": "component library"
+  },
+  {
+    "type": "template",
+    "file": "04-assertions/04-locator-assertions/templates/17-visual-kit.html",
+    "focus": "visual kit",
+    "scenario": "API-backed SPA"
+  },
+  {
+    "type": "template",
+    "file": "04-assertions/04-locator-assertions/templates/18-trace-kit.html",
+    "focus": "trace kit",
+    "scenario": "mobile web app"
+  },
+  {
+    "type": "template",
+    "file": "04-assertions/04-locator-assertions/templates/19-codegen-kit.html",
+    "focus": "codegen kit",
+    "scenario": "docs site"
+  },
+  {
+    "type": "template",
+    "file": "04-assertions/04-locator-assertions/templates/20-component-kit.html",
+    "focus": "component kit",
+    "scenario": "booking app"
+  },
+  {
+    "type": "template",
+    "file": "04-assertions/04-locator-assertions/templates/21-auth-setup.html",
+    "focus": "auth setup",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "template",
+    "file": "04-assertions/04-locator-assertions/templates/22-env-staging.html",
+    "focus": "env staging",
+    "scenario": "marketing site"
+  },
+  {
+    "type": "template",
+    "file": "04-assertions/04-locator-assertions/templates/23-smoke-suite.html",
+    "focus": "smoke suite",
+    "scenario": "checkout flow"
+  },
+  {
+    "type": "template",
+    "file": "04-assertions/04-locator-assertions/templates/24-data-factory.html",
+    "focus": "data factory",
+    "scenario": "admin panel"
+  },
+  {
+    "type": "template",
+    "file": "04-assertions/04-locator-assertions/templates/25-production-starter.html",
+    "focus": "production starter",
+    "scenario": "auth portal"
+  }
+]

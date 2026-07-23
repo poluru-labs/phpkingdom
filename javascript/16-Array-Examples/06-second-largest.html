@@ -1,0 +1,29 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 16-Array-Examples
+  example: 06-second-largest.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>06 — Second Largest | phpkingdom.com</title>
+</head>
+<body>
+  <h1>06 — Second Largest</h1>
+  <h2>Problem</h2>
+  <p>Find the second largest distinct number.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const nums = [10, 5, 20, 20, 8];
+const unique = [...new Set(nums)].sort((a, b) => b - a);
+document.getElementById("out").textContent = "second largest = " + unique[1];
+  </script>
+</body>
+</html>

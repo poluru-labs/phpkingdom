@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 11-Browser-APIs/03-timers
+  example: 01b-setInterval.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>setInterval | phpkingdom.com</title>
+</head>
+<body>
+  <h1>setInterval</h1>
+  <p>Run repeatedly until cleared.</p>
+  <pre id="out">0</pre>
+  <button id="stop" type="button">Stop</button>
+  <script>
+let n = 0;
+const id = setInterval(function () {
+  n += 1;
+  document.getElementById("out").textContent = String(n);
+}, 400);
+document.getElementById("stop").onclick = function () { clearInterval(id); };
+  </script>
+</body>
+</html>

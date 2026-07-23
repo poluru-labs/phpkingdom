@@ -1,0 +1,28 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 28-Tricky-Examples
+  example: 25-optional-chaining-assign.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>25 — Optional chaining is read-only | phpkingdom.com</title>
+</head>
+<body>
+  <h1>25 — Optional chaining is read-only</h1>
+  <h2>Problem / Gotcha</h2>
+  <p>You cannot assign through optional chaining.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+document.getElementById("out").textContent =
+  "obj?.x = 1 is a SyntaxError.\nUse: if (obj) obj.x = 1;";
+  </script>
+</body>
+</html>

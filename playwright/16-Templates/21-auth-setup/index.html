@@ -1,0 +1,61 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 16-Templates/21-auth-setup
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <meta name="description" content="Depends on setup">
+  <title>Auth Setup | setup project | phpkingdom.com</title>
+  <style>
+    body { margin:0; font-family: Georgia, "Times New Roman", serif; background:#f5f7fb; color:#1f2937; line-height:1.55; }
+    .wrap { max-width:900px; margin:0 auto; padding:1.5rem; }
+    .brand { color:#b45309; font-size:.78rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    h1 { font-size:1.75rem; margin:.4rem 0; }
+    .meta { color:#64748b; }
+    pre { background:#0f172a; color:#e2e8f0; padding:1rem; border-radius:.65rem; overflow:auto; font-size:.88rem; }
+    .card { background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:1rem; margin:1rem 0; }
+    a { color:#b45309; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">phpkingdom.com</div>
+    <p class="meta">Auth Setup · Playwright template</p>
+    <h1>setup project</h1>
+    <p class="meta">Depends on setup</p>
+    <div class="card">
+      <h2>Starter Spec</h2>
+      <pre><code>import { defineConfig, devices } from &#x27;@playwright/test&#x27;;
+
+export default defineConfig({
+  projects: [
+    { name: &#x27;setup&#x27;, testMatch: /.*\.setup\.ts/ },
+    {
+      name: &#x27;chromium&#x27;,
+      dependencies: [&#x27;setup&#x27;],
+      use: {
+        ...devices[&#x27;Desktop Chrome&#x27;],
+        storageState: &#x27;playwright/.auth/user.json&#x27;,
+      },
+    },
+  ],
+});</code></pre>
+    </div>
+    <div class="card">
+      <h2>Run</h2>
+      <pre><code>npx playwright test
+npx playwright test --ui
+npx playwright show-report</code></pre>
+    </div>
+    <p><a href="../index.html">All templates</a></p>
+  </div>
+</body>
+</html>

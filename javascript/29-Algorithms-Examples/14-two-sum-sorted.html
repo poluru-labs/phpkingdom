@@ -1,0 +1,43 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 29-Algorithms-Examples
+  example: 14-two-sum-sorted.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>14 — Two Sum (Sorted Array) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>14 — Two Sum (Sorted Array)</h1>
+  <h2>Problem</h2>
+  <p>Find two numbers in a sorted array that add up to target using two pointers.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function twoSumSorted(arr, target) {
+  let lo = 0, hi = arr.length - 1;
+  while (lo < hi) {
+    const sum = arr[lo] + arr[hi];
+    if (sum === target) return [lo, hi];
+    if (sum < target) lo++;
+    else hi--;
+  }
+  return [-1, -1];
+}
+const arr = [1, 2, 4, 6, 8, 9];
+const target = 10;
+const pair = twoSumSorted(arr, target);
+document.getElementById("out").textContent =
+  "array:  " + JSON.stringify(arr) + "\n" +
+  "target: " + target + "\n" +
+  "indices: " + JSON.stringify(pair) + "  values: [" + arr[pair[0]] + ", " + arr[pair[1]] + "]";
+  </script>
+</body>
+</html>

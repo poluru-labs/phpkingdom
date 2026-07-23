@@ -1,0 +1,125 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Jest Tutorials
+section title: Module Mocks
+topic title: Module Mocking
+content type: Example
+item number: 01
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Module Mocking Example 01 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #fce7f3;
+      color: #9d174d;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Example 01</span>
+    <h1>Module Mocking</h1>
+    <p><strong>Section:</strong> Module Mocks</p>
+    <p><strong>Focus:</strong> Starter Expect</p>
+    <p><strong>Scenario:</strong> utility library</p>
+    <p>Study the Jest pattern and adapt matchers, mocks, or async flow to your project.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Jest</h2>
+        <pre><code>// Module Mocking — Example 01
+// Focus: starter expect | Scenario: utility library
+
+// userService.js depends on ./api
+// jest.mock hoists and replaces the module
+
+jest.mock(&quot;./api&quot;, () =&gt; ({
+  getUser: jest.fn(() =&gt; Promise.resolve({ id: 1, name: &quot;Ada&quot; })),
+}));
+
+const { getUser } = require(&quot;./api&quot;);
+const { loadProfile } = require(&quot;./userService&quot;);
+
+test(&quot;loadProfile uses mocked api&quot;, async () =&gt; {
+  getUser.mockResolvedValueOnce({ id: 2, name: &quot;Grace&quot; });
+  await expect(loadProfile(2)).resolves.toMatchObject({ name: &quot;Grace&quot; });
+  expect(getUser).toHaveBeenCalledWith(2);
+});</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Module Mocking
+- Practice: starter expect
+- Scenario: utility library
+- Keep arrange / act / assert clear and deterministic
+- Clear or restore mocks between tests (clearMocks / restoreMocks)
+- Prefer async/await with resolves / rejects over done()
+- Mock at boundaries; avoid over-mocking pure logic
+- Review snapshot diffs before updating
+
+Useful commands:
+  npm install --save-dev jest
+  npx jest
+  npx jest --watch
+  npx jest --coverage
+  npx jest -u</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This example shows one way to apply <strong>Module Mocking</strong> in a utility library context.</p>
+      <p>Prefer clear arrange/act/assert structure and keep mocks close to the behavior under test.</p>
+    </section>
+  </main>
+</body>
+</html>

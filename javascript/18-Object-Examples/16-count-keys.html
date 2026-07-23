@@ -1,0 +1,28 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 18-Object-Examples
+  example: 16-count-keys.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>16 — Count Object Keys | phpkingdom.com</title>
+</head>
+<body>
+  <h1>16 — Count Object Keys</h1>
+  <h2>Problem</h2>
+  <p>Return how many own enumerable keys an object has.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function countKeys(obj) { return Object.keys(obj).length; }
+document.getElementById("out").textContent = String(countKeys({ a: 1, b: 2, c: 3 }));
+  </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 08-ES6/01-es6-features
+  example: 01-let-const-arrows.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>ES6 Snapshot | phpkingdom.com</title>
+</head>
+<body>
+  <h1>ES6 Feature Snapshot</h1>
+  <p>Common modern syntax together.</p>
+  <pre id="out"></pre>
+  <script>
+const nums = [1, 2, 3];
+const doubled = nums.map((n) => n * 2);
+let total = 0;
+for (const n of doubled) total += n;
+document.getElementById("out").textContent = doubled + " sum=" + total;
+  </script>
+</body>
+</html>

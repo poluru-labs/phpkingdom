@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Functions-Examples
+  example: 09-private-variables.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>09 — Private Variables | phpkingdom.com</title>
+</head>
+<body>
+  <h1>09 — Private Variables</h1>
+  <h2>Problem</h2>
+  <p>Hide balance with a closure and expose only safe methods.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function createAccount(initial) {
+  let balance = initial;
+  return {
+    deposit(amount) { balance += amount; },
+    getBalance() { return balance; },
+  };
+}
+const acct = createAccount(100);
+acct.deposit(50);
+document.getElementById("out").textContent = "balance = " + acct.getBalance();
+  </script>
+</body>
+</html>

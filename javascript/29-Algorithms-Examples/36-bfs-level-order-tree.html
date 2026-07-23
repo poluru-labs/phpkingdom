@@ -1,0 +1,55 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 29-Algorithms-Examples
+  example: 36-bfs-level-order-tree.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>36 — BFS Level Order (Tree as Arrays) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>36 — BFS Level Order (Tree as Arrays)</h1>
+  <h2>Problem</h2>
+  <p>Breadth-first traversal of a binary tree stored as a level-order array.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function buildTree(arr) {
+  if (!arr.length || arr[0] == null) return null;
+  const nodes = arr.map(v => (v == null ? null : { val: v, left: null, right: null }));
+  for (let i = 0, j = 1; j < nodes.length; i++) {
+    if (!nodes[i]) continue;
+    if (j < nodes.length) nodes[i].left = nodes[j++];
+    if (j < nodes.length) nodes[i].right = nodes[j++];
+  }
+  return nodes[0];
+}
+function levelOrder(root) {
+  if (!root) return [];
+  const q = [root], levels = [];
+  while (q.length) {
+    const size = q.length, row = [];
+    for (let i = 0; i < size; i++) {
+      const node = q.shift();
+      row.push(node.val);
+      if (node.left) q.push(node.left);
+      if (node.right) q.push(node.right);
+    }
+    levels.push(row);
+  }
+  return levels;
+}
+const arr = [3, 9, 20, null, null, 15, 7];
+document.getElementById("out").textContent =
+  "tree array: " + JSON.stringify(arr) + "\n" +
+  "level order: " + JSON.stringify(levelOrder(buildTree(arr)));
+  </script>
+</body>
+</html>

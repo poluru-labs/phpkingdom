@@ -1,0 +1,102 @@
+<!--
+  sitename: phpkingdom
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  topic: 12-Page-Templates
+  example: 15-newsletter-signup.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsletter — phpkingdom</title>
+  <style>
+    body { font-family: Georgia, "Times New Roman", serif; max-width: 720px; margin: 2rem auto; padding: 0 1.25rem; line-height: 1.6; color: #1a1a1a; }
+    h1 { font-size: 1.75rem; margin-bottom: 0.35rem; }
+    h2 { font-size: 1.15rem; margin-top: 1.5rem; }
+    nav a { margin-right: 0.75rem; }
+    header { border-bottom: 1px solid #ccc; padding-bottom: 1rem; margin-bottom: 1.5rem; text-align: center; }
+    footer { border-top: 1px solid #ccc; padding-top: 1rem; margin-top: 2rem; color: #555; font-size: 0.95rem; text-align: center; }
+    main { max-width: 480px; margin: 0 auto; }
+    .intro { border: 1px solid #ccc; padding: 1.15rem; margin-bottom: 1.25rem; background: #fafafa; }
+    form { display: grid; gap: 0.75rem; border: 1px solid #ccc; padding: 1.25rem; }
+    label { display: grid; gap: 0.25rem; }
+    input, select, textarea, button { font: inherit; padding: 0.4rem 0.55rem; }
+    button { cursor: pointer; background: #2a6f97; color: #fff; border: 0; padding: 0.55rem 1rem; }
+    ul { padding-left: 1.25rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>phpkingdom Newsletter</h1>
+    <p>Weekly HTML &amp; CSS tips from Subrahmanyam Poluru — no spam, unsubscribe anytime.</p>
+    <nav>
+      <a href="index.html">Templates</a>
+      <a href="02-blog-home.html">Blog</a>
+      <a href="11-login-page.html">Member login</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>What you'll receive</h2>
+      <ul>
+        <li>One practical markup tip per week</li>
+        <li>New template and exercise announcements</li>
+        <li>Early access to workshop dates</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Subscribe free</h2>
+      <form action="#" method="post">
+        <label>
+          First name
+          <input type="text" name="first_name" required>
+        </label>
+        <label>
+          Email address
+          <input type="email" name="email" required>
+        </label>
+        <label>
+          Experience level
+          <select name="level">
+            <option value="beginner">Beginner — new to HTML</option>
+            <option value="intermediate">Intermediate — comfortable with basics</option>
+            <option value="teacher">Instructor / mentor</option>
+          </select>
+        </label>
+        <label>
+          Topics of interest
+          <span>
+            <label><input type="checkbox" name="topics" value="html"> HTML structure</label>
+            <label><input type="checkbox" name="topics" value="css"> CSS layout</label>
+            <label><input type="checkbox" name="topics" value="php"> PHP &amp; forms</label>
+          </span>
+        </label>
+        <label>
+          Optional note
+          <textarea name="note" rows="3" placeholder="What are you learning right now?"></textarea>
+        </label>
+        <label>
+          <input type="checkbox" name="agree" value="yes" required>
+          I agree to receive emails from phpkingdom
+        </label>
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <section>
+      <h2>Sample issue</h2>
+      <p><strong>Issue #42 — July 2026:</strong> "Use <code>dl</code> for FAQ pages before reaching for JavaScript accordions." Plus a link to the new <a href="08-faq-page.html">FAQ template</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 phpkingdom · <a href="mailto:mail.polurus@gmail.com">mail.polurus@gmail.com</a> · <a href="https://polurus.com">polurus.com</a></p>
+  </footer>
+
+</body>
+</html>

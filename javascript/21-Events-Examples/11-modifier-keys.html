@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 21-Events-Examples
+  example: 11-modifier-keys.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>11 — Modifier Keys | phpkingdom.com</title>
+</head>
+<body>
+  <h1>11 — Modifier Keys</h1>
+  <h2>Problem</h2>
+  <p>Detect Ctrl/Meta/Shift/Alt during a click or key event.</p>
+  <h2>Demo</h2>
+  <button id="btn">Click with modifiers</button>
+  <pre id="out"></pre>
+  <script>
+document.getElementById("btn").addEventListener("click", (e) => {
+  document.getElementById("out").textContent =
+    "ctrl=" + e.ctrlKey + " meta=" + e.metaKey +
+    " shift=" + e.shiftKey + " alt=" + e.altKey;
+});
+  </script>
+</body>
+</html>

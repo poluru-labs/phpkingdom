@@ -1,0 +1,41 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 29-Algorithms-Examples
+  example: 15-remove-duplicates-sorted.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>15 — Remove Duplicates (Sorted) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>15 — Remove Duplicates (Sorted)</h1>
+  <h2>Problem</h2>
+  <p>Return length of unique prefix in a sorted array (in-place style on copy).</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function removeDuplicates(arr) {
+  if (arr.length === 0) return 0;
+  let k = 1;
+  for (let i = 1; i < arr.length; i++) {
+    if (arr[i] !== arr[k - 1]) arr[k++] = arr[i];
+  }
+  return k;
+}
+const arr = [1, 1, 2, 2, 2, 3, 4, 4, 5];
+const a = arr.slice();
+const len = removeDuplicates(a);
+document.getElementById("out").textContent =
+  "input:   " + JSON.stringify(arr) + "\n" +
+  "unique:  " + JSON.stringify(a.slice(0, len)) + "\n" +
+  "length:  " + len;
+  </script>
+</body>
+</html>

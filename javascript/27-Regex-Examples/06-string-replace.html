@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 27-Regex-Examples
+  example: 06-string-replace.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>06 — String.replace() | phpkingdom.com</title>
+</head>
+<body>
+  <h1>06 — String.replace()</h1>
+  <h2>Problem</h2>
+  <p>Replace the first match and all matches using replace().</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const text = "foo bar foo baz foo";
+const once = text.replace(/foo/, "qux");
+const all = text.replace(/foo/g, "qux");
+document.getElementById("out").textContent =
+  "once:  " + once + "\n" +
+  "all:   " + all;
+  </script>
+</body>
+</html>

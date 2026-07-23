@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/074-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 074 — Dataset mode — Solution | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>Exercise 074 — Dataset mode — Solution</h1>
+  <p class="meta">Read data-mode on host.</p>
+  <h2>Solution</h2>
+  <p>Read data-mode on host.</p>
+  <div id="demo"></div>
+  <pre id="out"></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+customElements.define("ex074-el", class extends HTMLElement {
+  connectedCallback() {
+    this.textContent = 'Dataset mode';
+  }
+});
+document.getElementById("demo").innerHTML = "<ex074-el></ex074-el>";
+document.getElementById("out").textContent = 'Read data-mode on host.';
+  </script>
+</body>
+</html>

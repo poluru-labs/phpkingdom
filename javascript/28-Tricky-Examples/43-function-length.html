@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 28-Tricky-Examples
+  example: 43-function-length.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>43 — function.length Quirk | phpkingdom.com</title>
+</head>
+<body>
+  <h1>43 — function.length Quirk</h1>
+  <h2>Problem / Gotcha</h2>
+  <p>Default/rest params affect the length property.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function a(x, y) {}
+function b(x = 1, y) {}
+function c(...rest) {}
+document.getElementById("out").textContent =
+  "a.length=" + a.length + "\n" +
+  "b.length=" + b.length + "\n" +
+  "c.length=" + c.length;
+  </script>
+</body>
+</html>

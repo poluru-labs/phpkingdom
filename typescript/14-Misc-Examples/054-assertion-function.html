@@ -1,0 +1,26 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Misc-Examples
+  example: 054-assertion-function.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>054 — asserts value is Type | phpkingdom.com</title>
+</head>
+<body>
+  <h1>054 — asserts value is Type</h1>
+  <p>asserts value is Type</p>
+  <pre><code class="ts">function assert(v: unknown): asserts v is string { if(typeof v!==&#x27;string&#x27;) throw 0; }</code></pre>
+<pre id="out"></pre>
+  <script>
+document.getElementById('out').textContent='asserts';
+  </script>
+</body>
+</html>

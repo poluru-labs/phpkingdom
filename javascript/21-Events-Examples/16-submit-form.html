@@ -1,0 +1,35 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 21-Events-Examples
+  example: 16-submit-form.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>16 — submit Event | phpkingdom.com</title>
+</head>
+<body>
+  <h1>16 — submit Event</h1>
+  <h2>Problem</h2>
+  <p>Intercept form submit and prevent a full page reload.</p>
+  <h2>Demo</h2>
+  <form id="f">
+    <input name="q" value="events">
+    <button type="submit">Search</button>
+  </form>
+  <pre id="out"></pre>
+  <script>
+document.getElementById("f").addEventListener("submit", (e) => {
+  e.preventDefault();
+  const data = new FormData(e.target);
+  document.getElementById("out").textContent = "q=" + data.get("q");
+});
+  </script>
+</body>
+</html>

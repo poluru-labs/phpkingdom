@@ -1,0 +1,41 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 16-Array-Examples
+  example: 26-pairs-with-sum.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>26 — All Pairs With Sum | phpkingdom.com</title>
+</head>
+<body>
+  <h1>26 — All Pairs With Sum</h1>
+  <h2>Problem</h2>
+  <p>Find all unique pairs that sum to target.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function pairsWithSum(arr, target) {
+  const seen = new Set();
+  const pairs = [];
+  const used = new Set();
+  for (const n of arr) {
+    const need = target - n;
+    if (seen.has(need)) {
+      const key = [Math.min(n, need), Math.max(n, need)].join(",");
+      if (!used.has(key)) { used.add(key); pairs.push([Number(key.split(",")[0]), Number(key.split(",")[1])]); }
+    }
+    seen.add(n);
+  }
+  return pairs;
+}
+document.getElementById("out").textContent = JSON.stringify(pairsWithSum([1,2,3,4,5,6], 7));
+  </script>
+</body>
+</html>

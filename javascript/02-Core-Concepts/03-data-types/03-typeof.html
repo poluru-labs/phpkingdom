@@ -1,0 +1,27 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 02-Core-Concepts/03-data-types
+  example: 03-typeof.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>typeof Operator | phpkingdom.com</title>
+</head>
+<body>
+  <h1>typeof Checks</h1>
+  <p>Inspect a value's type at runtime.</p>
+  <pre id="out"></pre>
+  <script>
+function describe(v) { return typeof v; }
+document.getElementById("out").textContent =
+  [describe(1), describe("a"), describe({})].join(", ");
+  </script>
+</body>
+</html>

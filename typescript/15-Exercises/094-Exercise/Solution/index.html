@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/094-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 094 — Switch exhaustive — Solution | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Exercise 094 — Switch exhaustive — Solution</h1>
+  <pre><code class="ts">type Kind = &#x27;a&#x27; | &#x27;b&#x27;;
+function f(k: Kind) {
+  switch (k) {
+    case &#x27;a&#x27;: return 1;
+    case &#x27;b&#x27;: return 2;
+    default: {
+      const _: never = k;
+      return _;
+    }
+  }
+}</code></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+</body>
+</html>

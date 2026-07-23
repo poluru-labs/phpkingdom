@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 27-Regex-Examples
+  example: 05-string-search.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>05 — String.search() | phpkingdom.com</title>
+</head>
+<body>
+  <h1>05 — String.search()</h1>
+  <h2>Problem</h2>
+  <p>Use String.search() to find the index of the first regex match.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const text = "price: $19.99 USD";
+const idx = text.search(/\$\d+(\.\d{2})?/);
+document.getElementById("out").textContent =
+  "text: " + text + "\n" +
+  "search(/\\$\\d+(\\.\\d{2})?/) => " + idx;
+  </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Functions-Examples
+  example: 06-higher-order-function.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>06 — Higher-Order Function | phpkingdom.com</title>
+</head>
+<body>
+  <h1>06 — Higher-Order Function</h1>
+  <h2>Problem</h2>
+  <p>Write a function that accepts another function and applies it twice.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function applyTwice(fn, value) {
+  return fn(fn(value));
+}
+const inc = (x) => x + 1;
+document.getElementById("out").textContent = "applyTwice(inc, 3) = " + applyTwice(inc, 3);
+  </script>
+</body>
+</html>

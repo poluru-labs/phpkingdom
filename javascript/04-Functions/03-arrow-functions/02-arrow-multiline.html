@@ -1,0 +1,29 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 04-Functions/03-arrow-functions
+  example: 02-arrow-multiline.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Arrow Multiline | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Multiline Arrow Bodies</h1>
+  <p>Use braces and return.</p>
+  <pre id="out"></pre>
+  <script>
+const sum = (a, b) => {
+  const total = a + b;
+  return total;
+};
+document.getElementById("out").textContent = String(sum(3, 4));
+  </script>
+</body>
+</html>

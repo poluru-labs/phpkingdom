@@ -1,0 +1,39 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 23-Promises-Examples
+  example: 47-convert-event-once.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>47 — Promise from One-Time Event | phpkingdom.com</title>
+</head>
+<body>
+  <h1>47 — Promise from One-Time Event</h1>
+  <h2>Problem</h2>
+  <p>Resolve when a button is clicked once.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const btn = document.createElement("button");
+btn.type = "button";
+btn.textContent = "Click to resolve";
+document.body.insertBefore(btn, document.getElementById("out"));
+function onceClick(el) {
+  return new Promise((resolve) => {
+    el.addEventListener("click", () => resolve("clicked"), { once: true });
+  });
+}
+document.getElementById("out").textContent = "waiting for click...";
+onceClick(btn).then((msg) => {
+  document.getElementById("out").textContent = msg;
+});
+  </script>
+</body>
+</html>

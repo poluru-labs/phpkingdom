@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 16-Array-Examples
+  example: 07-rotate-right.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>07 — Rotate Array Right by K | phpkingdom.com</title>
+</head>
+<body>
+  <h1>07 — Rotate Array Right by K</h1>
+  <h2>Problem</h2>
+  <p>Rotate array to the right by k steps.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function rotateRight(arr, k) {
+  const n = arr.length;
+  k = k % n;
+  return arr.slice(n - k).concat(arr.slice(0, n - k));
+}
+document.getElementById("out").textContent = rotateRight([1,2,3,4,5], 2).join(", ");
+  </script>
+</body>
+</html>

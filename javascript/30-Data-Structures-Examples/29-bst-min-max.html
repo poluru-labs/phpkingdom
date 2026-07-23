@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 30-Data-Structures-Examples
+  example: 29-bst-min-max.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>29 — BST — Min & Max | phpkingdom.com</title>
+</head>
+<body>
+  <h1>29 — BST — Min & Max</h1>
+  <h2>Problem</h2>
+  <p>Find minimum (leftmost) and maximum (rightmost) in a BST.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+class TreeNode { constructor(val, l = null, r = null) { this.val = val; this.left = l; this.right = r; } }
+function minVal(root) { while (root.left) root = root.left; return root.val; }
+function maxVal(root) { while (root.right) root = root.right; return root.val; }
+const bst = new TreeNode(8, new TreeNode(3, new TreeNode(1), new TreeNode(6)), new TreeNode(10, null, new TreeNode(14)));
+document.getElementById("out").textContent = "min = " + minVal(bst) + ", max = " + maxVal(bst);
+  </script>
+</body>
+</html>

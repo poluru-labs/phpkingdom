@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 19-Recursion-Examples
+  example: 34-string-includes.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>34 — String Includes | phpkingdom.com</title>
+</head>
+<body>
+  <h1>34 — String Includes</h1>
+  <h2>Problem</h2>
+  <p>Check if a substring exists in a string using recursion.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function stringIncludes(haystack, needle, i = 0) {
+  if (i + needle.length > haystack.length) return false;
+  if (haystack.slice(i, i + needle.length) === needle) return true;
+  return stringIncludes(haystack, needle, i + 1);
+}
+document.getElementById("out").textContent =
+  stringIncludes("javascript", "script") + ", " + stringIncludes("javascript", "java");
+  </script>
+</body>
+</html>

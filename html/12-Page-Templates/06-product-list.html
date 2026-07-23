@@ -1,0 +1,120 @@
+<!--
+  sitename: phpkingdom
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  topic: 12-Page-Templates
+  example: 06-product-list.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products — phpkingdom Store</title>
+  <style>
+    body { font-family: Georgia, "Times New Roman", serif; max-width: 820px; margin: 2rem auto; padding: 0 1.25rem; line-height: 1.6; color: #1a1a1a; }
+    h1 { font-size: 1.75rem; margin-bottom: 0.35rem; }
+    nav a { margin-right: 0.75rem; }
+    header, footer { margin: 1.25rem 0; }
+    header { border-bottom: 1px solid #ccc; padding-bottom: 1rem; }
+    footer { border-top: 1px solid #ccc; padding-top: 1rem; color: #555; font-size: 0.95rem; }
+    table { border-collapse: collapse; width: 100%; margin: 1rem 0; }
+    th, td { border: 1px solid #ccc; padding: 0.5rem 0.75rem; text-align: left; }
+    th { background: #eef4f8; }
+    form.filter { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: end; border: 1px solid #ccc; padding: 1rem; margin-bottom: 1.25rem; }
+    form.filter label { display: grid; gap: 0.25rem; font-size: 0.95rem; }
+    input, select, button { font: inherit; padding: 0.4rem 0.55rem; }
+    button { cursor: pointer; background: #2a6f97; color: #fff; border: 0; padding: 0.55rem 1rem; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>phpkingdom Store</h1>
+    <p>Books, cheat sheets, and template packs for web learners.</p>
+    <nav>
+      <a href="index.html">Templates</a>
+      <a href="07-product-detail.html">Featured product</a>
+      <a href="05-contact-page.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Browse products</h2>
+
+      <form class="filter" action="#" method="get">
+        <label>
+          Search
+          <input type="text" name="q" placeholder="HTML, PHP, forms…">
+        </label>
+        <label>
+          Category
+          <select name="category">
+            <option value="">All categories</option>
+            <option value="books">Books</option>
+            <option value="templates">Template packs</option>
+            <option value="courses">Mini courses</option>
+          </select>
+        </label>
+        <button type="submit">Filter</button>
+      </form>
+
+      <table>
+        <caption>Current catalog — prices in USD</caption>
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Category</th>
+            <th>Format</th>
+            <th>Price</th>
+            <th>Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML Structure Workbook</td>
+            <td>Books</td>
+            <td>PDF + print</td>
+            <td>$24</td>
+            <td><a href="07-product-detail.html">View</a></td>
+          </tr>
+          <tr>
+            <td>15 Page Templates Pack</td>
+            <td>Template packs</td>
+            <td>ZIP download</td>
+            <td>$19</td>
+            <td><a href="index.html">View</a></td>
+          </tr>
+          <tr>
+            <td>PHP Forms in Practice</td>
+            <td>Mini courses</td>
+            <td>Video + exercises</td>
+            <td>$39</td>
+            <td><a href="#">View</a></td>
+          </tr>
+          <tr>
+            <td>Semantic HTML Cheat Sheet</td>
+            <td>Books</td>
+            <td>PDF</td>
+            <td>$9</td>
+            <td><a href="#">View</a></td>
+          </tr>
+          <tr>
+            <td>CSS Layout Starter Kit</td>
+            <td>Template packs</td>
+            <td>ZIP download</td>
+            <td>$15</td>
+            <td><a href="#">View</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 phpkingdom · Orders fulfilled by Subrahmanyam Poluru · <a href="mailto:mail.polurus@gmail.com">Support</a></p>
+  </footer>
+
+</body>
+</html>

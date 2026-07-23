@@ -1,0 +1,39 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 10-Components/03-navbar
+  example: 03-navbar-responsive.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <meta name="description" content="Hide links on small screens.">
+  <title>Responsive Navbar Idea | phpkingdom.com</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+  body{background:#f8fafc}
+  .pk-wrap{max-width:920px;margin:0 auto;padding:1.25rem 1rem 2.5rem}
+  .pk-brand{color:#0f766e;letter-spacing:.08em;text-transform:uppercase;font-size:.78rem;font-weight:700}
+  .pk-meta{color:#64748b}
+  .pk-note{border-left:3px solid #0f766e;background:#ecfdf5;padding:.75rem 1rem;margin:1rem 0}
+  .pk-demo{background:#fff;border:1px solid #e2e8f0;border-radius:.5rem;padding:1rem;margin:1rem 0}
+  pre.code{background:#0f172a;color:#e2e8f0;padding:.85rem 1rem;border-radius:.4rem;overflow:auto;font-size:.88rem}
+</style>
+</head>
+<body>
+  <div class="pk-wrap">
+    <div class="pk-brand">phpkingdom.com</div>
+    <p class="text-sm mb-1"><a class="text-teal-700 underline" href="../../index.html">Tailwind CSS Tutorials</a></p>
+    <h1 class="text-2xl font-bold mt-2 text-slate-900">Responsive Navbar Idea</h1>
+    <p class="pk-meta mb-4">Hide links on small screens.</p>
+    <div class="pk-demo">
+<nav class="flex items-center justify-between bg-white border rounded-lg px-4 py-3"><span class="font-bold">Brand</span><div class="hidden md:flex gap-4 text-sm text-slate-600"><a href="#">Home</a><a href="#">Blog</a></div><button class="md:hidden text-sm border px-2 py-1 rounded">Menu</button></nav>
+    </div>
+  </div>
+</body>
+</html>

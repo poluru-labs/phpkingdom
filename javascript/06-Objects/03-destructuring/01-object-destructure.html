@@ -1,0 +1,27 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 06-Objects/03-destructuring
+  example: 01-object-destructure.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Object Destructure | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Object Destructuring</h1>
+  <p>Unpack properties into variables.</p>
+  <pre id="out"></pre>
+  <script>
+const user = { name: "Ada", age: 36 };
+const { name, age } = user;
+document.getElementById("out").textContent = name + " / " + age;
+  </script>
+</body>
+</html>

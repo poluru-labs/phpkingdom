@@ -1,0 +1,27 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Misc-Examples
+  example: 088-error-cause.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>088 — Error cause | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>088 — Error cause</h1>
+  <p class="meta">Chain errors with { cause }.</p>
+  <p>Chain errors with { cause }.</p>
+<pre id="out"></pre>
+  <script>
+const e=new Error('outer',{cause:new Error('inner')});document.getElementById('out').textContent=e.message+' <- '+e.cause.message;
+  </script>
+</body>
+</html>

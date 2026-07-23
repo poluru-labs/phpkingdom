@@ -1,0 +1,103 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 22-Components-Examples
+  example: 03-textarea.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>03 — Textarea | phpkingdom.com</title>
+  <link rel="stylesheet" href="css/base.css">
+  <style>
+    .textarea-wrap {
+      display: grid;
+      gap: 0.35rem;
+      max-width: 480px;
+    }
+    .textarea-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+    .textarea-count.is-over { color: var(--danger); font-weight: 600; }
+    .c-textarea.auto-resize { resize: none; overflow: hidden; min-height: 80px; }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <a class="back" href="index.html">← Components</a>
+    <h1>03 — Textarea</h1>
+    <p class="lead">Multi-line input with character count and auto-resize as you type.</p>
+    <section class="panel">
+      <h2>Demo</h2>
+      <div id="mount"></div>
+    </section>
+    <section class="panel">
+      <h2>Events / State</h2>
+      <pre class="log" id="log">Ready.</pre>
+    </section>
+  </main>
+  <script>
+    const logEl = document.getElementById("log");
+    function log(msg) { logEl.textContent = msg; }
+
+    function createTextarea({ label = "Message", maxLength = 200, autoResize = true } = {}) {
+      const wrap = document.createElement("div");
+      wrap.className = "textarea-wrap";
+
+      const lbl = document.createElement("label");
+      lbl.className = "field-label";
+      lbl.textContent = label;
+
+      const ta = document.createElement("textarea");
+      ta.className = "c-textarea" + (autoResize ? " auto-resize" : "");
+      ta.maxLength = maxLength;
+
+      const meta = document.createElement("div");
+      meta.className = "textarea-meta";
+      const hint = document.createElement("span");
+      hint.className = "c-hint";
+      hint.textContent = autoResize ? "Auto-resizes" : "Fixed height";
+      const count = document.createElement("span");
+      count.className = "textarea-count";
+      count.textContent = "0 / " + maxLength;
+      meta.append(hint, count);
+
+      function resize() {
+        if (!autoResize) return;
+        ta.style.height = "auto";
+        ta.style.height = ta.scrollHeight + "px";
+      }
+
+      function updateCount() {
+        const len = ta.value.length;
+        count.textContent = len + " / " + maxLength;
+        count.classList.toggle("is-over", len >= maxLength);
+        log("input: " + len + " chars");
+      }
+
+      ta.addEventListener("input", () => { resize(); updateCount(); });
+      resize();
+
+      lbl.appendChild(ta);
+      wrap.append(lbl, meta);
+
+      return {
+        el: wrap,
+        get value() { return ta.value; },
+        set value(v) { ta.value = v; resize(); updateCount(); }
+      };
+    }
+
+    document.getElementById("mount").appendChild(createTextarea({}).el);
+  </script>
+</body>
+</html>

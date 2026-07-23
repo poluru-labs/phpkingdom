@@ -1,0 +1,42 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 20-DOM-Examples
+  example: 50-dom-checklist.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>50 — DOM Checklist | phpkingdom.com</title>
+</head>
+<body>
+  <h1>50 — DOM Checklist</h1>
+  <h2>Problem</h2>
+  <p>Quick checklist of everyday DOM tools for selection, mutation, and events.</p>
+  <h2>Demo</h2>
+  <ul id="list"></ul>
+  <pre id="out"></pre>
+  <script>
+const tips = [
+  "Prefer querySelector / querySelectorAll",
+  "Use textContent for untrusted text",
+  "classList for CSS classes",
+  "addEventListener + delegation for lists",
+  "preventDefault for forms/links when needed",
+  "DocumentFragment / replaceChildren for batch updates",
+];
+const list = document.getElementById("list");
+tips.forEach((t) => {
+  const li = document.createElement("li");
+  li.textContent = t;
+  list.appendChild(li);
+});
+document.getElementById("out").textContent = tips.length + " habits listed";
+  </script>
+</body>
+</html>

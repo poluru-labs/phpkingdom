@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 23-Promises-Examples
+  example: 44-settle-timeouts.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>44 — Mix resolve and delayed reject | phpkingdom.com</title>
+</head>
+<body>
+  <h1>44 — Mix resolve and delayed reject</h1>
+  <h2>Problem</h2>
+  <p>Handle mixed timing outcomes with allSettled.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const ok = new Promise((resolve) => setTimeout(() => resolve("ok"), 80));
+const bad = new Promise((_, reject) => setTimeout(() => reject(new Error("late fail")), 120));
+Promise.allSettled([ok, bad]).then((results) => {
+  document.getElementById("out").textContent = results.map((r) =>
+    r.status === "fulfilled" ? r.value : r.reason.message
+  ).join(" | ");
+});
+  </script>
+</body>
+</html>

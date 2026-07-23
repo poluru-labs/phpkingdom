@@ -1,0 +1,38 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 26-Date-Time-Examples
+  example: 19-start-of-day.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>19 — Start of Day | phpkingdom.com</title>
+</head>
+<body>
+  <h1>19 — Start of Day</h1>
+  <h2>Problem</h2>
+  <p>Normalize a Date to local midnight (00:00:00.000).</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+
+function startOfDay(d) {
+  const copy = new Date(d.getTime());
+  copy.setHours(0, 0, 0, 0);
+  return copy;
+}
+const d = new Date(2024, 0, 15, 14, 30, 45);
+const sod = startOfDay(d);
+document.getElementById("out").textContent =
+  "Original: " + d.toString() + "\n" +
+  "Start of day: " + sod.toString();
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 30-Data-Structures-Examples
+  example: 32-graph-add-edge.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>32 — Graph — Add Edge | phpkingdom.com</title>
+</head>
+<body>
+  <h1>32 — Graph — Add Edge</h1>
+  <h2>Problem</h2>
+  <p>Add vertices and edges to a directed graph adjacency list.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+class DiGraph {
+  constructor() { this.adj = new Map(); }
+  addEdge(from, to) {
+    if (!this.adj.has(from)) this.adj.set(from, []);
+    if (!this.adj.has(to)) this.adj.set(to, []);
+    this.adj.get(from).push(to);
+  }
+}
+const g = new DiGraph();
+[["0","1"],["0","2"],["1","3"],["2","3"]].forEach(([a,b]) => g.addEdge(a, b));
+document.getElementById("out").textContent =
+  "edges from 0: " + g.adj.get("0").join(", ") + "\nedges from 1: " + g.adj.get("1").join(", ");
+  </script>
+</body>
+</html>

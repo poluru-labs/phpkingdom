@@ -1,0 +1,74 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Templates/05-modal
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <meta name="description" content="Dialog with named slots">
+  <title>Modal Dialog | open state | phpkingdom.com</title>
+  <style>
+    body { margin:0; font-family: Georgia, "Times New Roman", serif; background:#f5f7fb; color:#1f2937; line-height:1.55; }
+    .wrap { max-width:900px; margin:0 auto; padding:1.5rem; }
+    .brand { color:#0f766e; font-size:.78rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    h1 { font-size:1.75rem; margin:.4rem 0; }
+    .meta { color:#64748b; }
+    pre { background:#0f172a; color:#e2e8f0; padding:1rem; border-radius:.65rem; overflow:auto; font-size:.88rem; }
+    .card { background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:1rem; margin:1rem 0; }
+    a { color:#0f766e; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">phpkingdom.com</div>
+    <p class="meta">Modal Dialog · Lit template</p>
+    <h1>open state</h1>
+    <p class="meta">Dialog with named slots</p>
+    <div class="card">
+      <h2>Starter Element</h2>
+      <pre><code>import { LitElement, html, css } from &quot;lit&quot;;
+
+export class PkModal extends LitElement {
+  static properties = { open: { type: Boolean, reflect: true } };
+  static styles = css`
+    .backdrop {
+      position: fixed; inset: 0; background: rgba(15, 23, 42, 0.45);
+      display: grid; place-items: center;
+    }
+    .panel {
+      background: #fff; border-radius: 12px; padding: 1.25rem; min-width: 280px;
+    }
+  `;
+  #close() { this.open = false; }
+  render() {
+    if (!this.open) return html``;
+    return html`
+      &lt;div class=&quot;backdrop&quot; @click=${this.#close}&gt;
+        &lt;div class=&quot;panel&quot; role=&quot;dialog&quot; aria-modal=&quot;true&quot;
+             @click=${(e) =&gt; e.stopPropagation()}&gt;
+          &lt;header&gt;&lt;slot name=&quot;title&quot;&gt;Dialog&lt;/slot&gt;&lt;/header&gt;
+          &lt;slot&gt;&lt;/slot&gt;
+          &lt;button @click=${this.#close}&gt;Close&lt;/button&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    `;
+  }
+}
+customElements.define(&quot;pk-modal&quot;, PkModal);</code></pre>
+    </div>
+    <div class="card">
+      <h2>Usage</h2>
+      <pre><code>npm install lit
+# import the module, then use the custom element in HTML</code></pre>
+    </div>
+    <p><a href="../index.html">All templates</a></p>
+  </div>
+</body>
+</html>

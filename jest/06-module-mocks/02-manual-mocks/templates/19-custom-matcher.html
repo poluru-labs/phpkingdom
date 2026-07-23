@@ -1,0 +1,127 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Jest Tutorials
+section title: Module Mocks
+topic title: Manual Mocks
+content type: Template
+item number: 19
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Manual Mocks Template 19 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #fce7f3;
+      color: #9d174d;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Template 19</span>
+    <h1>Manual Mocks</h1>
+    <p><strong>Section:</strong> Module Mocks</p>
+    <p><strong>Focus:</strong> Custom Matcher</p>
+    <p><strong>Scenario:</strong> form validation</p>
+    <p>Use this scaffold as a starting point for specs, mocks, or coverage config.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Jest</h2>
+        <pre><code>// Manual Mocks — Template 19
+// Focus: custom matcher | Scenario: form validation
+
+// File layout:
+// src/fsUtil.js
+// src/__mocks__/fsUtil.js   ← manual mock
+
+// __mocks__/fsUtil.js
+module.exports = {
+  readConfig: jest.fn(() =&gt; ({ site: &quot;phpkingdom.com&quot; })),
+};
+
+// fsUtil.test.js
+jest.mock(&quot;./fsUtil&quot;); // uses src/__mocks__/fsUtil.js
+const fsUtil = require(&quot;./fsUtil&quot;);
+
+test(&quot;manual mock supplies readConfig&quot;, () =&gt; {
+  expect(fsUtil.readConfig()).toEqual({ site: &quot;phpkingdom.com&quot; });
+});
+// jest.requireActual(&#x27;./fsUtil&#x27;) restores the real module when needed</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Manual Mocks
+- Practice: custom matcher
+- Scenario: form validation
+- Keep arrange / act / assert clear and deterministic
+- Clear or restore mocks between tests (clearMocks / restoreMocks)
+- Prefer async/await with resolves / rejects over done()
+- Mock at boundaries; avoid over-mocking pure logic
+- Review snapshot diffs before updating
+
+Useful commands:
+  npm install --save-dev jest
+  npx jest
+  npx jest --watch
+  npx jest --coverage
+  npx jest -u</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This template shows one way to apply <strong>Manual Mocks</strong> in a form validation context.</p>
+      <p>Prefer clear arrange/act/assert structure and keep mocks close to the behavior under test.</p>
+    </section>
+  </main>
+</body>
+</html>

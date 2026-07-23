@@ -1,0 +1,39 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 17-String-Examples
+  example: 31-valid-parentheses.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>31 — Valid Parentheses | phpkingdom.com</title>
+</head>
+<body>
+  <h1>31 — Valid Parentheses</h1>
+  <h2>Problem</h2>
+  <p>Check if brackets are balanced.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function isValid(s) {
+  const stack = [];
+  const map = { ")": "(", "]": "[", "}": "{" };
+  for (const ch of s) {
+    if ("([{".includes(ch)) stack.push(ch);
+    else if (map[ch]) {
+      if (stack.pop() !== map[ch]) return false;
+    }
+  }
+  return stack.length === 0;
+}
+document.getElementById("out").textContent =
+  isValid("()[]{}") + " / " + isValid("(]");
+  </script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Git Tutorials
+section title: Version Control
+topic title: Distributed Version Control
+content type: Exercise
+item number: 16
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Distributed Version Control Exercise 16 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #fee2e2;
+      color: #991b1b;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Exercise 16</span>
+    <h1>Distributed Version Control</h1>
+    <p><strong>Section:</strong> Version Control</p>
+    <p><strong>Focus:</strong> Revert Commit</p>
+    <p><strong>Scenario:</strong> docs site</p>
+    <p>Run the commands in a practice repo and verify with git status / git log.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Git Commands</h2>
+        <pre><code># Distributed Version Control — Exercise 16
+# Focus: revert commit | Scenario: docs site
+
+
+# Distributed VCS (distributed-version-control)
+git clone . /tmp/clone-a-distributed-version-control
+git clone . /tmp/clone-b-distributed-version-control
+</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Distributed Version Control
+- Practice: revert commit
+- Scenario: docs site
+- Prefer small commits with clear messages
+- Never rewrite shared history without coordination
+- Use git status often before commit/push
+- Prefer pull --rebase on feature branches; protect main
+
+Useful companions:
+  git status -sb
+  git log --oneline --graph --decorate
+  git reflog
+  git restore --staged &lt;file&gt;
+  git push --force-with-lease</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This exercise shows one way to apply <strong>Distributed Version Control</strong> in a docs site context.</p>
+      <p>Commit often, review diffs before push, and keep main/master protected with reviews.</p>
+    </section>
+  </main>
+</body>
+</html>

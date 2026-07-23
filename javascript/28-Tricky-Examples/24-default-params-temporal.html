@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 28-Tricky-Examples
+  example: 24-default-params-temporal.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>24 — Default Params Left-to-Right | phpkingdom.com</title>
+</head>
+<body>
+  <h1>24 — Default Params Left-to-Right</h1>
+  <h2>Problem / Gotcha</h2>
+  <p>Defaults cannot use later parameters.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function demo(a = b, b = 2) {
+  return [a, b];
+}
+try {
+  demo();
+} catch (e) {
+  document.getElementById("out").textContent =
+    "demo() throws: " + e.message + "\n" +
+    "demo(1) => [" + (function (a = 1, b = 2) { return [a, b]; })(1) + "]";
+}
+  </script>
+</body>
+</html>

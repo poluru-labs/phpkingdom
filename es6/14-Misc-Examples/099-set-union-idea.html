@@ -1,0 +1,27 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Misc-Examples
+  example: 099-set-union-idea.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>099 — Set union idea | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>099 — Set union idea</h1>
+  <p class="meta">Combine unique values.</p>
+  <p>Combine unique values.</p>
+<pre id="out"></pre>
+  <script>
+const a=new Set([1,2]),b=new Set([2,3]);document.getElementById('out').textContent=[...new Set([...a,...b])];
+  </script>
+</body>
+</html>

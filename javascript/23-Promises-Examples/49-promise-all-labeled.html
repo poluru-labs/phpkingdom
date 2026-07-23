@@ -1,0 +1,38 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 23-Promises-Examples
+  example: 49-promise-all-labeled.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>49 — Labeled Promise.all Results | phpkingdom.com</title>
+</head>
+<body>
+  <h1>49 — Labeled Promise.all Results</h1>
+  <h2>Problem</h2>
+  <p>Keep names for parallel task results.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+async function parallelLabeled(tasks) {
+  const keys = Object.keys(tasks);
+  const values = await Promise.all(keys.map((k) => tasks[k]));
+  return Object.fromEntries(keys.map((k, i) => [k, values[i]]));
+}
+parallelLabeled({
+  user: Promise.resolve({ id: 1 }),
+  posts: Promise.resolve([1, 2]),
+  site: Promise.resolve("phpkingdom.com")
+}).then((result) => {
+  document.getElementById("out").textContent = JSON.stringify(result, null, 2);
+});
+  </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 28-Tricky-Examples
+  example: 08-array-length-hole.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>08 — Sparse Arrays / Holes | phpkingdom.com</title>
+</head>
+<body>
+  <h1>08 — Sparse Arrays / Holes</h1>
+  <h2>Problem / Gotcha</h2>
+  <p>Holes are skipped by map but counted by length.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const a = [];
+a[2] = "x";
+document.getElementById("out").textContent =
+  "length=" + a.length + "\n" +
+  "map => [" + a.map((v) => v || "_").join(",") + "]\n" +
+  "keys => [" + [...a.keys()].join(",") + "]";
+  </script>
+</body>
+</html>

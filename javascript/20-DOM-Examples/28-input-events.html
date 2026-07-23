@@ -1,0 +1,35 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 20-DOM-Examples
+  example: 28-input-events.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>28 — input and change Events | phpkingdom.com</title>
+</head>
+<body>
+  <h1>28 — input and change Events</h1>
+  <h2>Problem</h2>
+  <p>React while typing (input) and when a value is committed (change).</p>
+  <h2>Demo</h2>
+  <input id="name" placeholder="Type here">
+  <pre id="out"></pre>
+  <script>
+const input = document.getElementById("name");
+const out = document.getElementById("out");
+input.addEventListener("input", () => {
+  out.textContent = "input → " + input.value;
+});
+input.addEventListener("change", () => {
+  out.textContent += "\nchange → " + input.value;
+});
+  </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 29-Algorithms-Examples
+  example: 01-bubble-sort.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>01 — Bubble Sort | phpkingdom.com</title>
+</head>
+<body>
+  <h1>01 — Bubble Sort</h1>
+  <h2>Problem</h2>
+  <p>Sort an array in ascending order using bubble sort.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function bubbleSort(arr) {
+  const a = arr.slice();
+  for (let i = 0; i < a.length; i++) {
+    let swapped = false;
+    for (let j = 0; j < a.length - 1 - i; j++) {
+      if (a[j] > a[j + 1]) {
+        [a[j], a[j + 1]] = [a[j + 1], a[j]];
+        swapped = true;
+      }
+    }
+    if (!swapped) break;
+  }
+  return a;
+}
+const input = [64, 34, 25, 12, 22, 11, 90];
+document.getElementById("out").textContent =
+  "input:  " + JSON.stringify(input) + "\noutput: " + JSON.stringify(bubbleSort(input));
+  </script>
+</body>
+</html>

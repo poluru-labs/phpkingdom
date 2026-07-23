@@ -1,0 +1,39 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 26-Date-Time-Examples
+  example: 16-add-months.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>16 — Add Months | phpkingdom.com</title>
+</head>
+<body>
+  <h1>16 — Add Months</h1>
+  <h2>Problem</h2>
+  <p>Add months safely; JavaScript rolls overflow days automatically.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+
+function addMonths(date, months) {
+  const copy = new Date(date.getTime());
+  copy.setMonth(copy.getMonth() + months);
+  return copy;
+}
+const start = new Date(2024, 0, 31);
+const result = addMonths(start, 1);
+document.getElementById("out").textContent =
+  "Start: " + start.toDateString() + "\n" +
+  "+1 month: " + result.toDateString() + "\n" +
+  "Note: Jan 31 + 1 month => Mar 2 or Feb 29/28 (engine rolls)";
+
+  </script>
+</body>
+</html>

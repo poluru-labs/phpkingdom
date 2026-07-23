@@ -1,0 +1,35 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 26-Date-Time-Examples
+  example: 44-iso-date-only.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>44 — ISO Date-Only Parsing | phpkingdom.com</title>
+</head>
+<body>
+  <h1>44 — ISO Date-Only Parsing</h1>
+  <h2>Problem</h2>
+  <p>Date-only ISO strings parse as UTC midnight, which can shift the local calendar day.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+
+const dateOnly = "2024-01-15";
+const d = new Date(dateOnly);
+document.getElementById("out").textContent =
+  "Input: " + dateOnly + "\n" +
+  "Parsed UTC ISO: " + d.toISOString() + "\n" +
+  "Local date string: " + d.toDateString() + "\n" +
+  "Local parts: " + d.getFullYear() + "-" + (d.getMonth()+1) + "-" + d.getDate();
+
+  </script>
+</body>
+</html>

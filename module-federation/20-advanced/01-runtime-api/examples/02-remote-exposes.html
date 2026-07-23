@@ -1,0 +1,122 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Module Federation Tutorials
+section title: Advanced
+topic title: Module Federation Runtime API
+content type: Example
+item number: 02
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Module Federation Runtime API Example 02 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ffedd5;
+      color: #9a3412;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Example 02</span>
+    <h1>Module Federation Runtime API</h1>
+    <p><strong>Section:</strong> Advanced</p>
+    <p><strong>Focus:</strong> Remote Exposes</p>
+    <p><strong>Scenario:</strong> admin portal</p>
+    <p>Study the host/remote federation pattern and adapt it to your micro-frontend setup.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Module Federation</h2>
+        <pre><code>// Module Federation Runtime API — Example 02
+// Focus: remote exposes | Scenario: admin portal
+
+// Webpack runtime / MF 2.0 APIs
+
+// Classic container API after remoteEntry loads:
+await __webpack_init_sharing__(&quot;default&quot;);
+const container = window.products;
+await container.init(__webpack_share_scopes__.default);
+const factory = await container.get(&quot;./ProductList&quot;);
+const Module = factory();
+
+// MF 2.0 enhanced runtime:
+import { init, loadRemote, registerRemotes } from &quot;@module-federation/enhanced/runtime&quot;;
+init({ name: &quot;shell&quot;, remotes: [] });
+registerRemotes([{ name: &quot;products&quot;, entry: &quot;http://localhost:3002/mf-manifest.json&quot; }]);
+const mod = await loadRemote(&quot;products/ProductList&quot;);</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Module Federation Runtime API
+- Practice: remote exposes
+- Scenario: admin portal
+- Share framework runtimes as singletons with requiredVersion
+- Load remotes lazily; wrap with error boundaries / fallbacks
+- Deploy remotes independently; version remoteEntry URLs carefully
+- Align CORS and CSP for cross-origin remoteEntry.js
+
+Useful commands:
+  npm install -D webpack webpack-cli webpack-dev-server
+  # run host + remote on different ports
+  npx webpack serve --config webpack.host.js --port 3000
+  npx webpack serve --config webpack.remote.js --port 3002</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This example shows one way to apply <strong>Module Federation Runtime API</strong> in a admin portal context.</p>
+      <p>Keep remotes independently deployable, share carefully, and always plan for remote downtime.</p>
+    </section>
+  </main>
+</body>
+</html>

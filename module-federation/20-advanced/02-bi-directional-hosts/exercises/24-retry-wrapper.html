@@ -1,0 +1,130 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Module Federation Tutorials
+section title: Advanced
+topic title: Bi-Directional Hosts
+content type: Exercise
+item number: 24
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Bi-Directional Hosts Exercise 24 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ffedd5;
+      color: #9a3412;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Exercise 24</span>
+    <h1>Bi-Directional Hosts</h1>
+    <p><strong>Section:</strong> Advanced</p>
+    <p><strong>Focus:</strong> Retry Wrapper</p>
+    <p><strong>Scenario:</strong> checkout remote</p>
+    <p>Run a host and remote locally, then verify import('remote/Module') and shared deps.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Module Federation</h2>
+        <pre><code>// Bi-Directional Hosts — Exercise 24
+// Focus: retry wrapper | Scenario: checkout remote
+
+// Bi-directional: A consumes B and B consumes A — use sparingly
+
+// app-a/webpack.config.js
+new ModuleFederationPlugin({
+  name: &quot;appA&quot;,
+  filename: &quot;remoteEntry.js&quot;,
+  exposes: { &quot;./WidgetA&quot;: &quot;./src/WidgetA&quot; },
+  remotes: { appB: &quot;appB@http://localhost:3002/remoteEntry.js&quot; },
+  shared: { react: { singleton: true, requiredVersion: &quot;^18.0.0&quot; } },
+});
+
+// app-b/webpack.config.js
+new ModuleFederationPlugin({
+  name: &quot;appB&quot;,
+  filename: &quot;remoteEntry.js&quot;,
+  exposes: { &quot;./WidgetB&quot;: &quot;./src/WidgetB&quot; },
+  remotes: { appA: &quot;appA@http://localhost:3001/remoteEntry.js&quot; },
+  shared: { react: { singleton: true, requiredVersion: &quot;^18.0.0&quot; } },
+});
+
+// Risks: circular init, unclear ownership, harder deploys
+// Prefer shell → remotes; share via events/state bus if two-way UX needed</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Bi-Directional Hosts
+- Practice: retry wrapper
+- Scenario: checkout remote
+- Share framework runtimes as singletons with requiredVersion
+- Load remotes lazily; wrap with error boundaries / fallbacks
+- Deploy remotes independently; version remoteEntry URLs carefully
+- Align CORS and CSP for cross-origin remoteEntry.js
+
+Useful commands:
+  npm install -D webpack webpack-cli webpack-dev-server
+  # run host + remote on different ports
+  npx webpack serve --config webpack.host.js --port 3000
+  npx webpack serve --config webpack.remote.js --port 3002</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This exercise shows one way to apply <strong>Bi-Directional Hosts</strong> in a checkout remote context.</p>
+      <p>Keep remotes independently deployable, share carefully, and always plan for remote downtime.</p>
+    </section>
+  </main>
+</body>
+</html>

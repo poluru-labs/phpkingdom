@@ -1,0 +1,25 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 12-Misc-Examples
+  example: 004-storage-remove.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>004 — removeItem | phpkingdom.com</title>
+</head>
+<body>
+  <h1>004 — removeItem</h1>
+  <p>Delete one key.</p>
+<pre id="out"></pre>
+  <script>
+localStorage.setItem("t","x");localStorage.removeItem("t");document.getElementById("out").textContent=String(localStorage.getItem("t"));
+  </script>
+</body>
+</html>

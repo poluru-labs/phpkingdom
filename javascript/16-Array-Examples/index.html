@@ -1,0 +1,44 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 16-Array-Examples
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>16-Array-Examples | phpkingdom.com</title>
+  <style>
+    body { font-family: Georgia, "Times New Roman", serif; max-width: 760px; margin: 2rem auto; padding: 0 1.25rem; line-height: 1.6; color: #1a1a1a; }
+    h1 { font-size: 1.75rem; margin-bottom: 0.35rem; }
+    .meta { color: #555; font-size: 0.95rem; margin-bottom: 1.25rem; }
+    .note { background: #f0f7fb; padding: 0.75rem 1rem; border-left: 3px solid #0f766e; margin: 1rem 0; }
+    .demo { margin: 1rem 0; padding: 1rem; border: 1px dashed #94a3b8; }
+    pre, code { font-family: ui-monospace, Menlo, monospace; }
+    pre { background: #111827; color: #e5e7eb; padding: 0.85rem 1rem; overflow: auto; }
+    button, input, select, textarea { font: inherit; padding: 0.4rem 0.55rem; }
+    button { cursor: pointer; background: #0f766e; color: #fff; border: 0; padding: 0.55rem 1rem; }
+    #out { white-space: pre-wrap; background: #f4f4f4; padding: 0.75rem; min-height: 2rem; }
+    a { color: #0f766e; }
+    footer { border-top: 1px solid #ccc; padding-top: 1rem; margin-top: 2rem; color: #555; font-size: 0.95rem; }
+
+    .brand { color:#0f766e; font-size:.8rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    ol { line-height: 1.75; }
+  </style>
+</head>
+<body>
+  <div class="brand">phpkingdom.com</div>
+  <h1>16-Array-Examples</h1>
+  <p class="meta">50 examples. Minimal HTML — focus on the script.</p>
+  <p><a href="../index.html">← JavaScript Tutorials</a></p>
+  <ol><li><a href="01-find-max.html">01 — Find Maximum</a></li><li><a href="02-find-min.html">02 — Find Minimum</a></li><li><a href="03-sum-average.html">03 — Sum and Average</a></li><li><a href="04-reverse-array.html">04 — Reverse an Array</a></li><li><a href="05-remove-duplicates.html">05 — Remove Duplicates</a></li><li><a href="06-second-largest.html">06 — Second Largest</a></li><li><a href="07-rotate-right.html">07 — Rotate Array Right by K</a></li><li><a href="08-rotate-left.html">08 — Rotate Array Left by K</a></li><li><a href="09-two-sum.html">09 — Two Sum</a></li><li><a href="10-move-zeros.html">10 — Move Zeros to End</a></li><li><a href="11-missing-number.html">11 — Find Missing Number</a></li><li><a href="12-intersection.html">12 — Array Intersection</a></li><li><a href="13-union.html">13 — Array Union</a></li><li><a href="14-flatten.html">14 — Flatten Nested Array</a></li><li><a href="15-chunk-array.html">15 — Chunk Array</a></li><li><a href="16-frequency-count.html">16 — Frequency Count</a></li><li><a href="17-majority-element.html">17 — Majority Element</a></li><li><a href="18-max-subarray-kadane.html">18 — Maximum Subarray (Kadane)</a></li><li><a href="19-binary-search.html">19 — Binary Search</a></li><li><a href="20-linear-search.html">20 — Linear Search</a></li><li><a href="21-bubble-sort.html">21 — Bubble Sort</a></li><li><a href="22-selection-sort.html">22 — Selection Sort</a></li><li><a href="23-insertion-sort.html">23 — Insertion Sort</a></li><li><a href="24-is-sorted.html">24 — Check if Sorted</a></li><li><a href="25-sort-012.html">25 — Sort 0s, 1s, 2s</a></li><li><a href="26-pairs-with-sum.html">26 — All Pairs With Sum</a></li><li><a href="27-subarray-sum.html">27 — Subarray With Given Sum</a></li><li><a href="28-equilibrium-index.html">28 — Equilibrium Index</a></li><li><a href="29-leaders.html">29 — Leaders in Array</a></li><li><a href="30-stock-profit.html">30 — Best Time to Buy/Sell Stock</a></li><li><a href="31-product-except-self.html">31 — Product Except Self</a></li><li><a href="32-contains-duplicate.html">32 — Contains Duplicate</a></li><li><a href="33-find-duplicates.html">33 — Find All Duplicates</a></li><li><a href="34-first-unique.html">34 — First Unique Element</a></li><li><a href="35-separate-even-odd.html">35 — Separate Even and Odd</a></li><li><a href="36-plus-one.html">36 — Plus One (Digit Array)</a></li><li><a href="37-running-sum.html">37 — Running Sum</a></li><li><a href="38-merge-sorted.html">38 — Merge Two Sorted Arrays</a></li><li><a href="39-min-difference-pair.html">39 — Minimum Difference Pair</a></li><li><a href="40-wave-array.html">40 — Wave Array</a></li><li><a href="41-peak-element.html">41 — Find Peak Element</a></li><li><a href="42-shuffle.html">42 — Shuffle Array (Fisher-Yates)</a></li><li><a href="43-longest-consecutive.html">43 — Longest Consecutive Sequence</a></li><li><a href="44-spiral-matrix.html">44 — Spiral Order Matrix</a></li><li><a href="45-trap-rain-water.html">45 — Trapping Rain Water</a></li><li><a href="46-valid-anagram-arrays.html">46 — Valid Anagram (Arrays/Counts)</a></li><li><a href="47-group-anagrams.html">47 — Group Anagrams</a></li><li><a href="48-matrix-search.html">48 — Search in Sorted Matrix</a></li><li><a href="49-intersection-sorted.html">49 — Intersection of Sorted Arrays</a></li><li><a href="50-count-inversions.html">50 — Count Inversions (Brute)</a></li></ol>
+  <footer>
+    <p>&copy; 2026 phpkingdom.com · Subrahmanyam Poluru · <a href="https://polurus.com">polurus.com</a></p>
+  </footer>
+</body>
+</html>

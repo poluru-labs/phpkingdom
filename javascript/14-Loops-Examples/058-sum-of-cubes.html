@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 058-sum-of-cubes.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>058 — Sum of Cubes 1³..N³ | phpkingdom.com</title>
+</head>
+<body>
+  <h1>058 — Sum of Cubes 1³..N³</h1>
+  <h2>Problem</h2>
+  <p>Compute 1³ + 2³ + … + N³.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const N = 5;
+let sum = 0;
+for (let i = 1; i <= N; i++) sum += i ** 3;
+document.getElementById("out").textContent = "sum of cubes = " + sum;
+  </script>
+</body>
+</html>

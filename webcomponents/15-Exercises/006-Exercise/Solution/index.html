@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/006-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 006 — attributeChanged log — Solution | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>Exercise 006 — attributeChanged log — Solution</h1>
+  <p class="meta">Log old→new when value changes.</p>
+  <h2>Solution</h2>
+  <p>Log old→new when value changes.</p>
+  <div id="demo"></div>
+  <pre id="out"></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+customElements.define("ex006-el", class extends HTMLElement {
+  connectedCallback() {
+    this.textContent = 'attributeChanged log';
+  }
+});
+document.getElementById("demo").innerHTML = "<ex006-el></ex006-el>";
+document.getElementById("out").textContent = 'Log old→new when value changes.';
+  </script>
+</body>
+</html>

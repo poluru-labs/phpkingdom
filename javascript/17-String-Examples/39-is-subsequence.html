@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 17-String-Examples
+  example: 39-is-subsequence.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>39 — Is Subsequence | phpkingdom.com</title>
+</head>
+<body>
+  <h1>39 — Is Subsequence</h1>
+  <h2>Problem</h2>
+  <p>Check if s is a subsequence of t.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function isSubsequence(s, t) {
+  let i = 0;
+  for (const ch of t) if (ch === s[i]) i++;
+  return i === s.length;
+}
+document.getElementById("out").textContent =
+  isSubsequence("abc", "ahbgdc") + " / " + isSubsequence("axc", "ahbgdc");
+  </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/066-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 066 — instanceof — Solution | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Exercise 066 — instanceof — Solution</h1>
+  <pre><code class="ts">class Dog { bark() { return &#x27;woof&#x27;; } }
+class Cat { meow() { return &#x27;mew&#x27;; } }
+function speak(a: Dog | Cat) {
+  if (a instanceof Dog) return a.bark();
+  return a.meow();
+}</code></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+</body>
+</html>

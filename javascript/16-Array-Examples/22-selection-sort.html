@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 16-Array-Examples
+  example: 22-selection-sort.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>22 — Selection Sort | phpkingdom.com</title>
+</head>
+<body>
+  <h1>22 — Selection Sort</h1>
+  <h2>Problem</h2>
+  <p>Sort with selection sort.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function selectionSort(arr) {
+  const a = [...arr];
+  for (let i = 0; i < a.length; i++) {
+    let min = i;
+    for (let j = i + 1; j < a.length; j++) if (a[j] < a[min]) min = j;
+    [a[i], a[min]] = [a[min], a[i]];
+  }
+  return a;
+}
+document.getElementById("out").textContent = selectionSort([64,25,12,22,11]).join(", ");
+  </script>
+</body>
+</html>

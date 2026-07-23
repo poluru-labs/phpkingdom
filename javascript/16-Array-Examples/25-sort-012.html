@@ -1,0 +1,37 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 16-Array-Examples
+  example: 25-sort-012.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>25 — Sort 0s, 1s, 2s | phpkingdom.com</title>
+</head>
+<body>
+  <h1>25 — Sort 0s, 1s, 2s</h1>
+  <h2>Problem</h2>
+  <p>Dutch National Flag problem.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function sort012(arr) {
+  let lo = 0, mid = 0, hi = arr.length - 1;
+  const a = [...arr];
+  while (mid <= hi) {
+    if (a[mid] === 0) { [a[lo], a[mid]] = [a[mid], a[lo]]; lo++; mid++; }
+    else if (a[mid] === 1) mid++;
+    else { [a[mid], a[hi]] = [a[hi], a[mid]]; hi--; }
+  }
+  return a;
+}
+document.getElementById("out").textContent = sort012([2,0,2,1,1,0]).join(", ");
+  </script>
+</body>
+</html>

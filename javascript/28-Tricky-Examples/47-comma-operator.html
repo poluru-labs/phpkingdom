@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 28-Tricky-Examples
+  example: 47-comma-operator.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>47 — Comma Operator | phpkingdom.com</title>
+</head>
+<body>
+  <h1>47 — Comma Operator</h1>
+  <h2>Problem / Gotcha</h2>
+  <p>Evaluates left-to-right, returns the last value.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+let x = (1, 2, 3);
+let y = 0;
+for (let i = 0, j = 10; i < 3; i++, j--) y = j;
+document.getElementById("out").textContent =
+  "x=" + x + "\nfinal j-like y after loop setup demo=" + y;
+  </script>
+</body>
+</html>

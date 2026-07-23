@@ -1,0 +1,36 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Exercises/096-Exercise/Solution
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Exercise 096 — Locale hello — Solution | phpkingdom.com</title>
+  
+</head>
+<body>
+  <h1>Exercise 096 — Locale hello — Solution</h1>
+  <p class="meta">Hello based on lang attribute.</p>
+  <h2>Solution</h2>
+  <p>Hello based on lang attribute.</p>
+  <div id="demo"></div>
+  <pre id="out"></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+customElements.define("ex096-el", class extends HTMLElement {
+  connectedCallback() {
+    this.textContent = 'Locale hello';
+  }
+});
+document.getElementById("demo").innerHTML = "<ex096-el></ex096-el>";
+document.getElementById("out").textContent = 'Hello based on lang attribute.';
+  </script>
+</body>
+</html>

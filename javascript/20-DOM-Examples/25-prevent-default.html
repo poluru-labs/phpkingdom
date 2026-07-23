@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 20-DOM-Examples
+  example: 25-prevent-default.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>25 — preventDefault | phpkingdom.com</title>
+</head>
+<body>
+  <h1>25 — preventDefault</h1>
+  <h2>Problem</h2>
+  <p>Stop a link from navigating with preventDefault.</p>
+  <h2>Demo</h2>
+  <a id="link" href="https://example.com">Would navigate</a>
+  <pre id="out"></pre>
+  <script>
+document.getElementById("link").addEventListener("click", (e) => {
+  e.preventDefault();
+  document.getElementById("out").textContent = "navigation blocked";
+});
+  </script>
+</body>
+</html>

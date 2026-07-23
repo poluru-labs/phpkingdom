@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 18-Object-Examples
+  example: 49-to-map-from-object.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>49 — Object ↔ Map Conversion | phpkingdom.com</title>
+</head>
+<body>
+  <h1>49 — Object ↔ Map Conversion</h1>
+  <h2>Problem</h2>
+  <p>Convert an object to a Map and back.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const obj = { html: 1, css: 2, js: 3 };
+const map = new Map(Object.entries(obj));
+const back = Object.fromEntries(map);
+document.getElementById("out").textContent = "map.get(js)=" + map.get("js") + "\n" + JSON.stringify(back);
+  </script>
+</body>
+</html>

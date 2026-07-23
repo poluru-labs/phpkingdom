@@ -1,0 +1,37 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 20-DOM-Examples
+  example: 39-checkbox-radio.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>39 — Checkboxes and Radios | phpkingdom.com</title>
+</head>
+<body>
+  <h1>39 — Checkboxes and Radios</h1>
+  <h2>Problem</h2>
+  <p>Read checked state from checkbox and radio groups.</p>
+  <h2>Demo</h2>
+  <label><input type="checkbox" id="agree"> Agree</label>
+  <fieldset>
+    <label><input type="radio" name="plan" value="free" checked> Free</label>
+    <label><input type="radio" name="plan" value="pro"> Pro</label>
+  </fieldset>
+  <button id="btn">Read</button>
+  <pre id="out"></pre>
+  <script>
+document.getElementById("btn").onclick = () => {
+  const agree = document.getElementById("agree").checked;
+  const plan = document.querySelector('input[name="plan"]:checked').value;
+  document.getElementById("out").textContent = "agree=" + agree + " plan=" + plan;
+};
+  </script>
+</body>
+</html>

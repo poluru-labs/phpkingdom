@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 07-DOM/04-events
+  example: 01-click.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Click Event | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Click Event</h1>
+  <p>Respond to clicks.</p>
+  <button id="btn" type="button">Click</button>
+  <pre id="out">0</pre>
+  <script>
+let n = 0;
+document.getElementById("btn").addEventListener("click", function () {
+  n += 1;
+  document.getElementById("out").textContent = String(n);
+});
+  </script>
+</body>
+</html>

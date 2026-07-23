@@ -1,0 +1,121 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Vue.js Tutorials
+section title: Routing
+topic title: Vue Router
+content type: Example
+item number: 01
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Vue Router Example 01 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ffedd5;
+      color: #9a3412;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Example 01</span>
+    <h1>Vue Router</h1>
+    <p><strong>Section:</strong> Routing</p>
+    <p><strong>Focus:</strong> Vite Create</p>
+    <p><strong>Scenario:</strong> marketing site</p>
+    <p>Study the Vue 3 pattern for this topic and adapt it to your component.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Vue.js</h2>
+        <pre><code>// Vue Router — Example 01
+// Focus: vite create | Scenario: marketing site
+
+import { createRouter, createWebHistory } from &quot;vue-router&quot;;
+import Home from &quot;./views/Home.vue&quot;;
+import About from &quot;./views/About.vue&quot;;
+
+export default createRouter({
+  history: createWebHistory(),
+  routes: [
+    { path: &quot;/&quot;, component: Home },
+    { path: &quot;/about&quot;, component: About },
+  ],
+});</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Vue Router
+- Practice: vite create
+- Scenario: marketing site
+- Prefer &lt;script setup&gt; + Composition API for Vue 3
+- Use ref for primitives, reactive for objects; computed for derived state
+- Key lists with stable ids; v-if for costly trees, v-show for toggles
+- Props down / emits up; Pinia or provide/inject for shared state
+- Route with vue-router; guard auth; fetch with composables + loading/error
+
+Useful commands:
+  npm create vue@latest
+  npm install
+  npm run dev
+  npm run build
+  npm run type-check   # vue-tsc when TypeScript enabled</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This example focuses on <strong>Vue Router</strong> in a marketing site context.</p>
+      <p>Prefer Composition API, keep components focused, and lift shared state into composables or Pinia.</p>
+    </section>
+  </main>
+</body>
+</html>

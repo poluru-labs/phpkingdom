@@ -1,0 +1,71 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Templates/06-jwt-api
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <meta name="description" content="Protected routes">
+  <title>JWT API | Bearer auth | phpkingdom.com</title>
+  <style>
+    body { margin:0; font-family: Georgia, "Times New Roman", serif; background:#f5f7fb; color:#1f2937; line-height:1.55; }
+    .wrap { max-width:900px; margin:0 auto; padding:1.5rem; }
+    .brand { color:#166534; font-size:.78rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    h1 { font-size:1.75rem; margin:.4rem 0; }
+    .meta { color:#64748b; }
+    pre { background:#0f172a; color:#e2e8f0; padding:1rem; border-radius:.65rem; overflow:auto; font-size:.88rem; }
+    .card { background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:1rem; margin:1rem 0; }
+    a { color:#166534; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">phpkingdom.com</div>
+    <p class="meta">JWT API · Node.js template</p>
+    <h1>Bearer auth</h1>
+    <p class="meta">Protected routes</p>
+    <div class="card">
+      <h2>Server Scaffold</h2>
+      <pre><code>import express from &quot;express&quot;;
+import jwt from &quot;jsonwebtoken&quot;;
+
+const app = express();
+app.use(express.json());
+const secret = process.env.JWT_SECRET || &quot;dev-secret&quot;;
+
+app.post(&quot;/login&quot;, (req, res) =&gt; {
+  const token = jwt.sign({ sub: req.body.userId }, secret, { expiresIn: &quot;15m&quot; });
+  res.json({ token });
+});
+
+function auth(req, res, next) {
+  const header = req.headers.authorization || &quot;&quot;;
+  const token = header.startsWith(&quot;Bearer &quot;) ? header.slice(7) : &quot;&quot;;
+  try {
+    req.user = jwt.verify(token, secret);
+    next();
+  } catch {
+    res.status(401).json({ error: &quot;unauthorized&quot; });
+  }
+}
+
+app.get(&quot;/me&quot;, auth, (req, res) =&gt; res.json({ user: req.user }));
+app.listen(3000);</code></pre>
+    </div>
+    <div class="card">
+      <h2>Verify</h2>
+      <pre><code>node server.mjs
+# or: npm start
+curl http://localhost:3000/health</code></pre>
+    </div>
+    <p><a href="../index.html">All templates</a></p>
+  </div>
+</body>
+</html>

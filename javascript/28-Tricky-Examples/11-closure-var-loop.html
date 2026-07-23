@@ -1,0 +1,37 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 28-Tricky-Examples
+  example: 11-closure-var-loop.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>11 — var Closure in Loop | phpkingdom.com</title>
+</head>
+<body>
+  <h1>11 — var Closure in Loop</h1>
+  <h2>Problem / Gotcha</h2>
+  <p>All callbacks share one var binding.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const bad = [];
+for (var i = 0; i < 3; i++) {
+  bad.push(function () { return i; });
+}
+const good = [];
+for (let j = 0; j < 3; j++) {
+  good.push(function () { return j; });
+}
+document.getElementById("out").textContent =
+  "var loop => " + bad.map((f) => f()).join(", ") + "\n" +
+  "let loop => " + good.map((f) => f()).join(", ");
+  </script>
+</body>
+</html>

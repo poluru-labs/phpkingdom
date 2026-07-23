@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 27-Regex-Examples
+  example: 38-lookahead-negative.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>38 — Negative Lookahead (?!) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>38 — Negative Lookahead (?!)</h1>
+  <h2>Problem</h2>
+  <p>Match 'foo' not followed by 'bar' using negative lookahead.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const text = "foobar foo baz foobar";
+const re = /foo(?!bar)/g;
+const matches = text.match(re);
+document.getElementById("out").textContent =
+  "text: " + text + "\n" +
+  "/foo(?!bar)/g => " + JSON.stringify(matches);
+  </script>
+</body>
+</html>

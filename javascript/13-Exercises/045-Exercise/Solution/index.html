@@ -1,0 +1,25 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 13-Exercises/045-Exercise
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solution 045 — Promise Delay (45) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Solution 045 — Promise Delay (45)</h1>
+  <pre id="out">waiting…</pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+new Promise((resolve) => setTimeout(() => resolve("ready"), 250))
+  .then((v) => { document.getElementById("out").textContent = v; });
+  </script>
+</body>
+</html>

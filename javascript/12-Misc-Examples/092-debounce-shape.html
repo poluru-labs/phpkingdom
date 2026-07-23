@@ -1,0 +1,23 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 12-Misc-Examples
+  example: 092-debounce-shape.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>092 — Debounce shape | phpkingdom.com</title>
+</head>
+<body>
+  <h1>092 — Debounce shape</h1>
+  <pre id="out"></pre>
+  <script>
+function debounce(fn,ms){let t; return (...a)=>{clearTimeout(t); t=setTimeout(()=>fn(...a),ms);};} document.getElementById("out").textContent="debounce helper ready";
+  </script>
+</body>
+</html>

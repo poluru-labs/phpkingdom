@@ -1,0 +1,41 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 23-Promises-Examples
+  example: 20-retry-promise.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>20 — Retry a Failing Promise | phpkingdom.com</title>
+</head>
+<body>
+  <h1>20 — Retry a Failing Promise</h1>
+  <h2>Problem</h2>
+  <p>Retry an async operation a few times.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function attempt(fn, retries) {
+  return fn().catch((err) => {
+    if (retries <= 0) throw err;
+    return attempt(fn, retries - 1);
+  });
+}
+let tries = 0;
+attempt(() => {
+  tries++;
+  return tries < 3
+    ? Promise.reject(new Error("fail #" + tries))
+    : Promise.resolve("success on try " + tries);
+}, 5).then((v) => {
+  document.getElementById("out").textContent = v;
+});
+  </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 11-Browser-APIs/02-session-storage
+  example: 02-session-vs-local.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Session vs Local | phpkingdom.com</title>
+</head>
+<body>
+  <h1>sessionStorage vs localStorage</h1>
+  <p>Session clears when the tab closes.</p>
+  <ul><li><strong>localStorage</strong>: persists across sessions</li><li><strong>sessionStorage</strong>: per-tab, ends with session</li></ul>
+  <pre id="out"></pre>
+  <script>
+sessionStorage.setItem("kind", "session");
+localStorage.setItem("kind", "local");
+document.getElementById("out").textContent =
+  "session=" + sessionStorage.getItem("kind") + ", local=" + localStorage.getItem("kind");
+  </script>
+</body>
+</html>

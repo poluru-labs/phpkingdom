@@ -1,0 +1,40 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 19-Recursion-Examples
+  example: 22-generate-parentheses.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>22 — Generate Parentheses | phpkingdom.com</title>
+</head>
+<body>
+  <h1>22 — Generate Parentheses</h1>
+  <h2>Problem</h2>
+  <p>Generate all valid combinations of n pairs of parentheses using backtracking.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function generateParentheses(n) {
+  const result = [];
+  function backtrack(open, close, s) {
+    if (s.length === n * 2) {
+      result.push(s);
+      return;
+    }
+    if (open < n) backtrack(open + 1, close, s + "(");
+    if (close < open) backtrack(open, close + 1, s + ")");
+  }
+  backtrack(0, 0, "");
+  return result;
+}
+document.getElementById("out").textContent = generateParentheses(3).join("\n");
+  </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 016-power-loop.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>016 — Power with a Loop | phpkingdom.com</title>
+</head>
+<body>
+  <h1>016 — Power with a Loop</h1>
+  <h2>Problem</h2>
+  <p>Compute base^exp without Math.pow, using multiplication in a loop.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function power(base, exp) {
+  let result = 1;
+  for (let i = 0; i < exp; i++) result *= base;
+  return result;
+}
+document.getElementById("out").textContent = "2^10 = " + power(2, 10);
+  </script>
+</body>
+</html>

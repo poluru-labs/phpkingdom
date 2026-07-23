@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  topic: 08-Misc-Examples
+  example: 40-input-validation.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Input Validation Attributes | phpkingdom</title>
+</head>
+<body>
+  <h1>Common Validation Attributes</h1>
+
+  <form>
+    <p>
+      <label for="uname">Username (letters, 3–12)</label><br>
+      <input id="uname" name="username" required minlength="3" maxlength="12" pattern="[A-Za-z]+" title="Letters only">
+    </p>
+    <p>
+      <label for="age">Age</label><br>
+      <input id="age" type="number" name="age" min="1" max="120" required>
+    </p>
+    <button type="submit">Check</button>
+  </form>
+
+</body>
+</html>

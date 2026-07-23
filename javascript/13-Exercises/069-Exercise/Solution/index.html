@@ -1,0 +1,27 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 13-Exercises/069-Exercise
+  example: Solution/index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Solution 069 — Input Mirror (69) | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Solution 069 — Input Mirror (69)</h1>
+  <input id="t" type="text" placeholder="Type">
+  <pre id="out"></pre>
+  <p><a href="../Problem/index.html">Back to Problem</a></p>
+  <script>
+document.getElementById("t").addEventListener("input", (e) => {
+  document.getElementById("out").textContent = e.target.value;
+});
+  </script>
+</body>
+</html>

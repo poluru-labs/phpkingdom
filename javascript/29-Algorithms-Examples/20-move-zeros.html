@@ -1,0 +1,37 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 29-Algorithms-Examples
+  example: 20-move-zeros.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>20 — Move Zeros | phpkingdom.com</title>
+</head>
+<body>
+  <h1>20 — Move Zeros</h1>
+  <h2>Problem</h2>
+  <p>Move all zeros to the end while preserving order of non-zero elements.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function moveZeros(arr) {
+  let write = 0;
+  for (let read = 0; read < arr.length; read++) {
+    if (arr[read] !== 0) arr[write++] = arr[read];
+  }
+  while (write < arr.length) arr[write++] = 0;
+  return arr;
+}
+const input = [0, 1, 0, 3, 12];
+document.getElementById("out").textContent =
+  "input:  " + JSON.stringify(input) + "\noutput: " + JSON.stringify(moveZeros(input.slice()));
+  </script>
+</body>
+</html>

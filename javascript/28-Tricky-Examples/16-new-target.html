@@ -1,0 +1,34 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 28-Tricky-Examples
+  example: 16-new-target.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>16 — Constructor without new | phpkingdom.com</title>
+</head>
+<body>
+  <h1>16 — Constructor without new</h1>
+  <h2>Problem / Gotcha</h2>
+  <p>Calling a class constructor without new throws.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+class Site { constructor(name) { this.name = name; } }
+try {
+  // @ts-ignore
+  Site("phpkingdom");
+} catch (e) {
+  document.getElementById("out").textContent = e.name + ": " + e.message;
+}
+document.getElementById("out").textContent += "\nwith new => " + new Site("phpkingdom").name;
+  </script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: Module Federation Tutorials
+section title: React Integration
+topic title: React Routing
+content type: Example
+item number: 08
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>React Routing Example 08 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ffedd5;
+      color: #9a3412;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Example 08</span>
+    <h1>React Routing</h1>
+    <p><strong>Section:</strong> React Integration</p>
+    <p><strong>Focus:</strong> Shell Layout</p>
+    <p><strong>Scenario:</strong> legacy migration</p>
+    <p>Study the host/remote federation pattern and adapt it to your micro-frontend setup.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>Module Federation</h2>
+        <pre><code>// React Routing — Example 08
+// Focus: shell layout | Scenario: legacy migration
+
+// Host owns BrowserRouter; remotes export route trees or pages
+
+// Host
+import { BrowserRouter, Routes, Route } from &quot;react-router-dom&quot;;
+const ProductsApp = React.lazy(() =&gt; import(&quot;products/ProductsApp&quot;));
+
+&lt;BrowserRouter&gt;
+  &lt;Routes&gt;
+    &lt;Route path=&quot;/products/*&quot; element={&lt;ProductsApp /&gt;} /&gt;
+  &lt;/Routes&gt;
+&lt;/BrowserRouter&gt;
+
+// Remote ProductsApp.jsx — use relative routes
+import { Routes, Route } from &quot;react-router-dom&quot;;
+export default function ProductsApp() {
+  return (
+    &lt;Routes&gt;
+      &lt;Route index element={&lt;ProductList /&gt;} /&gt;
+      &lt;Route path=&quot;:id&quot; element={&lt;ProductDetail /&gt;} /&gt;
+    &lt;/Routes&gt;
+  );
+}
+
+// Share react-router-dom as singleton
+// Avoid nested BrowserRouters in remotes</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for React Routing
+- Practice: shell layout
+- Scenario: legacy migration
+- Share framework runtimes as singletons with requiredVersion
+- Load remotes lazily; wrap with error boundaries / fallbacks
+- Deploy remotes independently; version remoteEntry URLs carefully
+- Align CORS and CSP for cross-origin remoteEntry.js
+
+Useful commands:
+  npm install -D webpack webpack-cli webpack-dev-server
+  # run host + remote on different ports
+  npx webpack serve --config webpack.host.js --port 3000
+  npx webpack serve --config webpack.remote.js --port 3002</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This example shows one way to apply <strong>React Routing</strong> in a legacy migration context.</p>
+      <p>Keep remotes independently deployable, share carefully, and always plan for remote downtime.</p>
+    </section>
+  </main>
+</body>
+</html>

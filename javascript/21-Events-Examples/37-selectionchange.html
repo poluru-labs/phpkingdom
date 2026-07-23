@@ -1,0 +1,31 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 21-Events-Examples
+  example: 37-selectionchange.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>37 — selectionchange | phpkingdom.com</title>
+</head>
+<body>
+  <h1>37 — selectionchange</h1>
+  <h2>Problem</h2>
+  <p>Track text selection changes in the document.</p>
+  <h2>Demo</h2>
+  <p>Select any part of this sentence to see the selection update.</p>
+  <pre id="out"></pre>
+  <script>
+document.addEventListener("selectionchange", () => {
+  const t = String(window.getSelection());
+  document.getElementById("out").textContent = t ? ("selected: " + t) : "(no selection)";
+});
+  </script>
+</body>
+</html>

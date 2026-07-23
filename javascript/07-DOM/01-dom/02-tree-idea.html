@@ -1,0 +1,27 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 07-DOM/01-dom
+  example: 02-tree-idea.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>DOM Tree Idea | phpkingdom.com</title>
+</head>
+<body>
+  <h1>DOM Tree Concept</h1>
+  <p>HTML becomes a tree of nodes.</p>
+  <ul id="list"><li>One</li><li>Two</li></ul>
+  <pre id="out"></pre>
+  <script>
+const items = document.querySelectorAll("#list li");
+document.getElementById("out").textContent = "li count=" + items.length;
+  </script>
+</body>
+</html>

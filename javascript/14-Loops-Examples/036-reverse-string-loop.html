@@ -1,0 +1,30 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 036-reverse-string-loop.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>036 — Reverse String with Loop | phpkingdom.com</title>
+</head>
+<body>
+  <h1>036 — Reverse String with Loop</h1>
+  <h2>Problem</h2>
+  <p>Reverse a string character by character.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const s = "javascript";
+let rev = "";
+for (let i = s.length - 1; i >= 0; i--) rev += s[i];
+document.getElementById("out").textContent = s + " → " + rev;
+  </script>
+</body>
+</html>

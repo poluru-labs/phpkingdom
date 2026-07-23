@@ -1,0 +1,44 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 27-Regex-Examples
+  example: 50-regex-checklist.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>50 — Regex Checklist | phpkingdom.com</title>
+</head>
+<body>
+  <h1>50 — Regex Checklist</h1>
+  <h2>Problem</h2>
+  <p>Quick checklist of JavaScript RegExp methods, flags, and tips.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const checklist = [
+  "[x] RegExp.test(str) — boolean match check",
+  "[x] RegExp.exec(str) — first match + groups",
+  "[x] str.match(re) / str.matchAll(re)",
+  "[x] str.search(re) / str.replace(re, repl)",
+  "[x] str.split(re) — split on pattern",
+  "[x] Flags: g i m u s y d (dotAll, sticky, hasIndices)",
+  "[x] Classes: \\d \\w \\s [a-z] [^0-9]",
+  "[x] Anchors: ^ $ \\b \\B",
+  "[x] Quantifiers: * + ? {n,m} greedy vs lazy *?",
+  "[x] Groups: ( ) (?<name>) (?:) backreferences",
+  "[x] Lookahead / lookbehind: (?=) (?!) (?<=) (?<!)",
+  "[x] Validate: email, URL, phone, hex, date",
+  "[x] Extract & replace patterns safely",
+  "[x] Escape user input; reset lastIndex on /g",
+  "[x] Redact PII; prefer simple patterns first"
+];
+document.getElementById("out").textContent = checklist.join("\n");
+  </script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 22-Components-Examples
+  example: 06-checkbox.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>06 — Checkbox | phpkingdom.com</title>
+  <link rel="stylesheet" href="css/base.css">
+  <style>
+    .c-check {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      cursor: pointer;
+      user-select: none;
+    }
+    .c-check input {
+      width: 1.15rem;
+      height: 1.15rem;
+      accent-color: var(--accent);
+      cursor: pointer;
+    }
+    .demo-checks { display: grid; gap: 0.75rem; }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <a class="back" href="index.html">← Components</a>
+    <h1>06 — Checkbox</h1>
+    <p class="lead">Checkbox with checked and indeterminate states for “select all” patterns.</p>
+    <section class="panel">
+      <h2>Demo</h2>
+      <div class="demo-checks" id="mount"></div>
+    </section>
+    <section class="panel">
+      <h2>Events / State</h2>
+      <pre class="log" id="log">Ready.</pre>
+    </section>
+  </main>
+  <script>
+    const logEl = document.getElementById("log");
+    function log(msg) { logEl.textContent = msg; }
+
+    function createCheckbox({ label = "Option", checked = false, indeterminate = false } = {}) {
+      const el = document.createElement("label");
+      el.className = "c-check";
+
+      const input = document.createElement("input");
+      input.type = "checkbox";
+      input.checked = checked;
+      input.indeterminate = indeterminate;
+
+      const span = document.createElement("span");
+      span.textContent = label;
+
+      input.addEventListener("change", () => {
+        input.indeterminate = false;
+        log("change: " + label + " → " + (input.checked ? "checked" : "unchecked"));
+      });
+
+      el.append(input, span);
+
+      return {
+        el,
+        get checked() { return input.checked; },
+        set checked(v) { input.checked = v; input.indeterminate = false; },
+        set indeterminate(v) { input.indeterminate = v; },
+        get input() { return input; }
+      };
+    }
+
+    const mount = document.getElementById("mount");
+    const parent = createCheckbox({ label: "Select all items", indeterminate: true });
+    const child1 = createCheckbox({ label: "Item A", checked: true });
+    const child2 = createCheckbox({ label: "Item B" });
+    const child3 = createCheckbox({ label: "Item C", checked: true });
+
+    function syncParent() {
+      const children = [child1, child2, child3];
+      const checkedCount = children.filter((c) => c.checked).length;
+      parent.checked = checkedCount === children.length;
+      parent.indeterminate = checkedCount > 0 && checkedCount < children.length;
+    }
+
+    [child1, child2, child3].forEach((c) => {
+      c.input.addEventListener("change", syncParent);
+    });
+    parent.input.addEventListener("change", () => {
+      const v = parent.checked;
+      [child1, child2, child3].forEach((c) => { c.checked = v; });
+      parent.indeterminate = false;
+      log("select all → " + v);
+    });
+
+    mount.append(parent.el, child1.el, child2.el, child3.el);
+  </script>
+</body>
+</html>

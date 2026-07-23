@@ -1,0 +1,143 @@
+<!--
+sitename: phpkingdom.com
+author name: Subrahmanyam Poluru
+Email: mail.polurus@gmail.com
+autor website: polurus.com
+course title: NestJS Tutorials
+section title: Databases
+topic title: Prisma
+content type: Example
+item number: 08
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="Subrahmanyam Poluru" />
+  <title>Prisma Example 08 | phpkingdom.com</title>
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 32px;
+      background: #f5f7fb;
+      color: #1f2937;
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 32px;
+      border-radius: 18px;
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+    }
+    .meta {
+      display: inline-block;
+      margin-bottom: 16px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: #ffedd5;
+      color: #9a3412;
+      font-size: 14px;
+      font-weight: 700;
+    }
+    pre {
+      overflow-x: auto;
+      padding: 18px;
+      border-radius: 12px;
+      background: #0f172a;
+      color: #e2e8f0;
+    }
+    code {
+      font-family: ui-monospace, Menlo, Monaco, Consolas, monospace;
+    }
+    .two-col {
+      display: grid;
+      gap: 24px;
+    }
+    @media (min-width: 860px) {
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <span class="meta">Example 08</span>
+    <h1>Prisma</h1>
+    <p><strong>Section:</strong> Databases</p>
+    <p><strong>Focus:</strong> Auth Guard</p>
+    <p><strong>Scenario:</strong> CMS backend</p>
+    <p>Study the NestJS module/controller/service pattern and adapt it to your API.</p>
+
+    <div class="two-col">
+      <section>
+        <h2>NestJS</h2>
+        <pre><code>// Prisma — Example 08
+// Focus: auth guard | Scenario: CMS backend
+
+// schema.prisma
+// model User {
+//   id    Int    @id @default(autoincrement())
+//   email String @unique
+//   name  String
+// }
+
+import { Injectable, OnModuleInit, Module } from &quot;@nestjs/common&quot;;
+import { PrismaClient } from &quot;@prisma/client&quot;;
+
+@Injectable()
+export class PrismaService extends PrismaClient implements OnModuleInit {
+  async onModuleInit() {
+    await this.$connect();
+  }
+}
+
+@Injectable()
+export class UsersService {
+  constructor(private prisma: PrismaService) {}
+
+  findAll() {
+    return this.prisma.user.findMany();
+  }
+
+  create(data: { email: string; name: string }) {
+    return this.prisma.user.create({ data });
+  }
+}
+
+@Module({ providers: [PrismaService, UsersService], exports: [PrismaService] })
+export class PrismaModule {}</code></pre>
+      </section>
+      <section>
+        <h2>Practice Notes</h2>
+        <pre><code>Checklist for Prisma
+- Practice: auth guard
+- Scenario: CMS backend
+- Structure by feature modules: module + controller + service + DTOs
+- Prefer constructor injection; keep providers @Injectable()
+- Validate input with class-validator + ValidationPipe (whitelist)
+- Use guards for auth/roles, pipes for transform/validate, filters for errors
+- Test with TestingModule; e2e with supertest against NestFactory
+
+Useful commands:
+  npm i -g @nestjs/cli
+  nest new my-api
+  nest g resource users
+  nest start --watch
+  npm run test
+  npm run test:e2e</code></pre>
+      </section>
+    </div>
+
+    <section>
+      <h2>Notes</h2>
+      <p>This example shows one way to apply <strong>Prisma</strong> in a cms backend context.</p>
+      <p>Keep modules cohesive, validate at the boundary, and push business logic into providers/services.</p>
+    </section>
+  </main>
+</body>
+</html>

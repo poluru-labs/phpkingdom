@@ -1,0 +1,40 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 25-Error-Handling-Examples
+  example: 49-error-boundary-lite.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>49 — Light Error Boundary | phpkingdom.com</title>
+</head>
+<body>
+  <h1>49 — Light Error Boundary</h1>
+  <h2>Problem</h2>
+  <p>Render fallback UI when a render helper throws.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const out = document.getElementById("out");
+function renderSafe(render) {
+  try {
+    return render();
+  } catch (e) {
+    return "⚠ " + e.message;
+  }
+}
+const ui = renderSafe(() => {
+  const data = null;
+  if (!data.items) throw new Error("Cannot render list");
+  return "list";
+});
+out.textContent = ui;
+  </script>
+</body>
+</html>

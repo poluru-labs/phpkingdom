@@ -1,0 +1,33 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 14-Loops-Examples
+  example: 048-collatz.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>048 — Collatz Sequence | phpkingdom.com</title>
+</head>
+<body>
+  <h1>048 — Collatz Sequence</h1>
+  <h2>Problem</h2>
+  <p>Generate the Collatz (3n+1) sequence until 1.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+let n = 17;
+const seq = [n];
+while (n !== 1) {
+  n = n % 2 === 0 ? n / 2 : 3 * n + 1;
+  seq.push(n);
+}
+document.getElementById("out").textContent = seq.join(" → ");
+  </script>
+</body>
+</html>

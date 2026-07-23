@@ -1,0 +1,66 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 36-Templates/04-nav-shell
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <meta name="description" content="App chrome with landmarks">
+  <title>Nav Shell | navbar + sidebar | phpkingdom.com</title>
+  <style>
+    body { margin:0; font-family: Georgia, "Times New Roman", serif; background:#f5f7fb; color:#1f2937; line-height:1.55; }
+    .wrap { max-width:900px; margin:0 auto; padding:1.5rem; }
+    .brand { color:#9d174d; font-size:.78rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    h1 { font-size:1.75rem; margin:.4rem 0; }
+    .meta { color:#64748b; }
+    pre { background:#0f172a; color:#e2e8f0; padding:1rem; border-radius:.65rem; overflow:auto; font-size:.88rem; }
+    .card { background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:1rem; margin:1rem 0; }
+    a { color:#9d174d; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">phpkingdom.com</div>
+    <p class="meta">Nav Shell · Design system template</p>
+    <h1>navbar + sidebar</h1>
+    <p class="meta">App chrome with landmarks</p>
+    <div class="card">
+      <h2>Scaffold</h2>
+      <pre><code>export function AppShell({ children }: { children: React.ReactNode }) {
+  return (
+    &lt;div className=&quot;ds-app&quot;&gt;
+      &lt;header className=&quot;ds-navbar&quot;&gt;
+        &lt;a className=&quot;ds-navbar__brand&quot; href=&quot;/&quot;&gt;phpKingdom&lt;/a&gt;
+        &lt;nav aria-label=&quot;Main&quot;&gt;
+          &lt;a href=&quot;/docs&quot;&gt;Docs&lt;/a&gt;
+          &lt;a href=&quot;/components&quot;&gt;Components&lt;/a&gt;
+        &lt;/nav&gt;
+      &lt;/header&gt;
+      &lt;aside className=&quot;ds-sidebar&quot; aria-label=&quot;Workspace&quot;&gt;
+        &lt;nav&gt;
+          &lt;a href=&quot;/w/overview&quot; aria-current=&quot;page&quot;&gt;Overview&lt;/a&gt;
+          &lt;a href=&quot;/w/members&quot;&gt;Members&lt;/a&gt;
+        &lt;/nav&gt;
+      &lt;/aside&gt;
+      &lt;main id=&quot;main&quot;&gt;{children}&lt;/main&gt;
+    &lt;/div&gt;
+  );
+}</code></pre>
+    </div>
+    <div class="card">
+      <h2>Verify</h2>
+      <pre><code># Check contrast and focus styles in the browser
+# Add Storybook stories for variants
+# Run a11y + visual checks before publish</code></pre>
+    </div>
+    <p><a href="../index.html">All templates</a></p>
+  </div>
+</body>
+</html>

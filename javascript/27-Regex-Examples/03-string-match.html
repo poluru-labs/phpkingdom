@@ -1,0 +1,32 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 27-Regex-Examples
+  example: 03-string-match.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>03 — String.match() | phpkingdom.com</title>
+</head>
+<body>
+  <h1>03 — String.match()</h1>
+  <h2>Problem</h2>
+  <p>Use String.match() with and without the global flag.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const text = "cat bat rat mat";
+const single = text.match(/\w+at/);
+const all = text.match(/\w+at/g);
+document.getElementById("out").textContent =
+  "single match: " + JSON.stringify(single) + "\n" +
+  "global match: " + JSON.stringify(all);
+  </script>
+</body>
+</html>

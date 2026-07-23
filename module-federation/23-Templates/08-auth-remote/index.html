@@ -1,0 +1,62 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 23-Templates/08-auth-remote
+  example: index.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <meta name="description" content="Auth micro-frontend">
+  <title>Auth Remote | token share | phpkingdom.com</title>
+  <style>
+    body { margin:0; font-family: Georgia, "Times New Roman", serif; background:#f5f7fb; color:#1f2937; line-height:1.55; }
+    .wrap { max-width:900px; margin:0 auto; padding:1.5rem; }
+    .brand { color:#9a3412; font-size:.78rem; font-weight:700; letter-spacing:.08em; text-transform:uppercase; }
+    h1 { font-size:1.75rem; margin:.4rem 0; }
+    .meta { color:#64748b; }
+    pre { background:#0f172a; color:#e2e8f0; padding:1rem; border-radius:.65rem; overflow:auto; font-size:.88rem; }
+    .card { background:#fff; border:1px solid #e2e8f0; border-radius:12px; padding:1rem; margin:1rem 0; }
+    a { color:#9a3412; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="brand">phpkingdom.com</div>
+    <p class="meta">Auth Remote · Module Federation template</p>
+    <h1>token share</h1>
+    <p class="meta">Auth micro-frontend</p>
+    <div class="card">
+      <h2>Scaffold</h2>
+      <pre><code>// remotes/auth exposes ./Login and ./session helpers
+exposes: {
+  &quot;./Login&quot;: &quot;./src/Login&quot;,
+  &quot;./session&quot;: &quot;./src/session&quot;,
+}
+
+// session.js (singleton-friendly)
+export const session = {
+  getToken: () =&gt; localStorage.getItem(&quot;access_token&quot;),
+  setToken: (t) =&gt; localStorage.setItem(&quot;access_token&quot;, t),
+  clear: () =&gt; localStorage.removeItem(&quot;access_token&quot;),
+};
+
+// Host wraps routes: if (!session.getToken()) redirect to Login remote</code></pre>
+    </div>
+    <div class="card">
+      <h2>Verify</h2>
+      <pre><code># terminal 1 — remote
+npx webpack serve --port 3002
+# terminal 2 — host
+npx webpack serve --port 3000
+# confirm Network: remoteEntry.js loads</code></pre>
+    </div>
+    <p><a href="../index.html">All templates</a></p>
+  </div>
+</body>
+</html>

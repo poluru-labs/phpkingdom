@@ -1,0 +1,452 @@
+[
+  {
+    "type": "example",
+    "file": "10-cross-framework/04-framework-agnostic/examples/01-host-config.html",
+    "focus": "host config",
+    "scenario": "e-commerce shell"
+  },
+  {
+    "type": "example",
+    "file": "10-cross-framework/04-framework-agnostic/examples/02-remote-exposes.html",
+    "focus": "remote exposes",
+    "scenario": "admin portal"
+  },
+  {
+    "type": "example",
+    "file": "10-cross-framework/04-framework-agnostic/examples/03-shared-react.html",
+    "focus": "shared react",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "example",
+    "file": "10-cross-framework/04-framework-agnostic/examples/04-singleton-share.html",
+    "focus": "singleton share",
+    "scenario": "checkout remote"
+  },
+  {
+    "type": "example",
+    "file": "10-cross-framework/04-framework-agnostic/examples/05-eager-share.html",
+    "focus": "eager share",
+    "scenario": "profile remote"
+  },
+  {
+    "type": "example",
+    "file": "10-cross-framework/04-framework-agnostic/examples/06-dynamic-remote.html",
+    "focus": "dynamic remote",
+    "scenario": "design system CDN"
+  },
+  {
+    "type": "example",
+    "file": "10-cross-framework/04-framework-agnostic/examples/07-remote-entry.html",
+    "focus": "remote entry",
+    "scenario": "multi-team platform"
+  },
+  {
+    "type": "example",
+    "file": "10-cross-framework/04-framework-agnostic/examples/08-shell-layout.html",
+    "focus": "shell layout",
+    "scenario": "legacy migration"
+  },
+  {
+    "type": "example",
+    "file": "10-cross-framework/04-framework-agnostic/examples/09-lazy-route.html",
+    "focus": "lazy route",
+    "scenario": "mobile web shell"
+  },
+  {
+    "type": "example",
+    "file": "10-cross-framework/04-framework-agnostic/examples/10-error-boundary.html",
+    "focus": "error boundary",
+    "scenario": "B2B portal"
+  },
+  {
+    "type": "example",
+    "file": "10-cross-framework/04-framework-agnostic/examples/11-event-bus.html",
+    "focus": "event bus",
+    "scenario": "e-commerce shell"
+  },
+  {
+    "type": "example",
+    "file": "10-cross-framework/04-framework-agnostic/examples/12-auth-token-share.html",
+    "focus": "auth token share",
+    "scenario": "admin portal"
+  },
+  {
+    "type": "example",
+    "file": "10-cross-framework/04-framework-agnostic/examples/13-design-system-remote.html",
+    "focus": "design system remote",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "example",
+    "file": "10-cross-framework/04-framework-agnostic/examples/14-version-match.html",
+    "focus": "version match",
+    "scenario": "checkout remote"
+  },
+  {
+    "type": "example",
+    "file": "10-cross-framework/04-framework-agnostic/examples/15-cdn-remote.html",
+    "focus": "cdn remote",
+    "scenario": "profile remote"
+  },
+  {
+    "type": "example",
+    "file": "10-cross-framework/04-framework-agnostic/examples/16-cors-headers.html",
+    "focus": "cors headers",
+    "scenario": "design system CDN"
+  },
+  {
+    "type": "example",
+    "file": "10-cross-framework/04-framework-agnostic/examples/17-fallback-ui.html",
+    "focus": "fallback ui",
+    "scenario": "multi-team platform"
+  },
+  {
+    "type": "example",
+    "file": "10-cross-framework/04-framework-agnostic/examples/18-retry-load.html",
+    "focus": "retry load",
+    "scenario": "legacy migration"
+  },
+  {
+    "type": "example",
+    "file": "10-cross-framework/04-framework-agnostic/examples/19-contract-test.html",
+    "focus": "contract test",
+    "scenario": "mobile web shell"
+  },
+  {
+    "type": "example",
+    "file": "10-cross-framework/04-framework-agnostic/examples/20-preload-remote.html",
+    "focus": "preload remote",
+    "scenario": "B2B portal"
+  },
+  {
+    "type": "example",
+    "file": "10-cross-framework/04-framework-agnostic/examples/21-nested-remote.html",
+    "focus": "nested remote",
+    "scenario": "e-commerce shell"
+  },
+  {
+    "type": "example",
+    "file": "10-cross-framework/04-framework-agnostic/examples/22-web-component-bridge.html",
+    "focus": "web component bridge",
+    "scenario": "admin portal"
+  },
+  {
+    "type": "example",
+    "file": "10-cross-framework/04-framework-agnostic/examples/23-runtime-api.html",
+    "focus": "runtime api",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "example",
+    "file": "10-cross-framework/04-framework-agnostic/examples/24-native-federation.html",
+    "focus": "native federation",
+    "scenario": "checkout remote"
+  },
+  {
+    "type": "example",
+    "file": "10-cross-framework/04-framework-agnostic/examples/25-best-practice-recap.html",
+    "focus": "best practice recap",
+    "scenario": "profile remote"
+  },
+  {
+    "type": "exercise",
+    "file": "10-cross-framework/04-framework-agnostic/exercises/01-install-webpack.html",
+    "focus": "install webpack",
+    "scenario": "e-commerce shell"
+  },
+  {
+    "type": "exercise",
+    "file": "10-cross-framework/04-framework-agnostic/exercises/02-plugin-host.html",
+    "focus": "plugin host",
+    "scenario": "admin portal"
+  },
+  {
+    "type": "exercise",
+    "file": "10-cross-framework/04-framework-agnostic/exercises/03-plugin-remote.html",
+    "focus": "plugin remote",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "10-cross-framework/04-framework-agnostic/exercises/04-name-filename.html",
+    "focus": "name filename",
+    "scenario": "checkout remote"
+  },
+  {
+    "type": "exercise",
+    "file": "10-cross-framework/04-framework-agnostic/exercises/05-exposes-map.html",
+    "focus": "exposes map",
+    "scenario": "profile remote"
+  },
+  {
+    "type": "exercise",
+    "file": "10-cross-framework/04-framework-agnostic/exercises/06-remotes-map.html",
+    "focus": "remotes map",
+    "scenario": "design system CDN"
+  },
+  {
+    "type": "exercise",
+    "file": "10-cross-framework/04-framework-agnostic/exercises/07-shared-react.html",
+    "focus": "shared react",
+    "scenario": "multi-team platform"
+  },
+  {
+    "type": "exercise",
+    "file": "10-cross-framework/04-framework-agnostic/exercises/08-requiredversion.html",
+    "focus": "requiredVersion",
+    "scenario": "legacy migration"
+  },
+  {
+    "type": "exercise",
+    "file": "10-cross-framework/04-framework-agnostic/exercises/09-import-remote.html",
+    "focus": "import remote",
+    "scenario": "mobile web shell"
+  },
+  {
+    "type": "exercise",
+    "file": "10-cross-framework/04-framework-agnostic/exercises/10-react-lazy.html",
+    "focus": "React.lazy",
+    "scenario": "B2B portal"
+  },
+  {
+    "type": "exercise",
+    "file": "10-cross-framework/04-framework-agnostic/exercises/11-suspense-fallback.html",
+    "focus": "Suspense fallback",
+    "scenario": "e-commerce shell"
+  },
+  {
+    "type": "exercise",
+    "file": "10-cross-framework/04-framework-agnostic/exercises/12-dynamic-url.html",
+    "focus": "dynamic url",
+    "scenario": "admin portal"
+  },
+  {
+    "type": "exercise",
+    "file": "10-cross-framework/04-framework-agnostic/exercises/13-manifest-json.html",
+    "focus": "manifest json",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "10-cross-framework/04-framework-agnostic/exercises/14-cors-allow.html",
+    "focus": "cors allow",
+    "scenario": "checkout remote"
+  },
+  {
+    "type": "exercise",
+    "file": "10-cross-framework/04-framework-agnostic/exercises/15-singleton-true.html",
+    "focus": "singleton true",
+    "scenario": "profile remote"
+  },
+  {
+    "type": "exercise",
+    "file": "10-cross-framework/04-framework-agnostic/exercises/16-eager-false.html",
+    "focus": "eager false",
+    "scenario": "design system CDN"
+  },
+  {
+    "type": "exercise",
+    "file": "10-cross-framework/04-framework-agnostic/exercises/17-error-boundary.html",
+    "focus": "error boundary",
+    "scenario": "multi-team platform"
+  },
+  {
+    "type": "exercise",
+    "file": "10-cross-framework/04-framework-agnostic/exercises/18-event-dispatch.html",
+    "focus": "event dispatch",
+    "scenario": "legacy migration"
+  },
+  {
+    "type": "exercise",
+    "file": "10-cross-framework/04-framework-agnostic/exercises/19-route-outlet.html",
+    "focus": "route outlet",
+    "scenario": "mobile web shell"
+  },
+  {
+    "type": "exercise",
+    "file": "10-cross-framework/04-framework-agnostic/exercises/20-deploy-remote.html",
+    "focus": "deploy remote",
+    "scenario": "B2B portal"
+  },
+  {
+    "type": "exercise",
+    "file": "10-cross-framework/04-framework-agnostic/exercises/21-content-hash.html",
+    "focus": "content hash",
+    "scenario": "e-commerce shell"
+  },
+  {
+    "type": "exercise",
+    "file": "10-cross-framework/04-framework-agnostic/exercises/22-debug-share.html",
+    "focus": "debug share",
+    "scenario": "admin portal"
+  },
+  {
+    "type": "exercise",
+    "file": "10-cross-framework/04-framework-agnostic/exercises/23-version-conflict.html",
+    "focus": "version conflict",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "exercise",
+    "file": "10-cross-framework/04-framework-agnostic/exercises/24-retry-wrapper.html",
+    "focus": "retry wrapper",
+    "scenario": "checkout remote"
+  },
+  {
+    "type": "exercise",
+    "file": "10-cross-framework/04-framework-agnostic/exercises/25-final-challenge.html",
+    "focus": "final challenge",
+    "scenario": "profile remote"
+  },
+  {
+    "type": "template",
+    "file": "10-cross-framework/04-framework-agnostic/templates/01-host-shell.html",
+    "focus": "host shell",
+    "scenario": "e-commerce shell"
+  },
+  {
+    "type": "template",
+    "file": "10-cross-framework/04-framework-agnostic/templates/02-remote-widget.html",
+    "focus": "remote widget",
+    "scenario": "admin portal"
+  },
+  {
+    "type": "template",
+    "file": "10-cross-framework/04-framework-agnostic/templates/03-react-host-remote.html",
+    "focus": "react host remote",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "template",
+    "file": "10-cross-framework/04-framework-agnostic/templates/04-angular-host-remote.html",
+    "focus": "angular host remote",
+    "scenario": "checkout remote"
+  },
+  {
+    "type": "template",
+    "file": "10-cross-framework/04-framework-agnostic/templates/05-vue-host-remote.html",
+    "focus": "vue host remote",
+    "scenario": "profile remote"
+  },
+  {
+    "type": "template",
+    "file": "10-cross-framework/04-framework-agnostic/templates/06-dynamic-remotes.html",
+    "focus": "dynamic remotes",
+    "scenario": "design system CDN"
+  },
+  {
+    "type": "template",
+    "file": "10-cross-framework/04-framework-agnostic/templates/07-shared-ui-kit.html",
+    "focus": "shared ui kit",
+    "scenario": "multi-team platform"
+  },
+  {
+    "type": "template",
+    "file": "10-cross-framework/04-framework-agnostic/templates/08-auth-remote.html",
+    "focus": "auth remote",
+    "scenario": "legacy migration"
+  },
+  {
+    "type": "template",
+    "file": "10-cross-framework/04-framework-agnostic/templates/09-cart-remote.html",
+    "focus": "cart remote",
+    "scenario": "mobile web shell"
+  },
+  {
+    "type": "template",
+    "file": "10-cross-framework/04-framework-agnostic/templates/10-dashboard-shell.html",
+    "focus": "dashboard shell",
+    "scenario": "B2B portal"
+  },
+  {
+    "type": "template",
+    "file": "10-cross-framework/04-framework-agnostic/templates/11-event-bus-kit.html",
+    "focus": "event bus kit",
+    "scenario": "e-commerce shell"
+  },
+  {
+    "type": "template",
+    "file": "10-cross-framework/04-framework-agnostic/templates/12-redux-share.html",
+    "focus": "redux share",
+    "scenario": "admin portal"
+  },
+  {
+    "type": "template",
+    "file": "10-cross-framework/04-framework-agnostic/templates/13-error-fallback.html",
+    "focus": "error fallback",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "template",
+    "file": "10-cross-framework/04-framework-agnostic/templates/14-cdn-deploy.html",
+    "focus": "cdn deploy",
+    "scenario": "checkout remote"
+  },
+  {
+    "type": "template",
+    "file": "10-cross-framework/04-framework-agnostic/templates/15-manifest-loader.html",
+    "focus": "manifest loader",
+    "scenario": "profile remote"
+  },
+  {
+    "type": "template",
+    "file": "10-cross-framework/04-framework-agnostic/templates/16-cross-framework.html",
+    "focus": "cross framework",
+    "scenario": "design system CDN"
+  },
+  {
+    "type": "template",
+    "file": "10-cross-framework/04-framework-agnostic/templates/17-nested-federation.html",
+    "focus": "nested federation",
+    "scenario": "multi-team platform"
+  },
+  {
+    "type": "template",
+    "file": "10-cross-framework/04-framework-agnostic/templates/18-ssr-notes.html",
+    "focus": "ssr notes",
+    "scenario": "legacy migration"
+  },
+  {
+    "type": "template",
+    "file": "10-cross-framework/04-framework-agnostic/templates/19-contract-tests.html",
+    "focus": "contract tests",
+    "scenario": "mobile web shell"
+  },
+  {
+    "type": "template",
+    "file": "10-cross-framework/04-framework-agnostic/templates/20-e2e-shell.html",
+    "focus": "e2e shell",
+    "scenario": "B2B portal"
+  },
+  {
+    "type": "template",
+    "file": "10-cross-framework/04-framework-agnostic/templates/21-csp-notes.html",
+    "focus": "csp notes",
+    "scenario": "e-commerce shell"
+  },
+  {
+    "type": "template",
+    "file": "10-cross-framework/04-framework-agnostic/templates/22-perf-preload.html",
+    "focus": "perf preload",
+    "scenario": "admin portal"
+  },
+  {
+    "type": "template",
+    "file": "10-cross-framework/04-framework-agnostic/templates/23-bi-directional.html",
+    "focus": "bi directional",
+    "scenario": "SaaS dashboard"
+  },
+  {
+    "type": "template",
+    "file": "10-cross-framework/04-framework-agnostic/templates/24-native-fed.html",
+    "focus": "native fed",
+    "scenario": "checkout remote"
+  },
+  {
+    "type": "template",
+    "file": "10-cross-framework/04-framework-agnostic/templates/25-production-starter.html",
+    "focus": "production starter",
+    "scenario": "profile remote"
+  }
+]

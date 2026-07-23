@@ -1,0 +1,35 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 18-Object-Examples
+  example: 27-flatten-object.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>27 — Flatten Nested Object | phpkingdom.com</title>
+</head>
+<body>
+  <h1>27 — Flatten Nested Object</h1>
+  <h2>Problem</h2>
+  <p>Flatten nested keys into dotted paths.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function flattenObject(obj, prefix = "", out = {}) {
+  for (const [k, v] of Object.entries(obj)) {
+    const path = prefix ? prefix + "." + k : k;
+    if (v && typeof v === "object" && !Array.isArray(v)) flattenObject(v, path, out);
+    else out[path] = v;
+  }
+  return out;
+}
+document.getElementById("out").textContent = JSON.stringify(flattenObject({ a: 1, b: { c: 2, d: { e: 3 } } }));
+  </script>
+</body>
+</html>

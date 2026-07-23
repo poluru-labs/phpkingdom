@@ -1,0 +1,40 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 11-Browser-APIs/04-web-apis
+  example: 01-geolocation-shape.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>Geolocation Shape | phpkingdom.com</title>
+</head>
+<body>
+  <h1>Geolocation API Shape</h1>
+  <p>Request user location (may prompt).</p>
+  <button id="btn" type="button">Get location</button>
+  <pre id="out"></pre>
+  <script>
+document.getElementById("btn").onclick = function () {
+  if (!navigator.geolocation) {
+    document.getElementById("out").textContent = "Geolocation not supported";
+    return;
+  }
+  navigator.geolocation.getCurrentPosition(
+    function (pos) {
+      document.getElementById("out").textContent =
+        pos.coords.latitude.toFixed(4) + ", " + pos.coords.longitude.toFixed(4);
+    },
+    function (err) {
+      document.getElementById("out").textContent = err.message;
+    }
+  );
+};
+  </script>
+</body>
+</html>

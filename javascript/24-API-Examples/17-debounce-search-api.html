@@ -1,0 +1,43 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 24-API-Examples
+  example: 17-debounce-search-api.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>17 — Debounced Search API | phpkingdom.com</title>
+</head>
+<body>
+  <h1>17 — Debounced Search API</h1>
+  <h2>Problem</h2>
+  <p>Debounce input before calling a search API.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+function debounce(fn, ms) {
+  let t;
+  return (...args) => {
+    clearTimeout(t);
+    t = setTimeout(() => fn(...args), ms);
+  };
+}
+async function searchAPI(q) {
+  return { q, results: ["js-" + q, "api-" + q] };
+}
+const run = debounce(async (q) => {
+  const data = await searchAPI(q);
+  document.getElementById("out").textContent = JSON.stringify(data);
+}, 300);
+run("ja");
+run("jav");
+run("java"); // only this call should effectively "win" after debounce
+  </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 12-Misc-Examples
+  example: 096-chunk-shape.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>096 — Chunk idea | phpkingdom.com</title>
+</head>
+<body>
+  <h1>096 — Chunk idea</h1>
+  <pre id="out"></pre>
+  <script>
+const a=[1,2,3,4]; const out=[]; for(let i=0;i<a.length;i+=2) out.push(a.slice(i,i+2)); document.getElementById("out").textContent=JSON.stringify(out);
+  </script>
+</body>
+</html>

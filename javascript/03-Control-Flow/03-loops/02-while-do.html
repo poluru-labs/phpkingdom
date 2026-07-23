@@ -1,0 +1,29 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 03-Control-Flow/03-loops
+  example: 02-while-do.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>while and do | phpkingdom.com</title>
+</head>
+<body>
+  <h1>while / do...while</h1>
+  <p>Loop while a condition holds.</p>
+  <pre id="out"></pre>
+  <script>
+let n = 3, a = "";
+while (n > 0) { a += n + " "; n--; }
+let m = 0, b = "";
+do { b += m + " "; m++; } while (m < 3);
+document.getElementById("out").textContent = a + "| " + b;
+  </script>
+</body>
+</html>

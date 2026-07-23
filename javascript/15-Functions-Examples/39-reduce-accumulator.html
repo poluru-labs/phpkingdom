@@ -1,0 +1,29 @@
+<!--
+  sitename: phpkingdom.com
+  author name: Subrahmanyam Poluru
+  Email: mail.polurus@gmail.com
+  autor website: polurus.com
+  topic: 15-Functions-Examples
+  example: 39-reduce-accumulator.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Subrahmanyam Poluru">
+  <title>39 — Reduce Accumulator | phpkingdom.com</title>
+</head>
+<body>
+  <h1>39 — Reduce Accumulator</h1>
+  <h2>Problem</h2>
+  <p>Fold an array into one value using reduce.</p>
+  <h2>Output</h2>
+  <pre id="out"></pre>
+  <script>
+const nums = [1, 2, 3, 4];
+const sum = nums.reduce((acc, n) => acc + n, 0);
+document.getElementById("out").textContent = "sum = " + sum;
+  </script>
+</body>
+</html>
