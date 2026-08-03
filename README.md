@@ -2,6 +2,10 @@
 
 Tutorial packs for [phpkingdom.com](https://phpkingdom.com) — practical HTML examples, exercises, and starter templates for web and Node.js topics.
 
+## Screenshot
+<img width="3361" height="2203" alt="image" src="https://github.com/user-attachments/assets/194ba764-afde-46cf-a927-08360a043578" />
+
+
 **Author:** Subrahmanyam Poluru · **Email:** mail.polurus@gmail.com · **Site:** [polurus.com](https://polurus.com)
 
 ## Local dashboard
