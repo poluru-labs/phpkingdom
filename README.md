@@ -4,6 +4,18 @@ Tutorial packs for [phpkingdom.com](https://phpkingdom.com) — practical HTML e
 
 **Author:** Subrahmanyam Poluru · **Email:** mail.polurus@gmail.com · **Site:** [polurus.com](https://polurus.com)
 
+## Local dashboard
+
+Browse every course and open individual examples in a new tab:
+
+```bash
+npm install
+npm run generate   # builds data/catalog.json + data/courses/*.json
+npm run dev        # http://localhost:4173
+```
+
+Dashboard: Bootstrap 5 + Bootstrap Icons + Devicons · brand **PHPKINGDOM** `#DA0037` · sticky sidebar course nav.
+
 ## Features
 
 - Topic-aware HTML examples with metadata (site, author, course, section, topic)

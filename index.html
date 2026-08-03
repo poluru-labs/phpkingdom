@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Subrahmanyam Poluru" />
+    <title>PHPKINGDOM · Course Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap-icons/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css"
+    />
+    <link rel="stylesheet" href="assets/dashboard.css" />
+  </head>
+  <body>
+    <div class="pk-shell">
+      <aside class="pk-sidebar" id="sidebar" aria-label="Courses">
+        <div class="pk-brand">
+          <button
+            class="pk-sidebar-close d-lg-none"
+            type="button"
+            id="sidebarClose"
+            aria-label="Close menu"
+          >
+            <i class="bi bi-x-lg"></i>
+          </button>
+          <a href="./" class="pk-brand-link">
+            <span class="pk-brand-mark">PK</span>
+            <span class="pk-brand-text">
+              <strong>PHPKINGDOM</strong>
+              <small>Tutorial Dashboard</small>
+            </span>
+          </a>
+        </div>
+
+        <div class="pk-sidebar-search px-3 pb-2">
+          <label class="visually-hidden" for="courseFilter">Filter courses</label>
+          <div class="input-group input-group-sm">
+            <span class="input-group-text"><i class="bi bi-search"></i></span>
+            <input
+              type="search"
+              class="form-control"
+              id="courseFilter"
+              placeholder="Filter courses…"
+              autocomplete="off"
+            />
+          </div>
+        </div>
+
+        <nav class="pk-course-nav" id="courseNav" aria-label="Course list">
+          <div class="pk-nav-loading text-center py-4 text-secondary">
+            <div class="spinner-border spinner-border-sm text-brand" role="status"></div>
+            <div class="small mt-2">Loading courses…</div>
+          </div>
+        </nav>
+
+        <div class="pk-sidebar-foot">
+          <a href="https://phpkingdom.com" target="_blank" rel="noopener noreferrer">
+            phpkingdom.com
+          </a>
+          <span>·</span>
+          <a href="https://polurus.com" target="_blank" rel="noopener noreferrer">
+            polurus.com
+          </a>
+        </div>
+      </aside>
+
+      <div class="pk-backdrop d-lg-none" id="sidebarBackdrop" hidden></div>
+
+      <div class="pk-main">
+        <header class="pk-topbar">
+          <button
+            class="btn btn-brand-outline d-lg-none"
+            type="button"
+            id="sidebarOpen"
+            aria-label="Open courses"
+          >
+            <i class="bi bi-list"></i>
+          </button>
+          <div class="pk-topbar-copy">
+            <h1 id="pageTitle">All Courses</h1>
+            <p id="pageSubtitle">
+              Browse every tutorial example. Links open in a new tab.
+            </p>
+          </div>
+          <div class="pk-topbar-actions">
+            <div class="input-group input-group-sm pk-example-search">
+              <span class="input-group-text"><i class="bi bi-funnel"></i></span>
+              <input
+                type="search"
+                class="form-control"
+                id="exampleFilter"
+                placeholder="Filter examples…"
+                autocomplete="off"
+                disabled
+              />
+            </div>
+          </div>
+        </header>
+
+        <main class="pk-content" id="content">
+          <section class="pk-home" id="homeView">
+            <div class="pk-stats" id="statsRow"></div>
+            <div class="pk-course-grid" id="courseGrid"></div>
+          </section>
+
+          <section class="pk-course-view d-none" id="courseView">
+            <div class="pk-course-toolbar">
+              <button type="button" class="btn btn-sm btn-light border" id="backHome">
+                <i class="bi bi-arrow-left"></i> All courses
+              </button>
+              <div class="pk-course-meta" id="courseMeta"></div>
+            </div>
+            <div id="courseBody"></div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/dashboard.js" type="module"></script>
+  </body>
+</html>

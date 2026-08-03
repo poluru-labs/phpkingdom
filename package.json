@@ -1,0 +1,23 @@
+{
+  "name": "phpkingdom",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PHPKINGDOM local tutorial dashboard — browse course examples with Bootstrap.",
+  "type": "module",
+  "scripts": {
+    "generate": "node scripts/generate-catalog.mjs",
+    "predev": "node scripts/generate-catalog.mjs",
+    "dev": "serve . -p 4173",
+    "start": "serve . -p 4173"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.13.1"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}
