@@ -296,6 +296,63 @@ body {
   flex: 1;
 }
 
+.pk-seo-hero {
+  background: linear-gradient(135deg, rgba(218, 0, 55, 0.08), rgba(255, 255, 255, 0.95));
+  border: 1px solid var(--pk-line);
+  border-radius: 1rem;
+  padding: 1.2rem 1.25rem;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pk-seo-copy {
+  flex: 1 1 360px;
+}
+
+.pk-seo-kicker {
+  margin: 0 0 0.35rem;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--pk-brand);
+}
+
+.pk-seo-copy h2 {
+  margin: 0 0 0.45rem;
+  font-size: 1.2rem;
+  font-weight: 800;
+  line-height: 1.35;
+  color: var(--pk-ink);
+}
+
+.pk-seo-copy p {
+  margin: 0;
+  color: var(--pk-muted);
+  max-width: 720px;
+  line-height: 1.6;
+}
+
+.pk-seo-highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.pk-seo-highlights span {
+  background: var(--pk-panel);
+  border: 1px solid var(--pk-line);
+  border-radius: 999px;
+  padding: 0.4rem 0.7rem;
+  font-size: 0.8rem;
+  color: var(--pk-ink);
+  font-weight: 600;
+}
+
 .pk-stats {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));

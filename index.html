@@ -4,7 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Subrahmanyam Poluru" />
-    <title>PHPKINGDOM · Course Dashboard</title>
+    <meta
+      name="description"
+      content="Explore PHPKINGDOM’s curated tutorials for PHP, Angular, React, Vue, Node.js, and modern web development with practical examples and clear learning paths."
+    />
+    <meta
+      name="keywords"
+      content="php tutorials, angular tutorials, react tutorials, vue tutorials, node.js tutorials, web development courses, frontend development"
+    />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://phpkingdom.com/" />
+    <meta property="og:title" content="PHPKINGDOM | Learn Modern Web Development" />
+    <meta
+      property="og:description"
+      content="Browse practical tutorials and hands-on examples for PHP, Angular, React, Vue, and Node.js."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://phpkingdom.com/" />
+    <meta property="og:site_name" content="PHPKINGDOM" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="PHPKINGDOM | Learn Modern Web Development" />
+    <meta
+      name="twitter:description"
+      content="Browse practical tutorials and hands-on examples for PHP, Angular, React, Vue, and Node.js."
+    />
+    <title>PHPKINGDOM | Learn Modern Web Development</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -113,6 +137,28 @@
 
         <main class="pk-content" id="content">
           <section class="pk-home" id="homeView">
+            <section class="pk-seo-hero" aria-labelledby="seoHeroTitle">
+              <div class="pk-seo-copy">
+                <p class="pk-seo-kicker">Free learning hub for modern web development</p>
+                <h2 id="seoHeroTitle">
+                  Discover structured tutorials for PHP, Angular, React, Vue, Node.js,
+                  and more.
+                </h2>
+                <p>
+                  PHPKINGDOM brings together practical course guides, hands-on
+                  examples, and step-by-step learning paths for developers building
+                  fast, modern applications.
+                </p>
+              </div>
+              <div class="pk-seo-highlights" aria-label="Popular topics">
+                <span>PHP</span>
+                <span>Node.js</span>
+                <span>React</span>
+                <span>Vue</span>
+                <span>Angular</span>
+                <span>Web APIs</span>
+              </div>
+            </section>
             <div class="pk-stats" id="statsRow"></div>
             <div class="pk-course-grid" id="courseGrid"></div>
           </section>
@@ -130,6 +176,19 @@
       </div>
     </div>
 
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "PHPKINGDOM",
+        "url": "https://phpkingdom.com/",
+        "description": "A curated dashboard of tutorials and examples for PHP, Angular, React, Vue, Node.js, and modern web development.",
+        "publisher": {
+          "@type": "Organization",
+          "name": "PHPKINGDOM"
+        }
+      }
+    </script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="assets/dashboard.js" type="module"></script>
   </body>
