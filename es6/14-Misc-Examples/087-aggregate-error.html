@@ -20,8 +20,6 @@
   <p class="meta">Multiple errors in one object.</p>
   <p>Multiple errors in one object.</p>
 <pre id="out"></pre>
-  <script>
-const e=new AggregateError([new Error('a'),new Error('b')],'fail');document.getElementById('out').textContent=e.message+':'+e.errors.length;
-  </script>
+  <script src="087-aggregate-error.js"></script>
 </body>
 </html>

@@ -20,8 +20,6 @@
   <p class="meta">Chain errors with { cause }.</p>
   <p>Chain errors with { cause }.</p>
 <pre id="out"></pre>
-  <script>
-const e=new Error('outer',{cause:new Error('inner')});document.getElementById('out').textContent=e.message+' <- '+e.cause.message;
-  </script>
+  <script src="088-error-cause.js"></script>
 </body>
 </html>

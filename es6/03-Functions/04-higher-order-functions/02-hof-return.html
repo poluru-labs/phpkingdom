@@ -13,25 +13,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Subrahmanyam Poluru">
   <title>Return a Function | phpkingdom.com</title>
-  <style>
-    body { font-family: Georgia, "Times New Roman", serif; max-width: 760px; margin: 2rem auto; padding: 0 1.25rem; line-height: 1.6; color: #1a1a1a; }
-    h1 { font-size: 1.75rem; margin-bottom: 0.35rem; }
-    .meta { color: #555; font-size: 0.95rem; margin-bottom: 1.25rem; }
-    .note { background: #f5f3ff; padding: 0.75rem 1rem; border-left: 3px solid #6d28d9; margin: 1rem 0; }
-    pre, code { font-family: ui-monospace, Menlo, monospace; }
-    pre { background: #111827; color: #e5e7eb; padding: 0.85rem 1rem; overflow: auto; }
-    #out { white-space: pre-wrap; background: #f4f4f4; padding: 0.75rem; min-height: 2rem; }
-
-  </style>
+  <link rel="stylesheet" href="02-hof-return.css">
 </head>
 <body>
   <h1>Return a Function</h1>
   <p class="meta">Closures create configurable functions.</p>
 <pre id="out"></pre>
-  <script>
-const multiply = (factor) => (n) => n * factor;
-const times3 = multiply(3);
-document.getElementById("out").textContent = "times3(4)=" + times3(4);
-  </script>
+  <script src="02-hof-return.js"></script>
 </body>
 </html>
