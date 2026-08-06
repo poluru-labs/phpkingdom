@@ -1,0 +1,2 @@
+body { font-family: Georgia, 'Times New Roman', serif; margin: 1.5rem; line-height: 1.5; }
+nav{display:flex;justify-content:space-between;align-items:center;background:#134e4a;color:#fff;padding:.75rem 1rem}nav a{color:#fff;margin-left:.75rem}

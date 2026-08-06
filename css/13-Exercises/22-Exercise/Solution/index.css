@@ -1,0 +1,2 @@
+body { font-family: Georgia, 'Times New Roman', serif; margin: 1.5rem; line-height: 1.5; }
+h1{font-size:clamp(1.2rem, 2vw + 1rem, 2rem);color:#0f766e}

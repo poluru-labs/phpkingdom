@@ -1,0 +1,2 @@
+body { font-family: Georgia, 'Times New Roman', serif; margin: 1.5rem; line-height: 1.5; }
+.box{width:100px;height:70px;background:#0f766e;color:#fff;display:flex;align-items:center;justify-content:center;transition:transform .2s}.box:hover{transform:scale(1.08)}

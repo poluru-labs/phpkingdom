@@ -1,0 +1,4 @@
+body { font-family: Georgia, 'Times New Roman', serif; margin: 1.5rem; line-height: 1.5; }
+    h1 { font-size: 1.25rem; }
+    .demo { margin-top: 1rem; }
+.tabs{display:flex;gap:.5rem;border-bottom:2px solid #e2e8f0}.tab{padding:.5rem .75rem;color:#64748b}.tab.active{color:#0f766e;border-bottom:2px solid #0f766e;margin-bottom:-2px}

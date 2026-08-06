@@ -1,0 +1,4 @@
+body { font-family: Georgia, 'Times New Roman', serif; margin: 1.5rem; line-height: 1.5; }
+    h1 { font-size: 1.25rem; }
+    .demo { margin-top: 1rem; }
+div:nth-child(odd){background:#f0fdfa}div{padding:.5rem}

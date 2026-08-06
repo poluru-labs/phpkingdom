@@ -1,0 +1,2 @@
+body { font-family: Georgia, 'Times New Roman', serif; margin: 1.5rem; line-height: 1.5; }
+@keyframes bounce{from{transform:translateY(0)}to{transform:translateY(-12px)}}.ball{width:48px;height:48px;border-radius:50%;background:#0f766e;animation:bounce .6s ease-in-out infinite alternate}@media (prefers-reduced-motion:reduce){.ball{animation:none}}

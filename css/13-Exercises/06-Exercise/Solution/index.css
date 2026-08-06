@@ -1,0 +1,2 @@
+body { font-family: Georgia, 'Times New Roman', serif; margin: 1.5rem; line-height: 1.5; }
+.row{display:flex;gap:1rem}.row div{flex:1;background:#0f766e;color:#fff;padding:1rem;text-align:center}

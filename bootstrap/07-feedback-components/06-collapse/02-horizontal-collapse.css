@@ -1,0 +1,23 @@
+:root{
+    --pk-bg:#f6f8fb;
+    --pk-surface:#ffffff;
+    --pk-border:#d9e0ea;
+    --pk-text:#213547;
+    --pk-muted:#6b7a90;
+    --pk-accent:#0d6efd;
+    --pk-accent-soft:#e7f1ff;
+  }
+  body{background:linear-gradient(180deg,#f7f9fc 0%,#eef3f8 100%);color:var(--pk-text)}
+  .pk-wrap{max-width:1000px;margin:0 auto;padding:1.25rem 1rem 3rem}
+  .pk-brand{font-size:.78rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--pk-accent)}
+  .pk-meta{color:var(--pk-muted)}
+  .pk-card{background:var(--pk-surface);border:1px solid var(--pk-border);border-radius:.85rem;padding:1.1rem;box-shadow:0 .5rem 1.25rem rgba(20,40,80,.05)}
+  .pk-note{border-left:4px solid var(--pk-accent);background:var(--pk-accent-soft);padding:.85rem 1rem;border-radius:.5rem;margin:1rem 0}
+  .pk-demo{background:var(--pk-surface);border:1px solid var(--pk-border);border-radius:.75rem;padding:1rem;margin:1rem 0}
+  .pk-list a{text-decoration:none}
+  .pk-list a:hover{text-decoration:underline}
+  pre.code{background:#1f2937;color:#f9fafb;padding:.9rem 1rem;border-radius:.65rem;overflow:auto;font-size:.88rem}
+
+/* extracted from inline style attributes */
+.pk-s-min-height-4rem { min-height:4rem; }
+.pk-s-width-18rem { width:18rem; }

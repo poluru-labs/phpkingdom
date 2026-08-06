@@ -1,0 +1,4 @@
+body { font-family: Georgia, 'Times New Roman', serif; margin: 1.5rem; line-height: 1.5; }
+    h1 { font-size: 1.25rem; }
+    .demo { margin-top: 1rem; }
+.chip{display:inline-block;padding:.35rem .7rem;border-radius:999px;background:#e2e8f0;margin-right:.35rem}.chip.active{background:#0f766e;color:#fff}

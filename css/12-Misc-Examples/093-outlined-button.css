@@ -1,0 +1,4 @@
+body { font-family: Georgia, 'Times New Roman', serif; margin: 1.5rem; line-height: 1.5; }
+    h1 { font-size: 1.25rem; }
+    .demo { margin-top: 1rem; }
+button{background:transparent;color:#0f766e;border:2px solid #0f766e;padding:.6rem 1rem;border-radius:8px}

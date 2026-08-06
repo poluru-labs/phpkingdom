@@ -1,0 +1,7 @@
+body { margin:0; font-family: Georgia, serif; background:#faf5ff; color:#1a1a1a; line-height:1.55; }
+    header, main, footer { max-width:960px; margin:0 auto; padding:1.5rem; }
+    .brand { color:#6d28d9; letter-spacing:.08em; text-transform:uppercase; font-size:.9rem; }
+    section { margin:2rem 0; }
+    section h2 { border-bottom:2px solid #6d28d9; display:inline-block; }
+    .topic { margin:1rem 0 1.25rem; }
+    a { color:#6d28d9; }

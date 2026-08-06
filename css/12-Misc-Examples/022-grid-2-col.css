@@ -1,0 +1,4 @@
+body { font-family: Georgia, 'Times New Roman', serif; margin: 1.5rem; line-height: 1.5; }
+    h1 { font-size: 1.25rem; }
+    .demo { margin-top: 1rem; }
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.grid div{background:#ccfbf1;padding:1rem}

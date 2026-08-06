@@ -1,0 +1,1 @@
+const t = {}; const p = new Proxy(t, { set(o, k, v) { if (typeof v !== "number") throw new TypeError("num"); o[k] = v; return true; } }); p.n = 3; document.getElementById("out").textContent = String(p.n);

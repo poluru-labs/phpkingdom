@@ -1,0 +1,18 @@
+:root { --ink:#1a1a1a; --muted:#555; --accent:#0f766e; --bg:#f7fafc; --card:#fff; --line:#d9e2ec; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: Georgia, "Times New Roman", serif; color:var(--ink); background:var(--bg); line-height:1.55; }
+    .wrap { max-width:820px; margin:0 auto; padding:1.5rem; }
+    h1 { font-size:1.6rem; margin:0 0 .35rem; }
+    .meta { color:var(--muted); margin:0 0 1.25rem; }
+    .demo { background:var(--card); border:1px solid var(--line); padding:1rem; margin:1rem 0; }
+    pre, code { font-family: ui-monospace, Menlo, monospace; }
+    pre { background:#111827; color:#e5e7eb; padding:.9rem 1rem; overflow:auto; }
+    .note { border-left:3px solid var(--accent); background:#ecfdf5; padding:.75rem 1rem; }
+    a { color: var(--accent); }
+
+    .progress-label { display:flex; justify-content:space-between; font-size:.9rem; margin-bottom:.35rem; color:var(--muted); }
+    .track { height:10px; background:#e2e8f0; border-radius:999px; overflow:hidden; }
+    .fill { height:100%; background:var(--accent); border-radius:999px; width:65%; }
+    .progress-lg .track { height:14px; }
+    .progress-lg .fill { background:linear-gradient(90deg, #0f766e, #14b8a6); }
+.fill--82 { width: 82%; }

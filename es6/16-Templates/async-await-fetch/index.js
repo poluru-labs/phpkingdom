@@ -1,0 +1,1 @@
+(async () => { try { const data = await Promise.resolve({ ok: true }); document.getElementById("out").textContent = JSON.stringify(data); } catch (e) { document.getElementById("out").textContent = e.message; } })();

@@ -1,0 +1,4 @@
+body { font-family: Georgia, 'Times New Roman', serif; margin: 1.5rem; line-height: 1.5; }
+    h1 { font-size: 1.25rem; }
+    .demo { margin-top: 1rem; }
+.stage{background:url('https://placehold.co/600x160/0f766e/fff') center/cover;padding:2rem}.panel{backdrop-filter:blur(6px);background:rgba(255,255,255,.55);padding:1rem}

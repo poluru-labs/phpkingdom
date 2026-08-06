@@ -1,0 +1,4 @@
+body { font-family: Georgia, 'Times New Roman', serif; margin: 1.5rem; line-height: 1.5; }
+    h1 { font-size: 1.25rem; }
+    .demo { margin-top: 1rem; }
+.box{position:relative;overflow:hidden;padding:2rem;background:#ecfdf5}.ribbon{position:absolute;top:12px;right:-28px;transform:rotate(45deg);background:#b45309;color:#fff;padding:.2rem 2rem;font-size:.75rem}

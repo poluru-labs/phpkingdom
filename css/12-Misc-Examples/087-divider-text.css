@@ -1,0 +1,4 @@
+body { font-family: Georgia, 'Times New Roman', serif; margin: 1.5rem; line-height: 1.5; }
+    h1 { font-size: 1.25rem; }
+    .demo { margin-top: 1rem; }
+.div{display:flex;align-items:center;gap:1rem;color:#64748b}.div::before,.div::after{content:'';flex:1;height:1px;background:#cbd5e1}

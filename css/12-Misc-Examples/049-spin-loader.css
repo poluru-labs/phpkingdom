@@ -1,0 +1,4 @@
+body { font-family: Georgia, 'Times New Roman', serif; margin: 1.5rem; line-height: 1.5; }
+    h1 { font-size: 1.25rem; }
+    .demo { margin-top: 1rem; }
+@keyframes spin{to{transform:rotate(360deg)}}.loader{width:36px;height:36px;border:3px solid #ccfbf1;border-top-color:#0f766e;border-radius:50%;animation:spin .8s linear infinite}

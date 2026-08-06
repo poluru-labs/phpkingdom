@@ -1,0 +1,4 @@
+body { font-family: Georgia, 'Times New Roman', serif; margin: 1.5rem; line-height: 1.5; }
+    h1 { font-size: 1.25rem; }
+    .demo { margin-top: 1rem; }
+.box{min-height:60px;border:1px dashed #94a3b8}.box:empty::before{content:'Nothing here yet';color:#64748b;padding:.75rem;display:block}

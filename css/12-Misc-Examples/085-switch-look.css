@@ -1,0 +1,4 @@
+body { font-family: Georgia, 'Times New Roman', serif; margin: 1.5rem; line-height: 1.5; }
+    h1 { font-size: 1.25rem; }
+    .demo { margin-top: 1rem; }
+.sw{width:48px;height:28px;background:#94a3b8;border-radius:999px;position:relative}.sw::after{content:'';position:absolute;top:3px;left:3px;width:22px;height:22px;background:#fff;border-radius:50%}.sw.on{background:#0f766e}.sw.on::after{left:23px}

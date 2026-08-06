@@ -1,0 +1,4 @@
+body { font-family: Georgia, 'Times New Roman', serif; margin: 1.5rem; line-height: 1.5; }
+    h1 { font-size: 1.25rem; }
+    .demo { margin-top: 1rem; }
+@keyframes shimmer{0%{opacity:.6}50%{opacity:1}100%{opacity:.6}}.sk{height:14px;background:#e2e8f0;border-radius:6px;margin:.5rem 0;animation:shimmer 1.2s infinite}.w{width:80%}

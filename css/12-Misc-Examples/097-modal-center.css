@@ -1,0 +1,4 @@
+body { font-family: Georgia, 'Times New Roman', serif; margin: 1.5rem; line-height: 1.5; }
+    h1 { font-size: 1.25rem; }
+    .demo { margin-top: 1rem; }
+.stage{position:relative;height:160px;background:#cbd5e1}.modal{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#fff;padding:1rem;min-width:180px;box-shadow:0 10px 30px rgba(0,0,0,.15)}

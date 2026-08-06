@@ -1,0 +1,2 @@
+body { font-family: Georgia, 'Times New Roman', serif; margin: 1.5rem; line-height: 1.5; }
+:root{--brand:#0f766e;--radius:10px}button{background:var(--brand);color:#fff;border:0;padding:.7rem 1rem;border-radius:var(--radius)}

@@ -1,0 +1,1 @@
+try { const r = new RegExp("[\\p{Number}]", "v"); document.getElementById("out").textContent = "v-flag: " + r.test("5"); } catch (e) { document.getElementById("out").textContent = "v-flag unsupported: " + e.message; }
