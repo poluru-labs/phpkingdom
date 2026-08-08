@@ -18,8 +18,6 @@
   <h1>036 — clipboard.writeText</h1>
   <p>Copy string.</p>
 <button id="b" type="button">Copy</button><pre id="out"></pre>
-  <script>
-document.getElementById("b").onclick=async()=>{try{await navigator.clipboard.writeText("ok");document.getElementById("out").textContent="copied";}catch(e){document.getElementById("out").textContent=e.message;}};
-  </script>
+  <script src="036-clipboard-write.js"></script>
 </body>
 </html>

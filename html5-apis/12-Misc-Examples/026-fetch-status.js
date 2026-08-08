@@ -1,0 +1,1 @@
+document.getElementById("b").onclick=async()=>{try{const r=await fetch("https://httpbin.org/get");document.getElementById("out").textContent=r.status;}catch(e){document.getElementById("out").textContent=e.message;}};

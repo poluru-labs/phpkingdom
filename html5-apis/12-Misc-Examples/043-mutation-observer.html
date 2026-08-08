@@ -18,8 +18,6 @@
   <h1>043 — MutationObserver</h1>
   <p>DOM mutation watch.</p>
 <div id="d"></div><button id="b" type="button">Add</button><pre id="out"></pre>
-  <script>
-const d=document.getElementById("d");new MutationObserver(()=>document.getElementById("out").textContent="mutated").observe(d,{childList:true});document.getElementById("b").onclick=()=>d.append("x");
-  </script>
+  <script src="043-mutation-observer.js"></script>
 </body>
 </html>

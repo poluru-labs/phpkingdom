@@ -1,0 +1,1 @@
+document.getElementById("b").onclick=async()=>{try{await navigator.clipboard.writeText("ok");document.getElementById("out").textContent="copied";}catch(e){document.getElementById("out").textContent=e.message;}};

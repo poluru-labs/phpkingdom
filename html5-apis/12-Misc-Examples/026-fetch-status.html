@@ -18,8 +18,6 @@
   <h1>026 — fetch status</h1>
   <p>Check Response.ok.</p>
 <button id="b" type="button">GET</button><pre id="out"></pre>
-  <script>
-document.getElementById("b").onclick=async()=>{try{const r=await fetch("https://httpbin.org/get");document.getElementById("out").textContent=r.status;}catch(e){document.getElementById("out").textContent=e.message;}};
-  </script>
+  <script src="026-fetch-status.js"></script>
 </body>
 </html>

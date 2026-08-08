@@ -13,37 +13,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Subrahmanyam Poluru">
   <title>draggable Attribute | phpkingdom.com</title>
-  <style>
-    body { font-family: Georgia, "Times New Roman", serif; max-width: 760px; margin: 2rem auto; padding: 0 1.25rem; line-height: 1.6; color: #1a1a1a; }
-    h1 { font-size: 1.75rem; margin-bottom: 0.35rem; }
-    .meta { color: #555; font-size: 0.95rem; margin-bottom: 1.25rem; }
-    .note { background: #f0f7fb; padding: 0.75rem 1rem; border-left: 3px solid #0f766e; margin: 1rem 0; }
-    pre, code { font-family: ui-monospace, Menlo, monospace; }
-    pre { background: #111827; color: #e5e7eb; padding: 0.85rem 1rem; overflow: auto; }
-    button, input, select { font: inherit; padding: 0.4rem 0.55rem; }
-    #out { white-space: pre-wrap; background: #f4f4f4; padding: 0.75rem; min-height: 2rem; }
-    canvas, video, audio { max-width: 100%; }
-
-  </style>
+  <link rel="stylesheet" href="01-draggable.css">
 </head>
 <body>
   <h1>draggable Attribute</h1>
   <p class="meta">Make an element draggable.</p>
-<div id="item" draggable="true" style="display:inline-block;padding:8px;border:1px solid #333">Drag me</div>
-<div id="zone" style="margin-top:12px;padding:24px;border:2px dashed #666">Drop here</div>
+<div id="item" draggable="true" class="pk-s-display-inline-block-padding-8px-border-1pxsolid">Drag me</div>
+<div id="zone" class="pk-s-margin-top-12px-padding-24px-border-2pxdashed-66">Drop here</div>
 <pre id="out"></pre>
-  <script>
-const item = document.getElementById("item");
-const zone = document.getElementById("zone");
-item.addEventListener("dragstart", (e) => {
-  e.dataTransfer.setData("text/plain", "drag-item");
-});
-zone.addEventListener("dragover", (e) => e.preventDefault());
-zone.addEventListener("drop", (e) => {
-  e.preventDefault();
-  zone.appendChild(item);
-  document.getElementById("out").textContent = "dropped: " + e.dataTransfer.getData("text/plain");
-});
-  </script>
+  <script src="01-draggable.js"></script>
 </body>
 </html>

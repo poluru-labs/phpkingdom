@@ -18,8 +18,6 @@
   <h1>030 — BroadcastChannel</h1>
   <p>Cross-tab messages.</p>
 <button id="b" type="button">Ping</button><pre id="out"></pre>
-  <script>
-if(typeof BroadcastChannel==="undefined"){document.getElementById("out").textContent="n/a";}else{const c=new BroadcastChannel("demo");c.onmessage=e=>document.getElementById("out").textContent=e.data;document.getElementById("b").onclick=()=>c.postMessage("ping");}
-  </script>
+  <script src="030-broadcastchannel.js"></script>
 </body>
 </html>

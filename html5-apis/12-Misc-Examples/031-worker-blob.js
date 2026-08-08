@@ -1,0 +1,1 @@
+document.getElementById("b").onclick=()=>{const w=new Worker(URL.createObjectURL(new Blob(["onmessage=e=>postMessage(e.data*2)"] ,{type:"text/javascript"})));w.onmessage=e=>{document.getElementById("out").textContent=e.data;w.terminate();};w.postMessage(21);};

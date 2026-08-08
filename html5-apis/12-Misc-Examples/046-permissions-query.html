@@ -18,8 +18,6 @@
   <h1>046 — permissions.query</h1>
   <p>Query permission state.</p>
 <button id="b" type="button">Query</button><pre id="out"></pre>
-  <script>
-document.getElementById("b").onclick=async()=>{try{const s=await navigator.permissions.query({name:"notifications"});document.getElementById("out").textContent=s.state;}catch(e){document.getElementById("out").textContent=e.message;}};
-  </script>
+  <script src="046-permissions-query.js"></script>
 </body>
 </html>

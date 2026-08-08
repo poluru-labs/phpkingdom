@@ -18,8 +18,6 @@
   <h1>029 — postMessage self</h1>
   <p>Same-window message.</p>
 <button id="b" type="button">Send</button><pre id="out"></pre>
-  <script>
-onmessage=e=>{if(e.origin===location.origin)document.getElementById("out").textContent=e.data;};document.getElementById("b").onclick=()=>postMessage("hi",location.origin);
-  </script>
+  <script src="029-postmessage-self.js"></script>
 </body>
 </html>

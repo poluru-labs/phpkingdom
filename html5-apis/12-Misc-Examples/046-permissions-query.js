@@ -1,0 +1,1 @@
+document.getElementById("b").onclick=async()=>{try{const s=await navigator.permissions.query({name:"notifications"});document.getElementById("out").textContent=s.state;}catch(e){document.getElementById("out").textContent=e.message;}};

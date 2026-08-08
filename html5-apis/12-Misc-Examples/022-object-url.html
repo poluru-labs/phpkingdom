@@ -18,8 +18,6 @@
   <h1>022 — createObjectURL</h1>
   <p>Blob URL for download/preview.</p>
 <pre id="out"></pre>
-  <script>
-const u=URL.createObjectURL(new Blob(["a"]));document.getElementById("out").textContent=u.slice(0,32)+"…";URL.revokeObjectURL(u);
-  </script>
+  <script src="022-object-url.js"></script>
 </body>
 </html>

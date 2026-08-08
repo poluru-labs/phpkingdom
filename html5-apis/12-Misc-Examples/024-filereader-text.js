@@ -1,0 +1,1 @@
+document.getElementById("f").onchange=e=>{const f=e.target.files[0];if(!f)return;const r=new FileReader();r.onload=()=>document.getElementById("out").textContent=String(r.result).slice(0,200);r.readAsText(f);};

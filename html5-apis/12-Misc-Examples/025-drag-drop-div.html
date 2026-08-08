@@ -13,13 +13,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Subrahmanyam Poluru">
   <title>025 — Drag and drop div | phpkingdom.com</title>
+  <link rel="stylesheet" href="025-drag-drop-div.css">
 </head>
 <body>
   <h1>025 — Drag and drop div</h1>
   <p>HTML5 DnD events.</p>
-<div id="a" draggable="true">Drag</div><div id="z" style="border:1px dashed #333;padding:12px">Drop</div><pre id="out"></pre>
-  <script>
-a.ondragstart=e=>e.dataTransfer.setData("text/plain","x");z.ondragover=e=>e.preventDefault();z.ondrop=e=>{e.preventDefault();document.getElementById("out").textContent=e.dataTransfer.getData("text/plain");};
-  </script>
+<div id="a" draggable="true">Drag</div><div id="z" class="pk-s-border-1pxdashed-333-padding-12px">Drop</div><pre id="out"></pre>
+  <script src="025-drag-drop-div.js"></script>
 </body>
 </html>

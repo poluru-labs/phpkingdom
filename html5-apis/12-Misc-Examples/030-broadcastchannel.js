@@ -1,0 +1,1 @@
+if(typeof BroadcastChannel==="undefined"){document.getElementById("out").textContent="n/a";}else{const c=new BroadcastChannel("demo");c.onmessage=e=>document.getElementById("out").textContent=e.data;document.getElementById("b").onclick=()=>c.postMessage("ping");}

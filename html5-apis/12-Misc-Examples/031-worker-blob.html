@@ -18,8 +18,6 @@
   <h1>031 — Blob Worker</h1>
   <p>Inline worker demo.</p>
 <button id="b" type="button">Run</button><pre id="out"></pre>
-  <script>
-document.getElementById("b").onclick=()=>{const w=new Worker(URL.createObjectURL(new Blob(["onmessage=e=>postMessage(e.data*2)"] ,{type:"text/javascript"})));w.onmessage=e=>{document.getElementById("out").textContent=e.data;w.terminate();};w.postMessage(21);};
-  </script>
+  <script src="031-worker-blob.js"></script>
 </body>
 </html>

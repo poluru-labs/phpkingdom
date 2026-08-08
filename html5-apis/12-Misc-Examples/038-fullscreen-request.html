@@ -18,8 +18,6 @@
   <h1>038 — requestFullscreen</h1>
   <p>Fullscreen element.</p>
 <div id="box">Box</div><button id="b" type="button">Fullscreen</button><pre id="out"></pre>
-  <script>
-document.getElementById("b").onclick=()=>document.getElementById("box").requestFullscreen?.().then(()=>document.getElementById("out").textContent="ok").catch(e=>document.getElementById("out").textContent=e.message);
-  </script>
+  <script src="038-fullscreen-request.js"></script>
 </body>
 </html>

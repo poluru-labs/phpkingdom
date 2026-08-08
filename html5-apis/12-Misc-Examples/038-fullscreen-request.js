@@ -1,0 +1,1 @@
+document.getElementById("b").onclick=()=>document.getElementById("box").requestFullscreen?.().then(()=>document.getElementById("out").textContent="ok").catch(e=>document.getElementById("out").textContent=e.message);

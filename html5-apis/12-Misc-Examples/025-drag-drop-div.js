@@ -1,0 +1,1 @@
+a.ondragstart=e=>e.dataTransfer.setData("text/plain","x");z.ondragover=e=>e.preventDefault();z.ondrop=e=>{e.preventDefault();document.getElementById("out").textContent=e.dataTransfer.getData("text/plain");};
