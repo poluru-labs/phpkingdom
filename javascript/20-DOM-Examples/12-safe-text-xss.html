@@ -22,11 +22,6 @@
   <input id="raw" value="<img src=x onerror=alert(1)>" size="40">
   <button id="btn">Render safely</button>
   <div id="safe"></div>
-  <script>
-document.getElementById("btn").onclick = () => {
-  const value = document.getElementById("raw").value;
-  document.getElementById("safe").textContent = value;
-};
-  </script>
+  <script src="12-safe-text-xss.js"></script>
 </body>
 </html>

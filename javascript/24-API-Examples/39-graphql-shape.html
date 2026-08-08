@@ -20,17 +20,6 @@
   <p>POST a GraphQL query payload.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const query = `
-  query Site($id: ID!) {
-    site(id: $id) { name author }
-  }`;
-const payload = {
-  query,
-  variables: { id: "phpkingdom" }
-};
-document.getElementById("out").textContent = JSON.stringify(payload, null, 2);
-// fetch("/graphql", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) })
-  </script>
+  <script src="39-graphql-shape.js"></script>
 </body>
 </html>

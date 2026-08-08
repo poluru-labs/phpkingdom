@@ -20,16 +20,6 @@
   <p>Store subject scores and compute average.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const student = {
-  name: "Ada",
-  scores: { html: 90, css: 85, js: 95 },
-  average() {
-    const vals = Object.values(this.scores);
-    return vals.reduce((a, b) => a + b, 0) / vals.length;
-  }
-};
-document.getElementById("out").textContent = student.name + " avg=" + student.average().toFixed(1);
-  </script>
+  <script src="39-student-grades.js"></script>
 </body>
 </html>

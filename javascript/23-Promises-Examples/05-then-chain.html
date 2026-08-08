@@ -20,13 +20,6 @@
   <p>Return values to pass data to the next then.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-Promise.resolve(2)
-  .then((n) => n * 3)
-  .then((n) => n + 4)
-  .then((n) => {
-    document.getElementById("out").textContent = "result=" + n;
-  });
-  </script>
+  <script src="05-then-chain.js"></script>
 </body>
 </html>

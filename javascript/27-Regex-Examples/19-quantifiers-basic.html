@@ -20,15 +20,6 @@
   <p>Use *, +, and ? to repeat or make parts optional.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const text = "color colour colr";
-const optionalU = text.match(/colou?r/g);
-const oneOrMore = "aaaab".match(/a+/);
-const zeroOrMore = "bbb".match(/a*/g);
-document.getElementById("out").textContent =
-  "colou?r: " + JSON.stringify(optionalU) + "\n" +
-  "a+ on aaaab: " + JSON.stringify(oneOrMore) + "\n" +
-  "a* on bbb: " + JSON.stringify(zeroOrMore);
-  </script>
+  <script src="19-quantifiers-basic.js"></script>
 </body>
 </html>

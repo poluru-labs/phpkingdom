@@ -20,18 +20,6 @@
   <p>Check whether a number reads the same forwards and backwards.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function isPalindrome(n) {
-  const s = String(n);
-  let i = 0, j = s.length - 1;
-  while (i < j) {
-    if (s[i] !== s[j]) return false;
-    i++; j--;
-  }
-  return true;
-}
-document.getElementById("out").textContent =
-  "121 → " + isPalindrome(121) + "\n123 → " + isPalindrome(123);
-  </script>
+  <script src="011-palindrome-number.js"></script>
 </body>
 </html>

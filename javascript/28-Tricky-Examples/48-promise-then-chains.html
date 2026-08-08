@@ -20,14 +20,6 @@
   <p>Returning a value resolves the next then; throwing rejects.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-Promise.resolve(1)
-  .then((n) => n + 1)
-  .then((n) => { throw new Error("boom at " + n); })
-  .then(() => "skipped")
-  .catch((e) => {
-    document.getElementById("out").textContent = "caught: " + e.message;
-  });
-  </script>
+  <script src="48-promise-then-chains.js"></script>
 </body>
 </html>

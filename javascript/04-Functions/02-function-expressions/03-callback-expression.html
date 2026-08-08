@@ -18,10 +18,6 @@
   <h1>Pass Functions as Values</h1>
   <p>Function expressions as callbacks.</p>
   <pre id="out"></pre>
-  <script>
-function runTwice(fn) { return fn() + " | " + fn(); }
-const tick = function () { return "tick"; };
-document.getElementById("out").textContent = runTwice(tick);
-  </script>
+  <script src="03-callback-expression.js"></script>
 </body>
 </html>

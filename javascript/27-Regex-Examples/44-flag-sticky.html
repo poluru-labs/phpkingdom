@@ -20,16 +20,6 @@
   <p>Use the sticky y flag to match only at lastIndex.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const text = "abc abc abc";
-const re = /abc/y;
-const hits = [];
-let m;
-while ((m = re.exec(text)) !== null) {
-  hits.push("index " + m.index + ": " + m[0]);
-  re.lastIndex += 1;
-}
-document.getElementById("out").textContent = hits.join("\n");
-  </script>
+  <script src="44-flag-sticky.js"></script>
 </body>
 </html>

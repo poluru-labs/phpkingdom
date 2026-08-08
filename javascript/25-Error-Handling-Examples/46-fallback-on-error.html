@@ -20,17 +20,6 @@
   <p>Return a default value when an operation fails.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const out = document.getElementById("out");
-function parseConfig(json, fallback) {
-  try {
-    return JSON.parse(json);
-  } catch {
-    return fallback;
-  }
-}
-const cfg = parseConfig("{", { theme: "light" });
-out.textContent = "theme: " + cfg.theme;
-  </script>
+  <script src="46-fallback-on-error.js"></script>
 </body>
 </html>

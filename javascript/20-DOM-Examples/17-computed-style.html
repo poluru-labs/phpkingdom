@@ -13,19 +13,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Subrahmanyam Poluru">
   <title>17 — getComputedStyle | phpkingdom.com</title>
+  <link rel="stylesheet" href="17-computed-style.css">
 </head>
 <body>
   <h1>17 — getComputedStyle</h1>
   <h2>Problem</h2>
   <p>Read the final computed CSS value for an element.</p>
   <h2>Demo</h2>
-  <style>#box { color: rgb(200, 0, 0); font-size: 20px; }</style>
+  
   <p id="box">Styled text</p>
   <pre id="out"></pre>
-  <script>
-const cs = getComputedStyle(document.getElementById("box"));
-document.getElementById("out").textContent =
-  "color=" + cs.color + "\nfont-size=" + cs.fontSize;
-  </script>
+  <script src="17-computed-style.js"></script>
 </body>
 </html>

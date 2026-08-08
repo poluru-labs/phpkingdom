@@ -20,11 +20,6 @@
   <p>Find all email addresses in a block of text.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const text = "Contact alice@corp.io or bob+dev@example.org for help.";
-const emails = text.match(/[\w.+-]+@[\w-]+\.[\w.-]+/g);
-document.getElementById("out").textContent =
-  "found: " + JSON.stringify(emails);
-  </script>
+  <script src="32-extract-emails.js"></script>
 </body>
 </html>

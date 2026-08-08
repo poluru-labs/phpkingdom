@@ -24,12 +24,6 @@
     <button type="submit">Search</button>
   </form>
   <pre id="out"></pre>
-  <script>
-document.getElementById("f").addEventListener("submit", (e) => {
-  e.preventDefault();
-  const data = new FormData(e.target);
-  document.getElementById("out").textContent = "q=" + data.get("q");
-});
-  </script>
+  <script src="16-submit-form.js"></script>
 </body>
 </html>

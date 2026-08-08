@@ -20,11 +20,6 @@
   <p>Default sort converts to strings.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const nums = [10, 2, 1, 20];
-document.getElementById("out").textContent =
-  "default: " + [...nums].sort().join(", ") + "\n" +
-  "numeric: " + [...nums].sort((a, b) => a - b).join(", ");
-  </script>
+  <script src="09-sort-default.js"></script>
 </body>
 </html>

@@ -20,24 +20,6 @@
   <p>Smallest subarray length with sum at least target (positive numbers).</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function minSubArrayLen(target, arr) {
-  let lo = 0, sum = 0, best = Infinity;
-  for (let hi = 0; hi < arr.length; hi++) {
-    sum += arr[hi];
-    while (sum >= target) {
-      best = Math.min(best, hi - lo + 1);
-      sum -= arr[lo++];
-    }
-  }
-  return best === Infinity ? 0 : best;
-}
-const arr = [2, 3, 1, 2, 4, 3];
-const target = 7;
-document.getElementById("out").textContent =
-  "array: " + JSON.stringify(arr) + "\n" +
-  "target sum >= " + target + "\n" +
-  "min length: " + minSubArrayLen(target, arr);
-  </script>
+  <script src="26-min-window-length-sum.js"></script>
 </body>
 </html>

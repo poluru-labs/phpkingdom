@@ -20,17 +20,6 @@
   <p>Build a tiny recursive JSON serializer for plain objects, arrays, strings, numbers, booleans, null.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function stringify(value) {
-  if (value === null) return "null";
-  const t = typeof value;
-  if (t === "string") return JSON.stringify(value);
-  if (t === "number" || t === "boolean") return String(value);
-  if (Array.isArray(value)) return "[" + value.map(stringify).join(",") + "]";
-  return "{" + Object.keys(value).map((k) => JSON.stringify(k) + ":" + stringify(value[k])).join(",") + "}";
-}
-const obj = { name: "Ada", scores: [98, 95], active: true };
-document.getElementById("out").textContent = stringify(obj);
-  </script>
+  <script src="45-json-stringify-simple.js"></script>
 </body>
 </html>

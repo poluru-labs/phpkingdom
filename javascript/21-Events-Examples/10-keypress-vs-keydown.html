@@ -21,12 +21,6 @@
   <h2>Demo</h2>
   <input id="field" placeholder="Type and press Enter">
   <pre id="out"></pre>
-  <script>
-document.getElementById("field").addEventListener("keydown", (e) => {
-  if (e.key === "Enter") {
-    document.getElementById("out").textContent = "submitted: " + e.target.value;
-  }
-});
-  </script>
+  <script src="10-keypress-vs-keydown.js"></script>
 </body>
 </html>

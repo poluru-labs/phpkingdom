@@ -20,19 +20,6 @@
   <p>Add a number of days without mutating the original Date.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-
-function addDays(date, days) {
-  const copy = new Date(date.getTime());
-  copy.setDate(copy.getDate() + days);
-  return copy;
-}
-const start = new Date(2024, 0, 15);
-const result = addDays(start, 10);
-document.getElementById("out").textContent =
-  "Start: " + start.toDateString() + "\n" +
-  "+10 days: " + result.toDateString();
-
-  </script>
+  <script src="15-add-days.js"></script>
 </body>
 </html>

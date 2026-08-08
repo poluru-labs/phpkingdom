@@ -20,12 +20,6 @@
   <p>Transform a two-argument function into nested unary functions.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function curry2(fn) {
-  return (a) => (b) => fn(a, b);
-}
-const curriedAdd = curry2((a, b) => a + b);
-document.getElementById("out").textContent = "curriedAdd(3)(4) = " + curriedAdd(3)(4);
-  </script>
+  <script src="12-curry-two-args.js"></script>
 </body>
 </html>

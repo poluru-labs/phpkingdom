@@ -20,17 +20,6 @@
   <p>Read a nested value using a dotted path string.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function deepGet(obj, path, fallback) {
-  const val = path.split(".").reduce(
-    (acc, key) => (acc && acc[key] !== undefined ? acc[key] : undefined),
-    obj
-  );
-  return val === undefined ? fallback : val;
-}
-const data = { user: { profile: { city: "Austin" } } };
-document.getElementById("out").textContent =
-  deepGet(data, "user.profile.city") + " / " + deepGet(data, "user.profile.zip", "N/A");
-  </script>
+  <script src="25-deep-get.js"></script>
 </body>
 </html>

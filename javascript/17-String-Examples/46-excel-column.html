@@ -20,17 +20,6 @@
   <p>Convert column number to Excel title (1 -> A, 28 -> AB).</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function convertToTitle(n) {
-  let out = "";
-  while (n > 0) {
-    n--;
-    out = String.fromCharCode(65 + (n % 26)) + out;
-    n = Math.floor(n / 26);
-  }
-  return out;
-}
-document.getElementById("out").textContent = convertToTitle(1) + ", " + convertToTitle(28) + ", " + convertToTitle(701);
-  </script>
+  <script src="46-excel-column.js"></script>
 </body>
 </html>

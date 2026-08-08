@@ -20,16 +20,6 @@
   <p>Check if a number equals the sum of its digits raised to the power of digit count.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function isArmstrong(n) {
-  const digits = String(n).split("").map(Number);
-  const p = digits.length;
-  let sum = 0;
-  for (const d of digits) sum += d ** p;
-  return sum === n;
-}
-document.getElementById("out").textContent =
-  "153 → " + isArmstrong(153) + "\n123 → " + isArmstrong(123);
-  </script>
+  <script src="012-armstrong.js"></script>
 </body>
 </html>

@@ -20,19 +20,6 @@
   <p>Deep-clone objects and arrays recursively (plain data only).</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function deepClone(value) {
-  if (value === null || typeof value !== "object") return value;
-  if (Array.isArray(value)) return value.map(deepClone);
-  const copy = {};
-  for (const key of Object.keys(value)) copy[key] = deepClone(value[key]);
-  return copy;
-}
-const original = { a: 1, b: { c: [2, 3] } };
-const cloned = deepClone(original);
-cloned.b.c.push(99);
-document.getElementById("out").textContent =
-  "original: " + JSON.stringify(original) + "\ncloned:   " + JSON.stringify(cloned);
-  </script>
+  <script src="20-deep-clone.js"></script>
 </body>
 </html>

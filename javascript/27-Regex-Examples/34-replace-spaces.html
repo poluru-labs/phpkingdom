@@ -20,12 +20,6 @@
   <p>Collapse runs of whitespace to a single space and trim.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const messy = "  Hello    world   from   regex  ";
-const clean = messy.replace(/\s+/g, " ").trim();
-document.getElementById("out").textContent =
-  "before: [" + messy + "]\n" +
-  "after:  [" + clean + "]";
-  </script>
+  <script src="34-replace-spaces.js"></script>
 </body>
 </html>

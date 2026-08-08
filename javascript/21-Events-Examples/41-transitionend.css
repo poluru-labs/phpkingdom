@@ -1,0 +1,2 @@
+#box { width:80px;height:80px;background:teal;transition:transform .4s ease; }
+    #box.move { transform:translateX(140px); }

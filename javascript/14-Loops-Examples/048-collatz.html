@@ -20,14 +20,6 @@
   <p>Generate the Collatz (3n+1) sequence until 1.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-let n = 17;
-const seq = [n];
-while (n !== 1) {
-  n = n % 2 === 0 ? n / 2 : 3 * n + 1;
-  seq.push(n);
-}
-document.getElementById("out").textContent = seq.join(" → ");
-  </script>
+  <script src="048-collatz.js"></script>
 </body>
 </html>

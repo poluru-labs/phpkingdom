@@ -20,19 +20,6 @@
   <p>Run many tasks; collect both successes and failures.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const out = document.getElementById("out");
-const tasks = [
-  Promise.resolve("A"),
-  Promise.reject(new Error("B failed")),
-  Promise.resolve("C"),
-];
-Promise.allSettled(tasks).then(results => {
-  const lines = results.map((r, i) =>
-    r.status + ": " + (r.status === "fulfilled" ? r.value : r.reason.message)
-  );
-  out.textContent = lines.join("\n");
-});
-  </script>
+  <script src="14-promise-all-settled.js"></script>
 </body>
 </html>

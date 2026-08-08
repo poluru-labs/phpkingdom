@@ -20,15 +20,6 @@
   <p>Toggle letter case with a character loop.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const s = "JaVa";
-let out = "";
-for (const ch of s) {
-  if (ch >= "a" && ch <= "z") out += ch.toUpperCase();
-  else if (ch >= "A" && ch <= "Z") out += ch.toLowerCase();
-  else out += ch;
-}
-document.getElementById("out").textContent = s + " → " + out;
-  </script>
+  <script src="090-toggle-case.js"></script>
 </body>
 </html>

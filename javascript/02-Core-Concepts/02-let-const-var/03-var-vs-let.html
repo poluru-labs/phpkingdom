@@ -18,16 +18,6 @@
   <h1>var vs let Scope</h1>
   <p>var is function-scoped; let is block-scoped.</p>
   <pre id="out"></pre>
-  <script>
-var msg = "";
-if (true) {
-  var a = "var leaks";
-  let b = "let stays";
-  msg += a + "\n";
-}
-msg += "a outside=" + a + "\n";
-try { msg += b; } catch (e) { msg += "b outside throws"; }
-document.getElementById("out").textContent = msg;
-  </script>
+  <script src="03-var-vs-let.js"></script>
 </body>
 </html>

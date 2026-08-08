@@ -20,15 +20,6 @@
   <p>Use try/catch around await.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-async function main() {
-  try {
-    await Promise.reject(new Error("await failed"));
-  } catch (err) {
-    document.getElementById("out").textContent = err.message;
-  }
-}
-main();
-  </script>
+  <script src="28-async-await-try-catch.js"></script>
 </body>
 </html>

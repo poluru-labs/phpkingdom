@@ -13,27 +13,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Subrahmanyam Poluru">
   <title>23 — Capture vs Bubble | phpkingdom.com</title>
+  <link rel="stylesheet" href="23-capture-phase.css">
 </head>
 <body>
   <h1>23 — Capture vs Bubble</h1>
   <h2>Problem</h2>
   <p>Log capture phase then bubble phase order.</p>
   <h2>Demo</h2>
-  <div id="outer" style="padding:20px;border:1px solid #333">
-    <div id="inner" style="padding:16px;border:1px dashed #666">
+  <div id="outer" class="pk-s-padding-20px-border-1pxsolid-333">
+    <div id="inner" class="pk-s-padding-16px-border-1pxdashed-666">
       <button id="btn">Click</button>
     </div>
   </div>
   <pre id="out"></pre>
-  <script>
-const out = document.getElementById("out");
-const log = (label) => () => { out.textContent += label + "\n"; };
-document.getElementById("outer").addEventListener("click", () => { out.textContent = ""; }, true);
-document.getElementById("outer").addEventListener("click", log("outer capture"), true);
-document.getElementById("inner").addEventListener("click", log("inner capture"), true);
-document.getElementById("btn").addEventListener("click", log("btn target"));
-document.getElementById("inner").addEventListener("click", log("inner bubble"));
-document.getElementById("outer").addEventListener("click", log("outer bubble"));
-  </script>
+  <script src="23-capture-phase.js"></script>
 </body>
 </html>

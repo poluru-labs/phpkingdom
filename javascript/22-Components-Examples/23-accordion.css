@@ -1,0 +1,35 @@
+.c-accordion { display: grid; gap: 0.5rem; }
+    .c-accordion__item {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+      background: var(--surface);
+    }
+    .c-accordion__trigger {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.75rem 0.85rem;
+      border: none;
+      background: transparent;
+      font: inherit;
+      font-weight: 600;
+      text-align: left;
+      cursor: pointer;
+    }
+    .c-accordion__trigger:hover { background: var(--accent-soft); }
+    .c-accordion__icon {
+      color: var(--muted);
+      transition: transform 0.2s var(--ease);
+    }
+    .c-accordion__trigger[aria-expanded="true"] .c-accordion__icon {
+      transform: rotate(180deg);
+    }
+    .c-accordion__panel {
+      padding: 0 0.85rem 0.85rem;
+      color: var(--muted);
+      font-size: 0.92rem;
+    }
+    .c-accordion__panel[hidden] { display: none; }

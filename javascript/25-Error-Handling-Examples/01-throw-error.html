@@ -20,15 +20,6 @@
   <p>Throw a standard Error and catch it to read the message.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const out = document.getElementById("out");
-const lines = [];
-try {
-  throw new Error("Something went wrong");
-} catch (e) {
-  lines.push("caught: " + e.message);
-}
-out.textContent = lines.join("\n");
-  </script>
+  <script src="01-throw-error.js"></script>
 </body>
 </html>

@@ -20,13 +20,6 @@
   <p>Reverse a string recursively by swapping ends.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function reverseString(s) {
-  if (s.length <= 1) return s;
-  return reverseString(s.slice(1)) + s[0];
-}
-const s = "recursion";
-document.getElementById("out").textContent = reverseString(s);
-  </script>
+  <script src="05-reverse-string.js"></script>
 </body>
 </html>

@@ -26,18 +26,6 @@
   </select>
   <button id="set">Set to CSS</button>
   <pre id="out"></pre>
-  <script>
-const sel = document.getElementById("lang");
-function show() {
-  document.getElementById("out").textContent =
-    "value=" + sel.value + " text=" + sel.selectedOptions[0].textContent;
-}
-sel.addEventListener("change", show);
-document.getElementById("set").onclick = () => {
-  sel.value = "css";
-  show();
-};
-show();
-  </script>
+  <script src="40-select-options.js"></script>
 </body>
 </html>

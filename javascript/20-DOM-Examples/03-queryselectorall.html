@@ -21,10 +21,6 @@
   <h2>Demo</h2>
   <p class="note">A</p><p class="note">B</p><p class="note">C</p>
   <pre id="out"></pre>
-  <script>
-const notes = document.querySelectorAll(".note");
-const texts = [...notes].map((n) => n.textContent);
-document.getElementById("out").textContent = "count=" + notes.length + " → " + texts.join(", ");
-  </script>
+  <script src="03-queryselectorall.js"></script>
 </body>
 </html>

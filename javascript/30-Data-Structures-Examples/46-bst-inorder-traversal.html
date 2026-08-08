@@ -20,15 +20,6 @@
   <p>Inorder traversal of a BST yields sorted ascending values.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-class TreeNode { constructor(val, l = null, r = null) { this.val = val; this.left = l; this.right = r; } }
-function inorder(root, out = []) {
-  if (!root) return out;
-  inorder(root.left, out); out.push(root.val); inorder(root.right, out);
-  return out;
-}
-const bst = new TreeNode(8, new TreeNode(3, new TreeNode(1), new TreeNode(6)), new TreeNode(10, null, new TreeNode(14)));
-document.getElementById("out").textContent = "BST inorder (sorted): " + inorder(bst).join(", ");
-  </script>
+  <script src="46-bst-inorder-traversal.js"></script>
 </body>
 </html>

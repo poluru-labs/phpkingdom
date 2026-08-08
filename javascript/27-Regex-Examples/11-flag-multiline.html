@@ -20,13 +20,6 @@
   <p>Use ^ and $ per line with the multiline m flag.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const text = "first line\nsecond line\nthird";
-const withoutM = text.match(/^\w+/);
-const withM = text.match(/^\w+/gm);
-document.getElementById("out").textContent =
-  "without m: " + JSON.stringify(withoutM) + "\n" +
-  "with m:    " + JSON.stringify(withM);
-  </script>
+  <script src="11-flag-multiline.js"></script>
 </body>
 </html>

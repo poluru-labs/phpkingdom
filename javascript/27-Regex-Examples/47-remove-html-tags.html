@@ -20,12 +20,6 @@
   <p>Strip HTML tags from a string (basic demo, not for security sanitization).</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const html = "<p>Hello <strong>world</strong>!</p>";
-const plain = html.replace(/<[^>]+>/g, "");
-document.getElementById("out").textContent =
-  "html:  " + html + "\n" +
-  "plain: " + plain;
-  </script>
+  <script src="47-remove-html-tags.js"></script>
 </body>
 </html>

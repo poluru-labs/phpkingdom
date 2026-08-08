@@ -20,17 +20,6 @@
   <p>Parse common date string formats into Date objects.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-
-const samples = [
-  "2024-01-15",
-  "2024-01-15T14:30:45",
-  "January 15, 2024",
-  "01/15/2024"
-];
-const lines = samples.map(s => s + " => " + new Date(s).toString());
-document.getElementById("out").textContent = lines.join("\n");
-
-  </script>
+  <script src="02-parse-date-string.js"></script>
 </body>
 </html>

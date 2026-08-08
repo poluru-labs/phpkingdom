@@ -14,43 +14,7 @@
   <meta name="author" content="Subrahmanyam Poluru">
   <title>21 — Context Menu | phpkingdom.com</title>
   <link rel="stylesheet" href="css/base.css">
-  <style>
-    .c-ctx-target {
-      padding: 2rem;
-      border: 2px dashed var(--line);
-      border-radius: var(--radius-sm);
-      background: var(--surface-2);
-      text-align: center;
-      color: var(--muted);
-      user-select: none;
-      cursor: context-menu;
-    }
-    .c-ctx-menu {
-      position: fixed;
-      z-index: 200;
-      min-width: 170px;
-      margin: 0;
-      padding: 0.35rem;
-      list-style: none;
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: var(--radius-sm);
-      box-shadow: var(--shadow);
-    }
-    .c-ctx-menu[hidden] { display: none; }
-    .c-ctx-menu__item {
-      display: block;
-      width: 100%;
-      text-align: left;
-      border: none;
-      background: transparent;
-      padding: 0.5rem 0.65rem;
-      border-radius: 6px;
-      font: inherit;
-      cursor: pointer;
-    }
-    .c-ctx-menu__item:hover { background: var(--accent-soft); }
-  </style>
+  <link rel="stylesheet" href="21-context-menu.css">
 </head>
 <body>
   <main class="page">
@@ -66,72 +30,6 @@
       <pre class="log" id="log">Ready.</pre>
     </section>
   </main>
-  <script>
-    const logEl = document.getElementById("log");
-    function log(msg) { logEl.textContent = msg; }
-
-    function createContextMenu({ targetText = "Right-click here", items = [] } = {}) {
-      const target = document.createElement("div");
-      target.className = "c-ctx-target";
-      target.textContent = targetText;
-
-      const menu = document.createElement("ul");
-      menu.className = "c-ctx-menu";
-      menu.setAttribute("role", "menu");
-      menu.hidden = true;
-      document.body.appendChild(menu);
-
-      function close() {
-        menu.hidden = true;
-      }
-
-      function open(x, y) {
-        menu.hidden = false;
-        const maxX = window.innerWidth - menu.offsetWidth - 8;
-        const maxY = window.innerHeight - menu.offsetHeight - 8;
-        menu.style.left = Math.min(x, maxX) + "px";
-        menu.style.top = Math.min(y, maxY) + "px";
-        log("open at (" + Math.round(x) + ", " + Math.round(y) + ")");
-      }
-
-      menu.innerHTML = "";
-      items.forEach((item) => {
-        const li = document.createElement("li");
-        li.setAttribute("role", "none");
-        const btn = document.createElement("button");
-        btn.type = "button";
-        btn.className = "c-ctx-menu__item";
-        btn.setAttribute("role", "menuitem");
-        btn.textContent = item.label;
-        btn.addEventListener("click", () => {
-          close();
-          log("select: " + item.label);
-        });
-        li.appendChild(btn);
-        menu.appendChild(li);
-      });
-
-      target.addEventListener("contextmenu", (e) => {
-        e.preventDefault();
-        open(e.clientX, e.clientY);
-      });
-
-      document.addEventListener("click", close);
-      document.addEventListener("keydown", (e) => { if (e.key === "Escape") close(); });
-      window.addEventListener("scroll", close, true);
-      window.addEventListener("resize", close);
-
-      return { el: target, close, menu };
-    }
-
-    document.getElementById("mount").appendChild(createContextMenu({
-      items: [
-        { label: "Copy" },
-        { label: "Paste" },
-        { label: "Rename" },
-        { label: "Delete" }
-      ]
-    }).el);
-  </script>
+  <script src="21-context-menu.js"></script>
 </body>
 </html>

@@ -13,22 +13,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Subrahmanyam Poluru">
   <title>10 — cloneNode | phpkingdom.com</title>
+  <link rel="stylesheet" href="10-clone-node.css">
 </head>
 <body>
   <h1>10 — cloneNode</h1>
   <h2>Problem</h2>
   <p>Deep-clone an element and append the copy.</p>
   <h2>Demo</h2>
-  <div id="card" style="border:1px solid #333;padding:8px;display:inline-block">
+  <div id="card" class="pk-s-border-1pxsolid-333-padding-8px-display-inline-b">
     <strong>Card</strong><p>Details</p>
   </div>
   <div id="copies"></div>
   <button id="btn">Clone</button>
-  <script>
-document.getElementById("btn").onclick = () => {
-  const copy = document.getElementById("card").cloneNode(true);
-  document.getElementById("copies").appendChild(copy);
-};
-  </script>
+  <script src="10-clone-node.js"></script>
 </body>
 </html>

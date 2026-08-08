@@ -20,16 +20,6 @@
   <p>Copy a Date without sharing the same object reference.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-
-const original = new Date(2024, 0, 15, 14, 30, 0);
-const clone = new Date(original.getTime());
-clone.setDate(20);
-document.getElementById("out").textContent =
-  "Original: " + original.toDateString() + "\n" +
-  "Clone after setDate(20): " + clone.toDateString() + "\n" +
-  "Same reference? " + (original === clone);
-
-  </script>
+  <script src="27-clone-date.js"></script>
 </body>
 </html>

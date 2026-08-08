@@ -20,13 +20,6 @@
   <p>Catch SyntaxError when evaluating invalid code strings.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const out = document.getElementById("out");
-try {
-  new Function("return {{{")();
-} catch (e) {
-  out.textContent = e.name + ": invalid syntax caught safely";
-}
-  </script>
+  <script src="20-syntax-error-eval.js"></script>
 </body>
 </html>

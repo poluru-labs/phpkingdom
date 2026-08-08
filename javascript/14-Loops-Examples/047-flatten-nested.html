@@ -20,11 +20,6 @@
   <p>Flatten one level of nesting with loops.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const nested = [[1, 2], [3], [4, 5, 6]];
-const flat = [];
-for (const inner of nested) for (const x of inner) flat.push(x);
-document.getElementById("out").textContent = flat.join(", ");
-  </script>
+  <script src="047-flatten-nested.js"></script>
 </body>
 </html>

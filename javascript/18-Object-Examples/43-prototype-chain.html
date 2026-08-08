@@ -20,11 +20,6 @@
   <p>Create an object that inherits properties via Object.create.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const animal = { eats: true, info() { return "eats=" + this.eats; } };
-const dog = Object.create(animal);
-dog.barks = true;
-document.getElementById("out").textContent = dog.info() + ", barks=" + dog.barks;
-  </script>
+  <script src="43-prototype-chain.js"></script>
 </body>
 </html>

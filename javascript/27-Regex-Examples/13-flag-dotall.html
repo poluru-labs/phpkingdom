@@ -20,13 +20,6 @@
   <p>Make . match newline characters using the s (dotAll) flag.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const text = "start\nend";
-const noDotAll = /start.end/.test(text);
-const dotAll = /start.end/s.test(text);
-document.getElementById("out").textContent =
-  "/start.end/  => " + noDotAll + "\n" +
-  "/start.end/s => " + dotAll;
-  </script>
+  <script src="13-flag-dotall.js"></script>
 </body>
 </html>

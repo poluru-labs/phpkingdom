@@ -20,15 +20,6 @@
   <p>Count paths from top-left to bottom-right in a grid (only right/down moves).</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function countPaths(rows, cols) {
-  if (rows === 1 || cols === 1) return 1;
-  return countPaths(rows - 1, cols) + countPaths(rows, cols - 1);
-}
-const sizes = [[2, 2], [3, 3], [3, 4]];
-document.getElementById("out").textContent = sizes
-  .map(([r, c]) => r + "×" + c + " grid → " + countPaths(r, c) + " paths")
-  .join("\n");
-  </script>
+  <script src="24-maze-grid-paths.js"></script>
 </body>
 </html>

@@ -20,12 +20,6 @@
   <p>Wait for all API calls even if some fail.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const ok = Promise.resolve({ endpoint: "A", ok: true });
-const fail = Promise.reject(new Error("B failed"));
-Promise.allSettled([ok, fail]).then((results) => {
-  document.getElementById("out").textContent = JSON.stringify(results, null, 2);
-});
-  </script>
+  <script src="15-promise-allsettled.js"></script>
 </body>
 </html>

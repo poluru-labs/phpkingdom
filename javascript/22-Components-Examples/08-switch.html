@@ -14,40 +14,7 @@
   <meta name="author" content="Subrahmanyam Poluru">
   <title>08 — Switch | phpkingdom.com</title>
   <link rel="stylesheet" href="css/base.css">
-  <style>
-    .c-switch {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.65rem;
-      cursor: pointer;
-      user-select: none;
-    }
-    .c-switch__track {
-      width: 2.75rem;
-      height: 1.5rem;
-      border-radius: 999px;
-      background: var(--line);
-      position: relative;
-      transition: background 0.2s var(--ease);
-      flex-shrink: 0;
-    }
-    .c-switch__thumb {
-      position: absolute;
-      top: 2px;
-      left: 2px;
-      width: calc(1.5rem - 4px);
-      height: calc(1.5rem - 4px);
-      border-radius: 50%;
-      background: #fff;
-      box-shadow: 0 1px 3px rgba(0,0,0,0.15);
-      transition: transform 0.2s var(--ease);
-    }
-    .c-switch input { position: absolute; opacity: 0; width: 0; height: 0; }
-    .c-switch input:focus-visible + .c-switch__track { box-shadow: var(--focus); }
-    .c-switch input:checked + .c-switch__track { background: var(--accent); }
-    .c-switch input:checked + .c-switch__track .c-switch__thumb { transform: translateX(1.25rem); }
-    .c-switch input:disabled + .c-switch__track { opacity: 0.5; cursor: not-allowed; }
-  </style>
+  <link rel="stylesheet" href="08-switch.css">
 </head>
 <body>
   <main class="page">
@@ -63,48 +30,6 @@
       <pre class="log" id="log">Ready.</pre>
     </section>
   </main>
-  <script>
-    const logEl = document.getElementById("log");
-    function log(msg) { logEl.textContent = msg; }
-
-    function createSwitch({ label = "Notifications", checked = false, disabled = false } = {}) {
-      const el = document.createElement("label");
-      el.className = "c-switch";
-
-      const input = document.createElement("input");
-      input.type = "checkbox";
-      input.role = "switch";
-      input.checked = checked;
-      input.disabled = disabled;
-
-      const track = document.createElement("span");
-      track.className = "c-switch__track";
-      const thumb = document.createElement("span");
-      thumb.className = "c-switch__thumb";
-      track.appendChild(thumb);
-
-      const text = document.createElement("span");
-      text.textContent = label;
-
-      input.addEventListener("change", () => {
-        log("change: " + label + " → " + (input.checked ? "on" : "off"));
-      });
-
-      el.append(input, track, text);
-
-      return {
-        el,
-        get checked() { return input.checked; },
-        set checked(v) { input.checked = v; }
-      };
-    }
-
-    const mount = document.getElementById("mount");
-    mount.append(
-      createSwitch({ label: "Email notifications" }).el,
-      createSwitch({ label: "Dark mode", checked: true }).el,
-      createSwitch({ label: "Beta features", disabled: true }).el
-    );
-  </script>
+  <script src="08-switch.js"></script>
 </body>
 </html>

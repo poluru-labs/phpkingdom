@@ -22,11 +22,6 @@
   <div id="outer"><span id="inner">inner</span></div>
   <p id="aside">outside</p>
   <pre id="out"></pre>
-  <script>
-const outer = document.getElementById("outer");
-document.getElementById("out").textContent =
-  "outer contains inner? " + outer.contains(document.getElementById("inner")) +
-  "\nouter contains aside? " + outer.contains(document.getElementById("aside"));
-  </script>
+  <script src="21-contains-node.js"></script>
 </body>
 </html>

@@ -20,14 +20,6 @@
   <p>Show an impure function that mutates external state.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-let total = 0;
-function impureAdd(n) {
-  total += n;
-  return total;
-}
-document.getElementById("out").textContent =
-  impureAdd(5) + ", " + impureAdd(3) + " (total changed)";
-  </script>
+  <script src="32-impure-function.js"></script>
 </body>
 </html>

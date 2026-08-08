@@ -20,20 +20,6 @@
   <p>Conditional request headers for caching.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-let etag = '"v1"';
-async function getWithEtag() {
-  const incoming = '"v1"'; // server current version
-  if (etag && etag === incoming) {
-    return { status: 304, body: null, note: "Not Modified" };
-  }
-  etag = incoming;
-  return { status: 200, body: { data: "fresh" }, etag };
-}
-getWithEtag().then((res) => {
-  document.getElementById("out").textContent = JSON.stringify(res, null, 2);
-});
-// headers: { "If-None-Match": etag }
-  </script>
+  <script src="31-etag-pattern.js"></script>
 </body>
 </html>

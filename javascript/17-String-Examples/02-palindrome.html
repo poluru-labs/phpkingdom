@@ -20,13 +20,6 @@
   <p>Return true if a string reads the same forward and backward (ignore case/spaces).</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function isPalindrome(s) {
-  const clean = s.toLowerCase().replace(/[^a-z0-9]/g, "");
-  return clean === clean.split("").reverse().join("");
-}
-document.getElementById("out").textContent =
-  isPalindrome("A man a plan a canal Panama") + " / " + isPalindrome("hello");
-  </script>
+  <script src="02-palindrome.js"></script>
 </body>
 </html>

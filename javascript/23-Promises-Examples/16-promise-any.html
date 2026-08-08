@@ -20,16 +20,6 @@
   <p>Resolve with the first fulfilled value; ignore rejections unless all fail.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-Promise.any([
-  Promise.reject(new Error("1")),
-  new Promise((resolve) => setTimeout(() => resolve("first success"), 120)),
-  Promise.reject(new Error("3"))
-]).then((value) => {
-  document.getElementById("out").textContent = value;
-}).catch((err) => {
-  document.getElementById("out").textContent = err.name + ": " + err.message;
-});
-  </script>
+  <script src="16-promise-any.js"></script>
 </body>
 </html>

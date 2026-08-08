@@ -20,13 +20,6 @@
   <p>Use finally for cleanup whether fulfilled or rejected.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-let status = "pending";
-Promise.resolve("ok")
-  .finally(() => { status = "settled"; })
-  .then((v) => {
-    document.getElementById("out").textContent = v + " / " + status;
-  });
-  </script>
+  <script src="08-finally.js"></script>
 </body>
 </html>

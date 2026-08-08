@@ -20,18 +20,6 @@
   <p>Reject when the callback receives an error.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function legacyFail(cb) {
-  setTimeout(() => cb(new Error("disk full")), 100);
-}
-function readAsync() {
-  return new Promise((resolve, reject) => {
-    legacyFail((err, data) => err ? reject(err) : resolve(data));
-  });
-}
-readAsync().catch((err) => {
-  document.getElementById("out").textContent = err.message;
-});
-  </script>
+  <script src="26-callback-to-promise-error.js"></script>
 </body>
 </html>

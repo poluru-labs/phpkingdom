@@ -18,11 +18,6 @@
   <h1>Per-tab Counter</h1>
   <p>Increment a session counter.</p>
   <pre id="out"></pre>
-  <script>
-const key = "views";
-const n = Number(sessionStorage.getItem(key) || 0) + 1;
-sessionStorage.setItem(key, String(n));
-document.getElementById("out").textContent = "This tab views: " + n;
-  </script>
+  <script src="03-session-count.js"></script>
 </body>
 </html>

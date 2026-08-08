@@ -20,25 +20,6 @@
   <p>Simulate HTTP error responses and handle status codes.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const out = document.getElementById("out");
-async function mockFetch(url) {
-  return { ok: false, status: 404, statusText: "Not Found", url };
-}
-async function load() {
-  const res = await mockFetch("/api/user");
-  if (!res.ok) {
-    throw new Error("HTTP " + res.status + " " + res.statusText + " for " + res.url);
-  }
-  return res;
-}
-(async () => {
-  try {
-    await load();
-  } catch (e) {
-    out.textContent = e.message;
-  }
-})();
-  </script>
+  <script src="25-mock-fetch-error.js"></script>
 </body>
 </html>

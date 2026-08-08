@@ -20,11 +20,6 @@
   <p>map passes index as radix to parseInt.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const arr = ["10", "10", "10"];
-document.getElementById("out").textContent =
-  "bad: [" + arr.map(parseInt).join(", ") + "]\n" +
-  "good: [" + arr.map((n) => parseInt(n, 10)).join(", ") + "]";
-  </script>
+  <script src="10-parseint-map.js"></script>
 </body>
 </html>

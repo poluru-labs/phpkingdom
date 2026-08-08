@@ -19,11 +19,6 @@
   <p>Session clears when the tab closes.</p>
   <ul><li><strong>localStorage</strong>: persists across sessions</li><li><strong>sessionStorage</strong>: per-tab, ends with session</li></ul>
   <pre id="out"></pre>
-  <script>
-sessionStorage.setItem("kind", "session");
-localStorage.setItem("kind", "local");
-document.getElementById("out").textContent =
-  "session=" + sessionStorage.getItem("kind") + ", local=" + localStorage.getItem("kind");
-  </script>
+  <script src="02-session-vs-local.js"></script>
 </body>
 </html>

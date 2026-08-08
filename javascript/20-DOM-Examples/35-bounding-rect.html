@@ -13,22 +13,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Subrahmanyam Poluru">
   <title>35 — getBoundingClientRect | phpkingdom.com</title>
+  <link rel="stylesheet" href="35-bounding-rect.css">
 </head>
 <body>
   <h1>35 — getBoundingClientRect</h1>
   <h2>Problem</h2>
   <p>Measure an element's position and size in the viewport.</p>
   <h2>Demo</h2>
-  <div id="box" style="margin:40px;width:120px;height:60px;border:2px solid #333">Measure me</div>
+  <div id="box" class="pk-s-margin-40px-width-120px-height-60px-border-2pxso">Measure me</div>
   <button id="btn">Measure</button>
   <pre id="out"></pre>
-  <script>
-document.getElementById("btn").onclick = () => {
-  const r = document.getElementById("box").getBoundingClientRect();
-  document.getElementById("out").textContent =
-    "x=" + Math.round(r.x) + " y=" + Math.round(r.y) +
-    " w=" + Math.round(r.width) + " h=" + Math.round(r.height);
-};
-  </script>
+  <script src="35-bounding-rect.js"></script>
 </body>
 </html>

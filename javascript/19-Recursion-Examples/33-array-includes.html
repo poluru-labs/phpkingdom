@@ -20,15 +20,6 @@
   <p>Check if an array contains a value using recursion.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function arrayIncludes(arr, target, i = 0) {
-  if (i >= arr.length) return false;
-  if (arr[i] === target) return true;
-  return arrayIncludes(arr, target, i + 1);
-}
-const fruits = ["apple", "banana", "cherry"];
-document.getElementById("out").textContent =
-  "banana: " + arrayIncludes(fruits, "banana") + "\ngrape: " + arrayIncludes(fruits, "grape");
-  </script>
+  <script src="33-array-includes.js"></script>
 </body>
 </html>

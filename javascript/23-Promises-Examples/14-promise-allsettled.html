@@ -20,14 +20,6 @@
   <p>Wait for every promise to settle, success or failure.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-Promise.allSettled([
-  Promise.resolve("A"),
-  Promise.reject(new Error("B")),
-  Promise.resolve("C")
-]).then((results) => {
-  document.getElementById("out").textContent = JSON.stringify(results, null, 2);
-});
-  </script>
+  <script src="14-promise-allsettled.js"></script>
 </body>
 </html>

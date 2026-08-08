@@ -13,19 +13,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Subrahmanyam Poluru">
   <title>36 — Clipboard paste Event | phpkingdom.com</title>
+  <link rel="stylesheet" href="36-clipboard-paste.css">
 </head>
 <body>
   <h1>36 — Clipboard paste Event</h1>
   <h2>Problem</h2>
   <p>Intercept paste into an input.</p>
   <h2>Demo</h2>
-  <input id="field" placeholder="Paste here" style="width:280px">
+  <input id="field" placeholder="Paste here" class="pk-w-280px">
   <pre id="out"></pre>
-  <script>
-document.getElementById("field").addEventListener("paste", (e) => {
-  const text = (e.clipboardData || window.clipboardData).getData("text");
-  document.getElementById("out").textContent = "paste length=" + text.length;
-});
-  </script>
+  <script src="36-clipboard-paste.js"></script>
 </body>
 </html>

@@ -20,12 +20,6 @@
   <p>Match repeated words using a backreference to group 1.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const text = "the the quick brown brown fox";
-const dupes = text.match(/\b(\w+)\s+\1\b/g);
-document.getElementById("out").textContent =
-  "text: " + text + "\n" +
-  "duplicates: " + JSON.stringify(dupes);
-  </script>
+  <script src="45-backreferences.js"></script>
 </body>
 </html>

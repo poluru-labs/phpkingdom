@@ -20,14 +20,6 @@
   <p>Handle mixed timing outcomes with allSettled.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const ok = new Promise((resolve) => setTimeout(() => resolve("ok"), 80));
-const bad = new Promise((_, reject) => setTimeout(() => reject(new Error("late fail")), 120));
-Promise.allSettled([ok, bad]).then((results) => {
-  document.getElementById("out").textContent = results.map((r) =>
-    r.status === "fulfilled" ? r.value : r.reason.message
-  ).join(" | ");
-});
-  </script>
+  <script src="44-settle-timeouts.js"></script>
 </body>
 </html>

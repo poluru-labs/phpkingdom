@@ -20,11 +20,6 @@
   <p>Remove keys with null or undefined values.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function compact(obj) {
-  return Object.fromEntries(Object.entries(obj).filter(([, v]) => v !== null && v !== undefined));
-}
-document.getElementById("out").textContent = JSON.stringify(compact({ a: 1, b: null, c: undefined, d: 0, e: "" }));
-  </script>
+  <script src="37-compact-object.js"></script>
 </body>
 </html>

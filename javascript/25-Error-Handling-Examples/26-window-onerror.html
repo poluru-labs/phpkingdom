@@ -20,21 +20,6 @@
   <p>Register window.onerror once to log unexpected errors (demo only).</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const out = document.getElementById("out");
-const seen = [];
-const prev = window.onerror;
-window.onerror = function(msg, src, line, col, err) {
-  seen.push(String(msg));
-  return true;
-};
-try {
-  throw new Error("demo global error");
-} catch (e) {
-  window.onerror(e.message, "", 0, 0, e);
-}
-window.onerror = prev;
-out.textContent = "logged via onerror: " + seen.join("; ");
-  </script>
+  <script src="26-window-onerror.js"></script>
 </body>
 </html>

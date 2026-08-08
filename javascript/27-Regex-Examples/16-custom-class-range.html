@@ -20,11 +20,6 @@
   <p>Build custom classes like [a-zA-Z0-9_] for tokens.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const text = "Valid_token-123 invalid!";
-const tokens = text.match(/[a-zA-Z_][a-zA-Z0-9_]*/g);
-document.getElementById("out").textContent =
-  "tokens: " + JSON.stringify(tokens);
-  </script>
+  <script src="16-custom-class-range.js"></script>
 </body>
 </html>

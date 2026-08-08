@@ -1,0 +1,25 @@
+.c-combo { position: relative; max-width: 320px; }
+    .c-combo__list {
+      position: absolute;
+      z-index: 20;
+      top: calc(100% + 4px);
+      left: 0;
+      right: 0;
+      margin: 0;
+      padding: 0.35rem;
+      list-style: none;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      box-shadow: var(--shadow);
+      max-height: 200px;
+      overflow-y: auto;
+    }
+    .c-combo__list[hidden] { display: none; }
+    .c-combo__item {
+      padding: 0.5rem 0.65rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .c-combo__item:hover, .c-combo__item.is-active { background: var(--accent-soft); }
+    .c-combo__empty { padding: 0.5rem 0.65rem; color: var(--muted); font-size: 0.88rem; }

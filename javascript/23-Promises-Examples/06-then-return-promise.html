@@ -20,16 +20,6 @@
   <p>Flatten nested async work by returning a Promise from then.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-Promise.resolve("user")
-  .then((name) => {
-    return new Promise((resolve) => {
-      setTimeout(() => resolve(name + "-loaded"), 200);
-    });
-  })
-  .then((value) => {
-    document.getElementById("out").textContent = value;
-  });
-  </script>
+  <script src="06-then-return-promise.js"></script>
 </body>
 </html>

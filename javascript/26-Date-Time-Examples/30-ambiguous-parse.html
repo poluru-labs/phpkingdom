@@ -20,17 +20,6 @@
   <p>Same-looking strings can parse differently; prefer ISO or explicit parts.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-
-const iso = "2024-01-15";
-const slash = "01/02/2024";
-const dIso = new Date(iso);
-const dSlash = new Date(slash);
-document.getElementById("out").textContent =
-  "ISO '2024-01-15' => " + dIso.toString() + "\n" +
-  "'01/02/2024' => " + dSlash.toString() + " (locale-dependent)\n" +
-  "Safer: new Date(2024, 0, 2) or parse with explicit format";
-
-  </script>
+  <script src="30-ambiguous-parse.js"></script>
 </body>
 </html>

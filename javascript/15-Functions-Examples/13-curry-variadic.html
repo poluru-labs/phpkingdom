@@ -20,16 +20,6 @@
   <p>Curry a function that accepts any number of arguments.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function curry(fn) {
-  return function curried(...args) {
-    if (args.length >= fn.length) return fn(...args);
-    return (...more) => curried(...args, ...more);
-  };
-}
-const sum = curry((a, b, c) => a + b + c);
-document.getElementById("out").textContent =
-  "sum(1)(2)(3) = " + sum(1)(2)(3);
-  </script>
+  <script src="13-curry-variadic.js"></script>
 </body>
 </html>

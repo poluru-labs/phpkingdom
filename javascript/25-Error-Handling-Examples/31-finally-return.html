@@ -20,22 +20,6 @@
   <p>finally runs even when try or catch returns.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const out = document.getElementById("out");
-const log = [];
-function demo() {
-  try {
-    log.push("try return");
-    return "from try";
-  } catch (e) {
-    return "from catch";
-  } finally {
-    log.push("finally always");
-  }
-}
-const v = demo();
-log.push("result: " + v);
-out.textContent = log.join("\n");
-  </script>
+  <script src="31-finally-return.js"></script>
 </body>
 </html>

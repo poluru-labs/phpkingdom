@@ -20,13 +20,6 @@
   <p>Build a frequency map of each character.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function charFrequency(s) {
-  const map = {};
-  for (const ch of s) map[ch] = (map[ch] || 0) + 1;
-  return map;
-}
-document.getElementById("out").textContent = JSON.stringify(charFrequency("banana"));
-  </script>
+  <script src="05-char-frequency.js"></script>
 </body>
 </html>

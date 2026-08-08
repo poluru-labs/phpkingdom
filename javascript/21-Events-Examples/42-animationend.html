@@ -13,31 +13,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Subrahmanyam Poluru">
   <title>42 — animationend | phpkingdom.com</title>
+  <link rel="stylesheet" href="42-animationend.css">
 </head>
 <body>
   <h1>42 — animationend</h1>
   <h2>Problem</h2>
   <p>Detect the end of a CSS animation.</p>
   <h2>Demo</h2>
-  <style>
-    @keyframes pop { from { transform:scale(1); } 50% { transform:scale(1.25); } to { transform:scale(1); } }
-    #ball { width:60px;height:60px;border-radius:50%;background:#c60; }
-    #ball.run { animation:pop .5s ease; }
-  </style>
+  
   <div id="ball"></div>
   <button id="btn">Animate</button>
   <pre id="out"></pre>
-  <script>
-const ball = document.getElementById("ball");
-ball.addEventListener("animationend", (e) => {
-  ball.classList.remove("run");
-  document.getElementById("out").textContent = "animationend: " + e.animationName;
-});
-document.getElementById("btn").onclick = () => {
-  ball.classList.remove("run");
-  void ball.offsetWidth;
-  ball.classList.add("run");
-};
-  </script>
+  <script src="42-animationend.js"></script>
 </body>
 </html>

@@ -1,0 +1,13 @@
+function compareVersion(v1, v2) {
+  const a = v1.split(".").map(Number);
+  const b = v2.split(".").map(Number);
+  const n = Math.max(a.length, b.length);
+  for (let i = 0; i < n; i++) {
+    const x = a[i] || 0, y = b[i] || 0;
+    if (x > y) return 1;
+    if (x < y) return -1;
+  }
+  return 0;
+}
+document.getElementById("out").textContent =
+  compareVersion("1.01", "1.001") + " / " + compareVersion("1.0.1", "1");

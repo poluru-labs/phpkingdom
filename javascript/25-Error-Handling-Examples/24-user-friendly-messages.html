@@ -20,18 +20,6 @@
   <p>Map technical errors to safe messages for users.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const out = document.getElementById("out");
-function toUserMessage(err) {
-  if (err.message.includes("network")) return "Check your connection and try again.";
-  if (err.message.includes("401")) return "Please sign in again.";
-  return "Something went wrong. Please try later.";
-}
-try {
-  throw new Error("network ECONNRESET");
-} catch (e) {
-  out.textContent = toUserMessage(e);
-}
-  </script>
+  <script src="24-user-friendly-messages.js"></script>
 </body>
 </html>

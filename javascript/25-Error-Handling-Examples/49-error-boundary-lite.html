@@ -20,21 +20,6 @@
   <p>Render fallback UI when a render helper throws.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const out = document.getElementById("out");
-function renderSafe(render) {
-  try {
-    return render();
-  } catch (e) {
-    return "⚠ " + e.message;
-  }
-}
-const ui = renderSafe(() => {
-  const data = null;
-  if (!data.items) throw new Error("Cannot render list");
-  return "list";
-});
-out.textContent = ui;
-  </script>
+  <script src="49-error-boundary-lite.js"></script>
 </body>
 </html>

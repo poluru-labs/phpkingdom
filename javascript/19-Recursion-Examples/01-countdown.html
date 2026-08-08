@@ -20,13 +20,6 @@
   <p>Print numbers from n down to 1 using recursion.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function countdown(n) {
-  if (n <= 0) return [];
-  return [n, ...countdown(n - 1)];
-}
-const result = countdown(5);
-document.getElementById("out").textContent = result.join(" ");
-  </script>
+  <script src="01-countdown.js"></script>
 </body>
 </html>

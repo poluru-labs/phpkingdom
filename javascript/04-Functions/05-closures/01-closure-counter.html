@@ -19,18 +19,6 @@
   <p>Inner function remembers outer state.</p>
   <button id="btn" type="button">Increment</button>
   <pre id="out">0</pre>
-  <script>
-function makeCounter() {
-  let count = 0;
-  return function () {
-    count += 1;
-    return count;
-  };
-}
-const next = makeCounter();
-document.getElementById("btn").onclick = function () {
-  document.getElementById("out").textContent = String(next());
-};
-  </script>
+  <script src="01-closure-counter.js"></script>
 </body>
 </html>

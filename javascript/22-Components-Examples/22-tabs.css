@@ -1,0 +1,27 @@
+.c-tabs { display: grid; gap: 0; }
+    .c-tabs__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 0.85rem;
+    }
+    .c-tabs__tab {
+      border: none;
+      background: transparent;
+      padding: 0.55rem 0.85rem;
+      font: inherit;
+      font-weight: 600;
+      color: var(--muted);
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      margin-bottom: -1px;
+      border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+    }
+    .c-tabs__tab:hover { color: var(--accent-ink); background: var(--accent-soft); }
+    .c-tabs__tab[aria-selected="true"] {
+      color: var(--accent-ink);
+      border-bottom-color: var(--accent);
+    }
+    .c-tabs__panel { color: var(--muted); }
+    .c-tabs__panel[hidden] { display: none; }

@@ -20,11 +20,6 @@
   <p>Return the longest word in a sentence.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function longestWord(sentence) {
-  return sentence.split(/\s+/).reduce((best, w) => w.length > best.length ? w : best, "");
-}
-document.getElementById("out").textContent = longestWord("I love javascript tutorials");
-  </script>
+  <script src="09-longest-word.js"></script>
 </body>
 </html>

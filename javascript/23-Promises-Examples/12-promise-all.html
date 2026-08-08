@@ -20,14 +20,6 @@
   <p>Wait for all promises; resolve with an array of results.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-Promise.all([
-  Promise.resolve("html"),
-  Promise.resolve("css"),
-  Promise.resolve("js")
-]).then((values) => {
-  document.getElementById("out").textContent = values.join(" + ");
-});
-  </script>
+  <script src="12-promise-all.js"></script>
 </body>
 </html>

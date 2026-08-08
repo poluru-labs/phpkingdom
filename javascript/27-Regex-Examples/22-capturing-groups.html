@@ -20,15 +20,6 @@
   <p>Extract parts of a match using parentheses capturing groups.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const text = "John Doe <john@example.com>";
-const re = /(\w+) (\w+) <([^>]+)>/;
-const m = re.exec(text);
-document.getElementById("out").textContent =
-  "full:  " + m[0] + "\n" +
-  "first: " + m[1] + "\n" +
-  "last:  " + m[2] + "\n" +
-  "email: " + m[3];
-  </script>
+  <script src="22-capturing-groups.js"></script>
 </body>
 </html>

@@ -20,11 +20,6 @@
   <p>Swap keys and values (values should be unique).</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function invert(obj) {
-  return Object.fromEntries(Object.entries(obj).map(([k, v]) => [String(v), k]));
-}
-document.getElementById("out").textContent = JSON.stringify(invert({ a: 1, b: 2, c: 3 }));
-  </script>
+  <script src="18-invert-object.js"></script>
 </body>
 </html>

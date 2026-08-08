@@ -20,15 +20,6 @@
   <p>Arrow functions use lexical this.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const obj = {
-  name: "phpkingdom",
-  regular: function () { return this.name; },
-  arrow: () => this && this.name
-};
-document.getElementById("out").textContent =
-  "regular => " + obj.regular() + "\n" +
-  "arrow on object => " + String(obj.arrow());
-  </script>
+  <script src="14-this-regular-vs-arrow.js"></script>
 </body>
 </html>

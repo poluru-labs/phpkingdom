@@ -20,17 +20,6 @@
   <p>Find a contiguous subarray that adds to target (positives).</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function subarraySum(arr, target) {
-  let start = 0, sum = 0;
-  for (let end = 0; end < arr.length; end++) {
-    sum += arr[end];
-    while (sum > target && start <= end) sum -= arr[start++];
-    if (sum === target) return arr.slice(start, end + 1);
-  }
-  return [];
-}
-document.getElementById("out").textContent = "[" + subarraySum([1,2,3,7,5], 12) + "]";
-  </script>
+  <script src="27-subarray-sum.js"></script>
 </body>
 </html>

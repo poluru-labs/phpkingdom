@@ -20,14 +20,6 @@
   <p>Check if a substring exists in a string using recursion.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function stringIncludes(haystack, needle, i = 0) {
-  if (i + needle.length > haystack.length) return false;
-  if (haystack.slice(i, i + needle.length) === needle) return true;
-  return stringIncludes(haystack, needle, i + 1);
-}
-document.getElementById("out").textContent =
-  stringIncludes("javascript", "script") + ", " + stringIncludes("javascript", "java");
-  </script>
+  <script src="34-string-includes.js"></script>
 </body>
 </html>

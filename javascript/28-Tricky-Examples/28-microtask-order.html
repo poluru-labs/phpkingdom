@@ -20,18 +20,6 @@
   <p>Promise callbacks run before setTimeout(0).</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-let log = "";
-setTimeout(() => {
-  log += "timeout ";
-  document.getElementById("out").textContent = log;
-}, 0);
-Promise.resolve().then(() => {
-  log += "promise ";
-  document.getElementById("out").textContent = log;
-});
-log += "sync ";
-document.getElementById("out").textContent = log;
-  </script>
+  <script src="28-microtask-order.js"></script>
 </body>
 </html>

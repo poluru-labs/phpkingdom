@@ -20,11 +20,6 @@
   <p>Use ?. to avoid TypeError when a path may be missing.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const out = document.getElementById("out");
-const users = [{ profile: { city: "Austin" } }, {}];
-const cities = users.map(u => u?.profile?.city ?? "unknown");
-out.textContent = cities.join(", ");
-  </script>
+  <script src="09-optional-chaining.js"></script>
 </body>
 </html>

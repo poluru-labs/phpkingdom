@@ -20,16 +20,6 @@
   <p>Randomly shuffle array in place style (copy).</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function shuffle(arr) {
-  const a = [...arr];
-  for (let i = a.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [a[i], a[j]] = [a[j], a[i]];
-  }
-  return a;
-}
-document.getElementById("out").textContent = shuffle([1,2,3,4,5]).join(", ");
-  </script>
+  <script src="42-shuffle.js"></script>
 </body>
 </html>

@@ -20,17 +20,6 @@
   <p>Escape special regex characters in user input before building a RegExp.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function escapeRegex(str) {
-  return str.replace(/[.*+?^$\{}()|[\]\\]/g, "\\$&");
-}
-const userInput = "price ($)";
-const safe = new RegExp(escapeRegex(userInput), "i");
-const text = "The price ($) is shown below.";
-document.getElementById("out").textContent =
-  "user input: " + userInput + "\n" +
-  "escaped:    " + escapeRegex(userInput) + "\n" +
-  "match:      " + safe.test(text);
-  </script>
+  <script src="42-escape-user-input.js"></script>
 </body>
 </html>

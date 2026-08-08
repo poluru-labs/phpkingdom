@@ -20,14 +20,6 @@
   <p>Transform each match using a replace callback function.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const text = "hello world from JS";
-const titled = text.replace(/\b\w+/g, word =>
-  word.charAt(0).toUpperCase() + word.slice(1).toLowerCase()
-);
-document.getElementById("out").textContent =
-  "before: " + text + "\n" +
-  "after:  " + titled;
-  </script>
+  <script src="46-replace-callback.js"></script>
 </body>
 </html>

@@ -1,0 +1,27 @@
+.c-tooltip-wrap { display: inline-block; position: relative; }
+    .c-tooltip {
+      position: absolute;
+      z-index: 50;
+      bottom: calc(100% + 8px);
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 0.4rem 0.65rem;
+      background: var(--ink);
+      color: #fff;
+      font-size: 0.82rem;
+      border-radius: 6px;
+      white-space: nowrap;
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity 0.15s var(--ease);
+    }
+    .c-tooltip::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      border: 5px solid transparent;
+      border-top-color: var(--ink);
+    }
+    .c-tooltip.is-visible { opacity: 1; }

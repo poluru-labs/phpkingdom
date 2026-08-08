@@ -20,17 +20,6 @@
   <p>Print a hollow square border of stars.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const N = 5;
-const lines = [];
-for (let i = 0; i < N; i++) {
-  let row = "";
-  for (let j = 0; j < N; j++) {
-    row += (i === 0 || i === N - 1 || j === 0 || j === N - 1) ? "*" : " ";
-  }
-  lines.push(row);
-}
-document.getElementById("out").textContent = lines.join("\n");
-  </script>
+  <script src="030-hollow-square.js"></script>
 </body>
 </html>

@@ -20,14 +20,6 @@
   <p>Handle rejection at the end of a promise chain.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const out = document.getElementById("out");
-Promise.resolve()
-  .then(() => { throw new Error("step failed"); })
-  .then(() => "skipped")
-  .catch(e => {
-    out.textContent = "chain catch: " + e.message;
-  });
-  </script>
+  <script src="33-promise-catch.js"></script>
 </body>
 </html>

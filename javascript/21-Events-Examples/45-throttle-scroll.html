@@ -13,32 +13,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Subrahmanyam Poluru">
   <title>45 — Throttle scroll Events | phpkingdom.com</title>
+  <link rel="stylesheet" href="45-throttle-scroll.css">
 </head>
 <body>
   <h1>45 — Throttle scroll Events</h1>
   <h2>Problem</h2>
   <p>Throttle expensive scroll handlers.</p>
   <h2>Demo</h2>
-  <div id="scroller" style="height:140px;overflow:auto;border:1px solid #333">
-    <div style="height:500px;padding:8px">Scroll…</div>
+  <div id="scroller" class="pk-s-height-140px-overflow-auto-border-1pxsolid-333">
+    <div class="pk-s-height-500px-padding-8px">Scroll…</div>
   </div>
   <pre id="out"></pre>
-  <script>
-function throttle(fn, ms) {
-  let last = 0;
-  return (...args) => {
-    const now = Date.now();
-    if (now - last >= ms) { last = now; fn(...args); }
-  };
-}
-const box = document.getElementById("scroller");
-const out = document.getElementById("out");
-let raw = 0, throttled = 0;
-box.addEventListener("scroll", () => { raw += 1; }, { passive: true });
-box.addEventListener("scroll", throttle(() => {
-  throttled += 1;
-  out.textContent = "raw=" + raw + " throttled=" + throttled + " top=" + box.scrollTop;
-}, 200), { passive: true });
-  </script>
+  <script src="45-throttle-scroll.js"></script>
 </body>
 </html>

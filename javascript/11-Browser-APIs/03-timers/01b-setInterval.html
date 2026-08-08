@@ -19,13 +19,6 @@
   <p>Run repeatedly until cleared.</p>
   <pre id="out">0</pre>
   <button id="stop" type="button">Stop</button>
-  <script>
-let n = 0;
-const id = setInterval(function () {
-  n += 1;
-  document.getElementById("out").textContent = String(n);
-}, 400);
-document.getElementById("stop").onclick = function () { clearInterval(id); };
-  </script>
+  <script src="01b-setInterval.js"></script>
 </body>
 </html>

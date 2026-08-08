@@ -20,24 +20,6 @@
   <p>Use finally to release resources even after errors.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const out = document.getElementById("out");
-const log = [];
-function useResource() {
-  log.push("open resource");
-  try {
-    log.push("work");
-    throw new Error("work failed");
-  } finally {
-    log.push("close resource");
-  }
-}
-try {
-  useResource();
-} catch (e) {
-  log.push("handled: " + e.message);
-}
-out.textContent = log.join("\n");
-  </script>
+  <script src="23-cleanup-finally.js"></script>
 </body>
 </html>

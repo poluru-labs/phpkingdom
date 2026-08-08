@@ -20,21 +20,6 @@
   <p>return followed by newline returns undefined.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function bad() {
-  return
-  {
-    ok: true
-  };
-}
-function good() {
-  return {
-    ok: true
-  };
-}
-document.getElementById("out").textContent =
-  "bad() => " + JSON.stringify(bad()) + "\n" +
-  "good() => " + JSON.stringify(good());
-  </script>
+  <script src="21-automatic-semicolon.js"></script>
 </body>
 </html>

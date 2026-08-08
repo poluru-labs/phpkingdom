@@ -20,13 +20,6 @@
   <p>Match whole words only using \\b word boundaries.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const text = "cat catalog scatter";
-const wholeCat = text.match(/\bcat\b/g);
-const anyCat = text.match(/cat/g);
-document.getElementById("out").textContent =
-  "whole word \\bcat\\b: " + JSON.stringify(wholeCat) + "\n" +
-  "any 'cat':            " + JSON.stringify(anyCat);
-  </script>
+  <script src="18-word-boundary.js"></script>
 </body>
 </html>

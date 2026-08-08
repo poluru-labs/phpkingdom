@@ -20,13 +20,6 @@
   <p>Iterate object keys with for…in.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const user = { name: "Ada", role: "eng", city: "London" };
-const lines = [];
-for (const key in user) {
-  if (Object.hasOwn(user, key)) lines.push(key + "=" + user[key]);
-}
-document.getElementById("out").textContent = lines.join("\n");
-  </script>
+  <script src="022-for-in-object.js"></script>
 </body>
 </html>

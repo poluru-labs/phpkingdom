@@ -20,18 +20,6 @@
   <p>Log document readyState transitions related to parsing vs full load.</p>
   <h2>Demo</h2>
   <pre id="out"></pre>
-  <script>
-const lines = [];
-lines.push("script readyState=" + document.readyState);
-document.addEventListener("DOMContentLoaded", () => {
-  lines.push("DOMContentLoaded readyState=" + document.readyState);
-  document.getElementById("out").textContent = lines.join("\n");
-});
-window.addEventListener("load", () => {
-  lines.push("load readyState=" + document.readyState);
-  document.getElementById("out").textContent = lines.join("\n");
-});
-document.getElementById("out").textContent = lines.join("\n");
-  </script>
+  <script src="29-load-domcontentloaded.js"></script>
 </body>
 </html>

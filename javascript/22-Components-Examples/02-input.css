@@ -1,0 +1,30 @@
+.input-wrap {
+      position: relative;
+      display: grid;
+      gap: 0.35rem;
+      max-width: 360px;
+    }
+    .input-inner {
+      position: relative;
+    }
+    .input-inner .c-input {
+      padding-right: 2.25rem;
+    }
+    .input-clear {
+      position: absolute;
+      right: 0.35rem;
+      top: 50%;
+      transform: translateY(-50%);
+      border: none;
+      background: transparent;
+      color: var(--muted);
+      cursor: pointer;
+      padding: 0.25rem 0.4rem;
+      border-radius: 4px;
+      font-size: 1.1rem;
+      line-height: 1;
+    }
+    .input-clear:hover { color: var(--accent-ink); }
+    .input-clear:focus-visible { outline: none; box-shadow: var(--focus); }
+    .input-wrap.is-invalid .c-input { border-color: var(--danger); }
+    .input-error { color: var(--danger); font-size: 0.82rem; font-weight: 400; }

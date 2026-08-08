@@ -20,16 +20,6 @@
   <p>Convert between Date and Unix seconds since epoch.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-
-const d = new Date(2024, 0, 15, 0, 0, 0);
-const seconds = Math.floor(d.getTime() / 1000);
-const back = new Date(seconds * 1000);
-document.getElementById("out").textContent =
-  "Date: " + d.toString() + "\n" +
-  "Unix seconds: " + seconds + "\n" +
-  "Restored: " + back.toString();
-
-  </script>
+  <script src="28-unix-seconds.js"></script>
 </body>
 </html>

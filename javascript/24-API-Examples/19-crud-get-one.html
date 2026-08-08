@@ -20,17 +20,6 @@
   <p>GET /resources/:id pattern.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-async function getUser(id) {
-  const db = { 1: { id: 1, name: "Ada" }, 2: { id: 2, name: "Lin" } };
-  if (!db[id]) throw new Error("404 Not Found");
-  return db[id];
-}
-getUser(1).then((u) => {
-  document.getElementById("out").textContent = JSON.stringify(u);
-}).catch((e) => {
-  document.getElementById("out").textContent = e.message;
-});
-  </script>
+  <script src="19-crud-get-one.js"></script>
 </body>
 </html>

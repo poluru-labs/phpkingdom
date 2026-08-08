@@ -20,15 +20,6 @@
   <p>Digits represent a number; add one.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function plusOne(digits) {
-  for (let i = digits.length - 1; i >= 0; i--) {
-    if (digits[i] < 9) { digits[i]++; return digits; }
-    digits[i] = 0;
-  }
-  return [1, ...digits];
-}
-document.getElementById("out").textContent = plusOne([1,2,9]).join("");
-  </script>
+  <script src="36-plus-one.js"></script>
 </body>
 </html>

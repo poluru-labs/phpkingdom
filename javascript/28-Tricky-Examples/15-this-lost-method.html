@@ -20,23 +20,6 @@
   <p>Extracted methods lose their object binding.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const user = {
-  name: "Ada",
-  greet() { return "Hi " + this.name; }
-};
-const fn = user.greet;
-try {
-  document.getElementById("out").textContent =
-    "direct => " + user.greet() + "\n" +
-    "detached => " + fn() + "\n" +
-    "bound => " + fn.bind(user)();
-} catch (e) {
-  document.getElementById("out").textContent =
-    "direct => " + user.greet() + "\n" +
-    "detached threw => " + e.message + "\n" +
-    "bound => " + fn.bind(user)();
-}
-  </script>
+  <script src="15-this-lost-method.js"></script>
 </body>
 </html>

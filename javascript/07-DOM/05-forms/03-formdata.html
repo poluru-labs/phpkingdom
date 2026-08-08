@@ -19,13 +19,6 @@
   <p>Collect named fields easily.</p>
   <form id="f"><input name="title" value="JS"><input name="level" value="1"><button type="submit">Send</button></form>
   <pre id="out"></pre>
-  <script>
-document.getElementById("f").addEventListener("submit", function (e) {
-  e.preventDefault();
-  const data = new FormData(e.target);
-  document.getElementById("out").textContent =
-    data.get("title") + " / " + data.get("level");
-});
-  </script>
+  <script src="03-formdata.js"></script>
 </body>
 </html>

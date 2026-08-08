@@ -20,16 +20,6 @@
   <p>Wrap a function to add logging without changing its core logic.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function withLog(fn, label) {
-  return function (...args) {
-    const result = fn(...args);
-    return label + "(" + args.join(",") + ")=" + result;
-  };
-}
-const add = (a, b) => a + b;
-const loggedAdd = withLog(add, "add");
-document.getElementById("out").textContent = loggedAdd(2, 3);
-  </script>
+  <script src="41-decorator-pattern.js"></script>
 </body>
 </html>

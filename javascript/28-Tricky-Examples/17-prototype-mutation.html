@@ -20,14 +20,6 @@
   <p>Mutating prototype affects all instances.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function Box() {}
-Box.prototype.items = [];
-const a = new Box();
-const b = new Box();
-a.items.push("x");
-document.getElementById("out").textContent =
-  "b.items => [" + b.items.join(",") + "]  (shared reference!)";
-  </script>
+  <script src="17-prototype-mutation.js"></script>
 </body>
 </html>

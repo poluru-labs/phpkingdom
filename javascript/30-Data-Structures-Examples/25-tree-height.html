@@ -20,14 +20,6 @@
   <p>Compute the height (max depth) of a binary tree.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-class TreeNode { constructor(val, l = null, r = null) { this.val = val; this.left = l; this.right = r; } }
-function height(root) {
-  if (!root) return 0;
-  return 1 + Math.max(height(root.left), height(root.right));
-}
-const root = new TreeNode(1, new TreeNode(2, new TreeNode(4)), new TreeNode(3, null, new TreeNode(5)));
-document.getElementById("out").textContent = "height = " + height(root);
-  </script>
+  <script src="25-tree-height.js"></script>
 </body>
 </html>

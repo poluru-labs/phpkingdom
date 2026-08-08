@@ -20,12 +20,6 @@
   <p>catch(fn) is sugar for then(undefined, fn).</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-Promise.reject(new Error("x"))
-  .then(null, (err) => "recovered:" + err.message)
-  .then((v) => {
-    document.getElementById("out").textContent = v;
-  });
-  </script>
+  <script src="35-catch-vs-then-onrejected.js"></script>
 </body>
 </html>

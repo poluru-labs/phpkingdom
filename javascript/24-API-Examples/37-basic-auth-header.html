@@ -20,12 +20,6 @@
   <p>Build an Authorization: Basic header value.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function basicAuthHeader(username, password) {
-  const token = btoa(username + ":" + password);
-  return "Basic " + token;
-}
-document.getElementById("out").textContent = basicAuthHeader("ada", "s3cret");
-  </script>
+  <script src="37-basic-auth-header.js"></script>
 </body>
 </html>

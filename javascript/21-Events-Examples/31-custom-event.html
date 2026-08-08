@@ -21,16 +21,6 @@
   <h2>Demo</h2>
   <button id="btn">Dispatch order:created</button>
   <pre id="out"></pre>
-  <script>
-document.addEventListener("order:created", (e) => {
-  document.getElementById("out").textContent =
-    "heard detail=" + JSON.stringify(e.detail);
-});
-document.getElementById("btn").onclick = () => {
-  document.dispatchEvent(new CustomEvent("order:created", {
-    detail: { id: 42, total: 19.99 },
-  }));
-};
-  </script>
+  <script src="31-custom-event.js"></script>
 </body>
 </html>

@@ -20,18 +20,6 @@
   <p>Represent a graph with a 2D adjacency matrix.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function buildMatrix(n, edges, directed = false) {
-  const mat = Array.from({ length: n }, () => new Array(n).fill(0));
-  for (const [u, v] of edges) {
-    mat[u][v] = 1;
-    if (!directed) mat[v][u] = 1;
-  }
-  return mat;
-}
-const mat = buildMatrix(4, [[0,1],[0,2],[1,3],[2,3]]);
-const lines = mat.map((row, i) => "row " + i + ": " + row.join(" "));
-document.getElementById("out").textContent = lines.join("\n");
-  </script>
+  <script src="47-graph-adjacency-matrix.js"></script>
 </body>
 </html>

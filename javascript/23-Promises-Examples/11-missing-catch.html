@@ -20,12 +20,6 @@
   <p>Always attach catch (demo with catch to avoid console noise).</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const p = Promise.reject(new Error("unhandled if no catch"));
-p.catch((err) => {
-  document.getElementById("out").textContent =
-    "Always catch rejections: " + err.message;
-});
-  </script>
+  <script src="11-missing-catch.js"></script>
 </body>
 </html>

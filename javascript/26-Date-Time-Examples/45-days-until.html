@@ -20,17 +20,6 @@
   <p>Count days from a fixed "today" to a future event.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-
-function daysUntil(from, event) {
-  const utcFrom = Date.UTC(from.getFullYear(), from.getMonth(), from.getDate());
-  const utcEvent = Date.UTC(event.getFullYear(), event.getMonth(), event.getDate());
-  return Math.round((utcEvent - utcFrom) / (1000 * 60 * 60 * 24));
-}
-const today = new Date(2024, 0, 15);
-const event = new Date(2024, 11, 25);
-document.getElementById("out").textContent = "Days until Dec 25, 2024: " + daysUntil(today, event);
-
-  </script>
+  <script src="45-days-until.js"></script>
 </body>
 </html>

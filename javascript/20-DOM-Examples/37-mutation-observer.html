@@ -22,20 +22,6 @@
   <ul id="list"><li>One</li></ul>
   <button id="btn">Add child</button>
   <pre id="out"></pre>
-  <script>
-const list = document.getElementById("list");
-const out = document.getElementById("out");
-const mo = new MutationObserver((mutations) => {
-  out.textContent = "mutations: " + mutations.length + " | children: " + list.children.length;
-});
-mo.observe(list, { childList: true });
-let n = 1;
-document.getElementById("btn").onclick = () => {
-  n += 1;
-  const li = document.createElement("li");
-  li.textContent = "Item " + n;
-  list.appendChild(li);
-};
-  </script>
+  <script src="37-mutation-observer.js"></script>
 </body>
 </html>

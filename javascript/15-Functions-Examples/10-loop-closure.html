@@ -20,13 +20,6 @@
   <p>Fix the classic loop closure bug using let block scope.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const fns = [];
-for (let i = 0; i < 3; i++) {
-  fns.push(() => i);
-}
-document.getElementById("out").textContent =
-  fns.map((fn) => fn()).join(", ");
-  </script>
+  <script src="10-loop-closure.js"></script>
 </body>
 </html>

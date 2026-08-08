@@ -18,12 +18,6 @@
   <h1>Closures in Loops (let)</h1>
   <p>let creates a fresh binding each iteration.</p>
   <pre id="out"></pre>
-  <script>
-const fns = [];
-for (let i = 0; i < 3; i++) {
-  fns.push(() => i);
-}
-document.getElementById("out").textContent = fns.map((f) => f()).join(", ");
-  </script>
+  <script src="03-closure-loop.js"></script>
 </body>
 </html>

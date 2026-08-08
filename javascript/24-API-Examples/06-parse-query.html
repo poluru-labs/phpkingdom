@@ -20,10 +20,6 @@
   <p>Read query parameters from a URL string.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const url = new URL("https://phpkingdom.com/tutorials?topic=js&level=beginner");
-const params = Object.fromEntries(url.searchParams.entries());
-document.getElementById("out").textContent = JSON.stringify(params, null, 2);
-  </script>
+  <script src="06-parse-query.js"></script>
 </body>
 </html>

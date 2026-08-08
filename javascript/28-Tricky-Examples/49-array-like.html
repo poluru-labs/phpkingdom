@@ -20,15 +20,6 @@
   <p>arguments/NodeList are array-like; convert with Array.from.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function demo() {
-  const like = arguments;
-  document.getElementById("out").textContent =
-    "length=" + like.length + "\n" +
-    "isArray=" + Array.isArray(like) + "\n" +
-    "from=" + Array.from(like).join(",");
-}
-demo("a", "b", "c");
-  </script>
+  <script src="49-array-like.js"></script>
 </body>
 </html>

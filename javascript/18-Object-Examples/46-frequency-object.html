@@ -20,14 +20,6 @@
   <p>Count word occurrences into an object.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function wordFrequency(text) {
-  return text.toLowerCase().match(/[a-z]+/g).reduce((acc, w) => {
-    acc[w] = (acc[w] || 0) + 1;
-    return acc;
-  }, {});
-}
-document.getElementById("out").textContent = JSON.stringify(wordFrequency("to be or not to be"));
-  </script>
+  <script src="46-frequency-object.js"></script>
 </body>
 </html>

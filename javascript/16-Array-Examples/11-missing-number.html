@@ -20,14 +20,6 @@
   <p>Array contains 0..n with one missing. Find it.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function missingNumber(nums) {
-  const n = nums.length;
-  const expected = (n * (n + 1)) / 2;
-  const actual = nums.reduce((a, b) => a + b, 0);
-  return expected - actual;
-}
-document.getElementById("out").textContent = String(missingNumber([3,0,1]));
-  </script>
+  <script src="11-missing-number.js"></script>
 </body>
 </html>

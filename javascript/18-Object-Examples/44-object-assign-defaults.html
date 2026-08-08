@@ -20,10 +20,6 @@
   <p>Use Object.assign for defaults plus overrides.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const base = { api: "v1", retries: 3 };
-const config = Object.assign({}, base, { retries: 5, timeout: 1000 });
-document.getElementById("out").textContent = JSON.stringify(config);
-  </script>
+  <script src="44-object-assign-defaults.js"></script>
 </body>
 </html>

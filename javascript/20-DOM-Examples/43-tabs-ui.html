@@ -13,6 +13,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Subrahmanyam Poluru">
   <title>43 — Simple Tabs | phpkingdom.com</title>
+  <link rel="stylesheet" href="43-tabs-ui.css">
 </head>
 <body>
   <h1>43 — Simple Tabs</h1>
@@ -27,16 +28,7 @@
   <section id="panel-a" class="panel">Panel A</section>
   <section id="panel-b" class="panel" hidden>Panel B</section>
   <section id="panel-c" class="panel" hidden>Panel C</section>
-  <style>.active { font-weight: bold; }</style>
-  <script>
-document.getElementById("tabs").addEventListener("click", (e) => {
-  const btn = e.target.closest("[data-tab]");
-  if (!btn) return;
-  document.querySelectorAll(".tab").forEach((t) => t.classList.remove("active"));
-  document.querySelectorAll(".panel").forEach((p) => { p.hidden = true; });
-  btn.classList.add("active");
-  document.getElementById("panel-" + btn.dataset.tab).hidden = false;
-});
-  </script>
+  
+  <script src="43-tabs-ui.js"></script>
 </body>
 </html>

@@ -20,17 +20,6 @@
   <p>Run an array of async tasks one-by-one.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const tasks = [1, 2, 3, 4];
-tasks.reduce((chain, n) => {
-  return chain.then((acc) => {
-    return new Promise((resolve) => {
-      setTimeout(() => resolve(acc.concat(n * 10)), 50);
-    });
-  });
-}, Promise.resolve([])).then((result) => {
-  document.getElementById("out").textContent = result.join(", ");
-});
-  </script>
+  <script src="22-sequential-reduce.js"></script>
 </body>
 </html>

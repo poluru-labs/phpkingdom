@@ -13,28 +13,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Subrahmanyam Poluru">
   <title>34 — Drag and Drop Events | phpkingdom.com</title>
+  <link rel="stylesheet" href="34-drag-drop-events.css">
 </head>
 <body>
   <h1>34 — Drag and Drop Events</h1>
   <h2>Problem</h2>
   <p>Handle dragstart, dragover, and drop.</p>
   <h2>Demo</h2>
-  <div id="item" draggable="true" style="display:inline-block;padding:8px;border:1px solid #333">Drag</div>
-  <div id="zone" style="margin-top:10px;padding:28px;border:2px dashed #666">Drop zone</div>
+  <div id="item" draggable="true" class="pk-s-display-inline-block-padding-8px-border-1pxsolid">Drag</div>
+  <div id="zone" class="pk-s-margin-top-10px-padding-28px-border-2pxdashed-66">Drop zone</div>
   <pre id="out"></pre>
-  <script>
-const out = document.getElementById("out");
-document.getElementById("item").addEventListener("dragstart", (e) => {
-  e.dataTransfer.setData("text/plain", "item");
-  out.textContent = "dragstart";
-});
-const zone = document.getElementById("zone");
-zone.addEventListener("dragover", (e) => { e.preventDefault(); });
-zone.addEventListener("drop", (e) => {
-  e.preventDefault();
-  zone.appendChild(document.getElementById("item"));
-  out.textContent = "dropped: " + e.dataTransfer.getData("text/plain");
-});
-  </script>
+  <script src="34-drag-drop-events.js"></script>
 </body>
 </html>

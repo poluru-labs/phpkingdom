@@ -20,12 +20,6 @@
   <p>Use a generator function to yield values one at a time.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function* range(start, end) {
-  for (let i = start; i <= end; i++) yield i;
-}
-const values = [...range(1, 5)];
-document.getElementById("out").textContent = values.join(", ");
-  </script>
+  <script src="33-generator-basics.js"></script>
 </body>
 </html>

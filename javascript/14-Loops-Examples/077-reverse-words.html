@@ -20,15 +20,6 @@
   <p>Reverse characters inside each word.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const s = "hello world loops";
-const words = s.split(" ");
-for (let i = 0; i < words.length; i++) {
-  let rev = "";
-  for (let j = words[i].length - 1; j >= 0; j--) rev += words[i][j];
-  words[i] = rev;
-}
-document.getElementById("out").textContent = words.join(" ");
-  </script>
+  <script src="077-reverse-words.js"></script>
 </body>
 </html>

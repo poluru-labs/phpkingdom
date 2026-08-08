@@ -20,14 +20,6 @@
   <p>PATCH partial update pattern.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-async function patchUser(id, patch) {
-  const current = { id, name: "Ada", role: "user" };
-  return { ...current, ...patch, updatedAt: "now" };
-}
-patchUser(1, { role: "admin" }).then((user) => {
-  document.getElementById("out").textContent = JSON.stringify(user, null, 2);
-});
-  </script>
+  <script src="21-crud-update.js"></script>
 </body>
 </html>

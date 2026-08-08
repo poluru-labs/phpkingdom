@@ -20,16 +20,6 @@
   <p>Find the element that appears more than n/2 times (Boyer-Moore).</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function majority(nums) {
-  let candidate = null, count = 0;
-  for (const n of nums) {
-    if (count === 0) candidate = n;
-    count += n === candidate ? 1 : -1;
-  }
-  return candidate;
-}
-document.getElementById("out").textContent = String(majority([2,2,1,1,1,2,2]));
-  </script>
+  <script src="17-majority-element.js"></script>
 </body>
 </html>

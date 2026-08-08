@@ -20,15 +20,6 @@
   <p>Flatten a nested array of any depth into a single array.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function flatten(arr) {
-  return arr.reduce((acc, item) => {
-    if (Array.isArray(item)) return acc.concat(flatten(item));
-    return acc.concat(item);
-  }, []);
-}
-const nested = [1, [2, [3, 4], 5], 6];
-document.getElementById("out").textContent = JSON.stringify(flatten(nested));
-  </script>
+  <script src="07-flatten-array.js"></script>
 </body>
 </html>

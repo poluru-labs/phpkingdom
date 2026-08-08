@@ -20,24 +20,6 @@
   <p>Throttle a function so it runs at most once per interval.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function throttle(fn, wait) {
-  let last = 0;
-  return function (...args) {
-    const now = Date.now();
-    if (now - last >= wait) {
-      last = now;
-      return fn.apply(this, args);
-    }
-  };
-}
-let runs = 0;
-const track = throttle(() => { runs += 1; }, 40);
-track(); track(); track();
-setTimeout(() => {
-  track();
-  document.getElementById("out").textContent = "throttled runs = " + runs;
-}, 60);
-  </script>
+  <script src="18-throttle.js"></script>
 </body>
 </html>

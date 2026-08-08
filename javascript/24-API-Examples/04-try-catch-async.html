@@ -20,20 +20,6 @@
   <p>Consume an API with async/await and try/catch.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function apiGet() {
-  return Promise.resolve({ ok: true, json: async () => ({ message: "hello API" }) });
-}
-async function load() {
-  try {
-    const res = await apiGet();
-    const data = await res.json();
-    document.getElementById("out").textContent = data.message;
-  } catch (err) {
-    document.getElementById("out").textContent = err.message;
-  }
-}
-load();
-  </script>
+  <script src="04-try-catch-async.js"></script>
 </body>
 </html>

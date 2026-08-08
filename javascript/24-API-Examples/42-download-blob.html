@@ -20,19 +20,6 @@
   <p>Create a downloadable file from API blob data.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-async function downloadTextFile() {
-  const blob = new Blob(["Hello from phpkingdom.com"], { type: "text/plain" });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = "hello.txt";
-  a.textContent = "Download hello.txt";
-  document.getElementById("out").textContent = "Blob URL ready: ";
-  document.getElementById("out").append(a);
-  // const res = await fetch("/api/export"); const blob = await res.blob();
-}
-downloadTextFile();
-  </script>
+  <script src="42-download-blob.js"></script>
 </body>
 </html>

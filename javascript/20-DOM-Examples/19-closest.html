@@ -23,11 +23,6 @@
     <div class="body"><button id="btn">Like</button></div>
   </article>
   <pre id="out"></pre>
-  <script>
-document.getElementById("btn").onclick = (e) => {
-  const post = e.target.closest(".post");
-  document.getElementById("out").textContent = "post id = " + post.dataset.id;
-};
-  </script>
+  <script src="19-closest.js"></script>
 </body>
 </html>

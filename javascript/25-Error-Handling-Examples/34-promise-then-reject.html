@@ -20,14 +20,6 @@
   <p>Pass a second argument to then() to handle rejections.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const out = document.getElementById("out");
-Promise.reject(new Error("bad input"))
-  .then(
-    v => "value: " + v,
-    e => "handled: " + e.message
-  )
-  .then(msg => { out.textContent = msg; });
-  </script>
+  <script src="34-promise-then-reject.js"></script>
 </body>
 </html>

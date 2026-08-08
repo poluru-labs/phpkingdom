@@ -20,14 +20,6 @@
   <p>Parse an integer from a string with optional sign.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function myAtoi(s) {
-  const m = s.trim().match(/^[+-]?\d+/);
-  if (!m) return 0;
-  return Number(m[0]);
-}
-document.getElementById("out").textContent =
-  myAtoi("   -42") + " / " + myAtoi("4193 with words");
-  </script>
+  <script src="32-atoi.js"></script>
 </body>
 </html>

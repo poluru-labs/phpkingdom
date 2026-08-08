@@ -20,22 +20,6 @@
   <p>Practical checklist for writing solid promise code.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-document.getElementById("out").textContent =
-`Promises checklist:
-1. Every rejection path has a catch / try-catch
-2. Prefer Promise.all for independent parallel work
-3. Use allSettled when partial failure is OK
-4. Use race/any intentionally (timeouts vs first success)
-5. Return promises from then to keep chaining flat
-6. Prefer async/await for deep sequences
-7. Do not await inside forEach
-8. Convert callbacks with promisify carefully
-9. Know microtasks vs timers
-10. Abort/cancel long operations when possible
-
-site: phpkingdom.com
-author: Subrahmanyam Poluru`;
-  </script>
+  <script src="50-promises-checklist.js"></script>
 </body>
 </html>

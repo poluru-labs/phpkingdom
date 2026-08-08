@@ -20,18 +20,6 @@
   <p>Bundle multiple errors into one AggregateError.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const out = document.getElementById("out");
-const errors = [
-  new TypeError("bad type"),
-  new RangeError("out of range"),
-];
-try {
-  throw new AggregateError(errors, "Multiple validation failures");
-} catch (e) {
-  const lines = [e.message, ...e.errors.map(x => "  - " + x.name + ": " + x.message)];
-  out.textContent = lines.join("\n");
-}
-  </script>
+  <script src="17-aggregate-error.js"></script>
 </body>
 </html>

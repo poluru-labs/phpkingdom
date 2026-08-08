@@ -14,49 +14,7 @@
   <meta name="author" content="Subrahmanyam Poluru">
   <title>04 — Select | phpkingdom.com</title>
   <link rel="stylesheet" href="css/base.css">
-  <style>
-    .c-select { position: relative; max-width: 280px; }
-    .c-select__trigger {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 0.5rem;
-      padding: 0.6rem 0.75rem;
-      border: 1px solid var(--line);
-      border-radius: var(--radius-sm);
-      background: var(--surface);
-      font: inherit;
-      cursor: pointer;
-      text-align: left;
-    }
-    .c-select__trigger:focus-visible { outline: none; box-shadow: var(--focus); border-color: var(--accent); }
-    .c-select__trigger::after { content: "▾"; color: var(--muted); }
-    .c-select__list {
-      position: absolute;
-      z-index: 20;
-      top: calc(100% + 4px);
-      left: 0;
-      right: 0;
-      margin: 0;
-      padding: 0.35rem;
-      list-style: none;
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: var(--radius-sm);
-      box-shadow: var(--shadow);
-      max-height: 220px;
-      overflow-y: auto;
-    }
-    .c-select__list[hidden] { display: none; }
-    .c-select__option {
-      padding: 0.5rem 0.65rem;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-    .c-select__option:hover, .c-select__option.is-active { background: var(--accent-soft); }
-    .c-select__option[aria-selected="true"] { font-weight: 600; color: var(--accent-ink); }
-  </style>
+  <link rel="stylesheet" href="04-select.css">
 </head>
 <body>
   <main class="page">
@@ -72,93 +30,6 @@
       <pre class="log" id="log">Ready.</pre>
     </section>
   </main>
-  <script>
-    const logEl = document.getElementById("log");
-    function log(msg) { logEl.textContent = msg; }
-
-    function createSelect({ label = "Framework", options = [], value = null } = {}) {
-      let selected = value ?? options[0]?.value ?? null;
-      let open = false;
-      let activeIdx = options.findIndex((o) => o.value === selected);
-
-      const wrap = document.createElement("div");
-      wrap.className = "c-select";
-
-      const lbl = document.createElement("label");
-      lbl.className = "field-label";
-      lbl.textContent = label;
-
-      const trigger = document.createElement("button");
-      trigger.type = "button";
-      trigger.className = "c-select__trigger";
-      trigger.setAttribute("aria-haspopup", "listbox");
-      trigger.setAttribute("aria-expanded", "false");
-
-      const list = document.createElement("ul");
-      list.className = "c-select__list";
-      list.setAttribute("role", "listbox");
-      list.hidden = true;
-
-      const optionEls = options.map((opt, i) => {
-        const li = document.createElement("li");
-        li.className = "c-select__option";
-        li.setAttribute("role", "option");
-        li.textContent = opt.label;
-        li.dataset.value = opt.value;
-        li.addEventListener("click", () => select(opt.value, i));
-        list.appendChild(li);
-        return li;
-      });
-
-      function renderTrigger() {
-        const opt = options.find((o) => o.value === selected);
-        trigger.textContent = opt ? opt.label : "Select…";
-      }
-
-      function setOpen(v) {
-        open = v;
-        list.hidden = !open;
-        trigger.setAttribute("aria-expanded", String(open));
-        if (open) optionEls[activeIdx]?.classList.add("is-active");
-      }
-
-      function select(val, idx) {
-        selected = val;
-        activeIdx = idx;
-        optionEls.forEach((el) => el.setAttribute("aria-selected", el.dataset.value === val ? "true" : "false"));
-        renderTrigger();
-        setOpen(false);
-        log("change: " + val);
-      }
-
-      trigger.addEventListener("click", () => setOpen(!open));
-      trigger.addEventListener("keydown", (e) => {
-        if (e.key === "ArrowDown") { e.preventDefault(); activeIdx = Math.min(activeIdx + 1, options.length - 1); setOpen(true); }
-        if (e.key === "ArrowUp") { e.preventDefault(); activeIdx = Math.max(activeIdx - 1, 0); setOpen(true); }
-        if (e.key === "Enter" && open) { select(options[activeIdx].value, activeIdx); }
-        if (e.key === "Escape") setOpen(false);
-      });
-
-      document.addEventListener("click", (e) => {
-        if (!wrap.contains(e.target)) setOpen(false);
-      });
-
-      renderTrigger();
-      optionEls.forEach((el) => el.setAttribute("aria-selected", el.dataset.value === selected ? "true" : "false"));
-      lbl.append(trigger, list);
-      wrap.appendChild(lbl);
-
-      return { el: wrap, get value() { return selected; }, set value(v) { const i = options.findIndex((o) => o.value === v); if (i >= 0) select(v, i); } };
-    }
-
-    document.getElementById("mount").appendChild(createSelect({
-      options: [
-        { label: "Vanilla JS", value: "vanilla" },
-        { label: "React", value: "react" },
-        { label: "Vue", value: "vue" },
-        { label: "Svelte", value: "svelte" }
-      ]
-    }).el);
-  </script>
+  <script src="04-select.js"></script>
 </body>
 </html>

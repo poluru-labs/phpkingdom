@@ -20,16 +20,6 @@
   <p>If any promise rejects, all rejects immediately.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-Promise.all([
-  Promise.resolve("ok"),
-  Promise.reject(new Error("second failed")),
-  Promise.resolve("never used")
-]).then((values) => {
-  document.getElementById("out").textContent = values.join(",");
-}).catch((err) => {
-  document.getElementById("out").textContent = "all rejected: " + err.message;
-});
-  </script>
+  <script src="13-promise-all-fail-fast.js"></script>
 </body>
 </html>

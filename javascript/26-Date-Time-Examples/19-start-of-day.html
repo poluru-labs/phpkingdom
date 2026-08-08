@@ -20,19 +20,6 @@
   <p>Normalize a Date to local midnight (00:00:00.000).</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-
-function startOfDay(d) {
-  const copy = new Date(d.getTime());
-  copy.setHours(0, 0, 0, 0);
-  return copy;
-}
-const d = new Date(2024, 0, 15, 14, 30, 45);
-const sod = startOfDay(d);
-document.getElementById("out").textContent =
-  "Original: " + d.toString() + "\n" +
-  "Start of day: " + sod.toString();
-
-  </script>
+  <script src="19-start-of-day.js"></script>
 </body>
 </html>

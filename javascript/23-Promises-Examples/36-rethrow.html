@@ -20,15 +20,6 @@
   <p>Re-throw to let an outer handler deal with the error.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-Promise.reject(new Error("db down"))
-  .catch((err) => {
-    if (err.message.includes("db")) throw err;
-    return "ignored";
-  })
-  .catch((err) => {
-    document.getElementById("out").textContent = "outer: " + err.message;
-  });
-  </script>
+  <script src="36-rethrow.js"></script>
 </body>
 </html>

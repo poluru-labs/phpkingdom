@@ -20,17 +20,6 @@
   <p>Small assert() throws early when a condition is false.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function assert(cond, msg) {
-  if (!cond) throw new Error(msg || "Assertion failed");
-}
-const out = document.getElementById("out");
-try {
-  const items = [];
-  assert(items.length > 0, "items must not be empty");
-} catch (e) {
-  out.textContent = "assert failed: " + e.message;
-}
-  </script>
+  <script src="10-assert-helper.js"></script>
 </body>
 </html>

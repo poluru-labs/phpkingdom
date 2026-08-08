@@ -20,17 +20,6 @@
   <p>Read stack traces for debugging (first line shown).</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const out = document.getElementById("out");
-function deep() {
-  throw new Error("trace me");
-}
-try {
-  deep();
-} catch (e) {
-  const first = (e.stack || "").split("\n")[1] || "(no stack)";
-  out.textContent = "stack line: " + first.trim();
-}
-  </script>
+  <script src="29-error-stack.js"></script>
 </body>
 </html>

@@ -20,11 +20,6 @@
   <p>Validate http/https URLs with a practical regex.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const urls = ["https://example.com", "ftp://x.com", "https://ex.co/path?q=1"];
-const re = /^https?:\/\/[\w.-]+(?:\.[\w.-]+)*(?:[:\d]+)?(?:\/\S*)?$/;
-const results = urls.map(u => u + " => " + re.test(u));
-document.getElementById("out").textContent = results.join("\n");
-  </script>
+  <script src="27-validate-url.js"></script>
 </body>
 </html>

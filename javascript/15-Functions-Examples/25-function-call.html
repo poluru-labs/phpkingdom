@@ -20,12 +20,6 @@
   <p>Invoke a function with an explicit this value using call.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function showRole() {
-  return this.role + " (" + this.name + ")";
-}
-const person = { name: "Lee", role: "Admin" };
-document.getElementById("out").textContent = showRole.call(person);
-  </script>
+  <script src="25-function-call.js"></script>
 </body>
 </html>

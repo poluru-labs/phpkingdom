@@ -20,11 +20,6 @@
   <p>Deep clone a plain object with JSON methods.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const a = { user: { name: "Ada" } };
-const b = JSON.parse(JSON.stringify(a));
-b.user.name = "Grace";
-document.getElementById("out").textContent = a.user.name + " / " + b.user.name;
-  </script>
+  <script src="09-deep-clone-json.js"></script>
 </body>
 </html>

@@ -18,15 +18,6 @@
   <h1>Error Handling with await</h1>
   <p>Use try/catch around awaited calls.</p>
   <pre id="out"></pre>
-  <script>
-async function run() {
-  try {
-    await Promise.reject(new Error("failed await"));
-  } catch (err) {
-    document.getElementById("out").textContent = err.message;
-  }
-}
-run();
-  </script>
+  <script src="02-try-catch-await.js"></script>
 </body>
 </html>

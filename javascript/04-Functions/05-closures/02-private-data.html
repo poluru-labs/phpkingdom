@@ -18,17 +18,6 @@
   <h1>Emulate Private Data</h1>
   <p>Hide variables with closures.</p>
   <pre id="out"></pre>
-  <script>
-function createWallet(start) {
-  let balance = start;
-  return {
-    deposit(n) { balance += n; },
-    getBalance() { return balance; }
-  };
-}
-const w = createWallet(10);
-w.deposit(5);
-document.getElementById("out").textContent = String(w.getBalance());
-  </script>
+  <script src="02-private-data.js"></script>
 </body>
 </html>

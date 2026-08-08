@@ -20,15 +20,6 @@
   <p>Set UTC components with setUTC* methods.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-
-const d = new Date(2024, 0, 15, 0, 0, 0);
-d.setUTCFullYear(2024, 0, 20);
-d.setUTCHours(12, 0, 0, 0);
-document.getElementById("out").textContent =
-  "After UTC setters: " + d.toString() + "\n" +
-  "ISO: " + d.toISOString();
-
-  </script>
+  <script src="43-set-utc-methods.js"></script>
 </body>
 </html>

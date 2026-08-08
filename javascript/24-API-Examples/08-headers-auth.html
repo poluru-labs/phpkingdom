@@ -20,18 +20,6 @@
   <p>Attach a Bearer token header (pattern only / mocked).</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-async function apiWithAuth(token) {
-  const headers = {
-    "Content-Type": "application/json",
-    Authorization: "Bearer " + token
-  };
-  // fetch("/api/me", { headers })
-  return { headers, data: { user: "Ada", authed: true } };
-}
-apiWithAuth("demo-token-123").then((result) => {
-  document.getElementById("out").textContent = JSON.stringify(result, null, 2);
-});
-  </script>
+  <script src="08-headers-auth.js"></script>
 </body>
 </html>

@@ -1,0 +1,16 @@
+.c-popover { position: relative; display: inline-block; }
+    .c-popover__panel {
+      position: absolute;
+      z-index: 40;
+      top: calc(100% + 8px);
+      left: 0;
+      min-width: 220px;
+      padding: 0.85rem;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      box-shadow: var(--shadow);
+    }
+    .c-popover__panel[hidden] { display: none; }
+    .c-popover__title { margin: 0 0 0.35rem; font-size: 0.95rem; font-weight: 600; }
+    .c-popover__text { margin: 0; font-size: 0.88rem; color: var(--muted); }

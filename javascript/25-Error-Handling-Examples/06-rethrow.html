@@ -20,21 +20,6 @@
   <p>Log locally, then rethrow so a caller can handle it.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const out = document.getElementById("out");
-function inner() {
-  try {
-    throw new Error("db timeout");
-  } catch (e) {
-    console.info("[demo] logged:", e.message);
-    throw e;
-  }
-}
-try {
-  inner();
-} catch (e) {
-  out.textContent = "outer caught: " + e.message;
-}
-  </script>
+  <script src="06-rethrow.js"></script>
 </body>
 </html>

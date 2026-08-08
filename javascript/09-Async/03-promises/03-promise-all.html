@@ -18,14 +18,6 @@
   <h1>Promise.all</h1>
   <p>Wait for multiple promises.</p>
   <pre id="out"></pre>
-  <script>
-Promise.all([
-  Promise.resolve(1),
-  Promise.resolve(2),
-  Promise.resolve(3)
-]).then(function (values) {
-  document.getElementById("out").textContent = values.join(", ");
-});
-  </script>
+  <script src="03-promise-all.js"></script>
 </body>
 </html>

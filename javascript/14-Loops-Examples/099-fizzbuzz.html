@@ -20,15 +20,6 @@
   <p>Classic FizzBuzz from 1 to 30 using a loop.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const lines = [];
-for (let i = 1; i <= 30; i++) {
-  let s = "";
-  if (i % 3 === 0) s += "Fizz";
-  if (i % 5 === 0) s += "Buzz";
-  lines.push(s || String(i));
-}
-document.getElementById("out").textContent = lines.join(", ");
-  </script>
+  <script src="099-fizzbuzz.js"></script>
 </body>
 </html>

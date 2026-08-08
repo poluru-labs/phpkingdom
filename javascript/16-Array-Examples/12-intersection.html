@@ -20,12 +20,6 @@
   <p>Find common elements between two arrays (unique).</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function intersection(a, b) {
-  const setB = new Set(b);
-  return [...new Set(a)].filter((x) => setB.has(x));
-}
-document.getElementById("out").textContent = intersection([1,2,2,3], [2,3,4]).join(", ");
-  </script>
+  <script src="12-intersection.js"></script>
 </body>
 </html>

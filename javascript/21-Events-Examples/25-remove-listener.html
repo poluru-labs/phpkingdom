@@ -22,15 +22,6 @@
   <button id="btn">Count</button>
   <button id="off">Remove listener</button>
   <pre id="out">0</pre>
-  <script>
-let n = 0;
-function onClick() {
-  n += 1;
-  document.getElementById("out").textContent = String(n);
-}
-const btn = document.getElementById("btn");
-btn.addEventListener("click", onClick);
-document.getElementById("off").onclick = () => btn.removeEventListener("click", onClick);
-  </script>
+  <script src="25-remove-listener.js"></script>
 </body>
 </html>

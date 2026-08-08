@@ -20,17 +20,6 @@
   <p>Hide balance with a closure and expose only safe methods.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function createAccount(initial) {
-  let balance = initial;
-  return {
-    deposit(amount) { balance += amount; },
-    getBalance() { return balance; },
-  };
-}
-const acct = createAccount(100);
-acct.deposit(50);
-document.getElementById("out").textContent = "balance = " + acct.getBalance();
-  </script>
+  <script src="09-private-variables.js"></script>
 </body>
 </html>

@@ -20,14 +20,6 @@
   <p>Even returning a value wraps it in a Promise.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-async function answer() { return 42; }
-const p = answer();
-document.getElementById("out").textContent =
-  "isPromise=" + (p instanceof Promise) + "\n";
-p.then((v) => {
-  document.getElementById("out").textContent += "value=" + v;
-});
-  </script>
+  <script src="29-async-return-promise.js"></script>
 </body>
 </html>

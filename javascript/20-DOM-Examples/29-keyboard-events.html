@@ -21,15 +21,6 @@
   <h2>Demo</h2>
   <input id="field" placeholder="Press Enter or Escape">
   <pre id="out"></pre>
-  <script>
-document.getElementById("field").addEventListener("keydown", (e) => {
-  if (e.key === "Enter") {
-    document.getElementById("out").textContent = "Enter: " + e.target.value;
-  } else if (e.key === "Escape") {
-    e.target.value = "";
-    document.getElementById("out").textContent = "cleared";
-  }
-});
-  </script>
+  <script src="29-keyboard-events.js"></script>
 </body>
 </html>

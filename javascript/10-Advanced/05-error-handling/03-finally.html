@@ -18,17 +18,6 @@
   <h1>finally Block</h1>
   <p>Runs whether or not an error occurred.</p>
   <pre id="out"></pre>
-  <script>
-let log = "";
-try {
-  log += "try ";
-  throw new Error("x");
-} catch (e) {
-  log += "catch ";
-} finally {
-  log += "finally";
-}
-document.getElementById("out").textContent = log;
-  </script>
+  <script src="03-finally.js"></script>
 </body>
 </html>

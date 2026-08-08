@@ -20,12 +20,6 @@
   <p>Settle with the first fulfilled or rejected promise.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const slow = new Promise((resolve) => setTimeout(() => resolve("slow"), 300));
-const fast = new Promise((resolve) => setTimeout(() => resolve("fast"), 100));
-Promise.race([slow, fast]).then((value) => {
-  document.getElementById("out").textContent = "winner=" + value;
-});
-  </script>
+  <script src="15-promise-race.js"></script>
 </body>
 </html>

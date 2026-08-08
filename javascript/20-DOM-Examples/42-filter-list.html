@@ -27,13 +27,6 @@
     <li>Events</li>
     <li>Fetch</li>
   </ul>
-  <script>
-document.getElementById("q").addEventListener("input", (e) => {
-  const q = e.target.value.toLowerCase();
-  document.querySelectorAll("#list li").forEach((li) => {
-    li.hidden = !li.textContent.toLowerCase().includes(q);
-  });
-});
-  </script>
+  <script src="42-filter-list.js"></script>
 </body>
 </html>

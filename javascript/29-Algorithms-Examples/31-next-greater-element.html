@@ -20,22 +20,6 @@
   <p>For each element, find the next greater element to its right.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function nextGreater(arr) {
-  const result = new Array(arr.length).fill(-1);
-  const stack = [];
-  for (let i = 0; i < arr.length; i++) {
-    while (stack.length && arr[i] > arr[stack[stack.length - 1]]) {
-      result[stack.pop()] = arr[i];
-    }
-    stack.push(i);
-  }
-  return result;
-}
-const arr = [2, 1, 2, 4, 3];
-document.getElementById("out").textContent =
-  "array:  " + JSON.stringify(arr) + "\n" +
-  "next greater: " + JSON.stringify(nextGreater(arr));
-  </script>
+  <script src="31-next-greater-element.js"></script>
 </body>
 </html>

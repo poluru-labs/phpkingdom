@@ -20,14 +20,6 @@
   <p>Create an infinite ID generator with yield.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function* idGenerator(start = 1) {
-  let id = start;
-  while (true) yield id++;
-}
-const gen = idGenerator(100);
-document.getElementById("out").textContent =
-  [gen.next().value, gen.next().value, gen.next().value].join(", ");
-  </script>
+  <script src="34-generator-infinite.js"></script>
 </body>
 </html>

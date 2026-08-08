@@ -20,12 +20,6 @@
   <p>Convert an array of objects into a lookup map by id.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function indexBy(arr, key) {
-  return Object.fromEntries(arr.map((item) => [item[key], item]));
-}
-const courses = [{ id: "html", title: "HTML" }, { id: "css", title: "CSS" }];
-document.getElementById("out").textContent = JSON.stringify(indexBy(courses, "id"), null, 2);
-  </script>
+  <script src="24-index-by.js"></script>
 </body>
 </html>

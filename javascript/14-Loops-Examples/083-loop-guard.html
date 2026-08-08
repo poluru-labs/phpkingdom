@@ -20,16 +20,6 @@
   <p>Protect a while loop with a max-iteration guard.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-let x = 1;
-let steps = 0;
-const MAX = 20;
-while (x < 1000 && steps < MAX) {
-  x *= 2;
-  steps++;
-}
-document.getElementById("out").textContent =
-  "x=" + x + " steps=" + steps + " (guard MAX=" + MAX + ")";
-  </script>
+  <script src="083-loop-guard.js"></script>
 </body>
 </html>

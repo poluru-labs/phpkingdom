@@ -20,17 +20,6 @@
   <p>for...in walks enumerable prototype props; guard with hasOwn.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const proto = { inherited: true };
-const obj = Object.create(proto);
-obj.own = 1;
-const all = [];
-for (const k in obj) all.push(k);
-const owns = [];
-for (const k in obj) if (Object.hasOwn(obj, k)) owns.push(k);
-document.getElementById("out").textContent =
-  "for...in => " + all.join(",") + "\n" +
-  "own only => " + owns.join(",");
-  </script>
+  <script src="40-for-in-prototype.js"></script>
 </body>
 </html>

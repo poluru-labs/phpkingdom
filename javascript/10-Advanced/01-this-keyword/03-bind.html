@@ -18,10 +18,6 @@
   <h1>Function.prototype.bind</h1>
   <p>Permanently set this.</p>
   <pre id="out"></pre>
-  <script>
-function greet() { return "Hello " + this.name; }
-const bound = greet.bind({ name: "Ada" });
-document.getElementById("out").textContent = bound();
-  </script>
+  <script src="03-bind.js"></script>
 </body>
 </html>

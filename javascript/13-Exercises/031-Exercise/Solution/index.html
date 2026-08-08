@@ -17,13 +17,6 @@
   <h1>Solution 031 — Fetch Mock JSON (31)</h1>
   <pre id="out"></pre>
   <p><a href="../Problem/index.html">Back to Problem</a></p>
-  <script>
-function fakeFetch(){
-  return Promise.resolve({ json: () => Promise.resolve({ ok: true }) });
-}
-fakeFetch().then(r => r.json()).then(d => {
-  document.getElementById("out").textContent = JSON.stringify(d);
-});
-  </script>
+  <script src="index.js"></script>
 </body>
 </html>

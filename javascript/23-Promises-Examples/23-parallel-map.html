@@ -20,13 +20,6 @@
   <p>Transform items concurrently.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const ids = [1, 2, 3];
-Promise.all(ids.map((id) =>
-  Promise.resolve({ id, title: "Item " + id })
-)).then((items) => {
-  document.getElementById("out").textContent = JSON.stringify(items);
-});
-  </script>
+  <script src="23-parallel-map.js"></script>
 </body>
 </html>

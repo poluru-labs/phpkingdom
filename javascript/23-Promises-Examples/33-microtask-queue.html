@@ -20,14 +20,6 @@
   <p>then callbacks run after current sync code.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-let log = "sync1 ";
-Promise.resolve().then(() => {
-  log += "microtask ";
-  document.getElementById("out").textContent = log;
-});
-log += "sync2 ";
-document.getElementById("out").textContent = log;
-  </script>
+  <script src="33-microtask-queue.js"></script>
 </body>
 </html>

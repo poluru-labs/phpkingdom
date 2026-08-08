@@ -20,13 +20,6 @@
   <p>Build row N of Pascal’s triangle with loops.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const N = 5;
-const row = [1];
-for (let k = 0; k < N; k++) {
-  row.push(row[k] * (N - k) / (k + 1));
-}
-document.getElementById("out").textContent = "row " + N + ": " + row.map(Math.round).join(" ");
-  </script>
+  <script src="063-pascal-row.js"></script>
 </body>
 </html>

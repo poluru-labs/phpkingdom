@@ -18,11 +18,6 @@
   <h1>Classes use Prototypes</h1>
   <p>class syntax is sugar over prototypes.</p>
   <pre id="out"></pre>
-  <script>
-class Car { drive() { return "vroom"; } }
-const c = new Car();
-document.getElementById("out").textContent =
-  c.drive() + " / " + (Object.getPrototypeOf(c) === Car.prototype);
-  </script>
+  <script src="03-class-prototype-link.js"></script>
 </body>
 </html>

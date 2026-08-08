@@ -19,11 +19,6 @@
   <p>Inspect event properties.</p>
   <button id="btn" type="button">Click me</button>
   <pre id="out"></pre>
-  <script>
-document.getElementById("btn").addEventListener("click", function (e) {
-  document.getElementById("out").textContent =
-    "type=" + e.type + ", target=" + e.target.tagName;
-});
-  </script>
+  <script src="03-event-object.js"></script>
 </body>
 </html>

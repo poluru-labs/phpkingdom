@@ -20,21 +20,6 @@
   <p>Generate all valid combinations of n pairs of parentheses using backtracking.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function generateParentheses(n) {
-  const result = [];
-  function backtrack(open, close, s) {
-    if (s.length === n * 2) {
-      result.push(s);
-      return;
-    }
-    if (open < n) backtrack(open + 1, close, s + "(");
-    if (close < open) backtrack(open, close + 1, s + ")");
-  }
-  backtrack(0, 0, "");
-  return result;
-}
-document.getElementById("out").textContent = generateParentheses(3).join("\n");
-  </script>
+  <script src="22-generate-parentheses.js"></script>
 </body>
 </html>

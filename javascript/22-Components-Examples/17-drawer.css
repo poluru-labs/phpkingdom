@@ -1,0 +1,47 @@
+.c-drawer__overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(20, 33, 43, 0.4);
+      z-index: 90;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s var(--ease);
+    }
+    .c-drawer__overlay.is-open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+    .c-drawer__panel {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100%;
+      width: min(100%, 340px);
+      background: var(--surface);
+      border-left: 1px solid var(--line);
+      box-shadow: -8px 0 30px rgba(20, 33, 43, 0.1);
+      transform: translateX(100%);
+      transition: transform 0.28s var(--ease);
+      z-index: 100;
+      display: flex;
+      flex-direction: column;
+      padding: 1.25rem;
+    }
+    .c-drawer__panel.is-open { transform: translateX(0); }
+    .c-drawer__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    .c-drawer__title { margin: 0; font-size: 1.1rem; }
+    .c-drawer__close {
+      border: none;
+      background: transparent;
+      font-size: 1.4rem;
+      cursor: pointer;
+      color: var(--muted);
+      border-radius: 6px;
+      padding: 0.15rem 0.35rem;
+    }
+    .c-drawer__body { flex: 1; overflow-y: auto; color: var(--muted); }

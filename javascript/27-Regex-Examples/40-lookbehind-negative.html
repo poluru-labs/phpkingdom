@@ -20,13 +20,6 @@
   <p>Match 'cat' not preceded by 'wild' using negative lookbehind.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const text = "wildcat cat catalog";
-const re = /(?<!wild)cat/g;
-const matches = text.match(re);
-document.getElementById("out").textContent =
-  "text: " + text + "\n" +
-  "/(?<!wild)cat/g => " + JSON.stringify(matches);
-  </script>
+  <script src="40-lookbehind-negative.js"></script>
 </body>
 </html>

@@ -20,16 +20,6 @@
   <p>Use catch { } when you do not need the error object.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const out = document.getElementById("out");
-let ok = false;
-try {
-  JSON.parse("not json");
-  ok = true;
-} catch {
-  ok = false;
-}
-out.textContent = ok ? "parsed" : "invalid JSON handled";
-  </script>
+  <script src="30-catch-optional-binding.js"></script>
 </body>
 </html>

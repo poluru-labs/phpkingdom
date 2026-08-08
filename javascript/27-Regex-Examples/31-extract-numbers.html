@@ -20,12 +20,6 @@
   <p>Extract all integers and decimals from text.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const text = "Order 3 items for $19.99 and 2 for $5.50";
-const nums = text.match(/-?\d+(?:\.\d+)?/g);
-document.getElementById("out").textContent =
-  "text: " + text + "\n" +
-  "numbers: " + JSON.stringify(nums);
-  </script>
+  <script src="31-extract-numbers.js"></script>
 </body>
 </html>

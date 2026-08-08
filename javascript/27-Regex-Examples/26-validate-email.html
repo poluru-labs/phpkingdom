@@ -20,11 +20,6 @@
   <p>Validate a simple email format with regex.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const emails = ["user@example.com", "bad@", "@bad.com", "a.b+c@co.uk"];
-const re = /^[\w.+-]+@[\w-]+\.[\w.-]+$/;
-const results = emails.map(e => e + " => " + re.test(e));
-document.getElementById("out").textContent = results.join("\n");
-  </script>
+  <script src="26-validate-email.js"></script>
 </body>
 </html>

@@ -20,12 +20,6 @@
   <p>Convert a decimal number to binary string recursively.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function decToBin(n) {
-  if (n <= 1) return String(n);
-  return decToBin(Math.floor(n / 2)) + (n % 2);
-}
-document.getElementById("out").textContent = "13₁₀ = " + decToBin(13) + "₂";
-  </script>
+  <script src="40-decimal-to-binary.js"></script>
 </body>
 </html>

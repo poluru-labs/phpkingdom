@@ -20,19 +20,6 @@
   <p>Normalize a Date to local end of day (23:59:59.999).</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-
-function endOfDay(d) {
-  const copy = new Date(d.getTime());
-  copy.setHours(23, 59, 59, 999);
-  return copy;
-}
-const d = new Date(2024, 0, 15, 14, 30, 45);
-const eod = endOfDay(d);
-document.getElementById("out").textContent =
-  "Original: " + d.toString() + "\n" +
-  "End of day: " + eod.toString();
-
-  </script>
+  <script src="20-end-of-day.js"></script>
 </body>
 </html>

@@ -20,17 +20,6 @@
   <p>Use a closure to keep private count state between calls.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function createCounter() {
-  let count = 0;
-  return function () {
-    count += 1;
-    return count;
-  };
-}
-const next = createCounter();
-document.getElementById("out").textContent =
-  [next(), next(), next()].join(", ");
-  </script>
+  <script src="08-closure-counter.js"></script>
 </body>
 </html>

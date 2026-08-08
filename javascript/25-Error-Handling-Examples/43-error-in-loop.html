@@ -20,20 +20,6 @@
   <p>Collect per-item errors instead of stopping the whole loop.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const out = document.getElementById("out");
-const inputs = ["1", "x", "3"];
-const ok = [];
-const bad = [];
-for (const s of inputs) {
-  const n = Number(s);
-  if (Number.isNaN(n)) {
-    bad.push(s);
-    continue;
-  }
-  ok.push(n);
-}
-out.textContent = "ok: [" + ok + "]\ninvalid: [" + bad + "]";
-  </script>
+  <script src="43-error-in-loop.js"></script>
 </body>
 </html>

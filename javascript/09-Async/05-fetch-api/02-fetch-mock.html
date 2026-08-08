@@ -18,15 +18,6 @@
   <h1>Mocking a Fetch Result</h1>
   <p>Simulate fetch with a Promise.</p>
   <pre id="out">Loading…</pre>
-  <script>
-function fakeFetch() {
-  return Promise.resolve({ ok: true, json: () => Promise.resolve({ site: "phpkingdom.com" }) });
-}
-fakeFetch()
-  .then((res) => res.json())
-  .then((data) => {
-    document.getElementById("out").textContent = JSON.stringify(data);
-  });
-  </script>
+  <script src="02-fetch-mock.js"></script>
 </body>
 </html>

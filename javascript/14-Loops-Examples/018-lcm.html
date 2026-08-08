@@ -20,13 +20,6 @@
   <p>Find the least common multiple using GCD.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function gcd(a, b) {
-  while (b !== 0) { const t = b; b = a % b; a = t; }
-  return a;
-}
-function lcm(a, b) { return (a * b) / gcd(a, b); }
-document.getElementById("out").textContent = "lcm(12, 18) = " + lcm(12, 18);
-  </script>
+  <script src="018-lcm.js"></script>
 </body>
 </html>

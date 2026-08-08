@@ -20,17 +20,6 @@
   <p>Use try/catch to handle a synchronous exception.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const out = document.getElementById("out");
-function divide(a, b) {
-  if (b === 0) throw new Error("Division by zero");
-  return a / b;
-}
-try {
-  out.textContent = "result: " + divide(10, 0);
-} catch (e) {
-  out.textContent = "error: " + e.message;
-}
-  </script>
+  <script src="02-try-catch.js"></script>
 </body>
 </html>

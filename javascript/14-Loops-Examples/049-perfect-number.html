@@ -20,14 +20,6 @@
   <p>Check if N equals the sum of its proper divisors.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function isPerfect(n) {
-  let sum = 0;
-  for (let i = 1; i < n; i++) if (n % i === 0) sum += i;
-  return sum === n;
-}
-document.getElementById("out").textContent =
-  "28 → " + isPerfect(28) + "\n12 → " + isPerfect(12);
-  </script>
+  <script src="049-perfect-number.js"></script>
 </body>
 </html>

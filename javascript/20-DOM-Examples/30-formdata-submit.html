@@ -25,13 +25,6 @@
     <button type="submit">Save</button>
   </form>
   <pre id="out"></pre>
-  <script>
-document.getElementById("f").addEventListener("submit", (e) => {
-  e.preventDefault();
-  const data = new FormData(e.target);
-  const obj = Object.fromEntries(data.entries());
-  document.getElementById("out").textContent = JSON.stringify(obj, null, 2);
-});
-  </script>
+  <script src="30-formdata-submit.js"></script>
 </body>
 </html>

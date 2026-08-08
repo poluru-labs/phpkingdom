@@ -13,24 +13,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Subrahmanyam Poluru">
   <title>33 — Pointer Events | phpkingdom.com</title>
+  <link rel="stylesheet" href="33-pointer-events.css">
 </head>
 <body>
   <h1>33 — Pointer Events</h1>
   <h2>Problem</h2>
   <p>Use pointerdown/pointerup for mouse and pen/touch-friendly input.</p>
   <h2>Demo</h2>
-  <div id="pad" style="width:220px;height:100px;border:1px solid #333;touch-action:none">Pointer here</div>
+  <div id="pad" class="pk-s-width-220px-height-100px-border-1pxsolid-333-tou">Pointer here</div>
   <pre id="out"></pre>
-  <script>
-const pad = document.getElementById("pad");
-const out = document.getElementById("out");
-pad.addEventListener("pointerdown", (e) => {
-  out.textContent = "down type=" + e.pointerType + " id=" + e.pointerId;
-  pad.setPointerCapture(e.pointerId);
-});
-pad.addEventListener("pointerup", (e) => {
-  out.textContent += "\nup type=" + e.pointerType;
-});
-  </script>
+  <script src="33-pointer-events.js"></script>
 </body>
 </html>

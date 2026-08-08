@@ -20,9 +20,6 @@
   <p>Fill missing values from a defaults object.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function withDefaults(obj, defaults) { return { ...defaults, ...obj }; }
-document.getElementById("out").textContent = JSON.stringify(withDefaults({ theme: "dark" }, { theme: "light", lang: "en", page: 1 }));
-  </script>
+  <script src="35-defaults-fill.js"></script>
 </body>
 </html>

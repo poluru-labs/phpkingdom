@@ -20,12 +20,6 @@
   <p>Compose multiple unary functions right-to-left.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const compose = (...fns) => (x) => fns.reduceRight((v, fn) => fn(v), x);
-const inc = (x) => x + 1;
-const square = (x) => x * x;
-document.getElementById("out").textContent =
-  "compose(inc, square)(4) = " + compose(inc, square)(4);
-  </script>
+  <script src="15-compose-many.js"></script>
 </body>
 </html>

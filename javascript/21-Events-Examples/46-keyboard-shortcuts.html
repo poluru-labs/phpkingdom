@@ -21,14 +21,6 @@
   <h2>Demo</h2>
   <p>Focus the page and press Ctrl+S / Cmd+S.</p>
   <pre id="out"></pre>
-  <script>
-window.addEventListener("keydown", (e) => {
-  if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "s") {
-    e.preventDefault();
-    document.getElementById("out").textContent =
-      "shortcut save at " + new Date().toLocaleTimeString();
-  }
-});
-  </script>
+  <script src="46-keyboard-shortcuts.js"></script>
 </body>
 </html>

@@ -20,18 +20,6 @@
   <p>Sequential awaits inside a loop.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function tick(n) {
-  return new Promise((resolve) => setTimeout(() => resolve(n), 80));
-}
-async function main() {
-  const out = [];
-  for (const n of [1, 2, 3]) {
-    out.push(await tick(n));
-  }
-  document.getElementById("out").textContent = out.join(" then ");
-}
-main();
-  </script>
+  <script src="29-await-in-loop.js"></script>
 </body>
 </html>

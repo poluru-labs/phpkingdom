@@ -22,16 +22,6 @@
   <a id="link" href="https://example.com">example.com</a><br>
   <label><input type="checkbox" id="cb"> cannot check</label>
   <pre id="out"></pre>
-  <script>
-const out = document.getElementById("out");
-document.getElementById("link").addEventListener("click", (e) => {
-  e.preventDefault();
-  out.textContent = "link navigation blocked";
-});
-document.getElementById("cb").addEventListener("click", (e) => {
-  e.preventDefault();
-  out.textContent = "checkbox toggle blocked";
-});
-  </script>
+  <script src="18-prevent-default.js"></script>
 </body>
 </html>

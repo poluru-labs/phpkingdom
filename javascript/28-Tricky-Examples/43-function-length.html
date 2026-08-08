@@ -20,14 +20,6 @@
   <p>Default/rest params affect the length property.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function a(x, y) {}
-function b(x = 1, y) {}
-function c(...rest) {}
-document.getElementById("out").textContent =
-  "a.length=" + a.length + "\n" +
-  "b.length=" + b.length + "\n" +
-  "c.length=" + c.length;
-  </script>
+  <script src="43-function-length.js"></script>
 </body>
 </html>

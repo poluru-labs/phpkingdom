@@ -13,6 +13,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Subrahmanyam Poluru">
   <title>47 — Escape to Close | phpkingdom.com</title>
+  <link rel="stylesheet" href="47-escape-close.css">
 </head>
 <body>
   <h1>47 — Escape to Close</h1>
@@ -20,23 +21,10 @@
   <p>Close a fake dialog when Escape is pressed.</p>
   <h2>Demo</h2>
   <button id="open">Open panel</button>
-  <div id="panel" hidden style="margin-top:8px;padding:12px;border:1px solid #333">
+  <div id="panel" hidden class="pk-s-margin-top-8px-padding-12px-border-1pxsolid-333">
     Press Escape to close
   </div>
   <pre id="out"></pre>
-  <script>
-const panel = document.getElementById("panel");
-const out = document.getElementById("out");
-document.getElementById("open").onclick = () => {
-  panel.hidden = false;
-  out.textContent = "open";
-};
-window.addEventListener("keydown", (e) => {
-  if (e.key === "Escape" && !panel.hidden) {
-    panel.hidden = true;
-    out.textContent = "closed via Escape";
-  }
-});
-  </script>
+  <script src="47-escape-close.js"></script>
 </body>
 </html>

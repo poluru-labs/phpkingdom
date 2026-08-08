@@ -20,13 +20,6 @@
   <p>Match a digit only when followed by 'px' using positive lookahead.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const text = "10px 20em 30px";
-const re = /\d+(?=px)/g;
-const matches = text.match(re);
-document.getElementById("out").textContent =
-  "text: " + text + "\n" +
-  "/\\d+(?=px)/g => " + JSON.stringify(matches);
-  </script>
+  <script src="37-lookahead-positive.js"></script>
 </body>
 </html>

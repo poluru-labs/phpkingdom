@@ -18,19 +18,6 @@
   <h1>Checking res.ok</h1>
   <p>HTTP errors need manual checks.</p>
   <pre id="out"></pre>
-  <script>
-function fakeFetch() {
-  return Promise.resolve({ ok: false, status: 404, json: async () => ({}) });
-}
-async function run() {
-  const res = await fakeFetch();
-  if (!res.ok) {
-    document.getElementById("out").textContent = "HTTP " + res.status;
-    return;
-  }
-  document.getElementById("out").textContent = "ok";
-}
-run();
-  </script>
+  <script src="03-fetch-error-shape.js"></script>
 </body>
 </html>

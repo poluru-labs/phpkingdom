@@ -20,11 +20,6 @@
   <p>0.1 + 0.2 is not exactly 0.3.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-document.getElementById("out").textContent =
-  "0.1 + 0.2 => " + (0.1 + 0.2) + "\n" +
-  "fixed => " + (0.1 + 0.2).toFixed(1) + "\n" +
-  "eps check => " + (Math.abs(0.1 + 0.2 - 0.3) < Number.EPSILON);
-  </script>
+  <script src="19-float-math.js"></script>
 </body>
 </html>

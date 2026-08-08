@@ -22,16 +22,6 @@
   <button id="btn">Click</button>
   <button id="stop">Abort listeners</button>
   <pre id="out"></pre>
-  <script>
-const out = document.getElementById("out");
-const ac = new AbortController();
-document.getElementById("btn").addEventListener("click", () => {
-  out.textContent += "click ";
-}, { signal: ac.signal });
-document.getElementById("stop").onclick = () => {
-  ac.abort();
-  out.textContent += "[aborted] ";
-};
-  </script>
+  <script src="43-abortcontroller-listener.js"></script>
 </body>
 </html>

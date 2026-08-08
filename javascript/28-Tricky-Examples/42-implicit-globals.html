@@ -20,15 +20,6 @@
   <p>Assigning to undeclared vars is bad; use strict.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-"use strict";
-try {
-  // undeclared = 1;
-  undeclared = 1;
-} catch (e) {
-  document.getElementById("out").textContent =
-    "strict mode blocks accidental globals:\n" + e.message;
-}
-  </script>
+  <script src="42-implicit-globals.js"></script>
 </body>
 </html>

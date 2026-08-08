@@ -20,17 +20,6 @@
   <p>Defaults cannot use later parameters.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function demo(a = b, b = 2) {
-  return [a, b];
-}
-try {
-  demo();
-} catch (e) {
-  document.getElementById("out").textContent =
-    "demo() throws: " + e.message + "\n" +
-    "demo(1) => [" + (function (a = 1, b = 2) { return [a, b]; })(1) + "]";
-}
-  </script>
+  <script src="24-default-params-temporal.js"></script>
 </body>
 </html>

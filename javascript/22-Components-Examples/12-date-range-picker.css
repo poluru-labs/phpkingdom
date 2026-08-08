@@ -1,0 +1,64 @@
+.c-daterange { position: relative; max-width: 300px; }
+    .c-daterange__trigger {
+      width: 100%;
+      padding: 0.6rem 0.75rem;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      background: var(--surface);
+      font: inherit;
+      cursor: pointer;
+      text-align: left;
+    }
+    .c-daterange__trigger:focus-visible { outline: none; box-shadow: var(--focus); border-color: var(--accent); }
+    .c-daterange__popup {
+      position: absolute;
+      z-index: 30;
+      top: calc(100% + 6px);
+      left: 0;
+      width: min(100vw - 2rem, 300px);
+      padding: 0.75rem;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      box-shadow: var(--shadow);
+    }
+    .c-daterange__popup[hidden] { display: none; }
+    .c-daterange__hint { font-size: 0.82rem; color: var(--muted); margin-bottom: 0.5rem; }
+    .c-daterange__nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0.65rem;
+      font-weight: 600;
+    }
+    .c-daterange__nav button {
+      border: 1px solid var(--line);
+      background: var(--surface);
+      border-radius: 6px;
+      padding: 0.25rem 0.55rem;
+      cursor: pointer;
+      font: inherit;
+    }
+    .c-daterange__grid {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 2px;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+    .c-daterange__dow { color: var(--muted); font-weight: 600; padding: 0.25rem 0; font-size: 0.75rem; }
+    .c-daterange__day {
+      border: none;
+      background: transparent;
+      border-radius: 0;
+      padding: 0.4rem 0;
+      cursor: pointer;
+      font: inherit;
+    }
+    .c-daterange__day:hover:not(:disabled) { background: var(--accent-soft); }
+    .c-daterange__day.is-start, .c-daterange__day.is-end { background: var(--accent); color: #fff; font-weight: 600; }
+    .c-daterange__day.is-start { border-radius: 6px 0 0 6px; }
+    .c-daterange__day.is-end { border-radius: 0 6px 6px 0; }
+    .c-daterange__day.is-start.is-end { border-radius: 6px; }
+    .c-daterange__day.is-in-range { background: var(--accent-soft); }
+    .c-daterange__day:disabled { visibility: hidden; }

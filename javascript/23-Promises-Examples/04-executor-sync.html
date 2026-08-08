@@ -20,19 +20,6 @@
   <p>Prove the executor runs before later sync code finishes.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-let log = "";
-log += "A ";
-new Promise((resolve) => {
-  log += "B ";
-  resolve("D");
-  log += "C ";
-}).then((v) => {
-  log += v;
-  document.getElementById("out").textContent = log;
-});
-log += "E ";
-document.getElementById("out").textContent = log;
-  </script>
+  <script src="04-executor-sync.js"></script>
 </body>
 </html>

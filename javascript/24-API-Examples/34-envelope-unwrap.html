@@ -20,15 +20,6 @@
   <p>Many APIs wrap data in { data, meta }.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-async function unwrap(resJson) {
-  if (resJson.error) throw new Error(resJson.error);
-  return resJson.data;
-}
-unwrap({ data: { id: 1, site: "phpkingdom.com" }, meta: { page: 1 } })
-  .then((data) => {
-    document.getElementById("out").textContent = JSON.stringify(data);
-  });
-  </script>
+  <script src="34-envelope-unwrap.js"></script>
 </body>
 </html>

@@ -20,14 +20,6 @@
   <p>Throwing in then rejects the returned promise.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-Promise.resolve(1)
-  .then(() => {
-    throw new Error("boom");
-  })
-  .catch((err) => {
-    document.getElementById("out").textContent = "caught: " + err.message;
-  });
-  </script>
+  <script src="10-error-in-then.js"></script>
 </body>
 </html>

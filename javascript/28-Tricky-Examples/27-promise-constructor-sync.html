@@ -20,19 +20,6 @@
   <p>Executor function runs immediately.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-let log = "";
-log += "1 ";
-new Promise((resolve) => {
-  log += "2 ";
-  resolve();
-  log += "3 ";
-}).then(() => {
-  log += "5";
-  document.getElementById("out").textContent = log;
-});
-log += "4 ";
-document.getElementById("out").textContent = log;
-  </script>
+  <script src="27-promise-constructor-sync.js"></script>
 </body>
 </html>

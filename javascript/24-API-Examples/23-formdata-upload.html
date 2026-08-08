@@ -20,16 +20,6 @@
   <p>Prepare multipart form data for file/API upload.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const form = new FormData();
-form.append("title", "JS Notes");
-form.append("author", "Subrahmanyam Poluru");
-form.append("site", "phpkingdom.com");
-// form.append("file", fileInput.files[0]);
-const pairs = [];
-for (const [k, v] of form.entries()) pairs.push(k + "=" + v);
-document.getElementById("out").textContent = pairs.join("\n");
-// fetch("/api/upload", { method: "POST", body: form }) // no Content-Type header
-  </script>
+  <script src="23-formdata-upload.js"></script>
 </body>
 </html>

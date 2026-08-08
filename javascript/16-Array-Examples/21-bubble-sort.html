@@ -20,17 +20,6 @@
   <p>Sort numbers ascending with bubble sort.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function bubbleSort(arr) {
-  const a = [...arr];
-  for (let i = 0; i < a.length; i++) {
-    for (let j = 0; j < a.length - 1 - i; j++) {
-      if (a[j] > a[j + 1]) [a[j], a[j + 1]] = [a[j + 1], a[j]];
-    }
-  }
-  return a;
-}
-document.getElementById("out").textContent = bubbleSort([5,1,4,2,8]).join(", ");
-  </script>
+  <script src="21-bubble-sort.js"></script>
 </body>
 </html>

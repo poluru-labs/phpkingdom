@@ -1,0 +1,14 @@
+.textarea-wrap {
+      display: grid;
+      gap: 0.35rem;
+      max-width: 480px;
+    }
+    .textarea-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.82rem;
+      color: var(--muted);
+    }
+    .textarea-count.is-over { color: var(--danger); font-weight: 600; }
+    .c-textarea.auto-resize { resize: none; overflow: hidden; min-height: 80px; }

@@ -18,11 +18,6 @@
   <h1>Rest Parameters</h1>
   <p>Collect remaining args.</p>
   <pre id="out"></pre>
-  <script>
-function total(first, ...rest) {
-  return rest.reduce((s, n) => s + n, first);
-}
-document.getElementById("out").textContent = String(total(1, 2, 3, 4));
-  </script>
+  <script src="03-rest-params.js"></script>
 </body>
 </html>

@@ -20,14 +20,6 @@
   <p>Load multiple endpoints in parallel.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const get = (name, ms) => new Promise((resolve) =>
-  setTimeout(() => resolve({ name, ms }), ms)
-);
-Promise.all([get("users", 120), get("posts", 80), get("comments", 40)])
-  .then((results) => {
-    document.getElementById("out").textContent = JSON.stringify(results, null, 2);
-  });
-  </script>
+  <script src="14-parallel-requests.js"></script>
 </body>
 </html>

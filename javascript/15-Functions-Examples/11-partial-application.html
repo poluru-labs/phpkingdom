@@ -20,13 +20,6 @@
   <p>Pre-fill some arguments of a function and call the rest later.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function partial(fn, ...fixed) {
-  return (...rest) => fn(...fixed, ...rest);
-}
-function add(a, b, c) { return a + b + c; }
-const addFiveAnd = partial(add, 5, 10);
-document.getElementById("out").textContent = "addFiveAnd(7) = " + addFiveAnd(7);
-  </script>
+  <script src="11-partial-application.js"></script>
 </body>
 </html>

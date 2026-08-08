@@ -20,18 +20,6 @@
   <p>Use one resolved value as input to the next request.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function getUser() {
-  return Promise.resolve({ id: 7, name: "Ada" });
-}
-function getOrders(userId) {
-  return Promise.resolve([{ id: 1, userId }, { id: 2, userId }]);
-}
-getUser()
-  .then((user) => getOrders(user.id).then((orders) => ({ user, orders })))
-  .then((data) => {
-    document.getElementById("out").textContent = JSON.stringify(data);
-  });
-  </script>
+  <script src="42-waterfall.js"></script>
 </body>
 </html>

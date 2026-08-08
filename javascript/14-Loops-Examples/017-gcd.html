@@ -20,16 +20,6 @@
   <p>Find the greatest common divisor with a while loop.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function gcd(a, b) {
-  while (b !== 0) {
-    const t = b;
-    b = a % b;
-    a = t;
-  }
-  return a;
-}
-document.getElementById("out").textContent = "gcd(48, 18) = " + gcd(48, 18);
-  </script>
+  <script src="017-gcd.js"></script>
 </body>
 </html>

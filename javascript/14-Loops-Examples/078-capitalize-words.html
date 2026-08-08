@@ -20,14 +20,6 @@
   <p>Uppercase the first letter of each word with loops.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const s = "java script loops";
-const words = s.split(" ");
-for (let i = 0; i < words.length; i++) {
-  if (!words[i]) continue;
-  words[i] = words[i][0].toUpperCase() + words[i].slice(1);
-}
-document.getElementById("out").textContent = words.join(" ");
-  </script>
+  <script src="078-capitalize-words.js"></script>
 </body>
 </html>

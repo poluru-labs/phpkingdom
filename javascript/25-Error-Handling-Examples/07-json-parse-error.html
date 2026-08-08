@@ -20,15 +20,6 @@
   <p>Catch SyntaxError from invalid JSON before using data.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const out = document.getElementById("out");
-const bad = "{ name: 'Ada' }";
-try {
-  JSON.parse(bad);
-  out.textContent = "parsed OK";
-} catch (e) {
-  out.textContent = e.name + ": " + e.message.slice(0, 60) + "...";
-}
-  </script>
+  <script src="07-json-parse-error.js"></script>
 </body>
 </html>

@@ -20,14 +20,6 @@
   <p>Find the second largest distinct value with one pass.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const nums = [10, 5, 20, 8, 20];
-let first = -Infinity, second = -Infinity;
-for (const x of nums) {
-  if (x > first) { second = first; first = x; }
-  else if (x > second && x !== first) second = x;
-}
-document.getElementById("out").textContent = "second max = " + second;
-  </script>
+  <script src="067-second-max-loop.js"></script>
 </body>
 </html>

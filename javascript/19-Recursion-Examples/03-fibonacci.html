@@ -20,13 +20,6 @@
   <p>Return the nth Fibonacci number using simple recursion (F(0)=0, F(1)=1).</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function fib(n) {
-  if (n <= 1) return n;
-  return fib(n - 1) + fib(n - 2);
-}
-const seq = Array.from({ length: 10 }, (_, i) => fib(i));
-document.getElementById("out").textContent = "fib(0..9): " + seq.join(", ");
-  </script>
+  <script src="03-fibonacci.js"></script>
 </body>
 </html>

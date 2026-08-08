@@ -20,19 +20,6 @@
   <p>Wrap await in try/catch to handle rejected promises.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const out = document.getElementById("out");
-async function fetchUser() {
-  throw new Error("network down");
-}
-(async () => {
-  try {
-    await fetchUser();
-    out.textContent = "success";
-  } catch (e) {
-    out.textContent = "async catch: " + e.message;
-  }
-})();
-  </script>
+  <script src="12-async-await-trycatch.js"></script>
 </body>
 </html>

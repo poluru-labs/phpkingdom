@@ -20,21 +20,6 @@
   <p>Breadth-first search from a start vertex.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const adj = { A: ["B","C"], B: ["A","D"], C: ["A"], D: ["B"] };
-function bfs(start) {
-  const visited = new Set([start]);
-  const q = [start], order = [];
-  while (q.length) {
-    const v = q.shift();
-    order.push(v);
-    for (const nb of adj[v] || []) {
-      if (!visited.has(nb)) { visited.add(nb); q.push(nb); }
-    }
-  }
-  return order;
-}
-document.getElementById("out").textContent = "BFS from A: " + bfs("A").join(" -> ");
-  </script>
+  <script src="33-graph-bfs.js"></script>
 </body>
 </html>

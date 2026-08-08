@@ -20,14 +20,6 @@
   <p>Return a fallback value from catch to continue the chain.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-Promise.reject(new Error("network"))
-  .catch((err) => {
-    return { fallback: true, reason: err.message };
-  })
-  .then((data) => {
-    document.getElementById("out").textContent = JSON.stringify(data);
-  });
-  </script>
+  <script src="07-catch-recovery.js"></script>
 </body>
 </html>

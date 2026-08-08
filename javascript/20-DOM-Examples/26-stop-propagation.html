@@ -13,26 +13,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Subrahmanyam Poluru">
   <title>26 — stopPropagation | phpkingdom.com</title>
+  <link rel="stylesheet" href="26-stop-propagation.css">
 </head>
 <body>
   <h1>26 — stopPropagation</h1>
   <h2>Problem</h2>
   <p>Stop an event from bubbling to parent listeners.</p>
   <h2>Demo</h2>
-  <div id="outer" style="padding:20px;border:1px solid #333">
+  <div id="outer" class="pk-s-padding-20px-border-1pxsolid-333">
     Outer
     <button id="inner">Inner (stop)</button>
   </div>
   <pre id="out"></pre>
-  <script>
-const out = document.getElementById("out");
-document.getElementById("outer").addEventListener("click", () => {
-  out.textContent += "outer ";
-});
-document.getElementById("inner").addEventListener("click", (e) => {
-  e.stopPropagation();
-  out.textContent += "inner ";
-});
-  </script>
+  <script src="26-stop-propagation.js"></script>
 </body>
 </html>

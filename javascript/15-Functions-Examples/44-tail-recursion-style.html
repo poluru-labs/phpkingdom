@@ -20,15 +20,6 @@
   <p>Rewrite factorial with a tail-call-friendly accumulator loop.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function factorialTail(n, acc = 1) {
-  while (n > 1) {
-    acc *= n;
-    n -= 1;
-  }
-  return acc;
-}
-document.getElementById("out").textContent = "6! = " + factorialTail(6);
-  </script>
+  <script src="44-tail-recursion-style.js"></script>
 </body>
 </html>

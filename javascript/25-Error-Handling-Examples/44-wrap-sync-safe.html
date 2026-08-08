@@ -20,20 +20,6 @@
   <p>Higher-order function returns [error, result] tuple.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const out = document.getElementById("out");
-function safeSync(fn) {
-  return function (...args) {
-    try {
-      return [null, fn(...args)];
-    } catch (e) {
-      return [e, null];
-    }
-  };
-}
-const parse = safeSync(JSON.parse);
-const [err] = parse("{bad");
-out.textContent = err ? err.name + ": caught safely" : "ok";
-  </script>
+  <script src="44-wrap-sync-safe.js"></script>
 </body>
 </html>

@@ -20,14 +20,6 @@
   <p>Get the last moment of the month using day 0 of next month.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-
-function endOfMonth(d) {
-  return new Date(d.getFullYear(), d.getMonth() + 1, 0, 23, 59, 59, 999);
-}
-const d = new Date(2024, 0, 15);
-document.getElementById("out").textContent = "End of month: " + endOfMonth(d).toString();
-
-  </script>
+  <script src="22-end-of-month.js"></script>
 </body>
 </html>

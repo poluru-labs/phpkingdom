@@ -20,20 +20,6 @@
   <p>Extend Error to create a ValidationError with extra context.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-class ValidationError extends Error {
-  constructor(field, message) {
-    super(message);
-    this.name = "ValidationError";
-    this.field = field;
-  }
-}
-const out = document.getElementById("out");
-try {
-  throw new ValidationError("email", "Invalid email format");
-} catch (e) {
-  out.textContent = e.name + " on " + e.field + ": " + e.message;
-}
-  </script>
+  <script src="04-custom-error-class.js"></script>
 </body>
 </html>

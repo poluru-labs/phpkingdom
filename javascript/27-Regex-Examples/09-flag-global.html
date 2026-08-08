@@ -20,15 +20,6 @@
   <p>Compare exec() behavior with and without the global flag.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const text = "aa bb aa cc aa";
-const g = /aa/g;
-const ng = /aa/;
-const gResults = [g.exec(text), g.exec(text), g.exec(text)];
-const ngResults = [ng.exec(text), ng.exec(text)];
-document.getElementById("out").textContent =
-  "with g:  " + JSON.stringify(gResults.map(m => m && m[0])) + "\n" +
-  "without: " + JSON.stringify(ngResults.map(m => m && m[0]));
-  </script>
+  <script src="09-flag-global.js"></script>
 </body>
 </html>

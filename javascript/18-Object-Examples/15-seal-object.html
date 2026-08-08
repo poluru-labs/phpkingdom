@@ -20,11 +20,6 @@
   <p>Allow value updates but no new keys.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const user = Object.seal({ name: "Ada" });
-user.name = "Grace";
-user.age = 30;
-document.getElementById("out").textContent = JSON.stringify(user);
-  </script>
+  <script src="15-seal-object.js"></script>
 </body>
 </html>

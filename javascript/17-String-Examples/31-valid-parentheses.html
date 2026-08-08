@@ -20,20 +20,6 @@
   <p>Check if brackets are balanced.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function isValid(s) {
-  const stack = [];
-  const map = { ")": "(", "]": "[", "}": "{" };
-  for (const ch of s) {
-    if ("([{".includes(ch)) stack.push(ch);
-    else if (map[ch]) {
-      if (stack.pop() !== map[ch]) return false;
-    }
-  }
-  return stack.length === 0;
-}
-document.getElementById("out").textContent =
-  isValid("()[]{}") + " / " + isValid("(]");
-  </script>
+  <script src="31-valid-parentheses.js"></script>
 </body>
 </html>

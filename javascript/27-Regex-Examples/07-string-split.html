@@ -20,13 +20,6 @@
   <p>Split a string on a regex delimiter pattern.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const csv = "apple, banana;  cherry | date";
-const parts = csv.split(/[,;|\s]+/);
-document.getElementById("out").textContent =
-  "input: " + csv + "\n" +
-  "split(/[,;|\\s]+/) =>\n" +
-  JSON.stringify(parts, null, 2);
-  </script>
+  <script src="07-string-split.js"></script>
 </body>
 </html>

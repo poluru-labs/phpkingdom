@@ -20,15 +20,6 @@
   <p>Sort an array with recursive quicksort using last element as pivot.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function quickSort(arr) {
-  if (arr.length <= 1) return arr;
-  const pivot = arr[arr.length - 1];
-  const left = arr.slice(0, -1).filter((x) => x <= pivot);
-  const right = arr.slice(0, -1).filter((x) => x > pivot);
-  return quickSort(left).concat([pivot], quickSort(right));
-}
-document.getElementById("out").textContent = quickSort([10, 7, 8, 9, 1, 5]).join(", ");
-  </script>
+  <script src="38-quicksort-intro.js"></script>
 </body>
 </html>

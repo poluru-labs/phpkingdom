@@ -20,15 +20,6 @@
   <p>Use the Promise constructor with resolve/reject.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const p = new Promise((resolve, reject) => {
-  const ok = true;
-  if (ok) resolve("created with new Promise");
-  else reject(new Error("nope"));
-});
-p.then((v) => {
-  document.getElementById("out").textContent = v;
-});
-  </script>
+  <script src="03-new-promise.js"></script>
 </body>
 </html>

@@ -14,35 +14,7 @@
   <meta name="author" content="Subrahmanyam Poluru">
   <title>22 — Tabs | phpkingdom.com</title>
   <link rel="stylesheet" href="css/base.css">
-  <style>
-    .c-tabs { display: grid; gap: 0; }
-    .c-tabs__list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.25rem;
-      border-bottom: 1px solid var(--line);
-      margin-bottom: 0.85rem;
-    }
-    .c-tabs__tab {
-      border: none;
-      background: transparent;
-      padding: 0.55rem 0.85rem;
-      font: inherit;
-      font-weight: 600;
-      color: var(--muted);
-      cursor: pointer;
-      border-bottom: 2px solid transparent;
-      margin-bottom: -1px;
-      border-radius: var(--radius-sm) var(--radius-sm) 0 0;
-    }
-    .c-tabs__tab:hover { color: var(--accent-ink); background: var(--accent-soft); }
-    .c-tabs__tab[aria-selected="true"] {
-      color: var(--accent-ink);
-      border-bottom-color: var(--accent);
-    }
-    .c-tabs__panel { color: var(--muted); }
-    .c-tabs__panel[hidden] { display: none; }
-  </style>
+  <link rel="stylesheet" href="22-tabs.css">
 </head>
 <body>
   <main class="page">
@@ -58,76 +30,6 @@
       <pre class="log" id="log">Ready.</pre>
     </section>
   </main>
-  <script>
-    const logEl = document.getElementById("log");
-    function log(msg) { logEl.textContent = msg; }
-
-    function createTabs({ tabs = [] } = {}) {
-      let active = tabs[0]?.id ?? null;
-
-      const wrap = document.createElement("div");
-      wrap.className = "c-tabs";
-
-      const list = document.createElement("div");
-      list.className = "c-tabs__list";
-      list.setAttribute("role", "tablist");
-
-      const panelsWrap = document.createElement("div");
-
-      const tabBtns = [];
-      const panelEls = [];
-
-      tabs.forEach((tab, i) => {
-        const btn = document.createElement("button");
-        btn.type = "button";
-        btn.className = "c-tabs__tab";
-        btn.setAttribute("role", "tab");
-        btn.id = "tab-" + tab.id;
-        btn.textContent = tab.label;
-        btn.setAttribute("aria-controls", "panel-" + tab.id);
-
-        const panel = document.createElement("div");
-        panel.className = "c-tabs__panel";
-        panel.id = "panel-" + tab.id;
-        panel.setAttribute("role", "tabpanel");
-        panel.setAttribute("aria-labelledby", btn.id);
-        panel.textContent = tab.content;
-
-        btn.addEventListener("click", () => select(tab.id));
-        btn.addEventListener("keydown", (e) => {
-          if (e.key === "ArrowRight") tabBtns[(i + 1) % tabs.length].focus();
-          if (e.key === "ArrowLeft") tabBtns[(i - 1 + tabs.length) % tabs.length].focus();
-        });
-
-        tabBtns.push(btn);
-        panelEls.push(panel);
-        list.appendChild(btn);
-        panelsWrap.appendChild(panel);
-      });
-
-      function select(id) {
-        active = id;
-        tabs.forEach((tab, i) => {
-          const on = tab.id === id;
-          tabBtns[i].setAttribute("aria-selected", on ? "true" : "false");
-          panelEls[i].hidden = !on;
-        });
-        log("change: " + id);
-      }
-
-      select(active);
-      wrap.append(list, panelsWrap);
-
-      return { el: wrap, select, get active() { return active; } };
-    }
-
-    document.getElementById("mount").appendChild(createTabs({
-      tabs: [
-        { id: "overview", label: "Overview", content: "General summary and key metrics for your project." },
-        { id: "details", label: "Details", content: "Detailed configuration options and metadata." },
-        { id: "history", label: "History", content: "Recent activity log and version timeline." }
-      ]
-    }).el);
-  </script>
+  <script src="22-tabs.js"></script>
 </body>
 </html>

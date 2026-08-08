@@ -20,12 +20,6 @@
   <p>Same ... syntax, different roles.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const arr = [1, 2, 3];
-const copy = [...arr]; // spread
-function sum(...nums) { return nums.reduce((a, b) => a + b, 0); } // rest
-document.getElementById("out").textContent =
-  "copy=" + copy.join(",") + " sum=" + sum(1, 2, 3);
-  </script>
+  <script src="38-spread-vs-rest.js"></script>
 </body>
 </html>

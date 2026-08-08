@@ -20,22 +20,6 @@
   <p>Reject with typed errors and branch in catch.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-class HttpError extends Error {
-  constructor(status, message) {
-    super(message);
-    this.name = "HttpError";
-    this.status = status;
-  }
-}
-Promise.reject(new HttpError(404, "Not Found"))
-  .catch((err) => {
-    if (err.name === "HttpError") {
-      document.getElementById("out").textContent = err.status + " " + err.message;
-    } else {
-      document.getElementById("out").textContent = String(err);
-    }
-  });
-  </script>
+  <script src="48-error-types.js"></script>
 </body>
 </html>

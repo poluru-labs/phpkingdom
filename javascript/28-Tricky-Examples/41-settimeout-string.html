@@ -20,13 +20,6 @@
   <p>Passing a string is like eval.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-document.getElementById("out").textContent =
-  "Prefer setTimeout(() => {...}, 0)\n" +
-  "Avoid setTimeout(\"doThing()\", 0)  // implicit eval";
-setTimeout(() => {
-  document.getElementById("out").textContent += "\n(function form works)";
-}, 50);
-  </script>
+  <script src="41-settimeout-string.js"></script>
 </body>
 </html>

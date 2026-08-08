@@ -20,20 +20,6 @@
   <p>Generate all subsets (power set) of an array using include/exclude recursion.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function subsets(arr, i = 0, path = [], result = []) {
-  if (i === arr.length) {
-    result.push([...path]);
-    return result;
-  }
-  path.push(arr[i]);
-  subsets(arr, i + 1, path, result);
-  path.pop();
-  subsets(arr, i + 1, path, result);
-  return result;
-}
-const subs = subsets([1, 2, 3]);
-document.getElementById("out").textContent = subs.map((s) => "{" + s.join(",") + "}").join("\n");
-  </script>
+  <script src="18-subsets.js"></script>
 </body>
 </html>

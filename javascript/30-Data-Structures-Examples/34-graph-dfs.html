@@ -20,17 +20,6 @@
   <p>Depth-first search (recursive) from a start vertex.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const adj = { A: ["B","C"], B: ["A","D"], C: ["A","E"], D: ["B"], E: ["C"] };
-function dfs(v, visited = new Set(), order = []) {
-  visited.add(v);
-  order.push(v);
-  for (const nb of adj[v] || []) {
-    if (!visited.has(nb)) dfs(nb, visited, order);
-  }
-  return order;
-}
-document.getElementById("out").textContent = "DFS from A: " + dfs("A").join(" -> ");
-  </script>
+  <script src="34-graph-dfs.js"></script>
 </body>
 </html>

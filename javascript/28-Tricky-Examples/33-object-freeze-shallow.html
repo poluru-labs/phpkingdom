@@ -20,10 +20,6 @@
   <p>Nested objects remain mutable.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const config = Object.freeze({ nested: { mode: "light" } });
-config.nested.mode = "dark";
-document.getElementById("out").textContent = config.nested.mode;
-  </script>
+  <script src="33-object-freeze-shallow.js"></script>
 </body>
 </html>

@@ -20,14 +20,6 @@
   <p>Use nested functions so inner code reads outer variables.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function outer(msg) {
-  return function inner(name) {
-    return msg + ", " + name;
-  };
-}
-const welcome = outer("Welcome");
-document.getElementById("out").textContent = welcome("Guest");
-  </script>
+  <script src="36-nested-closure.js"></script>
 </body>
 </html>

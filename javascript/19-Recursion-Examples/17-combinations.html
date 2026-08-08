@@ -20,21 +20,6 @@
   <p>Choose k elements from n items (order does not matter) using recursion.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function combinations(arr, k, start = 0, path = [], result = []) {
-  if (path.length === k) {
-    result.push([...path]);
-    return result;
-  }
-  for (let i = start; i < arr.length; i++) {
-    path.push(arr[i]);
-    combinations(arr, k, i + 1, path, result);
-    path.pop();
-  }
-  return result;
-}
-const combos = combinations([1, 2, 3, 4], 2);
-document.getElementById("out").textContent = combos.map((c) => c.join(",")).join("\n");
-  </script>
+  <script src="17-combinations.js"></script>
 </body>
 </html>

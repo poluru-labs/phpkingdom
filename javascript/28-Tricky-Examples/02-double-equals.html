@@ -20,15 +20,6 @@
   <p>Show surprising results of == coercion.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const lines = [
-  '"" == false => ' + ("" == false),
-  '0 == false => ' + (0 == false),
-  'null == undefined => ' + (null == undefined),
-  'null == 0 => ' + (null == 0),
-  '" \t\r\n" == 0 => ' + (" \t\r\n" == 0)
-];
-document.getElementById("out").textContent = lines.join("\n");
-  </script>
+  <script src="02-double-equals.js"></script>
 </body>
 </html>

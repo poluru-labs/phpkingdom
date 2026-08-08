@@ -18,13 +18,6 @@
   <h1>Global vs Local Scope</h1>
   <p>Local variables hide outer names.</p>
   <pre id="out"></pre>
-  <script>
-const site = "global";
-function demo() {
-  const site = "local";
-  return site;
-}
-document.getElementById("out").textContent = demo() + " / " + site;
-  </script>
+  <script src="01-global-local.js"></script>
 </body>
 </html>

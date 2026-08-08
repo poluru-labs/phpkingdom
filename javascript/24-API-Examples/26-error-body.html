@@ -20,22 +20,6 @@
   <p>Read JSON error payloads from failed responses.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-async function readError(res) {
-  try {
-    const data = await res.json();
-    return data.message || data.error || JSON.stringify(data);
-  } catch {
-    return res.statusText || "Request failed";
-  }
-}
-const res = {
-  statusText: "Bad Request",
-  json: async () => ({ message: "Email is required" })
-};
-readError(res).then((msg) => {
-  document.getElementById("out").textContent = msg;
-});
-  </script>
+  <script src="26-error-body.js"></script>
 </body>
 </html>

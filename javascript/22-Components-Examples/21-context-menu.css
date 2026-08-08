@@ -1,0 +1,35 @@
+.c-ctx-target {
+      padding: 2rem;
+      border: 2px dashed var(--line);
+      border-radius: var(--radius-sm);
+      background: var(--surface-2);
+      text-align: center;
+      color: var(--muted);
+      user-select: none;
+      cursor: context-menu;
+    }
+    .c-ctx-menu {
+      position: fixed;
+      z-index: 200;
+      min-width: 170px;
+      margin: 0;
+      padding: 0.35rem;
+      list-style: none;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      box-shadow: var(--shadow);
+    }
+    .c-ctx-menu[hidden] { display: none; }
+    .c-ctx-menu__item {
+      display: block;
+      width: 100%;
+      text-align: left;
+      border: none;
+      background: transparent;
+      padding: 0.5rem 0.65rem;
+      border-radius: 6px;
+      font: inherit;
+      cursor: pointer;
+    }
+    .c-ctx-menu__item:hover { background: var(--accent-soft); }

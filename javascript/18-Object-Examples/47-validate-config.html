@@ -20,12 +20,6 @@
   <p>Validate required keys exist on a config object.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function validateConfig(config, required) {
-  const missing = required.filter((k) => !(k in config));
-  return { ok: missing.length === 0, missing };
-}
-document.getElementById("out").textContent = JSON.stringify(validateConfig({ host: "localhost", port: 3000 }, ["host", "port", "db"]));
-  </script>
+  <script src="47-validate-config.js"></script>
 </body>
 </html>

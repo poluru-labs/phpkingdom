@@ -20,12 +20,6 @@
   <p>Array from another realm can fail instanceof Array.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const arr = [];
-document.getElementById("out").textContent =
-  "arr instanceof Array => " + (arr instanceof Array) + "\n" +
-  "Array.isArray(arr) => " + Array.isArray(arr) + "\n" +
-  "Prefer Array.isArray for reliability.";
-  </script>
+  <script src="18-instanceof-realm.js"></script>
 </body>
 </html>

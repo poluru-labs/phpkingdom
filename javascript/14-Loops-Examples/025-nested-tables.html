@@ -20,14 +20,6 @@
   <p>Print a small grid of products i*j with nested loops.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const rows = [];
-for (let i = 1; i <= 4; i++) {
-  const cells = [];
-  for (let j = 1; j <= 4; j++) cells.push(String(i * j).padStart(2, " "));
-  rows.push(cells.join(" "));
-}
-document.getElementById("out").textContent = rows.join("\n");
-  </script>
+  <script src="025-nested-tables.js"></script>
 </body>
 </html>

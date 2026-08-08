@@ -20,15 +20,6 @@
   <p>Insert each element into the sorted left portion.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const arr = [9, 5, 1, 4, 3];
-for (let i = 1; i < arr.length; i++) {
-  const key = arr[i];
-  let j = i - 1;
-  while (j >= 0 && arr[j] > key) { arr[j + 1] = arr[j]; j--; }
-  arr[j + 1] = key;
-}
-document.getElementById("out").textContent = arr.join(", ");
-  </script>
+  <script src="041-insertion-sort.js"></script>
 </body>
 </html>

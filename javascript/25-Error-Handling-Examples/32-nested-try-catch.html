@@ -20,24 +20,6 @@
   <p>Inner catch can handle; outer catch gets rethrows.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const out = document.getElementById("out");
-const log = [];
-try {
-  try {
-    throw new TypeError("inner");
-  } catch (e) {
-    if (e instanceof TypeError) {
-      log.push("inner handled TypeError");
-    } else {
-      throw e;
-    }
-  }
-  throw new Error("outer");
-} catch (e) {
-  log.push("outer: " + e.message);
-}
-out.textContent = log.join("\n");
-  </script>
+  <script src="32-nested-try-catch.js"></script>
 </body>
 </html>

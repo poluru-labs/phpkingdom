@@ -19,13 +19,6 @@
   <p>Check before accepting.</p>
   <form id="f"><input id="user" type="text" placeholder="Username"><button type="submit">Join</button></form>
   <pre id="out"></pre>
-  <script>
-document.getElementById("f").addEventListener("submit", function (e) {
-  e.preventDefault();
-  const v = document.getElementById("user").value.trim();
-  document.getElementById("out").textContent =
-    v.length < 3 ? "Too short" : "OK: " + v;
-});
-  </script>
+  <script src="02-validation.js"></script>
 </body>
 </html>

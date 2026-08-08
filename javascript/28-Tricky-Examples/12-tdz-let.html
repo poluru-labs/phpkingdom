@@ -20,14 +20,6 @@
   <p>Accessing let before initialization throws.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-try {
-  // eslint-disable-next-line no-use-before-define
-  document.getElementById("out").textContent = value;
-  let value = 1;
-} catch (e) {
-  document.getElementById("out").textContent = e.name + ": " + e.message;
-}
-  </script>
+  <script src="12-tdz-let.js"></script>
 </body>
 </html>

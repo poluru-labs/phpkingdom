@@ -20,18 +20,6 @@
   <p>Show how a global regex remembers lastIndex between test() calls.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const re = /a/g;
-const text = "aba";
-const results = [
-  "test #1: " + re.test(text) + " lastIndex=" + re.lastIndex,
-  "test #2: " + re.test(text) + " lastIndex=" + re.lastIndex,
-  "test #3: " + re.test(text) + " lastIndex=" + re.lastIndex,
-  "fix: reset lastIndex to 0 before each test"
-];
-re.lastIndex = 0;
-results.push("reset test: " + re.test(text));
-document.getElementById("out").textContent = results.join("\n");
-  </script>
+  <script src="41-lastindex-pitfall.js"></script>
 </body>
 </html>

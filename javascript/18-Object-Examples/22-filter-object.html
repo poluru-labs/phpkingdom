@@ -20,12 +20,6 @@
   <p>Keep entries that pass a predicate.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function filterObject(obj, fn) {
-  return Object.fromEntries(Object.entries(obj).filter(([k, v]) => fn(v, k)));
-}
-const scores = { html: 90, css: 70, js: 95 };
-document.getElementById("out").textContent = JSON.stringify(filterObject(scores, (v) => v >= 90));
-  </script>
+  <script src="22-filter-object.js"></script>
 </body>
 </html>

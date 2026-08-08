@@ -21,14 +21,6 @@
   <h2>Demo</h2>
   <p>Switch to another tab, then come back.</p>
   <pre id="out"></pre>
-  <script>
-function show() {
-  document.getElementById("out").textContent =
-    "visibilityState=" + document.visibilityState +
-    " hidden=" + document.hidden;
-}
-show();
-document.addEventListener("visibilitychange", show);
-  </script>
+  <script src="40-visibilitychange.js"></script>
 </body>
 </html>

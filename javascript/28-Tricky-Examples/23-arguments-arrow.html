@@ -20,15 +20,6 @@
   <p>arguments is not bound in arrow functions.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function regular() { return arguments.length; }
-const arrow = () => {
-  try { return arguments.length; }
-  catch (e) { return e.message; }
-};
-document.getElementById("out").textContent =
-  "regular(1,2) => " + regular(1, 2) + "\n" +
-  "arrow => " + arrow(1, 2);
-  </script>
+  <script src="23-arguments-arrow.js"></script>
 </body>
 </html>

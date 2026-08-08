@@ -21,13 +21,6 @@
   <h2>Demo</h2>
   <p id="text">Select this text and copy (Ctrl/Cmd+C).</p>
   <pre id="out"></pre>
-  <script>
-document.getElementById("text").addEventListener("copy", (e) => {
-  const selected = window.getSelection().toString();
-  e.clipboardData.setData("text/plain", selected + " — via events demo");
-  e.preventDefault();
-  document.getElementById("out").textContent = "copied with suffix";
-});
-  </script>
+  <script src="35-clipboard-copy.js"></script>
 </body>
 </html>

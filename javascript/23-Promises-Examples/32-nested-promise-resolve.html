@@ -20,12 +20,6 @@
   <p>Returning/resolving a promise unwraps it.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const inner = Promise.resolve("inner");
-Promise.resolve(inner).then((v) => {
-  document.getElementById("out").textContent =
-    "value=" + v + " (not a nested Promise object)";
-});
-  </script>
+  <script src="32-nested-promise-resolve.js"></script>
 </body>
 </html>

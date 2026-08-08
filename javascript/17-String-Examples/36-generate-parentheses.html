@@ -20,18 +20,6 @@
   <p>Generate all combinations of n pairs of balanced parentheses.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function generateParenthesis(n) {
-  const out = [];
-  function dfs(cur, open, close) {
-    if (cur.length === n * 2) { out.push(cur); return; }
-    if (open < n) dfs(cur + "(", open + 1, close);
-    if (close < open) dfs(cur + ")", open, close + 1);
-  }
-  dfs("", 0, 0);
-  return out;
-}
-document.getElementById("out").textContent = generateParenthesis(3).join(" | ");
-  </script>
+  <script src="36-generate-parentheses.js"></script>
 </body>
 </html>

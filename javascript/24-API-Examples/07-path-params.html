@@ -20,12 +20,6 @@
   <p>Build REST-style URLs with resource ids.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function userUrl(id) {
-  return `/api/users/${encodeURIComponent(id)}`;
-}
-document.getElementById("out").textContent =
-  userUrl(42) + "\n" + userUrl("ada lovelace");
-  </script>
+  <script src="07-path-params.js"></script>
 </body>
 </html>

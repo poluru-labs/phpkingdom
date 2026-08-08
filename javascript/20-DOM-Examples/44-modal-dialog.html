@@ -13,6 +13,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Subrahmanyam Poluru">
   <title>44 — Modal Dialog | phpkingdom.com</title>
+  <link rel="stylesheet" href="44-modal-dialog.css">
 </head>
 <body>
   <h1>44 — Modal Dialog</h1>
@@ -20,19 +21,12 @@
   <p>Open and close a modal overlay.</p>
   <h2>Demo</h2>
   <button id="open">Open modal</button>
-  <div id="modal" hidden style="position:fixed;inset:0;background:rgba(0,0,0,.4);display:grid;place-items:center">
-    <div style="background:#fff;padding:16px;min-width:220px">
+  <div id="modal" hidden class="pk-s-position-fixed-inset-0-background-rgba-0-0-0-4-d">
+    <div class="pk-s-background-fff-padding-16px-min-width-220px">
       <p>Modal content</p>
       <button id="close">Close</button>
     </div>
   </div>
-  <script>
-const modal = document.getElementById("modal");
-document.getElementById("open").onclick = () => { modal.hidden = false; };
-document.getElementById("close").onclick = () => { modal.hidden = true; };
-modal.addEventListener("click", (e) => {
-  if (e.target === modal) modal.hidden = true;
-});
-  </script>
+  <script src="44-modal-dialog.js"></script>
 </body>
 </html>

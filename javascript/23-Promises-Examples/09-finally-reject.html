@@ -20,14 +20,6 @@
   <p>finally runs even when the promise rejects.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-let cleaned = false;
-Promise.reject(new Error("fail"))
-  .finally(() => { cleaned = true; })
-  .catch((err) => {
-    document.getElementById("out").textContent =
-      err.message + " / cleaned=" + cleaned;
-  });
-  </script>
+  <script src="09-finally-reject.js"></script>
 </body>
 </html>

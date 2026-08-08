@@ -20,19 +20,6 @@
   <p>Verify object keys exist before access.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const out = document.getElementById("out");
-function getRole(user) {
-  if (!Object.prototype.hasOwnProperty.call(user, "role")) {
-    throw new Error("missing role property");
-  }
-  return user.role;
-}
-try {
-  out.textContent = getRole({ name: "Ada" });
-} catch (e) {
-  out.textContent = e.message;
-}
-  </script>
+  <script src="42-has-own-property.js"></script>
 </body>
 </html>

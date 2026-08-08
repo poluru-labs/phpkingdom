@@ -18,14 +18,6 @@
   <h1>Arrow Functions and this</h1>
   <p>Arrows inherit lexical this.</p>
   <pre id="out"></pre>
-  <script>
-const obj = {
-  name: "Team",
-  regular: function () { return this.name; },
-  arrow: () => "arrow has lexical this"
-};
-document.getElementById("out").textContent =
-  obj.regular() + " / " + obj.arrow();
-  </script>
+  <script src="02-arrow-this.js"></script>
 </body>
 </html>

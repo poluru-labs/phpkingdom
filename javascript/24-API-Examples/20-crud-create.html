@@ -20,13 +20,6 @@
   <p>POST create pattern returning the new resource.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-async function createUser(payload) {
-  return { id: Date.now(), ...payload, createdAt: new Date().toISOString() };
-}
-createUser({ name: "Sam", role: "student" }).then((user) => {
-  document.getElementById("out").textContent = JSON.stringify(user, null, 2);
-});
-  </script>
+  <script src="20-crud-create.js"></script>
 </body>
 </html>

@@ -20,12 +20,6 @@
   <p>Returning a value from finally is ignored for fulfillment.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-Promise.resolve("original")
-  .finally(() => "ignored-return")
-  .then((v) => {
-    document.getElementById("out").textContent = "value still=" + v;
-  });
-  </script>
+  <script src="37-finally-cannot-replace-value.js"></script>
 </body>
 </html>

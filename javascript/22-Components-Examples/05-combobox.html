@@ -14,33 +14,7 @@
   <meta name="author" content="Subrahmanyam Poluru">
   <title>05 — Combobox | phpkingdom.com</title>
   <link rel="stylesheet" href="css/base.css">
-  <style>
-    .c-combo { position: relative; max-width: 320px; }
-    .c-combo__list {
-      position: absolute;
-      z-index: 20;
-      top: calc(100% + 4px);
-      left: 0;
-      right: 0;
-      margin: 0;
-      padding: 0.35rem;
-      list-style: none;
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: var(--radius-sm);
-      box-shadow: var(--shadow);
-      max-height: 200px;
-      overflow-y: auto;
-    }
-    .c-combo__list[hidden] { display: none; }
-    .c-combo__item {
-      padding: 0.5rem 0.65rem;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-    .c-combo__item:hover, .c-combo__item.is-active { background: var(--accent-soft); }
-    .c-combo__empty { padding: 0.5rem 0.65rem; color: var(--muted); font-size: 0.88rem; }
-  </style>
+  <link rel="stylesheet" href="05-combobox.css">
 </head>
 <body>
   <main class="page">
@@ -56,100 +30,6 @@
       <pre class="log" id="log">Ready.</pre>
     </section>
   </main>
-  <script>
-    const logEl = document.getElementById("log");
-    function log(msg) { logEl.textContent = msg; }
-
-    function createCombobox({ label = "City", options = [] } = {}) {
-      let selected = null;
-      let activeIdx = 0;
-      let filtered = [...options];
-
-      const wrap = document.createElement("div");
-      wrap.className = "c-combo";
-
-      const lbl = document.createElement("label");
-      lbl.className = "field-label";
-      lbl.textContent = label;
-
-      const input = document.createElement("input");
-      input.type = "text";
-      input.className = "c-input";
-      input.placeholder = "Search cities…";
-      input.setAttribute("role", "combobox");
-      input.setAttribute("aria-expanded", "false");
-      input.autocomplete = "off";
-
-      const list = document.createElement("ul");
-      list.className = "c-combo__list";
-      list.hidden = true;
-
-      function renderList() {
-        list.innerHTML = "";
-        if (!filtered.length) {
-          const empty = document.createElement("li");
-          empty.className = "c-combo__empty";
-          empty.textContent = "No matches";
-          list.appendChild(empty);
-          return;
-        }
-        filtered.forEach((opt, i) => {
-          const li = document.createElement("li");
-          li.className = "c-combo__item" + (i === activeIdx ? " is-active" : "");
-          li.textContent = opt.label;
-          li.addEventListener("mousedown", (e) => { e.preventDefault(); pick(opt, i); });
-          list.appendChild(li);
-        });
-      }
-
-      function setOpen(v) {
-        list.hidden = !v;
-        input.setAttribute("aria-expanded", String(v));
-      }
-
-      function filter(q) {
-        filtered = options.filter((o) => o.label.toLowerCase().includes(q.toLowerCase()));
-        activeIdx = 0;
-        renderList();
-        setOpen(true);
-        log("filter: \"" + q + "\" → " + filtered.length + " results");
-      }
-
-      function pick(opt, idx) {
-        selected = opt.value;
-        input.value = opt.label;
-        activeIdx = idx;
-        setOpen(false);
-        log("select: " + opt.label + " (" + opt.value + ")");
-      }
-
-      input.addEventListener("input", () => filter(input.value));
-      input.addEventListener("focus", () => { filter(input.value); });
-      input.addEventListener("keydown", (e) => {
-        if (e.key === "ArrowDown") { e.preventDefault(); activeIdx = Math.min(activeIdx + 1, filtered.length - 1); renderList(); }
-        if (e.key === "ArrowUp") { e.preventDefault(); activeIdx = Math.max(activeIdx - 1, 0); renderList(); }
-        if (e.key === "Enter" && filtered[activeIdx]) pick(filtered[activeIdx], activeIdx);
-        if (e.key === "Escape") setOpen(false);
-      });
-
-      document.addEventListener("click", (e) => { if (!wrap.contains(e.target)) setOpen(false); });
-
-      lbl.append(input, list);
-      wrap.appendChild(lbl);
-
-      return { el: wrap, get value() { return selected; } };
-    }
-
-    document.getElementById("mount").appendChild(createCombobox({
-      options: [
-        { label: "New York", value: "nyc" },
-        { label: "Los Angeles", value: "la" },
-        { label: "Chicago", value: "chi" },
-        { label: "Houston", value: "hou" },
-        { label: "Phoenix", value: "phx" },
-        { label: "San Francisco", value: "sf" }
-      ]
-    }).el);
-  </script>
+  <script src="05-combobox.js"></script>
 </body>
 </html>

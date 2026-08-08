@@ -20,12 +20,6 @@
   <p>Defaults apply for undefined, not null.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const { a = 1 } = { a: undefined };
-const { b = 2 } = { b: null };
-document.getElementById("out").textContent =
-  "a=" + a + " (default used)\n" +
-  "b=" + b + " (null kept)";
-  </script>
+  <script src="39-destructure-defaults.js"></script>
 </body>
 </html>

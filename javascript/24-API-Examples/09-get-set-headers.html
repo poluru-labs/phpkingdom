@@ -20,12 +20,6 @@
   <p>Send Accept and X-Request-Id headers.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const headers = new Headers();
-headers.set("Accept", "application/json");
-headers.set("X-Request-Id", crypto.randomUUID ? crypto.randomUUID() : "req-1");
-document.getElementById("out").textContent =
-  "Accept=" + headers.get("Accept") + "\nX-Request-Id=" + headers.get("X-Request-Id");
-  </script>
+  <script src="09-get-set-headers.js"></script>
 </body>
 </html>

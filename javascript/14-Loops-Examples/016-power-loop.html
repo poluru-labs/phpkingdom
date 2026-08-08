@@ -20,13 +20,6 @@
   <p>Compute base^exp without Math.pow, using multiplication in a loop.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function power(base, exp) {
-  let result = 1;
-  for (let i = 0; i < exp; i++) result *= base;
-  return result;
-}
-document.getElementById("out").textContent = "2^10 = " + power(2, 10);
-  </script>
+  <script src="016-power-loop.js"></script>
 </body>
 </html>

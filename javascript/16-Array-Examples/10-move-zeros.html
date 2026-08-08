@@ -20,13 +20,6 @@
   <p>Move all zeros to the end while keeping other order.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function moveZeros(arr) {
-  const nonZero = arr.filter((n) => n !== 0);
-  const zeros = arr.filter((n) => n === 0);
-  return nonZero.concat(zeros);
-}
-document.getElementById("out").textContent = moveZeros([0,1,0,3,12]).join(", ");
-  </script>
+  <script src="10-move-zeros.js"></script>
 </body>
 </html>

@@ -20,14 +20,6 @@
   <p>Count how many times each value appears.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function frequency(arr) {
-  return arr.reduce((map, n) => {
-    map[n] = (map[n] || 0) + 1;
-    return map;
-  }, {});
-}
-document.getElementById("out").textContent = JSON.stringify(frequency(["a","b","a","c","b","a"]));
-  </script>
+  <script src="16-frequency-count.js"></script>
 </body>
 </html>

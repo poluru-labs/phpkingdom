@@ -18,12 +18,6 @@
   <h1>then / catch</h1>
   <p>Handle success and failure.</p>
   <pre id="out"></pre>
-  <script>
-Promise.reject(new Error("oops"))
-  .then(function () { return "ok"; })
-  .catch(function (err) {
-    document.getElementById("out").textContent = err.message;
-  });
-  </script>
+  <script src="02-then-catch.js"></script>
 </body>
 </html>

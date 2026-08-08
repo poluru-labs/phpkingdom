@@ -20,17 +20,6 @@
   <p>Find the pair with smallest absolute difference.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function minDiffPair(arr) {
-  const a = [...arr].sort((x, y) => x - y);
-  let best = Infinity, pair = [];
-  for (let i = 1; i < a.length; i++) {
-    const diff = a[i] - a[i - 1];
-    if (diff < best) { best = diff; pair = [a[i - 1], a[i]]; }
-  }
-  return pair;
-}
-document.getElementById("out").textContent = "[" + minDiffPair([3,8,12,5,20]) + "]";
-  </script>
+  <script src="39-min-difference-pair.js"></script>
 </body>
 </html>

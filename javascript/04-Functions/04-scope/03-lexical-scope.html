@@ -18,13 +18,6 @@
   <h1>Lexical Scope</h1>
   <p>Inner functions see outer variables.</p>
   <pre id="out"></pre>
-  <script>
-function outer() {
-  const label = "outer";
-  function inner() { return label; }
-  return inner();
-}
-document.getElementById("out").textContent = outer();
-  </script>
+  <script src="03-lexical-scope.js"></script>
 </body>
 </html>

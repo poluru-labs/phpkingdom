@@ -22,14 +22,6 @@
   <p id="anchor">Anchor</p>
   <button id="before">beforebegin</button>
   <button id="after">afterend</button>
-  <script>
-const a = document.getElementById("anchor");
-document.getElementById("before").onclick = () => {
-  a.insertAdjacentHTML("beforebegin", "<em>before </em>");
-};
-document.getElementById("after").onclick = () => {
-  a.insertAdjacentHTML("afterend", " <strong>after</strong>");
-};
-  </script>
+  <script src="07-insert-adjacent.js"></script>
 </body>
 </html>

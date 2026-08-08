@@ -20,14 +20,6 @@
   <p>Capture loop index in a closure passed to setTimeout.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const labels = [];
-for (let i = 1; i <= 3; i++) {
-  setTimeout(() => labels.push("tick-" + i), i * 20);
-}
-setTimeout(() => {
-  document.getElementById("out").textContent = labels.join("\n");
-}, 100);
-  </script>
+  <script src="40-settimeout-closure.js"></script>
 </body>
 </html>

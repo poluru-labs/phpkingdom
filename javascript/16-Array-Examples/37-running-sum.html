@@ -20,17 +20,6 @@
   <p>Return prefix sums of the array.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function runningSum(nums) {
-  const out = [];
-  let sum = 0;
-  for (const n of nums) {
-    sum += n;
-    out.push(sum);
-  }
-  return out;
-}
-document.getElementById("out").textContent = runningSum([1,2,3,4]).join(", ");
-  </script>
+  <script src="37-running-sum.js"></script>
 </body>
 </html>

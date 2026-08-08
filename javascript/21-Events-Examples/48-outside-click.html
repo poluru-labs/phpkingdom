@@ -13,6 +13,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Subrahmanyam Poluru">
   <title>48 — Click Outside | phpkingdom.com</title>
+  <link rel="stylesheet" href="48-outside-click.css">
 </head>
 <body>
   <h1>48 — Click Outside</h1>
@@ -20,24 +21,8 @@
   <p>Close a menu when clicking outside of it.</p>
   <h2>Demo</h2>
   <button id="toggle">Toggle menu</button>
-  <div id="menu" hidden style="margin-top:6px;padding:10px;border:1px solid #333;display:inline-block">Menu</div>
+  <div id="menu" hidden class="pk-s-margin-top-6px-padding-10px-border-1pxsolid-333-">Menu</div>
   <pre id="out"></pre>
-  <script>
-const menu = document.getElementById("menu");
-const toggle = document.getElementById("toggle");
-const out = document.getElementById("out");
-toggle.onclick = (e) => {
-  e.stopPropagation();
-  menu.hidden = !menu.hidden;
-  out.textContent = menu.hidden ? "closed" : "open";
-};
-document.addEventListener("click", (e) => {
-  if (menu.hidden) return;
-  if (!menu.contains(e.target) && e.target !== toggle) {
-    menu.hidden = true;
-    out.textContent = "closed (outside click)";
-  }
-});
-  </script>
+  <script src="48-outside-click.js"></script>
 </body>
 </html>

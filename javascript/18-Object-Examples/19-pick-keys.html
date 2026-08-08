@@ -20,12 +20,6 @@
   <p>Return a new object with only selected keys.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function pick(obj, keys) {
-  return Object.fromEntries(keys.filter((k) => k in obj).map((k) => [k, obj[k]]));
-}
-const user = { name: "Ada", email: "a@x.com", role: "admin" };
-document.getElementById("out").textContent = JSON.stringify(pick(user, ["name", "role"]));
-  </script>
+  <script src="19-pick-keys.js"></script>
 </body>
 </html>

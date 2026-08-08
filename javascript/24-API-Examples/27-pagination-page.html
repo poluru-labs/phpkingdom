@@ -20,12 +20,6 @@
   <p>Build page-based pagination query params.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function pageParams(page, limit = 10) {
-  return { page, limit, offset: (page - 1) * limit };
-}
-document.getElementById("out").textContent =
-  JSON.stringify([pageParams(1), pageParams(2), pageParams(3)], null, 2);
-  </script>
+  <script src="27-pagination-page.js"></script>
 </body>
 </html>

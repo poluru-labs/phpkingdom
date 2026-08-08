@@ -20,13 +20,6 @@
   <p>Holes are skipped by map but counted by length.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const a = [];
-a[2] = "x";
-document.getElementById("out").textContent =
-  "length=" + a.length + "\n" +
-  "map => [" + a.map((v) => v || "_").join(",") + "]\n" +
-  "keys => [" + [...a.keys()].join(",") + "]";
-  </script>
+  <script src="08-array-length-hole.js"></script>
 </body>
 </html>

@@ -20,13 +20,6 @@
   <p>Group without capturing using (?:...) to keep match indices clean.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const text = "http https ftp";
-const withCap = /(https?):\/\/(\w+)/.exec("https://site.com");
-const nonCap = /(?:https?):\/\/(\w+)/.exec("https://site.com");
-document.getElementById("out").textContent =
-  "capturing groups:   " + withCap.length + " items\n" +
-  "non-capturing host: " + nonCap[1];
-  </script>
+  <script src="24-non-capturing-group.js"></script>
 </body>
 </html>

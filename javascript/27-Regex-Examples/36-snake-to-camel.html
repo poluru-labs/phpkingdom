@@ -20,11 +20,6 @@
   <p>Convert snake_case identifiers to camelCase.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const names = ["user_name", "order_id", "is_active"];
-const toCamel = s => s.replace(/_([a-z])/g, (_, c) => c.toUpperCase());
-const results = names.map(n => n + " => " + toCamel(n));
-document.getElementById("out").textContent = results.join("\n");
-  </script>
+  <script src="36-snake-to-camel.js"></script>
 </body>
 </html>

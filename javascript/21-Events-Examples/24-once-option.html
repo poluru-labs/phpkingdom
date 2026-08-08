@@ -21,14 +21,6 @@
   <h2>Demo</h2>
   <button id="btn">Click me twice</button>
   <pre id="out"></pre>
-  <script>
-const out = document.getElementById("out");
-document.getElementById("btn").addEventListener("click", () => {
-  out.textContent += "fired ";
-}, { once: true });
-document.getElementById("btn").addEventListener("click", () => {
-  out.textContent += "(regular) ";
-});
-  </script>
+  <script src="24-once-option.js"></script>
 </body>
 </html>

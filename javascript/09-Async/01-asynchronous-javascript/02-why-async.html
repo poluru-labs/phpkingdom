@@ -19,14 +19,6 @@
   <p>Keep the UI responsive during waits.</p>
   <button id="btn" type="button">Fake network call</button>
   <pre id="out"></pre>
-  <script>
-document.getElementById("btn").onclick = function () {
-  const out = document.getElementById("out");
-  out.textContent = "Loading...";
-  setTimeout(function () {
-    out.textContent = "Done (after 700ms)";
-  }, 700);
-};
-  </script>
+  <script src="02-why-async.js"></script>
 </body>
 </html>

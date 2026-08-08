@@ -1,0 +1,32 @@
+.c-switch {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65rem;
+      cursor: pointer;
+      user-select: none;
+    }
+    .c-switch__track {
+      width: 2.75rem;
+      height: 1.5rem;
+      border-radius: 999px;
+      background: var(--line);
+      position: relative;
+      transition: background 0.2s var(--ease);
+      flex-shrink: 0;
+    }
+    .c-switch__thumb {
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      width: calc(1.5rem - 4px);
+      height: calc(1.5rem - 4px);
+      border-radius: 50%;
+      background: #fff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.15);
+      transition: transform 0.2s var(--ease);
+    }
+    .c-switch input { position: absolute; opacity: 0; width: 0; height: 0; }
+    .c-switch input:focus-visible + .c-switch__track { box-shadow: var(--focus); }
+    .c-switch input:checked + .c-switch__track { background: var(--accent); }
+    .c-switch input:checked + .c-switch__track .c-switch__thumb { transform: translateX(1.25rem); }
+    .c-switch input:disabled + .c-switch__track { opacity: 0.5; cursor: not-allowed; }

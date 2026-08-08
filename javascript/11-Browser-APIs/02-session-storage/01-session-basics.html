@@ -19,11 +19,6 @@
   <p>Data lasts for the tab session.</p>
   <button id="btn" type="button">Save to session</button>
   <pre id="out"></pre>
-  <script>
-document.getElementById("btn").onclick = function () {
-  sessionStorage.setItem("visit", String(Date.now()));
-  document.getElementById("out").textContent = sessionStorage.getItem("visit");
-};
-  </script>
+  <script src="01-session-basics.js"></script>
 </body>
 </html>

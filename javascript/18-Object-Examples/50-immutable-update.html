@@ -20,10 +20,6 @@
   <p>Update nested data without mutating the original.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const state = { user: { name: "Ada", score: 10 }, ok: true };
-const next = { ...state, user: { ...state.user, score: state.user.score + 5 } };
-document.getElementById("out").textContent = "old=" + state.user.score + ", new=" + next.user.score;
-  </script>
+  <script src="50-immutable-update.js"></script>
 </body>
 </html>

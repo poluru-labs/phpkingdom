@@ -21,16 +21,6 @@
   <h2>Demo</h2>
   <button id="btn">Inspect event</button>
   <pre id="out"></pre>
-  <script>
-document.getElementById("btn").addEventListener("click", (e) => {
-  document.getElementById("out").textContent = [
-    "type=" + e.type,
-    "timeStamp=" + Math.round(e.timeStamp),
-    "isTrusted=" + e.isTrusted,
-    "defaultPrevented=" + e.defaultPrevented,
-    "eventPhase=" + e.eventPhase,
-  ].join("\n");
-});
-  </script>
+  <script src="49-event-object-props.js"></script>
 </body>
 </html>

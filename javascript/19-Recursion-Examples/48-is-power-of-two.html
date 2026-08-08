@@ -20,17 +20,6 @@
   <p>Check if n is a power of 2 using recursion.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function isPowerOfTwo(n) {
-  if (n < 1) return false;
-  if (n === 1) return true;
-  if (n % 2 !== 0) return false;
-  return isPowerOfTwo(n / 2);
-}
-const nums = [1, 2, 3, 8, 16, 18];
-document.getElementById("out").textContent = nums
-  .map((n) => n + " → " + isPowerOfTwo(n))
-  .join("\n");
-  </script>
+  <script src="48-is-power-of-two.js"></script>
 </body>
 </html>

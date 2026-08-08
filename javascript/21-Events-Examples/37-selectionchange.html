@@ -21,11 +21,6 @@
   <h2>Demo</h2>
   <p>Select any part of this sentence to see the selection update.</p>
   <pre id="out"></pre>
-  <script>
-document.addEventListener("selectionchange", () => {
-  const t = String(window.getSelection());
-  document.getElementById("out").textContent = t ? ("selected: " + t) : "(no selection)";
-});
-  </script>
+  <script src="37-selectionchange.js"></script>
 </body>
 </html>

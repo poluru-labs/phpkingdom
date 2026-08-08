@@ -1,0 +1,31 @@
+.c-autocomplete { position: relative; max-width: 360px; }
+    .c-autocomplete__list {
+      position: absolute;
+      z-index: 20;
+      top: calc(100% + 4px);
+      left: 0;
+      right: 0;
+      margin: 0;
+      padding: 0.35rem;
+      list-style: none;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius-sm);
+      box-shadow: var(--shadow);
+      max-height: 220px;
+      overflow-y: auto;
+    }
+    .c-autocomplete__list[hidden] { display: none; }
+    .c-autocomplete__item {
+      padding: 0.55rem 0.65rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .c-autocomplete__item:hover, .c-autocomplete__item.is-active {
+      background: var(--accent-soft);
+    }
+    .c-autocomplete__item mark {
+      background: transparent;
+      color: var(--accent-ink);
+      font-weight: 700;
+    }

@@ -13,26 +13,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Subrahmanyam Poluru">
   <title>32 — CustomEvent bubbles | phpkingdom.com</title>
+  <link rel="stylesheet" href="32-event-bubbles-option.css">
 </head>
 <body>
   <h1>32 — CustomEvent bubbles</h1>
   <h2>Problem</h2>
   <p>Show a bubbling custom event reaching an ancestor.</p>
   <h2>Demo</h2>
-  <div id="parent" style="padding:16px;border:1px solid #333">
+  <div id="parent" class="pk-s-padding-16px-border-1pxsolid-333">
     <button id="btn">Emit from child</button>
   </div>
   <pre id="out"></pre>
-  <script>
-document.getElementById("parent").addEventListener("ping", (e) => {
-  document.getElementById("out").textContent =
-    "parent heard ping: " + e.detail.msg;
-});
-document.getElementById("btn").onclick = () => {
-  document.getElementById("btn").dispatchEvent(
-    new CustomEvent("ping", { bubbles: true, detail: { msg: "hello" } })
-  );
-};
-  </script>
+  <script src="32-event-bubbles-option.js"></script>
 </body>
 </html>

@@ -20,17 +20,6 @@
   <p>Explicit checks before dereferencing values.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const out = document.getElementById("out");
-function len(s) {
-  if (s == null) throw new TypeError("value is null or undefined");
-  return s.length;
-}
-try {
-  out.textContent = String(len(undefined));
-} catch (e) {
-  out.textContent = e.name + ": " + e.message;
-}
-  </script>
+  <script src="38-null-undefined-guard.js"></script>
 </body>
 </html>

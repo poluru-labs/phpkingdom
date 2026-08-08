@@ -27,15 +27,6 @@
     <button data-panel="3">Section 3</button>
     <div id="p3" hidden>Content three</div>
   </div>
-  <script>
-document.querySelector(".acc").addEventListener("click", (e) => {
-  const btn = e.target.closest("[data-panel]");
-  if (!btn) return;
-  const id = "p" + btn.dataset.panel;
-  document.querySelectorAll(".acc > div").forEach((panel) => {
-    panel.hidden = panel.id !== id ? true : !panel.hidden;
-  });
-});
-  </script>
+  <script src="45-accordion.js"></script>
 </body>
 </html>

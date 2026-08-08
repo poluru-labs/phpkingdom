@@ -20,18 +20,6 @@
   <p>Decode a compressed form like a2b1c5.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function decodeRLE(s) {
-  let out = "", i = 0;
-  while (i < s.length) {
-    const ch = s[i++];
-    let num = "";
-    while (i < s.length && /\d/.test(s[i])) num += s[i++];
-    out += ch.repeat(Number(num || 1));
-  }
-  return out;
-}
-document.getElementById("out").textContent = decodeRLE("a2b1c5");
-  </script>
+  <script src="23-run-length-decode.js"></script>
 </body>
 </html>

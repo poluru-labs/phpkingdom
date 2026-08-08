@@ -20,16 +20,6 @@
   <p>Visit left subtree, right subtree, then root (postorder).</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const tree = { val: 1, left: { val: 2, left: { val: 4 }, right: null }, right: { val: 3, left: { val: 5 }, right: { val: 6 } } };
-function postorder(node, out = []) {
-  if (!node) return out;
-  postorder(node.left, out);
-  postorder(node.right, out);
-  out.push(node.val);
-  return out;
-}
-document.getElementById("out").textContent = "postorder: " + postorder(tree).join(" → ");
-  </script>
+  <script src="11-tree-postorder.js"></script>
 </body>
 </html>

@@ -13,21 +13,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Subrahmanyam Poluru">
   <title>26 — Passive Listener Hint | phpkingdom.com</title>
+  <link rel="stylesheet" href="26-passive-scroll.css">
 </head>
 <body>
   <h1>26 — Passive Listener Hint</h1>
   <h2>Problem</h2>
   <p>Attach a passive scroll/touch listener (performance pattern).</p>
   <h2>Demo</h2>
-  <div id="scroller" style="height:120px;overflow:auto;border:1px solid #333">
-    <div style="height:400px;padding:8px">Scroll inside…</div>
+  <div id="scroller" class="pk-s-height-120px-overflow-auto-border-1pxsolid-333">
+    <div class="pk-s-height-400px-padding-8px">Scroll inside…</div>
   </div>
   <pre id="out"></pre>
-  <script>
-const box = document.getElementById("scroller");
-box.addEventListener("scroll", () => {
-  document.getElementById("out").textContent = "scrollTop=" + box.scrollTop;
-}, { passive: true });
-  </script>
+  <script src="26-passive-scroll.js"></script>
 </body>
 </html>

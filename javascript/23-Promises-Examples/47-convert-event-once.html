@@ -20,20 +20,6 @@
   <p>Resolve when a button is clicked once.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const btn = document.createElement("button");
-btn.type = "button";
-btn.textContent = "Click to resolve";
-document.body.insertBefore(btn, document.getElementById("out"));
-function onceClick(el) {
-  return new Promise((resolve) => {
-    el.addEventListener("click", () => resolve("clicked"), { once: true });
-  });
-}
-document.getElementById("out").textContent = "waiting for click...";
-onceClick(btn).then((msg) => {
-  document.getElementById("out").textContent = msg;
-});
-  </script>
+  <script src="47-convert-event-once.js"></script>
 </body>
 </html>

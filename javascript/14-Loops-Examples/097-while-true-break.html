@@ -20,15 +20,6 @@
   <p>Use an infinite loop pattern with an intentional break.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-let n = 1;
-const seen = [];
-while (true) {
-  seen.push(n);
-  if (n >= 16) break;
-  n *= 2;
-}
-document.getElementById("out").textContent = seen.join(" → ");
-  </script>
+  <script src="097-while-true-break.js"></script>
 </body>
 </html>

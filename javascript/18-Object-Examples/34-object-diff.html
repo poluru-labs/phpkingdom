@@ -20,16 +20,6 @@
   <p>Find keys whose values differ between two objects.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function diff(a, b) {
-  const keys = new Set([...Object.keys(a), ...Object.keys(b)]);
-  const changed = {};
-  for (const k of keys) {
-    if (a[k] !== b[k]) changed[k] = { from: a[k], to: b[k] };
-  }
-  return changed;
-}
-document.getElementById("out").textContent = JSON.stringify(diff({ a: 1, b: 2 }, { a: 1, b: 9, c: 3 }), null, 2);
-  </script>
+  <script src="34-object-diff.js"></script>
 </body>
 </html>

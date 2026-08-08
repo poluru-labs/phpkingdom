@@ -20,13 +20,6 @@
   <p>Return a new object without selected keys.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function omit(obj, keys) {
-  const skip = new Set(keys);
-  return Object.fromEntries(Object.entries(obj).filter(([k]) => !skip.has(k)));
-}
-const user = { name: "Ada", password: "secret", role: "admin" };
-document.getElementById("out").textContent = JSON.stringify(omit(user, ["password"]));
-  </script>
+  <script src="20-omit-keys.js"></script>
 </body>
 </html>

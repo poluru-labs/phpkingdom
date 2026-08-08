@@ -20,14 +20,6 @@
   <p>Decide if N is prime using a loop up to √N.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function isPrime(n) {
-  if (n < 2) return false;
-  for (let i = 2; i * i <= n; i++) if (n % i === 0) return false;
-  return true;
-}
-document.getElementById("out").textContent =
-  "17 → " + isPrime(17) + "\n18 → " + isPrime(18);
-  </script>
+  <script src="013-prime-check.js"></script>
 </body>
 </html>

@@ -20,14 +20,6 @@
   <p>Check if s is a subsequence of t.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function isSubsequence(s, t) {
-  let i = 0;
-  for (const ch of t) if (ch === s[i]) i++;
-  return i === s.length;
-}
-document.getElementById("out").textContent =
-  isSubsequence("abc", "ahbgdc") + " / " + isSubsequence("axc", "ahbgdc");
-  </script>
+  <script src="39-is-subsequence.js"></script>
 </body>
 </html>

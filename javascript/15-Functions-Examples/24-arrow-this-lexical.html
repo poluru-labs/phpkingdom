@@ -20,15 +20,6 @@
   <p>Compare method this with arrow function lexical this.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const obj = {
-  label: "outer",
-  regular() {
-    const inner = () => "arrow this.label = " + this.label;
-    return inner();
-  },
-};
-document.getElementById("out").textContent = obj.regular();
-  </script>
+  <script src="24-arrow-this-lexical.js"></script>
 </body>
 </html>

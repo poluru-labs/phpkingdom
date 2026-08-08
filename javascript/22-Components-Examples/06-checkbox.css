@@ -1,0 +1,14 @@
+.c-check {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      cursor: pointer;
+      user-select: none;
+    }
+    .c-check input {
+      width: 1.15rem;
+      height: 1.15rem;
+      accent-color: var(--accent);
+      cursor: pointer;
+    }
+    .demo-checks { display: grid; gap: 0.75rem; }

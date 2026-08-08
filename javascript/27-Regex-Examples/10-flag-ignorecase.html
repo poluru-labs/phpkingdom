@@ -20,13 +20,6 @@
   <p>Match text regardless of letter casing with the i flag.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const text = "JavaScript REGEX rocks";
-const caseSensitive = /regex/.test(text);
-const ignoreCase = /regex/i.test(text);
-document.getElementById("out").textContent =
-  "/regex/.test  => " + caseSensitive + "\n" +
-  "/regex/i.test => " + ignoreCase;
-  </script>
+  <script src="10-flag-ignorecase.js"></script>
 </body>
 </html>

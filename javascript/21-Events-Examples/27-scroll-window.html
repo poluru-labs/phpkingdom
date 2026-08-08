@@ -13,6 +13,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Subrahmanyam Poluru">
   <title>27 — Window Scroll | phpkingdom.com</title>
+  <link rel="stylesheet" href="27-scroll-window.css">
 </head>
 <body>
   <h1>27 — Window Scroll</h1>
@@ -20,13 +21,8 @@
   <p>Track page scroll position.</p>
   <h2>Demo</h2>
   <p>Scroll the page…</p>
-  <div style="height:900px;background:linear-gradient(#fff,#ddd)"></div>
-  <pre id="out" style="position:fixed;top:8px;right:8px;background:#fff;border:1px solid #333;padding:8px"></pre>
-  <script>
-window.addEventListener("scroll", () => {
-  document.getElementById("out").textContent =
-    "scrollY=" + Math.round(window.scrollY);
-}, { passive: true });
-  </script>
+  <div class="pk-s-height-900px-background-linear-gradient-fff-ddd"></div>
+  <pre id="out" class="pk-s-position-fixed-top-8px-right-8px-background-fff-"></pre>
+  <script src="27-scroll-window.js"></script>
 </body>
 </html>

@@ -20,11 +20,6 @@
   <p>Rename keys using a mapping object.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function renameKeys(obj, map) {
-  return Object.fromEntries(Object.entries(obj).map(([k, v]) => [map[k] || k, v]));
-}
-document.getElementById("out").textContent = JSON.stringify(renameKeys({ first_name: "Ada", age: 36 }, { first_name: "firstName" }));
-  </script>
+  <script src="36-rename-keys.js"></script>
 </body>
 </html>

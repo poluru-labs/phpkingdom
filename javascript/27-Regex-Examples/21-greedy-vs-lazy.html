@@ -20,13 +20,6 @@
   <p>Compare greedy * vs lazy *? when matching HTML-like tags.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const html = "<b>bold</b> and <i>italic</i>";
-const greedy = html.match(/<.*>/);
-const lazy = html.match(/<.*?>/g);
-document.getElementById("out").textContent =
-  "greedy <.*>:   " + greedy[0] + "\n" +
-  "lazy <.*?>:    " + JSON.stringify(lazy);
-  </script>
+  <script src="21-greedy-vs-lazy.js"></script>
 </body>
 </html>

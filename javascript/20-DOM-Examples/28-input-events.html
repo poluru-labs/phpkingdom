@@ -21,15 +21,6 @@
   <h2>Demo</h2>
   <input id="name" placeholder="Type here">
   <pre id="out"></pre>
-  <script>
-const input = document.getElementById("name");
-const out = document.getElementById("out");
-input.addEventListener("input", () => {
-  out.textContent = "input → " + input.value;
-});
-input.addEventListener("change", () => {
-  out.textContent += "\nchange → " + input.value;
-});
-  </script>
+  <script src="28-input-events.js"></script>
 </body>
 </html>

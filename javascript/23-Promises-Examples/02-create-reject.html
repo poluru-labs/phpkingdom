@@ -20,12 +20,6 @@
   <p>Create a Promise that rejects and handle it with catch.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-Promise.reject(new Error("something failed"))
-  .then(() => "skipped")
-  .catch((err) => {
-    document.getElementById("out").textContent = "caught: " + err.message;
-  });
-  </script>
+  <script src="02-create-reject.js"></script>
 </body>
 </html>

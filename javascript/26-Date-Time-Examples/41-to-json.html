@@ -20,14 +20,6 @@
   <p>Dates serialize to ISO strings in JSON.stringify.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-
-const d = new Date(2024, 0, 15, 14, 30, 45);
-const obj = { event: "demo", when: d };
-document.getElementById("out").textContent =
-  "toJSON(): " + d.toJSON() + "\n" +
-  "JSON.stringify: " + JSON.stringify(obj);
-
-  </script>
+  <script src="41-to-json.js"></script>
 </body>
 </html>

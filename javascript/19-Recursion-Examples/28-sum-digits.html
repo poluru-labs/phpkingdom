@@ -20,12 +20,6 @@
   <p>Sum the digits of a positive integer recursively.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function sumDigits(n) {
-  if (n < 10) return n;
-  return (n % 10) + sumDigits(Math.floor(n / 10));
-}
-document.getElementById("out").textContent = "sumDigits(12345) = " + sumDigits(12345);
-  </script>
+  <script src="28-sum-digits.js"></script>
 </body>
 </html>

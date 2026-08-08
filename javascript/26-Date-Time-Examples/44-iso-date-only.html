@@ -20,16 +20,6 @@
   <p>Date-only ISO strings parse as UTC midnight, which can shift the local calendar day.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-
-const dateOnly = "2024-01-15";
-const d = new Date(dateOnly);
-document.getElementById("out").textContent =
-  "Input: " + dateOnly + "\n" +
-  "Parsed UTC ISO: " + d.toISOString() + "\n" +
-  "Local date string: " + d.toDateString() + "\n" +
-  "Local parts: " + d.getFullYear() + "-" + (d.getMonth()+1) + "-" + d.getDate();
-
-  </script>
+  <script src="44-iso-date-only.js"></script>
 </body>
 </html>

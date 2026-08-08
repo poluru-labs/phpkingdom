@@ -20,15 +20,6 @@
   <p>Format dates with Intl.DateTimeFormat for locale-aware output.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-
-const d = new Date(2024, 0, 15, 14, 30, 45);
-const fmtUS = new Intl.DateTimeFormat("en-US", { dateStyle: "full", timeStyle: "short" });
-const fmtIN = new Intl.DateTimeFormat("en-IN", { weekday: "long", year: "numeric", month: "long", day: "numeric" });
-document.getElementById("out").textContent =
-  "en-US: " + fmtUS.format(d) + "\n" +
-  "en-IN: " + fmtIN.format(d);
-
-  </script>
+  <script src="13-intl-datetimeformat.js"></script>
 </body>
 </html>

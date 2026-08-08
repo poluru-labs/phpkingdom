@@ -1,0 +1,3 @@
+document.getElementById("out").textContent =
+  '"5" == 5 => ' + ("5" == 5) + "\n" +
+  '"5" === 5 => ' + ("5" === 5);

@@ -20,19 +20,6 @@
   <p>Find the longest shared prefix among strings.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function longestCommonPrefix(strs) {
-  if (!strs.length) return "";
-  let prefix = strs[0];
-  for (let i = 1; i < strs.length; i++) {
-    while (!strs[i].startsWith(prefix)) {
-      prefix = prefix.slice(0, -1);
-      if (!prefix) return "";
-    }
-  }
-  return prefix;
-}
-document.getElementById("out").textContent = longestCommonPrefix(["flower","flow","flight"]);
-  </script>
+  <script src="21-longest-common-prefix.js"></script>
 </body>
 </html>

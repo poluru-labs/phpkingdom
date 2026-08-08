@@ -18,13 +18,6 @@
   <h1>Create a Promise</h1>
   <p>resolve / reject.</p>
   <pre id="out"></pre>
-  <script>
-const p = new Promise(function (resolve) {
-  setTimeout(function () { resolve("done"); }, 300);
-});
-p.then(function (value) {
-  document.getElementById("out").textContent = value;
-});
-  </script>
+  <script src="01-promise-basic.js"></script>
 </body>
 </html>

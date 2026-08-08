@@ -1,0 +1,34 @@
+.c-breadcrumb {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.35rem;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      font-size: 0.92rem;
+    }
+    .c-breadcrumb__item {
+      display: flex;
+      align-items: center;
+      gap: 0.35rem;
+    }
+    .c-breadcrumb__item:not(:last-child)::after {
+      content: "/";
+      color: var(--muted);
+    }
+    .c-breadcrumb__link {
+      color: var(--accent-ink);
+      text-decoration: none;
+      font-weight: 500;
+      border: none;
+      background: none;
+      font: inherit;
+      cursor: pointer;
+      padding: 0;
+    }
+    .c-breadcrumb__link:hover { text-decoration: underline; }
+    .c-breadcrumb__current {
+      color: var(--muted);
+      font-weight: 600;
+    }

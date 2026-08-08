@@ -20,13 +20,6 @@
   <p>Count nodes in a singly linked list built from plain objects { val, next }.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const list = { val: 10, next: { val: 20, next: { val: 30, next: null } } };
-function listLength(node) {
-  if (!node) return 0;
-  return 1 + listLength(node.next);
-}
-document.getElementById("out").textContent = "length = " + listLength(list);
-  </script>
+  <script src="15-linked-list-length.js"></script>
 </body>
 </html>

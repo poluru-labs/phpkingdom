@@ -20,15 +20,6 @@
   <p>Return the index of the first occurrence of needle in haystack.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function strStr(haystack, needle) {
-  if (needle === "") return 0;
-  for (let i = 0; i <= haystack.length - needle.length; i++) {
-    if (haystack.slice(i, i + needle.length) === needle) return i;
-  }
-  return -1;
-}
-document.getElementById("out").textContent = String(strStr("hello", "ll"));
-  </script>
+  <script src="35-str-str.js"></script>
 </body>
 </html>

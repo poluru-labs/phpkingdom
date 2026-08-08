@@ -20,14 +20,6 @@
   <button id="save" type="button">Save</button>
   <button id="load" type="button">Load</button>
   <pre id="out"></pre>
-  <script>
-document.getElementById("save").onclick = function () {
-  localStorage.setItem("site", "phpkingdom.com");
-  document.getElementById("out").textContent = "saved";
-};
-document.getElementById("load").onclick = function () {
-  document.getElementById("out").textContent = localStorage.getItem("site");
-};
-  </script>
+  <script src="01-set-get.js"></script>
 </body>
 </html>

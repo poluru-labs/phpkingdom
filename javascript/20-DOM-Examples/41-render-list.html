@@ -21,18 +21,6 @@
   <h2>Demo</h2>
   <ul id="list"></ul>
   <button id="btn">Render fruits</button>
-  <script>
-const fruits = ["Apple", "Banana", "Cherry"];
-document.getElementById("btn").onclick = () => {
-  const list = document.getElementById("list");
-  list.replaceChildren(
-    ...fruits.map((name) => {
-      const li = document.createElement("li");
-      li.textContent = name;
-      return li;
-    })
-  );
-};
-  </script>
+  <script src="41-render-list.js"></script>
 </body>
 </html>

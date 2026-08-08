@@ -25,15 +25,6 @@
     <input id="y" placeholder="y">
   </fieldset>
   <pre id="out"></pre>
-  <script>
-const wrap = document.getElementById("wrap");
-const out = document.getElementById("out");
-wrap.addEventListener("focusin", (e) => {
-  out.textContent = "focusin → " + e.target.id;
-});
-wrap.addEventListener("focusout", (e) => {
-  out.textContent = "focusout → " + e.target.id;
-});
-  </script>
+  <script src="15-focusin-focusout.js"></script>
 </body>
 </html>

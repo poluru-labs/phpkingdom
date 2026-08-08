@@ -20,19 +20,6 @@
   <p>Fail fast at the top of a function with clear errors.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const out = document.getElementById("out");
-function createUser(data) {
-  if (!data) throw new Error("data required");
-  if (!data.email) throw new Error("email required");
-  if (!data.email.includes("@")) throw new Error("email invalid");
-  return { id: 1, email: data.email };
-}
-try {
-  createUser({ email: "bad" });
-} catch (e) {
-  out.textContent = e.message;
-}
-  </script>
+  <script src="37-validate-early.js"></script>
 </body>
 </html>

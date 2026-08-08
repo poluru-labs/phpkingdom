@@ -20,16 +20,6 @@
   <p>Find common elements with nested loops.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const a = [1, 2, 3, 4];
-const b = [3, 4, 5, 6];
-const common = [];
-for (const x of a) {
-  for (const y of b) {
-    if (x === y && !common.includes(x)) common.push(x);
-  }
-}
-document.getElementById("out").textContent = common.join(", ");
-  </script>
+  <script src="074-array-intersection.js"></script>
 </body>
 </html>

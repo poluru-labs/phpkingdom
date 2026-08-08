@@ -1,0 +1,26 @@
+.c-slider { max-width: 360px; display: grid; gap: 0.5rem; }
+    .c-slider__header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-weight: 500;
+    }
+    .c-slider__value {
+      font-family: var(--mono);
+      font-size: 0.9rem;
+      color: var(--accent-ink);
+      background: var(--accent-soft);
+      padding: 0.15rem 0.5rem;
+      border-radius: 6px;
+    }
+    .c-slider__input {
+      width: 100%;
+      accent-color: var(--accent);
+      cursor: pointer;
+    }
+    .c-slider__ticks {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.78rem;
+      color: var(--muted);
+    }

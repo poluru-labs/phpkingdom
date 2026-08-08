@@ -13,18 +13,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Subrahmanyam Poluru">
   <title>02 — Double Click | phpkingdom.com</title>
+  <link rel="stylesheet" href="02-dblclick.css">
 </head>
 <body>
   <h1>02 — Double Click</h1>
   <h2>Problem</h2>
   <p>Detect a double-click on an element.</p>
   <h2>Demo</h2>
-  <div id="box" style="padding:16px;border:1px solid #333;display:inline-block">Double-click me</div>
+  <div id="box" class="pk-s-padding-16px-border-1pxsolid-333-display-inline-">Double-click me</div>
   <pre id="out"></pre>
-  <script>
-document.getElementById("box").addEventListener("dblclick", () => {
-  document.getElementById("out").textContent = "double-clicked at " + new Date().toLocaleTimeString();
-});
-  </script>
+  <script src="02-dblclick.js"></script>
 </body>
 </html>

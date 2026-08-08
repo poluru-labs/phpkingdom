@@ -20,19 +20,6 @@
   <p>Merge two sorted arrays with two pointers.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-function merge(a, b) {
-  const out = [];
-  let i = 0, j = 0;
-  while (i < a.length && j < b.length) {
-    if (a[i] <= b[j]) out.push(a[i++]);
-    else out.push(b[j++]);
-  }
-  while (i < a.length) out.push(a[i++]);
-  while (j < b.length) out.push(b[j++]);
-  return out;
-}
-document.getElementById("out").textContent = merge([1, 3, 5], [2, 4, 6]).join(", ");
-  </script>
+  <script src="042-two-pointer-merge.js"></script>
 </body>
 </html>

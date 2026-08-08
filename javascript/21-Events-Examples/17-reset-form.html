@@ -24,14 +24,6 @@
     <button type="reset">Reset</button>
   </form>
   <pre id="out"></pre>
-  <script>
-document.getElementById("f").addEventListener("reset", () => {
-  // runs before values clear; defer read
-  setTimeout(() => {
-    document.getElementById("out").textContent =
-      "reset → n=" + document.querySelector('[name="n"]').value;
-  });
-});
-  </script>
+  <script src="17-reset-form.js"></script>
 </body>
 </html>

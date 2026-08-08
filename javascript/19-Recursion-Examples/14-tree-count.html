@@ -20,13 +20,6 @@
   <p>Count the number of nodes in a binary tree recursively.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const tree = { val: 1, left: { val: 2, left: { val: 4 }, right: null }, right: { val: 3, left: { val: 5 }, right: { val: 6 } } };
-function countNodes(node) {
-  if (!node) return 0;
-  return 1 + countNodes(node.left) + countNodes(node.right);
-}
-document.getElementById("out").textContent = "node count = " + countNodes(tree);
-  </script>
+  <script src="14-tree-count.js"></script>
 </body>
 </html>

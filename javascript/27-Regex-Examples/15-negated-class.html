@@ -20,13 +20,6 @@
   <p>Match characters NOT in a set using [^...].</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const text = "abc123xyz";
-const notDigits = text.match(/[^0-9]+/g);
-const notVowels = "hello".match(/[^aeiou]+/g);
-document.getElementById("out").textContent =
-  "not digits: " + JSON.stringify(notDigits) + "\n" +
-  "not vowels: " + JSON.stringify(notVowels);
-  </script>
+  <script src="15-negated-class.js"></script>
 </body>
 </html>

@@ -20,11 +20,6 @@
   <p>Extract http/https URLs from mixed content.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const text = "See https://example.com and http://test.io/page?q=1 today.";
-const urls = text.match(/https?:\/\/[^\s]+/g);
-document.getElementById("out").textContent =
-  "found: " + JSON.stringify(urls);
-  </script>
+  <script src="33-extract-urls.js"></script>
 </body>
 </html>

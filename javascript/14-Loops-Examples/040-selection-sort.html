@@ -20,14 +20,6 @@
   <p>Sort by repeatedly selecting the minimum.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-const arr = [64, 25, 12, 22, 11];
-for (let i = 0; i < arr.length - 1; i++) {
-  let minIdx = i;
-  for (let j = i + 1; j < arr.length; j++) if (arr[j] < arr[minIdx]) minIdx = j;
-  if (minIdx !== i) { const t = arr[i]; arr[i] = arr[minIdx]; arr[minIdx] = t; }
-}
-document.getElementById("out").textContent = arr.join(", ");
-  </script>
+  <script src="040-selection-sort.js"></script>
 </body>
 </html>

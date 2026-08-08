@@ -20,14 +20,6 @@
   <p>Repeatedly sum digits until a single digit remains.</p>
   <h2>Output</h2>
   <pre id="out"></pre>
-  <script>
-let n = 9875;
-while (n >= 10) {
-  let sum = 0;
-  while (n > 0) { sum += n % 10; n = Math.floor(n / 10); }
-  n = sum;
-}
-document.getElementById("out").textContent = "digital root of 9875 = " + n;
-  </script>
+  <script src="089-digital-root.js"></script>
 </body>
 </html>
