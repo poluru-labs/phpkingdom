@@ -1,0 +1,44 @@
+:root {
+      --brand: #343a40;
+      --ink: #212529;
+      --muted: #6c757d;
+      --bg: #f8f9fa;
+      --surface: #fff;
+      --line: #dee2e6;
+      --radius: 12px;
+    }
+    /* Tokens mirror LESS @variables compiled to CSS custom properties */
+    * { box-sizing: border-box; }
+    body { margin:0; font-family: Arial, sans-serif; color:var(--ink); background:var(--bg); line-height:1.55; }
+    a { color:var(--brand); }
+    .wrap { max-width:960px; margin:0 auto; padding:0 1.25rem; }
+    header { background:var(--surface); border-bottom:1px solid var(--line); }
+    .nav { display:flex; justify-content:space-between; align-items:center; padding:1rem 0; gap:1rem; }
+    .logo { color:var(--brand); font-weight:700; }
+    .nav-links { display:flex; gap:1.25rem; font-size:.95rem; }
+    .nav-links a { color:var(--muted); text-decoration:none; }
+    .nav-links a:hover { color:var(--brand); }
+    .hero { padding:4rem 0 3rem; background:linear-gradient(160deg, color-mix(in srgb, var(--brand) 14%, white), var(--bg)); }
+    .eyebrow { text-transform:uppercase; letter-spacing:.14em; font-size:.75rem; font-weight:700; color:var(--brand); }
+    h1 { font-size:clamp(1.8rem, 4vw, 2.8rem); margin:.5rem 0 0; max-width:18ch; }
+    .lead { color:var(--muted); font-size:1.1rem; max-width:36ch; margin:1rem 0 1.5rem; }
+    .btn { display:inline-block; background:var(--brand); color:#fff; text-decoration:none; padding:.7rem 1.15rem; border-radius:8px; font-weight:600; }
+    .btn-ghost { background:transparent; color:var(--brand); border:1px solid color-mix(in srgb, var(--brand) 40%, white); margin-left:.5rem; }
+    .grid { display:grid; gap:1rem; grid-template-columns:1fr; padding:2.5rem 0; }
+    @media (min-width:720px) { .grid { grid-template-columns:repeat(3, 1fr); } }
+    .card { background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:1.25rem; }
+    .card h3 { margin:0 0 .35rem; font-size:1.05rem; }
+    .card p { margin:0; color:var(--muted); font-size:.95rem; }
+    .about { background:var(--surface); border-block:1px solid var(--line); padding:2.5rem 0; }
+    form { max-width:28rem; display:grid; gap:.75rem; padding:2.5rem 0; }
+    label { font-size:.9rem; font-weight:600; }
+    input { padding:.65rem .75rem; border:1px solid var(--line); border-radius:8px; font:inherit; }
+    footer { border-top:1px solid var(--line); padding:1.25rem 0; color:var(--muted); font-size:.9rem; display:flex; justify-content:space-between; gap:.75rem; flex-wrap:wrap; }
+    .less-note { font-size:.85rem; color:var(--muted); margin-top:1rem; }
+    .less-source { background:var(--surface); border:1px solid var(--line); border-radius:var(--radius); padding:1.25rem; margin:2rem 0 2.5rem; }
+    .less-source h2 { margin:0 0 .75rem; font-size:1.15rem; }
+    .less-source pre { margin:0; background:#0f172a; color:#e2e8f0; padding:1rem; border-radius:.65rem; overflow:auto; font-size:.88rem; }
+    .less-source code { font-family: Menlo, Monaco, Consolas, monospace; }
+
+/* extracted from inline style attributes */
+.pk-m-0 { margin:0; }
